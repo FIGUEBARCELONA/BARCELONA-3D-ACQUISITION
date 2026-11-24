@@ -1,0 +1,1 @@
+DM-12. Font: Institut Cartogràfic i Geològic de Catalunya, MDT LiDAR AMB 25 cm 2022, CC BY 4.0 https://creativecommons.org/licenses/by/4.0/. Les finestres eventualment presents són retalls de valors nadius sense resampling, no el COG complet. Dades i procedència a report.json. NO-GO.
