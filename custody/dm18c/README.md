@@ -1,0 +1,1 @@
+DM-18c. Font original: Meteocat, Generalitat de Catalunya, XEMA nzvn-apee; Idescat, Cens anual 2025. Atribució i URL a informes DM-17/18b. Sense imputació. Cap equivalència amb vigència física del sensor, padró ni flux de persones. NO-GO.
