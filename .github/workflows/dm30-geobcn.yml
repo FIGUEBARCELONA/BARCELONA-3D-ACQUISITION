@@ -1,0 +1,37 @@
+name: DM30 GeoBCN geometry acquisition
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm30-geobcn.yml']
+permissions:
+  contents: write
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python - <<'PY'
+          import urllib.request,json,hashlib,pathlib,collections,concurrent.futures
+          d=pathlib.Path('custody/dm30');d.mkdir(exist_ok=True)
+          def get(k):
+              u='https://geoportal.barcelona.cat/geoBCN/serveis/territori/'+k+'/?geometria=true&extensio=true'
+              try:
+                  with urllib.request.urlopen(u,timeout=40) as f:b=f.read(20000001)
+                  assert len(b)<=20000000
+                  j=json.loads(b);assert j['estat']=='OK'
+                  rr=j['resultats'];assert len(rr)==(73 if k=='barris' else 10)
+                  assert len({r['codi'] for r in rr})==len(rr)
+                  (d/(k+'_geometria.original.json')).write_bytes(b)
+                  return k,{'url':u,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b),'count':len(rr),'geometry_count':sum(bool(r.get('geometria')) for r in rr),'geometry_keys':list(rr[0].get('geometria',{})) if isinstance(rr[0].get('geometria'),dict) else None,'geometry_sample':str(rr[0].get('geometria'))[:700],'keys':list(rr[0]),'status':'INSPECTED'}
+              except Exception as e:return k,{'url':u,'status':'FAILED','error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:r=dict(ex.map(get,['barris','districtes']))
+          (d/'geobcn_report.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm30/
+          git commit -m 'DM30 acquire GeoBCN geometry responses'
+          git push origin HEAD:main
