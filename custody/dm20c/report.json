@@ -1,0 +1,1013 @@
+{
+  "transport": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "feeds": {
+        "ATM": {
+          "feed": "ATM",
+          "source": "custody/dm19b/ATM_NAP_mdb2832_20261117.zip",
+          "source_sha256": "af45496d45406ca8d3d123232b9f42f1c8dcf5757aef5c123c56ce8e556396d3",
+          "trips": 183366,
+          "stop_times": 3654541,
+          "calendar_service_ids": 10254,
+          "exceptions": 1142923,
+          "calendar_declared_extremes": [
+            "2018-01-01",
+            "2028-12-31"
+          ],
+          "effective_extremes": [
+            "2020-06-26",
+            "2028-12-31"
+          ],
+          "effective_service_days": 3111,
+          "exception_rows_by_year": {
+            "2021": 28246,
+            "2022": 124772,
+            "2023": 150698,
+            "2024": 187923,
+            "2025": 228627,
+            "2026": 349203,
+            "2027": 73454
+          },
+          "exception_dates_outside_2020_2035": [],
+          "active_date": "2026-11-24",
+          "active_services": 7160,
+          "active_trip_templates": 64034,
+          "active_frequency_templates": 2,
+          "frequency_rows": 4,
+          "frequency_exact_rows": 0,
+          "active_operator_templates": {
+            "Rodalies de Catalunya - Renfe Cercanías": 2473,
+            "TMB": 19752,
+            "Empresa Sagalés, SA": 2180,
+            "Teresa y José Plana, Empresa Plana, SL": 1431,
+            "Monbus i Julià": 1858,
+            "La Hispano Igualadina, SL": 1096,
+            "Marfina Bus, SA": 1162,
+            "DIREXIS TUSGSAL": 4389,
+            "La Hispano de Fuente en Segures, SA (HIFE)": 761,
+            "Avanza": 2494,
+            "Sagalés (Costa)": 232,
+            "Cintoi Bus, SL": 740,
+            "Hispano Hilarienca, SA": 91,
+            "Transportes Generales de Olesa, SA": 443,
+            "EMT": 1026,
+            "Transports Elèctrics Interurbans, SA -TEISA-": 1367,
+            "La Hispano Llacunense, SL": 219,
+            "Companyia del Ferrocarril d'Olot a Girona, SA": 64,
+            "Empresa Casas, SA": 1144,
+            "Soler i Sauret, SA": 547,
+            "Transports Urbans de Sabadell": 1190,
+            "Transports Municipals del Girones": 738,
+            "AUTOBUSOS DE LLEIDA": 1071,
+            "Moventis": 1599,
+            "TRAMBESÒS": 741,
+            "SA Alsina Graells de Auto Transportes": 834,
+            "FGC": 2027,
+            "SARBUS": 742,
+            "BusManresa": 428,
+            "Monbus (Horta)": 284,
+            "SARFA SL": 448,
+            "TCC": 144,
+            "Teisa Interurbans": 410,
+            "Figueres de Serveis, SA": 244,
+            "Empresa Lax SL": 49,
+            "Autocars Salvia SL": 20,
+            "17 Bages Bus, SAU": 550,
+            "Circuitos Ruri SLU": 187,
+            "Autocars del Penedès, SA": 216,
+            "La Vallesana, SA": 405,
+            "TRAMBAIX": 468,
+            "Soler i Sauret": 810,
+            "Monbus (Aerobús)": 704,
+            "Cingles Bus, SA": 422,
+            "Ferrocarriles y Transportes, SA": 575,
+            "Montferri Hermanos, SL": 193,
+            "Barcelona Bus, SL": 516,
+            "25 Osona Bus, SA": 618,
+            "Autocars Morell, SL": 39,
+            "SA Masats Transports Generals": 255,
+            "Transports Mir, SA": 61,
+            "HIFE - Hispano de Fuente en Segures, SA": 59,
+            "HIFE": 157,
+            "Autocorb, SA": 216,
+            "RENFE OPERADORA": 268,
+            "ALSINA GRAELLS": 322,
+            "REUS TRANSPORT": 243,
+            "Autocares Prat, SA": 24,
+            "Sagalés (Vallès Oriental)": 86,
+            "Empresa Sagalés, SA i Empresa Casas, SA": 53,
+            "Moventis (Port)": 192,
+            "Josep M. Rabasa Arajol": 4,
+            "Busgarvi, SL": 4,
+            "Autocares R. Font, SAU": 297,
+            "TEISA": 61,
+            "Bus Municipal Vandellós i l'Hosp. de l'Infant": 28,
+            "SARFA": 64,
+            "Cots Alsina, SL": 118,
+            "PERE CORTINA BOCHACA": 2,
+            "Autocares R. Font, SAU i Marfina Bus, SA": 56,
+            "Autocares Izaro": 11,
+            "Autocars Vendrell, SL": 25,
+            "DIREXIS TGO": 114,
+            "E. MONTFERRI HNOS., S.L.": 76,
+            "Moventis (Cerdanyola)": 186,
+            "Monbus (Papiol)": 53,
+            "Miguel Gamón, SL": 162,
+            "Transgran": 78,
+            "Sagalés (Bages)": 10,
+            "Autocars Agramunt, SL": 23,
+            "Autocares Barrera, SL": 26,
+            "Autocars del Penedès": 27,
+            "Josep Lladós Callís": 3,
+            "Estarriol Bus, SL": 25,
+            "Balliu SL": 5,
+            "Hispano Igualadina": 10,
+            "Transports Públics del Priorat i Doménech, SL": 72,
+            "Casimiro Porta Vilanova": 2,
+            "Autocars LLadós-Montaña, SL": 3,
+            "Autocars Aler, SL": 6,
+            "Autocares Ízaro, SA": 34,
+            "Eix-Bus, SA": 20,
+            "Estarriol Bus": 14,
+            "Serveis Turístics Delamoga, SL": 4,
+            "Joan Bellera Bellera": 7,
+            "Marcos López Perona": 2,
+            "David Roque García": 7,
+            "TPVP Transport públic de viatgers Puigcerdà": 3,
+            "Autocars Solé Seró, SL": 9,
+            "Autocars del Pla, SL": 9,
+            "Autocars Vilà Betriu, SL": 6,
+            "Sagalés (Osona)": 21,
+            "Autocars Martí Pi, SA (AMPSA)": 52,
+            "Víctor Rey Huguet": 5,
+            "Empresa Plana": 16,
+            "Jordi Cases Blasi": 6,
+            "Bus Castellví, SA": 25,
+            ".liO 66": 11,
+            "Entitat Pública Empresarial de Serveis i Obres - Nostreserveis": 8,
+            "Xavier Marco Agulló": 6,
+            "Autocars Mario, SL": 7,
+            "Francisco Baena Abril": 2,
+            "Josep Colom Prió": 11,
+            "Autocars Barrera, SL": 4,
+            "Autocares Julià, SL": 2,
+            "TPP Domènech Autocars": 2,
+            "Josep M. Llor Bringue": 6,
+            "Grup d'empreses: SA Alsina Graells AT, LHIFE": 4,
+            ".liO 31": 6,
+            "Mario Ferrer Garcia": 2,
+            "Lluís Obiols Capdevila": 4,
+            "Ampurdan Bus, SL": 11,
+            "MOTILAND, SL": 2,
+            "TRANSPORTES REGINA, SA": 2,
+            "Serveis Turístics Gabriel, SL": 12,
+            "Aurora Cadena Coma": 2,
+            "Lluís Betriu Sabata": 2,
+            "Sílvia Arbonés Cuadrat": 2,
+            "Laura Campi Giró": 4,
+            "Autocars Emili Coll, SL": 6,
+            "Joan Baldomà Noves": 2,
+            "Autocars Tarrés, SL": 2,
+            "Enric Sirvent Faus": 2,
+            "Manuel Julio Tersa Segarra": 3,
+            "Daniel Herencia Juárez": 2,
+            "Pilar de Matias Blazquez": 4,
+            "Ivan Porredón Antelo": 2,
+            "Benito Espuñes Vila": 2,
+            "Joaquim Puigdemasa Obiols": 2,
+            "Josep M. Llop Masip": 2,
+            "Cintoi Bus - Empresa Plana": 5,
+            "Ivan Pey Queró": 3,
+            "Sagalés (Mataró - St. Celoni)": 7,
+            "Joan Vernet Graell": 2,
+            "José Miguel Rodríguez de la Paz López": 2,
+            "Autocars Vidao, SL": 2,
+            "Luis Vidal Antolín": 2,
+            "Carlos Gómez Hinojosa": 2
+          },
+          "counts": {
+            "stop_times": 3654541,
+            "overnight_rows": 83188,
+            "missing_time_rows": 639042
+          },
+          "issues": {
+            "overlap_frequency": 0,
+            "duplicate_sequence": 0,
+            "trip_fewer_than_two_stops": 9,
+            "trips_without_stop_times": 30
+          },
+          "active_nodes": 19596,
+          "active_route_directed_edges": 43492,
+          "edge_template_occurrences": 1264662,
+          "active_operator_edges": {
+            "Hispano Igualadina": 28,
+            "ALSINA GRAELLS": 523,
+            "Monbus (Horta)": 35,
+            "Monbus (Aerobús)": 16,
+            "DIREXIS TUSGSAL": 3164,
+            "Avanza": 2207,
+            "Soler i Sauret": 715,
+            "Moventis": 626,
+            "Monbus i Julià": 939,
+            "Moventis (Port)": 125,
+            "Monbus (Papiol)": 29,
+            "DIREXIS TGO": 88,
+            "Moventis (Cerdanyola)": 176,
+            "HIFE": 319,
+            "RENFE OPERADORA": 259,
+            "Sagalés (Bages)": 20,
+            "Autocares Izaro": 47,
+            "HIFE - Hispano de Fuente en Segures, SA": 103,
+            "Sagalés (Mataró - St. Celoni)": 24,
+            "Sagalés (Costa)": 301,
+            "Empresa Plana": 18,
+            "Estarriol Bus": 52,
+            "FGC": 671,
+            "Figueres de Serveis, SA": 104,
+            "Autocars Barrera, SL": 9,
+            "Sagalés (Vallès Oriental)": 117,
+            "Autocares Julià, SL": 2,
+            "Autocars Martí Pi, SA (AMPSA)": 70,
+            "17 Bages Bus, SAU": 658,
+            "La Hispano Igualadina, SL": 1334,
+            "Teresa y José Plana, Empresa Plana, SL": 2470,
+            "La Hispano de Fuente en Segures, SA (HIFE)": 659,
+            "Empresa Sagalés, SA": 2220,
+            "Barcelona Bus, SL": 626,
+            "SA Alsina Graells de Auto Transportes": 1892,
+            "SARFA SL": 842,
+            "Autocars Vendrell, SL": 76,
+            "Autocares R. Font, SAU": 181,
+            "Estarriol Bus, SL": 69,
+            "Montferri Hermanos, SL": 193,
+            "Miguel Gamón, SL": 145,
+            "Transports Elèctrics Interurbans, SA -TEISA-": 876,
+            "Hispano Hilarienca, SA": 117,
+            "Cingles Bus, SA": 440,
+            "Companyia del Ferrocarril d'Olot a Girona, SA": 48,
+            "La Vallesana, SA": 336,
+            "Transports Públics del Priorat i Doménech, SL": 64,
+            "Transportes Generales de Olesa, SA": 683,
+            "Autocars del Penedès, SA": 474,
+            "Empresa Lax SL": 75,
+            "Cots Alsina, SL": 358,
+            "Marfina Bus, SA": 947,
+            "David Roque García": 18,
+            "Josep Colom Prió": 44,
+            "Bus Castellví, SA": 86,
+            "Autocars Agramunt, SL": 52,
+            "La Hispano Llacunense, SL": 235,
+            "Autocars LLadós-Montaña, SL": 8,
+            "Autocars Mario, SL": 18,
+            "Víctor Rey Huguet": 14,
+            "Serveis Turístics Gabriel, SL": 40,
+            "Casimiro Porta Vilanova": 2,
+            "Autocars Vilà Betriu, SL": 32,
+            "MOTILAND, SL": 6,
+            "Marcos López Perona": 4,
+            "Serveis Turístics Delamoga, SL": 15,
+            "Joaquim Puigdemasa Obiols": 8,
+            "Mario Ferrer Garcia": 6,
+            "Benito Espuñes Vila": 8,
+            "Autocars Aler, SL": 24,
+            "Josep M. Llop Masip": 6,
+            "Autocars Vidao, SL": 6,
+            "Daniel Herencia Juárez": 8,
+            "Josep M. Llor Bringue": 22,
+            "Jordi Cases Blasi": 12,
+            "Empresa Casas, SA": 555,
+            "Lluís Betriu Sabata": 16,
+            "José Miguel Rodríguez de la Paz López": 8,
+            "Francisco Baena Abril": 12,
+            "Joan Bellera Bellera": 16,
+            "Autocars Tarrés, SL": 16,
+            "SA Masats Transports Generals": 324,
+            "Josep M. Rabasa Arajol": 12,
+            "Transports Mir, SA": 132,
+            "Circuitos Ruri SLU": 74,
+            "Autocars Emili Coll, SL": 10,
+            "TRANSPORTES REGINA, SA": 2,
+            "Sílvia Arbonés Cuadrat": 6,
+            "Carlos Gómez Hinojosa": 2,
+            "25 Osona Bus, SA": 642,
+            "Autocars del Pla, SL": 49,
+            "Aurora Cadena Coma": 10,
+            "Enric Sirvent Faus": 8,
+            "Autocorb, SA": 274,
+            "Eix-Bus, SA": 14,
+            "Ferrocarriles y Transportes, SA": 1097,
+            "Autocars Morell, SL": 49,
+            "Ivan Porredón Antelo": 20,
+            "Joan Vernet Graell": 18,
+            "Joan Baldomà Noves": 2,
+            "Soler i Sauret, SA": 1263,
+            "Lluís Obiols Capdevila": 44,
+            "Cintoi Bus, SL": 362,
+            "Laura Campi Giró": 20,
+            "Autocars Salvia SL": 38,
+            "Autocares Ízaro, SA": 143,
+            "Empresa Sagalés, SA i Empresa Casas, SA": 34,
+            "Luis Vidal Antolín": 3,
+            "Manuel Julio Tersa Segarra": 3,
+            "Autocars Solé Seró, SL": 32,
+            "Pilar de Matias Blazquez": 10,
+            "Xavier Marco Agulló": 18,
+            "Ivan Pey Queró": 18,
+            "Josep Lladós Callís": 6,
+            "Autocares R. Font, SAU i Marfina Bus, SA": 98,
+            "Cintoi Bus - Empresa Plana": 22,
+            "Autocares Prat, SA": 19,
+            "Grup d'empreses: SA Alsina Graells AT, LHIFE": 28,
+            "Ampurdan Bus, SL": 48,
+            "PERE CORTINA BOCHACA": 2,
+            "Transports Municipals del Girones": 314,
+            "Transgran": 74,
+            ".liO 31": 45,
+            ".liO 66": 68,
+            "AUTOBUSOS DE LLEIDA": 411,
+            "Balliu SL": 24,
+            "BusManresa": 167,
+            "Entitat Pública Empresarial de Serveis i Obres - Nostreserveis": 58,
+            "TPP Domènech Autocars": 8,
+            "Sagalés (Osona)": 45,
+            "E. MONTFERRI HNOS., S.L.": 339,
+            "TPVP Transport públic de viatgers Puigcerdà": 11,
+            "Rodalies de Catalunya - Renfe Cercanías": 469,
+            "REUS TRANSPORT": 393,
+            "TEISA": 27,
+            "SARFA": 272,
+            "SARBUS": 554,
+            "Busgarvi, SL": 28,
+            "EMT": 704,
+            "TRAMBESÒS": 70,
+            "TRAMBAIX": 130,
+            "TCC": 88,
+            "Teisa Interurbans": 424,
+            "TMB": 4831,
+            "Autocares Barrera, SL": 114,
+            "Transports Urbans de Sabadell": 894,
+            "Autocars del Penedès": 70,
+            "Bus Municipal Vandellós i l'Hosp. de l'Infant": 37
+          },
+          "active_operator_nodes": {
+            "Hispano Igualadina": 25,
+            "ALSINA GRAELLS": 243,
+            "Monbus (Horta)": 36,
+            "Monbus (Aerobús)": 12,
+            "DIREXIS TUSGSAL": 1638,
+            "Avanza": 900,
+            "Soler i Sauret": 535,
+            "Moventis": 425,
+            "Monbus i Julià": 553,
+            "Moventis (Port)": 79,
+            "Monbus (Papiol)": 29,
+            "DIREXIS TGO": 62,
+            "Moventis (Cerdanyola)": 112,
+            "HIFE": 194,
+            "RENFE OPERADORA": 88,
+            "Sagalés (Bages)": 21,
+            "Autocares Izaro": 35,
+            "HIFE - Hispano de Fuente en Segures, SA": 90,
+            "Sagalés (Mataró - St. Celoni)": 22,
+            "Sagalés (Costa)": 210,
+            "Empresa Plana": 17,
+            "Estarriol Bus": 21,
+            "FGC": 188,
+            "Figueres de Serveis, SA": 85,
+            "Autocars Barrera, SL": 6,
+            "Sagalés (Vallès Oriental)": 103,
+            "Autocares Julià, SL": 2,
+            "Autocars Martí Pi, SA (AMPSA)": 28,
+            "17 Bages Bus, SAU": 295,
+            "La Hispano Igualadina, SL": 583,
+            "Teresa y José Plana, Empresa Plana, SL": 960,
+            "La Hispano de Fuente en Segures, SA (HIFE)": 282,
+            "Empresa Sagalés, SA": 1078,
+            "Barcelona Bus, SL": 276,
+            "SA Alsina Graells de Auto Transportes": 853,
+            "SARFA SL": 379,
+            "Autocars Vendrell, SL": 38,
+            "Autocares R. Font, SAU": 111,
+            "Estarriol Bus, SL": 34,
+            "Montferri Hermanos, SL": 116,
+            "Miguel Gamón, SL": 105,
+            "Transports Elèctrics Interurbans, SA -TEISA-": 378,
+            "Hispano Hilarienca, SA": 57,
+            "Cingles Bus, SA": 259,
+            "Companyia del Ferrocarril d'Olot a Girona, SA": 22,
+            "La Vallesana, SA": 208,
+            "Transports Públics del Priorat i Doménech, SL": 33,
+            "Transportes Generales de Olesa, SA": 344,
+            "Autocars del Penedès, SA": 211,
+            "Empresa Lax SL": 37,
+            "Cots Alsina, SL": 139,
+            "Marfina Bus, SA": 517,
+            "David Roque García": 13,
+            "Josep Colom Prió": 21,
+            "Bus Castellví, SA": 41,
+            "Autocars Agramunt, SL": 40,
+            "La Hispano Llacunense, SL": 113,
+            "Autocars LLadós-Montaña, SL": 5,
+            "Autocars Mario, SL": 15,
+            "Víctor Rey Huguet": 7,
+            "Serveis Turístics Gabriel, SL": 25,
+            "Casimiro Porta Vilanova": 2,
+            "Autocars Vilà Betriu, SL": 14,
+            "MOTILAND, SL": 5,
+            "Marcos López Perona": 3,
+            "Serveis Turístics Delamoga, SL": 10,
+            "Joaquim Puigdemasa Obiols": 5,
+            "Mario Ferrer Garcia": 4,
+            "Benito Espuñes Vila": 6,
+            "Autocars Aler, SL": 22,
+            "Josep M. Llop Masip": 4,
+            "Autocars Vidao, SL": 7,
+            "Daniel Herencia Juárez": 5,
+            "Josep M. Llor Bringue": 13,
+            "Jordi Cases Blasi": 7,
+            "Empresa Casas, SA": 346,
+            "Lluís Betriu Sabata": 10,
+            "José Miguel Rodríguez de la Paz López": 6,
+            "Francisco Baena Abril": 8,
+            "Joan Bellera Bellera": 7,
+            "Autocars Tarrés, SL": 17,
+            "SA Masats Transports Generals": 181,
+            "Josep M. Rabasa Arajol": 7,
+            "Transports Mir, SA": 58,
+            "Circuitos Ruri SLU": 52,
+            "Autocars Emili Coll, SL": 9,
+            "TRANSPORTES REGINA, SA": 2,
+            "Sílvia Arbonés Cuadrat": 4,
+            "Carlos Gómez Hinojosa": 2,
+            "25 Osona Bus, SA": 297,
+            "Autocars del Pla, SL": 36,
+            "Aurora Cadena Coma": 6,
+            "Enric Sirvent Faus": 5,
+            "Autocorb, SA": 136,
+            "Eix-Bus, SA": 8,
+            "Ferrocarriles y Transportes, SA": 391,
+            "Autocars Morell, SL": 39,
+            "Ivan Porredón Antelo": 11,
+            "Joan Vernet Graell": 10,
+            "Joan Baldomà Noves": 2,
+            "Soler i Sauret, SA": 375,
+            "Lluís Obiols Capdevila": 24,
+            "Cintoi Bus, SL": 142,
+            "Laura Campi Giró": 12,
+            "Autocars Salvia SL": 23,
+            "Autocares Ízaro, SA": 86,
+            "Empresa Sagalés, SA i Empresa Casas, SA": 25,
+            "Luis Vidal Antolín": 4,
+            "Manuel Julio Tersa Segarra": 4,
+            "Autocars Solé Seró, SL": 21,
+            "Pilar de Matias Blazquez": 5,
+            "Xavier Marco Agulló": 11,
+            "Ivan Pey Queró": 12,
+            "Josep Lladós Callís": 5,
+            "Autocares R. Font, SAU i Marfina Bus, SA": 94,
+            "Cintoi Bus - Empresa Plana": 17,
+            "Autocares Prat, SA": 18,
+            "Grup d'empreses: SA Alsina Graells AT, LHIFE": 15,
+            "Ampurdan Bus, SL": 18,
+            "PERE CORTINA BOCHACA": 4,
+            "Transports Municipals del Girones": 250,
+            "Transgran": 69,
+            ".liO 31": 42,
+            ".liO 66": 49,
+            "AUTOBUSOS DE LLEIDA": 249,
+            "Balliu SL": 13,
+            "BusManresa": 111,
+            "Entitat Pública Empresarial de Serveis i Obres - Nostreserveis": 37,
+            "TPP Domènech Autocars": 5,
+            "Sagalés (Osona)": 43,
+            "E. MONTFERRI HNOS., S.L.": 59,
+            "TPVP Transport públic de viatgers Puigcerdà": 12,
+            "Rodalies de Catalunya - Renfe Cercanías": 158,
+            "REUS TRANSPORT": 174,
+            "TEISA": 27,
+            "SARFA": 164,
+            "SARBUS": 288,
+            "Busgarvi, SL": 10,
+            "EMT": 406,
+            "TRAMBESÒS": 56,
+            "TRAMBAIX": 56,
+            "TCC": 90,
+            "Teisa Interurbans": 334,
+            "TMB": 2689,
+            "Autocares Barrera, SL": 39,
+            "Transports Urbans de Sabadell": 396,
+            "Autocars del Penedès": 63,
+            "Bus Municipal Vandellós i l'Hosp. de l'Infant": 18
+          },
+          "distinct_route_patterns": 5257,
+          "graph": {
+            "path": "custody/dm20c/atm_active_20261124_edges.csv.gz",
+            "sha256": "05d8e32d609533775400e0ccc2d334eb7d384fcea0ae671939eba59219d28942",
+            "raw_sha256": "8430dec7cc7b8905711e2309f59e677c59504b3dafe11e79fcf962b64bd4cc31",
+            "rows": 43492
+          },
+          "frequency_expanded": false
+        },
+        "FGC": {
+          "feed": "FGC",
+          "source": "custody/dm18/FGC_GTFS.zip",
+          "source_sha256": "b0e681ec58695e546a7adece0140d53fb75f2fa3277a6d3f878f33d06e9b3378",
+          "trips": 12836,
+          "stop_times": 150484,
+          "calendar_service_ids": 0,
+          "exceptions": 201,
+          "calendar_declared_extremes": [
+            "2026-11-21",
+            "2026-12-31"
+          ],
+          "effective_extremes": [
+            "2026-11-22",
+            "2026-12-31"
+          ],
+          "effective_service_days": 40,
+          "exception_rows_by_year": {
+            "2026": 201
+          },
+          "exception_dates_outside_2020_2035": [],
+          "active_date": "2026-11-24",
+          "active_services": 5,
+          "active_trip_templates": 2027,
+          "active_frequency_templates": 0,
+          "frequency_rows": 0,
+          "frequency_exact_rows": 0,
+          "active_operator_templates": {
+            "FGC": 2027
+          },
+          "counts": {
+            "stop_times": 150484,
+            "overnight_rows": 3900
+          },
+          "issues": {
+            "duplicate_sequence": 0,
+            "trips_without_stop_times": 0
+          },
+          "active_nodes": 188,
+          "active_route_directed_edges": 671,
+          "edge_template_occurrences": 22030,
+          "active_operator_edges": {
+            "FGC": 671
+          },
+          "active_operator_nodes": {
+            "FGC": 188
+          },
+          "distinct_route_patterns": 132,
+          "graph": null,
+          "frequency_expanded": false
+        },
+        "TBX": {
+          "feed": "TBX",
+          "source": "custody/dm19/TRAM_TBX.zip",
+          "source_sha256": "953f3f775ce39643c6b1c26361e2c396b03ca610d13f5459139179a91aaa294e",
+          "trips": 2060,
+          "stop_times": 44828,
+          "calendar_service_ids": 0,
+          "exceptions": 31,
+          "calendar_declared_extremes": [
+            "2026-11-24",
+            "2026-12-24"
+          ],
+          "effective_extremes": [
+            "2026-11-24",
+            "2026-12-24"
+          ],
+          "effective_service_days": 31,
+          "exception_rows_by_year": {
+            "2026": 31
+          },
+          "exception_dates_outside_2020_2035": [],
+          "active_date": "2026-11-24",
+          "active_services": 1,
+          "active_trip_templates": 468,
+          "active_frequency_templates": 0,
+          "frequency_rows": 0,
+          "frequency_exact_rows": 0,
+          "active_operator_templates": {
+            "TRAMBAIX": 468
+          },
+          "counts": {
+            "stop_times": 44828,
+            "overnight_rows": 1427
+          },
+          "issues": {
+            "duplicate_sequence": 0,
+            "trips_without_stop_times": 0
+          },
+          "active_nodes": 56,
+          "active_route_directed_edges": 130,
+          "edge_template_occurrences": 9668,
+          "active_operator_edges": {
+            "TRAMBAIX": 130
+          },
+          "active_operator_nodes": {
+            "TRAMBAIX": 56
+          },
+          "distinct_route_patterns": 12,
+          "graph": null,
+          "frequency_expanded": false
+        },
+        "TBS": {
+          "feed": "TBS",
+          "source": "custody/dm19/TRAM_TBS.zip",
+          "source_sha256": "856e3b9ac8eb31bf3fa76299c12a515f8ae40469b4208491bf4ecfd25b80c405",
+          "trips": 3169,
+          "stop_times": 30231,
+          "calendar_service_ids": 0,
+          "exceptions": 31,
+          "calendar_declared_extremes": [
+            "2026-11-24",
+            "2026-12-24"
+          ],
+          "effective_extremes": [
+            "2026-11-24",
+            "2026-12-24"
+          ],
+          "effective_service_days": 31,
+          "exception_rows_by_year": {
+            "2026": 31
+          },
+          "exception_dates_outside_2020_2035": [],
+          "active_date": "2026-11-24",
+          "active_services": 1,
+          "active_trip_templates": 741,
+          "active_frequency_templates": 0,
+          "frequency_rows": 0,
+          "frequency_exact_rows": 0,
+          "active_operator_templates": {
+            "TRAMBESÒS": 741
+          },
+          "counts": {
+            "stop_times": 30231,
+            "overnight_rows": 812
+          },
+          "issues": {
+            "duplicate_sequence": 0,
+            "trips_without_stop_times": 0
+          },
+          "active_nodes": 56,
+          "active_route_directed_edges": 70,
+          "edge_template_occurrences": 6262,
+          "active_operator_edges": {
+            "TRAMBESÒS": 70
+          },
+          "active_operator_nodes": {
+            "TRAMBESÒS": 56
+          },
+          "distinct_route_patterns": 10,
+          "graph": null,
+          "frequency_expanded": false
+        }
+      },
+      "reconciliation": {
+        "FGC": {
+          "route_label_candidates": [
+            {
+              "operator": "FGC",
+              "route_short_name": "L6",
+              "standalone_ids": [
+                "L6"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_L6"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "L7",
+              "standalone_ids": [
+                "L7"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_L7"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "L8",
+              "standalone_ids": [
+                "L8"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_L8"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "R5",
+              "standalone_ids": [
+                "R5"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_R5"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "R6",
+              "standalone_ids": [
+                "R6"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_R6"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "S1",
+              "standalone_ids": [
+                "S1"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_S1"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "S2",
+              "standalone_ids": [
+                "S2"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_S2"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "S3",
+              "standalone_ids": [
+                "S3"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_S3"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "S4",
+              "standalone_ids": [
+                "S4"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_S4"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "S8",
+              "standalone_ids": [
+                "S8"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_S8"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "R60",
+              "standalone_ids": [
+                "R60"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_R60"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "R50",
+              "standalone_ids": [
+                "R50"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_R50"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "L12",
+              "standalone_ids": [
+                "L12"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_L12"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "S9",
+              "standalone_ids": [
+                "S9"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_S9"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "MM",
+              "standalone_ids": [
+                "MM"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_MM"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "FV",
+              "standalone_ids": [
+                "FV"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_FV"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "R63",
+              "standalone_ids": [
+                "R63"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_R63"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "R53",
+              "standalone_ids": [
+                "R53"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_R53"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "RL1",
+              "standalone_ids": [
+                "RL1"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_RL1"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "RL2",
+              "standalone_ids": [
+                "RL2"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_RL2"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "L1",
+              "standalone_ids": [
+                "L1"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_L1"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "FGC",
+              "route_short_name": "BusBV",
+              "standalone_ids": [
+                "BusBV"
+              ],
+              "ATM_candidate_ids": [
+                "FGC_BusBV"
+              ],
+              "identity_verified": false
+            }
+          ],
+          "unmatched_route_labels": [],
+          "shared_raw_stop_ids": 0,
+          "shared_raw_stop_ids_exact_coordinate_strings": 0,
+          "merged_stops": 0,
+          "added_standalone_trips": 0,
+          "policy": "ATM only for diagnostic active graph; direct feed separate snapshot; no label-based merge"
+        },
+        "TBX": {
+          "route_label_candidates": [
+            {
+              "operator": "TRAMBAIX",
+              "route_short_name": "T1",
+              "standalone_ids": [
+                "1"
+              ],
+              "ATM_candidate_ids": [
+                "TBX_1"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "TRAMBAIX",
+              "route_short_name": "T2",
+              "standalone_ids": [
+                "2"
+              ],
+              "ATM_candidate_ids": [
+                "TBX_2"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "TRAMBAIX",
+              "route_short_name": "T3",
+              "standalone_ids": [
+                "3"
+              ],
+              "ATM_candidate_ids": [
+                "TBX_3"
+              ],
+              "identity_verified": false
+            }
+          ],
+          "unmatched_route_labels": [],
+          "shared_raw_stop_ids": 0,
+          "shared_raw_stop_ids_exact_coordinate_strings": 0,
+          "merged_stops": 0,
+          "added_standalone_trips": 0,
+          "policy": "ATM only for diagnostic active graph; direct feed separate snapshot; no label-based merge"
+        },
+        "TBS": {
+          "route_label_candidates": [
+            {
+              "operator": "TRAMBESÒS",
+              "route_short_name": "T4",
+              "standalone_ids": [
+                "4"
+              ],
+              "ATM_candidate_ids": [
+                "TBS_4"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "TRAMBESÒS",
+              "route_short_name": "T5",
+              "standalone_ids": [
+                "5"
+              ],
+              "ATM_candidate_ids": [
+                "TBS_5"
+              ],
+              "identity_verified": false
+            },
+            {
+              "operator": "TRAMBESÒS",
+              "route_short_name": "T6",
+              "standalone_ids": [
+                "6"
+              ],
+              "ATM_candidate_ids": [
+                "TBS_6"
+              ],
+              "identity_verified": false
+            }
+          ],
+          "unmatched_route_labels": [],
+          "shared_raw_stop_ids": 0,
+          "shared_raw_stop_ids_exact_coordinate_strings": 0,
+          "merged_stops": 0,
+          "added_standalone_trips": 0,
+          "policy": "ATM only for diagnostic active graph; direct feed separate snapshot; no label-based merge"
+        }
+      },
+      "canonical_choice": "diagnostic ATM snapshot only, not approved production source",
+      "double_counted_standalone_trips": 0,
+      "actual_traffic_verified": false
+    }
+  },
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO"
+}
