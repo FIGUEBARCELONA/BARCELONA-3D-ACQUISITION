@@ -1,0 +1,29 @@
+{
+  "ftp": {
+    "host": "ftp.icgc.cat",
+    "login": "anonymous only",
+    "retrieved_bytes": 0,
+    "dns": [
+      "84.88.72.39"
+    ],
+    "error": "timed out"
+  },
+  "https": [
+    {
+      "url": "https://ftp.icgc.cat/descarregues/",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://ftp.icgc.cat/descarregues/CatLCNet/",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://datacloud.ide.cat/",
+      "error": "<urlopen error timed out>"
+    }
+  ],
+  "native_cells_recovered": 0,
+  "email_submitted": false,
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO"
+}
