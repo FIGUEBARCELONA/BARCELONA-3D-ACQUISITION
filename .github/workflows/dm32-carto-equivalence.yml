@@ -1,0 +1,74 @@
+name: DM32 CartoBCN equivalence
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm32-carto-equivalence.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/dm32deps" shapely pyshp pyproj
+      - name: Compare original distributions without geometry repair
+        run: |
+          PYTHONPATH="$RUNNER_TEMP/dm32deps" python - <<'PY'
+          import pathlib,zipfile,io,hashlib,json,collections,xml.etree.ElementTree as E,math
+          import shapefile
+          from shapely.geometry import shape
+          from shapely.ops import unary_union,transform
+          from pyproj import CRS,Transformer
+          d=pathlib.Path('custody/dm31');o=pathlib.Path('custody/dm32');o.mkdir(exist_ok=True)
+          report={'sources':{},'layers':{},'kmz':{},'json_schema':{},'repairs':0,'canonical_approved':False}
+          expected={'gis_2':'9002d5806bd6f8689865cb61ebbaf9d9849f45b9c34fde9e4eaebfa473a4f61f','gis_40':'72c3164b6c7f80a43bed3a187793b06a2abe136163e5a028289556d857d4ca19','gis_41':'96fd6b591e17e537bdaf3dc97bbfd9c1aef1bedcbbe871942cbd2c7f8746e96a'}
+          zz={}
+          for k,h in expected.items():
+              p=d/(k+'.original.zip');b=p.read_bytes();assert hashlib.sha256(b).hexdigest()==h
+              z=zipfile.ZipFile(io.BytesIO(b));assert z.testzip() is None;zz[k]=z
+              report['sources'][k]={'sha256':h,'members':len(z.namelist())}
+          z=zz['gis_2']; layers={}
+          for key,fragment in [('barris','_Barris_'),('districtes','_Districtes_'),('municipi','_TermeMunicipal_')]:
+              name=next(n for n in z.namelist() if fragment in n and n.endswith('.shp'));base=name[:-4]
+              crs=CRS.from_wkt(z.read(base+'.prj').decode());assert crs.to_epsg()==25831,crs.to_string()
+              r=shapefile.Reader(shp=io.BytesIO(z.read(name)),shx=io.BytesIO(z.read(base+'.shx')),dbf=io.BytesIO(z.read(base+'.dbf')),encoding='cp1252')
+              rr=[(x.record.as_dict(),shape(x.shape.__geo_interface__)) for x in r.iterShapeRecords()];layers[key]=rr
+              m={'count':len(rr),'fields':[f[0] for f in r.fields[1:]],'first_attributes':rr[0][0],'crs':crs.to_epsg(),'invalid':[a for a,g in rr if not g.is_valid],'empty':sum(g.is_empty for a,g in rr)}
+              if not m['invalid']:
+                  u=unary_union([g for a,g in rr]);m.update({'union_area_m2':u.area,'union_type':u.geom_type,'pair_overlap_count':0,'pair_overlap_sum_m2':0})
+                  for i,(_,g) in enumerate(rr):
+                      for _,h in rr[i+1:]:
+                          v=g.intersection(h).area
+                          if v>0:m['pair_overlap_count']+=1;m['pair_overlap_sum_m2']+=v
+              report['layers'][key]=m
+          if not any(v['invalid'] for v in report['layers'].values()):
+              unions={k:unary_union([g for a,g in rr]) for k,rr in layers.items()}
+              report['shp_cross']={k:{'outside_municipi_m2':u.difference(unions['municipi']).area,'municipi_outside_m2':unions['municipi'].difference(u).area} for k,u in unions.items() if k!='municipi'}
+              report['shp_barris_districtes_symdiff_m2']=unions['barris'].symmetric_difference(unions['districtes']).area
+              for key in ('barris','districtes'):
+                  p=pathlib.Path('custody/dm30')/(key+'_geometria.original.json')
+                  rr=json.loads(p.read_bytes())['resultats'];u=unary_union([shape(a['geometria']) for a in rr])
+                  report['layers'][key]['geobcn_union_symdiff_m2']=u.symmetric_difference(unions[key]).area
+          for n in zz['gis_41'].namelist():
+              j=json.loads(zz['gis_41'].read(n));m={'type':type(j).__name__,'length':len(j)}
+              if isinstance(j,dict):
+                  m['keys']=list(j);m['samples']={k:{'type':type(v).__name__,'length':len(v) if isinstance(v,(list,dict,str)) else None,'first':str(v[0])[:800] if isinstance(v,list) and v else str(v)[:800]} for k,v in j.items()}
+              elif isinstance(j,list):m['sample']=str(j[0])[:1500] if j else None
+              report['json_schema'][n]=m
+          for n in zz['gis_40'].namelist():
+              with zipfile.ZipFile(io.BytesIO(zz['gis_40'].read(n))) as k:
+                  assert k.testzip() is None
+                  kn=next(t for t in k.namelist() if t.endswith('.kml'));root=E.fromstring(k.read(kn))
+                  local=lambda t:t.tag.split('}')[-1]
+                  pm=[t for t in root.iter() if local(t)=='Placemark'];polys=[t for t in root.iter() if local(t)=='Polygon']
+                  report['kmz'][n]={'placemarks':len(pm),'polygons':len(polys),'first_name':next((t.text for t in pm[0] if local(t)=='name'),None) if pm else None,'first_extended_data':str([(local(t),t.attrib,t.text) for t in pm[0].iter() if local(t) in ('SimpleData','Data','value')])[:800] if pm else None}
+          (o/'carto_equivalence.json').write_text(json.dumps(report,ensure_ascii=False,indent=2,default=str)+'\n')
+          PY
+      - name: Persist result
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm32/carto_equivalence.json
+          git commit -m 'DM32 compare original GIS distributions and GeoBCN topology'
+          git push origin HEAD:main
