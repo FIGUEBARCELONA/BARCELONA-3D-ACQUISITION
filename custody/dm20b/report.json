@@ -1,0 +1,1142 @@
+{
+  "url": "https://dades.ajuntament.barcelona.cat/informe-padro-estrangers/ca/seccio_3.html",
+  "status": "INSPECTED_NOT_VALIDATED",
+  "http": 200,
+  "bytes": 38526142,
+  "sha256": "adc71916e37db748937e4bba20f8a05207f2a149180dc72f9e49cbb4887c5f01",
+  "content_type": "text/html; charset=UTF-8",
+  "iframed_sources": [
+    {
+      "role": "img",
+      "src": "data:text/html,%3C%21DOCTYPE%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%3Cmeta%20charset%3D%22utf%2D8%22%20%2F%3E%0A%3Ctitle%3Eleaflet%3C%2Ftitle%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%40layer%20htmltools%20%7B%0A%2Ehtml%2Dfill%2Dcontainer%20%7B%0Adisplay%3A%20flex%3B%0Aflex%2Ddirection%3A%20column%3B%0A%0Amin%2Dheight%3A%200%3B%0Amin%2Dwidth%3A%200%3B%0A%7D%0A%2Ehtml%2Dfill%2Dcontainer%20%3E%20%2",
+      "width": "95%",
+      "height": "500px",
+      "referrerpolicy": "strict-origin-when-cross-origin",
+      "style": "border:none;"
+    }
+  ],
+  "links": [
+    "seccio_pdf.html",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/roi2prboyq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/7dcf78e6-8444-401d-a744-257ffc0e1a9b",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/aer5n1orli",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/roi2prboyq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/7dcf78e6-8444-401d-a744-257ffc0e1a9b",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/aer5n1orli",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/roi2prboyq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/7dcf78e6-8444-401d-a744-257ffc0e1a9b",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/aer5n1orli",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/roi2prboyq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/7dcf78e6-8444-401d-a744-257ffc0e1a9b",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/aer5n1orli",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/roi2prboyq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/7dcf78e6-8444-401d-a744-257ffc0e1a9b",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/aer5n1orli",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/roi2prboyq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/7dcf78e6-8444-401d-a744-257ffc0e1a9b",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/aer5n1orli",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/roi2prboyq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/7dcf78e6-8444-401d-a744-257ffc0e1a9b",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/aer5n1orli",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/h3irlv4frs",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/4f9dbc34-4753-4bb8-b5a6-eece9db4ea71",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/3ku2kmhqsq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/wdyn39jvyq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/h3irlv4frs",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/4f9dbc34-4753-4bb8-b5a6-eece9db4ea71",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/3ku2kmhqsq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/wdyn39jvyq",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/h21smykss5",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/gw83w1yjbl",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/4f9dbc34-4753-4bb8-b5a6-eece9db4ea71",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/eebb0930-54a5-4139-b222-ad11e9cc707b",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/vylvc1ousv",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/vylvc1ousv",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/vylvc1ousv",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/vylvc1ousv",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/vylvc1ousv",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/vylvc1ousv",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/vylvc1ousv",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/6tumql4vqa",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/y460gkkfou",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/x0nthwcz0b",
+    "https://portaldades.ajuntament.barcelona.cat/ca/microdades/5ba2b94e-1bf8-41e6-9b04-2d706659305f",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/h21smykss5",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/nl93s2aon7",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/5xcrmwjp8p",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/nl93s2aon7",
+    "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/5xcrmwjp8p"
+  ],
+  "scripts": [
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-e951f53d7c6458fd2e04"
+      },
+      "size": 26209,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-c1929fef3cfee06522ff"
+      },
+      "size": 18592,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-14da5af00b89d28e5cbc"
+      },
+      "size": 11015,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-0c2785f2e2863dea0842"
+      },
+      "size": 1154911,
+      "contains_neighborhood": true,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-c43e20e9167c2048b78e"
+      },
+      "size": 1157347,
+      "contains_neighborhood": true,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-0a5d27751e583b7f7350"
+      },
+      "size": 1156873,
+      "contains_neighborhood": true,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-2447963b0a5a06804b6f"
+      },
+      "size": 1158884,
+      "contains_neighborhood": true,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-07a54687faba68513025"
+      },
+      "size": 1156538,
+      "contains_neighborhood": true,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-c1412ad33a838defc7ad"
+      },
+      "size": 17601,
+      "contains_neighborhood": true,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-f22c7f5ed7764abf7cbe"
+      },
+      "size": 4456,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-b7cd7aa0082556aa2ef5"
+      },
+      "size": 4454,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-8a21e785eea255820105"
+      },
+      "size": 4461,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-8fa0c0cc4852799202d8"
+      },
+      "size": 4465,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-154ced3e1c7aa3501666"
+      },
+      "size": 4467,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {},
+      "size": 950,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-125815cb0dff1100eefd"
+      },
+      "size": 30581,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-b4763f748c6e78c4d99f"
+      },
+      "size": 3837,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-35630a4ecd890ca424ea"
+      },
+      "size": 151863,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-2735c6b5ff3915cab795"
+      },
+      "size": 23409,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-959bf20f553daa0f3156"
+      },
+      "size": 6887,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-4070a3c985750ef6fbe8"
+      },
+      "size": 12521,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-67b118b9182faa4bb4b0"
+      },
+      "size": 11278,
+      "contains_neighborhood": true,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-69463b685e0a43165ad0"
+      },
+      "size": 906565,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-d25dab47032d24e395a7"
+      },
+      "size": 906654,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-d90986b8ab951d9840de"
+      },
+      "size": 906670,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-3bfb42a5610f4ff2a9a8"
+      },
+      "size": 906567,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-2209299cf810f7f15925"
+      },
+      "size": 867316,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-07fc7478689854776690"
+      },
+      "size": 7732,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-e79a93e6eefd52917110"
+      },
+      "size": 7736,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-e6dba8756d3b9b08cf84"
+      },
+      "size": 7742,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-a8b3485adfccbfd43470"
+      },
+      "size": 7731,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-271086548fbf7e3c3fd7"
+      },
+      "size": 7331,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {},
+      "size": 950,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-0e7ef5cb543b3f67838e"
+      },
+      "size": 1359,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-02fde73917c01b6090cc"
+      },
+      "size": 3716,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-02e5b50fa2ba88743444"
+      },
+      "size": 3910,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-6ebffb50338db5d422f0"
+      },
+      "size": 3871,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-19bc80d9281e3692e514"
+      },
+      "size": 3878,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-fdc685dd04ee8053852f"
+      },
+      "size": 3858,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-6daf359ee46c4141a7a3"
+      },
+      "size": 3871,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-e67d112c2f0be93727f8"
+      },
+      "size": 3853,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-cce012937207389dae40"
+      },
+      "size": 3865,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-0d3c70238115e3294ef4"
+      },
+      "size": 3869,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-6fc757379ed74bc4c0cf"
+      },
+      "size": 3863,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-a1f9c00beacd5f2ef5eb"
+      },
+      "size": 3876,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {},
+      "size": 950,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-d231d04382fb786f4874"
+      },
+      "size": 1164154,
+      "contains_neighborhood": true,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-9f51154338183a297f47"
+      },
+      "size": 906363,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-0ab42f59948eda18158f"
+      },
+      "size": 906289,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-9860a8c3c9043fabf8c5"
+      },
+      "size": 905986,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-117d83d69de832ed7afc"
+      },
+      "size": 906340,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-728381b1c5ca0bde8cbe"
+      },
+      "size": 906245,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-ee4e7773a768c3357066"
+      },
+      "size": 906179,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-f5be503a63566a2d54c1"
+      },
+      "size": 906403,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-303f6d67a0db2a367b13"
+      },
+      "size": 906105,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-74b4cb757cb848dc84c6"
+      },
+      "size": 906252,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-4b13a1e46d3b69d25cd2"
+      },
+      "size": 905956,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-ad243b41149718cb6aa5"
+      },
+      "size": 903209,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-444f7c52e5ae59cc305a"
+      },
+      "size": 906094,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-d0d7caabf3c5859a6731"
+      },
+      "size": 906093,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-ba3c940885349d774ed0"
+      },
+      "size": 898454,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-f27ca027d953658354ea"
+      },
+      "size": 906165,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-af212bcb51bb8b85caab"
+      },
+      "size": 907108,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-e5b8e065b50f3586f81d"
+      },
+      "size": 901076,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-d483644734fbb322ad57"
+      },
+      "size": 903052,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-13b1f0df92029095cbff"
+      },
+      "size": 906000,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-57dcc9a4fb567783f949"
+      },
+      "size": 886254,
+      "contains_neighborhood": true,
+      "contains_target_value": true
+    },
+    {
+      "attrs": {},
+      "size": 996,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-c9d4ce27ff3171fc621e"
+      },
+      "size": 8029,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-a15b4aaef46986981549"
+      },
+      "size": 7921,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-9825836197985cc36522"
+      },
+      "size": 7811,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-be2c4715e5160bf0855d"
+      },
+      "size": 8007,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-11a224600c6e8b99fe5d"
+      },
+      "size": 7773,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-a4df274c99ba85fa14f1"
+      },
+      "size": 7908,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-7006aaafcb310a26ab30"
+      },
+      "size": 8067,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-79e8fc77f37a5d418623"
+      },
+      "size": 7887,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-47dec3a46d29ad34c05f"
+      },
+      "size": 7565,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-9cfd63c9ffb52ebf9f09"
+      },
+      "size": 7775,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-39c6e2faf3c13ccd443b"
+      },
+      "size": 7896,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-6a713088acafd4c53f16"
+      },
+      "size": 7889,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-d0f3c26bcfa1814f32e4"
+      },
+      "size": 7626,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-939ce546222b3882c67b"
+      },
+      "size": 7811,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-446b67802f6b801391df"
+      },
+      "size": 7723,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-75845349403c0920e4a0"
+      },
+      "size": 8236,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    },
+    {
+      "attrs": {
+        "type": "application/json",
+        "data-for": "htmlwidget-0a39f46a9020e88831ff"
+      },
+      "size": 7581,
+      "contains_neighborhood": false,
+      "contains_target_value": false
+    }
+  ],
+  "contexts": {
+    "Sant Antoni": {
+      "count": 86,
+      "contexts": [
+        " Dreta de l'Eixample\",\"8. l'Antiga Esquerra de l'Eixample\",\"9. la Nova Esquerra de l'Eixample\",\"10. Sant Antoni\",\"11. el Poble-sec\",\"12. la Marina del Prat Vermell\",\"13. la Marina de Port\",\"14. la Font de la Guatlla\",\"15. Hostafrancs\",\"16. la Bordeta\",\"17. Sant",
+        "mple<\\/b><br>Població nascuda a Barcelona: <b>42,0 %<\\/b>\",\"AEB: <b><\\/b><br>Barri: <b>10<\\/b> - <b>Sant Antoni<\\/b><br>Districte: <b>02<\\/b> - <b>Eixample<\\/b><br>Població nascuda a Barcelona: <b>43,4 %<\\/b>\",\"AEB: <b><\\/b><br>Barri: <b>10<\\/b> - <b>Sant Anton",
+        "mple<\\/b><br>Població nascuda a Barcelona: <b>43,4 %<\\/b>\",\"AEB: <b><\\/b><br>Barri: <b>10<\\/b> - <b>Sant Antoni<\\/b><br>Districte: <b>02<\\/b> - <b>Eixample<\\/b><br>Població nascuda a Barcelona: <b>43,4 %<\\/b>\",\"AEB: <b><\\/b><br>Barri: <b>10<\\/b> - <b>Sant Anton"
+      ]
+    },
+    "Sant.Antoni": {
+      "count": 0,
+      "contexts": []
+    },
+    "38.978": {
+      "count": 1,
+      "contexts": [
+        ",2\"],[\"1.729.963\",\"50.863\",\"27.312\",\"14.665\",\"22.989\",\"37.672\",\"53.201\",\"45.464\",\"42.921\",\"59.117\",\"38.978\",\"40.136\",\"3.174\",\"31.768\",\"10.869\",\"17.021\",\"21.153\",\"25.243\",\"46.676\",\"46.672\",\"24.622\",\"12.479\",\"4.867\",\"24.937\",\"16.341\",\"26.801\",\"49.202\",\"30.79"
+      ]
+    },
+    "38978": {
+      "count": 26,
+      "contexts": [
+        "27348669,2.1509017310762,2.15104856520278,2.15120226727931,2.15139558797259,2.15146443807112,2.15153389787472,2.15160368106833,2.15165394191108,2.15175429131139,2.15185372422809,2.15195141362862,2.15203335257896,2.15213044535842,2.15218464816433,2.1522350",
+        "27348669,2.1509017310762,2.15104856520278,2.15120226727931,2.15139558797259,2.15146443807112,2.15153389787472,2.15160368106833,2.15165394191108,2.15175429131139,2.15185372422809,2.15195141362862,2.15203335257896,2.15213044535842,2.15218464816433,2.1522350",
+        "27348669,2.1509017310762,2.15104856520278,2.15120226727931,2.15139558797259,2.15146443807112,2.15153389787472,2.15160368106833,2.15165394191108,2.15175429131139,2.15185372422809,2.15195141362862,2.15203335257896,2.15213044535842,2.15218464816433,2.1522350"
+      ]
+    },
+    "40.136": {
+      "count": 1,
+      "contexts": [
+        "729.963\",\"50.863\",\"27.312\",\"14.665\",\"22.989\",\"37.672\",\"53.201\",\"45.464\",\"42.921\",\"59.117\",\"38.978\",\"40.136\",\"3.174\",\"31.768\",\"10.869\",\"17.021\",\"21.153\",\"25.243\",\"46.676\",\"46.672\",\"24.622\",\"12.479\",\"4.867\",\"24.937\",\"16.341\",\"26.801\",\"49.202\",\"30.795\",\"16.92"
+      ]
+    },
+    "40136": {
+      "count": 128,
+      "contexts": [
+        "3058812,2.1707841870782,2.17088832070501,2.17097578960266,2.17103940058928,2.17106062379825,2.17106740136841,2.17106656642328,2.17105941901056,2.17105344993821,2.17102416597472,2.171026103155,2.17105040475843,2.17095473057087,2.17014427971895,2.1701416354",
+        "540605268,41.4056621224493,41.4058713896,41.4059634643459,41.4060038239934,41.4060552673934,41.4061340136846,41.4062429743939,41.4063342998311,41.4063903600517,41.4064668186375,41.4065291485472,41.4065820921361,41.4066399455849,41.4066890151964,41.4067242",
+        "3058812,2.1707841870782,2.17088832070501,2.17097578960266,2.17103940058928,2.17106062379825,2.17106740136841,2.17106656642328,2.17105941901056,2.17105344993821,2.17102416597472,2.171026103155,2.17105040475843,2.17095473057087,2.17014427971895,2.1701416354"
+      ]
+    },
+    "50.863": {
+      "count": 1,
+      "contexts": [
+        ",\"26,9\",\"27,8\",\"31,0\",\"25,8\",\"30,9\",\"22,5\",\"25,8\",\"25,7\",\"49,8\",\"27,1\",\"26,2\",\"28,2\"],[\"1.729.963\",\"50.863\",\"27.312\",\"14.665\",\"22.989\",\"37.672\",\"53.201\",\"45.464\",\"42.921\",\"59.117\",\"38.978\",\"40.136\",\"3.174\",\"31.768\",\"10.869\",\"17.021\",\"21.153\",\"25.243\",\"46.6"
+      ]
+    },
+    "50863": {
+      "count": 206,
+      "contexts": [
+        "14898757808,2.15114150386894,2.15109927334945,2.15103439634809,2.15098449474551,2.15092476709401,2.150863958834,2.15074807939951,2.15061326283963,2.15055676824133,2.15054339289393,2.15048677142359,2.15044356170238,2.15041496401809,2.1503754519287,2.150377",
+        "503846380474,2.15039592578656,2.15042189927619,2.15052242254008,2.1506446311632,2.15073968885823,2.15086383012333,2.15093963980595,2.15098905314289,2.15100280022149,2.15101481078144,2.15102734072249,2.15103087750439,2.1510248623288,2.15094050423404,2.1509",
+        "03087750439,2.15102734072249,2.15101481078144,2.15100280022149,2.15098905314289,2.15093963980595,2.15086383012333,2.15073968885823,2.1506446311632,2.15052242254008,2.15042189927619,2.15039592578656,2.1503846380474,2.15037734225602,2.1503754519287,2.150310"
+      ]
+    },
+    "1.729.963": {
+      "count": 1,
+      "contexts": [
+        "17,8\",\"29,8\",\"26,9\",\"27,8\",\"31,0\",\"25,8\",\"30,9\",\"22,5\",\"25,8\",\"25,7\",\"49,8\",\"27,1\",\"26,2\",\"28,2\"],[\"1.729.963\",\"50.863\",\"27.312\",\"14.665\",\"22.989\",\"37.672\",\"53.201\",\"45.464\",\"42.921\",\"59.117\",\"38.978\",\"40.136\",\"3.174\",\"31.768\",\"10.869\",\"17.021\",\"21.153\",\"25.2"
+      ]
+    },
+    "1729963": {
+      "count": 0,
+      "contexts": []
+    },
+    "<table": {
+      "count": 12,
+      "contexts": [
+        "535\",\"26.907\",\"17.639\",\"9.293\",\"34.736\",\"13.771\",\"30.695\",\"22.076\",\"27.035\",\"30.938\"]],\"container\":\"<table class=\\\"stripe hover nowrap compact aquiva-table\\\">\\n  <thead>\\n    <tr>\\n      <th>Districte<\\/th>\\n      <th>Barri<\\/th>\\n      <th>Persones<\\/th>\\",
+        "\"8,4\"],[\"59,5\",\"71,5\",\"57,0\",\"61,1\",\"56,6\",\"54,5\",\"55,7\",\"57,4\",\"58,4\",\"56,6\",\"59,3\"]],\"container\":\"<table class=\\\"stripe hover nowrap compact aquiva-table\\\">\\n  <thead>\\n    <tr>\\n      <th> <\\/th>\\n      <th>Espanya<\\/th>\\n      <th>Resta UE<\\/th>\\n     ",
+        "93,7\",\"74,1\",\"50,0\",\"50,0\",\"116,7\",\"83,3\",\"65,3\",\"88,8\",\"94,4\",\"69,8\",\"126,2\",\"97,1\"]],\"container\":\"<table class=\\\"stripe hover nowrap compact aquiva-table\\\">\\n  <thead>\\n    <tr>\\n      <th><\\/th>\\n      <th>Persones<\\/th>\\n      <th>%<\\/th>\\n      <th>Pe"
+      ]
+    },
+    "reactable": {
+      "count": 0,
+      "contexts": []
+    },
+    "DT::": {
+      "count": 0,
+      "contexts": []
+    },
+    "data-for": {
+      "count": 100,
+      "contexts": [
+        "idget-e951f53d7c6458fd2e04\" style=\"width:100%;height:500px;\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-e951f53d7c6458fd2e04\">{\"x\":{\"hc_opts\":{\"chart\":{\"reflow\":true},\"title\":{\"text\":null},\"yAxis\":{\"title\":{\"text\":\" \"},\"type\":\"linear\",\"label",
+        "idget-c1929fef3cfee06522ff\" style=\"width:100%;height:500px;\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-c1929fef3cfee06522ff\">{\"x\":{\"hc_opts\":{\"chart\":{\"reflow\":true},\"title\":{\"text\":null},\"yAxis\":{\"title\":{\"text\":\" \"},\"type\":\"linear\",\"rever",
+        "widget-14da5af00b89d28e5cbc\" style=\"width:100%;height:auto;\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-14da5af00b89d28e5cbc\">{\"x\":{\"filter\":\"none\",\"vertical\":false,\"extensions\":[\"Buttons\",\"FixedColumns\"],\"data\":[[\"BARCELONA\",\"Ciutat Vella\","
+      ]
+    }
+  },
+  "embedded_candidates": [
+    {
+      "path": "custody/dm20b/embedded-table-candidate-2.json",
+      "bytes": 11076,
+      "sha256": "2658be636dd5d21395e93d7fa9d8f7817eb814db8d881c5008f6801e247024fe"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-25.json",
+      "bytes": 906719,
+      "sha256": "eef293af8f52a672e09c4d4b921e5c223ffe457c9bae36ee0eb422bf254b942f"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-26.json",
+      "bytes": 906881,
+      "sha256": "17dc82ecf4c703071de4c0bb2a4654f993739fc04bf6ddcfc2d70df449a0a89c"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-28.json",
+      "bytes": 906897,
+      "sha256": "3aadabe0ef3fa89c1e9c734db12ea5f177d73b6710ce3d278677307773f6f909"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-29.json",
+      "bytes": 906794,
+      "sha256": "947099e55df6ce86fc57c846e157d4f14e0617050bde48ac19a776dfeae1db74"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-31.json",
+      "bytes": 867458,
+      "sha256": "27d8c0992e7c580e5e203c39ae550fcceb78dc0eb399f5869e7ec8f227262339"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-53.json",
+      "bytes": 906517,
+      "sha256": "14c2e207e18655071364abad73f001e06cd9440602e2144d786a2fb895d1f265"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-54.json",
+      "bytes": 906516,
+      "sha256": "2513113f4ac058c0bb089e508a3f47b2896ed4b12520dd59d873137f413f9327"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-56.json",
+      "bytes": 906213,
+      "sha256": "a707e551212e374340fb51b4d225b2504f483176095baad20fa4725311482528"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-57.json",
+      "bytes": 906567,
+      "sha256": "f111fa60396b802e2a9ffd9315c9e683fbdbaee526755ba781f101b393ff76db"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-59.json",
+      "bytes": 906399,
+      "sha256": "ed2566a365f05db74055d9215dbd6d4d622373efe0d0396b8b62c919a0fe85f0"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-60.json",
+      "bytes": 906333,
+      "sha256": "dbddf06fa27082f6876abc283d64af5717f31786fdbcd5eb0005befa8f99776a"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-62.json",
+      "bytes": 906557,
+      "sha256": "26c182d269a072a5e40fc609d2ec365b90f1a81f13170510f9b06ab00a1812b9"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-63.json",
+      "bytes": 906332,
+      "sha256": "33d06ace118ca5819131b6f45caea13ce5088b69063786e04d4863e1b9b9044b"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-65.json",
+      "bytes": 906406,
+      "sha256": "c785e97c732a6f18e0237c82d6cb8a67a61c072098923da54baae94246650938"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-66.json",
+      "bytes": 906110,
+      "sha256": "343f05b92e0086ae39616e4c74ba399a39a328383638a34d73096c8c3b2cc22e"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-68.json",
+      "bytes": 903434,
+      "sha256": "527ea98fa258f9b9355c9f1e3e1710d6d6ec79be5583891f9b8a365ed056caa2"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-69.json",
+      "bytes": 906248,
+      "sha256": "44df20a4e175f99aaa63eba5a6a12fdb7133e98fea91413466e59d50c2b22649"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-71.json",
+      "bytes": 906320,
+      "sha256": "b3037ea5b9485cbd1f451a3d069d1210b05285991bcf8ce67f7a8f33f769805e"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-72.json",
+      "bytes": 898605,
+      "sha256": "0b8c565eac83a22934773900462a5ac7ae11d2e4c0487d9150b9902b2f384250"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-74.json",
+      "bytes": 906392,
+      "sha256": "d0c04bd4f56d9896e0072838af4b86ef045fc45370be20088579544e0d54371c"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-75.json",
+      "bytes": 907335,
+      "sha256": "2b7c0ed7cff7b50da2ab9fb2e1301586e2304ee1908c8b0370a23d0452516afb"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-77.json",
+      "bytes": 901300,
+      "sha256": "a7800dc97b9be577849b168c2796e72cfa10851a9458c3438879e0efd82cc81f"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-78.json",
+      "bytes": 903205,
+      "sha256": "0f2bfdd83906c35e7c4948e97068a9080522758c1492e6fba698b309195f21f8"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-80.json",
+      "bytes": 906227,
+      "sha256": "81c1e0c986ef578e33cc554fc53de2fb4b0c5f1ea41f79c39d04a781c2ca4168"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-81.json",
+      "bytes": 886401,
+      "sha256": "0484dbe654a93a2f63904c3391cfef77345766e4f037d7075e74fca11aa33141"
+    },
+    {
+      "path": "custody/dm20b/embedded-table-candidate-118.json",
+      "bytes": 909273,
+      "sha256": "0f57a0ef1512fb1b5e5918e0294210a080e9daa7a4ccc8329bd0e9a4e1ad8c4f"
+    }
+  ]
+}
