@@ -1,0 +1,313 @@
+{
+  "daily_readback": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "counts": {
+        "lots": 35,
+        "rows": 215058
+      },
+      "issues": {
+        "unit_mismatch": 111
+      },
+      "flags": {
+        "Representatiu": 214683,
+        "ABSENT": 330,
+        "No representatiu": 45
+      },
+      "units": [
+        {
+          "variable": "1000",
+          "observed": "°C",
+          "metadata": "°C",
+          "rows": 10470
+        },
+        {
+          "variable": "1000",
+          "observed": "�C",
+          "metadata": "°C",
+          "rows": 15
+        },
+        {
+          "variable": "1001",
+          "observed": "°C",
+          "metadata": "°C",
+          "rows": 10472
+        },
+        {
+          "variable": "1001",
+          "observed": "�C",
+          "metadata": "°C",
+          "rows": 15
+        },
+        {
+          "variable": "1002",
+          "observed": "°C",
+          "metadata": "°C",
+          "rows": 10473
+        },
+        {
+          "variable": "1002",
+          "observed": "�C",
+          "metadata": "°C",
+          "rows": 15
+        },
+        {
+          "variable": "1003",
+          "observed": "°C",
+          "metadata": "°C",
+          "rows": 10472
+        },
+        {
+          "variable": "1003",
+          "observed": "�C",
+          "metadata": "°C",
+          "rows": 15
+        },
+        {
+          "variable": "1004",
+          "observed": "°C",
+          "metadata": "°C",
+          "rows": 10472
+        },
+        {
+          "variable": "1004",
+          "observed": "�C",
+          "metadata": "°C",
+          "rows": 15
+        },
+        {
+          "variable": "1100",
+          "observed": "%",
+          "metadata": "%",
+          "rows": 10485
+        },
+        {
+          "variable": "1101",
+          "observed": "%",
+          "metadata": "%",
+          "rows": 10487
+        },
+        {
+          "variable": "1102",
+          "observed": "%",
+          "metadata": "%",
+          "rows": 10487
+        },
+        {
+          "variable": "1200",
+          "observed": "hPa",
+          "metadata": "hPa",
+          "rows": 7289
+        },
+        {
+          "variable": "1201",
+          "observed": "hPa",
+          "metadata": "hPa",
+          "rows": 7290
+        },
+        {
+          "variable": "1202",
+          "observed": "hPa",
+          "metadata": "hPa",
+          "rows": 7289
+        },
+        {
+          "variable": "1300",
+          "observed": "mm",
+          "metadata": "mm",
+          "rows": 9127
+        },
+        {
+          "variable": "1301",
+          "observed": "mm",
+          "metadata": "mm",
+          "rows": 9128
+        },
+        {
+          "variable": "1302",
+          "observed": "mm",
+          "metadata": "mm",
+          "rows": 9119
+        },
+        {
+          "variable": "1303",
+          "observed": "mm",
+          "metadata": "mm",
+          "rows": 9127
+        },
+        {
+          "variable": "1304",
+          "observed": "mm",
+          "metadata": "mm",
+          "rows": 9127
+        },
+        {
+          "variable": "1400",
+          "observed": "MJ/m2",
+          "metadata": "MJ/m2",
+          "rows": 8794
+        },
+        {
+          "variable": "1500",
+          "observed": "m/s",
+          "metadata": "m/s",
+          "rows": 1110
+        },
+        {
+          "variable": "1502",
+          "observed": "m/s",
+          "metadata": "m/s",
+          "rows": 30
+        },
+        {
+          "variable": "1503",
+          "observed": "m/s",
+          "metadata": "m/s",
+          "rows": 10933
+        },
+        {
+          "variable": "1505",
+          "observed": "m/s",
+          "metadata": "m/s",
+          "rows": 30
+        },
+        {
+          "variable": "1506",
+          "observed": "°",
+          "metadata": "°",
+          "rows": 1110
+        },
+        {
+          "variable": "1508",
+          "observed": "°",
+          "metadata": "°",
+          "rows": 30
+        },
+        {
+          "variable": "1509",
+          "observed": "°",
+          "metadata": "°",
+          "rows": 10912
+        },
+        {
+          "variable": "1509",
+          "observed": "�",
+          "metadata": "°",
+          "rows": 18
+        },
+        {
+          "variable": "1511",
+          "observed": "°",
+          "metadata": "°",
+          "rows": 30
+        },
+        {
+          "variable": "1512",
+          "observed": "m/s",
+          "metadata": "m/s",
+          "rows": 10940
+        },
+        {
+          "variable": "1514",
+          "observed": "m/s",
+          "metadata": "m/s",
+          "rows": 30
+        },
+        {
+          "variable": "1515",
+          "observed": "°",
+          "metadata": "°",
+          "rows": 10917
+        },
+        {
+          "variable": "1515",
+          "observed": "�",
+          "metadata": "°",
+          "rows": 18
+        },
+        {
+          "variable": "1517",
+          "observed": "°",
+          "metadata": "°",
+          "rows": 30
+        },
+        {
+          "variable": "1700",
+          "observed": "mm",
+          "metadata": "mm",
+          "rows": 8737
+        }
+      ]
+    }
+  },
+  "subdaily": {
+    "status": "FAILED",
+    "error": "missing valor"
+  },
+  "FGC": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source": {
+        "url": "https://www.fgc.cat/google/google_transit.zip",
+        "bytes": 1168955,
+        "sha256": "b0e681ec58695e546a7adece0140d53fb75f2fa3277a6d3f878f33d06e9b3378",
+        "content_type": "application/zip",
+        "path": "custody/dm18/FGC_GTFS.zip",
+        "stored_sha256": "b0e681ec58695e546a7adece0140d53fb75f2fa3277a6d3f878f33d06e9b3378",
+        "stored_bytes": 1168955
+      },
+      "members": [
+        "agency.txt",
+        "calendar_dates.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stops.txt",
+        "trips.txt",
+        "stop_times.txt",
+        "feed_info.txt"
+      ],
+      "counts": {
+        "agency": 1,
+        "stops": 305,
+        "routes": 22,
+        "trips": 12836,
+        "stop_times": 150484,
+        "calendar_dates": 201,
+        "shapes": 11630,
+        "feed_info": 1
+      },
+      "duplicate_ids": {
+        "stops": 0,
+        "routes": 0,
+        "trips": 0
+      },
+      "foreign_key_errors": {
+        "trip_route": 0,
+        "trip_service": 0,
+        "stop_time_trip": 0,
+        "stop_time_stop": 0,
+        "trip_shape": 0
+      },
+      "invalid_times": 0,
+      "duplicate_sequences": 0,
+      "nonmonotonic_adjacent_times": 0,
+      "stop_times_after_midnight": 3900,
+      "calendar_extremes": [
+        "20261121",
+        "20261231"
+      ],
+      "agency_timezone": [
+        "Europe/Madrid"
+      ],
+      "actual_occupancy_verified": false,
+      "scope": "FGC entire feed, not all Barcelona mobility"
+    }
+  },
+  "population": {
+    "status": "FAILED",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO",
+  "email_submitted": false
+}
