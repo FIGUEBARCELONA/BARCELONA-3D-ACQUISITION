@@ -1,0 +1,13 @@
+{
+  "xml": {
+    "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/808daafa-d9ce-48c0-925a-fa5afdb1ed41/resource/732506ee-bcdf-409f-bed8-0b25cbc0e948/download/districtes_barris_districtesbarris.xml",
+    "expected_catalog_bytes": 49483,
+    "status": "FAILED",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  "cad": {
+    "sha256": "ad38d369514a1c9e1dc29f7654173a7d600b8db72553af0e67ae193259f58ea6",
+    "bytes": 5804544,
+    "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Tue Oct 23 16:06:36 2018, Author: anu0, Last Saved By: j525, Last Saved Time/Date: Thu Feb  6 10:15:51 2025, Revision Number: 2, Name of Creating Application: MicroStation"
+  }
+}
