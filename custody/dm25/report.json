@@ -1,0 +1,1467 @@
+{
+  "date": "2026-11-24",
+  "renfe_incomplete": [
+    {
+      "trip": {
+        "route_id": "10T0097C8b",
+        "service_id": "1027M",
+        "trip_id": "1027M17120C8b",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "1027M17120",
+        "shape_id": "10_C8b"
+      },
+      "route": {
+        "route_id": "10T0097C8b",
+        "route_short_name": "C8b",
+        "route_long_name": "-Cercedilla",
+        "route_type": "2",
+        "route_color": "868584",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "10T0097C8b",
+        "service_id": "1027M",
+        "trip_id": "1027M17128C8b",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "1027M17128",
+        "shape_id": "10_C8b"
+      },
+      "route": {
+        "route_id": "10T0097C8b",
+        "route_short_name": "C8b",
+        "route_long_name": "-Cercedilla",
+        "route_type": "2",
+        "route_color": "868584",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "10T0097C8b",
+        "service_id": "1027M",
+        "trip_id": "1027M17134C8b",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "1027M17134",
+        "shape_id": "10_C8b"
+      },
+      "route": {
+        "route_id": "10T0097C8b",
+        "route_short_name": "C8b",
+        "route_long_name": "-Cercedilla",
+        "route_type": "2",
+        "route_color": "868584",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "30T0034C3",
+        "service_id": "3027M",
+        "trip_id": "3027M81900C3",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "3027M81900",
+        "shape_id": "30_C3"
+      },
+      "route": {
+        "route_id": "30T0034C3",
+        "route_short_name": "C3",
+        "route_long_name": "-Santa Justa",
+        "route_type": "3",
+        "route_color": "E4242D",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "3027M81900C3",
+        "arrival_time": "18:50:00",
+        "departure_time": "18:50:00",
+        "stop_id": "51003",
+        "stop_sequence": "002"
+      }
+    },
+    {
+      "trip": {
+        "route_id": "30T0039C3",
+        "service_id": "3027M",
+        "trip_id": "3027M82903C3",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "3027M82903",
+        "shape_id": "30_C3"
+      },
+      "route": {
+        "route_id": "30T0039C3",
+        "route_short_name": "C3",
+        "route_long_name": "Santa Justa                             -",
+        "route_type": "3",
+        "route_color": "E4242D",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "3027M82903C3",
+        "arrival_time": "11:50:00",
+        "departure_time": "11:50:00",
+        "stop_id": "51003",
+        "stop_sequence": "001"
+      }
+    },
+    {
+      "trip": {
+        "route_id": "32T0019C2",
+        "service_id": "3227M",
+        "trip_id": "3227M00301C2",
+        "trip_headsign": "",
+        "wheelchair_accessible": "1",
+        "block_id": "3227M23157",
+        "shape_id": "32_C2"
+      },
+      "route": {
+        "route_id": "32T0019C2",
+        "route_short_name": "C2",
+        "route_long_name": "Álora                                   -",
+        "route_type": "2",
+        "route_color": "0fcf34",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "3227M00301C2",
+        "arrival_time": "10:25:00",
+        "departure_time": "10:26:00",
+        "stop_id": "54405",
+        "stop_sequence": "009"
+      }
+    },
+    {
+      "trip": {
+        "route_id": "32T0019C2",
+        "service_id": "3227M",
+        "trip_id": "3227M00303C2",
+        "trip_headsign": "",
+        "wheelchair_accessible": "1",
+        "block_id": "3227M23167",
+        "shape_id": "32_C2"
+      },
+      "route": {
+        "route_id": "32T0019C2",
+        "route_short_name": "C2",
+        "route_long_name": "Álora                                   -",
+        "route_type": "2",
+        "route_color": "0fcf34",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "3227M00303C2",
+        "arrival_time": "16:21:00",
+        "departure_time": "16:22:00",
+        "stop_id": "54405",
+        "stop_sequence": "009"
+      }
+    },
+    {
+      "trip": {
+        "route_id": "32T0020C2",
+        "service_id": "3227M",
+        "trip_id": "3227M00300C2",
+        "trip_headsign": "",
+        "wheelchair_accessible": "1",
+        "block_id": "3227M00300",
+        "shape_id": "32_C2_INV"
+      },
+      "route": {
+        "route_id": "32T0020C2",
+        "route_short_name": "C2",
+        "route_long_name": "-Álora",
+        "route_type": "2",
+        "route_color": "0fcf34",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "32T0020C2",
+        "service_id": "3227M",
+        "trip_id": "3227M00302C2",
+        "trip_headsign": "",
+        "wheelchair_accessible": "1",
+        "block_id": "3227M00302",
+        "shape_id": "32_C2_INV"
+      },
+      "route": {
+        "route_id": "32T0020C2",
+        "route_short_name": "C2",
+        "route_long_name": "-Álora",
+        "route_type": "2",
+        "route_color": "0fcf34",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "40T0057ER24",
+        "service_id": "4027M",
+        "trip_id": "4027M82410ER24",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "4027M82410",
+        "shape_id": ""
+      },
+      "route": {
+        "route_id": "40T0057ER24",
+        "route_short_name": "ER24",
+        "route_long_name": "-Xativa",
+        "route_type": "3",
+        "route_color": "FFFFFF",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "40T0057ER24",
+        "service_id": "4027M",
+        "trip_id": "4027M84410ER24",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "4027M84410",
+        "shape_id": ""
+      },
+      "route": {
+        "route_id": "40T0057ER24",
+        "route_short_name": "ER24",
+        "route_long_name": "-Xativa",
+        "route_type": "3",
+        "route_color": "FFFFFF",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "40T0057ER24",
+        "service_id": "4027M",
+        "trip_id": "4027M84412ER24",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "4027M84412",
+        "shape_id": ""
+      },
+      "route": {
+        "route_id": "40T0057ER24",
+        "route_short_name": "ER24",
+        "route_long_name": "-Xativa",
+        "route_type": "3",
+        "route_color": "FFFFFF",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "40T0057ER24",
+        "service_id": "4027M",
+        "trip_id": "4027M84420ER24",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "4027M84420",
+        "shape_id": ""
+      },
+      "route": {
+        "route_id": "40T0057ER24",
+        "route_short_name": "ER24",
+        "route_long_name": "-Xativa",
+        "route_type": "3",
+        "route_color": "FFFFFF",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "41T0011C3",
+        "service_id": "4127M",
+        "trip_id": "4127M30770C3",
+        "trip_headsign": "",
+        "wheelchair_accessible": "1",
+        "block_id": "4127M30770",
+        "shape_id": "41_C3"
+      },
+      "route": {
+        "route_id": "41T0011C3",
+        "route_short_name": "C3",
+        "route_long_name": "-Sant Vicent Centre",
+        "route_type": "2",
+        "route_color": "706D75",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "41T0011C3",
+        "service_id": "4127M",
+        "trip_id": "4127M30772C3",
+        "trip_headsign": "",
+        "wheelchair_accessible": "1",
+        "block_id": "4127M30772",
+        "shape_id": "41_C3"
+      },
+      "route": {
+        "route_id": "41T0011C3",
+        "route_short_name": "C3",
+        "route_long_name": "-Sant Vicent Centre",
+        "route_type": "2",
+        "route_color": "706D75",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "41T0011C3",
+        "service_id": "4127M",
+        "trip_id": "4127M30774C3",
+        "trip_headsign": "",
+        "wheelchair_accessible": "1",
+        "block_id": "4127M30774",
+        "shape_id": "41_C3"
+      },
+      "route": {
+        "route_id": "41T0011C3",
+        "route_short_name": "C3",
+        "route_long_name": "-Sant Vicent Centre",
+        "route_type": "2",
+        "route_color": "706D75",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "41T0011C3",
+        "service_id": "4127M",
+        "trip_id": "4127M30776C3",
+        "trip_headsign": "",
+        "wheelchair_accessible": "1",
+        "block_id": "4127M30776",
+        "shape_id": "41_C3"
+      },
+      "route": {
+        "route_id": "41T0011C3",
+        "route_short_name": "C3",
+        "route_long_name": "-Sant Vicent Centre",
+        "route_type": "2",
+        "route_color": "706D75",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "41T0011C3",
+        "service_id": "4127M",
+        "trip_id": "4127M30778C3",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "4127M30778",
+        "shape_id": "41_C3"
+      },
+      "route": {
+        "route_id": "41T0011C3",
+        "route_short_name": "C3",
+        "route_long_name": "-Sant Vicent Centre",
+        "route_type": "2",
+        "route_color": "706D75",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "51T0019R4",
+        "service_id": "5127M",
+        "trip_id": "5127M33518R4",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "5127M33518",
+        "shape_id": "51_R4"
+      },
+      "route": {
+        "route_id": "51T0019R4",
+        "route_short_name": "R4",
+        "route_long_name": "Sant Vicenc de Calders                  -Manresa",
+        "route_type": "2",
+        "route_color": "F7A30D",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "5127M33518R4",
+        "arrival_time": "21:30:00",
+        "departure_time": "21:30:00",
+        "stop_id": "78600",
+        "stop_sequence": "016"
+      }
+    },
+    {
+      "trip": {
+        "route_id": "51T0019R4",
+        "service_id": "5127M",
+        "trip_id": "5127M33520R4",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "5127M33520",
+        "shape_id": "51_R4"
+      },
+      "route": {
+        "route_id": "51T0019R4",
+        "route_short_name": "R4",
+        "route_long_name": "Sant Vicenc de Calders                  -Manresa",
+        "route_type": "2",
+        "route_color": "F7A30D",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "5127M33520R4",
+        "arrival_time": "07:03:00",
+        "departure_time": "07:03:00",
+        "stop_id": "78600",
+        "stop_sequence": "016"
+      }
+    },
+    {
+      "trip": {
+        "route_id": "51T0019R4",
+        "service_id": "5127M",
+        "trip_id": "5127M33522R4",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "5127M33522",
+        "shape_id": "51_R4"
+      },
+      "route": {
+        "route_id": "51T0019R4",
+        "route_short_name": "R4",
+        "route_long_name": "Sant Vicenc de Calders                  -Manresa",
+        "route_type": "2",
+        "route_color": "F7A30D",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "5127M33522R4",
+        "arrival_time": "10:44:00",
+        "departure_time": "10:44:00",
+        "stop_id": "78600",
+        "stop_sequence": "016"
+      }
+    },
+    {
+      "trip": {
+        "route_id": "51T0019R4",
+        "service_id": "5127M",
+        "trip_id": "5127M33524R4",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "5127M33524",
+        "shape_id": "51_R4"
+      },
+      "route": {
+        "route_id": "51T0019R4",
+        "route_short_name": "R4",
+        "route_long_name": "Sant Vicenc de Calders                  -Manresa",
+        "route_type": "2",
+        "route_color": "F7A30D",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "5127M33524R4",
+        "arrival_time": "14:04:00",
+        "departure_time": "14:04:00",
+        "stop_id": "78600",
+        "stop_sequence": "016"
+      }
+    },
+    {
+      "trip": {
+        "route_id": "51T0019R4",
+        "service_id": "5127M",
+        "trip_id": "5127M33526R4",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "5127M33526",
+        "shape_id": "51_R4"
+      },
+      "route": {
+        "route_id": "51T0019R4",
+        "route_short_name": "R4",
+        "route_long_name": "Sant Vicenc de Calders                  -Manresa",
+        "route_type": "2",
+        "route_color": "F7A30D",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "5127M33526R4",
+        "arrival_time": "17:57:00",
+        "departure_time": "17:57:00",
+        "stop_id": "78600",
+        "stop_sequence": "016"
+      }
+    },
+    {
+      "trip": {
+        "route_id": "51T0105R16",
+        "service_id": "5127M",
+        "trip_id": "5127M18059R16",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "5127M18056",
+        "shape_id": "51_R16"
+      },
+      "route": {
+        "route_id": "51T0105R16",
+        "route_short_name": "R16",
+        "route_long_name": "Ulldecona-Alcanar-La Sénia              -",
+        "route_type": "2",
+        "route_color": "B52B46",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 0,
+      "sole_stop": null
+    },
+    {
+      "trip": {
+        "route_id": "51T0106R16",
+        "service_id": "5127M",
+        "trip_id": "5127M18050R16",
+        "trip_headsign": "",
+        "wheelchair_accessible": "2",
+        "block_id": "5127M18050",
+        "shape_id": "51_R16_INV"
+      },
+      "route": {
+        "route_id": "51T0106R16",
+        "route_short_name": "R16",
+        "route_long_name": "-Ulldecona-Alcanar-La Sénia",
+        "route_type": "2",
+        "route_color": "B52B46",
+        "route_text_color": "FFFFFF"
+      },
+      "stop_rows": 1,
+      "sole_stop": {
+        "trip_id": "5127M18050R16",
+        "arrival_time": "06:27:00",
+        "departure_time": "06:27:00",
+        "stop_id": "65314",
+        "stop_sequence": "002"
+      }
+    }
+  ],
+  "renfe_zero_rows": 15,
+  "renfe_one_row": 10,
+  "atm_targets": [
+    {
+      "target": "REG_B_1504012026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R13",
+        "trip_id": "REG_B_1504012026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R13_78400_79400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150401"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R13",
+        "route_short_name": "R13",
+        "route_long_name": "Barcelona Estació de França - Lleida Pirineus",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "e94699",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1504112026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R13",
+        "trip_id": "REG_B_1504112026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R13_79400_78400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150411"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R13",
+        "route_short_name": "R13",
+        "route_long_name": "Barcelona Estació de França - Lleida Pirineus",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "e94699",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1504212026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R13",
+        "trip_id": "REG_B_1504212026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R13_78400_79400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150421"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R13",
+        "route_short_name": "R13",
+        "route_long_name": "Barcelona Estació de França - Lleida Pirineus",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "e94699",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1504312026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R13",
+        "trip_id": "REG_B_1504312026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R13_79400_78400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150431"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R13",
+        "route_short_name": "R13",
+        "route_long_name": "Barcelona Estació de França - Lleida Pirineus",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "e94699",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1504412026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R13",
+        "trip_id": "REG_B_1504412026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R13_78400_79400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150441"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R13",
+        "route_short_name": "R13",
+        "route_long_name": "Barcelona Estació de França - Lleida Pirineus",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "e94699",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1504512026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R13",
+        "trip_id": "REG_B_1504512026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R13_79400_78400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150451"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R13",
+        "route_short_name": "R13",
+        "route_long_name": "Barcelona Estació de França - Lleida Pirineus",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "e94699",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1504612026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R13",
+        "trip_id": "REG_B_1504612026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R13_78400_79400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150461"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R13",
+        "route_short_name": "R13",
+        "route_long_name": "Barcelona Estació de França - Lleida Pirineus",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "e94699",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1504712026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R13",
+        "trip_id": "REG_B_1504712026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R13_79400_78400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150471"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R13",
+        "route_short_name": "R13",
+        "route_long_name": "Barcelona Estació de França - Lleida Pirineus",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "e94699",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1505012026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R14",
+        "trip_id": "REG_B_1505012026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R14_73100_79400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-06150501"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R14",
+        "route_short_name": "R14",
+        "route_long_name": "Tarragona - La Plana - Picamoixons",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "6658a5",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1505112026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R14",
+        "trip_id": "REG_B_1505112026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R14_71500_78400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150511"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R14",
+        "route_short_name": "R14",
+        "route_long_name": "Tarragona - La Plana - Picamoixons",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "6658a5",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1505212026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R14",
+        "trip_id": "REG_B_1505212026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R14_78400_79400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150521"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R14",
+        "route_short_name": "R14",
+        "route_long_name": "Tarragona - La Plana - Picamoixons",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "6658a5",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1505312026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R14",
+        "trip_id": "REG_B_1505312026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R14_79400_78400",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150531"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R14",
+        "route_short_name": "R14",
+        "route_long_name": "Tarragona - La Plana - Picamoixons",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "6658a5",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1505412026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R14",
+        "trip_id": "REG_B_1505412026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R14_78400_71500",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-12150541"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R14",
+        "route_short_name": "R14",
+        "route_long_name": "Tarragona - La Plana - Picamoixons",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "6658a5",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "REG_B_1505512026-11-08",
+      "atm_trip": {
+        "route_id": "REG_R14",
+        "trip_id": "REG_B_1505512026-11-08",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "REG_R14_79400_73100",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "REG_2026-11-082026-12-06150551"
+      },
+      "atm_route": {
+        "agency_id": "REG_1071",
+        "route_id": "REG_R14",
+        "route_short_name": "R14",
+        "route_long_name": "Tarragona - La Plana - Picamoixons",
+        "route_desc": "",
+        "route_type": "2",
+        "route_url": "https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf",
+        "route_color": "6658a5",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "2"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "ABR_02949bb2-f529-40b3-8431-07ebc5951014",
+      "atm_trip": {
+        "route_id": "ABR_1",
+        "trip_id": "ABR_02949bb2-f529-40b3-8431-07ebc5951014",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "ABR_Laborables"
+      },
+      "atm_route": {
+        "agency_id": "ABR_1",
+        "route_id": "ABR_1",
+        "route_short_name": "Urbà",
+        "route_long_name": "Nucli urbà - Estació FGC",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "6db51d",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "ABR_2",
+      "atm_trip": {
+        "route_id": "ABR_1",
+        "trip_id": "ABR_2",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "ABR_Laborables"
+      },
+      "atm_route": {
+        "agency_id": "ABR_1",
+        "route_id": "ABR_1",
+        "route_short_name": "Urbà",
+        "route_long_name": "Nucli urbà - Estació FGC",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "6db51d",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "ABR_3",
+      "atm_trip": {
+        "route_id": "ABR_1",
+        "trip_id": "ABR_3",
+        "trip_headsign": "",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "0",
+        "service_id": "ABR_Laborables"
+      },
+      "atm_route": {
+        "agency_id": "ABR_1",
+        "route_id": "ABR_1",
+        "route_short_name": "Urbà",
+        "route_long_name": "Nucli urbà - Estació FGC",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "6db51d",
+        "route_text_color": "ffffff",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "SAB_365000100001",
+      "atm_trip": {
+        "route_id": "SAB_365",
+        "trip_id": "SAB_365000100001",
+        "trip_headsign": "Sholt CAN BARATA",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "SAB_0365_0010",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "2",
+        "service_id": "SAB_36500240-FEI"
+      },
+      "atm_route": {
+        "agency_id": "SAB_1",
+        "route_id": "SAB_365",
+        "route_short_name": "TAD CB",
+        "route_long_name": "TAD CB TRANSPORT A DEMANDA CAN BARATA",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "ae2100",
+        "route_text_color": "ccffff",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [
+        {
+          "trip_id": "SAB_365000100001",
+          "arrival_time": "07:00:00",
+          "departure_time": "07:00:00",
+          "stop_id": "SAB_13511",
+          "stop_sequence": "1",
+          "stop_headsign": "Can Barata/bages",
+          "pickup_type": "0",
+          "drop_off_type": "0",
+          "shape_dist_traveled": "",
+          "timepoint": ""
+        }
+      ],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "SAB_365000100003",
+      "atm_trip": {
+        "route_id": "SAB_365",
+        "trip_id": "SAB_365000100003",
+        "trip_headsign": "Sholt CAN BARATA",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "SAB_0365_0010",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "2",
+        "service_id": "SAB_36500240-FEI"
+      },
+      "atm_route": {
+        "agency_id": "SAB_1",
+        "route_id": "SAB_365",
+        "route_short_name": "TAD CB",
+        "route_long_name": "TAD CB TRANSPORT A DEMANDA CAN BARATA",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "ae2100",
+        "route_text_color": "ccffff",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [
+        {
+          "trip_id": "SAB_365000100003",
+          "arrival_time": "14:00:00",
+          "departure_time": "14:00:00",
+          "stop_id": "SAB_13511",
+          "stop_sequence": "1",
+          "stop_headsign": "Can Barata/bages",
+          "pickup_type": "0",
+          "drop_off_type": "0",
+          "shape_dist_traveled": "",
+          "timepoint": ""
+        }
+      ],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "SAB_711000100002",
+      "atm_trip": {
+        "route_id": "SAB_711",
+        "trip_id": "SAB_711000100002",
+        "trip_headsign": "Sholt L10",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "1",
+        "service_id": "SAB_71100372-FEI EXC VAC"
+      },
+      "atm_route": {
+        "agency_id": "SAB_1",
+        "route_id": "SAB_711",
+        "route_short_name": "TAD CT",
+        "route_long_name": "TRANSPORT A DEMANDA CAN TRABAL",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "ff69ff",
+        "route_text_color": "000000",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [
+        {
+          "trip_id": "SAB_711000100002",
+          "arrival_time": "14:50:00",
+          "departure_time": "14:50:00",
+          "stop_id": "SAB_5085",
+          "stop_sequence": "1",
+          "stop_headsign": "Avinguda Pla Del Vinyet",
+          "pickup_type": "0",
+          "drop_off_type": "0",
+          "shape_dist_traveled": "",
+          "timepoint": ""
+        }
+      ],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "TCC_157000010001",
+      "atm_trip": {
+        "route_id": "TCC_157",
+        "trip_id": "TCC_157000010001",
+        "trip_headsign": "OASIS-COLEGIO",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "TCC_0157_0001",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "1",
+        "service_id": "TCC_15700152-LECTIUS"
+      },
+      "atm_route": {
+        "agency_id": "TCC_4",
+        "route_id": "TCC_157",
+        "route_short_name": "SL5",
+        "route_long_name": "SITGES: REFORÇ MARIA OSSÓ",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "0b13bb",
+        "route_text_color": "000000",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [
+        {
+          "trip_id": "TCC_157000010001",
+          "arrival_time": "08:00:00",
+          "departure_time": "08:00:00",
+          "stop_id": "TCC_10498",
+          "stop_sequence": "1",
+          "stop_headsign": "",
+          "pickup_type": "0",
+          "drop_off_type": "0",
+          "shape_dist_traveled": "",
+          "timepoint": ""
+        }
+      ],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "TCC_157000010002",
+      "atm_trip": {
+        "route_id": "TCC_157",
+        "trip_id": "TCC_157000010002",
+        "trip_headsign": "OASIS-COLEGIO",
+        "trip_short_name": "",
+        "direction_id": "0",
+        "block_id": "",
+        "shape_id": "TCC_0157_0001",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "1",
+        "service_id": "TCC_15700152-LECTIUS"
+      },
+      "atm_route": {
+        "agency_id": "TCC_4",
+        "route_id": "TCC_157",
+        "route_short_name": "SL5",
+        "route_long_name": "SITGES: REFORÇ MARIA OSSÓ",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "0b13bb",
+        "route_text_color": "000000",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [
+        {
+          "trip_id": "TCC_157000010002",
+          "arrival_time": "08:20:00",
+          "departure_time": "08:20:00",
+          "stop_id": "TCC_10498",
+          "stop_sequence": "1",
+          "stop_headsign": "",
+          "pickup_type": "0",
+          "drop_off_type": "0",
+          "shape_dist_traveled": "",
+          "timepoint": ""
+        }
+      ],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "TCC_157000020009",
+      "atm_trip": {
+        "route_id": "TCC_157",
+        "trip_id": "TCC_157000020009",
+        "trip_headsign": "COLEGIO - OASIS",
+        "trip_short_name": "",
+        "direction_id": "1",
+        "block_id": "",
+        "shape_id": "TCC_0157_0002",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "1",
+        "service_id": "TCC_15700152-LECTIUS"
+      },
+      "atm_route": {
+        "agency_id": "TCC_4",
+        "route_id": "TCC_157",
+        "route_short_name": "SL5",
+        "route_long_name": "SITGES: REFORÇ MARIA OSSÓ",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "0b13bb",
+        "route_text_color": "000000",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [
+        {
+          "trip_id": "TCC_157000020009",
+          "arrival_time": "15:00:00",
+          "departure_time": "15:00:00",
+          "stop_id": "TCC_10500",
+          "stop_sequence": "1",
+          "stop_headsign": "",
+          "pickup_type": "0",
+          "drop_off_type": "0",
+          "shape_dist_traveled": "",
+          "timepoint": ""
+        }
+      ],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "TCC_157000020010",
+      "atm_trip": {
+        "route_id": "TCC_157",
+        "trip_id": "TCC_157000020010",
+        "trip_headsign": "COLEGIO - OASIS",
+        "trip_short_name": "",
+        "direction_id": "1",
+        "block_id": "",
+        "shape_id": "TCC_0157_0002",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "1",
+        "service_id": "TCC_15700152-LECTIUS"
+      },
+      "atm_route": {
+        "agency_id": "TCC_4",
+        "route_id": "TCC_157",
+        "route_short_name": "SL5",
+        "route_long_name": "SITGES: REFORÇ MARIA OSSÓ",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "0b13bb",
+        "route_text_color": "000000",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [
+        {
+          "trip_id": "TCC_157000020010",
+          "arrival_time": "15:20:00",
+          "departure_time": "15:20:00",
+          "stop_id": "TCC_10500",
+          "stop_sequence": "1",
+          "stop_headsign": "",
+          "pickup_type": "0",
+          "drop_off_type": "0",
+          "shape_dist_traveled": "",
+          "timepoint": ""
+        }
+      ],
+      "renfe_numeric_candidates": []
+    },
+    {
+      "target": "TCC_157000020011",
+      "atm_trip": {
+        "route_id": "TCC_157",
+        "trip_id": "TCC_157000020011",
+        "trip_headsign": "COLEGIO - OASIS",
+        "trip_short_name": "",
+        "direction_id": "1",
+        "block_id": "",
+        "shape_id": "TCC_0157_0002",
+        "bikes_allowed": "0",
+        "wheelchair_accessible": "1",
+        "service_id": "TCC_15700152-LECTIUS"
+      },
+      "atm_route": {
+        "agency_id": "TCC_4",
+        "route_id": "TCC_157",
+        "route_short_name": "SL5",
+        "route_long_name": "SITGES: REFORÇ MARIA OSSÓ",
+        "route_desc": "",
+        "route_type": "3",
+        "route_url": "",
+        "route_color": "0b13bb",
+        "route_text_color": "000000",
+        "route_branding_url": "",
+        "route_sort_order": "3"
+      },
+      "atm_stop_rows": [
+        {
+          "trip_id": "TCC_157000020011",
+          "arrival_time": "15:40:00",
+          "departure_time": "15:40:00",
+          "stop_id": "TCC_10500",
+          "stop_sequence": "1",
+          "stop_headsign": "",
+          "pickup_type": "0",
+          "drop_off_type": "0",
+          "shape_dist_traveled": "",
+          "timepoint": ""
+        }
+      ],
+      "renfe_numeric_candidates": []
+    }
+  ],
+  "abr": {
+    "url": "https://territori.gencat.cat/web/.content/home/serveis/visors-cartografia/bases-cartografiques/infraestructures-mobilitat/autobusos-interurbans/busos-interurbans-GTFS.zip",
+    "bytes": 24085885,
+    "sha256": "0026176ca22e54dc540e5c84160984f9703cc1e3f68abcd4bd248bfbb7adfcdf",
+    "last_modified": "Mon, 23 Nov 2026 10:22:28 GMT",
+    "status": "CHECKS_RECORDED",
+    "crc_ok": true,
+    "igualadina_routes": 50,
+    "igualadina_trips": 2101,
+    "exact_or_prefix_candidates": {
+      "ABR_02949bb2-f529-40b3-8431-07ebc5951014": [],
+      "ABR_2": [],
+      "ABR_3": []
+    }
+  },
+  "identity_recoveries": 0,
+  "imputations": 0,
+  "originals_unchanged": true,
+  "production": "NO_GO"
+}
