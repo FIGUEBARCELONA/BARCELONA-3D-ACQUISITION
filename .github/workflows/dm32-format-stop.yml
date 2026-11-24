@@ -1,0 +1,111 @@
+name: DM32 independent GIS formats and stop references
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm32-format-stop.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/dm32deps" shapely pyshp pyproj
+      - run: |
+          PYTHONPATH="$RUNNER_TEMP/dm32deps" python - <<'PY'
+          import pathlib,zipfile,io,hashlib,json,collections,xml.etree.ElementTree as E,math,csv,re,urllib.request,concurrent.futures
+          import shapefile
+          from shapely.geometry import shape,Polygon
+          from shapely.ops import unary_union,transform
+          from pyproj import Transformer
+          d=pathlib.Path('custody/dm31');o=pathlib.Path('custody/dm32');o.mkdir(exist_ok=True)
+          report={'formats':{},'qr_nearest':[],'downloads':{},'no_repairs':True,'canonical_approved':False}
+          def load(k,h):
+              b=(d/(k+'.original.zip')).read_bytes();assert hashlib.sha256(b).hexdigest()==h
+              return zipfile.ZipFile(io.BytesIO(b))
+          shp=load('gis_2','9002d5806bd6f8689865cb61ebbaf9d9849f45b9c34fde9e4eaebfa473a4f61f')
+          kmz=load('gis_40','72c3164b6c7f80a43bed3a187793b06a2abe136163e5a028289556d857d4ca19')
+          js=load('gis_41','96fd6b591e17e537bdaf3dc97bbfd9c1aef1bedcbbe871942cbd2c7f8746e96a')
+          j=json.loads(js.read(next(n for n in js.namelist() if 'POLIGONS' in n)))
+          assert j['crs']['properties']['name']=='EPSG:25831'
+          tx=Transformer.from_crs(4326,25831,always_xy=True).transform
+          ns={'k':'http://www.opengis.net/kml/2.2'}
+          def ring(el):
+              return [tuple(map(float,v.split(',')[:2])) for v in el.find('.//k:coordinates',ns).text.split()]
+          def summary(a,b):
+              keys=set(a)&set(b);inv=[k for k in keys if not a[k].is_valid or not b[k].is_valid]
+              diffs=[{'code':k,'m2':a[k].symmetric_difference(b[k]).area} for k in sorted(keys) if k not in inv]
+              return {'matched':len(keys),'only_shp':sorted(set(a)-set(b)),'only_other':sorted(set(b)-set(a)),'invalid':inv,'sum_symdiff_m2':sum(x['m2'] for x in diffs),'max_symdiff_m2':max([x['m2'] for x in diffs],default=0),'rows':diffs}
+          for key,fragment,kfrag,typ in [('barris','_Barris_','_BARRI_','BARRI'),('districtes','_Districtes_','_DISTRICTE_','DISTRICTE'),('municipi','_TermeMunicipal_','_TERME_MUNICIPAL_','TERME')]:
+              try:
+                  n=next(n for n in shp.namelist() if fragment in n and n.endswith('.shp'));base=n[:-4]
+                  r=shapefile.Reader(shp=io.BytesIO(shp.read(n)),shx=io.BytesIO(shp.read(base+'.shx')),dbf=io.BytesIO(shp.read(base+'.dbf')),encoding='utf-8')
+                  rr=[(x.record.as_dict(),shape(x.shape.__geo_interface__)) for x in r.iterShapeRecords()]
+                  a={x['CODI_UA']:g for x,g in rr};assert len(a)==len(rr)
+                  jj=[f for f in j['features'] if f['properties']['TIPUS_UA']==typ and f['properties']['TERME']=='080193' and f['properties']['ID_ELEMENT'] in {x['ID_ELEMENT'] for x,g in rr}]
+                  b={f['properties']['CODI_UA']:shape(f['geometry']) for f in jj};assert len(b)==len(jj)
+                  m={'json':summary(a,b),'shp_district_mapping':[{ 'code':x['CODI_UA'],'district':x['DISTRICTE'],'name':x['NOM']} for x,g in rr]}
+                  n=next(n for n in kmz.namelist() if kfrag in n)
+                  with zipfile.ZipFile(io.BytesIO(kmz.read(n))) as k:
+                      root=E.fromstring(k.read(next(s for s in k.namelist() if s.endswith('.kml'))))
+                  c={}
+                  for pm in root.findall('.//k:Placemark',ns):
+                      attrs={s.get('name'):s.text for s in pm.findall('.//k:SimpleData',ns)}
+                      code=attrs.get('CODI_UA');assert code and code not in c
+                      pp=[]
+                      for p in pm.findall('.//k:Polygon',ns):
+                          ext=ring(p.find('k:outerBoundaryIs',ns));holes=[ring(q) for q in p.findall('k:innerBoundaryIs',ns)]
+                          pp.append(transform(tx,Polygon(ext,holes)))
+                      assert pp
+                      c[code]=unary_union(pp)
+                  m['kmz']=summary(a,c);report['formats'][key]=m
+              except Exception as e:report['formats'][key]={'error':repr(e)}
+          qr=json.loads((d/'qr_atom.json').read_text())['qr_destinations']
+          p=pathlib.Path('custody/dm19b/ATM_NAP_mdb2832_20261117.zip')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='af45496d45406ca8d3d123232b9f42f1c8dcf5757aef5c123c56ce8e556396d3'
+          with zipfile.ZipFile(p) as z:
+              with z.open('stops.txt') as f:rr=list(csv.DictReader(io.TextIOWrapper(f,encoding='utf-8-sig')))
+          def dist(a,b,c,e):
+              x=math.radians(c-a);y=math.radians(e-b);q=math.sin(x/2)**2+math.cos(math.radians(a))*math.cos(math.radians(c))*math.sin(y/2)**2
+              return 6371008.8*2*math.asin(min(1,math.sqrt(q)))
+          for q in qr:
+              u=q['resolved_url']
+              m=re.search(r'!3d([-\d.]+)!4d([-\d.]+)',u)
+              if m:a,b=map(float,m.groups());method='place_target'
+              else:
+                  m=re.search(r'!1d([-\d.]+)!2d([-\d.]+)',u)
+                  if m:b,a=map(float,m.groups());method='directions_destination'
+                  else:
+                      m=re.search(r'/search/([-\d.]+),\+([-\d.]+)',u);assert m
+                      a,b=map(float,m.groups());method='search_coordinate'
+              v=[]
+              for s in rr:
+                  try:
+                      x,y=float(s['stop_lat']),float(s['stop_lon'])
+                      v.append({'distance_m':dist(a,b,x,y),'id':s['stop_id'],'name':s['stop_name'],'lat':x,'lon':y})
+                  except (ValueError,KeyError):pass
+              report['qr_nearest'].append({'code':q['code'],'lat':a,'lon':b,'method':method,'nearest':sorted(v,key=lambda x:x['distance_m'])[:5],'identity_approved':False})
+          sources={'cad':'https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=97.BARCELONA.1','xml_resource_metadata':'https://opendata-ajuntament.barcelona.cat/data/api/action/resource_show?id=732506ee-bcdf-409f-bed8-0b25cbc0e948'}
+          def download(item):
+              k,u=item
+              try:
+                  with urllib.request.urlopen(u,timeout=18) as f:
+                      b=f.read(10000001);m={'url':u,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':f.headers.get('Content-Type'),'disposition':f.headers.get('Content-Disposition'),'first_bytes_hex':b[:32].hex()}
+                  assert len(b)<=10000000
+                  if k=='cad':
+                      assert not b.lstrip().startswith(b'<'),'HTML not CAD'
+                      (o/'cad_response.original').write_bytes(b);m['status']='BINARY_RECOVERED_FORMAT_NOT_VALIDATED'
+                  else:
+                      j=json.loads(b);assert j.get('success');m['metadata']=j['result'];(o/'xml_resource_metadata.json').write_bytes(b);m['status']='METADATA_ONLY'
+                  return k,m
+              except Exception as e:return k,{'url':u,'status':'FAILED','error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:report['downloads']=dict(ex.map(download,sources.items()))
+          (o/'format_stop_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2,default=str)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm32/
+          git commit -m 'DM32 compare GIS codes and QR proximity without identity claims'
+          git push origin HEAD:main
