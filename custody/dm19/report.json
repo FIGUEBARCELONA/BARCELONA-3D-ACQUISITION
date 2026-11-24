@@ -1,0 +1,2844 @@
+{
+  "unit_normalization": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "rows": 215058,
+      "patch_rows": 111,
+      "by_variable": {
+        "1000": 15,
+        "1001": 15,
+        "1002": 15,
+        "1003": 15,
+        "1004": 15,
+        "1509": 18,
+        "1515": 18
+      },
+      "reverse_verified": 111,
+      "originals_modified": false,
+      "patch_sha256": "966b8f5dc210959905c6fe552a7cecd6378be818e690ceb17a12420b9489e7ca",
+      "unit_assignment_not_calibration": true
+    }
+  },
+  "X4": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "lots": [
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-01",
+            "2025-01-02"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-01T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-01T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-02T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127664,
+            "sha256": "59f2d1969b863174f538784ded087142ed83f2ff4327fa18163eedbe9a71abb4",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-01.json.gz",
+            "stored_sha256": "901af103136062fac6122bb7b2c142dac6689de8d6b4f9c3cf63638c03009cae",
+            "stored_bytes": 6844
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-02",
+            "2025-01-03"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-02T00:00:00.000",
+              "last": "2025-01-02T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-02T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-03T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127677,
+            "sha256": "645a1cbc9f2c527849aa62c0027795691460ac51e77c65df7bfde979b3ef660b",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-02.json.gz",
+            "stored_sha256": "3a1eb7a077bff87a9d72b95744fd6a415ef1766d72381d680c64a9350972db69",
+            "stored_bytes": 6934
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-03",
+            "2025-01-04"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-03T00:00:00.000",
+              "last": "2025-01-03T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-03T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-04T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127689,
+            "sha256": "aefe4927bffbccfd13ed231fb05ad8f605d3d3f597a85a0c97b863e2e03eb7e9",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-03.json.gz",
+            "stored_sha256": "baa33cdae89b9a5398273f69acbb068a0728b1d0671ba374d4de45d5d8181dd5",
+            "stored_bytes": 6906
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-04",
+            "2025-01-05"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-04T00:00:00.000",
+              "last": "2025-01-04T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-04T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-05T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127718,
+            "sha256": "7333070ab9dd9eca3f00e95e958bdf1f6706cc528786e209815ab0408d01a91f",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-04.json.gz",
+            "stored_sha256": "a80a37110bef9c2779595f2cf19dc2d18181a005d3ec75b7176d2240e98ac1b9",
+            "stored_bytes": 6920
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-05",
+            "2025-01-06"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-05T00:00:00.000",
+              "last": "2025-01-05T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-05T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-06T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127738,
+            "sha256": "f53108707fae130c3eca4cd2385dc84d3b2c94c617fb6fb276af4d32c89e99ca",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-05.json.gz",
+            "stored_sha256": "f109e5763d6f59c165ec1365735e622e76d3cdfa2ce612bea5063ed346331495",
+            "stored_bytes": 6986
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-06",
+            "2025-01-07"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-06T00:00:00.000",
+              "last": "2025-01-06T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-06T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-07T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127720,
+            "sha256": "08876408ffbae1aa89c4acad48eaf75b398c5125d1ee1ddecde81e2057a05098",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-06.json.gz",
+            "stored_sha256": "865913fd1a901f84f4f9273c91ef505489bddfba08a449d8d31224938d47e22c",
+            "stored_bytes": 7031
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-07",
+            "2025-01-08"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-07T00:00:00.000",
+              "last": "2025-01-07T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-07T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-08T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127734,
+            "sha256": "9b1169a03a7a75b60e704d773b71e7f9dfafaa6cf4fd1b44cfb0dac91466b556",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-07.json.gz",
+            "stored_sha256": "ca6a741e8d00d8e391c878e8fd9c0b87d2169c5f23084591a0f9ebd7bf0e9097",
+            "stored_bytes": 6967
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-08",
+            "2025-01-09"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-08T00:00:00.000",
+              "last": "2025-01-08T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-08T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-09T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127744,
+            "sha256": "2c6bd571af706b70852ff11df653c6260d54b76481fb008500df956374470354",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-08.json.gz",
+            "stored_sha256": "82d5f2f697f019ae611ad73257605d6cc52249a083550b054d2ba7353c1ccd4d",
+            "stored_bytes": 6981
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-09",
+            "2025-01-10"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-09T00:00:00.000",
+              "last": "2025-01-09T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-09T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-10T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127777,
+            "sha256": "b772e8d0b8c0e0329f13db5870ea0cce58af3c1150bcb6307837b7fe5b488fd2",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-09.json.gz",
+            "stored_sha256": "c4dbbe412d6393ffbbd28c8c773b4dd7803f9f92c9e8d235dc090d79e4ab5c99",
+            "stored_bytes": 7013
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-10",
+            "2025-01-11"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-10T00:00:00.000",
+              "last": "2025-01-10T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-10T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-11T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127751,
+            "sha256": "d7dcea1d5b884f4d805f3352df58829523d2c6615b92b0e9a0750ec8b87ece4c",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-10.json.gz",
+            "stored_sha256": "bb0d4fd1fc7f7af1c9c0f6188b13bf5d332e2295a2e54d2dc5a3e43012dedf7f",
+            "stored_bytes": 6961
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-11",
+            "2025-01-12"
+          ],
+          "rows": 736,
+          "bases": {
+            "SH": 736
+          },
+          "flags": {
+            "ABSENT": 720,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 46,
+            "2": 46,
+            "3": 46,
+            "30": 46,
+            "31": 46,
+            "32": 46,
+            "33": 46,
+            "34": 46,
+            "35": 46,
+            "36": 46,
+            "40": 46,
+            "42": 46,
+            "44": 46,
+            "50": 46,
+            "51": 46,
+            "72": 46
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-11T00:00:00.000",
+              "last": "2025-01-11T23:30:00.000",
+              "rows": 46,
+              "unique_times": 46,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-11T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-12T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 122406,
+            "sha256": "0395a6f2702653a45df42d0bd745ad30f29af673dd1e75c6a2e2cbded371046f",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-11.json.gz",
+            "stored_sha256": "2242c66c5ab249499809eb52f8f39cd103a09604b4f372ea39b3d42795e7347e",
+            "stored_bytes": 6749
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-12",
+            "2025-01-13"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-12T00:00:00.000",
+              "last": "2025-01-12T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-12T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-13T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127668,
+            "sha256": "6597f5b645b4a6e74a8e5162d05b2dc59422d5cced4e2227823500d4f616fdf5",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-12.json.gz",
+            "stored_sha256": "95b4464c22032d0e31b3ac64a0c650daea95b68678fa8935713fbd95276be5ff",
+            "stored_bytes": 7047
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-13",
+            "2025-01-14"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "V": 768
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-13T00:00:00.000",
+              "last": "2025-01-13T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-13T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-14T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 140381,
+            "sha256": "591766961430fa1ece5d25667a9f153cf00914816c685b4995447d9b0ac54a17",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-13.json.gz",
+            "stored_sha256": "7c3567d45dc39985a5e1f58790a0c248a24c6b18e6013015960ac9756d96666f",
+            "stored_bytes": 7074
+          },
+          "status": "CHECKS_RECORDED"
+        },
+        {
+          "station": "X4",
+          "period": [
+            "2025-01-14",
+            "2025-01-15"
+          ],
+          "rows": 768,
+          "bases": {
+            "SH": 768
+          },
+          "flags": {
+            "ABSENT": 752,
+            "T": 16
+          },
+          "errors": {
+            "duplicate_keys": 0
+          },
+          "variables": {
+            "1": 48,
+            "2": 48,
+            "3": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48,
+            "35": 48,
+            "36": 48,
+            "40": 48,
+            "42": 48,
+            "44": 48,
+            "50": 48,
+            "51": 48,
+            "72": 48
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "2",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "3",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "30",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "31",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "32",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "33",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "34",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "hPa"
+            },
+            {
+              "variable": "35",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            },
+            {
+              "variable": "36",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "W/m²"
+            },
+            {
+              "variable": "40",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "42",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°C"
+            },
+            {
+              "variable": "44",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "%"
+            },
+            {
+              "variable": "50",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "m/s"
+            },
+            {
+              "variable": "51",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "°"
+            },
+            {
+              "variable": "72",
+              "base": "SH",
+              "first": "2025-01-14T00:00:00.000",
+              "last": "2025-01-14T23:30:00.000",
+              "rows": 48,
+              "unique_times": 48,
+              "metadata_unit": "mm"
+            }
+          ],
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X4%27+AND+data_lectura%3E%3D%272025-01-14T00%3A00%3A00%27+AND+data_lectura%3C%272025-01-15T00%3A00%3A00%27&%24limit=25000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 127613,
+            "sha256": "4365efa3e71cbc632811882d447c55f8ddbcba24d0122d56d868a10e8aa8c5e6",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm19/subdaily_X4_2025-01-14.json.gz",
+            "stored_sha256": "a85ae95658a4d3026e716bf31c9cf63db3e974df3510ee012178b743c2106e45",
+            "stored_bytes": 6908
+          },
+          "status": "CHECKS_RECORDED"
+        }
+      ],
+      "rows": 10720,
+      "days_recovered": 14,
+      "days_failed": 0
+    }
+  },
+  "TBX": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source": {
+        "url": "https://opendata.tram.cat/GTFS/zip/TBX.zip",
+        "bytes": 437087,
+        "sha256": "953f3f775ce39643c6b1c26361e2c396b03ca610d13f5459139179a91aaa294e",
+        "content_type": "application/zip",
+        "path": "custody/dm19/TRAM_TBX.zip",
+        "stored_sha256": "953f3f775ce39643c6b1c26361e2c396b03ca610d13f5459139179a91aaa294e",
+        "stored_bytes": 437087
+      },
+      "counts": {
+        "agency": 1,
+        "stops": 86,
+        "routes": 3,
+        "trips": 2060,
+        "stop_times": 44828,
+        "calendar_dates": 31,
+        "shapes": 9532
+      },
+      "agencies": [
+        "TRAMBAIX"
+      ],
+      "duplicate_ids": {
+        "routes": 0,
+        "trips": 0,
+        "stops": 0
+      },
+      "fk": {
+        "trip_route": 0,
+        "trip_service": 0,
+        "stop_time_trip": 0,
+        "stop_time_stop": 0,
+        "trip_shape": 0
+      },
+      "invalid_times": 0,
+      "duplicate_sequences": 0,
+      "reversed_adjacent_times": 0,
+      "overnight": 1427,
+      "calendar_extremes": [
+        "20261124",
+        "20261224"
+      ],
+      "feed_info": [],
+      "actual_occupancy_verified": false
+    }
+  },
+  "TBS": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source": {
+        "url": "https://opendata.tram.cat/GTFS/zip/TBS.zip",
+        "bytes": 264860,
+        "sha256": "856e3b9ac8eb31bf3fa76299c12a515f8ae40469b4208491bf4ecfd25b80c405",
+        "content_type": "application/zip",
+        "path": "custody/dm19/TRAM_TBS.zip",
+        "stored_sha256": "856e3b9ac8eb31bf3fa76299c12a515f8ae40469b4208491bf4ecfd25b80c405",
+        "stored_bytes": 264860
+      },
+      "counts": {
+        "agency": 1,
+        "stops": 85,
+        "routes": 3,
+        "trips": 3169,
+        "stop_times": 30231,
+        "calendar_dates": 31,
+        "shapes": 3738
+      },
+      "agencies": [
+        "TRAMBESÒS"
+      ],
+      "duplicate_ids": {
+        "routes": 0,
+        "trips": 0,
+        "stops": 0
+      },
+      "fk": {
+        "trip_route": 0,
+        "trip_service": 0,
+        "stop_time_trip": 0,
+        "stop_time_stop": 0,
+        "trip_shape": 0
+      },
+      "invalid_times": 0,
+      "duplicate_sequences": 0,
+      "reversed_adjacent_times": 0,
+      "overnight": 812,
+      "calendar_extremes": [
+        "20261124",
+        "20261224"
+      ],
+      "feed_info": [],
+      "actual_occupancy_verified": false
+    }
+  },
+  "TMB_NAP_replica": {
+    "status": "FAILED",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  "ATM_discovery": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source": {
+        "url": "https://t-mobilitat.cat/es/web/t-mobilitat/datos-abiertos/catalogo-de-datos/informacion-estatica",
+        "bytes": 92520,
+        "sha256": "631bab7cf11005902d3f7f2384679dae303888aa2ccb4ce08df7f1e0285d2a2e",
+        "content_type": "text/html;charset=UTF-8"
+      },
+      "candidate_download_links": [
+        "https://t-mobilitat.cat/c/portal/update_language?p_l_id=289&redirect=%2Fes%2Fweb%2Ft-mobilitat%2Fdatos-abiertos%2Fcatalogo-de-datos%2Finformacion-estatica&languageId=ca_ES",
+        "https://t-mobilitat.cat/c/portal/update_language?p_l_id=289&redirect=%2Fes%2Fweb%2Ft-mobilitat%2Fdatos-abiertos%2Fcatalogo-de-datos%2Finformacion-estatica&languageId=en_US",
+        "https://t-mobilitat.cat/es/web/t-mobilitat/datos-abiertos/catalogo-de-datos/informacion-estatica?squemeColor=SC02",
+        "https://gtfs.org/documentation/schedule/reference/"
+      ],
+      "portlet_unavailable": true,
+      "status": "DISCOVERY_ONLY"
+    }
+  },
+  "population": {
+    "status": "FAILED",
+    "error": "73-row target table not found; table lengths []"
+  },
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO"
+}
