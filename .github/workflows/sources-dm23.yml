@@ -1,0 +1,27 @@
+name: DM-23 source checks
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/sources-dm23.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - run: python3 sources_dm23.py
+      - run: |
+          test -f custody/dm23/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- custody/dm23
+          if ! git diff --cached --quiet; then
+            git commit -m "DM-23 public source evidence"
+            git push origin HEAD:main
+          fi
