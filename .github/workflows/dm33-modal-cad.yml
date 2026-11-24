@@ -1,0 +1,45 @@
+name: DM33 modal source and CAD reader
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm33-modal-cad.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect exact PDF and available CAD drivers
+        run: |
+          python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/dm33pdf" pymupdf pyogrio
+          PYTHONPATH="$RUNNER_TEMP/dm33pdf" python - <<'PY'
+          import pathlib,hashlib,json,base64,fitz,shutil
+          d=pathlib.Path('custody/dm33')
+          p=pathlib.Path('custody/dm29/horaris.pdf')
+          b=p.read_bytes();assert hashlib.sha256(b).hexdigest()=='22039136f9f10675b469d5d6f310bd3bf010a863e3451268df447c5d1ac4f4c1'
+          with fitz.open(stream=b,filetype='pdf') as doc:
+              for i,page in enumerate(doc):
+                  # Render entire page from the exact binary, not web cache.
+                  pix=page.get_pixmap(matrix=fitz.Matrix(1.6,1.6),alpha=False)
+                  (d/f'horari_p{i+1}.png.b64').write_text(base64.b64encode(pix.tobytes('png')).decode())
+          out={}
+          try:
+              import pyogrio
+              out['gdal_version']=pyogrio.__gdal_version_string__
+              out['dgn_drivers']={k:v for k,v in pyogrio.list_drivers().items() if 'DGN' in k}
+              p=pathlib.Path('custody/dm32/cad_response.original');assert hashlib.sha256(p.read_bytes()).hexdigest()=='ad38d369514a1c9e1dc29f7654173a7d600b8db72553af0e67ae193259f58ea6'
+              if 'DGNv8' in out['dgn_drivers']:
+                  out['layers']=pyogrio.list_layers(str(p)).tolist()
+              else:out['status']='DGNv8_DRIVER_NOT_AVAILABLE'
+          except Exception as e:out['error']=repr(e)
+          (d/'cad_driver_report.json').write_text(json.dumps(out,indent=2)+'\n')
+          PY
+      - name: Persist evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm33/
+          git commit -m 'DM33 exact timetable render and CAD driver availability'
+          git push origin HEAD:main
