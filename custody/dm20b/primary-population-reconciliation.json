@@ -1,0 +1,611 @@
+{
+  "source": "https://dades.ajuntament.barcelona.cat/informe-padro-estrangers/ca/seccio_3.html",
+  "source_component": "custody/dm20b/embedded-table-candidate-2.json",
+  "source_blob": "ff2ea492d16dee70fdd15d774e3c9c0b93d71316",
+  "source_sha256": "2658be636dd5d21395e93d7fa9d8f7817eb814db8d881c5008f6801e247024fe",
+  "source_date": "2026-01-01",
+  "population": 1729963,
+  "primary_rows": 73,
+  "individual_exact_numeric_matches": 73,
+  "row_component_sums": 74,
+  "districts": {
+    "Ciutat Vella": 115829,
+    "Eixample": 277353,
+    "Sants-Montjuïc": 196040,
+    "Les Corts": 83773,
+    "Sarrià-Sant Gervasi": 152943,
+    "Gràcia": 126830,
+    "Horta-Guinardó": 183006,
+    "Nou Barris": 183280,
+    "Sant Andreu": 158284,
+    "Sant Martí": 252625
+  },
+  "rows": [
+    {
+      "code": 1,
+      "district": "Ciutat Vella",
+      "barri": "el Raval",
+      "population": 50863,
+      "dm19_population": 50863,
+      "difference": 0
+    },
+    {
+      "code": 2,
+      "district": "Ciutat Vella",
+      "barri": "el Barri Gòtic",
+      "population": 27312,
+      "dm19_population": 27312,
+      "difference": 0
+    },
+    {
+      "code": 3,
+      "district": "Ciutat Vella",
+      "barri": "la Barceloneta",
+      "population": 14665,
+      "dm19_population": 14665,
+      "difference": 0
+    },
+    {
+      "code": 4,
+      "district": "Ciutat Vella",
+      "barri": "Sant Pere, Santa Caterina i la Ribera",
+      "population": 22989,
+      "dm19_population": 22989,
+      "difference": 0
+    },
+    {
+      "code": 5,
+      "district": "Eixample",
+      "barri": "el Fort Pienc",
+      "population": 37672,
+      "dm19_population": 37672,
+      "difference": 0
+    },
+    {
+      "code": 6,
+      "district": "Eixample",
+      "barri": "la Sagrada Família",
+      "population": 53201,
+      "dm19_population": 53201,
+      "difference": 0
+    },
+    {
+      "code": 7,
+      "district": "Eixample",
+      "barri": "la Dreta de l'Eixample",
+      "population": 45464,
+      "dm19_population": 45464,
+      "difference": 0
+    },
+    {
+      "code": 8,
+      "district": "Eixample",
+      "barri": "l'Antiga Esquerra de l'Eixample",
+      "population": 42921,
+      "dm19_population": 42921,
+      "difference": 0
+    },
+    {
+      "code": 9,
+      "district": "Eixample",
+      "barri": "la Nova Esquerra de l'Eixample",
+      "population": 59117,
+      "dm19_population": 59117,
+      "difference": 0
+    },
+    {
+      "code": 10,
+      "district": "Eixample",
+      "barri": "Sant Antoni",
+      "population": 38978,
+      "dm19_population": 38978,
+      "difference": 0
+    },
+    {
+      "code": 11,
+      "district": "Sants-Montjuïc",
+      "barri": "el Poble-sec",
+      "population": 40136,
+      "dm19_population": 40136,
+      "difference": 0
+    },
+    {
+      "code": 12,
+      "district": "Sants-Montjuïc",
+      "barri": "la Marina del Prat Vermell",
+      "population": 3174,
+      "dm19_population": 3174,
+      "difference": 0
+    },
+    {
+      "code": 13,
+      "district": "Sants-Montjuïc",
+      "barri": "la Marina de Port",
+      "population": 31768,
+      "dm19_population": 31768,
+      "difference": 0
+    },
+    {
+      "code": 14,
+      "district": "Sants-Montjuïc",
+      "barri": "la Font de la Guatlla",
+      "population": 10869,
+      "dm19_population": 10869,
+      "difference": 0
+    },
+    {
+      "code": 15,
+      "district": "Sants-Montjuïc",
+      "barri": "Hostafrancs",
+      "population": 17021,
+      "dm19_population": 17021,
+      "difference": 0
+    },
+    {
+      "code": 16,
+      "district": "Sants-Montjuïc",
+      "barri": "la Bordeta",
+      "population": 21153,
+      "dm19_population": 21153,
+      "difference": 0
+    },
+    {
+      "code": 17,
+      "district": "Sants-Montjuïc",
+      "barri": "Sants - Badal",
+      "population": 25243,
+      "dm19_population": 25243,
+      "difference": 0
+    },
+    {
+      "code": 18,
+      "district": "Sants-Montjuïc",
+      "barri": "Sants",
+      "population": 46676,
+      "dm19_population": 46676,
+      "difference": 0
+    },
+    {
+      "code": 19,
+      "district": "Les Corts",
+      "barri": "les Corts",
+      "population": 46672,
+      "dm19_population": 46672,
+      "difference": 0
+    },
+    {
+      "code": 20,
+      "district": "Les Corts",
+      "barri": "la Maternitat i Sant Ramon",
+      "population": 24622,
+      "dm19_population": 24622,
+      "difference": 0
+    },
+    {
+      "code": 21,
+      "district": "Les Corts",
+      "barri": "Pedralbes",
+      "population": 12479,
+      "dm19_population": 12479,
+      "difference": 0
+    },
+    {
+      "code": 22,
+      "district": "Sarrià-Sant Gervasi",
+      "barri": "Vallvidrera, el Tibidabo i les Planes",
+      "population": 4867,
+      "dm19_population": 4867,
+      "difference": 0
+    },
+    {
+      "code": 23,
+      "district": "Sarrià-Sant Gervasi",
+      "barri": "Sarrià",
+      "population": 24937,
+      "dm19_population": 24937,
+      "difference": 0
+    },
+    {
+      "code": 24,
+      "district": "Sarrià-Sant Gervasi",
+      "barri": "les Tres Torres",
+      "population": 16341,
+      "dm19_population": 16341,
+      "difference": 0
+    },
+    {
+      "code": 25,
+      "district": "Sarrià-Sant Gervasi",
+      "barri": "Sant Gervasi - la Bonanova",
+      "population": 26801,
+      "dm19_population": 26801,
+      "difference": 0
+    },
+    {
+      "code": 26,
+      "district": "Sarrià-Sant Gervasi",
+      "barri": "Sant Gervasi - Galvany",
+      "population": 49202,
+      "dm19_population": 49202,
+      "difference": 0
+    },
+    {
+      "code": 27,
+      "district": "Sarrià-Sant Gervasi",
+      "barri": "el Putxet i el Farró",
+      "population": 30795,
+      "dm19_population": 30795,
+      "difference": 0
+    },
+    {
+      "code": 28,
+      "district": "Gràcia",
+      "barri": "Vallcarca i els Penitents",
+      "population": 16928,
+      "dm19_population": 16928,
+      "difference": 0
+    },
+    {
+      "code": 29,
+      "district": "Gràcia",
+      "barri": "el Coll",
+      "population": 8056,
+      "dm19_population": 8056,
+      "difference": 0
+    },
+    {
+      "code": 30,
+      "district": "Gràcia",
+      "barri": "la Salut",
+      "population": 13947,
+      "dm19_population": 13947,
+      "difference": 0
+    },
+    {
+      "code": 31,
+      "district": "Gràcia",
+      "barri": "la Vila de Gràcia",
+      "population": 51477,
+      "dm19_population": 51477,
+      "difference": 0
+    },
+    {
+      "code": 32,
+      "district": "Gràcia",
+      "barri": "el Camp d'en Grassot i Gràcia Nova",
+      "population": 36422,
+      "dm19_population": 36422,
+      "difference": 0
+    },
+    {
+      "code": 33,
+      "district": "Horta-Guinardó",
+      "barri": "el Baix Guinardó",
+      "population": 26277,
+      "dm19_population": 26277,
+      "difference": 0
+    },
+    {
+      "code": 34,
+      "district": "Horta-Guinardó",
+      "barri": "Can Baró",
+      "population": 9645,
+      "dm19_population": 9645,
+      "difference": 0
+    },
+    {
+      "code": 35,
+      "district": "Horta-Guinardó",
+      "barri": "el Guinardó",
+      "population": 39144,
+      "dm19_population": 39144,
+      "difference": 0
+    },
+    {
+      "code": 36,
+      "district": "Horta-Guinardó",
+      "barri": "la Font d'en Fargues",
+      "population": 9845,
+      "dm19_population": 9845,
+      "difference": 0
+    },
+    {
+      "code": 37,
+      "district": "Horta-Guinardó",
+      "barri": "el Carmel",
+      "population": 33799,
+      "dm19_population": 33799,
+      "difference": 0
+    },
+    {
+      "code": 38,
+      "district": "Horta-Guinardó",
+      "barri": "la Teixonera",
+      "population": 12727,
+      "dm19_population": 12727,
+      "difference": 0
+    },
+    {
+      "code": 39,
+      "district": "Horta-Guinardó",
+      "barri": "Sant Genís dels Agudells",
+      "population": 7890,
+      "dm19_population": 7890,
+      "difference": 0
+    },
+    {
+      "code": 40,
+      "district": "Horta-Guinardó",
+      "barri": "Montbau",
+      "population": 5353,
+      "dm19_population": 5353,
+      "difference": 0
+    },
+    {
+      "code": 41,
+      "district": "Horta-Guinardó",
+      "barri": "la Vall d'Hebron",
+      "population": 6087,
+      "dm19_population": 6087,
+      "difference": 0
+    },
+    {
+      "code": 42,
+      "district": "Horta-Guinardó",
+      "barri": "la Clota",
+      "population": 1123,
+      "dm19_population": 1123,
+      "difference": 0
+    },
+    {
+      "code": 43,
+      "district": "Horta-Guinardó",
+      "barri": "Horta",
+      "population": 31116,
+      "dm19_population": 31116,
+      "difference": 0
+    },
+    {
+      "code": 44,
+      "district": "Nou Barris",
+      "barri": "Vilapicina i la Torre Llobeta",
+      "population": 26478,
+      "dm19_population": 26478,
+      "difference": 0
+    },
+    {
+      "code": 45,
+      "district": "Nou Barris",
+      "barri": "Porta",
+      "population": 31199,
+      "dm19_population": 31199,
+      "difference": 0
+    },
+    {
+      "code": 46,
+      "district": "Nou Barris",
+      "barri": "el Turó de la Peira",
+      "population": 17378,
+      "dm19_population": 17378,
+      "difference": 0
+    },
+    {
+      "code": 47,
+      "district": "Nou Barris",
+      "barri": "Can Peguera",
+      "population": 2122,
+      "dm19_population": 2122,
+      "difference": 0
+    },
+    {
+      "code": 48,
+      "district": "Nou Barris",
+      "barri": "la Guineueta",
+      "population": 15624,
+      "dm19_population": 15624,
+      "difference": 0
+    },
+    {
+      "code": 49,
+      "district": "Nou Barris",
+      "barri": "Canyelles",
+      "population": 6906,
+      "dm19_population": 6906,
+      "difference": 0
+    },
+    {
+      "code": 50,
+      "district": "Nou Barris",
+      "barri": "les Roquetes",
+      "population": 17595,
+      "dm19_population": 17595,
+      "difference": 0
+    },
+    {
+      "code": 51,
+      "district": "Nou Barris",
+      "barri": "Verdun",
+      "population": 13507,
+      "dm19_population": 13507,
+      "difference": 0
+    },
+    {
+      "code": 52,
+      "district": "Nou Barris",
+      "barri": "la Prosperitat",
+      "population": 28174,
+      "dm19_population": 28174,
+      "difference": 0
+    },
+    {
+      "code": 53,
+      "district": "Nou Barris",
+      "barri": "la Trinitat Nova",
+      "population": 8128,
+      "dm19_population": 8128,
+      "difference": 0
+    },
+    {
+      "code": 54,
+      "district": "Nou Barris",
+      "barri": "Torre Baró",
+      "population": 3236,
+      "dm19_population": 3236,
+      "difference": 0
+    },
+    {
+      "code": 55,
+      "district": "Nou Barris",
+      "barri": "Ciutat Meridiana",
+      "population": 11493,
+      "dm19_population": 11493,
+      "difference": 0
+    },
+    {
+      "code": 56,
+      "district": "Nou Barris",
+      "barri": "Vallbona",
+      "population": 1440,
+      "dm19_population": 1440,
+      "difference": 0
+    },
+    {
+      "code": 57,
+      "district": "Sant Andreu",
+      "barri": "la Trinitat Vella",
+      "population": 11307,
+      "dm19_population": 11307,
+      "difference": 0
+    },
+    {
+      "code": 58,
+      "district": "Sant Andreu",
+      "barri": "Baró de Viver",
+      "population": 2668,
+      "dm19_population": 2668,
+      "difference": 0
+    },
+    {
+      "code": 59,
+      "district": "Sant Andreu",
+      "barri": "el Bon Pastor",
+      "population": 15871,
+      "dm19_population": 15871,
+      "difference": 0
+    },
+    {
+      "code": 60,
+      "district": "Sant Andreu",
+      "barri": "Sant Andreu",
+      "population": 59330,
+      "dm19_population": 59330,
+      "difference": 0
+    },
+    {
+      "code": 61,
+      "district": "Sant Andreu",
+      "barri": "la Sagrera",
+      "population": 31247,
+      "dm19_population": 31247,
+      "difference": 0
+    },
+    {
+      "code": 62,
+      "district": "Sant Andreu",
+      "barri": "el Congrés i els Indians",
+      "population": 15254,
+      "dm19_population": 15254,
+      "difference": 0
+    },
+    {
+      "code": 63,
+      "district": "Sant Andreu",
+      "barri": "Navas",
+      "population": 22607,
+      "dm19_population": 22607,
+      "difference": 0
+    },
+    {
+      "code": 64,
+      "district": "Sant Martí",
+      "barri": "el Camp de l'Arpa del Clot",
+      "population": 39535,
+      "dm19_population": 39535,
+      "difference": 0
+    },
+    {
+      "code": 65,
+      "district": "Sant Martí",
+      "barri": "el Clot",
+      "population": 26907,
+      "dm19_population": 26907,
+      "difference": 0
+    },
+    {
+      "code": 66,
+      "district": "Sant Martí",
+      "barri": "el Parc i la Llacuna del Poblenou",
+      "population": 17639,
+      "dm19_population": 17639,
+      "difference": 0
+    },
+    {
+      "code": 67,
+      "district": "Sant Martí",
+      "barri": "la Vila Olímpica del Poblenou",
+      "population": 9293,
+      "dm19_population": 9293,
+      "difference": 0
+    },
+    {
+      "code": 68,
+      "district": "Sant Martí",
+      "barri": "el Poblenou",
+      "population": 34736,
+      "dm19_population": 34736,
+      "difference": 0
+    },
+    {
+      "code": 69,
+      "district": "Sant Martí",
+      "barri": "Diagonal Mar i el Front Marítim del Poblenou",
+      "population": 13771,
+      "dm19_population": 13771,
+      "difference": 0
+    },
+    {
+      "code": 70,
+      "district": "Sant Martí",
+      "barri": "el Besòs i el Maresme",
+      "population": 30695,
+      "dm19_population": 30695,
+      "difference": 0
+    },
+    {
+      "code": 71,
+      "district": "Sant Martí",
+      "barri": "Provençals del Poblenou",
+      "population": 22076,
+      "dm19_population": 22076,
+      "difference": 0
+    },
+    {
+      "code": 72,
+      "district": "Sant Martí",
+      "barri": "Sant Martí de Provençals",
+      "population": 27035,
+      "dm19_population": 27035,
+      "difference": 0
+    },
+    {
+      "code": 73,
+      "district": "Sant Martí",
+      "barri": "la Verneda i la Pau",
+      "population": 30938,
+      "dm19_population": 30938,
+      "difference": 0
+    }
+  ],
+  "source_type": "OMD primary published embedded table, not raw municipal CSV",
+  "production": "NO_GO"
+}
