@@ -1,0 +1,45 @@
+{
+  "observations": [
+    {
+      "requested_x": 429177.125,
+      "requested_y": 4582885.875,
+      "http": 200,
+      "url": "https://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?service=WMS&version=1.3.0&request=GetFeatureInfo&layers=model-elevacions-terreny-amb-lidar-25cm-2022&query_layers=model-elevacions-terreny-amb-lidar-25cm-2022&styles=&crs=EPSG%3A25831&bbox=429169.0%2C4582878.0%2C429185.0%2C4582894.0&width=64&height=64&i=32&j=32&format=image%2Fpng&info_format=application%2Fjson",
+      "sha256": "1ad3ced6e657129d8044338e4043005f1fe790cfc6e68340211b913d46355e89",
+      "feature_count": 1,
+      "value_m": 48.077,
+      "returned_x": 429177.125,
+      "returned_y": 4582885.875
+    },
+    {
+      "requested_x": 429177.375,
+      "requested_y": 4582885.875,
+      "http": 200,
+      "url": "https://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?service=WMS&version=1.3.0&request=GetFeatureInfo&layers=model-elevacions-terreny-amb-lidar-25cm-2022&query_layers=model-elevacions-terreny-amb-lidar-25cm-2022&styles=&crs=EPSG%3A25831&bbox=429169.25%2C4582878.0%2C429185.25%2C4582894.0&width=64&height=64&i=32&j=32&format=image%2Fpng&info_format=application%2Fjson",
+      "sha256": "73050fee996581e8aa8fd2a238192c3d00633fa23b2bd96c21be3be5bf3abd9a",
+      "feature_count": 1,
+      "value_m": 48.073002,
+      "returned_x": 429177.375,
+      "returned_y": 4582885.875
+    },
+    {
+      "requested_x": 429177.625,
+      "requested_y": 4582885.875,
+      "http": 200,
+      "url": "https://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?service=WMS&version=1.3.0&request=GetFeatureInfo&layers=model-elevacions-terreny-amb-lidar-25cm-2022&query_layers=model-elevacions-terreny-amb-lidar-25cm-2022&styles=&crs=EPSG%3A25831&bbox=429169.5%2C4582878.0%2C429185.5%2C4582894.0&width=64&height=64&i=32&j=32&format=image%2Fpng&info_format=application%2Fjson",
+      "sha256": "99fbf3e340ce3c0cde7fc0f3588c02b6d296f26401efc5ac7ef74febe55a178f",
+      "feature_count": 1,
+      "value_m": 48.069,
+      "returned_x": 429177.625,
+      "returned_y": 4582885.875
+    }
+  ],
+  "valid": 3,
+  "http_head": {
+    "error": "HTTPConnectionPool(host='datacloud.icgc.cat', port=80): Max retries exceeded with url: /datacloud/model-elevacions-terreny/tif_unzip/model-elevacions-terreny-lidar-amb-25cm-2022-2022.tif (Caused by ConnectTimeoutError(<HTTPConnection(host='datacloud.icgc.cat', port=80) at 0x7fc8cc7ab3e0>, 'Connection to datacloud.icgc.cat timed out. (connect timeout=12)'))"
+  },
+  "native_cells_recovered": 0,
+  "independent_accuracy_verified": false,
+  "email_submitted": false,
+  "production": "NO_GO"
+}
