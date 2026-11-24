@@ -1,0 +1,7 @@
+{
+  "gdal_version": "3.12.4",
+  "dgn_drivers": {
+    "DGN": "rw"
+  },
+  "status": "DGNv8_DRIVER_NOT_AVAILABLE"
+}
