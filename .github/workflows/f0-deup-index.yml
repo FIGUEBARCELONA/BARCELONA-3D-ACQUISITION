@@ -1,0 +1,53 @@
+name: F0 visual index of verified DEUP
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/f0-deup-index.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/f0index" pymupdf Pillow
+      - run: |
+          PYTHONPATH="$RUNNER_TEMP/f0index" python - <<'PY'
+          import pathlib,urllib.request,hashlib,json,base64,io
+          import fitz
+          from PIL import Image,ImageDraw
+          p=pathlib.Path('custody/f0-deup-index');p.mkdir(exist_ok=True,parents=True)
+          url='https://www.portdebarcelona.cat/sites/default/files/content/file/2021/10/24/1/delimitacion-de-los-espacios-y-usos-portuarios-deup_1.pdf'
+          out={'url':url}
+          try:
+              with urllib.request.urlopen(url,timeout=40) as f:
+                  b=f.read(40000001)
+              out.update({'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+              assert out['sha256']=='2fa06be75e20eba812dca128508972082e1d40b4b213c33d34dfdd5b68bcb721'
+              with fitz.open(stream=b,filetype='pdf') as doc:
+                  out['pages']=len(doc)
+                  out['index']=[{'page':i+1,'width':p.rect.width,'height':p.rect.height,'text_excerpt':p.get_text()[:100]} for i,p in enumerate(doc)]
+                  out['sheets']=[]
+                  # Plans are landscape; inspect all later landscape pages, including pages with no text layer.
+                  ids=[i for i in range(43,len(doc)) if doc[i].rect.width>doc[i].rect.height]
+                  out['landscape_pages']=[i+1 for i in ids]
+                  for k in range(0,len(ids),12):
+                      group=ids[k:k+12];im=Image.new('RGB',(1200,((len(group)+3)//4)*235),'white');dr=ImageDraw.Draw(im)
+                      for a,i in enumerate(group):
+                          page=doc[i];pix=page.get_pixmap(matrix=fitz.Matrix(290/page.rect.width,290/page.rect.width),alpha=False)
+                          v=Image.open(io.BytesIO(pix.tobytes('png')))
+                          x=(a%4)*300;y=(a//4)*235;im.paste(v,(x,y+24));dr.text((x+5,y+4),'PDF page '+str(i+1),fill='black')
+                      f=io.BytesIO();im.save(f,format='JPEG',quality=80)
+                      blob=f.getvalue();name='index_'+str(k//12)+'.jpg.b64';(p/name).write_text(base64.b64encode(blob).decode())
+                      out['sheets'].append({'path':name,'pages':[i+1 for i in group],'sha256':hashlib.sha256(blob).hexdigest()})
+              out['status']='INDEXED'
+          except Exception as e:out['status']='FAILED';out['error']=repr(e)
+          (p/'report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-deup-index/
+          git commit -m 'F0 visual index of exact verified PDF'
+          git push origin HEAD:main
