@@ -1,0 +1,86 @@
+name: DM31 topology and PDF custody
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm31-topology.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install isolated verification dependencies
+        run: |
+          python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/dm31deps" shapely pymupdf opencv-python-headless
+      - name: Evaluate original polygons and PDFs
+        run: |
+          PYTHONPATH="$RUNNER_TEMP/dm31deps" python - <<'PY'
+          import pathlib,json,hashlib,collections,math
+          from shapely.geometry import shape
+          from shapely.ops import unary_union
+          from shapely.validation import explain_validity
+          d=pathlib.Path('custody/dm31');d.mkdir(exist_ok=True)
+          src=pathlib.Path('custody/dm30')
+          layers={}
+          for k,h in [('barris','6bacf44fa2076620b519d0dfd6de33dddc35d77fd4390cda3919593aff9dd0db'),('districtes','50ca6a8d4efa0b5b5ad669a1efbbea52ddc9df4503203a6ee3301f229f252f6e')]:
+              p=src/(k+'_geometria.original.json');b=p.read_bytes();assert hashlib.sha256(b).hexdigest()==h
+              rr=json.loads(b)['resultats']
+              layers[k]=[(r['codi'],shape(r['geometria'])) for r in rr]
+          out={'layers':{},'units':'m2 EPSG:25831','no_repairs':True,'tolerance_approved':False,'pdfs':{}}
+          for k,rr in layers.items():
+              invalid=[{'code':c,'reason':explain_validity(g)} for c,g in rr if not g.is_valid]
+              v={'count':len(rr),'invalid':invalid,'empty':[c for c,g in rr if g.is_empty],'area_sum':sum(g.area for c,g in rr)}
+              if not invalid:
+                  overlaps=[]
+                  for i,(c,g) in enumerate(rr):
+                      for c2,g2 in rr[i+1:]:
+                          a=g.intersection(g2).area
+                          if a>0:overlaps.append({'a':c,'b':c2,'area_m2':a})
+                  u=unary_union([g for _,g in rr]);v.update({'positive_overlap_pairs':overlaps,'union_area':u.area,'union_type':u.geom_type,'union_valid':u.is_valid,'union_holes':sum(len(p.interiors) for p in ([u] if u.geom_type=='Polygon' else u.geoms))})
+              out['layers'][k]=v
+          if not any(v['invalid'] for v in out['layers'].values()):
+              b=unary_union([g for _,g in layers['barris']]);a=unary_union([g for _,g in layers['districtes']])
+              out['cross_layer']={'barris_outside_districtes_m2':b.difference(a).area,'districtes_outside_barris_m2':a.difference(b).area,'symmetric_difference_m2':a.symmetric_difference(b).area,'assignments':[{'barrio':c,'positive_district_intersections':[{ 'district':dc,'area_m2':g.intersection(dg).area} for dc,dg in layers['districtes'] if g.intersection(dg).area>0]} for c,g in layers['barris']]}
+          (d/'topology.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          # PDF inspection independent of geometry results
+          import fitz,cv2,numpy as np
+          p=pathlib.Path('custody/dm29')
+          pdf={}
+          for k in ['parades','horaris','anuari']:
+              try:
+                  f=p/(k+'.pdf');b=f.read_bytes()
+                  with fitz.open(stream=b,filetype='pdf') as doc:
+                      m={'sha256':hashlib.sha256(b).hexdigest(),'pages':len(doc),'bytes':len(b)}
+                      if k=='parades':
+                          qr=[]
+                          for i,page in enumerate(doc):
+                              hits=[]
+                              pix=page.get_pixmap(matrix=fitz.Matrix(3,3),colorspace=fitz.csGRAY)
+                              ar=np.frombuffer(pix.samples,dtype=np.uint8).reshape(pix.height,pix.width)
+                              ok,vals,pts,_=cv2.QRCodeDetector().detectAndDecodeMulti(ar)
+                              if ok:hits=[{'url':s,'y':float(q[:,1].mean())/3} for s,q in zip(vals,pts) if s]
+                              qr.append({'page':i+1,'hits':sorted(hits,key=lambda q:q['y']),'text':page.get_text(),'links':page.get_links()})
+                          m['qr']=qr
+                      elif k=='horaris':
+                          m['text']=[page.get_text(sort=True) for page in doc]
+                      else:
+                          hits=[]
+                          for i,page in enumerate(doc):
+                              t=page.get_text(sort=True)
+                              if 'Barcelona' in t and any(x in t.upper() for x in ['UNIDADES DE TRANSPORTE INTERMODAL','BUQUES MERCANTES','BUQUES ENTRADOS']):
+                                  hits.append({'page':i+1,'text':t[:16000]})
+                          m['candidate_pages']=hits[:20]
+                      pdf[k]=m
+              except Exception as e:pdf[k]={'error':repr(e)}
+          (d/'pdf_inspection.json').write_text(json.dumps(pdf,ensure_ascii=False,indent=2,default=str)+'\n')
+          PY
+      - name: Persist results
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm31/
+          git diff --cached --quiet || git commit -m 'DM31 topology and PDF custody QA'
+          git push origin HEAD:main
