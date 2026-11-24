@@ -1,0 +1,27 @@
+name: DM-20b primary OMD table inspection
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/population-dm20b.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 population_dm20b.py
+      - name: Store inspection report
+        run: |
+          test -f custody/dm20b/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- custody/dm20b
+          if ! git diff --cached --quiet; then
+            git commit -m "DM-20b primary OMD table inspection evidence"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
