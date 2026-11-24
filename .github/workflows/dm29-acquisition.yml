@@ -1,0 +1,66 @@
+name: DM29 source acquisition
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm29-acquisition.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Acquire official sources
+        run: |
+          python - <<'PY'
+          import urllib.request,concurrent.futures,hashlib,json,pathlib,subprocess,zipfile,csv,io,unicodedata
+          d=pathlib.Path('custody/dm29');d.mkdir(exist_ok=True)
+          sources={
+          'eurostat':'https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/avia_paoa?lang=EN&rep_airp=ES_LEBL&freq=M&sinceTimePeriod=2025-01&untilTimePeriod=2025-12',
+          'barris':'https://geoportal.barcelona.cat/geoBCN/serveis/territori/barris/',
+          'districtes':'https://geoportal.barcelona.cat/geoBCN/serveis/territori/districtes/',
+          'parades':'https://rodalies.gencat.cat/web/.content/01_Actualitat/2026/07_21_PlanaLleida/Punts-de-parada-R13-R14-1.pdf',
+          'horaris':'https://rodalies.gencat.cat/web/.content/02_Horaris/horaris/R13R14.pdf',
+          'anuari':'https://www.puertos.es/system/files/2026-10/Anuario%20Estadistico%20OPPE%202025.pdf'}
+          def one(item):
+              k,u=item
+              try:
+                  with urllib.request.urlopen(u,timeout=35) as f:
+                      b=f.read(35000001);m={'url':u,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'last_modified':f.headers.get('Last-Modified'),'content_type':f.headers.get('Content-Type')}
+                  assert len(b)<=35000000
+                  if k in ('parades','horaris','anuari'):
+                      assert b.startswith(b'%PDF-')
+                      p=d/(k+'.pdf');p.write_bytes(b)
+                      m['pdfinfo']=subprocess.run(['pdfinfo',str(p)],capture_output=True,text=True,check=True).stdout
+                      if k=='parades':
+                          m['links']=subprocess.run(['pdfinfo','-url',str(p)],capture_output=True,text=True,check=True).stdout
+                      if k=='anuari':
+                          t=subprocess.run(['pdftotext','-layout',str(p),'-'],capture_output=True,text=True,check=True).stdout
+                          pages=t.split('\f')
+                          m['candidate_pages']=[{'page':i+1,'heading':s[:350],'barcelona_lines':[l for l in s.splitlines() if 'Barcelona' in l][:10]} for i,s in enumerate(pages) if 'Barcelona' in s and any(x in s.upper() for x in ['UNIDADES DE TRANSPORTE INTERMODAL','BUQUES MERCANTES','BUQUES ENTRADOS'])][:40]
+                  else:
+                      j=json.loads(b);m['data']=j
+                      if k=='eurostat':assert 'dimension' in j and 'value' in j
+                      (d/(k+'.json')).write_bytes(b)
+                  m['status']='INSPECTED';return k,m
+              except Exception as e:return k,{'url':u,'status':'FAILED','error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:out=dict(ex.map(one,sources.items()))
+          p=pathlib.Path('custody/dm19b/ATM_NAP_mdb2832_20261117.zip')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='af45496d45406ca8d3d123232b9f42f1c8dcf5757aef5c123c56ce8e556396d3'
+          def norm(s):return ''.join(c for c in unicodedata.normalize('NFKD',s.lower()) if c.isalnum() and not unicodedata.combining(c))
+          terms=['floresta','vinaixa','vimbodi','espluga','montblanc','vilaverd','lariba','picamoixons']
+          with zipfile.ZipFile(p) as z:
+              with z.open('stops.txt') as f:
+                  rows=list(csv.DictReader(io.TextIOWrapper(f,encoding='utf-8-sig')))
+              cand={t:[r for r in rows if t in norm(r.get('stop_name',''))] for t in terms}
+          out['atm_name_candidates']=cand
+          (d/'report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Preserve new sources and evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm29/
+          git commit -m 'DM29 preserve new official source acquisitions and name candidates'
+          git push origin HEAD:main
