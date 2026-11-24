@@ -1,0 +1,74 @@
+code,district,barri,source_id,population_2025,population_2026,change
+1,Ciutat Vella,el Raval,lBarelRaval,49917,50863,946
+2,Ciutat Vella,el Barri Gòtic,lBarelBarriGotic,27878,27312,-566
+3,Ciutat Vella,la Barceloneta,lBarlaBarceloneta,14749,14665,-84
+4,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",lBarSantPereSantaCaterinailaRibera,22767,22989,222
+5,Eixample,el Fort Pienc,lBarelFortPienc,36621,37672,1051
+6,Eixample,la Sagrada Família,lBarlaSagradaFamilia,53555,53201,-354
+7,Eixample,la Dreta de l'Eixample,lBarlaDretadelEixample,45667,45464,-203
+8,Eixample,l'Antiga Esquerra de l'Eixample,lBarlAntigaEsquerradelEixample,44021,42921,-1100
+9,Eixample,la Nova Esquerra de l'Eixample,lBarlaNovaEsquerradelEixample,59122,59117,-5
+10,Eixample,Sant Antoni,lBarSantAntoni,39223,38978,-245
+11,Sants-Montjuïc,el Poble-sec,lBarelPoblesec,40300,40136,-164
+12,Sants-Montjuïc,la Marina del Prat Vermell,lBarlaMarinadelPratVermell,2876,3174,298
+13,Sants-Montjuïc,la Marina de Port,lBarlaMarinadePort,31647,31768,121
+14,Sants-Montjuïc,la Font de la Guatlla,lBarlaFontdelaGuatlla,10860,10869,9
+15,Sants-Montjuïc,Hostafrancs,lBarHostafrancs,16798,17021,223
+16,Sants-Montjuïc,la Bordeta,lBarlaBordeta,21242,21153,-89
+17,Sants-Montjuïc,Sants - Badal,lBarSantsBadal,25338,25243,-95
+18,Sants-Montjuïc,Sants,lBarSants,47239,46676,-563
+19,Les Corts,les Corts,lBarlesCorts,47057,46672,-385
+20,Les Corts,la Maternitat i Sant Ramon,lBarlaMaternitatiSantRamon,24687,24622,-65
+21,Les Corts,Pedralbes,lBarPedralbes,12649,12479,-170
+22,Sarrià-Sant Gervasi,"Vallvidrera, el Tibidabo i les Planes",lBarVallvidreraelTibidaboilesPlanes,4962,4867,-95
+23,Sarrià-Sant Gervasi,Sarrià,lBarSarria,25282,24937,-345
+24,Sarrià-Sant Gervasi,les Tres Torres,lBarlesTresTorres,16376,16341,-35
+25,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,lBarSantGervasilaBonanova,26836,26801,-35
+26,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,lBarSantGervasiGalvany,49461,49202,-259
+27,Sarrià-Sant Gervasi,el Putxet i el Farró,lBarelPutxetielFarro,30756,30795,39
+28,Gràcia,Vallcarca i els Penitents,lBarVallcarcaielsPenitents,16919,16928,9
+29,Gràcia,el Coll,lBarelColl,8091,8056,-35
+30,Gràcia,la Salut,lBarlaSalut,14017,13947,-70
+31,Gràcia,la Vila de Gràcia,lBarlaViladeGracia,51833,51477,-356
+32,Gràcia,el Camp d'en Grassot i Gràcia Nova,lBarelCampdenGrassotiGraciaNova,36743,36422,-321
+33,Horta-Guinardó,el Baix Guinardó,lBarelBaixGuinardo,26536,26277,-259
+34,Horta-Guinardó,Can Baró,lBarCanBaro,9672,9645,-27
+35,Horta-Guinardó,el Guinardó,lBarelGuinardo,39061,39144,83
+36,Horta-Guinardó,la Font d'en Fargues,lBarlaFontdenFargues,9952,9845,-107
+37,Horta-Guinardó,el Carmel,lBarelCarmel,33694,33799,105
+38,Horta-Guinardó,la Teixonera,lBarlaTeixonera,12605,12727,122
+39,Horta-Guinardó,Sant Genís dels Agudells,lBarSantGenisdelsAgudells,7826,7890,64
+40,Horta-Guinardó,Montbau,lBarMontbau,5343,5353,10
+41,Horta-Guinardó,la Vall d'Hebron,lBarlaValldHebron,5990,6087,97
+42,Horta-Guinardó,la Clota,lBarlaClota,1071,1123,52
+43,Horta-Guinardó,Horta,lBarHorta,31259,31116,-143
+44,Nou Barris,Vilapicina i la Torre Llobeta,lBarVilapicinailaTorreLlobeta,26547,26478,-69
+45,Nou Barris,Porta,lBarPorta,31363,31199,-164
+46,Nou Barris,el Turó de la Peira,lBarelTurodelaPeira,17456,17378,-78
+47,Nou Barris,Can Peguera,lBarCanPeguera,2170,2122,-48
+48,Nou Barris,la Guineueta,lBarlaGuineueta,15656,15624,-32
+49,Nou Barris,Canyelles,lBarCanyelles,6817,6906,89
+50,Nou Barris,les Roquetes,lBarlesRoquetes,17321,17595,274
+51,Nou Barris,Verdun,lBarVerdun,13511,13507,-4
+52,Nou Barris,la Prosperitat,lBarlaProsperitat,27922,28174,252
+53,Nou Barris,la Trinitat Nova,lBarlaTrinitatNova,7965,8128,163
+54,Nou Barris,Torre Baró,lBarTorreBaro,3224,3236,12
+55,Nou Barris,Ciutat Meridiana,lBarCiutatMeridiana,11351,11493,142
+56,Nou Barris,Vallbona,lBarVallbona,1452,1440,-12
+57,Sant Andreu,la Trinitat Vella,lBarlaTrinitatVella,11160,11307,147
+58,Sant Andreu,Baró de Viver,lBarBarodeViver,2678,2668,-10
+59,Sant Andreu,el Bon Pastor,lBarelBonPastor,15918,15871,-47
+60,Sant Andreu,Sant Andreu,lBarSantAndreu,58988,59330,342
+61,Sant Andreu,la Sagrera,lBarlaSagrera,30965,31247,282
+62,Sant Andreu,el Congrés i els Indians,lBarelCongresielsIndians,15175,15254,79
+63,Sant Andreu,Navas,lBarNavas,22790,22607,-183
+64,Sant Martí,el Camp de l'Arpa del Clot,lBarelCampdelArpadelClot,39804,39535,-269
+65,Sant Martí,el Clot,lBarelClot,27103,26907,-196
+66,Sant Martí,el Parc i la Llacuna del Poblenou,lBarelParcilaLlacunadelPoblenou,17603,17639,36
+67,Sant Martí,la Vila Olímpica del Poblenou,lBarlaVilaOlimpicadelPoblenou,9345,9293,-52
+68,Sant Martí,el Poblenou,lBarelPoblenou,34818,34736,-82
+69,Sant Martí,Diagonal Mar i el Front Marítim del Poblenou,lBarDiagonalMarielFrontMaritimdelPoblenou,13691,13771,80
+70,Sant Martí,el Besòs i el Maresme,lBarelBesosielMaresme,30724,30695,-29
+71,Sant Martí,Provençals del Poblenou,lBarProvencalsdelPoblenou,21902,22076,174
+72,Sant Martí,Sant Martí de Provençals,lBarSantMartideProvencals,26976,27035,59
+73,Sant Martí,la Verneda i la Pau,lBarlaVernedailaPau,31173,30938,-235
