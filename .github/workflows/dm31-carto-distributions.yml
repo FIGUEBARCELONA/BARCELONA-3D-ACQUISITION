@@ -1,0 +1,41 @@
+name: DM31 CartoBCN distributions
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm31-carto-distributions.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python - <<'PY'
+          import pathlib,json,hashlib,urllib.request,concurrent.futures,zipfile,io,xml.etree.ElementTree as E
+          d=pathlib.Path('custody/dm31')
+          sources={'gis_2':'https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.2','gis_40':'https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.40','gis_41':'https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.41','cad_1':'https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=97.BARCELONA.1'}
+          def one(item):
+              k,u=item
+              try:
+                  with urllib.request.urlopen(u,timeout=25) as f:
+                      b=f.read(35000001);m={'url':u,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':f.headers.get('Content-Type'),'disposition':f.headers.get('Content-Disposition')}
+                  assert len(b)<=35000000
+                  assert zipfile.is_zipfile(io.BytesIO(b)), 'not an archive'
+                  with zipfile.ZipFile(io.BytesIO(b)) as z:
+                      assert z.testzip() is None
+                      m['members']=z.namelist()
+                      m['xml_members']=[{'name':n,'sha256':hashlib.sha256(z.read(n)).hexdigest(),'root':E.fromstring(z.read(n)).tag} for n in z.namelist() if n.lower().endswith('.xml')]
+                  (d/(k+'.original.zip')).write_bytes(b)
+                  m['status']='INSPECTED';return k,m
+              except Exception as e:return k,{'url':u,'status':'FAILED','error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:r=dict(ex.map(one,sources.items()))
+          (d/'cartobcn_distributions.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm31/
+          git commit -m 'DM31 preserve official CartoBCN distribution acquisition results'
+          git push origin HEAD:main
