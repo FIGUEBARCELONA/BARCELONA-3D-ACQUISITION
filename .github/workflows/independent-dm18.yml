@@ -1,0 +1,26 @@
+name: DM-18 independent source acquisition
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/independent-dm18.yml']
+permissions:
+  contents: write
+jobs:
+  acquire:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 independent_dm18.py
+      - name: Preserve source files and report
+        run: |
+          test -f custody/dm18/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- custody/dm18
+          if ! git diff --cached --quiet; then
+            git commit -m "DM-18 independent source custody and QA"
+            git push origin HEAD:main
+          fi
