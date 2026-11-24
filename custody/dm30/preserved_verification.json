@@ -1,0 +1,56 @@
+{
+  "geometry": {
+    "barris": {
+      "sha256": "6bacf44fa2076620b519d0dfd6de33dddc35d77fd4390cda3919593aff9dd0db",
+      "types": {
+        "Polygon": 73
+      },
+      "crs": {
+        "EPSG:25831": 73
+      },
+      "rings": 73,
+      "structural_issues": []
+    },
+    "districtes": {
+      "sha256": "50ca6a8d4efa0b5b5ad669a1efbbea52ddc9df4503203a6ee3301f229f252f6e",
+      "types": {
+        "Polygon": 10
+      },
+      "crs": {
+        "EPSG:25831": 10
+      },
+      "rings": 10,
+      "structural_issues": []
+    }
+  },
+  "pdfs": {
+    "parades": {
+      "bytes": 638099,
+      "sha256": "58ff9e5d06305a47f619fece259677e9d3a484c08d477b11441bda47356213df",
+      "pdf_signature": true
+    },
+    "horaris": {
+      "bytes": 990943,
+      "sha256": "22039136f9f10675b469d5d6f310bd3bf010a863e3451268df447c5d1ac4f4c1",
+      "pdf_signature": true
+    },
+    "anuari": {
+      "bytes": 25881705,
+      "sha256": "c83a0da86ce278522cefe513dbc43f9af8de93d627db6fc92084310b7568ca4b",
+      "pdf_signature": true
+    }
+  },
+  "tools": {
+    "fitz": false,
+    "cv2": false,
+    "numpy": false,
+    "shapely": false,
+    "pypdf": false,
+    "pymupdf_install": {
+      "returncode": 0,
+      "stderr": ""
+    }
+  },
+  "imputations": 0,
+  "pdf_inspection_error": "ModuleNotFoundError(\"No module named 'fitz'\")"
+}
