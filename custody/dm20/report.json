@@ -1,0 +1,39 @@
+{
+  "transport": {
+    "status": "FAILED",
+    "error": "calendar horizon cap"
+  },
+  "Y9": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "inventory": {
+        "7bvh-jvq2": {
+          "url": "https://analisi.transparenciacatalunya.cat/resource/7bvh-jvq2.json?%24where=codi_estacio%3D%27Y9%27&%24select=count%28%2A%29+as+n%2Cmin%28data_lectura%29+as+first%2Cmax%28data_lectura%29+as+last",
+          "sha256": "2d6a6ca65322c47a6db9f6d0c06fa501365d5398a44571e086ca15d423d450cb",
+          "response": [
+            {
+              "n": "49871",
+              "first": "2015-06-26T00:00:00.000",
+              "last": "2021-11-30T00:00:00.000"
+            }
+          ],
+          "status": "CHECKS_RECORDED"
+        },
+        "nzvn-apee": {
+          "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27Y9%27&%24select=count%28%2A%29+as+n%2Cmin%28data_lectura%29+as+first%2Cmax%28data_lectura%29+as+last",
+          "sha256": "3ab8834fb12e1fe27faa7685163dc93eb4e7a4da93d163848b19c1e372004fa7",
+          "response": [
+            {
+              "n": "0"
+            }
+          ],
+          "status": "CHECKS_RECORDED"
+        }
+      },
+      "cause_confirmed": false,
+      "no_imputation": true
+    }
+  },
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO"
+}
