@@ -6,6 +6,8 @@ from pathlib import Path
 import acquire as ac
 import hashlib, zipfile, json, re, subprocess, math, sys
 import numpy as np
+from pypdf import PdfReader
+from io import BytesIO
 import requests
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -31,8 +33,7 @@ def dl(name,url,params=None):
     req(meta['sha256']==EXPECTED[name],'DM-10 hash mismatch: '+name)
     return p,meta
 def pdftext(z,member):
-    f=TMP/Path(member).name; f.write_bytes(z.read(member))
-    return subprocess.check_output(['pdftotext','-layout',str(f),'-'],text=True,timeout=20)
+    return '\n'.join(page.extract_text() or '' for page in PdfReader(BytesIO(z.read(member))).pages)
 def pen():
     p,meta=dl('PENR2009.zip',ac.PEN[0]); ac.zip_inventory(p)
     with zipfile.ZipFile(p) as z:
@@ -61,7 +62,8 @@ def geoid():
         print('GEOID_README',readme[:2000],flush=True)
         print('GEOID_SAMPLE_INPUT',input_text[:1600],flush=True)
     req(len(b)==535816,'unexpected GR length')
-    txt=b.decode('ascii',errors='strict')
+    saved=save('cat80000.gr',b)
+    txt=b.decode('latin1',errors='strict')
     h,sep,data=txt.partition('\\DATA')
     req(sep and '\\GRID SET' in h,'GR structure')
     print('GEOID_HEADER',h,flush=True)
@@ -88,7 +90,7 @@ def geoid():
     for id,ld,lm,ls,ad,am,asec,ref in examples:
         lon=ld+lm/60+ls/3600;lat=ad+am/60+asec/3600
         v=interp(lon,lat);cmp.append({'id':id,'value_m':v,'reference_m':ref,'delta_m':v-ref})
-    result={'archive':meta,'data':save('cat80000.gr',b),'dimensions':[nr,nc],'nodes':int(vals.size),'range_m':[float(vals.min()),float(vals.max())],'mean_m':float(vals.mean()),'corner_m':[float(a[0,0]),float(a[0,-1]),float(a[-1,0]),float(a[-1,-1])],'reference_checks':cmp,'max_abs_reference_delta_m':max(abs(q['delta_m']) for q in cmp),'reference_within_0_0001m':sum(abs(q['delta_m'])<=.0001 for q in cmp),'independent_vertical_accuracy_verified':False}
+    result={'archive':meta,'data':saved,'dimensions':[nr,nc],'nodes':int(vals.size),'range_m':[float(vals.min()),float(vals.max())],'mean_m':float(vals.mean()),'corner_m':[float(a[0,0]),float(a[0,-1]),float(a[-1,0]),float(a[-1,-1])],'reference_checks':cmp,'max_abs_reference_delta_m':max(abs(q['delta_m']) for q in cmp),'reference_within_0_0001m':sum(abs(q['delta_m'])<=.0001 for q in cmp),'independent_vertical_accuracy_verified':False}
     return result
 def mdt_probe():
     # This is an alternate documented WMS endpoint, not a repeat of the failed COG request.
