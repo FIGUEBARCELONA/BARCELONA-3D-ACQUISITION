@@ -1,0 +1,82 @@
+{
+  "PENR2009": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "archive": {
+        "url": "https://datos-geodesia.ign.es/Utilidades/Rejillas_ed50-etrs89/GDS-TOOLS-PENR2009.zip",
+        "bytes": 895355,
+        "sha256": "6a507bc02ad09eaeb4ba71c612d4b8e160ce2ae2b2c0f3611e93ea20c2192945",
+        "http": 200,
+        "content_type": "application/zip"
+      },
+      "data": {
+        "path": "custody/dm11/PENR2009.gsb",
+        "bytes": 667552,
+        "sha256": "eb6bc0ca1de4591851d2113f44b6a16fb44ad67ab49dd7216ca471c41ce45221"
+      },
+      "nodes": 41699,
+      "license_lines": [
+        "estos datos es la de que se han publicado bajo una licencia Creative Commons del tipo",
+        "CC BY 4.0, por lo que se permite la libre distribución, publicación y modificación de los",
+        "data is that they have been published under a Creative Commons license of the CC BY",
+        "ámbito de la Orden FOM/2807/2015 conlleva la aceptación por el usuario de una licencia CC -BY 4.0",
+        "En donde el reconocimiento se realizará de la siguiente manera:",
+        "4.0 <atribución de productores>», en la que las etiquetas <identificador del producto>, <fecha>",
+        "y <atribución de productores> serán sustituidas por los valores correspondientes de la tabla de",
+        "BTN25 2014-2015 CC-BY 4.0 ign.es"
+      ]
+    }
+  },
+  "polygon": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "download": {
+        "url": "https://maps.icgc.cat/vector01/rest/services/divisions_administratives_wms/MapServer/12/query?where=CODIMUNI%3D%27080193%27&outFields=%2A&returnGeometry=true&outSR=25831&f=json",
+        "bytes": 458348,
+        "sha256": "c5605416b9e25b84eaaa6f9eb7a2bb8e15622644de2a40a799dcd1911be1078e",
+        "http": 200,
+        "content_type": "application/json;charset=UTF-8"
+      },
+      "data": {
+        "path": "custody/dm11/ICGC_080193.json",
+        "bytes": 458348,
+        "sha256": "c5605416b9e25b84eaaa6f9eb7a2bb8e15622644de2a40a799dcd1911be1078e"
+      },
+      "area_m2": 101822466.31984997,
+      "parts": 32
+    }
+  },
+  "EGM08D595": {
+    "status": "FAILED",
+    "error": "could not convert string to float: '\\\\END'"
+  },
+  "MDT_alternate": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "capabilities_http": 200,
+      "capabilities_sha256": "15c04455c4cbcf76ccf54ae85319d20f7a22d455ec295fbc54655911b8c5176a",
+      "layer": "model-elevacions-terreny-amb-lidar-25cm-2022",
+      "feature_info_formats": [
+        "application/json",
+        "application/geo+json",
+        "text/plain",
+        "text/html",
+        "gml"
+      ],
+      "native_cells_recovered": 0,
+      "feature_info": {
+        "http": 200,
+        "content_type": "application/json",
+        "body": "{\n\"type\": \"FeatureCollection\",\n\"name\": \"model-elevacions-terreny-amb-lidar-25cm-2022\",\n\"description\": \"GeoJSON 2008; the projection may not be in CRS:84 and returns a crs: member telling you what projection has been used\",\n\"crs\": { \"type\": \"name\", \"properties\": { \"name\": \"urn:ogc:def:crs:EPSG::25831\" } },\n\"xy_coordinate_resolution\": 1e-08,\n\"features\": [\n{ \"type\": \"Feature\", \"properties\": { \"x\": \"429177.38\", \"y\": \"4582885.9\", \"Elevació\": \"48.073002\" }, \"bbox\": [ 429177.375, 4582885.875, 429177.375, 4582885.875 ], \"geometry\": { \"type\": \"Point\", \"coordinates\": [ 429177.375, 4582885.875 ] } }\n],\n\"bbox\": [ 429177.37500000, 4582885.87500000, 429177.37500000, 4582885.87500000 ]\n}\n"
+      },
+      "wcs_candidate": {
+        "http": 404,
+        "content_type": "text/html; charset=iso-8859-1",
+        "native_layer_name_present": false,
+        "head": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n<hr>\n<address>Apache/2.4.41 (Ubuntu) Server at geoserveis.icgc.cat Port 80</address>\n</body></html>\n"
+      }
+    }
+  },
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO"
+}

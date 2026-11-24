@@ -1,0 +1,2 @@
+## Custodia DM-11
+Dades originals sense modificació. PENR2009: Instituto Geográfico Nacional de España, CC BY 4.0 (https://www.ign.es/web/eu/politica-datos). Polígon municipal i EGM08D595: Institut Cartogràfic i Geològic de Catalunya (ICGC), CC BY 4.0 (https://www.icgc.cat/ca/LICGC/Informacio-publica/Transparencia/Reutilitzacio-de-la-informacio). Fonts i hashes a report.json. No es redistribueixen els EXE ni els arxius ZIP complets. Llicència https://creativecommons.org/licenses/by/4.0/. Dades de DM-10, revalidació per SHA-256. NO-GO.
