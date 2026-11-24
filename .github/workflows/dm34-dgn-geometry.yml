@@ -1,0 +1,86 @@
+name: DM34 DGN geometry comparison
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm34-dgn-geometry.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/dm34geo" ezdgn==0.3.0 shapely pyshp
+      - name: Compare actual native shape coordinates with official GIS rings
+        run: |
+          PYTHONPATH="$RUNNER_TEMP/dm34geo" python - <<'PY'
+          import pathlib,json,hashlib,collections,io,zipfile,math,traceback
+          import ezdgn,shapefile
+          from shapely.geometry import Polygon,LineString,shape
+          from shapely.ops import unary_union
+          d=pathlib.Path('custody/dm34')
+          p=pathlib.Path('custody/dm32/cad_response.original')
+          h=hashlib.sha256(p.read_bytes()).hexdigest()
+          assert h=='ad38d369514a1c9e1dc29f7654173a7d600b8db72553af0e67ae193259f58ea6'
+          z=pathlib.Path('custody/dm31/gis_2.original.zip')
+          assert hashlib.sha256(z.read_bytes()).hexdigest()=='9002d5806bd6f8689865cb61ebbaf9d9849f45b9c34fde9e4eaebfa473a4f61f'
+          out={'dgn_sha256':h,'layers':{},'repairs':0,'tolerance_approved':False,'canonical_approved':False}
+          try:
+              doc=ezdgn.read_v8(str(p));m=doc.models[0]
+              ee=[e for e in m.entities if e.dxftype()=='SHAPE']
+              e=ee[0];data=e.data
+              out['shape_data_attributes']=[x for x in dir(data) if not x.startswith('_')]
+              out['first_shape_fields']={}
+              for x in out['shape_data_attributes']:
+                  try:
+                      v=getattr(data,x)
+                      if not callable(v):out['first_shape_fields'][x]=str(v)[:500]
+                  except Exception:pass
+              # Only use fields explicitly in master units. Do not interpret unlabelled raw coordinates.
+              fields=[x for x in out['shape_data_attributes'] if 'master' in x.lower() and any(w in x.lower() for w in ('vert','point'))]
+              out['candidate_coordinate_fields']=fields
+              if len(fields)!=1:raise ValueError('master coordinate field ambiguous or missing')
+              field=fields[0];out['coordinate_field']=field
+              def pts(entity):
+                  v=getattr(entity.data,field)
+                  if callable(v):v=v()
+                  r=[]
+                  for q in v:
+                      if hasattr(q,'x'):r.append((float(q.x),float(q.y)))
+                      else:r.append((float(q[0]),float(q[1])))
+                  assert len(r)>=3 and all(math.isfinite(x) and math.isfinite(y) for x,y in r)
+                  return r
+              with zipfile.ZipFile(z) as zz:
+                  for level,k,frag in [(14,'barris','_Barris_'),(15,'municipi','_TermeMunicipal_'),(16,'districtes','_Districtes_'),(22,'area_interes','_Àrea_I_')]:
+                      n=next(n for n in zz.namelist() if frag in n and n.endswith('.shp'));base=n[:-4]
+                      r=shapefile.Reader(shp=io.BytesIO(zz.read(n)),shx=io.BytesIO(zz.read(base+'.shx')),dbf=io.BytesIO(zz.read(base+'.dbf')),encoding='utf-8')
+                      gis=[]
+                      for sr in r.iterShapeRecords():
+                          g=shape(sr.shape.__geo_interface__);a=sr.record.as_dict();code=a['CODI_UA']
+                          for i,part in enumerate(g.geoms if g.geom_type=='MultiPolygon' else [g]):
+                              gis.append({'code':code,'part':i,'geometry':part,'outer':Polygon(part.exterior)})
+                      cad=[pts(e) for e in ee if e.level==level]
+                      ca=[Polygon(v) for v in cad]
+                      m2={'cad_shapes':len(ca),'shp_components':len(gis),'cad_invalid':sum(not q.is_valid for q in ca),'cad_bounds':[min(q.bounds[0] for q in ca),min(q.bounds[1] for q in ca),max(q.bounds[2] for q in ca),max(q.bounds[3] for q in ca)],'gis_bounds':list(unary_union([q['geometry'] for q in gis]).bounds),'matches':[]}
+                      # SHAPE encodes a closed contour; compare exteriors only. Interior rings and administrative linkage remain separate.
+                      for i,q in enumerate(ca):
+                          if not q.is_valid:continue
+                          ranked=sorted([(q.symmetric_difference(g['outer']).area,j) for j,g in enumerate(gis) if g['outer'].is_valid])
+                          a,j=ranked[0];g=gis[j]
+                          m2['matches'].append({'cad_index':i,'code':g['code'],'part':g['part'],'symdiff_m2':a,'hausdorff_m':q.hausdorff_distance(g['outer']),'cad_area':q.area,'gis_exterior_area':g['outer'].area,'exact':a==0})
+                      m2['unique_best_matches']=len({(q['code'],q['part']) for q in m2['matches']})
+                      m2['exact_count']=sum(q['exact'] for q in m2['matches'])
+                      out['layers'][k]=m2
+              out['status']='EXTERIOR_COMPARISON_EXECUTED'
+          except Exception as e:
+              out['status']='PARTIAL_OR_FAILED';out['error']=repr(e);out['traceback']=traceback.format_exc()[-3000:]
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==h
+          (d/'dgn_geometry_report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2,default=str)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm34/dgn_geometry_report.json
+          git commit -m 'DM34 compare native DGN shape exterior coordinates against GIS'
+          git push origin HEAD:main
