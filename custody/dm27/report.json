@@ -1,0 +1,682 @@
+{
+  "production": "NO_GO",
+  "imputations": 0,
+  "sources": {
+    "renfe_md": {
+      "url": "https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip",
+      "bytes": 690309,
+      "sha256": "b0ee2c297d17874e932559221149ca8267e2c0b7ae7ba5483ec4fdd80f343828",
+      "last_modified": "Tue, 24 Nov 2026 00:06:13 GMT",
+      "content_type": "application/zip",
+      "members": [
+        "agency.txt",
+        "calendar_dates.txt",
+        "calendar.txt",
+        "routes.txt",
+        "stops.txt",
+        "stop_times.txt",
+        "trips.txt"
+      ],
+      "crc_ok": true,
+      "trip_rows": 6573,
+      "trip_fields": [
+        "route_id",
+        "service_id",
+        "trip_id",
+        "trip_headsign",
+        "trip_short_name",
+        "direction_id",
+        "block_id",
+        "shape_id",
+        "wheelchair_accessible"
+      ],
+      "candidates": {
+        "15040": [
+          {
+            "trip": {
+              "route_id": "7840079400VRE",
+              "service_id": "2026-11-232026-12-12150401",
+              "trip_id": "1504012026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15040",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 15,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1504012026-11-23",
+                "arrival_time": "4:48:00",
+                "departure_time": "4:48:00",
+                "stop_id": "78400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1504012026-11-23",
+                "arrival_time": "8:24:00",
+                "departure_time": "8:24:00",
+                "stop_id": "79400",
+                "stop_sequence": "15",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15041": [
+          {
+            "trip": {
+              "route_id": "7940078400VRE",
+              "service_id": "2026-11-232026-12-12150411",
+              "trip_id": "1504112026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15041",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 16,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1504112026-11-23",
+                "arrival_time": "7:12:00",
+                "departure_time": "7:12:00",
+                "stop_id": "79400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1504112026-11-23",
+                "arrival_time": "10:56:00",
+                "departure_time": "10:56:00",
+                "stop_id": "78400",
+                "stop_sequence": "16",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15042": [
+          {
+            "trip": {
+              "route_id": "7840079400VRE",
+              "service_id": "2026-11-232026-12-12150421",
+              "trip_id": "1504212026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15042",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 21,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1504212026-11-23",
+                "arrival_time": "7:08:00",
+                "departure_time": "7:08:00",
+                "stop_id": "78400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1504212026-11-23",
+                "arrival_time": "10:57:00",
+                "departure_time": "10:57:00",
+                "stop_id": "79400",
+                "stop_sequence": "21",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15043": [
+          {
+            "trip": {
+              "route_id": "7940078400VRE",
+              "service_id": "2026-11-232026-12-12150431",
+              "trip_id": "1504312026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15043",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 16,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1504312026-11-23",
+                "arrival_time": "14:42:00",
+                "departure_time": "14:42:00",
+                "stop_id": "79400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1504312026-11-23",
+                "arrival_time": "18:00:00",
+                "departure_time": "18:00:00",
+                "stop_id": "78400",
+                "stop_sequence": "16",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15044": [
+          {
+            "trip": {
+              "route_id": "7840079400VRE",
+              "service_id": "2026-11-232026-12-12150441",
+              "trip_id": "1504412026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15044",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 16,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1504412026-11-23",
+                "arrival_time": "15:04:00",
+                "departure_time": "15:04:00",
+                "stop_id": "78400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1504412026-11-23",
+                "arrival_time": "18:27:00",
+                "departure_time": "18:27:00",
+                "stop_id": "79400",
+                "stop_sequence": "16",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15045": [
+          {
+            "trip": {
+              "route_id": "7940078400VRE",
+              "service_id": "2026-11-232026-12-12150451",
+              "trip_id": "1504512026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15045",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 21,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1504512026-11-23",
+                "arrival_time": "17:12:00",
+                "departure_time": "17:12:00",
+                "stop_id": "79400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1504512026-11-23",
+                "arrival_time": "20:56:00",
+                "departure_time": "20:56:00",
+                "stop_id": "78400",
+                "stop_sequence": "21",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15046": [
+          {
+            "trip": {
+              "route_id": "7840079400VRE",
+              "service_id": "2026-11-232026-12-12150461",
+              "trip_id": "1504612026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15046",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 16,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1504612026-11-23",
+                "arrival_time": "17:30:00",
+                "departure_time": "17:30:00",
+                "stop_id": "78400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1504612026-11-23",
+                "arrival_time": "20:57:00",
+                "departure_time": "20:57:00",
+                "stop_id": "79400",
+                "stop_sequence": "16",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15047": [
+          {
+            "trip": {
+              "route_id": "7940078400VRE",
+              "service_id": "2026-11-232026-12-12150471",
+              "trip_id": "1504712026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15047",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 14,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1504712026-11-23",
+                "arrival_time": "19:12:00",
+                "departure_time": "19:12:00",
+                "stop_id": "79400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1504712026-11-23",
+                "arrival_time": "22:56:00",
+                "departure_time": "22:56:00",
+                "stop_id": "78400",
+                "stop_sequence": "14",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15050": [
+          {
+            "trip": {
+              "route_id": "7310079400VRE",
+              "service_id": "2026-11-232026-12-06150501",
+              "trip_id": "1505012026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15050",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 12,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1505012026-11-23",
+                "arrival_time": "6:44:00",
+                "departure_time": "6:44:00",
+                "stop_id": "73100",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1505012026-11-23",
+                "arrival_time": "8:54:00",
+                "departure_time": "8:54:00",
+                "stop_id": "79400",
+                "stop_sequence": "12",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          },
+          {
+            "trip": {
+              "route_id": "7310079400VRE",
+              "service_id": "2026-12-072026-12-12150501",
+              "trip_id": "1505012026-12-07",
+              "trip_headsign": "",
+              "trip_short_name": "15050",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 12,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1505012026-12-07",
+                "arrival_time": "6:44:00",
+                "departure_time": "6:44:00",
+                "stop_id": "73100",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1505012026-12-07",
+                "arrival_time": "8:54:00",
+                "departure_time": "8:54:00",
+                "stop_id": "79400",
+                "stop_sequence": "12",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15051": [
+          {
+            "trip": {
+              "route_id": "7150078400VRR",
+              "service_id": "2026-11-232026-12-12150511",
+              "trip_id": "1505112026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15051",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 17,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1505112026-11-23",
+                "arrival_time": "5:54:00",
+                "departure_time": "5:54:00",
+                "stop_id": "71500",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1505112026-11-23",
+                "arrival_time": "8:36:00",
+                "departure_time": "8:36:00",
+                "stop_id": "78400",
+                "stop_sequence": "17",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15052": [
+          {
+            "trip": {
+              "route_id": "7840079400VRE",
+              "service_id": "2026-11-232026-12-12150521",
+              "trip_id": "1505212026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15052",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 23,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1505212026-11-23",
+                "arrival_time": "12:08:00",
+                "departure_time": "12:08:00",
+                "stop_id": "78400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1505212026-11-23",
+                "arrival_time": "16:24:00",
+                "departure_time": "16:24:00",
+                "stop_id": "79400",
+                "stop_sequence": "23",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15053": [
+          {
+            "trip": {
+              "route_id": "7940078400VRE",
+              "service_id": "2026-11-232026-12-12150531",
+              "trip_id": "1505312026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15053",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 23,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1505312026-11-23",
+                "arrival_time": "11:45:00",
+                "departure_time": "11:45:00",
+                "stop_id": "79400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1505312026-11-23",
+                "arrival_time": "15:56:00",
+                "departure_time": "15:56:00",
+                "stop_id": "78400",
+                "stop_sequence": "23",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15054": [
+          {
+            "trip": {
+              "route_id": "7840071500VRE",
+              "service_id": "2026-11-232026-12-12150541",
+              "trip_id": "1505412026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15054",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 17,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1505412026-11-23",
+                "arrival_time": "19:34:00",
+                "departure_time": "19:34:00",
+                "stop_id": "78400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1505412026-11-23",
+                "arrival_time": "22:19:00",
+                "departure_time": "22:19:00",
+                "stop_id": "71500",
+                "stop_sequence": "17",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ],
+        "15055": [
+          {
+            "trip": {
+              "route_id": "7940073100VRE",
+              "service_id": "2026-11-232026-12-06150551",
+              "trip_id": "1505512026-11-23",
+              "trip_headsign": "",
+              "trip_short_name": "15055",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 12,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1505512026-11-23",
+                "arrival_time": "20:15:00",
+                "departure_time": "20:15:00",
+                "stop_id": "79400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1505512026-11-23",
+                "arrival_time": "22:27:00",
+                "departure_time": "22:27:00",
+                "stop_id": "73100",
+                "stop_sequence": "12",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          },
+          {
+            "trip": {
+              "route_id": "7940073100VRE",
+              "service_id": "2026-12-072026-12-12150551",
+              "trip_id": "1505512026-12-07",
+              "trip_headsign": "",
+              "trip_short_name": "15055",
+              "direction_id": "",
+              "block_id": "",
+              "shape_id": "",
+              "wheelchair_accessible": "2"
+            },
+            "stop_rows": 12,
+            "first_last_in_file_order": [
+              {
+                "trip_id": "1505512026-12-07",
+                "arrival_time": "20:15:00",
+                "departure_time": "20:15:00",
+                "stop_id": "79400",
+                "stop_sequence": "01",
+                "stop_headsign": "",
+                "pickup_type": "0",
+                "drop_off_type": "1",
+                "shape_dist_traveled": ""
+              },
+              {
+                "trip_id": "1505512026-12-07",
+                "arrival_time": "22:27:00",
+                "departure_time": "22:27:00",
+                "stop_id": "73100",
+                "stop_sequence": "12",
+                "stop_headsign": "",
+                "pickup_type": "1",
+                "drop_off_type": "0",
+                "shape_dist_traveled": ""
+              }
+            ]
+          }
+        ]
+      },
+      "candidate_count": 16,
+      "numbers_with_candidates": 14,
+      "status": "INSPECTED",
+      "identity_recoveries": 0
+    },
+    "port_csv": {
+      "url": "https://opendata.portdebarcelona.cat/ca/dataset/5b8c4bdd-94c0-4273-83b0-bac1e2ee4334/resource/abbc81ff-802b-449b-9e5f-cce7a1fe57d3/download/trafic_vaixells_2025.csv",
+      "status": "FAILED",
+      "error": "<HTTPError 500: 'Internal Server Error'>"
+    }
+  }
+}
