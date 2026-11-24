@@ -1,0 +1,3986 @@
+{
+  "individual": {
+    "barris": [
+      {
+        "code": "22",
+        "name": "Vallvidrera, el Tibidabo i les Planes",
+        "district": "05",
+        "shp_type": "MultiPolygon",
+        "rest_type": "Polygon",
+        "shp_parts": 2,
+        "rest_area_m2": 11329840.927426888,
+        "shp_area_m2": 11324510.760655085,
+        "rest_only_m2": 15919.130111881956,
+        "shp_only_m2": 10588.963340333097,
+        "symdiff_m2": 26508.093452215002,
+        "hausdorff_m": 50.790074280735965
+      },
+      {
+        "code": "70",
+        "name": "el Besòs i el Maresme",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1202692.798352563,
+        "shp_area_m2": 1208701.4754035433,
+        "rest_only_m2": 1579.3058273907673,
+        "shp_only_m2": 7587.982849786896,
+        "symdiff_m2": 9167.288677188799,
+        "hausdorff_m": 44.35649949967927
+      },
+      {
+        "code": "59",
+        "name": "el Bon Pastor",
+        "district": "09",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1868382.4494523238,
+        "shp_area_m2": 1868205.6941209605,
+        "rest_only_m2": 3723.3388472331867,
+        "shp_only_m2": 3546.5835158238874,
+        "symdiff_m2": 7269.922363057068,
+        "hausdorff_m": 61.474607247329786
+      },
+      {
+        "code": "39",
+        "name": "Sant Genís dels Agudells",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1681201.3446777998,
+        "shp_area_m2": 1684574.690414777,
+        "rest_only_m2": 1794.2505223406206,
+        "shp_only_m2": 5167.5961903802445,
+        "symdiff_m2": 6961.846712715387,
+        "hausdorff_m": 36.34249029697962
+      },
+      {
+        "code": "73",
+        "name": "la Verneda i la Pau",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1127215.8861777475,
+        "shp_area_m2": 1129978.3949962524,
+        "rest_only_m2": 22.185605861749032,
+        "shp_only_m2": 2784.69442432345,
+        "symdiff_m2": 2806.880030185196,
+        "hausdorff_m": 50.26920951271573
+      },
+      {
+        "code": "57",
+        "name": "la Trinitat Vella",
+        "district": "09",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 809972.6777315107,
+        "shp_area_m2": 807611.8883643942,
+        "rest_only_m2": 2378.370232779579,
+        "shp_only_m2": 17.580865673218007,
+        "symdiff_m2": 2395.9510984528533,
+        "hausdorff_m": 16.09407220084113
+      },
+      {
+        "code": "60",
+        "name": "Sant Andreu",
+        "district": "09",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1865052.5234006073,
+        "shp_area_m2": 1867419.187807567,
+        "rest_only_m2": 6.760645578658539,
+        "shp_only_m2": 2373.4250525329862,
+        "symdiff_m2": 2380.185698111677,
+        "hausdorff_m": 16.09407220084113
+      },
+      {
+        "code": "40",
+        "name": "Montbau",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 2055236.3403640317,
+        "shp_area_m2": 2053988.842129574,
+        "rest_only_m2": 1542.5830339253148,
+        "shp_only_m2": 295.084799431985,
+        "symdiff_m2": 1837.667833357301,
+        "hausdorff_m": 19.21693338496743
+      },
+      {
+        "code": "12",
+        "name": "la Marina del Prat Vermell",
+        "district": "03",
+        "shp_type": "MultiPolygon",
+        "rest_type": "Polygon",
+        "shp_parts": 2,
+        "rest_area_m2": 14237639.754679011,
+        "shp_area_m2": 14237476.074939813,
+        "rest_only_m2": 976.7722630331806,
+        "shp_only_m2": 813.0926715517867,
+        "symdiff_m2": 1789.8649349031443,
+        "hausdorff_m": 0.2592814273626203
+      },
+      {
+        "code": "09",
+        "name": "la Nova Esquerra de l'Eixample",
+        "district": "02",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1340065.982388668,
+        "shp_area_m2": 1340701.1590491454,
+        "rest_only_m2": 163.03597129069706,
+        "shp_only_m2": 798.2126318844377,
+        "symdiff_m2": 961.248603175198,
+        "hausdorff_m": 27.337508127868077
+      },
+      {
+        "code": "10",
+        "name": "Sant Antoni",
+        "district": "02",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 804724.8007091573,
+        "shp_area_m2": 804106.8774433777,
+        "rest_only_m2": 786.1304400807279,
+        "shp_only_m2": 168.20717415637506,
+        "symdiff_m2": 954.3376142371022,
+        "hausdorff_m": 23.804652441690187
+      },
+      {
+        "code": "25",
+        "name": "Sant Gervasi - la Bonanova",
+        "district": "05",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 2233614.047928527,
+        "shp_area_m2": 2233641.4964536643,
+        "rest_only_m2": 34.30627610220691,
+        "shp_only_m2": 61.75480119171731,
+        "symdiff_m2": 96.06107729392137,
+        "hausdorff_m": 0.10001473956742572
+      },
+      {
+        "code": "43",
+        "name": "Horta",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 3070026.2240843917,
+        "shp_area_m2": 3070016.808911926,
+        "rest_only_m2": 52.674400455631236,
+        "shp_only_m2": 43.25922798063055,
+        "symdiff_m2": 95.93362843628005,
+        "hausdorff_m": 0.14208175645862456
+      },
+      {
+        "code": "71",
+        "name": "Provençals del Poblenou",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1085719.952573178,
+        "shp_area_m2": 1085739.6285677596,
+        "rest_only_m2": 27.257035746113857,
+        "shp_only_m2": 46.933030280459526,
+        "symdiff_m2": 74.190066026571,
+        "hausdorff_m": 0.09824620012908336
+      },
+      {
+        "code": "24",
+        "name": "les Tres Torres",
+        "district": "05",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 787976.5867844542,
+        "shp_area_m2": 787959.375152242,
+        "rest_only_m2": 44.08676068678767,
+        "shp_only_m2": 26.875128482735693,
+        "symdiff_m2": 70.96188916953435,
+        "hausdorff_m": 0.09684132302800057
+      },
+      {
+        "code": "45",
+        "name": "Porta",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 836828.5278274243,
+        "shp_area_m2": 836824.4376544681,
+        "rest_only_m2": 33.833765788669176,
+        "shp_only_m2": 29.743592942183685,
+        "symdiff_m2": 63.577358730845056,
+        "hausdorff_m": 0.09498655950741847
+      },
+      {
+        "code": "64",
+        "name": "el Camp de l'Arpa del Clot",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 740639.2033199373,
+        "shp_area_m2": 740633.1456690276,
+        "rest_only_m2": 32.20054562275042,
+        "shp_only_m2": 26.14289466989171,
+        "symdiff_m2": 58.34344029264612,
+        "hausdorff_m": 0.08344214117337886
+      },
+      {
+        "code": "23",
+        "name": "Sarrià",
+        "district": "05",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 3047452.7545827697,
+        "shp_area_m2": 3047444.454045582,
+        "rest_only_m2": 33.20293077707728,
+        "shp_only_m2": 24.902393581313415,
+        "symdiff_m2": 58.10532435843484,
+        "hausdorff_m": 0.10020464565514153
+      },
+      {
+        "code": "41",
+        "name": "la Vall d'Hebron",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 744539.5160299405,
+        "shp_area_m2": 744530.9287201975,
+        "rest_only_m2": 32.19088541387285,
+        "shp_only_m2": 23.60357566138409,
+        "symdiff_m2": 55.79446107522978,
+        "hausdorff_m": 0.09812186066754652
+      },
+      {
+        "code": "21",
+        "name": "Pedralbes",
+        "district": "04",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 2684960.324970743,
+        "shp_area_m2": 2684988.6098526465,
+        "rest_only_m2": 10.60178085770892,
+        "shp_only_m2": 38.88666269631595,
+        "symdiff_m2": 49.488443554086345,
+        "hausdorff_m": 0.09864192994607593
+      },
+      {
+        "code": "68",
+        "name": "el Poblenou",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1567029.552970823,
+        "shp_area_m2": 1567030.5249087864,
+        "rest_only_m2": 23.766227622619727,
+        "shp_only_m2": 24.73816558496711,
+        "symdiff_m2": 48.5043932075895,
+        "hausdorff_m": 0.09774605797169673
+      },
+      {
+        "code": "28",
+        "name": "Vallcarca i els Penitents",
+        "district": "06",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1250953.3854818055,
+        "shp_area_m2": 1250949.496457502,
+        "rest_only_m2": 25.54957263124483,
+        "shp_only_m2": 21.660580281395095,
+        "symdiff_m2": 47.21015293779172,
+        "hausdorff_m": 0.1002466203886758
+      },
+      {
+        "code": "54",
+        "name": "Torre Baró",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1741827.4916698164,
+        "shp_area_m2": 1741824.7603866071,
+        "rest_only_m2": 24.519873763297483,
+        "shp_only_m2": 21.78862214338604,
+        "symdiff_m2": 46.3084959066789,
+        "hausdorff_m": 0.09977290124251412
+      },
+      {
+        "code": "06",
+        "name": "la Sagrada Família",
+        "district": "02",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1041790.9928366853,
+        "shp_area_m2": 1041829.3468959394,
+        "rest_only_m2": 3.131839621401959,
+        "shp_only_m2": 41.48589903527061,
+        "symdiff_m2": 44.61773865666974,
+        "hausdorff_m": 0.08344214117337886
+      },
+      {
+        "code": "65",
+        "name": "el Clot",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 696823.6322329916,
+        "shp_area_m2": 696792.0610569232,
+        "rest_only_m2": 37.53489194624654,
+        "shp_only_m2": 5.963715873710761,
+        "symdiff_m2": 43.49860781994799,
+        "hausdorff_m": 0.07703876520550763
+      },
+      {
+        "code": "50",
+        "name": "les Roquetes",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 643008.5427699287,
+        "shp_area_m2": 643017.6261541465,
+        "rest_only_m2": 16.49682317940141,
+        "shp_only_m2": 25.580207392619823,
+        "symdiff_m2": 42.07703057201581,
+        "hausdorff_m": 0.09978740419715351
+      },
+      {
+        "code": "37",
+        "name": "el Carmel",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 939980.7884423666,
+        "shp_area_m2": 939990.4841699736,
+        "rest_only_m2": 15.192389167369647,
+        "shp_only_m2": 24.88811674761832,
+        "symdiff_m2": 40.08050591499226,
+        "hausdorff_m": 0.09966399147785188
+      },
+      {
+        "code": "35",
+        "name": "el Guinardó",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1308729.4102394865,
+        "shp_area_m2": 1308733.4138958033,
+        "rest_only_m2": 17.906711005464913,
+        "shp_only_m2": 21.91036735277918,
+        "symdiff_m2": 39.81707835824369,
+        "hausdorff_m": 0.10003531934889216
+      },
+      {
+        "code": "27",
+        "name": "el Putxet i el Farró",
+        "district": "05",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 847872.2691290681,
+        "shp_area_m2": 847859.5092169109,
+        "rest_only_m2": 25.667822294868994,
+        "shp_only_m2": 12.907910124798006,
+        "symdiff_m2": 38.57573241966555,
+        "hausdorff_m": 0.0949511003316455
+      },
+      {
+        "code": "11",
+        "name": "el Poble-sec",
+        "district": "03",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 4585332.171007774,
+        "shp_area_m2": 4585321.407166517,
+        "rest_only_m2": 24.62682570525153,
+        "shp_only_m2": 13.862984599123953,
+        "symdiff_m2": 38.48981030451043,
+        "hausdorff_m": 0.483613074762163
+      },
+      {
+        "code": "72",
+        "name": "Sant Martí de Provençals",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 733992.9004310397,
+        "shp_area_m2": 733989.0163309346,
+        "rest_only_m2": 20.915549159321234,
+        "shp_only_m2": 17.031449033399646,
+        "symdiff_m2": 37.94699819272144,
+        "hausdorff_m": 0.09824620012908336
+      },
+      {
+        "code": "07",
+        "name": "la Dreta de l'Eixample",
+        "district": "02",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 2119880.4343433804,
+        "shp_area_m2": 2119874.214324659,
+        "rest_only_m2": 22.042720076583485,
+        "shp_only_m2": 15.822701418058957,
+        "symdiff_m2": 37.86542149465082,
+        "hausdorff_m": 0.09869350150401683
+      },
+      {
+        "code": "20",
+        "name": "la Maternitat i Sant Ramon",
+        "district": "04",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1915395.5110663327,
+        "shp_area_m2": 1915370.9466517936,
+        "rest_only_m2": 30.897928690422777,
+        "shp_only_m2": 6.3335142322171425,
+        "symdiff_m2": 37.231442922617454,
+        "hausdorff_m": 0.09629382046251103
+      },
+      {
+        "code": "34",
+        "name": "Can Baró",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 384186.4275340125,
+        "shp_area_m2": 384183.6805704687,
+        "rest_only_m2": 19.119286909352866,
+        "shp_only_m2": 16.37232337733847,
+        "symdiff_m2": 35.49161028667352,
+        "hausdorff_m": 0.09966399147785188
+      },
+      {
+        "code": "69",
+        "name": "Diagonal Mar i el Front Marítim del Poblenou",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1226941.1407725038,
+        "shp_area_m2": 1226952.5706345805,
+        "rest_only_m2": 11.4907620909358,
+        "shp_only_m2": 22.920033519130246,
+        "symdiff_m2": 34.410795615487785,
+        "hausdorff_m": 0.10013864721293406
+      },
+      {
+        "code": "32",
+        "name": "el Camp d'en Grassot i Gràcia Nova",
+        "district": "06",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 650534.3648146457,
+        "shp_area_m2": 650526.5067834462,
+        "rest_only_m2": 21.081110900530824,
+        "shp_only_m2": 13.223079654860157,
+        "symdiff_m2": 34.30419055536173,
+        "hausdorff_m": 0.0947166350652269
+      },
+      {
+        "code": "30",
+        "name": "la Salut",
+        "district": "06",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 648382.6383359744,
+        "shp_area_m2": 648389.0343090482,
+        "rest_only_m2": 13.802299766759344,
+        "shp_only_m2": 20.198272823619895,
+        "symdiff_m2": 34.00057259038223,
+        "hausdorff_m": 0.1002466203886758
+      },
+      {
+        "code": "04",
+        "name": "Sant Pere, Santa Caterina i la Ribera",
+        "district": "01",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1109653.1878287857,
+        "shp_area_m2": 1109668.7797898576,
+        "rest_only_m2": 9.178321522114425,
+        "shp_only_m2": 24.770282614938072,
+        "symdiff_m2": 33.948604137051674,
+        "hausdorff_m": 0.09058734314091922
+      },
+      {
+        "code": "31",
+        "name": "la Vila de Gràcia",
+        "district": "06",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1321182.4319781202,
+        "shp_area_m2": 1321188.1142776783,
+        "rest_only_m2": 13.923975895956321,
+        "shp_only_m2": 19.60627545386119,
+        "symdiff_m2": 33.53025135020188,
+        "hausdorff_m": 0.0947166350652269
+      },
+      {
+        "code": "26",
+        "name": "Sant Gervasi - Galvany",
+        "district": "05",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1669205.323664535,
+        "shp_area_m2": 1669219.7234541317,
+        "rest_only_m2": 9.45394556758602,
+        "shp_only_m2": 23.853735269524837,
+        "symdiff_m2": 33.30768083710266,
+        "hausdorff_m": 0.09672372081008652
+      },
+      {
+        "code": "36",
+        "name": "la Font d'en Fargues",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 657222.7441294797,
+        "shp_area_m2": 657222.6056754492,
+        "rest_only_m2": 15.816002848977032,
+        "shp_only_m2": 15.67754874334112,
+        "symdiff_m2": 31.493551592324433,
+        "hausdorff_m": 0.10003531934889216
+      },
+      {
+        "code": "67",
+        "name": "la Vila Olímpica del Poblenou",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 924835.1351936368,
+        "shp_area_m2": 924839.9645162195,
+        "rest_only_m2": 12.9913024748917,
+        "shp_only_m2": 17.820448722618046,
+        "symdiff_m2": 30.811751245412736,
+        "hausdorff_m": 0.09841081193298754
+      },
+      {
+        "code": "05",
+        "name": "el Fort Pienc",
+        "district": "02",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 929367.553916212,
+        "shp_area_m2": 929355.7807301518,
+        "rest_only_m2": 21.103994582427166,
+        "shp_only_m2": 9.330808493947128,
+        "symdiff_m2": 30.434803076368134,
+        "hausdorff_m": 0.09869350150401683
+      },
+      {
+        "code": "48",
+        "name": "la Guineueta",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 611951.6004214248,
+        "shp_area_m2": 611957.5868533655,
+        "rest_only_m2": 11.284992189367184,
+        "shp_only_m2": 17.271424141063168,
+        "symdiff_m2": 28.5564163315981,
+        "hausdorff_m": 0.09705398684135035
+      },
+      {
+        "code": "18",
+        "name": "Sants",
+        "district": "03",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1094645.0827065406,
+        "shp_area_m2": 1094643.3592270198,
+        "rest_only_m2": 14.67149973752658,
+        "shp_only_m2": 12.948020192279227,
+        "symdiff_m2": 27.619519929808217,
+        "hausdorff_m": 0.09753651591008206
+      },
+      {
+        "code": "03",
+        "name": "la Barceloneta",
+        "district": "01",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1179392.984856661,
+        "shp_area_m2": 1179381.9507510788,
+        "rest_only_m2": 19.302683533362124,
+        "shp_only_m2": 8.268643238499058,
+        "symdiff_m2": 27.571326766251737,
+        "hausdorff_m": 0.08941291580009288
+      },
+      {
+        "code": "14",
+        "name": "la Font de la Guatlla",
+        "district": "03",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 297072.30580741604,
+        "shp_area_m2": 297069.48731498857,
+        "rest_only_m2": 14.760323859279971,
+        "shp_only_m2": 11.941831342065683,
+        "symdiff_m2": 26.702155201345263,
+        "hausdorff_m": 0.09736171204488021
+      },
+      {
+        "code": "16",
+        "name": "la Bordeta",
+        "district": "03",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 572210.4380723815,
+        "shp_area_m2": 572212.8051672535,
+        "rest_only_m2": 11.919493564470837,
+        "shp_only_m2": 14.286588450567542,
+        "symdiff_m2": 26.206082015013084,
+        "hausdorff_m": 0.09004471488867796
+      },
+      {
+        "code": "46",
+        "name": "el Turó de la Peira",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 354209.4426453551,
+        "shp_area_m2": 354212.69247417565,
+        "rest_only_m2": 11.426615004476794,
+        "shp_only_m2": 14.676443827665452,
+        "symdiff_m2": 26.10305883212284,
+        "hausdorff_m": 0.09929541295897011
+      },
+      {
+        "code": "15",
+        "name": "Hostafrancs",
+        "district": "03",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 409925.2886340345,
+        "shp_area_m2": 409927.4553769359,
+        "rest_only_m2": 11.246548796914103,
+        "shp_only_m2": 13.41330293723106,
+        "symdiff_m2": 24.65985172180025,
+        "hausdorff_m": 0.483613074762163
+      },
+      {
+        "code": "44",
+        "name": "Vilapicina i la Torre Llobeta",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 564272.3562990616,
+        "shp_area_m2": 564280.056380105,
+        "rest_only_m2": 8.14773428973757,
+        "shp_only_m2": 15.847815413565257,
+        "symdiff_m2": 23.9955497033113,
+        "hausdorff_m": 0.0655326921518484
+      },
+      {
+        "code": "08",
+        "name": "l'Antiga Esquerra de l'Eixample",
+        "district": "02",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1228455.2326378005,
+        "shp_area_m2": 1228435.8355559418,
+        "rest_only_m2": 20.44729035861897,
+        "shp_only_m2": 1.0502084187074985,
+        "symdiff_m2": 21.497498777386944,
+        "hausdorff_m": 0.09258858981304806
+      },
+      {
+        "code": "02",
+        "name": "el Barri Gòtic",
+        "district": "01",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 815594.8892258981,
+        "shp_area_m2": 815593.9379149141,
+        "rest_only_m2": 11.016915955844354,
+        "shp_only_m2": 10.065604960508509,
+        "symdiff_m2": 21.082520916357808,
+        "hausdorff_m": 0.09533007565305845
+      },
+      {
+        "code": "33",
+        "name": "el Baix Guinardó",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 562467.4178618081,
+        "shp_area_m2": 562465.6929553462,
+        "rest_only_m2": 10.676482456423026,
+        "shp_only_m2": 8.951575999269268,
+        "symdiff_m2": 19.628058455677742,
+        "hausdorff_m": 0.08235573856348258
+      },
+      {
+        "code": "55",
+        "name": "Ciutat Meridiana",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 376678.6024291977,
+        "shp_area_m2": 376683.2448564813,
+        "rest_only_m2": 6.8136644226487935,
+        "shp_only_m2": 11.456091697842567,
+        "symdiff_m2": 18.269756120492588,
+        "hausdorff_m": 0.09935348515940876
+      },
+      {
+        "code": "56",
+        "name": "Vallbona",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 613842.4042703741,
+        "shp_area_m2": 613836.826326532,
+        "rest_only_m2": 11.743877541478376,
+        "shp_only_m2": 6.165933701463928,
+        "symdiff_m2": 17.90981124292562,
+        "hausdorff_m": 0.09813105711110073
+      },
+      {
+        "code": "52",
+        "name": "la Prosperitat",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 591232.0367197397,
+        "shp_area_m2": 591218.9100760204,
+        "rest_only_m2": 15.489049079846902,
+        "shp_only_m2": 2.362405379960679,
+        "symdiff_m2": 17.85145445981058,
+        "hausdorff_m": 0.09498655950741847
+      },
+      {
+        "code": "47",
+        "name": "Can Peguera",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 118688.54306503771,
+        "shp_area_m2": 118684.90296096551,
+        "rest_only_m2": 10.245656117552176,
+        "shp_only_m2": 6.6055520547062425,
+        "symdiff_m2": 16.85120817225704,
+        "hausdorff_m": 0.09929541295897011
+      },
+      {
+        "code": "66",
+        "name": "el Parc i la Llacuna del Poblenou",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1122054.0081669525,
+        "shp_area_m2": 1122041.3865541022,
+        "rest_only_m2": 14.497834420271035,
+        "shp_only_m2": 1.8762216597988841,
+        "symdiff_m2": 16.37405608005386,
+        "hausdorff_m": 0.05999614251948626
+      },
+      {
+        "code": "61",
+        "name": "la Sagrera",
+        "district": "09",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 986313.4653962806,
+        "shp_area_m2": 986311.3122477917,
+        "rest_only_m2": 9.224498178493945,
+        "shp_only_m2": 7.071349689421062,
+        "symdiff_m2": 16.295847867915,
+        "hausdorff_m": 0.08009208990962403
+      },
+      {
+        "code": "42",
+        "name": "la Clota",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 178495.03271608832,
+        "shp_area_m2": 178491.02716388516,
+        "rest_only_m2": 10.121759526755097,
+        "shp_only_m2": 6.116207351015913,
+        "symdiff_m2": 16.237966877773818,
+        "hausdorff_m": 0.09611503617124893
+      },
+      {
+        "code": "49",
+        "name": "Canyelles",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 790102.7488296969,
+        "shp_area_m2": 790101.3876034123,
+        "rest_only_m2": 8.690557934490586,
+        "shp_only_m2": 7.3293316335628935,
+        "symdiff_m2": 16.019889568040476,
+        "hausdorff_m": 0.09469327906390829
+      },
+      {
+        "code": "53",
+        "name": "la Trinitat Nova",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 576712.9926800344,
+        "shp_area_m2": 576707.1476174156,
+        "rest_only_m2": 10.387441359848797,
+        "shp_only_m2": 4.542378752193316,
+        "symdiff_m2": 14.929820112027748,
+        "hausdorff_m": 0.09978740419715351
+      },
+      {
+        "code": "01",
+        "name": "el Raval",
+        "district": "01",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1100291.155051476,
+        "shp_area_m2": 1100286.13571364,
+        "rest_only_m2": 9.95247737615368,
+        "shp_only_m2": 4.933139504095328,
+        "symdiff_m2": 14.885616880225282,
+        "hausdorff_m": 0.08978106868150813
+      },
+      {
+        "code": "29",
+        "name": "el Coll",
+        "district": "06",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 353226.13339277543,
+        "shp_area_m2": 353224.68900956155,
+        "rest_only_m2": 8.090124327884078,
+        "shp_only_m2": 6.645741140308526,
+        "symdiff_m2": 14.735865468209283,
+        "hausdorff_m": 0.09609152192418116
+      },
+      {
+        "code": "19",
+        "name": "les Corts",
+        "district": "04",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1410413.3068425192,
+        "shp_area_m2": 1410409.5553651177,
+        "rest_only_m2": 8.94423926472028,
+        "shp_only_m2": 5.192761843312995,
+        "symdiff_m2": 14.137001108013022,
+        "hausdorff_m": 0.08253527056128276
+      },
+      {
+        "code": "38",
+        "name": "la Teixonera",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 337543.2699156166,
+        "shp_area_m2": 337544.7119036562,
+        "rest_only_m2": 6.1102002543190865,
+        "shp_only_m2": 7.552188273127666,
+        "symdiff_m2": 13.662388527442104,
+        "hausdorff_m": 0.09919873011988352
+      },
+      {
+        "code": "51",
+        "name": "Verdun",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 237120.83476196037,
+        "shp_area_m2": 237118.2163464543,
+        "rest_only_m2": 7.627426043483813,
+        "shp_only_m2": 5.009010549254805,
+        "symdiff_m2": 12.636436592737505,
+        "hausdorff_m": 0.09811632168564112
+      },
+      {
+        "code": "13",
+        "name": "la Marina de Port",
+        "district": "03",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 1268606.7696968843,
+        "shp_area_m2": 1268609.926553637,
+        "rest_only_m2": 3.8091177961531923,
+        "shp_only_m2": 6.965974493040327,
+        "symdiff_m2": 10.775092289182268,
+        "hausdorff_m": 0.08148735457418331
+      },
+      {
+        "code": "17",
+        "name": "Sants - Badal",
+        "district": "03",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 414594.5758914215,
+        "shp_area_m2": 414589.53577569145,
+        "rest_only_m2": 6.891103652481206,
+        "shp_only_m2": 1.850987926434851,
+        "symdiff_m2": 8.742091578913273,
+        "hausdorff_m": 0.09241583522941826
+      },
+      {
+        "code": "58",
+        "name": "Baró de Viver",
+        "district": "09",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 229885.3449336314,
+        "shp_area_m2": 229892.74913181303,
+        "rest_only_m2": 0.4687688810502386,
+        "shp_only_m2": 7.872967098778137,
+        "symdiff_m2": 8.341735979825307,
+        "hausdorff_m": 0.07997347598797341
+      },
+      {
+        "code": "63",
+        "name": "Navas",
+        "district": "09",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 423819.70054825704,
+        "shp_area_m2": 423825.0761687191,
+        "rest_only_m2": 0.6294455946328239,
+        "shp_only_m2": 6.005066046267916,
+        "symdiff_m2": 6.634511640831874,
+        "hausdorff_m": 0.05897744152222914
+      },
+      {
+        "code": "62",
+        "name": "el Congrés i els Indians",
+        "district": "09",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 409214.06339131924,
+        "shp_area_m2": 409214.0379027029,
+        "rest_only_m2": 0.6399756180847964,
+        "shp_only_m2": 0.6144869794282305,
+        "symdiff_m2": 1.2544625975464891,
+        "hausdorff_m": 0.000984885951071215
+      }
+    ],
+    "districtes": [
+      {
+        "code": "03",
+        "name": "Sants-Montjuïc",
+        "district": "03",
+        "shp_type": "MultiPolygon",
+        "rest_type": "Polygon",
+        "shp_parts": 2,
+        "rest_area_m2": 22940492.367898438,
+        "shp_area_m2": 22879850.048972797,
+        "rest_only_m2": 546536.4363358276,
+        "shp_only_m2": 485894.1174102074,
+        "symdiff_m2": 1032430.5537460295,
+        "hausdorff_m": 367.7070311758637
+      },
+      {
+        "code": "05",
+        "name": "Sarrià-Sant Gervasi",
+        "district": "05",
+        "shp_type": "MultiPolygon",
+        "rest_type": "Polygon",
+        "shp_parts": 2,
+        "rest_area_m2": 20105034.32932687,
+        "shp_area_m2": 19910635.315203235,
+        "rest_only_m2": 402802.3847758677,
+        "shp_only_m2": 208403.37065227944,
+        "symdiff_m2": 611205.7554281474,
+        "hausdorff_m": 403.22247613922497
+      },
+      {
+        "code": "10",
+        "name": "Sant Martí",
+        "district": "10",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 10523789.554792624,
+        "shp_area_m2": 10436698.196939977,
+        "rest_only_m2": 153386.83170106588,
+        "shp_only_m2": 66295.47384846288,
+        "symdiff_m2": 219682.30554952883,
+        "hausdorff_m": 174.25517789340748
+      },
+      {
+        "code": "01",
+        "name": "Ciutat Vella",
+        "district": "01",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 4368477.84455909,
+        "shp_area_m2": 4204930.804169491,
+        "rest_only_m2": 185378.42127887864,
+        "shp_only_m2": 21831.38088930937,
+        "symdiff_m2": 207209.802168188,
+        "hausdorff_m": 73.86449622789146
+      },
+      {
+        "code": "07",
+        "name": "Horta-Guinardó",
+        "district": "07",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 11947109.613351561,
+        "shp_area_m2": 11921742.87748535,
+        "rest_only_m2": 64980.500654657146,
+        "shp_only_m2": 39613.76478844101,
+        "symdiff_m2": 104594.2654430983,
+        "hausdorff_m": 176.37778386114786
+      },
+      {
+        "code": "08",
+        "name": "Nou Barris",
+        "district": "08",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 8041452.790999301,
+        "shp_area_m2": 8056467.800297309,
+        "rest_only_m2": 37074.8815393439,
+        "shp_only_m2": 52089.8908373332,
+        "symdiff_m2": 89164.77237667704,
+        "hausdorff_m": 114.50891326043272
+      },
+      {
+        "code": "04",
+        "name": "Les Corts",
+        "district": "04",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 6006836.3045855,
+        "shp_area_m2": 6010769.111869558,
+        "rest_only_m2": 34740.66499788744,
+        "shp_only_m2": 38673.472281965434,
+        "symdiff_m2": 73414.13727985285,
+        "hausdorff_m": 108.74976109645725
+      },
+      {
+        "code": "09",
+        "name": "Sant Andreu",
+        "district": "09",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 6565393.691346558,
+        "shp_area_m2": 6592479.943587346,
+        "rest_only_m2": 17792.830024815346,
+        "shp_only_m2": 44879.08226561073,
+        "symdiff_m2": 62671.912290426066,
+        "hausdorff_m": 71.41421972773905
+      },
+      {
+        "code": "06",
+        "name": "Gràcia",
+        "district": "06",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 4185528.5184400734,
+        "shp_area_m2": 4224277.839674354,
+        "rest_only_m2": 8337.298121244006,
+        "shp_only_m2": 47086.61935554886,
+        "symdiff_m2": 55423.91747679288,
+        "hausdorff_m": 176.37778386114786
+      },
+      {
+        "code": "02",
+        "name": "Eixample",
+        "district": "02",
+        "shp_type": "Polygon",
+        "rest_type": "Polygon",
+        "shp_parts": 1,
+        "rest_area_m2": 7476414.761513125,
+        "shp_area_m2": 7464303.2139992155,
+        "rest_only_m2": 29189.641397748004,
+        "shp_only_m2": 17078.093883835634,
+        "symdiff_m2": 46267.73528158378,
+        "hausdorff_m": 80.04386521503092
+      }
+    ]
+  },
+  "metadata": {
+    "0301040100_GranBarri_UNITATS_ADM.shp.xml": {
+      "sha256": "4fb8d51e249b4b06637388b8f19bcef0f2a269fb34226dbf57f898f2b1a79010",
+      "fields": [
+        {
+          "tag": "CreaDate",
+          "text": "20250206"
+        },
+        {
+          "tag": "CreaTime",
+          "text": "10004100"
+        },
+        {
+          "tag": "SyncDate",
+          "text": "20250206"
+        },
+        {
+          "tag": "SyncTime",
+          "text": "10010300"
+        },
+        {
+          "tag": "ModDate",
+          "text": "20250206"
+        },
+        {
+          "tag": "ModTime",
+          "text": "10010300"
+        },
+        {
+          "tag": "resTitle",
+          "text": "0301040100_GranBarri_UNITATS_ADM"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "mdDateSt",
+          "text": "20250206"
+        }
+      ]
+    },
+    "0301040100_TermeMunicipal_UNITATS_ADM.shp.xml": {
+      "sha256": "1322fac79e4d243e3f079de0c179036f2412185eb0a169906f4dd9ad18910db2",
+      "fields": [
+        {
+          "tag": "CreaDate",
+          "text": "20250206"
+        },
+        {
+          "tag": "CreaTime",
+          "text": "10004100"
+        },
+        {
+          "tag": "SyncDate",
+          "text": "20250206"
+        },
+        {
+          "tag": "SyncTime",
+          "text": "10004700"
+        },
+        {
+          "tag": "ModDate",
+          "text": "20250206"
+        },
+        {
+          "tag": "ModTime",
+          "text": "10004700"
+        },
+        {
+          "tag": "resTitle",
+          "text": "0301040100_TermeMunicipal_UNITATS_ADM"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "attscale",
+          "text": "0"
+        },
+        {
+          "tag": "mdDateSt",
+          "text": "20250206"
+        }
+      ]
+    },
+    "gis_meta": {
+      "sha256": "4cad24519824a91f0e8d9836470ae06f5d413943e47d40d17925a21b1fd8be6a",
+      "text": [
+        "ESTRUCTURA DE LA INFORMACIÓ\nAtributs topològics i de representació gràfica\nClassificació INSPIRE\nCAMP\nDESCRIPCIÓ\nDescripció de l'ANNEX de la classificació INSPIRE\nANNEXDESCR\nIdentificador del TEMA de la classificació INSPIRE\nID_TEMA\nNom de l'identificador del TEMA de la classificació INSPIRE\nTEMA_DESCR\nIdentificador del CONJUNT de la classificació INSPIRE\nID_CONJUNT\nNom del Conjunt d'Informació Geogràfica\nCONJ_DESCR\nIdentificador del Subconjunt dins d'un conjunt d'informació\nID_SUBCONJ\nNom del Subconjunt d'elements de la mateixa classe dins d'un conjunt d'informació\nSCONJ_DESCR\nIdentificador de l'Element dins d'un conjunt d'informació\nID_ELEMENT\nDescripció de l'Element d'una mateixa classe dins d'un Subconjunt\nELEM_DESCR\nIndica el nom o número del nivell\nNIVELL\nDescripció del nivell\nNDESCR_CA\nFitxers:\nData creació del document: 23/11/2018\nSHP\nDIVISIONS ADMINISTRATIVES\nPlànol dels límits administratius que formen el territori del municipi de Barcelona. Necessari per a la localització i el coneixement \ndels diversos límits administratius de la ciutat.\n0301040100_Unitats_Adm_*.*\nCAMP\nDESCRIPCIÓ\nNom de l'Àrea d'Interès\nA_INTERES\nNom de l'Àrea d'Interès 1\nA_INTERES1\nNom de l'Àrea d'Interès 2\nA_INTERES2\nArea d'estadística bàsica\nAEB\nArea d'estadística bàsica 1\nAEB1\n1 de 4\n",
+        "CAMP\nDESCRIPCIÓ\nArea d'estadística bàsica 2\nAEB2\nAngle de rotació del text\nANGLE_TEXT\nValor de la superfície d'un element\nAREA\nCodi del Barri\nBARRI\nCodi del Barri 1\nBARRI1\nCodi del Barri 2\nBARRI2\n% de color blau definit per al color de l'element\nBLUE\nCodi de la Unitat administrativa\nCODI_UA\nEspecifica el color o el % de color de l'element\nCOL_DESCR\nPolígon amb l'atribut de farcit sòlit\nCOL_FARCIT\nValor numèric del color definit per l'element\nCOLOR\nID del color de l'element\nCOLOR_ID\nValor RGB del color de l'element\nCOLOR_RGB\nNom o nombre del Districte\nDISTRICTE\nCodi del Districte 1\nDISTRICTE1\nCodi Districte 2\nDISTRICTE2\nActualment no conté cap informació\nDOCUMENTA\nValor que defineix l'espai entre els caracters d'un text\nE_CARACTER\nValor que defineix l'espai entre les línies d'un text\nE_LINIES\nDefineix el valor d'escala en l'eix X\nESCALA_X\nDefineix el valor d'escala en l'eix Y\nESCALA_Y\nRuta de la ubicació del document que conté l'estructura de nivells del topogràfic\nESPECIFICA\nEstil de l'element\nESTIL\nID de l'estil de l'element\nESTIL_ID\nEstil de l'element definit per al programa Qgis\nESTIL_QGIS\n% de color blau definit per el farcit sòlit\nFBLUE\nDescripció del color de farcit sòlit del polígon\nFCOL_DESCR\n% de color verd definit per el farcit sòlit\nFGREEN\nValor hexadecimal per el farcit sòlit\nFHEX_COL_7\nNom de la font del text\nFONT\n% de color vermell definit per el farcit sòlit\nFRED\nCodi GranBarri (agrupació per Barris)\nGRANBARRI\n2 de 4\n",
+        "CAMP\nDESCRIPCIÓ\nCodi Granbarri 1\nGRANBARRI1\nCodi Granbarri 2\nGRANBARRI2\n% de color verd definit per al color de l'element\nGREEN\nGruix de l'element\nGRUIX\nID del Gruix de l'element\nGRUIX_ID\nDimensió del gruix\nGRUIXDIMEN\nValor hexadecimal definit per al color de l'element\nHEX_COLOR7\nJustifcació del text\nJUSTIFICA\nLiteral del text\nLITERAL\nNom de la llibreria dels símbols\nLL_SIMBOLS\nValor de la longitud de l'element\nLONGITUD\nAmplada del text\nMIDA_HORIZ\nAlçada del text\nMIDA_VERTI\nDenominació d'una unitat administrativa\nNOM\nNom de l'Àrea d'Interès 1\nNOM_AI_1\nNom de l'Àrea d'Interès 2\nNOM_AI_2\nNom del Barri 1\nNOM_BARRI1\nNom del Barri 2\nNOM_BARRI2\nNom del Districte 1\nNOM_DISTR1\nNom del Districte 2\nNOM_DISTR2\nNom del Terme Municipal 1\nNOM_TERME1\nNom del Terme Municipal 2\nNOM_TERME2\nOrdre de representació dels elements. Prioritat de visualització\nORD_REPRES\nTipus de patró de l'element\nPATTERN\nValor del perímetre de l'element\nPERIMETRE\nEstableix el rang d'escala visible per a cada element\nR_ESCALA2\n% de color vermell definit per al color de l'element\nRED\nCodi de la Secció Censal\nSEC_CENS\nCodi de la Secció Censal 1\nSEC_CENS1\nCodi de la Secció Censal 2\nSEC_CENS2\nNom del símbol\nSIMBOL\nCodi del Terme Municipal\nTERME\n3 de 4\n",
+        "CAMP\nDESCRIPCIÓ\nCodi del Terme Municipal 1\nTERME1\nCodi del Terme Municipal 2\nTERME2\nTipus de geometria: linia, poligon, punt\nTIPUS\nDetermina sí un poligon té l'atribut de farcit, farcit amb contorn diferenciat o sense farcit \nTIPUS_POL\nTipus de Unitat Administrartiva\nTIPUS_UA\nSi un element té assignada transpàrència o no\nTRANSPAREN\nValor que defineix l'espai entre els elements que componen l'estil de línia per al programa Qgis\nVALOR1QGIS\nValor que defineix la longitud dels element que conposen l'estil de línia per al programa Qgis\nVALOR2QGIS\nDetermina si un element és visible o no\nVISUALITZA\nAdreça Web amb informació general del Barri\nWEB1\nAdreça Web amb indicadors socioeconòmics del Barri\nWEB2\nAdreça Web amb indicadors de població, mercat immobiliari, formació i educació\nWEB3\nCodi de la Zona Urbana d'Activitat\nZUA\nCodi de la Zona Urbana d'Activitat 1\nZUA1\nCodi de la Zona Urbana d'Activitat 2\nZUA2\n4 de 4\n"
+      ]
+    },
+    "cad_meta": {
+      "sha256": "01465ca168ff7e91cb6566dc075d0d908e8acb0d6a51de62b73253fda1a2556c",
+      "text": [
+        "ESTRUCTURA DE LA INFORMACIÓ\nFitxers:\nData creació del document: 23/11/2018\nDGN\nDIVISIONS ADMINISTRATIVES\nPlànol dels límits administratius que formen el territori del municipi de Barcelona. Necessari per a la localització i el coneixement \ndels diversos límits administratius de la ciutat. Inclou atributs alfanumèrics d’aquestes divisions administratives.\n0301020100_BCN_Unitats_Adm.DGN\nTerme Municipal\n01 0411\nConjunt\n/\nTerme Municipal\n Nom\nNom nivell\nTipus\n01\nSubconjunt 01 04 11\n/\nADM_01_LN\nLINIA\nLímit de terme municipal\n01\nADM_01_PL\nPOLIGON\nLímit de terme municipal (polígon)\n01\nADM_01_RT\nRETOL\nNom municipi\n02\nADM_01_aux_RT\nRETOL\nNoms municipis veïns\n04\nDistrictes\n01 0412\nConjunt\n/\nDistricte\n Nom\nNom nivell\nTipus\n01\nSubconjunt 01 04 12\n/\nADM_02_LN\nLINIA\nLímit de districte\n01\nADM_02_PL\nPOLIGON\nLímit de districte (polígon)\n01\nADM_02_RT\nRETOL\nNom districte\n02\nBarris\n01 0413\nConjunt\n/\nBarri\n Nom\nNom nivell\nTipus\n01\nSubconjunt 01 04 13\n/\nADM_03_LN\nLINIA\nLímit de barri\n01\nADM_03_PL\nPOLIGON\nLímit de barri (polígon)\n01\nADM_03_PL_S_AI\nPOLIGON\nLímit de barri sense àrea d'interès (polígon)\n01\nADM_03_RT\nRETOL\nNom de barri\n02\n1 de 5\n",
+        "Àrea estadística bàsica\n01 0414\nConjunt\n/\nÀrea estadística bàsica\n Nom\nNom nivell\nTipus\n01\nSubconjunt 01 04 14\n/\nADM_04_LN\nLINIA\nLímit àrea estadística bàsica\n01\nADM_04_PL\nPOLIGON\nLímit àrea estadística bàsica (polígon)\n01\nADM_04_RT\nRETOL\nCodi àrea estadística bàsica (rètol)\n02\nSecció censal\n01 0415\nConjunt\n/\nSecció censal\n Nom\nNom nivell\nTipus\n01\nSubconjunt 01 04 15\n/\nADM_05_LN\nLINIA\nLímit de la secció censal\n01\nADM_05_PL\nPOLIGON\nLímit de la secció censal (polígon)\n01\nADM_05_RT\nRETOL\nCodi secció censal (rètol)\n02\nÀrea d'interès\n01 0416\nConjunt\n/\nÀrea d'interès\n Nom\nNom nivell\nTipus\n01\nSubconjunt 01 04 16\n/\nADM_06_LN\nLINIA\nLímits d'àrea d'interès\n01\nADM_06_PL\nPOLIGON\nLímits d'àrea d'interès (polígon)\n01\nADM_06_RT\nRETOL\nNom d'àrea d'interès (rètol)\n02\nGran barri\n01 0417\nConjunt\n/\nGran barri\n Nom\nNom nivell\nTipus\n01\nSubconjunt 01 04 17\n/\nADM_08_PL\nPOLIGON\nLímit gran barri (polígon)\n01\nADM_08_RT\nRETOL\nCodi de gran barri (rètol)\n02\nZones urban audit_sub-city districts\n01 0418\nConjunt\n/\nZones urban audit_sub-city districts\n Nom\nNom nivell\nTipus\n01\nSubconjunt 01 04 18\n/\nADM_09_PL\nPOLIGON\nLímit zones urban audit_sub-city districts (polígon)\n01\nADM_09_RT\nRETOL\nCodi zones urban audit_sub-city districts (rètol)\n02\n2 de 5\n",
+        "Atributs associats als elements gràfics\nClassificació INSPIRE\nDADES ASSOCIADES\nCAMP\nDESCRIPCIÓ\nDescripció de l'ANNEX de la classificació INSPIRE\nANNEX_DESCRIPCIO\nIdentificador del TEMA de la classificació INSPIRE\nIDENT_TEMA\nNom de I'dentificador del TEMA de la classificació INSPIRE\nTEMA_DESCRIPCIO\nIdentificador del CONJUNT de la classificació INSPIRE\nIDENT_CONJUNT\nNom del Conjunt d'Informació Geogràfica\nCONJUNT_DESCRIPCIO\nIdentificador del Subconjunt dins d'un conjunt d'informació\nIDENT_SUBCONJUNT\nNom del Subconjunt d'elements de la mateixa classe dins d'un conjunt d'informació\nSUBCONJUNT_DESCRIPCIO\nIdentificador de l'Element dins d'un conjunt d'informació\nIDENT_ELEMENT\nDescripció de l'Element d'una mateixa classe dins d'un Subconjunt\nELEMENT_DESCRIPCIO\nIndica el nom o número del nivell\nNIVELL\nDescripció del nivell\nNIVELL_DESCRIPCIO\nCAMP\nDESCRIPCIÓ\nArea d'estadística bàsica\nAEB\nArea d'estadística bàsica 1\nAEB1\nArea d'estadística bàsica 2\nAEB2\nValor de la superfície d'un element\nAREA\nValor de la superfície d'un element\nAREA\nNom de l'Àrea d'Interès\nAREA_I\nNom de l'Àrea d'Interès 1\nA_INTERES1\nNom de l'Àrea d'Interès 2\nA_INTERES2\nCodi del Barri\nBARRI\nCodi del Barri 1\nBARRI1\nCodi del Barri 2\nBARRI2\nCodi de la Unitat administrativa\nCODI_UA\nNom o nombre del Districte\nDISTRICTE\n3 de 5\n",
+        "CAMP\nDESCRIPCIÓ\nCodi del Districte 1\nDISTRICTE1\nCodi Districte 2\nDISTRICTE2\nActualment no conté cap informació\nDOCUMENTACIO\nCodi GranBarri (agrupació per Barris)\nGRANBARRI\nCodi Granbarri 1\nGRANBARRI1\nCodi Granbarri 2\nGRANBARRI2\nLiteral del text\nLITERAL\nValor de la longitud de l'element\nLONGITUD\nValor de la longitud de l'element\nLONGITUD\nDenominació d'una unitat administrativa\nNOM\nNom de l'Àrea d'Interès 1\nNOM_AREA_INTERES1\nNom de l'Àrea d'Interès 2\nNOM_AREA_INTERES2\nNom del Barri 1\nNOM_BARRI1\nNom del Barri 2\nNOM_BARRI2\nNom del Districte 1\nNOM_DISTRICTE1\nNom del Districte 2\nNOM_DISTRICTE2\nNom del Terme Municipal 1\nNOM_TERME1\nNom del Terme Municipal 2\nNOM_TERME2\nOrdre de representació dels elements. Prioritat de visualització\nORDRE_REPRESENTACIO\nValor del perímetre de l'element\nPERIMETRE\nCodi de la Secció Censal\nSEC_CENS\nCodi de la Secció Censal 1\nSEC_CENS1\nCodi de la Secció Censal 2\nSEC_CENS2\nCodi del Terme Municipal\nTERME\nCodi del Terme Municipal 1\nTERME1\nCodi del Terme Municipal 2\nTERME2\nTipus de Unitat Administrartiva\nTIPUS_UA\nAdreça Web amb informació general del Barri\nWEB1\nAdreça Web amb indicadors socioeconòmics del Barri\nWEB2\nAdreça Web amb indicadors de població, mercat immobiliari, formació i educació\nWEB3\nCodi de la Zona Urbana d'Activitat\nZUA\nCodi de la Zona Urbana d'Activitat 1\nZUA1\n4 de 5\n",
+        "CAMP\nDESCRIPCIÓ\nCodi de la Zona Urbana d'Activitat 2\nZUA2\n5 de 5\n"
+      ]
+    }
+  },
+  "cad": {
+    "streams": [
+      {
+        "path": [
+          "\u0005DocumentSummaryInformation"
+        ],
+        "size": 176
+      },
+      {
+        "path": [
+          "\u0005SummaryInformation"
+        ],
+        "size": 18308
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$1"
+        ],
+        "size": 28280
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$10"
+        ],
+        "size": 16639
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$100"
+        ],
+        "size": 16093
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$101"
+        ],
+        "size": 16429
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$102"
+        ],
+        "size": 17379
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$103"
+        ],
+        "size": 18750
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$104"
+        ],
+        "size": 16085
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$105"
+        ],
+        "size": 20423
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$106"
+        ],
+        "size": 16469
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$107"
+        ],
+        "size": 17011
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$108"
+        ],
+        "size": 19128
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$109"
+        ],
+        "size": 16530
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$11"
+        ],
+        "size": 17530
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$110"
+        ],
+        "size": 16607
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$111"
+        ],
+        "size": 15798
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$112"
+        ],
+        "size": 15081
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$113"
+        ],
+        "size": 15402
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$114"
+        ],
+        "size": 15311
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$115"
+        ],
+        "size": 16207
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$116"
+        ],
+        "size": 18025
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$117"
+        ],
+        "size": 15696
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$118"
+        ],
+        "size": 15753
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$119"
+        ],
+        "size": 17301
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$12"
+        ],
+        "size": 17650
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$120"
+        ],
+        "size": 14660
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$121"
+        ],
+        "size": 14158
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$122"
+        ],
+        "size": 13785
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$123"
+        ],
+        "size": 13512
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$124"
+        ],
+        "size": 13456
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$125"
+        ],
+        "size": 13586
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$126"
+        ],
+        "size": 13285
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$127"
+        ],
+        "size": 13194
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$128"
+        ],
+        "size": 13166
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$129"
+        ],
+        "size": 14030
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$13"
+        ],
+        "size": 20889
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$130"
+        ],
+        "size": 13436
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$131"
+        ],
+        "size": 13840
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$132"
+        ],
+        "size": 13438
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$133"
+        ],
+        "size": 13877
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$134"
+        ],
+        "size": 13422
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$135"
+        ],
+        "size": 13602
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$136"
+        ],
+        "size": 13193
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$137"
+        ],
+        "size": 13171
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$138"
+        ],
+        "size": 13248
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$139"
+        ],
+        "size": 13193
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$14"
+        ],
+        "size": 18003
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$140"
+        ],
+        "size": 13163
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$141"
+        ],
+        "size": 13203
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$142"
+        ],
+        "size": 13205
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$143"
+        ],
+        "size": 13210
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$144"
+        ],
+        "size": 13192
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$145"
+        ],
+        "size": 13205
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$146"
+        ],
+        "size": 13151
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$147"
+        ],
+        "size": 13158
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$148"
+        ],
+        "size": 1151
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$149"
+        ],
+        "size": 13654
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$15"
+        ],
+        "size": 15364
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$150"
+        ],
+        "size": 13196
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$151"
+        ],
+        "size": 13208
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$152"
+        ],
+        "size": 13196
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$153"
+        ],
+        "size": 13163
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$154"
+        ],
+        "size": 13164
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$155"
+        ],
+        "size": 13642
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$156"
+        ],
+        "size": 13201
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$157"
+        ],
+        "size": 13141
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$158"
+        ],
+        "size": 13163
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$159"
+        ],
+        "size": 13236
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$16"
+        ],
+        "size": 21510
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$160"
+        ],
+        "size": 13165
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$161"
+        ],
+        "size": 13179
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$162"
+        ],
+        "size": 13248
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$163"
+        ],
+        "size": 13213
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$164"
+        ],
+        "size": 13181
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$165"
+        ],
+        "size": 13226
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$166"
+        ],
+        "size": 13197
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$167"
+        ],
+        "size": 13152
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$168"
+        ],
+        "size": 13237
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$169"
+        ],
+        "size": 13176
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$17"
+        ],
+        "size": 16465
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$170"
+        ],
+        "size": 13580
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$171"
+        ],
+        "size": 15090
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$172"
+        ],
+        "size": 14241
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$173"
+        ],
+        "size": 14415
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$174"
+        ],
+        "size": 13600
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$175"
+        ],
+        "size": 13658
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$176"
+        ],
+        "size": 13219
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$177"
+        ],
+        "size": 14702
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$178"
+        ],
+        "size": 14218
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$179"
+        ],
+        "size": 13246
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$18"
+        ],
+        "size": 19705
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$180"
+        ],
+        "size": 13209
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$181"
+        ],
+        "size": 28561
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$182"
+        ],
+        "size": 147080
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$183"
+        ],
+        "size": 121792
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$184"
+        ],
+        "size": 93885
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$185"
+        ],
+        "size": 68960
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$186"
+        ],
+        "size": 56657
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$187"
+        ],
+        "size": 26493
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$188"
+        ],
+        "size": 27924
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$189"
+        ],
+        "size": 62727
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$19"
+        ],
+        "size": 16814
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$190"
+        ],
+        "size": 41233
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$191"
+        ],
+        "size": 74648
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$192"
+        ],
+        "size": 37732
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$193"
+        ],
+        "size": 55746
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$194"
+        ],
+        "size": 61287
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$195"
+        ],
+        "size": 38649
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$196"
+        ],
+        "size": 25295
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$197"
+        ],
+        "size": 38870
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$198"
+        ],
+        "size": 22549
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$199"
+        ],
+        "size": 16510
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$2"
+        ],
+        "size": 57743
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$20"
+        ],
+        "size": 16387
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$200"
+        ],
+        "size": 27111
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$201"
+        ],
+        "size": 21537
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$202"
+        ],
+        "size": 17133
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$203"
+        ],
+        "size": 17884
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$204"
+        ],
+        "size": 18613
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$205"
+        ],
+        "size": 17352
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$206"
+        ],
+        "size": 22263
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$207"
+        ],
+        "size": 29069
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$208"
+        ],
+        "size": 53726
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$209"
+        ],
+        "size": 25921
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$21"
+        ],
+        "size": 18704
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$210"
+        ],
+        "size": 21699
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$211"
+        ],
+        "size": 53793
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$212"
+        ],
+        "size": 42306
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$213"
+        ],
+        "size": 40169
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$214"
+        ],
+        "size": 59366
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$215"
+        ],
+        "size": 29490
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$216"
+        ],
+        "size": 22406
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$217"
+        ],
+        "size": 28332
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$218"
+        ],
+        "size": 41117
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$219"
+        ],
+        "size": 45922
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$22"
+        ],
+        "size": 26263
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$220"
+        ],
+        "size": 58445
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$221"
+        ],
+        "size": 40259
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$222"
+        ],
+        "size": 3030
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$223"
+        ],
+        "size": 53424
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$224"
+        ],
+        "size": 26777
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$225"
+        ],
+        "size": 69665
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$226"
+        ],
+        "size": 79128
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$227"
+        ],
+        "size": 41595
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$228"
+        ],
+        "size": 85321
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$229"
+        ],
+        "size": 41881
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$23"
+        ],
+        "size": 19747
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$230"
+        ],
+        "size": 75133
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$231"
+        ],
+        "size": 38193
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$232"
+        ],
+        "size": 25020
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$233"
+        ],
+        "size": 28102
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$234"
+        ],
+        "size": 51122
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$235"
+        ],
+        "size": 27332
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$236"
+        ],
+        "size": 27322
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$237"
+        ],
+        "size": 20696
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$238"
+        ],
+        "size": 22645
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$239"
+        ],
+        "size": 23177
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$24"
+        ],
+        "size": 18325
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$240"
+        ],
+        "size": 22577
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$241"
+        ],
+        "size": 20214
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$242"
+        ],
+        "size": 34374
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$243"
+        ],
+        "size": 24494
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$244"
+        ],
+        "size": 26091
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$245"
+        ],
+        "size": 41040
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$246"
+        ],
+        "size": 26477
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$247"
+        ],
+        "size": 25277
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$248"
+        ],
+        "size": 21755
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$249"
+        ],
+        "size": 2024
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$25"
+        ],
+        "size": 15693
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$26"
+        ],
+        "size": 22077
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$27"
+        ],
+        "size": 21931
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$28"
+        ],
+        "size": 16766
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$29"
+        ],
+        "size": 17800
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$3"
+        ],
+        "size": 16313
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$30"
+        ],
+        "size": 15764
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$31"
+        ],
+        "size": 16124
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$32"
+        ],
+        "size": 20157
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$33"
+        ],
+        "size": 15652
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$34"
+        ],
+        "size": 15767
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$35"
+        ],
+        "size": 16421
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$36"
+        ],
+        "size": 15145
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$37"
+        ],
+        "size": 18063
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$38"
+        ],
+        "size": 15837
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$39"
+        ],
+        "size": 15796
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$4"
+        ],
+        "size": 15706
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$40"
+        ],
+        "size": 15002
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$41"
+        ],
+        "size": 15348
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$42"
+        ],
+        "size": 15295
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$43"
+        ],
+        "size": 17065
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$44"
+        ],
+        "size": 17209
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$45"
+        ],
+        "size": 15980
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$46"
+        ],
+        "size": 16697
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$47"
+        ],
+        "size": 15873
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$48"
+        ],
+        "size": 23418
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$49"
+        ],
+        "size": 16624
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$5"
+        ],
+        "size": 21701
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$50"
+        ],
+        "size": 15845
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$51"
+        ],
+        "size": 17742
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$52"
+        ],
+        "size": 16665
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$53"
+        ],
+        "size": 15509
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$54"
+        ],
+        "size": 15578
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$55"
+        ],
+        "size": 16163
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$56"
+        ],
+        "size": 15446
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$57"
+        ],
+        "size": 15234
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$58"
+        ],
+        "size": 15598
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$59"
+        ],
+        "size": 16807
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$6"
+        ],
+        "size": 28451
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$60"
+        ],
+        "size": 15760
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$61"
+        ],
+        "size": 15545
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$62"
+        ],
+        "size": 15497
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$63"
+        ],
+        "size": 15995
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$64"
+        ],
+        "size": 15233
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$65"
+        ],
+        "size": 15251
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$66"
+        ],
+        "size": 15697
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$67"
+        ],
+        "size": 17612
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$68"
+        ],
+        "size": 15150
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$69"
+        ],
+        "size": 15171
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$7"
+        ],
+        "size": 16753
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$70"
+        ],
+        "size": 14748
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$71"
+        ],
+        "size": 16837
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$72"
+        ],
+        "size": 16996
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$73"
+        ],
+        "size": 16514
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$74"
+        ],
+        "size": 1336
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$75"
+        ],
+        "size": 15351
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$76"
+        ],
+        "size": 15897
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$77"
+        ],
+        "size": 16364
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$78"
+        ],
+        "size": 17096
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$79"
+        ],
+        "size": 21457
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$8"
+        ],
+        "size": 16188
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$80"
+        ],
+        "size": 16700
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$81"
+        ],
+        "size": 17787
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$82"
+        ],
+        "size": 15935
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$83"
+        ],
+        "size": 17102
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$84"
+        ],
+        "size": 17371
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$85"
+        ],
+        "size": 16310
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$86"
+        ],
+        "size": 17989
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$87"
+        ],
+        "size": 17250
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$88"
+        ],
+        "size": 16468
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$89"
+        ],
+        "size": 17703
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$9"
+        ],
+        "size": 15477
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$90"
+        ],
+        "size": 16425
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$91"
+        ],
+        "size": 17925
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$92"
+        ],
+        "size": 16038
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$93"
+        ],
+        "size": 15853
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$94"
+        ],
+        "size": 15210
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$95"
+        ],
+        "size": 15795
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$96"
+        ],
+        "size": 19875
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$97"
+        ],
+        "size": 17055
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$98"
+        ],
+        "size": 16599
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^G",
+          "$99"
+        ],
+        "size": 18138
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn^GA",
+          "^AH"
+        ],
+        "size": 4
+      },
+      {
+        "path": [
+          "Dgn-Md",
+          "#000000",
+          "Dgn~Mh"
+        ],
+        "size": 181
+      },
+      {
+        "path": [
+          "DgnTk"
+        ],
+        "size": 64
+      },
+      {
+        "path": [
+          "Dgn^Ix",
+          "Dgn~Mix"
+        ],
+        "size": 43
+      },
+      {
+        "path": [
+          "Dgn^Nm",
+          "$1"
+        ],
+        "size": 5174
+      },
+      {
+        "path": [
+          "Dgn^NmA",
+          "^AH"
+        ],
+        "size": 4
+      },
+      {
+        "path": [
+          "Dgn~H"
+        ],
+        "size": 78
+      },
+      {
+        "path": [
+          "Dgn~Mf"
+        ],
+        "size": 14
+      },
+      {
+        "path": [
+          "Dgn~S"
+        ],
+        "size": 208
+      }
+    ]
+  },
+  "repairs": 0,
+  "canonical_approved": false
+}
