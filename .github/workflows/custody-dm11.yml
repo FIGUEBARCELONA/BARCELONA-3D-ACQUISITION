@@ -1,0 +1,35 @@
+name: DM-11 custody and vertical QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/custody-dm11.yml']
+permissions:
+  contents: write
+jobs:
+  custody:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Install pinned dependencies from DM-10
+        run: |
+          python3 -m venv .venv
+          .venv/bin/pip install --no-cache-dir numpy==2.5.5 requests==2.34.2 rasterio==1.5.2 shapely==2.2.0 pyproj==3.8.0 pyshp==3.1.9
+          command -v pdftotext
+      - name: Reacquire exact sources, validate, and probe
+        run: .venv/bin/python custody_dm11.py
+      - name: Persist licensed geographical data and report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- custody/dm11
+          git diff --cached --stat
+          if ! git diff --cached --quiet; then
+            git commit -m "DM-11 custody: verified public geographical data and report"
+            git push origin HEAD:main
+          fi
+          cat custody/dm11/report.json >> "$GITHUB_STEP_SUMMARY"
