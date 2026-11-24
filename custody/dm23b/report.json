@@ -1,0 +1,207 @@
+{
+  "status": "CHECKS_RECORDED",
+  "data": {
+    "source": {
+      "url": "https://ssl.renfe.com/ftransit/Fichero_CER_FOMENTO/fomento_transit.zip",
+      "bytes": 15864145,
+      "sha256": "0609cbf45a41dcc6a328bf82271d80f6675947b5a54168a453d5e98d407b8100",
+      "content_type": "application/zip",
+      "last_modified": "Tue, 24 Nov 2026 03:08:46 GMT"
+    },
+    "custody": {
+      "path": "custody/dm23b/renfe_cercanias.zip",
+      "bytes": 15864145,
+      "sha256": "0609cbf45a41dcc6a328bf82271d80f6675947b5a54168a453d5e98d407b8100"
+    },
+    "crc_verified": true,
+    "members": [
+      "agency.txt",
+      "calendar.txt",
+      "routes.txt",
+      "shapes.txt",
+      "stops.txt",
+      "stop_times.txt",
+      "transfers.txt",
+      "trips.txt"
+    ],
+    "schemas": {
+      "agency": [
+        "agency_id",
+        "agency_name",
+        "agency_url",
+        "agency_timezone",
+        "agency_lang",
+        "agency_phone                                                                             "
+      ],
+      "routes": [
+        "route_id",
+        "route_short_name",
+        "route_long_name",
+        "route_type",
+        "route_color",
+        "route_text_color                                                                     "
+      ],
+      "trips": [
+        "route_id",
+        "service_id",
+        "trip_id",
+        "trip_headsign",
+        "wheelchair_accessible",
+        "block_id",
+        "shape_id                                                                     "
+      ],
+      "calendar": [
+        "service_id",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday",
+        "start_date",
+        "end_date                                                               "
+      ],
+      "stop_times": [
+        "trip_id",
+        "arrival_time",
+        "departure_time",
+        "stop_id",
+        "stop_sequence                                                                                             "
+      ]
+    },
+    "sample_calendar": [
+      {
+        "service_id": "1027M",
+        "monday": "0",
+        "tuesday": "1",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "start_date": "20261124",
+        "end_date": "20261124                                                                                                                 "
+      },
+      {
+        "service_id": "1028X",
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "1",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "start_date": "20261125",
+        "end_date": "20261125                                                                                                                 "
+      },
+      {
+        "service_id": "1029J",
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "1",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "start_date": "20261126",
+        "end_date": "20261126                                                                                                                 "
+      },
+      {
+        "service_id": "1030V",
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "start_date": "20261127",
+        "end_date": "20261127                                                                                                                 "
+      }
+    ],
+    "sample_calendar_dates": [],
+    "sample_trip_ids": [
+      "1027M19799C1",
+      "1027M19800C1",
+      "1027M19802C1",
+      "1027M19804C1",
+      "1027M19806C1",
+      "1027M19808C1",
+      "1027M19810C1",
+      "1027M19812C1",
+      "1027M19814C1",
+      "1027M19816C1",
+      "1027M19818C1",
+      "1027M19820C1",
+      "1027M19822C1",
+      "1027M19824C1",
+      "1027M19826C1"
+    ],
+    "target_count": 14,
+    "trip_count": 133140,
+    "calendar_status": "FAILED: unconverted data remains:                                                                                                                  ",
+    "results": [
+      {
+        "target": "REG_B_1504012026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1504112026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1504212026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1504312026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1504412026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1504512026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1504612026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1504712026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1505012026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1505112026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1505212026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1505312026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1505412026-11-08",
+        "candidates": []
+      },
+      {
+        "target": "REG_B_1505512026-11-08",
+        "candidates": []
+      }
+    ],
+    "candidate_count": 0,
+    "recovered_exact_service_identity": 0
+  },
+  "production": "NO_GO",
+  "canonical_EAM_closed": 0
+}
