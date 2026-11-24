@@ -1,0 +1,150 @@
+{
+  "renfe_stations": {
+    "url": "https://data.renfe.com/dataset/ed3d44e5-1d04-41d6-9aa5-396442bf3e07/resource/783e0626-6fa8-4ac7-a880-fa53144654ff/download/listado-estaciones-completo-act.csv",
+    "bytes": 142155,
+    "sha256": "bc4365a8e03f71a94fe8cf9813d64f5ed5c553479419559d2132d6daaa3d249e",
+    "content_type": "application/octet-stream",
+    "last_modified": "Tue, 24 Nov 2026 01:50:24 GMT",
+    "header": [
+      "CODIGO",
+      "DESCRIPCION",
+      "LATITUD",
+      "LONGITUD",
+      "DIRECION",
+      "CP",
+      "POBLACION",
+      "PROVINCIA",
+      "PAIS",
+      "CERCANIAS",
+      "ANCHO MÉTRICO",
+      "COMUN"
+    ],
+    "matches": [
+      [
+        "73004",
+        "LA FLORESTA",
+        "41.5042013",
+        "0.924432  ",
+        "Ctra. Lv - 2012 --- Estació Ferrocarril, S/N",
+        "25413",
+        "FLORESTA (LA)",
+        "LLEIDA",
+        "ESPAÑA",
+        "SI",
+        "NO",
+        ""
+      ],
+      [
+        "73005",
+        "VINAIXA",
+        "41.4251410",
+        "0.97037370",
+        "Ctra. Albí, 34",
+        "25440",
+        "VINAIXA",
+        "LLEIDA",
+        "ESPAÑA",
+        "SI",
+        "NO",
+        ""
+      ],
+      [
+        "73006",
+        "VIMBODÍ I POBLET",
+        "41.4027277",
+        "1.04603327",
+        "C/ de Castellfollit",
+        "43430",
+        "VIMBODÍ I POBLET",
+        "TARRAGONA",
+        "ESPAÑA",
+        "SI",
+        "NO",
+        ""
+      ],
+      [
+        "73007",
+        "L'ESPLUGA DE FRANCOLÍ",
+        "41.4006616",
+        "1.10336094",
+        "Camí de L'Estació Ferrorarril, S/N",
+        "43440",
+        "ESPLUGA DE FRANCOLÍ (L')",
+        "TARRAGONA",
+        "ESPAÑA",
+        "SI",
+        "NO",
+        ""
+      ],
+      [
+        "73008",
+        "MONTBLANC",
+        "41.3766254",
+        "1.16554869",
+        "Av. de L'Estació, 1",
+        "43400",
+        "MONTBLANC",
+        "TARRAGONA",
+        "ESPAÑA",
+        "SI",
+        "NO",
+        ""
+      ],
+      [
+        "73009",
+        "VILAVERD",
+        "41.3376633",
+        "1.17653235",
+        "C/ Major, S/N",
+        "43490",
+        "VILAVERD",
+        "TARRAGONA",
+        "ESPAÑA",
+        "SI",
+        "NO",
+        ""
+      ],
+      [
+        "73010",
+        "LA RIBA",
+        "41.3184926",
+        "1.18131260",
+        "Ctra. Tv - 7044 --- Estación Ferrocarril, S/N",
+        "43450",
+        "RIBA (LA)",
+        "TARRAGONA",
+        "ESPAÑA",
+        "SI",
+        "NO",
+        ""
+      ],
+      [
+        "73100",
+        "LA PLANA-PICAMOIXONS",
+        "41.3061987",
+        "1.19488293",
+        "Ctra. T - 743 --- Km. 553 --- Estació Ferrocarril, S/N",
+        "43491",
+        "VALLS",
+        "TARRAGONA",
+        "ESPAÑA",
+        "SI",
+        "NO",
+        ""
+      ]
+    ],
+    "row_count": 1033,
+    "encoding": "cp1252",
+    "status": "INSPECTED"
+  },
+  "geobcn_wfs": {
+    "url": "https://geobcn.nexusgeografics.com/GeoBcn/serveis/territori/wfs?service=WFS&request=GetCapabilities",
+    "status": "FAILED",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  "eurostat_passengers": {
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ttr00017?lang=EN&airp_pr=ES_LEBL&time=2025-01&time=2025-02&time=2025-03&time=2025-04&time=2025-05&time=2025-06&time=2025-07&time=2025-08&time=2025-09&time=2025-10&time=2025-11&time=2025-12",
+    "status": "FAILED",
+    "error": "<HTTPError 400: 'Bad Request'>"
+  }
+}
