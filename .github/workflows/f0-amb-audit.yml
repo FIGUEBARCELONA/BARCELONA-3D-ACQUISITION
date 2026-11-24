@@ -1,0 +1,69 @@
+name: F0 municipal source audit
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/f0-amb-audit.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/f0deps" shapely pyshp pyproj
+      - name: Read official evidence only
+        run: |
+          PYTHONPATH="$RUNNER_TEMP/f0deps" python - <<'PY'
+          import pathlib,urllib.request,urllib.parse,hashlib,json,zipfile,io,collections,traceback
+          from shapely.geometry import shape
+          from shapely.ops import unary_union,transform
+          from pyproj import Transformer
+          import shapefile
+          d=pathlib.Path('custody/f0-amb-audit');d.mkdir(parents=True,exist_ok=True)
+          out={}
+          def get(url,name,limit):
+              with urllib.request.urlopen(url,timeout=30) as f:
+                  b=f.read(limit+1);assert len(b)<=limit
+                  m={'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'http_status':f.status,'last_modified':f.headers.get('Last-Modified')}
+              (d/name).write_bytes(b)
+              return b,m
+          url='https://ide.amb.cat/geoserveispi/rest/services/SIGMIT/Situacio_AMB/MapServer/2/query?'+urllib.parse.urlencode({'where':'1=1','outFields':'MUNICIPI,NOM_MUNI,SUP_MUNI','returnGeometry':'true','outSR':'4326','f':'geojson'})
+          try:
+              b,m=get(url,'amb_municipis.original.geojson',20000000);j=json.loads(b);assert j['type']=='FeatureCollection'
+              tx=Transformer.from_crs(4326,25831,always_xy=True).transform
+              rr=[(f['properties'],transform(tx,shape(f['geometry']))) for f in j['features']]
+              m['count']=len(rr);m['unique_codes']=len({p['MUNICIPI'] for p,g in rr});m['features']=[{'code':p['MUNICIPI'],'name':p['NOM_MUNI'],'area_m2':g.area,'valid':g.is_valid,'empty':g.is_empty} for p,g in rr]
+              if all(g.is_valid and not g.is_empty for _,g in rr):
+                  u=unary_union([g for _,g in rr]);m['union_area_m2']=u.area;m['union_valid']=u.is_valid;m['overlaps']=[]
+                  for i,(p,g) in enumerate(rr):
+                      for q,h in rr[i+1:]:
+                          a=g.intersection(h).area
+                          if a>0:m['overlaps'].append({'a':p['MUNICIPI'],'b':q['MUNICIPI'],'m2':a})
+              m['status']='INSPECTED';out['amb']=m
+          except Exception as e:out['amb']={'url':url,'status':'FAILED','error':repr(e)}
+          url='https://datacloud.ide.cat/metadades/mapa-municipal-v2r0-metadades.zip'
+          try:
+              b,m=get(url,'mapa_municipal_metadata.original.zip',25000000)
+              with zipfile.ZipFile(io.BytesIO(b)) as z:
+                  assert z.testzip() is None;m['members']=z.namelist()
+                  n=next(n for n in z.namelist() if n.lower().endswith('.shp'));base=n[:-4]
+                  r=shapefile.Reader(shp=io.BytesIO(z.read(n)),shx=io.BytesIO(z.read(base+'.shx')),dbf=io.BytesIO(z.read(base+'.dbf')),encoding='utf-8')
+                  m['fields']=[x[0] for x in r.fields[1:]]
+                  rec=[x.as_dict() for x in r.records()];m['count']=len(rec);m['first']=rec[:2]
+                  m['amb_matches']=[]
+                  codes={f['code'] for f in out.get('amb',{}).get('features',[])}
+                  for row in rec:
+                      if any(str(v) in codes for v in row.values()):m['amb_matches'].append(row)
+              m['status']='INSPECTED';out['municipal_metadata']=m
+          except Exception as e:out['municipal_metadata']={'url':url,'status':'FAILED','error':repr(e)}
+          out['qualification']='Audit-only acquisition, no canonical boundary approval, no geometry repairs, no production execution.'
+          (d/'report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2,default=str)+'\n')
+          PY
+      - name: Preserve audit evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-amb-audit/
+          git commit -m 'F0 preserve municipal source audit evidence'
+          git push origin HEAD:main
