@@ -1,0 +1,236 @@
+{
+  "AMB": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source": {
+        "url": "https://www.ambmobilitat.cat/OpenData/google_transit.zip",
+        "bytes": 8071115,
+        "sha256": "0ccaddeb634f4e55c8c68a033b576fabe622f08e8abb587b1a2a1f60b4d782ff",
+        "content_type": "application/x-zip-compressed",
+        "last_modified": "Tue, 24 Nov 2026 11:18:47 GMT"
+      },
+      "CRC_verified": true,
+      "original_archive_not_persisted": true,
+      "target_extract_sha256": "f8fa684eea0e9398163f895c8aa29f966e2078203ea461560c465d0ae9f756af",
+      "agencies": [
+        "Avanza",
+        "DIREXIS TGO",
+        "DIREXIS TUSGSAL",
+        "Monbus (Aerobús)",
+        "Monbus (Horta)",
+        "Monbus (Papiol)",
+        "Monbus i Julià",
+        "Moventis",
+        "Moventis (Cerdanyola)",
+        "Moventis (Port)",
+        "Soler i Sauret"
+      ],
+      "calendar_status": "CHECKS_RECORDED",
+      "trip_count": 29823,
+      "target_count": 4,
+      "candidate_count": 4,
+      "results": [
+        {
+          "target": "AMB_217.28.2.1.0",
+          "target_operator": "DIREXIS TUSGSAL",
+          "candidates": [
+            {
+              "trip_id": "217.28.2.1.0",
+              "route": "217",
+              "agency": "DIREXIS TUSGSAL",
+              "active": true,
+              "stop_rows": 0,
+              "timed_rows": 0
+            }
+          ]
+        },
+        {
+          "target": "AMB_217.28.2.1.1",
+          "target_operator": "DIREXIS TUSGSAL",
+          "candidates": [
+            {
+              "trip_id": "217.28.2.1.1",
+              "route": "217",
+              "agency": "DIREXIS TUSGSAL",
+              "active": true,
+              "stop_rows": 0,
+              "timed_rows": 0
+            }
+          ]
+        },
+        {
+          "target": "AMB_217.28.2.1.2",
+          "target_operator": "DIREXIS TUSGSAL",
+          "candidates": [
+            {
+              "trip_id": "217.28.2.1.2",
+              "route": "217",
+              "agency": "DIREXIS TUSGSAL",
+              "active": true,
+              "stop_rows": 0,
+              "timed_rows": 0
+            }
+          ]
+        },
+        {
+          "target": "AMB_232.33.1.1.0",
+          "target_operator": "DIREXIS TUSGSAL",
+          "candidates": [
+            {
+              "trip_id": "232.33.1.1.0",
+              "route": "232",
+              "agency": "DIREXIS TUSGSAL",
+              "active": true,
+              "stop_rows": 0,
+              "timed_rows": 0
+            }
+          ]
+        }
+      ],
+      "recovered_exact_service_identity": 0,
+      "no_imputation": true
+    }
+  },
+  "GEN": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source": {
+        "url": "https://territori.gencat.cat/web/.content/home/serveis/visors-cartografia/bases-cartografiques/infraestructures-mobilitat/autobusos-interurbans/busos-interurbans-GTFS.zip",
+        "bytes": 24085885,
+        "sha256": "0026176ca22e54dc540e5c84160984f9703cc1e3f68abcd4bd248bfbb7adfcdf",
+        "content_type": "application/zip",
+        "last_modified": "Mon, 23 Nov 2026 10:22:28 GMT"
+      },
+      "CRC_verified": true,
+      "original_archive_not_persisted": true,
+      "target_extract_sha256": "2e38b5cfc848bdd13a1c7dce6da853c75c9526c4f5a50da1e51b587f0b1294c6",
+      "agencies": [
+        "17 Bages Bus, SAU",
+        "25 Osona Bus, SA",
+        "AUTOCARS FRANCH SL",
+        "Ampurdan Bus, SL",
+        "Aurora Cadena Coma",
+        "Autocares Julià, SL",
+        "Autocares Prat, SA",
+        "Autocares R. Font, SAU",
+        "Autocares R. Font, SAU i Marfina Bus, SA",
+        "Autocares Ízaro, SA",
+        "Autocars Agramunt, SL",
+        "Autocars Aler, SL",
+        "Autocars Emili Coll, SL",
+        "Autocars Franch, SA",
+        "Autocars LLadós-Montaña, SL",
+        "Autocars Mario, SL",
+        "Autocars Martí Pi, SA (AMPSA)",
+        "Autocars Morell, SL",
+        "Autocars Palmerola, SL",
+        "Autocars Salvia SL",
+        "Autocars Solé Seró, SL",
+        "Autocars Tarrés, SL",
+        "Autocars Vendrell, SL",
+        "Autocars Vidao, SL",
+        "Autocars Vilà Betriu, SL",
+        "Autocars del Penedès, SA",
+        "Autocars del Pla, SL",
+        "Autocorb, SA",
+        "Barcelona Bus SL i SARFA",
+        "Barcelona Bus, SL",
+        "Benito Espuñes Vila",
+        "Bus Castellví, SA",
+        "Carlos Gómez Hinojosa",
+        "Casimiro Porta Vilanova",
+        "Cingles Bus, SA",
+        "Cintoi Bus - Empresa Plana",
+        "Cintoi Bus, SL",
+        "Circuitos Ruri SLU",
+        "Companyia del Ferrocarril d'Olot a Girona, SA",
+        "Cots Alsina, SL",
+        "Daniel Herencia Juárez",
+        "David Roque García",
+        "Eix-Bus, SA",
+        "Empresa Casas, SA",
+        "Empresa Lax SL",
+        "Empresa Sagalés, SA",
+        "Empresa Sagalés, SA i Empresa Casas, SA",
+        "Enric Sirvent Faus",
+        "Estarriol Bus, SL",
+        "Ferrocarriles y Transportes, SA",
+        "Francisco Baena Abril",
+        "Grup d'empreses: SA Alsina Graells AT, LHIFE ",
+        "Hispano Hilarienca, SA",
+        "Ivan Pey Queró",
+        "Ivan Porredón Antelo",
+        "Jaume Farré Sabartés",
+        "Joan Baldomà Noves",
+        "Joan Bellera Bellera",
+        "Joan Vernet Graell",
+        "Joaquim Puigdemasa Obiols",
+        "Jordi Cases Blasi",
+        "Josep Colom Prió",
+        "Josep Lladós Callís",
+        "Josep M. Llop Masip",
+        "Josep M. Llor Bringue",
+        "Josep M. Rabasa Arajol",
+        "Josep Obiols Colell",
+        "José Miguel Rodríguez de la Paz López",
+        "La Hispano Igualadina, SL",
+        "La Hispano Llacunense, SL",
+        "La Hispano de Fuente en Segures, SA (HIFE)",
+        "La Vallesana, SA",
+        "Lascau Iuliu",
+        "Laura Campi Giró",
+        "Lluís Betriu Sabata",
+        "Lluís Obiols Capdevila",
+        "Luis Vidal Antolín",
+        "M. Rosa Gabarra Brenuy",
+        "MOTILAND, SL",
+        "Manel Moreno Lario",
+        "Manuel Julio Tersa Segarra",
+        "Marcos López Perona",
+        "Marfina Bus, SA",
+        "Mario Ferrer Garcia",
+        "Miguel Gamon, SL/Autobusos de Lleida, SA",
+        "Miguel Gamón, SL",
+        "Montferri Hermanos, SL",
+        "PERE CORTINA BOCHACA",
+        "Pau Colom Andreva",
+        "Pilar Morgó Bernadó",
+        "Pilar de Matias Blazquez",
+        "Rabasa Turístic, SL",
+        "Regina Bernadó Vilana",
+        "Riel Alfonso Vidal",
+        "SA Alsina Graells de Auto Transportes",
+        "SA Masats Transports Generals",
+        "SARFA SL",
+        "Santiago García López",
+        "Serveis Turístics Delamoga, SL",
+        "Serveis Turístics Gabriel, SL",
+        "Soler i Sauret, SA",
+        "Sílvia Arbonés Cuadrat",
+        "TRANSPORTES REGINA, SA",
+        "Teresa y José Plana, Empresa Plana, SL",
+        "Transportes Generales de Olesa, SA",
+        "Transports Elèctrics Interurbans, SA -TEISA-",
+        "Transports Mir, SA",
+        "Transports Públics del Priorat i Doménech, SL",
+        "Víctor Rey Huguet",
+        "Xavier Marco Agulló"
+      ],
+      "calendar_status": "CHECKS_RECORDED",
+      "trip_count": 29701,
+      "target_count": 1,
+      "candidate_count": 0,
+      "results": [
+        {
+          "target": "GEN_1660191",
+          "target_operator": "Barcelona Bus, SL",
+          "candidates": []
+        }
+      ],
+      "recovered_exact_service_identity": 0,
+      "no_imputation": true
+    }
+  },
+  "production": "NO_GO",
+  "canonical_EAM_closed": 0
+}
