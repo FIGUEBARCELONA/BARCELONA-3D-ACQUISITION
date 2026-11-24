@@ -1,0 +1,1337 @@
+{
+  "status": "CHECKS_RECORDED",
+  "ATM_exception_report": {
+    "trips_without_rows": 30,
+    "trips_one_row": 9,
+    "active_short_trips": 30,
+    "short_trip_details": [
+      {
+        "trip_id": "ABR_02949bb2-f529-40b3-8431-07ebc5951014",
+        "operator": "Hispano Igualadina",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "ABR_2",
+        "operator": "Hispano Igualadina",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "ABR_3",
+        "operator": "Hispano Igualadina",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "AMB_211.29.1.1.0",
+        "operator": "Avanza",
+        "stop_times": 0,
+        "active_on_date": false
+      },
+      {
+        "trip_id": "AMB_211.29.1.2.0",
+        "operator": "Avanza",
+        "stop_times": 0,
+        "active_on_date": false
+      },
+      {
+        "trip_id": "AMB_213.32.1.1.0",
+        "operator": "Avanza",
+        "stop_times": 0,
+        "active_on_date": false
+      },
+      {
+        "trip_id": "AMB_217.28.2.1.0",
+        "operator": "DIREXIS TUSGSAL",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "AMB_217.28.2.1.1",
+        "operator": "DIREXIS TUSGSAL",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "AMB_217.28.2.1.2",
+        "operator": "DIREXIS TUSGSAL",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "AMB_217.29.2.1.0",
+        "operator": "DIREXIS TUSGSAL",
+        "stop_times": 0,
+        "active_on_date": false
+      },
+      {
+        "trip_id": "AMB_217.29.2.1.1",
+        "operator": "DIREXIS TUSGSAL",
+        "stop_times": 0,
+        "active_on_date": false
+      },
+      {
+        "trip_id": "AMB_217.29.2.1.2",
+        "operator": "DIREXIS TUSGSAL",
+        "stop_times": 0,
+        "active_on_date": false
+      },
+      {
+        "trip_id": "AMB_232.31.1.1.0",
+        "operator": "DIREXIS TUSGSAL",
+        "stop_times": 0,
+        "active_on_date": false
+      },
+      {
+        "trip_id": "AMB_232.33.1.1.0",
+        "operator": "DIREXIS TUSGSAL",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "GEN_1660191",
+        "operator": "Barcelona Bus, SL",
+        "stop_times": 1,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1504012026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1504112026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1504212026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1504312026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1504412026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1504512026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1504612026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1504712026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1505012026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1505012026-12-07",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": false
+      },
+      {
+        "trip_id": "REG_B_1505112026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1505212026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1505312026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1505412026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1505512026-11-08",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "REG_B_1505512026-12-07",
+        "operator": "RENFE OPERADORA",
+        "stop_times": 0,
+        "active_on_date": false
+      },
+      {
+        "trip_id": "SAB_365000100001",
+        "operator": "SARBUS",
+        "stop_times": 1,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "SAB_365000100003",
+        "operator": "SARBUS",
+        "stop_times": 1,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "SAB_711000100002",
+        "operator": "SARBUS",
+        "stop_times": 1,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "TCC_157000010001",
+        "operator": "TCC",
+        "stop_times": 1,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "TCC_157000010002",
+        "operator": "TCC",
+        "stop_times": 1,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "TCC_157000020009",
+        "operator": "TCC",
+        "stop_times": 1,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "TCC_157000020010",
+        "operator": "TCC",
+        "stop_times": 1,
+        "active_on_date": true
+      },
+      {
+        "trip_id": "TCC_157000020011",
+        "operator": "TCC",
+        "stop_times": 1,
+        "active_on_date": true
+      }
+    ],
+    "missing_time_classes": [
+      {
+        "timepoint": "ABSENT",
+        "window": "NO_WINDOW",
+        "presence": "BOTH_ABSENT",
+        "rows": 639042
+      }
+    ],
+    "active_missing_time_classes": [
+      {
+        "timepoint": "ABSENT",
+        "window": "NO_WINDOW",
+        "presence": "BOTH_ABSENT",
+        "rows": 285726
+      }
+    ]
+  },
+  "reconciliation": {
+    "FGC": {
+      "atm_active_stops": 188,
+      "direct_active_stops": 188,
+      "unique_name_coordinate_matches": 17,
+      "direct_unmatched_or_ambiguous": 171,
+      "fully_mapped_direct_trips": 0,
+      "unmapped_direct_trips": 2027,
+      "exact_trip_schedule_multiset_matches": 0,
+      "exact_distinct_directed_route_edges_matches": 0,
+      "crosswalk": [
+        {
+          "operator": "FGC",
+          "direct_stop_id": "AR1",
+          "atm_stop_id": "FGC_AR1",
+          "stop_name": "Àger",
+          "lat": "42.006741",
+          "lon": "0.851596"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "AT1",
+          "atm_stop_id": "FGC_AT1",
+          "stop_name": "Alcoletge",
+          "lat": "41.654738",
+          "lon": "0.686458"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "GB1",
+          "atm_stop_id": "FGC_GB1",
+          "stop_name": "Gerb",
+          "lat": "41.823301",
+          "lon": "0.812079"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "GT1",
+          "atm_stop_id": "FGC_GT1",
+          "stop_name": "Guardia de Tremp",
+          "lat": "42.101399",
+          "lon": "0.88809"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "LL1",
+          "atm_stop_id": "FGC_LL1",
+          "stop_name": "Cellers-Llimiana",
+          "lat": "42.058631",
+          "lon": "0.882707"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "LS1",
+          "atm_stop_id": "FGC_LS1",
+          "stop_name": "Vilanova de la Sal",
+          "lat": "41.91207",
+          "lon": "0.830401"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "PG1",
+          "atm_stop_id": "FGC_PG1",
+          "stop_name": "Polígon industrial del Segre",
+          "lat": "41.622808",
+          "lon": "0.652806"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "PS1",
+          "atm_stop_id": "FGC_PS1",
+          "stop_name": "La Pobla de Segur",
+          "lat": "42.239877",
+          "lon": "0.965917"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "PT1",
+          "atm_stop_id": "FGC_PT1",
+          "stop_name": "Palau de Noguera",
+          "lat": "42.147002",
+          "lon": "0.892435"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "RM1",
+          "atm_stop_id": "FGC_RM1",
+          "stop_name": "Térmens",
+          "lat": "41.717644",
+          "lon": "0.764899"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "SD1",
+          "atm_stop_id": "FGC_SD1",
+          "stop_name": "Salàs de Pallars",
+          "lat": "42.206835",
+          "lon": "0.940463"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "SM1",
+          "atm_stop_id": "FGC_SM1",
+          "stop_name": "St. Llorenç de Montgai",
+          "lat": "41.866379",
+          "lon": "0.832571"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "SN1",
+          "atm_stop_id": "FGC_SN1",
+          "stop_name": "Santa Linya",
+          "lat": "41.93156",
+          "lon": "0.852312"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "TP1",
+          "atm_stop_id": "FGC_TP1",
+          "stop_name": "Tremp",
+          "lat": "42.167348",
+          "lon": "0.891057"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "VB1",
+          "atm_stop_id": "FGC_VB1",
+          "stop_name": "Vilanova de la Barca",
+          "lat": "41.687347",
+          "lon": "0.727903"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "VF1",
+          "atm_stop_id": "FGC_VF1",
+          "stop_name": "Vallfogona de Balaguer",
+          "lat": "41.755094",
+          "lon": "0.805247"
+        },
+        {
+          "operator": "FGC",
+          "direct_stop_id": "VR1",
+          "atm_stop_id": "FGC_VR1",
+          "stop_name": "Vallvidrera Inferior",
+          "lat": "41.409328",
+          "lon": "2.111263"
+        }
+      ],
+      "merged_in_production": 0,
+      "note": "Strict exact name+numeric coordinate candidate crosswalk; no proximity assumptions or label-only merge. Trip fingerprints compare full ordered stop IDs and source time strings."
+    },
+    "TRAMBAIX": {
+      "atm_active_stops": 56,
+      "direct_active_stops": 56,
+      "unique_name_coordinate_matches": 56,
+      "direct_unmatched_or_ambiguous": 0,
+      "fully_mapped_direct_trips": 468,
+      "unmapped_direct_trips": 0,
+      "exact_trip_schedule_multiset_matches": 468,
+      "exact_distinct_directed_route_edges_matches": 130,
+      "crosswalk": [
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1001",
+          "atm_stop_id": "TBX_1001",
+          "stop_name": "Francesc Macià",
+          "lat": "41.3922223",
+          "lon": "2.1431350"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1002",
+          "atm_stop_id": "TBX_1002",
+          "stop_name": "L'Illa",
+          "lat": "41.3905240",
+          "lon": "2.1365222"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1003",
+          "atm_stop_id": "TBX_1003",
+          "stop_name": "Numància",
+          "lat": "41.3893676",
+          "lon": "2.1319613"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1004",
+          "atm_stop_id": "TBX_1004",
+          "stop_name": "Maria Cristina",
+          "lat": "41.3879856",
+          "lon": "2.1264983"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1005",
+          "atm_stop_id": "TBX_1005",
+          "stop_name": "Pius XII",
+          "lat": "41.3867401",
+          "lon": "2.1216038"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1008",
+          "atm_stop_id": "TBX_1008",
+          "stop_name": "Palau Reial",
+          "lat": "41.3859439",
+          "lon": "2.1184680"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1009",
+          "atm_stop_id": "TBX_1009",
+          "stop_name": "Z.Universitària",
+          "lat": "41.3842623",
+          "lon": "2.1144099"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1010",
+          "atm_stop_id": "TBX_1010",
+          "stop_name": "Avinguda de Xile",
+          "lat": "41.3807568",
+          "lon": "2.1147965"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1011",
+          "atm_stop_id": "TBX_1011",
+          "stop_name": "Ernest Lluch",
+          "lat": "41.3766917",
+          "lon": "2.1107688"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1012",
+          "atm_stop_id": "TBX_1012",
+          "stop_name": "Can Rigal",
+          "lat": "41.3761001",
+          "lon": "2.1059375"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1013",
+          "atm_stop_id": "TBX_1013",
+          "stop_name": "Ca n'Oliveres",
+          "lat": "41.3766253",
+          "lon": "2.0984151"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1014",
+          "atm_stop_id": "TBX_1014",
+          "stop_name": "Pont d'Esplugues",
+          "lat": "41.3768574",
+          "lon": "2.0886101"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1015",
+          "atm_stop_id": "TBX_1015",
+          "stop_name": "La Sardana",
+          "lat": "41.3727940",
+          "lon": "2.0839786"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1016",
+          "atm_stop_id": "TBX_1016",
+          "stop_name": "Montesa",
+          "lat": "41.3696737",
+          "lon": "2.0809029"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1017",
+          "atm_stop_id": "TBX_1017",
+          "stop_name": "El Pedró",
+          "lat": "41.3653375",
+          "lon": "2.0766601"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1018",
+          "atm_stop_id": "TBX_1018",
+          "stop_name": "Ignasi Iglésias",
+          "lat": "41.3612560",
+          "lon": "2.0726635"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1019",
+          "atm_stop_id": "TBX_1019",
+          "stop_name": "Cornellà Centre",
+          "lat": "41.3576808",
+          "lon": "2.0701988"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1020",
+          "atm_stop_id": "TBX_1020",
+          "stop_name": "Les Aigües",
+          "lat": "41.3566671",
+          "lon": "2.0660992"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1021",
+          "atm_stop_id": "TBX_1021",
+          "stop_name": "Fontsanta|Fatjó",
+          "lat": "41.3603372",
+          "lon": "2.0622411"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1022",
+          "atm_stop_id": "TBX_1022",
+          "stop_name": "Bon Viatge",
+          "lat": "41.3646981",
+          "lon": "2.0589095"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1025",
+          "atm_stop_id": "TBX_1025",
+          "stop_name": "La Fontsanta",
+          "lat": "41.3677670",
+          "lon": "2.0629661"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1026",
+          "atm_stop_id": "TBX_1026",
+          "stop_name": "Centre Miquel Martí i Pol",
+          "lat": "41.3686226",
+          "lon": "2.0712016"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1028",
+          "atm_stop_id": "TBX_1028",
+          "stop_name": "Hospital SJD|TV3",
+          "lat": "41.3723967",
+          "lon": "2.0757172"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1029",
+          "atm_stop_id": "TBX_1029",
+          "stop_name": "Rambla de Sant Just",
+          "lat": "41.3788553",
+          "lon": "2.0750471"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1030",
+          "atm_stop_id": "TBX_1030",
+          "stop_name": "Walden",
+          "lat": "41.3797464",
+          "lon": "2.0669057"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1031",
+          "atm_stop_id": "TBX_1031",
+          "stop_name": "Torreblanca",
+          "lat": "41.3797824",
+          "lon": "2.0608034"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1032",
+          "atm_stop_id": "TBX_1032",
+          "stop_name": "Sant Feliu|C.C.",
+          "lat": "41.3793710",
+          "lon": "2.0533518"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1101",
+          "atm_stop_id": "TBX_1101",
+          "stop_name": "Francesc Macià",
+          "lat": "41.3921887",
+          "lon": "2.1432882"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1102",
+          "atm_stop_id": "TBX_1102",
+          "stop_name": "L'Illa",
+          "lat": "41.3904956",
+          "lon": "2.1365323"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1103",
+          "atm_stop_id": "TBX_1103",
+          "stop_name": "Numància",
+          "lat": "41.3893392",
+          "lon": "2.1319714"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1104",
+          "atm_stop_id": "TBX_1104",
+          "stop_name": "Maria Cristina",
+          "lat": "41.3879572",
+          "lon": "2.1265160"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1105",
+          "atm_stop_id": "TBX_1105",
+          "stop_name": "Pius XII",
+          "lat": "41.3867098",
+          "lon": "2.1216139"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1108",
+          "atm_stop_id": "TBX_1108",
+          "stop_name": "Palau Reial",
+          "lat": "41.3859192",
+          "lon": "2.1184781"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1109",
+          "atm_stop_id": "TBX_1109",
+          "stop_name": "Z.Universitària",
+          "lat": "41.3842756",
+          "lon": "2.1144504"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1110",
+          "atm_stop_id": "TBX_1110",
+          "stop_name": "Avinguda de Xile",
+          "lat": "41.3807283",
+          "lon": "2.1148774"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1111",
+          "atm_stop_id": "TBX_1111",
+          "stop_name": "Ernest Lluch",
+          "lat": "41.3766727",
+          "lon": "2.1108774"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1112",
+          "atm_stop_id": "TBX_1112",
+          "stop_name": "Can Rigal",
+          "lat": "41.3760647",
+          "lon": "2.1059373"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1113",
+          "atm_stop_id": "TBX_1113",
+          "stop_name": "Ca n'Oliveres",
+          "lat": "41.3765855",
+          "lon": "2.0984202"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1114",
+          "atm_stop_id": "TBX_1114",
+          "stop_name": "Pont d'Esplugues",
+          "lat": "41.3768316",
+          "lon": "2.0886404"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1115",
+          "atm_stop_id": "TBX_1115",
+          "stop_name": "La Sardana",
+          "lat": "41.3727731",
+          "lon": "2.0840165"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1116",
+          "atm_stop_id": "TBX_1116",
+          "stop_name": "Montesa",
+          "lat": "41.3696406",
+          "lon": "2.0809471"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1117",
+          "atm_stop_id": "TBX_1117",
+          "stop_name": "El Pedró",
+          "lat": "41.3653188",
+          "lon": "2.0766919"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1118",
+          "atm_stop_id": "TBX_1118",
+          "stop_name": "Ignasi Iglésias",
+          "lat": "41.3612356",
+          "lon": "2.0726907"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1119",
+          "atm_stop_id": "TBX_1119",
+          "stop_name": "Cornellà Centre",
+          "lat": "41.3576621",
+          "lon": "2.0702314"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1120",
+          "atm_stop_id": "TBX_1120",
+          "stop_name": "Les Aigües",
+          "lat": "41.3566534",
+          "lon": "2.0660653"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1121",
+          "atm_stop_id": "TBX_1121",
+          "stop_name": "Fontsanta|Fatjó",
+          "lat": "41.3603201",
+          "lon": "2.0622051"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1122",
+          "atm_stop_id": "TBX_1122",
+          "stop_name": "Bon Viatge",
+          "lat": "41.3645630",
+          "lon": "2.0587446"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1125",
+          "atm_stop_id": "TBX_1125",
+          "stop_name": "La Fontsanta",
+          "lat": "41.3678226",
+          "lon": "2.0629098"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1126",
+          "atm_stop_id": "TBX_1126",
+          "stop_name": "Centre Miquel Martí i Pol",
+          "lat": "41.3686866",
+          "lon": "2.0711613"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1127",
+          "atm_stop_id": "TBX_1127",
+          "stop_name": "Llevant-L.Planes",
+          "lat": "41.3710192",
+          "lon": "2.0761835"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1128",
+          "atm_stop_id": "TBX_1128",
+          "stop_name": "Hospital SJD|TV3",
+          "lat": "41.3723531",
+          "lon": "2.0756566"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1129",
+          "atm_stop_id": "TBX_1129",
+          "stop_name": "Rambla de Sant Just",
+          "lat": "41.3787984",
+          "lon": "2.0750395"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1130",
+          "atm_stop_id": "TBX_1130",
+          "stop_name": "Walden",
+          "lat": "41.3796895",
+          "lon": "2.0668829"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1131",
+          "atm_stop_id": "TBX_1131",
+          "stop_name": "Torreblanca",
+          "lat": "41.3797293",
+          "lon": "2.0607983"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1213",
+          "atm_stop_id": "TBX_1213",
+          "stop_name": "Can Clota",
+          "lat": "41.3769666",
+          "lon": "2.0935333"
+        },
+        {
+          "operator": "TRAMBAIX",
+          "direct_stop_id": "1313",
+          "atm_stop_id": "TBX_1313",
+          "stop_name": "Can Clota",
+          "lat": "41.3769325",
+          "lon": "2.0935283"
+        }
+      ],
+      "merged_in_production": 0,
+      "note": "Strict exact name+numeric coordinate candidate crosswalk; no proximity assumptions or label-only merge. Trip fingerprints compare full ordered stop IDs and source time strings."
+    },
+    "TRAMBESÒS": {
+      "atm_active_stops": 56,
+      "direct_active_stops": 56,
+      "unique_name_coordinate_matches": 56,
+      "direct_unmatched_or_ambiguous": 0,
+      "fully_mapped_direct_trips": 741,
+      "unmapped_direct_trips": 0,
+      "exact_trip_schedule_multiset_matches": 741,
+      "exact_distinct_directed_route_edges_matches": 70,
+      "crosswalk": [
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2002",
+          "atm_stop_id": "TBS_2002",
+          "stop_name": "Auditori/Teatre Nacional",
+          "lat": "41.3975488",
+          "lon": "2.1869012"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2003",
+          "atm_stop_id": "TBS_2003",
+          "stop_name": "Glòries",
+          "lat": "41.4025373",
+          "lon": "2.1874347"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2004",
+          "atm_stop_id": "TBS_2004",
+          "stop_name": "Ca l'Aranyó",
+          "lat": "41.4043702",
+          "lon": "2.1915180"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2005",
+          "atm_stop_id": "TBS_2005",
+          "stop_name": "Pere IV",
+          "lat": "41.4060689",
+          "lon": "2.1982410"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2006",
+          "atm_stop_id": "TBS_2006",
+          "stop_name": "Fluvià",
+          "lat": "41.4077391",
+          "lon": "2.2049379"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2007",
+          "atm_stop_id": "TBS_2007",
+          "stop_name": "Selva de Mar",
+          "lat": "41.4091114",
+          "lon": "2.2104518"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2008",
+          "atm_stop_id": "TBS_2008",
+          "stop_name": "El Maresme",
+          "lat": "41.4104651",
+          "lon": "2.2156492"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2009",
+          "atm_stop_id": "TBS_2009",
+          "stop_name": "Fòrum",
+          "lat": "41.4118195",
+          "lon": "2.2198872"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2010",
+          "atm_stop_id": "TBS_2010",
+          "stop_name": "Campus Diagonal-Besòs",
+          "lat": "41.4152243",
+          "lon": "2.2229644"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2011",
+          "atm_stop_id": "TBS_2011",
+          "stop_name": "La Mina",
+          "lat": "41.4184136",
+          "lon": "2.2210620"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2013",
+          "atm_stop_id": "TBS_2013",
+          "stop_name": "La Catalana",
+          "lat": "41.4226288",
+          "lon": "2.2219779"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2014",
+          "atm_stop_id": "TBS_2014",
+          "stop_name": "Sant Joan Baptista",
+          "lat": "41.4274504",
+          "lon": "2.2254587"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2016",
+          "atm_stop_id": "TBS_2016",
+          "stop_name": "Encants de Sant Adrià",
+          "lat": "41.4305283",
+          "lon": "2.2227530"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2017",
+          "atm_stop_id": "TBS_2017",
+          "stop_name": "Sant Roc",
+          "lat": "41.4349266",
+          "lon": "2.2276196"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2019",
+          "atm_stop_id": "TBS_2019",
+          "stop_name": "Gorg",
+          "lat": "41.4399464",
+          "lon": "2.2332613"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2020",
+          "atm_stop_id": "TBS_2020",
+          "stop_name": "Ciutadella|V.O.",
+          "lat": "41.3876411",
+          "lon": "2.1919181"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2021",
+          "atm_stop_id": "TBS_2021",
+          "stop_name": "Wellington|UPF",
+          "lat": "41.3901689",
+          "lon": "2.1885747"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2022",
+          "atm_stop_id": "TBS_2022",
+          "stop_name": "Marina",
+          "lat": "41.3940691",
+          "lon": "2.1869395"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2024",
+          "atm_stop_id": "TBS_2024",
+          "stop_name": "Espronceda",
+          "lat": "41.4113430",
+          "lon": "2.1979404"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2025",
+          "atm_stop_id": "TBS_2025",
+          "stop_name": "Sant Martí de Provençals",
+          "lat": "41.4164583",
+          "lon": "2.2047597"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2026",
+          "atm_stop_id": "TBS_2026",
+          "stop_name": "Besòs",
+          "lat": "41.4201002",
+          "lon": "2.2096084"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2027",
+          "atm_stop_id": "TBS_2027",
+          "stop_name": "Alfons el Magnànim",
+          "lat": "41.4171655",
+          "lon": "2.2135365"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2028",
+          "atm_stop_id": "TBS_2028",
+          "stop_name": "Parc del Besòs",
+          "lat": "41.4193970",
+          "lon": "2.2176682"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2029",
+          "atm_stop_id": "TBS_2029",
+          "stop_name": "Port Fòrum",
+          "lat": "41.4188678",
+          "lon": "2.2261847"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2030",
+          "atm_stop_id": "TBS_2030",
+          "stop_name": "Estació St.Adrià",
+          "lat": "41.4239402",
+          "lon": "2.2305854"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2032",
+          "atm_stop_id": "TBS_2032",
+          "stop_name": "Monumental",
+          "lat": "41.4018532",
+          "lon": "2.1811567"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2033",
+          "atm_stop_id": "TBS_2033",
+          "stop_name": "Sicilia",
+          "lat": "41.4001718",
+          "lon": "2.1742327"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2034",
+          "atm_stop_id": "TBS_2034",
+          "stop_name": "Verdaguer",
+          "lat": "41.3984631",
+          "lon": "2.1674359"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2102",
+          "atm_stop_id": "TBS_2102",
+          "stop_name": "Auditori/Teatre Nacional",
+          "lat": "41.3975510",
+          "lon": "2.1868569"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2103",
+          "atm_stop_id": "TBS_2103",
+          "stop_name": "Glòries",
+          "lat": "41.4026034",
+          "lon": "2.1872749"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2104",
+          "atm_stop_id": "TBS_2104",
+          "stop_name": "Ca l'Aranyó",
+          "lat": "41.4045208",
+          "lon": "2.1914452"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2105",
+          "atm_stop_id": "TBS_2105",
+          "stop_name": "Pere IV",
+          "lat": "41.4062285",
+          "lon": "2.1982574"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2106",
+          "atm_stop_id": "TBS_2106",
+          "stop_name": "Fluvià",
+          "lat": "41.4078926",
+          "lon": "2.2048806"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2107",
+          "atm_stop_id": "TBS_2107",
+          "stop_name": "Selva de Mar",
+          "lat": "41.4092741",
+          "lon": "2.2104190"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2108",
+          "atm_stop_id": "TBS_2108",
+          "stop_name": "El Maresme",
+          "lat": "41.4105265",
+          "lon": "2.2156338"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2109",
+          "atm_stop_id": "TBS_2109",
+          "stop_name": "Fòrum",
+          "lat": "41.4118457",
+          "lon": "2.2198243"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2110",
+          "atm_stop_id": "TBS_2110",
+          "stop_name": "Campus Diagonal-Besòs",
+          "lat": "41.4152570",
+          "lon": "2.2229040"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2111",
+          "atm_stop_id": "TBS_2111",
+          "stop_name": "La Mina",
+          "lat": "41.4183080",
+          "lon": "2.2209111"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2113",
+          "atm_stop_id": "TBS_2113",
+          "stop_name": "La Catalana",
+          "lat": "41.4226680",
+          "lon": "2.2219055"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2114",
+          "atm_stop_id": "TBS_2114",
+          "stop_name": "Sant Joan Baptista",
+          "lat": "41.4273177",
+          "lon": "2.2253581"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2116",
+          "atm_stop_id": "TBS_2116",
+          "stop_name": "Encants de Sant Adrià",
+          "lat": "41.4305626",
+          "lon": "2.2227042"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2117",
+          "atm_stop_id": "TBS_2117",
+          "stop_name": "Sant Roc",
+          "lat": "41.4349598",
+          "lon": "2.2275753"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2120",
+          "atm_stop_id": "TBS_2120",
+          "stop_name": "Ciutadella|V.O.",
+          "lat": "41.3876165",
+          "lon": "2.1918808"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2121",
+          "atm_stop_id": "TBS_2121",
+          "stop_name": "Wellington|UPF",
+          "lat": "41.3901357",
+          "lon": "2.1885393"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2122",
+          "atm_stop_id": "TBS_2122",
+          "stop_name": "Marina",
+          "lat": "41.3940713",
+          "lon": "2.1869071"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2123",
+          "atm_stop_id": "TBS_2123",
+          "stop_name": "Can Jaumandreu",
+          "lat": "41.4081184",
+          "lon": "2.1935745"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2124",
+          "atm_stop_id": "TBS_2124",
+          "stop_name": "Espronceda",
+          "lat": "41.4113663",
+          "lon": "2.1979124"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2125",
+          "atm_stop_id": "TBS_2125",
+          "stop_name": "Sant Martí de Provençals",
+          "lat": "41.4163615",
+          "lon": "2.2045494"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2126",
+          "atm_stop_id": "TBS_2126",
+          "stop_name": "Besòs",
+          "lat": "41.4199875",
+          "lon": "2.2094073"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2127",
+          "atm_stop_id": "TBS_2127",
+          "stop_name": "Alfons el Magnànim",
+          "lat": "41.4171972",
+          "lon": "2.2135918"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2128",
+          "atm_stop_id": "TBS_2128",
+          "stop_name": "Parc del Besòs",
+          "lat": "41.4194423",
+          "lon": "2.2176078"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2129",
+          "atm_stop_id": "TBS_2129",
+          "stop_name": "Port Fòrum",
+          "lat": "41.4188819",
+          "lon": "2.2261539"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2130",
+          "atm_stop_id": "TBS_2130",
+          "stop_name": "Estació St.Adrià",
+          "lat": "41.4239673",
+          "lon": "2.2305129"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2132",
+          "atm_stop_id": "TBS_2132",
+          "stop_name": "Monumental",
+          "lat": "41.4020156",
+          "lon": "2.1809411"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2133",
+          "atm_stop_id": "TBS_2133",
+          "stop_name": "Sicilia",
+          "lat": "41.4002079",
+          "lon": "2.1742160"
+        },
+        {
+          "operator": "TRAMBESÒS",
+          "direct_stop_id": "2203",
+          "atm_stop_id": "TBS_2203",
+          "stop_name": "Glòries",
+          "lat": "41.4025370",
+          "lon": "2.1873310"
+        }
+      ],
+      "merged_in_production": 0,
+      "note": "Strict exact name+numeric coordinate candidate crosswalk; no proximity assumptions or label-only merge. Trip fingerprints compare full ordered stop IDs and source time strings."
+    }
+  },
+  "production": "NO_GO"
+}
