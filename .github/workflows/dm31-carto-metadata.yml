@@ -1,0 +1,46 @@
+name: DM31 CartoBCN product metadata
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm31-carto-metadata.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python - <<'PY'
+          import urllib.request,concurrent.futures,hashlib,pathlib,json,xml.etree.ElementTree as E,zipfile,io
+          d=pathlib.Path('custody/dm31')
+          sources={'cad_meta':'https://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&f=18085359723466','gis_meta':'https://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&f=42588360097904','gis_atom':'https://w20.bcn.cat/CartoBCN/atom.ashx?file=102','cad_atom':'https://w20.bcn.cat/CartoBCN/atom.ashx?file=97'}
+          def get(item):
+              k,u=item
+              try:
+                  with urllib.request.urlopen(u,timeout=20) as f:
+                      b=f.read(12000001);m={'url':u,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':f.headers.get('Content-Type'),'disposition':f.headers.get('Content-Disposition')}
+                  assert len(b)<=12000000
+                  if b.startswith(b'PK'):
+                      with zipfile.ZipFile(io.BytesIO(b)) as z:
+                          assert z.testzip() is None;m['members']=z.namelist()
+                      ext='zip'
+                  elif b.startswith(b'%PDF-'):ext='pdf'
+                  else:
+                      root=E.fromstring(b);m['root']=root.tag;assert not root.tag.lower().endswith('html')
+                      ext='xml'
+                      m['links']=[x.attrib for x in root.iter() if x.tag.split('}')[-1]=='link']
+                      m['text_excerpt']=' '.join(root.itertext())[:4000]
+                  (d/(k+'.original.'+ext)).write_bytes(b);m['status']='INSPECTED'
+                  return k,m
+              except Exception as e:return k,{'url':u,'status':'FAILED','error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:results=dict(ex.map(get,sources.items()))
+          (d/'cartobcn_product_metadata.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm31/
+          git commit -m 'DM31 preserve CartoBCN product metadata responses'
+          git push origin HEAD:main
