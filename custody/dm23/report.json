@@ -1,0 +1,66 @@
+{
+  "passengers": {
+    "status": "FAILED",
+    "error": "HTTP Error 500: Internal Server Error"
+  },
+  "ships": {
+    "status": "FAILED",
+    "error": "HTTP Error 500: Internal Server Error"
+  },
+  "cargo": {
+    "status": "FAILED",
+    "error": "HTTP Error 500: Internal Server Error"
+  },
+  "renfe": {
+    "status": "FAILED",
+    "error": "'end_date'"
+  },
+  "icgc_layer": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source": {
+        "url": "https://maps.icgc.cat/vector01/rest/services/divisions_administratives_wms/MapServer/12?f=json",
+        "bytes": 6159,
+        "sha256": "f239c079db3e660945b22381db5e4e627b24cd8b7c26cb2938d521b9c61729b4",
+        "content_type": "application/json;charset=UTF-8",
+        "last_modified": null
+      },
+      "custody": {
+        "path": "custody/dm23/icgc_layer12.json",
+        "sha256": "f239c079db3e660945b22381db5e4e627b24cd8b7c26cb2938d521b9c61729b4",
+        "bytes": 6159
+      },
+      "name": "divisions_administratives_municipis_5000",
+      "description": "",
+      "copyrightText": "",
+      "minScale": 25000,
+      "maxScale": 0,
+      "geometryType": "esriGeometryPolygon",
+      "editingInfo": null,
+      "fields": [
+        "OBJECTID",
+        "SHAPE",
+        "CODIMUNI",
+        "NOMMUNI",
+        "NOMMUNIIND",
+        "CAPMUNI",
+        "CAPMUNIIND",
+        "AREAM5000",
+        "CODICOMAR",
+        "NOMCOMAR",
+        "CAPCOMAR",
+        "CAPCOMIND",
+        "CODIVEGUE",
+        "NOMVEGUE",
+        "CAPVEGUE",
+        "CODIPROV",
+        "NOMPROV",
+        "CAPPROV",
+        "SHAPE_Length",
+        "SHAPE_Area"
+      ]
+    }
+  },
+  "production": "NO_GO",
+  "canonical_EAM_closed": 0
+}
