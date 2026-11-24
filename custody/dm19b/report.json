@@ -1,0 +1,109 @@
+{
+  "ATM_mobilitydatabase": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source": {
+        "url": "https://files.mobilitydatabase.org/mdb-2832/mdb-2832-202611170155/mdb-2832-202611170155.zip",
+        "bytes": 58747540,
+        "sha256": "af45496d45406ca8d3d123232b9f42f1c8dcf5757aef5c123c56ce8e556396d3",
+        "content_type": "application/zip",
+        "path": "custody/dm19b/ATM_NAP_mdb2832_20261117.zip",
+        "stored_sha256": "af45496d45406ca8d3d123232b9f42f1c8dcf5757aef5c123c56ce8e556396d3",
+        "stored_bytes": 58747540
+      },
+      "sha1": "fb10e769e4e60a75ca719dd9088a53c5d1506c3d",
+      "members": [
+        "feed_info.txt",
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "frequencies.txt",
+        "routes.txt",
+        "stops.txt",
+        "shapes.txt",
+        "transfers.txt",
+        "trips.txt",
+        "stop_times.txt",
+        "networks.txt",
+        "fare_transfer_rules.txt",
+        "areas.txt",
+        "rider_categories.txt",
+        "fare_leg_join_rules.txt",
+        "fare_leg_rules.txt",
+        "fare_products.txt",
+        "fare_media.txt",
+        "stop_areas.txt",
+        "route_networks.txt"
+      ],
+      "counts": {
+        "agency": 180,
+        "calendar": 10254,
+        "calendar_dates": 1142923,
+        "shapes": 3370287,
+        "routes": 1614,
+        "stops": 28017,
+        "trips": 183366,
+        "stop_times": 3654541
+      },
+      "duplicate_ids": {
+        "route_id": 0,
+        "stop_id": 0,
+        "trip_id": 0
+      },
+      "foreign_keys": {
+        "route_agency": 0,
+        "trip_route": 0,
+        "trip_service": 0,
+        "trip_shape": 0,
+        "stop_time_trip": 0,
+        "stop_time_stop": 0
+      },
+      "publisher": [
+        {
+          "feed_id": "ATM",
+          "feed_publisher_name": "ATM",
+          "feed_publisher_url": "https://www.atm.cat",
+          "feed_lang": "cat",
+          "feed_start_date": "",
+          "feed_end_date": "",
+          "feed_version": ""
+        }
+      ],
+      "selected_operators": {
+        "FGC": {
+          "routes": 22,
+          "trips": 10998,
+          "stop_times": 127440,
+          "distinct_stop_ids_referenced": 190
+        },
+        "TMB": {
+          "routes": 116,
+          "trips": 51964,
+          "stop_times": 1111367,
+          "distinct_stop_ids_referenced": 2760
+        },
+        "TRAMBAIX": {
+          "routes": 3,
+          "trips": 1862,
+          "stop_times": 40618,
+          "distinct_stop_ids_referenced": 57
+        },
+        "TRAMBESÒS": {
+          "routes": 3,
+          "trips": 2462,
+          "stop_times": 23542,
+          "distinct_stop_ids_referenced": 56
+        }
+      },
+      "scope": "ATM simplified feed, all Catalonia; not sum with standalone operators",
+      "temporal_order_full_check": false,
+      "actual_occupancy_verified": false
+    }
+  },
+  "population_2025": {
+    "status": "FAILED",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO"
+}
