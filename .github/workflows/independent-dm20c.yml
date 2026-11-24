@@ -13,6 +13,8 @@ jobs:
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - run: python3 independent_dm20c.py
       - name: Preserve diagnostic graph and report
         run: |
@@ -22,6 +24,9 @@ jobs:
           git add -- custody/dm20c
           if ! git diff --cached --quiet; then
             git commit -m "DM-20c complete temporal diagnostics"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
           fi
