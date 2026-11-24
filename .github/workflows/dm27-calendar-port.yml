@@ -1,0 +1,79 @@
+name: DM27 calendar crosswalk and port JSON
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm27-calendar-port.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check candidate calendars and port aggregate
+        run: |
+          python - <<'PY'
+          import urllib.request,hashlib,io,zipfile,csv,collections,json,pathlib,datetime,re
+          out=pathlib.Path('custody/dm27');out.mkdir(exist_ok=True)
+          R={'production':'NO_GO','imputations':0,'sources':{}}
+          def download(url):
+              with urllib.request.urlopen(url,timeout=20) as f:
+                  b=f.read(5000001);assert len(b)<=5000000
+                  return b,{'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'last_modified':f.headers.get('Last-Modified')}
+          def rows(z,n):
+              with z.open(n) as f:
+                  for r in csv.DictReader(io.TextIOWrapper(f,encoding='utf-8-sig',newline='')):
+                      yield {k.strip():v.strip() for k,v in r.items() if k is not None and v is not None}
+          u='https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip'
+          try:
+              b,m=download(u)
+              assert m['sha256']=='b0ee2c297d17874e932559221149ca8267e2c0b7ae7ba5483ec4fdd80f343828','source edition changed'
+              a=json.loads(pathlib.Path('custody/dm25/report.json').read_text())['atm_targets']
+              targets={x['target'][6:11]:x for x in a if x['target'].startswith('REG_B_')}
+              assert len(targets)==14
+              with zipfile.ZipFile(io.BytesIO(b)) as z:
+                  assert z.testzip() is None
+                  day='20261124'; dayobj=datetime.date(2026,11,24)
+                  cal={r['service_id']:r for r in rows(z,'calendar.txt')}
+                  exceptions=collections.defaultdict(list)
+                  for r in rows(z,'calendar_dates.txt'):
+                      if r['date']==day:exceptions[r['service_id']].append(r['exception_type'])
+                  def active(s):
+                      r=cal.get(s); base=bool(r and r['start_date']<=day<=r['end_date'] and r['tuesday']=='1')
+                      ex=exceptions[s]; assert len(ex)<=1 and all(x in ('1','2') for x in ex)
+                      return ex[0]=='1' if ex else base
+                  candidates=[r for r in rows(z,'trips.txt') if r['trip_short_name'] in targets]
+                  ids={r['trip_id'] for r in candidates}; ss=collections.defaultdict(list)
+                  for r in rows(z,'stop_times.txt'):
+                      if r['trip_id'] in ids:ss[r['trip_id']].append(r)
+                  results=[]
+                  for r in candidates:
+                      n=r['trip_short_name']; t=targets[n]; at=t['atm_trip']; s=sorted(ss[r['trip_id']],key=lambda x:int(x['stop_sequence']))
+                      endpoints=at['shape_id'].rsplit('_',2)[1:]
+                      results.append({'number':n,'atm_id':t['target'],'primary_id':r['trip_id'],'active':active(r['service_id']),'primary_service':r['service_id'],'atm_service':at['service_id'],'same_service_suffix':r['service_id'][10:]==at['service_id'].removeprefix('REG_')[10:],'same_trip_numeric_component':r['trip_id'].split('2026-')[0]==t['target'].removeprefix('REG_B_').split('2026-')[0],'endpoints_match':endpoints==[s[0]['stop_id'],s[-1]['stop_id']],'calendar':cal.get(r['service_id']),'exceptions':exceptions[r['service_id']],'stops':s,'sequences_unique':len(s)==len({int(x['stop_sequence']) for x in s})})
+              m['results']=results;m['active_count']=sum(x['active'] for x in results);m['active_endpoint_matches']=sum(x['active'] and x['endpoints_match'] for x in results);m['status']='INSPECTED';R['sources']['renfe']=m
+          except Exception as e:R['sources']['renfe']={'url':u,'status':'FAILED','error':repr(e)}
+          for key,rid in [('vessels','abbc81ff-802b-449b-9e5f-cce7a1fe57d3'),('rail','11856f2e-b852-4f6a-92b5-907f5876b1ec')]:
+              u='https://opendata.portdebarcelona.cat/datastore/dump/'+rid+'?format=json'
+              try:
+                  b,m=download(u); j=json.loads(b); fields=[x['id'] for x in j['fields']]; rr=j['records']; assert len(rr)==len({x[0] for x in rr})
+                  assert all(x[1]=='2025' and int(x[2])==202500+int(x[3]) for x in rr)
+                  assert set(int(x[3]) for x in rr)==set(range(1,13))
+                  counts=collections.defaultdict(int)
+                  for x in rr:counts[int(x[3])]+=int(x[-2] if key=='vessels' else x[-1])
+                  m.update({'fields':fields,'rows':len(rr),'month_totals':dict(counts),'status':'INSPECTED'})
+                  if key=='vessels':m['sum_months']=sum(counts.values())
+                  else:m['december_total']=counts[12];m['monotonic_by_gauge']=all(all(int(a[-1])<=int(b[-1]) for a,b in zip(v,v[1:])) for g in set(x[4] for x in rr) for v in [sorted([x for x in rr if x[4]==g],key=lambda x:int(x[3]))])
+                  R['sources'][key]=m
+                  (out/('port_'+key+'_datastore.json')).write_bytes(b)
+              except Exception as e:R['sources'][key]={'url':u,'status':'FAILED','error':repr(e)}
+          (out/'calendar_port_report.json').write_text(json.dumps(R,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Store new evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm27/
+          git commit -m 'DM27 calendar and public port JSON evidence'
+          git push origin HEAD:main
