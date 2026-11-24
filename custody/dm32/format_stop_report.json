@@ -1,0 +1,1584 @@
+{
+  "formats": {
+    "barris": {
+      "json": {
+        "matched": 73,
+        "only_shp": [],
+        "only_other": [],
+        "invalid": [],
+        "sum_symdiff_m2": 0.0,
+        "max_symdiff_m2": 0.0,
+        "rows": [
+          {
+            "code": "01",
+            "m2": 0.0
+          },
+          {
+            "code": "02",
+            "m2": 0.0
+          },
+          {
+            "code": "03",
+            "m2": 0.0
+          },
+          {
+            "code": "04",
+            "m2": 0.0
+          },
+          {
+            "code": "05",
+            "m2": 0.0
+          },
+          {
+            "code": "06",
+            "m2": 0.0
+          },
+          {
+            "code": "07",
+            "m2": 0.0
+          },
+          {
+            "code": "08",
+            "m2": 0.0
+          },
+          {
+            "code": "09",
+            "m2": 0.0
+          },
+          {
+            "code": "10",
+            "m2": 0.0
+          },
+          {
+            "code": "11",
+            "m2": 0.0
+          },
+          {
+            "code": "12",
+            "m2": 0.0
+          },
+          {
+            "code": "13",
+            "m2": 0.0
+          },
+          {
+            "code": "14",
+            "m2": 0.0
+          },
+          {
+            "code": "15",
+            "m2": 0.0
+          },
+          {
+            "code": "16",
+            "m2": 0.0
+          },
+          {
+            "code": "17",
+            "m2": 0.0
+          },
+          {
+            "code": "18",
+            "m2": 0.0
+          },
+          {
+            "code": "19",
+            "m2": 0.0
+          },
+          {
+            "code": "20",
+            "m2": 0.0
+          },
+          {
+            "code": "21",
+            "m2": 0.0
+          },
+          {
+            "code": "22",
+            "m2": 0.0
+          },
+          {
+            "code": "23",
+            "m2": 0.0
+          },
+          {
+            "code": "24",
+            "m2": 0.0
+          },
+          {
+            "code": "25",
+            "m2": 0.0
+          },
+          {
+            "code": "26",
+            "m2": 0.0
+          },
+          {
+            "code": "27",
+            "m2": 0.0
+          },
+          {
+            "code": "28",
+            "m2": 0.0
+          },
+          {
+            "code": "29",
+            "m2": 0.0
+          },
+          {
+            "code": "30",
+            "m2": 0.0
+          },
+          {
+            "code": "31",
+            "m2": 0.0
+          },
+          {
+            "code": "32",
+            "m2": 0.0
+          },
+          {
+            "code": "33",
+            "m2": 0.0
+          },
+          {
+            "code": "34",
+            "m2": 0.0
+          },
+          {
+            "code": "35",
+            "m2": 0.0
+          },
+          {
+            "code": "36",
+            "m2": 0.0
+          },
+          {
+            "code": "37",
+            "m2": 0.0
+          },
+          {
+            "code": "38",
+            "m2": 0.0
+          },
+          {
+            "code": "39",
+            "m2": 0.0
+          },
+          {
+            "code": "40",
+            "m2": 0.0
+          },
+          {
+            "code": "41",
+            "m2": 0.0
+          },
+          {
+            "code": "42",
+            "m2": 0.0
+          },
+          {
+            "code": "43",
+            "m2": 0.0
+          },
+          {
+            "code": "44",
+            "m2": 0.0
+          },
+          {
+            "code": "45",
+            "m2": 0.0
+          },
+          {
+            "code": "46",
+            "m2": 0.0
+          },
+          {
+            "code": "47",
+            "m2": 0.0
+          },
+          {
+            "code": "48",
+            "m2": 0.0
+          },
+          {
+            "code": "49",
+            "m2": 0.0
+          },
+          {
+            "code": "50",
+            "m2": 0.0
+          },
+          {
+            "code": "51",
+            "m2": 0.0
+          },
+          {
+            "code": "52",
+            "m2": 0.0
+          },
+          {
+            "code": "53",
+            "m2": 0.0
+          },
+          {
+            "code": "54",
+            "m2": 0.0
+          },
+          {
+            "code": "55",
+            "m2": 0.0
+          },
+          {
+            "code": "56",
+            "m2": 0.0
+          },
+          {
+            "code": "57",
+            "m2": 0.0
+          },
+          {
+            "code": "58",
+            "m2": 0.0
+          },
+          {
+            "code": "59",
+            "m2": 0.0
+          },
+          {
+            "code": "60",
+            "m2": 0.0
+          },
+          {
+            "code": "61",
+            "m2": 0.0
+          },
+          {
+            "code": "62",
+            "m2": 0.0
+          },
+          {
+            "code": "63",
+            "m2": 0.0
+          },
+          {
+            "code": "64",
+            "m2": 0.0
+          },
+          {
+            "code": "65",
+            "m2": 0.0
+          },
+          {
+            "code": "66",
+            "m2": 0.0
+          },
+          {
+            "code": "67",
+            "m2": 0.0
+          },
+          {
+            "code": "68",
+            "m2": 0.0
+          },
+          {
+            "code": "69",
+            "m2": 0.0
+          },
+          {
+            "code": "70",
+            "m2": 0.0
+          },
+          {
+            "code": "71",
+            "m2": 0.0
+          },
+          {
+            "code": "72",
+            "m2": 0.0
+          },
+          {
+            "code": "73",
+            "m2": 0.0
+          }
+        ]
+      },
+      "shp_district_mapping": [
+        {
+          "code": "01",
+          "district": "01",
+          "name": "el Raval"
+        },
+        {
+          "code": "02",
+          "district": "01",
+          "name": "el Barri Gòtic"
+        },
+        {
+          "code": "03",
+          "district": "01",
+          "name": "la Barceloneta"
+        },
+        {
+          "code": "04",
+          "district": "01",
+          "name": "Sant Pere, Santa Caterina i la Ribera"
+        },
+        {
+          "code": "05",
+          "district": "02",
+          "name": "el Fort Pienc"
+        },
+        {
+          "code": "06",
+          "district": "02",
+          "name": "la Sagrada Família"
+        },
+        {
+          "code": "07",
+          "district": "02",
+          "name": "la Dreta de l'Eixample"
+        },
+        {
+          "code": "08",
+          "district": "02",
+          "name": "l'Antiga Esquerra de l'Eixample"
+        },
+        {
+          "code": "09",
+          "district": "02",
+          "name": "la Nova Esquerra de l'Eixample"
+        },
+        {
+          "code": "10",
+          "district": "02",
+          "name": "Sant Antoni"
+        },
+        {
+          "code": "11",
+          "district": "03",
+          "name": "el Poble-sec"
+        },
+        {
+          "code": "12",
+          "district": "03",
+          "name": "la Marina del Prat Vermell"
+        },
+        {
+          "code": "13",
+          "district": "03",
+          "name": "la Marina de Port"
+        },
+        {
+          "code": "14",
+          "district": "03",
+          "name": "la Font de la Guatlla"
+        },
+        {
+          "code": "32",
+          "district": "06",
+          "name": "el Camp d'en Grassot i Gràcia Nova"
+        },
+        {
+          "code": "33",
+          "district": "07",
+          "name": "el Baix Guinardó"
+        },
+        {
+          "code": "35",
+          "district": "07",
+          "name": "el Guinardó"
+        },
+        {
+          "code": "34",
+          "district": "07",
+          "name": "Can Baró"
+        },
+        {
+          "code": "37",
+          "district": "07",
+          "name": "el Carmel"
+        },
+        {
+          "code": "38",
+          "district": "07",
+          "name": "la Teixonera"
+        },
+        {
+          "code": "39",
+          "district": "07",
+          "name": "Sant Genís dels Agudells"
+        },
+        {
+          "code": "40",
+          "district": "07",
+          "name": "Montbau"
+        },
+        {
+          "code": "41",
+          "district": "07",
+          "name": "la Vall d'Hebron"
+        },
+        {
+          "code": "42",
+          "district": "07",
+          "name": "la Clota"
+        },
+        {
+          "code": "36",
+          "district": "07",
+          "name": "la Font d'en Fargues"
+        },
+        {
+          "code": "43",
+          "district": "07",
+          "name": "Horta"
+        },
+        {
+          "code": "44",
+          "district": "08",
+          "name": "Vilapicina i la Torre Llobeta"
+        },
+        {
+          "code": "45",
+          "district": "08",
+          "name": "Porta"
+        },
+        {
+          "code": "46",
+          "district": "08",
+          "name": "el Turó de la Peira"
+        },
+        {
+          "code": "15",
+          "district": "03",
+          "name": "Hostafrancs"
+        },
+        {
+          "code": "16",
+          "district": "03",
+          "name": "la Bordeta"
+        },
+        {
+          "code": "17",
+          "district": "03",
+          "name": "Sants - Badal"
+        },
+        {
+          "code": "18",
+          "district": "03",
+          "name": "Sants"
+        },
+        {
+          "code": "19",
+          "district": "04",
+          "name": "les Corts"
+        },
+        {
+          "code": "20",
+          "district": "04",
+          "name": "la Maternitat i Sant Ramon"
+        },
+        {
+          "code": "21",
+          "district": "04",
+          "name": "Pedralbes"
+        },
+        {
+          "code": "22",
+          "district": "05",
+          "name": "Vallvidrera, el Tibidabo i les Planes"
+        },
+        {
+          "code": "23",
+          "district": "05",
+          "name": "Sarrià"
+        },
+        {
+          "code": "24",
+          "district": "05",
+          "name": "les Tres Torres"
+        },
+        {
+          "code": "25",
+          "district": "05",
+          "name": "Sant Gervasi - la Bonanova"
+        },
+        {
+          "code": "27",
+          "district": "05",
+          "name": "el Putxet i el Farró"
+        },
+        {
+          "code": "26",
+          "district": "05",
+          "name": "Sant Gervasi - Galvany"
+        },
+        {
+          "code": "28",
+          "district": "06",
+          "name": "Vallcarca i els Penitents"
+        },
+        {
+          "code": "29",
+          "district": "06",
+          "name": "el Coll"
+        },
+        {
+          "code": "30",
+          "district": "06",
+          "name": "la Salut"
+        },
+        {
+          "code": "31",
+          "district": "06",
+          "name": "la Vila de Gràcia"
+        },
+        {
+          "code": "63",
+          "district": "09",
+          "name": "Navas"
+        },
+        {
+          "code": "64",
+          "district": "10",
+          "name": "el Camp de l'Arpa del Clot"
+        },
+        {
+          "code": "65",
+          "district": "10",
+          "name": "el Clot"
+        },
+        {
+          "code": "66",
+          "district": "10",
+          "name": "el Parc i la Llacuna del Poblenou"
+        },
+        {
+          "code": "67",
+          "district": "10",
+          "name": "la Vila Olímpica del Poblenou"
+        },
+        {
+          "code": "68",
+          "district": "10",
+          "name": "el Poblenou"
+        },
+        {
+          "code": "69",
+          "district": "10",
+          "name": "Diagonal Mar i el Front Marítim del Poblenou"
+        },
+        {
+          "code": "70",
+          "district": "10",
+          "name": "el Besòs i el Maresme"
+        },
+        {
+          "code": "71",
+          "district": "10",
+          "name": "Provençals del Poblenou"
+        },
+        {
+          "code": "72",
+          "district": "10",
+          "name": "Sant Martí de Provençals"
+        },
+        {
+          "code": "73",
+          "district": "10",
+          "name": "la Verneda i la Pau"
+        },
+        {
+          "code": "47",
+          "district": "08",
+          "name": "Can Peguera"
+        },
+        {
+          "code": "48",
+          "district": "08",
+          "name": "la Guineueta"
+        },
+        {
+          "code": "51",
+          "district": "08",
+          "name": "Verdun"
+        },
+        {
+          "code": "52",
+          "district": "08",
+          "name": "la Prosperitat"
+        },
+        {
+          "code": "49",
+          "district": "08",
+          "name": "Canyelles"
+        },
+        {
+          "code": "50",
+          "district": "08",
+          "name": "les Roquetes"
+        },
+        {
+          "code": "53",
+          "district": "08",
+          "name": "la Trinitat Nova"
+        },
+        {
+          "code": "54",
+          "district": "08",
+          "name": "Torre Baró"
+        },
+        {
+          "code": "55",
+          "district": "08",
+          "name": "Ciutat Meridiana"
+        },
+        {
+          "code": "56",
+          "district": "08",
+          "name": "Vallbona"
+        },
+        {
+          "code": "57",
+          "district": "09",
+          "name": "la Trinitat Vella"
+        },
+        {
+          "code": "58",
+          "district": "09",
+          "name": "Baró de Viver"
+        },
+        {
+          "code": "59",
+          "district": "09",
+          "name": "el Bon Pastor"
+        },
+        {
+          "code": "60",
+          "district": "09",
+          "name": "Sant Andreu"
+        },
+        {
+          "code": "61",
+          "district": "09",
+          "name": "la Sagrera"
+        },
+        {
+          "code": "62",
+          "district": "09",
+          "name": "el Congrés i els Indians"
+        }
+      ],
+      "kmz": {
+        "matched": 73,
+        "only_shp": [],
+        "only_other": [],
+        "invalid": [],
+        "sum_symdiff_m2": 16.72866731548674,
+        "max_symdiff_m2": 1.4548098905156024,
+        "rows": [
+          {
+            "code": "01",
+            "m2": 0.21281101768483782
+          },
+          {
+            "code": "02",
+            "m2": 0.16974047982691565
+          },
+          {
+            "code": "03",
+            "m2": 0.459224954686546
+          },
+          {
+            "code": "04",
+            "m2": 0.20546607754782936
+          },
+          {
+            "code": "05",
+            "m2": 0.15619201898510454
+          },
+          {
+            "code": "06",
+            "m2": 0.19527506983560083
+          },
+          {
+            "code": "07",
+            "m2": 0.28667446896736765
+          },
+          {
+            "code": "08",
+            "m2": 0.21712187437092398
+          },
+          {
+            "code": "09",
+            "m2": 0.1630313692262864
+          },
+          {
+            "code": "10",
+            "m2": 0.19752904758048126
+          },
+          {
+            "code": "11",
+            "m2": 0.42826653538256726
+          },
+          {
+            "code": "12",
+            "m2": 1.4548098905156024
+          },
+          {
+            "code": "13",
+            "m2": 0.23685047187165026
+          },
+          {
+            "code": "14",
+            "m2": 0.10732902485051778
+          },
+          {
+            "code": "15",
+            "m2": 0.09958855798228432
+          },
+          {
+            "code": "16",
+            "m2": 0.1322067485869658
+          },
+          {
+            "code": "17",
+            "m2": 0.10174892825929421
+          },
+          {
+            "code": "18",
+            "m2": 0.16239709533660546
+          },
+          {
+            "code": "19",
+            "m2": 0.17617886978011155
+          },
+          {
+            "code": "20",
+            "m2": 0.24604534686935153
+          },
+          {
+            "code": "21",
+            "m2": 0.38815240523051214
+          },
+          {
+            "code": "22",
+            "m2": 1.291199410636394
+          },
+          {
+            "code": "23",
+            "m2": 0.4059808353965524
+          },
+          {
+            "code": "24",
+            "m2": 0.17409673080470311
+          },
+          {
+            "code": "25",
+            "m2": 0.29999792324766833
+          },
+          {
+            "code": "26",
+            "m2": 0.22885150549932023
+          },
+          {
+            "code": "27",
+            "m2": 0.1602404567963439
+          },
+          {
+            "code": "28",
+            "m2": 0.3445757541720009
+          },
+          {
+            "code": "29",
+            "m2": 0.12738541131315853
+          },
+          {
+            "code": "30",
+            "m2": 0.16687908796096115
+          },
+          {
+            "code": "31",
+            "m2": 0.1827974772053133
+          },
+          {
+            "code": "32",
+            "m2": 0.1567740366447909
+          },
+          {
+            "code": "33",
+            "m2": 0.13085418422655076
+          },
+          {
+            "code": "34",
+            "m2": 0.18895528789204402
+          },
+          {
+            "code": "35",
+            "m2": 0.22630406696573455
+          },
+          {
+            "code": "36",
+            "m2": 0.17007091977900218
+          },
+          {
+            "code": "37",
+            "m2": 0.23331769265426455
+          },
+          {
+            "code": "38",
+            "m2": 0.12091173181312986
+          },
+          {
+            "code": "39",
+            "m2": 0.3089955197897978
+          },
+          {
+            "code": "40",
+            "m2": 0.271035848037923
+          },
+          {
+            "code": "41",
+            "m2": 0.1375965800045378
+          },
+          {
+            "code": "42",
+            "m2": 0.07480780965500183
+          },
+          {
+            "code": "43",
+            "m2": 0.42717177583639243
+          },
+          {
+            "code": "44",
+            "m2": 0.22818241364066671
+          },
+          {
+            "code": "45",
+            "m2": 0.1373190269747376
+          },
+          {
+            "code": "46",
+            "m2": 0.1282613379789617
+          },
+          {
+            "code": "47",
+            "m2": 0.07953660327265835
+          },
+          {
+            "code": "48",
+            "m2": 0.14732063307967463
+          },
+          {
+            "code": "49",
+            "m2": 0.1821843742550537
+          },
+          {
+            "code": "50",
+            "m2": 0.18331642130501455
+          },
+          {
+            "code": "51",
+            "m2": 0.0772837505381891
+          },
+          {
+            "code": "52",
+            "m2": 0.1300426127116138
+          },
+          {
+            "code": "53",
+            "m2": 0.10282900937156408
+          },
+          {
+            "code": "54",
+            "m2": 0.26370408128162565
+          },
+          {
+            "code": "55",
+            "m2": 0.15171605680617276
+          },
+          {
+            "code": "56",
+            "m2": 0.12101501084978705
+          },
+          {
+            "code": "57",
+            "m2": 0.1674063670656855
+          },
+          {
+            "code": "58",
+            "m2": 0.08872767954715208
+          },
+          {
+            "code": "59",
+            "m2": 0.204434203129754
+          },
+          {
+            "code": "60",
+            "m2": 0.18185725561547378
+          },
+          {
+            "code": "61",
+            "m2": 0.1356024156656832
+          },
+          {
+            "code": "62",
+            "m2": 0.08411740713285791
+          },
+          {
+            "code": "63",
+            "m2": 0.11008165233099731
+          },
+          {
+            "code": "64",
+            "m2": 0.11407384092522092
+          },
+          {
+            "code": "65",
+            "m2": 0.13664517481301713
+          },
+          {
+            "code": "66",
+            "m2": 0.20647822539017135
+          },
+          {
+            "code": "67",
+            "m2": 0.3219010950969441
+          },
+          {
+            "code": "68",
+            "m2": 0.26024656068398455
+          },
+          {
+            "code": "69",
+            "m2": 0.2801515905327451
+          },
+          {
+            "code": "70",
+            "m2": 0.3382941046672015
+          },
+          {
+            "code": "71",
+            "m2": 0.22963561260707405
+          },
+          {
+            "code": "72",
+            "m2": 0.12893074055669418
+          },
+          {
+            "code": "73",
+            "m2": 0.18193175795142133
+          }
+        ]
+      }
+    },
+    "districtes": {
+      "json": {
+        "matched": 10,
+        "only_shp": [],
+        "only_other": [],
+        "invalid": [],
+        "sum_symdiff_m2": 0.0,
+        "max_symdiff_m2": 0.0,
+        "rows": [
+          {
+            "code": "01",
+            "m2": 0.0
+          },
+          {
+            "code": "02",
+            "m2": 0.0
+          },
+          {
+            "code": "03",
+            "m2": 0.0
+          },
+          {
+            "code": "04",
+            "m2": 0.0
+          },
+          {
+            "code": "05",
+            "m2": 0.0
+          },
+          {
+            "code": "06",
+            "m2": 0.0
+          },
+          {
+            "code": "07",
+            "m2": 0.0
+          },
+          {
+            "code": "08",
+            "m2": 0.0
+          },
+          {
+            "code": "09",
+            "m2": 0.0
+          },
+          {
+            "code": "10",
+            "m2": 0.0
+          }
+        ]
+      },
+      "shp_district_mapping": [
+        {
+          "code": "01",
+          "district": "01",
+          "name": "Ciutat Vella"
+        },
+        {
+          "code": "02",
+          "district": "02",
+          "name": "Eixample"
+        },
+        {
+          "code": "03",
+          "district": "03",
+          "name": "Sants-Montjuïc"
+        },
+        {
+          "code": "04",
+          "district": "04",
+          "name": "Les Corts"
+        },
+        {
+          "code": "05",
+          "district": "05",
+          "name": "Sarrià-Sant Gervasi"
+        },
+        {
+          "code": "06",
+          "district": "06",
+          "name": "Gràcia"
+        },
+        {
+          "code": "07",
+          "district": "07",
+          "name": "Horta-Guinardó"
+        },
+        {
+          "code": "08",
+          "district": "08",
+          "name": "Nou Barris"
+        },
+        {
+          "code": "09",
+          "district": "09",
+          "name": "Sant Andreu"
+        },
+        {
+          "code": "10",
+          "district": "10",
+          "name": "Sant Martí"
+        }
+      ],
+      "kmz": {
+        "matched": 10,
+        "only_shp": [],
+        "only_other": [],
+        "invalid": [],
+        "sum_symdiff_m2": 7.978006970854614,
+        "max_symdiff_m2": 1.6348924500819233,
+        "rows": [
+          {
+            "code": "01",
+            "m2": 0.7422500429572395
+          },
+          {
+            "code": "02",
+            "m2": 0.5399582115509736
+          },
+          {
+            "code": "03",
+            "m2": 1.6348924500819233
+          },
+          {
+            "code": "04",
+            "m2": 0.5103078652484518
+          },
+          {
+            "code": "05",
+            "m2": 1.4860194476616586
+          },
+          {
+            "code": "06",
+            "m2": 0.4953475544827741
+          },
+          {
+            "code": "07",
+            "m2": 0.8010537159584411
+          },
+          {
+            "code": "08",
+            "m2": 0.4654096108871961
+          },
+          {
+            "code": "09",
+            "m2": 0.41675938601419604
+          },
+          {
+            "code": "10",
+            "m2": 0.8860086860117602
+          }
+        ]
+      }
+    },
+    "municipi": {
+      "json": {
+        "matched": 1,
+        "only_shp": [],
+        "only_other": [],
+        "invalid": [],
+        "sum_symdiff_m2": 0.0,
+        "max_symdiff_m2": 0.0,
+        "rows": [
+          {
+            "code": "080193",
+            "m2": 0.0
+          }
+        ]
+      },
+      "shp_district_mapping": [
+        {
+          "code": "080193",
+          "district": "-",
+          "name": "Barcelona"
+        }
+      ],
+      "kmz": {
+        "matched": 1,
+        "only_shp": [],
+        "only_other": [],
+        "invalid": [],
+        "sum_symdiff_m2": 4.108059050441623,
+        "max_symdiff_m2": 4.108059050441623,
+        "rows": [
+          {
+            "code": "080193",
+            "m2": 4.108059050441623
+          }
+        ]
+      }
+    }
+  },
+  "qr_nearest": [
+    {
+      "code": "73100",
+      "lat": 41.3061021,
+      "lon": 1.1949213,
+      "method": "place_target",
+      "nearest": [
+        {
+          "distance_m": 229.64915936440124,
+          "id": "ROD_73100",
+          "name": "La Plana - Picamoixons",
+          "lat": 41.30597,
+          "lon": 1.197665
+        },
+        {
+          "distance_m": 635.842488043711,
+          "id": "GEN_PF43161022",
+          "name": "Picamoixons  (carretera)",
+          "lat": 41.3041878,
+          "lon": 1.2020942
+        },
+        {
+          "distance_m": 1827.7500474604944,
+          "id": "GEN_PF43124003",
+          "name": "Ctra. Reus-Montblanc cruïlla TV-7044 (marquesina)",
+          "lat": 41.3190765,
+          "lon": 1.1814852
+        },
+        {
+          "distance_m": 1828.1428333523784,
+          "id": "GEN_PF43124001",
+          "name": "La Riba   (mig poble)",
+          "lat": 41.3184395,
+          "lon": 1.1804537
+        },
+        {
+          "distance_m": 1840.613039038774,
+          "id": "GEN_PF43124002",
+          "name": "Ctra. Reus-Montblnac (marquesina sentit la Riba)",
+          "lat": 41.3189049,
+          "lon": 1.1809523
+        }
+      ],
+      "identity_approved": false
+    },
+    {
+      "code": "73010",
+      "lat": 41.3184926,
+      "lon": 1.1813126,
+      "method": "place_target",
+      "nearest": [
+        {
+          "distance_m": 54.83813876052573,
+          "id": "GEN_PF43124002",
+          "name": "Ctra. Reus-Montblnac (marquesina sentit la Riba)",
+          "lat": 41.3189049,
+          "lon": 1.1809523
+        },
+        {
+          "distance_m": 66.5076136706686,
+          "id": "GEN_PF43124003",
+          "name": "Ctra. Reus-Montblanc cruïlla TV-7044 (marquesina)",
+          "lat": 41.3190765,
+          "lon": 1.1814852
+        },
+        {
+          "distance_m": 71.9721076962108,
+          "id": "GEN_PF43124001",
+          "name": "La Riba   (mig poble)",
+          "lat": 41.3184395,
+          "lon": 1.1804537
+        },
+        {
+          "distance_m": 1664.8387764389347,
+          "id": "GEN_PF43172002",
+          "name": "Carrer de Pont",
+          "lat": 41.3330994,
+          "lon": 1.1769346
+        },
+        {
+          "distance_m": 1950.4499069753251,
+          "id": "ROD_73100",
+          "name": "La Plana - Picamoixons",
+          "lat": 41.30597,
+          "lon": 1.197665
+        }
+      ],
+      "identity_approved": false
+    },
+    {
+      "code": "73009",
+      "lat": 41.3376328,
+      "lon": 1.1765186,
+      "method": "place_target",
+      "nearest": [
+        {
+          "distance_m": 18.993735479940216,
+          "id": "GEN_PF43172001",
+          "name": "Vilaverd (enfront estació renfe)",
+          "lat": 41.3377686,
+          "lon": 1.1766566
+        },
+        {
+          "distance_m": 93.79056966136037,
+          "id": "GEN_PF43172000",
+          "name": "C. Major s/n (marquesina bàscula municipal)",
+          "lat": 41.3368073,
+          "lon": 1.1767493
+        },
+        {
+          "distance_m": 505.2869136985576,
+          "id": "GEN_PF43172002",
+          "name": "Carrer de Pont",
+          "lat": 41.3330994,
+          "lon": 1.1769346
+        },
+        {
+          "distance_m": 2104.633050229588,
+          "id": "GEN_PF43124003",
+          "name": "Ctra. Reus-Montblanc cruïlla TV-7044 (marquesina)",
+          "lat": 41.3190765,
+          "lon": 1.1814852
+        },
+        {
+          "distance_m": 2115.1028228637547,
+          "id": "GEN_PF43124002",
+          "name": "Ctra. Reus-Montblnac (marquesina sentit la Riba)",
+          "lat": 41.3189049,
+          "lon": 1.1809523
+        }
+      ],
+      "identity_approved": false
+    },
+    {
+      "code": "73008",
+      "lat": 41.3759718,
+      "lon": 1.1660706,
+      "method": "place_target",
+      "nearest": [
+        {
+          "distance_m": 297.1599169682594,
+          "id": "GEN_PF43086002",
+          "name": "Montblanc",
+          "lat": 41.3777313,
+          "lon": 1.16339
+        },
+        {
+          "distance_m": 297.4388585194352,
+          "id": "GEN_PF43086007",
+          "name": "Montblanc (estació d'autobusos)",
+          "lat": 41.3777008,
+          "lon": 1.1633506
+        },
+        {
+          "distance_m": 2317.947992831766,
+          "id": "GEN_PF43086005",
+          "name": "C-14-C. de Baix (marquesina-la Guàrdia dels Prats)",
+          "lat": 41.3962593,
+          "lon": 1.1724577
+        },
+        {
+          "distance_m": 2374.0435390532402,
+          "id": "GEN_PF43086000",
+          "name": "la Guàrdia dels Prats",
+          "lat": 41.3966408,
+          "lon": 1.1732018
+        },
+        {
+          "distance_m": 4002.0265045025676,
+          "id": "GEN_PF43107001",
+          "name": "Cruïlla ctra C-241d - T-242 (embran Barberà Conca)",
+          "lat": 41.40522,
+          "lon": 1.1940274
+        }
+      ],
+      "identity_approved": false
+    },
+    {
+      "code": "73007",
+      "lat": 41.3965376,
+      "lon": 1.1075585,
+      "method": "directions_destination",
+      "nearest": [
+        {
+          "distance_m": 19.001390150515718,
+          "id": "GEN_PF43054004",
+          "name": "Av. de Catalunya (marquesina Pl. del Mil·lenari)",
+          "lat": 41.3965263,
+          "lon": 1.1077858
+        },
+        {
+          "distance_m": 228.1648015702958,
+          "id": "GEN_PF43054003",
+          "name": "Av. de Catalunya (marquesina rotonda ctra. T-700)",
+          "lat": 41.3978767,
+          "lon": 1.1054859
+        },
+        {
+          "distance_m": 851.9396497000519,
+          "id": "GEN_PF43054000",
+          "name": "Pl. del Centenari- Ctra. les Masies (marquesina)",
+          "lat": 41.3934517,
+          "lon": 1.0982103
+        },
+        {
+          "distance_m": 891.6961258973532,
+          "id": "GEN_PF43054005",
+          "name": "Pl. del Centenari enfront marquesina (ctra. T-700)",
+          "lat": 41.3935127,
+          "lon": 1.0976583
+        },
+        {
+          "distance_m": 2430.489650694423,
+          "id": "GEN_PF43054002",
+          "name": "Ctra. les Masies (H. Vila Engràcia sentit Espluga)",
+          "lat": 41.3783417,
+          "lon": 1.091416
+        }
+      ],
+      "identity_approved": false
+    },
+    {
+      "code": "73006",
+      "lat": 41.401555,
+      "lon": 1.046804,
+      "method": "place_target",
+      "nearest": [
+        {
+          "distance_m": 0.7651231388867707,
+          "id": "GEN_PF43176004",
+          "name": "Raval de Lleida (enfront marquesina)",
+          "lat": 41.4015503,
+          "lon": 1.0468107
+        },
+        {
+          "distance_m": 9.477797446845782,
+          "id": "GEN_PF43176002",
+          "name": "Raval de Lleida (marquesina)",
+          "lat": 41.4016342,
+          "lon": 1.046846
+        },
+        {
+          "distance_m": 3190.563491817198,
+          "id": "GEN_PF25218000",
+          "name": "Tarrés (c. Verge de Montserrat, 49-51)",
+          "lat": 41.422699,
+          "lon": 1.0209404
+        },
+        {
+          "distance_m": 3191.4677854849388,
+          "id": "GEN_PF25218004",
+          "name": "Tarrés (c. Verges de Montserrat/raval Fontanella)",
+          "lat": 41.4226532,
+          "lon": 1.020858
+        },
+        {
+          "distance_m": 3308.7350712238876,
+          "id": "ALS_0000386600000001",
+          "name": "Tarres",
+          "lat": 41.4226341,
+          "lon": 1.0187998
+        }
+      ],
+      "identity_approved": false
+    },
+    {
+      "code": "73005",
+      "lat": 41.428753,
+      "lon": 0.973934,
+      "method": "search_coordinate",
+      "nearest": [
+        {
+          "distance_m": 1.7271363476563217,
+          "id": "GEN_PF25255002",
+          "name": "Vinaixa (ctra. de Lleida, 31-33)",
+          "lat": 41.4287376,
+          "lon": 0.9739313
+        },
+        {
+          "distance_m": 2.650639326966465,
+          "id": "ALS_0000996200000001",
+          "name": "Vinaixa",
+          "lat": 41.428772,
+          "lon": 0.9739532
+        },
+        {
+          "distance_m": 6.560504643266311,
+          "id": "GEN_PF25255001",
+          "name": "Vinaixa (ctra. de Lleida, 28)",
+          "lat": 41.4287949,
+          "lon": 0.9739894
+        },
+        {
+          "distance_m": 157.79097284492698,
+          "id": "GEN_PF25255000",
+          "name": "Pl. dels Arbres - C. Nou",
+          "lat": 41.4280968,
+          "lon": 0.9756121
+        },
+        {
+          "distance_m": 2823.5484913542527,
+          "id": "GEN_PF25009001",
+          "name": "L'Albi (av. Catalunya, 30)",
+          "lat": 41.4236946,
+          "lon": 0.9407471
+        }
+      ],
+      "identity_approved": false
+    },
+    {
+      "code": "73004",
+      "lat": 41.5042017,
+      "lon": 0.9244076,
+      "method": "place_target",
+      "nearest": [
+        {
+          "distance_m": 608.8967858643547,
+          "id": "GEN_PF25092001",
+          "name": "La Floresta (ctra. LV-2012, pk 4,4) (A)",
+          "lat": 41.5088234,
+          "lon": 0.9204858
+        },
+        {
+          "distance_m": 732.584136036907,
+          "id": "ALS_0000386200000001",
+          "name": "La Floresta",
+          "lat": 41.5095291,
+          "lon": 0.9192317
+        },
+        {
+          "distance_m": 753.1290689588599,
+          "id": "GEN_PF25092000",
+          "name": "La Floresta (ctra. LV-2012 pk 4,3) (D)",
+          "lat": 41.5097008,
+          "lon": 0.9191277
+        },
+        {
+          "distance_m": 2978.2512385056257,
+          "id": "GEN_PF25153000",
+          "name": "Els Omellons (crta. LV-2012, pk 7,8) (D)",
+          "lat": 41.5009918,
+          "lon": 0.9599131
+        },
+        {
+          "distance_m": 2982.150354543118,
+          "id": "ALS_0000386300000001",
+          "name": "Els Omellons",
+          "lat": 41.5009575,
+          "lon": 0.9599547
+        }
+      ],
+      "identity_approved": false
+    }
+  ],
+  "downloads": {
+    "cad": {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=97.BARCELONA.1",
+      "bytes": 5804544,
+      "sha256": "ad38d369514a1c9e1dc29f7654173a7d600b8db72553af0e67ae193259f58ea6",
+      "content_type": "application/octet-stream; charset=UTF-8",
+      "disposition": "attachment;filename=0301020100_BCN_Unitats_Adm.DGN",
+      "first_bytes_hex": "d0cf11e0a1b11ae1000000000000000000000000000000003e000300feff0900",
+      "status": "BINARY_RECOVERED_FORMAT_NOT_VALIDATED"
+    },
+    "xml_resource_metadata": {
+      "url": "https://opendata-ajuntament.barcelona.cat/data/api/action/resource_show?id=732506ee-bcdf-409f-bed8-0b25cbc0e948",
+      "bytes": 1441,
+      "sha256": "5fb08ee812bb505128e82d9f7575f0e61a8334c5760b2523544ea189da8d35a8",
+      "content_type": "application/json;charset=utf-8",
+      "disposition": null,
+      "first_bytes_hex": "7b2268656c70223a202268747470733a2f2f6f70656e646174612d616a756e74",
+      "metadata": {
+        "cache_last_updated": null,
+        "token_type": "",
+        "package_id": "808daafa-d9ce-48c0-925a-fa5afdb1ed41",
+        "datastore_active": false,
+        "id": "732506ee-bcdf-409f-bed8-0b25cbc0e948",
+        "size": "49483",
+        "state": "active",
+        "api_access_number": 3,
+        "api_access_number_absolute": 3,
+        "token_required": "No",
+        "hash": "",
+        "description": "",
+        "format": "XML",
+        "downloads": 1154,
+        "mimetype_inner": null,
+        "url_type": "upload",
+        "token_provider": "",
+        "file_volum": "little",
+        "mimetype": null,
+        "cache_url": null,
+        "name": "Unitats_Administratives_BCN.xml",
+        "created": "2020-06-29T10:57:17.940801",
+        "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/808daafa-d9ce-48c0-925a-fa5afdb1ed41/resource/732506ee-bcdf-409f-bed8-0b25cbc0e948/download/districtes_barris_districtesbarris.xml",
+        "downloads_absolute": 1262,
+        "map_visualization_res": "none",
+        "qa": {
+          "updated": "2026-11-24T02:06:01.938703",
+          "openness_score": 3,
+          "archival_timestamp": null,
+          "format": "XML",
+          "created": "2020-06-30T02:04:07.085941",
+          "resource_timestamp": null,
+          "openness_score_reason": "This file had not been downloaded at the time of scoring it. URL extension \"xml\" relates to format \"XML\" and receives score: 3."
+        },
+        "last_modified": "2023-01-16T11:16:33.109530",
+        "position": 13,
+        "revision_id": "a669c17c-a83e-4b76-b25f-4866d2dd3464",
+        "resource_type": null
+      },
+      "status": "METADATA_ONLY"
+    }
+  },
+  "no_repairs": true,
+  "canonical_approved": false
+}
