@@ -1,0 +1,297 @@
+{
+  "status": "CHECKS_RECORDED",
+  "district_name_field": "descripcio",
+  "district_valid": 10,
+  "barris_valid": 73,
+  "district_comparisons": [
+    {
+      "name": "Ciutat Vella",
+      "code": "01",
+      "barris": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "area_a_m2": 4204926.132565099,
+      "area_b_m2": 4368477.84455909,
+      "a_only_m2": 21833.139083600283,
+      "b_only_m2": 185384.85107755373,
+      "symmetric_difference_m2": 207217.99016115395,
+      "intersection_m2": 4183092.9934814624,
+      "hausdorff_discrete_m": 465.8964590921661
+    },
+    {
+      "name": "Sant Martí",
+      "code": "10",
+      "barris": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "area_a_m2": 10427933.296397815,
+      "area_b_m2": 10523789.554792624,
+      "a_only_m2": 67765.47063804198,
+      "b_only_m2": 163621.72903261817,
+      "symmetric_difference_m2": 231387.19967066022,
+      "intersection_m2": 10360167.825759841,
+      "hausdorff_discrete_m": 816.6346768473046
+    },
+    {
+      "name": "Eixample",
+      "code": "02",
+      "barris": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "area_a_m2": 7464276.830422869,
+      "area_b_m2": 7476414.761513125,
+      "a_only_m2": 17053.284367163167,
+      "b_only_m2": 29191.21545743502,
+      "symmetric_difference_m2": 46244.49982459817,
+      "intersection_m2": 7447223.546055614,
+      "hausdorff_discrete_m": 80.04415224089662
+    },
+    {
+      "name": "Sants-Montjuïc",
+      "code": "03",
+      "barris": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "area_a_m2": 22879920.065114405,
+      "area_b_m2": 22940492.367898438,
+      "a_only_m2": 486113.6428459678,
+      "b_only_m2": 546685.9456299708,
+      "symmetric_difference_m2": 1032799.5884759374,
+      "intersection_m2": 22393806.422268648,
+      "hausdorff_discrete_m": 766.1705097445422
+    },
+    {
+      "name": "Les Corts",
+      "code": "04",
+      "barris": [
+        19,
+        20,
+        21
+      ],
+      "area_a_m2": 6010765.036272315,
+      "area_b_m2": 6006836.3045855,
+      "a_only_m2": 38671.3749162778,
+      "b_only_m2": 34742.64322938227,
+      "symmetric_difference_m2": 73414.01814566004,
+      "intersection_m2": 5972093.661356108,
+      "hausdorff_discrete_m": 410.20631930046426
+    },
+    {
+      "name": "Sarrià-Sant Gervasi",
+      "code": "05",
+      "barris": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "area_a_m2": 19915952.67400411,
+      "area_b_m2": 20105034.32932687,
+      "a_only_m2": 207188.57121493018,
+      "b_only_m2": 396270.2265377495,
+      "symmetric_difference_m2": 603458.7977526787,
+      "intersection_m2": 19708764.102789223,
+      "hausdorff_discrete_m": 1209.4572094353298
+    },
+    {
+      "name": "Gràcia",
+      "code": "06",
+      "barris": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "area_a_m2": 4224273.991356316,
+      "area_b_m2": 4185528.5184400734,
+      "a_only_m2": 47080.76557747403,
+      "b_only_m2": 8335.292661250209,
+      "symmetric_difference_m2": 55416.05823872425,
+      "intersection_m2": 4177193.225778856,
+      "hausdorff_discrete_m": 182.98524164709391
+    },
+    {
+      "name": "Horta-Guinardó",
+      "code": "07",
+      "barris": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "area_a_m2": 11919602.490927935,
+      "area_b_m2": 11947109.613351561,
+      "a_only_m2": 37553.48435970939,
+      "b_only_m2": 65060.606783404226,
+      "symmetric_difference_m2": 102614.09114311363,
+      "intersection_m2": 11882049.006568152,
+      "hausdorff_discrete_m": 1252.021433951332
+    },
+    {
+      "name": "Nou Barris",
+      "code": "08",
+      "barris": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "area_a_m2": 8056456.97334314,
+      "area_b_m2": 8041452.790999301,
+      "a_only_m2": 52094.85632630788,
+      "b_only_m2": 37090.67398247857,
+      "symmetric_difference_m2": 89185.53030878646,
+      "intersection_m2": 8004362.117016857,
+      "hausdorff_discrete_m": 910.4189800004513
+    },
+    {
+      "name": "Sant Andreu",
+      "code": "09",
+      "barris": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "area_a_m2": 6592640.2019283585,
+      "area_b_m2": 6565393.691346558,
+      "a_only_m2": 45867.388011545816,
+      "b_only_m2": 18620.87742971024,
+      "symmetric_difference_m2": 64488.26544125603,
+      "intersection_m2": 6546772.813916863,
+      "hausdorff_discrete_m": 755.8757981802563
+    }
+  ],
+  "district_overlaps": [
+    {
+      "districts": [
+        "eixample",
+        "lescorts"
+      ],
+      "area_m2": 0.024522991055695442
+    },
+    {
+      "districts": [
+        "eixample",
+        "sarriasantgervasi"
+      ],
+      "area_m2": 0.05924457352153977
+    },
+    {
+      "districts": [
+        "santsmontjuic",
+        "lescorts"
+      ],
+      "area_m2": 0.4141720422206092
+    },
+    {
+      "districts": [
+        "sarriasantgervasi",
+        "gracia"
+      ],
+      "area_m2": 0.04575127553743786
+    },
+    {
+      "districts": [
+        "sarriasantgervasi",
+        "hortaguinardo"
+      ],
+      "area_m2": 0.28771168027376753
+    }
+  ],
+  "district_sum_minus_union_m2": 0.8314024358987808,
+  "barris_union_vs_district_union": {
+    "area_a_m2": 101696740.40265617,
+    "area_b_m2": 102160528.94541071,
+    "a_only_m2": 822553.6297673025,
+    "b_only_m2": 1286342.1725218622,
+    "symmetric_difference_m2": 2108895.802289168,
+    "intersection_m2": 100874186.77288902,
+    "hausdorff_discrete_m": 2467.499964941213
+  },
+  "district_union_vs_ICGC": {
+    "area_a_m2": 102160528.94541071,
+    "area_b_m2": 101822466.31984997,
+    "a_only_m2": 1304130.1640145846,
+    "b_only_m2": 966067.5384537784,
+    "symmetric_difference_m2": 2270197.7024683673,
+    "intersection_m2": 100856398.781396,
+    "hausdorff_discrete_m": 3613.249810460626
+  },
+  "barris_union_vs_ICGC": {
+    "area_a_m2": 101696740.40265617,
+    "area_b_m2": 101822466.31984997,
+    "a_only_m2": 248819.2655313139,
+    "b_only_m2": 374545.18281109474,
+    "symmetric_difference_m2": 623364.4483423808,
+    "intersection_m2": 101447921.13703564,
+    "hausdorff_discrete_m": 3779.280615163939
+  },
+  "barris_union": {
+    "parts": 1,
+    "interior_rings": 192,
+    "interior_ring_area_m2": 149.55430859850634
+  },
+  "district_union": {
+    "parts": 1,
+    "interior_rings": 46,
+    "interior_ring_area_m2": 5.32145718208107
+  },
+  "municipality": {
+    "parts": 32,
+    "interior_rings": 2,
+    "interior_ring_area_m2": 650.5512109810031
+  },
+  "geos": "3.14.1",
+  "originals_modified": false,
+  "tolerance_approved": false,
+  "same_boundary_version_verified": false,
+  "production": "NO_GO",
+  "canonical_EAM_closed": 0
+}
