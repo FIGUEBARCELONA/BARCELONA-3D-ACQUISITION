@@ -1,0 +1,40 @@
+name: DM32 exact XML resource
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm32-exact-xml.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python - <<'PY'
+          import pathlib,json,hashlib,urllib.request,xml.etree.ElementTree as E,subprocess
+          d=pathlib.Path('custody/dm32')
+          meta=json.loads((d/'xml_resource_metadata.json').read_text())['result']
+          u=meta['url'];assert u.startswith('https://opendata-ajuntament.barcelona.cat/')
+          m={'url':u,'expected_catalog_bytes':int(meta['size'])}
+          try:
+              with urllib.request.urlopen(u,timeout=30) as f:
+                  b=f.read(1000001);assert len(b)<=1000000
+                  m.update({'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':f.headers.get('Content-Type')})
+              root=E.fromstring(b);assert not root.tag.lower().endswith('html')
+              (d/'Unitats_Administratives_BCN.original.xml').write_bytes(b)
+              m.update({'root':root.tag,'size_matches_catalog':len(b)==int(meta['size']),'status':'XML_RECOVERED','text_excerpt':' '.join(root.itertext())[:14000]})
+          except Exception as e:m.update({'status':'FAILED','error':repr(e)})
+          cad=d/'cad_response.original'
+          c={'sha256':hashlib.sha256(cad.read_bytes()).hexdigest(),'bytes':cad.stat().st_size}
+          try:c['file_identification']=subprocess.run(['file','-b',str(cad)],capture_output=True,text=True,check=True).stdout.strip()
+          except Exception as e:c['error']=repr(e)
+          (d/'exact_xml_report.json').write_text(json.dumps({'xml':m,'cad':c},ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm32/
+          git commit -m 'DM32 inspect exact XML distribution path and CAD binary type'
+          git push origin HEAD:main
