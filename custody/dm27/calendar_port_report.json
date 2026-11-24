@@ -1,0 +1,21 @@
+{
+  "production": "NO_GO",
+  "imputations": 0,
+  "sources": {
+    "renfe": {
+      "url": "https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip",
+      "status": "FAILED",
+      "error": "AssertionError('source edition changed')"
+    },
+    "vessels": {
+      "url": "https://opendata.portdebarcelona.cat/datastore/dump/abbc81ff-802b-449b-9e5f-cce7a1fe57d3?format=json",
+      "status": "FAILED",
+      "error": "<HTTPError 500: 'Internal Server Error'>"
+    },
+    "rail": {
+      "url": "https://opendata.portdebarcelona.cat/datastore/dump/11856f2e-b852-4f6a-92b5-907f5876b1ec?format=json",
+      "status": "FAILED",
+      "error": "<HTTPError 500: 'Internal Server Error'>"
+    }
+  }
+}
