@@ -1,0 +1,18 @@
+{
+  "deup": {
+    "url": "https://contentv5.portdebarcelona.cat/cntmng/gd/d/workspace/SpacesStore/5d1e0670-b850-480f-86c0-ae9aa11079a4/DEUP_Port_de_Barcelona.pdf",
+    "error": "AssertionError()"
+  },
+  "metadata": {
+    "url": "https://analisi.transparenciacatalunya.cat/api/views/mxiy-fthq.json",
+    "resolved_url": "https://analisi.transparenciacatalunya.cat/api/views/mxiy-fthq.json",
+    "http": 200,
+    "bytes": 6170,
+    "sha256": "9776f62d0dee12679d0a0a4d7132864bc6ef78112437cdc8db7f34266030de46",
+    "name": "Mapa municipal de Catalunya",
+    "columns": [],
+    "tableId": 1691246,
+    "viewType": "tabular",
+    "license": "SEE_TERMS_OF_USE"
+  }
+}
