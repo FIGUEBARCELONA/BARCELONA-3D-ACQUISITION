@@ -1,0 +1,60 @@
+{
+  "run_id": 45422087653,
+  "workflow_commit": "66958df6349df45fb77a8fa9bdf3c12ff09b5e8d",
+  "script_commit": "6759beb6c0d6f77126fa789f19f034d0e074c3f6",
+  "jobs": [
+    {
+      "id": 138544051865,
+      "name": "probe (ubuntu-24.04-arm)",
+      "status": "completed",
+      "conclusion": "success",
+      "probe": {
+        "platform": "Linux-7.0.0-1017-azure-aarch64-with-glibc2.39",
+        "runner_os": "Linux",
+        "runner_arch": "ARM64",
+        "url": "https://datacloud.icgc.cat/datacloud/model-elevacions-terreny/tif_unzip/model-elevacions-terreny-lidar-amb-25cm-2022-2022.tif",
+        "expected_total_bytes": 24310268511,
+        "native_cells": 0,
+        "dns": [
+          "84.88.72.86"
+        ],
+        "error": "<urlopen error timed out>",
+        "range_verified": false,
+        "elapsed_s": 20.198,
+        "independent_vertical_accuracy_verified": false
+      }
+    },
+    {
+      "id": 138544052199,
+      "name": "probe (macos-15)",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138544052405,
+      "name": "probe (windows-2025)",
+      "status": "completed",
+      "conclusion": "success",
+      "probe": {
+        "platform": "Windows-2025Server-10.0.26100-SP0",
+        "runner_os": "Windows",
+        "runner_arch": "X64",
+        "url": "https://datacloud.icgc.cat/datacloud/model-elevacions-terreny/tif_unzip/model-elevacions-terreny-lidar-amb-25cm-2022-2022.tif",
+        "expected_total_bytes": 24310268511,
+        "native_cells": 0,
+        "dns": [
+          "84.88.72.86"
+        ],
+        "error": "<urlopen error timed out>",
+        "range_verified": false,
+        "elapsed_s": 21.125,
+        "independent_vertical_accuracy_verified": false
+      }
+    }
+  ],
+  "notes": "Snapshot of actual job status; queued jobs are not executed. Public standard runners, no storage artifacts or caches. No independent egress network verified. Job success is diagnostic success, not source acquisition.",
+  "native_cells_confirmed": 0,
+  "email_submitted": false,
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO"
+}
