@@ -1,0 +1,12 @@
+{
+  "provider": "mybinder.org",
+  "source_commit": "b2514455bb2da6c2f9829aba962467fe85606ab6",
+  "launch_attempts": 1,
+  "status": "LAUNCH_DENIED_OR_UNAVAILABLE",
+  "native_cells_recovered": 0,
+  "email_submitted": false,
+  "production": "NO_GO",
+  "phases": [],
+  "launch_http": 403,
+  "launch_host": "gesis.mybinder.org"
+}
