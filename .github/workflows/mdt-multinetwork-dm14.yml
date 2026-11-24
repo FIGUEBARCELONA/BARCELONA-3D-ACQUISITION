@@ -1,0 +1,25 @@
+name: DM-14 alternative standard runner networks
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/mdt-multinetwork-dm14.yml']
+permissions:
+  contents: read
+jobs:
+  probe:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [macos-15, ubuntu-24.04-arm, windows-2025]
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python mdt_multinetwork_dm14.py
