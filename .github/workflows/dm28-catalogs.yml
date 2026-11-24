@@ -1,0 +1,57 @@
+name: DM28 alternative official catalogs
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm28-catalogs.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect documented official alternative endpoints
+        run: |
+          python - <<'PY'
+          import urllib.request,concurrent.futures,hashlib,io,csv,json,pathlib,xml.etree.ElementTree as E
+          d=pathlib.Path('custody/dm28')
+          sources={
+          'renfe_stations':'https://data.renfe.com/dataset/ed3d44e5-1d04-41d6-9aa5-396442bf3e07/resource/783e0626-6fa8-4ac7-a880-fa53144654ff/download/listado-estaciones-completo-act.csv',
+          'geobcn_wfs':'https://geobcn.nexusgeografics.com/GeoBcn/serveis/territori/wfs?service=WFS&request=GetCapabilities',
+          'eurostat_passengers':'https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ttr00017?lang=EN&airp_pr=ES_LEBL&time=2025-01&time=2025-02&time=2025-03&time=2025-04&time=2025-05&time=2025-06&time=2025-07&time=2025-08&time=2025-09&time=2025-10&time=2025-11&time=2025-12'}
+          def one(item):
+              k,u=item
+              try:
+                  with urllib.request.urlopen(u,timeout=25) as f:
+                      b=f.read(8000001); m={'url':u,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':f.headers.get('Content-Type'),'last_modified':f.headers.get('Last-Modified')}
+                  assert len(b)<=8000000
+                  if k=='renfe_stations':
+                      for enc in ('utf-8-sig','cp1252'):
+                          try:s=b.decode(enc);break
+                          except UnicodeDecodeError:pass
+                      dia=csv.Sniffer().sniff(s[:4096],delimiters=';,\t')
+                      rows=list(csv.reader(io.StringIO(s),dia)); codes={str(i) for i in range(73004,73011)}|{'73100'}
+                      m['header']=rows[0];m['matches']=[r for r in rows[1:] if any(v.strip() in codes for v in r)];m['row_count']=len(rows)-1;m['encoding']=enc
+                      assert len(m['matches'])>0
+                  elif k=='geobcn_wfs':
+                      tree=E.fromstring(b);m['root']=tree.tag
+                      assert 'Capabilities' in tree.tag
+                      m['feature_types']=[{c.tag.split('}')[-1]:c.text for c in node if c.tag.split('}')[-1] in ('Name','Title','DefaultCRS','DefaultSRS')} for node in tree.iter() if node.tag.split('}')[-1]=='FeatureType']
+                  else:
+                      j=json.loads(b);assert 'value' in j and 'dimension' in j
+                      m['dataset']=j
+                  m['status']='INSPECTED'
+                  (d/(k+'.original')).write_bytes(b)
+                  return k,m
+              except Exception as e:return k,{'url':u,'status':'FAILED','error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:r=dict(ex.map(one,sources.items()))
+          (d/'alternate_catalogs.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Persist evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm28/
+          git commit -m 'DM28 inspect alternate official station, WFS and Eurostat endpoints'
+          git push origin HEAD:main
