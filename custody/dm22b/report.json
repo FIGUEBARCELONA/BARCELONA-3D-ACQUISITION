@@ -1,0 +1,486 @@
+{
+  "ATM_full": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source_url": "https://files.mobilitydatabase.org/mdb-2826/mdb-2826-202611170044/mdb-2826-202611170044.zip",
+      "archive_bytes": 94301107,
+      "archive_sha256": "9d281a9c52c404f7921041751092c2994fca5a33e9f98fc5a1c8af632cd9ac72",
+      "archive_crc_verified": true,
+      "original_archive_not_persisted": true,
+      "target_extract": {
+        "path": "custody/dm22b/atm_full_target_rows.json.gz",
+        "bytes": 1485,
+        "sha256": "17e43f5004f2bab1967f6ff916730d5213eb196656224b443e8bc7867655a4c6"
+      },
+      "target_rows": [
+        {
+          "trip_id": "ABR_02949bb2-f529-40b3-8431-07ebc5951014",
+          "simplified_operator": "Hispano Igualadina",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "ABR_2",
+          "simplified_operator": "Hispano Igualadina",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "ABR_3",
+          "simplified_operator": "Hispano Igualadina",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_211.29.1.1.0",
+          "simplified_operator": "Avanza",
+          "simplified_active": false,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": false,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_211.29.1.2.0",
+          "simplified_operator": "Avanza",
+          "simplified_active": false,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": false,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_213.32.1.1.0",
+          "simplified_operator": "Avanza",
+          "simplified_active": false,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": false,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_217.28.2.1.0",
+          "simplified_operator": "DIREXIS TUSGSAL",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_217.28.2.1.1",
+          "simplified_operator": "DIREXIS TUSGSAL",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_217.28.2.1.2",
+          "simplified_operator": "DIREXIS TUSGSAL",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_217.29.2.1.0",
+          "simplified_operator": "DIREXIS TUSGSAL",
+          "simplified_active": false,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": false,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_217.29.2.1.1",
+          "simplified_operator": "DIREXIS TUSGSAL",
+          "simplified_active": false,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": false,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_217.29.2.1.2",
+          "simplified_operator": "DIREXIS TUSGSAL",
+          "simplified_active": false,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": false,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_232.31.1.1.0",
+          "simplified_operator": "DIREXIS TUSGSAL",
+          "simplified_active": false,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": false,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "AMB_232.33.1.1.0",
+          "simplified_operator": "DIREXIS TUSGSAL",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "GEN_1660191",
+          "simplified_operator": "Barcelona Bus, SL",
+          "simplified_active": true,
+          "simplified_stop_rows": 1,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 1,
+          "full_timed_rows": 1
+        },
+        {
+          "trip_id": "REG_B_1504012026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1504112026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1504212026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1504312026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1504412026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1504512026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1504612026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1504712026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1505012026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1505012026-12-07",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": false,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": false,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1505112026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1505212026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1505312026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1505412026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1505512026-11-08",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": true,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "REG_B_1505512026-12-07",
+          "simplified_operator": "RENFE OPERADORA",
+          "simplified_active": false,
+          "simplified_stop_rows": 0,
+          "full_trip_present": true,
+          "full_active_on_date": false,
+          "full_stop_rows": 0,
+          "full_timed_rows": 0
+        },
+        {
+          "trip_id": "SAB_365000100001",
+          "simplified_operator": "SARBUS",
+          "simplified_active": true,
+          "simplified_stop_rows": 1,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 1,
+          "full_timed_rows": 1
+        },
+        {
+          "trip_id": "SAB_365000100003",
+          "simplified_operator": "SARBUS",
+          "simplified_active": true,
+          "simplified_stop_rows": 1,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 1,
+          "full_timed_rows": 1
+        },
+        {
+          "trip_id": "SAB_711000100002",
+          "simplified_operator": "SARBUS",
+          "simplified_active": true,
+          "simplified_stop_rows": 1,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 1,
+          "full_timed_rows": 1
+        },
+        {
+          "trip_id": "TCC_157000010001",
+          "simplified_operator": "TCC",
+          "simplified_active": true,
+          "simplified_stop_rows": 1,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 1,
+          "full_timed_rows": 1
+        },
+        {
+          "trip_id": "TCC_157000010002",
+          "simplified_operator": "TCC",
+          "simplified_active": true,
+          "simplified_stop_rows": 1,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 1,
+          "full_timed_rows": 1
+        },
+        {
+          "trip_id": "TCC_157000020009",
+          "simplified_operator": "TCC",
+          "simplified_active": true,
+          "simplified_stop_rows": 1,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 1,
+          "full_timed_rows": 1
+        },
+        {
+          "trip_id": "TCC_157000020010",
+          "simplified_operator": "TCC",
+          "simplified_active": true,
+          "simplified_stop_rows": 1,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 1,
+          "full_timed_rows": 1
+        },
+        {
+          "trip_id": "TCC_157000020011",
+          "simplified_operator": "TCC",
+          "simplified_active": true,
+          "simplified_stop_rows": 1,
+          "full_trip_present": true,
+          "full_active_on_date": true,
+          "full_stop_rows": 1,
+          "full_timed_rows": 1
+        }
+      ],
+      "exact_id_matches": 39,
+      "recovered_two_or_more_active_target_ids": 0,
+      "full_snapshot_not_replacement": true,
+      "imputed_times": 0
+    }
+  },
+  "population_UI": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "url": "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/yzlntdm2fs",
+      "status": "INSPECTED_NOT_VALIDATED",
+      "data_candidates": [
+        {
+          "path": "custody/dm22b/population_candidate_0.json.gz",
+          "bytes": 165420,
+          "sha256": "92e8ffddef5443d9c7726a8ba615872ebcdc2ddcda517aec58fb29831de19917",
+          "url": "https://portaldades.ajuntament.barcelona.cat/services/backend/rest/statistic?id=yzlntdm2fs&language=ca&mustTrace=true",
+          "raw_sha256": "2a2959d1cbe2ac7616466d9efa11c0e23ea7ba091039739fd922ed218619c048"
+        }
+      ],
+      "responses": [
+        {
+          "url": "https://www.barcelona.cat/brand/banner/ca/portaldades.html",
+          "status": 200,
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://portaldades.ajuntament.barcelona.cat/portal/config/apimanagerconsumercredentials.json",
+          "status": 200,
+          "content_type": "application/json"
+        },
+        {
+          "url": "https://portaldades.ajuntament.barcelona.cat/services/backend/rest/types?language=ca",
+          "status": 200,
+          "content_type": "application/json;charset=UTF-8"
+        },
+        {
+          "url": "https://portaldades.ajuntament.barcelona.cat/services/backend/rest/user/data",
+          "status": 200,
+          "content_type": "application/json;charset=UTF-8"
+        },
+        {
+          "url": "https://portaldades.ajuntament.barcelona.cat/services/backend/rest/item?id=yzlntdm2fs&language=ca&mustTrace=true",
+          "status": 200,
+          "content_type": "application/json;charset=UTF-8"
+        },
+        {
+          "url": "https://www.barcelona.cat/avisos/data.json",
+          "status": 200,
+          "content_type": "application/json"
+        },
+        {
+          "url": "https://portaldades.ajuntament.barcelona.cat/services/backend/rest/statistic?id=yzlntdm2fs&language=ca&mustTrace=true",
+          "status": 200,
+          "content_type": "application/json;charset=UTF-8"
+        },
+        {
+          "url": "https://portaldades.ajuntament.barcelona.cat/services/backend/rest/related?id=yzlntdm2fs&language=ca",
+          "status": 200,
+          "content_type": "application/json;charset=UTF-8"
+        }
+      ],
+      "http": 200,
+      "title": "Població | Barcelona Dades | Ajuntament de Barcelona",
+      "body_excerpt": "Català\nSelecciona un idioma\nCerca en el web\nAltres webs\nBarcelona Dades\nQui som\nAjuda\nInicia sessió\nTornar\nCompartir\nDades de 2026\nPoblació\n\nNombre de persones de Barcelona segons el padró municipal a data 1 de cada mes\n\n06/11/2026\nFont: Ajuntament de Barcelona. Oficina Municipal de Dades (OMD). Padró Municipal d'Habitants\nPoblació\n>\nRecompte\n>\nPersones\nLlicència\nCC BY 4.0\nTaula\nGràfica\nMapa\nUnitat: Persones\n84 files de 84\nTerritori\n\t\n01 Gen. 1997\n\t\n01 Gen. 1998\n\t\n01 Gen. 1999\n\t\n01 Gen. 2000\n\t\n01 Gen. 2001\n\t\n01 Gen. 2002\n\t\n01 Gen. 2003\n\t\n01 Gen. 2004\n\t\n01 Gen. 2005\n\t\n01 Gen. 2006\n\t\n01 Gen. 2007\n\t\n01 Gen. 2008\n\t\n01 Gen. 2009\n\t\n01 Gen. 2010\n\t\n01 Gen. 2011\n\t\n01 Gen. 2012\n\t\n01 Gen. 2013\n\t\n01 Gen. 2014\n\t\n01 Gen. 2015\n\t\n01 Gen. 2016\n\t\n01 Febr. 2016\n\t\n01 Març 2016\n\t\n01 Abr. 2016\n\t\n01 Maig 2016\n\t\n01 Juny 2016\n\t\n01 Jul. 2016\n\t\n01 Ag. 2016\n\t\n01 Set. 2016\n\t\n01 Oct. 2016\n\t\n01 Nov. 2016\n\t\n01 Des. 2016\n\t\n01 Gen. 2017\n\t\n01 Febr. 2017\n\t\n01 Març 2017\n\t\n01 Abr. 2017\n\t\n01 Maig 2017\n\t\n01 Juny 2017\n\t\n01 Jul. 2017\n\t\n01 Ag. 2017\n\t\n01 Set. 2017\n\t\n01 Oct. 2017\n\t\n01 Nov. 2017\n\t\n01 Des. 2017\n\t\n01 Gen. 2018\n\t\n01 Febr. 2018\n\t\n01 Març 2018\n\t\n01 Abr. 2018\n\t\n01 Maig 2018\n\t\n01 Juny 2018\n\t\n01 Jul. 2018\n\t\n01 Ag. 2018\n\t\n01 Set. 2018\n\t\n01 Oct. 2018\n\t\n01 Nov. 2018\n\t\n01 Des. 2018\n\t\n01 Gen. 2019\n\t\n01 Febr. 2019\n\t\n01 Març 2019\n\t\n01 Abr. 2019\n\t\n01 Maig 2019\n\t\n01 Juny 2019\n\t\n01 Jul. 2019\n\t\n01 Ag. 2019\n\t\n01 Set. 2019\n\t\n01 Oct. 2019\n\t\n01 Nov. 2019\n\t\n01 Des. 2019\n\t\n01 Gen. 2020\n\t\n01 Febr. 2020\n\t\n01 Març 2020\n\t\n01 Abr. 2020\n\t\n01 Maig 2020\n\t\n01 Juny 2020\n\t\n01 Jul. 2020\n\t\n01 Ag. 2020\n\t\n01 Set. 2020\n\t\n01 Oct. 2020\n\t\n01 Nov. 2020\n\t\n01 Des. 2020\n\t\n01 Gen. 2021\n\t\n01 Febr. 2021\n\t\n01 Març 2021\n\t\n01 Abr. 2021\n\t\n01 Maig 2021\n\t\n01 Juny 2021\n\t\n01 Jul. 2021\n\t\n01 Ag. 2021\n\t\n01 Set. 2021\n\t\n01 Oct. 2021\n\t\n01 Nov. 2021\n\t\n01 Des. 2021\n\t\n01 Gen. 2022\n\t\n01 Febr. 2022\n\t\n01 Març 2022\n\t\n01 Abr. 2022\n\t\n01 Maig 2022\n\t\n01 Juny 2022\n\t\n01 Jul. 2022\n\t\n01 Ag. 2022\n\t\n01 Set. 2022\n\t\n01 Oct. 2022\n\t\n01 Nov. 2022\n\t\n01 Des. 2022\n\t\n01 Gen. 2023\n\t\n01 Febr. 2023\n\t\n01 Març 2023\n\t\n01 Abr. 2023\n\t\n01 Maig 2023\n\t\n01 Juny 2023\n\t\n01 Jul. 2023\n\t\n01 Ag. 2023\n\t\n01 Set. 2023\n\t\n01 Oct. 2023\n\t\n01 Nov. 2023\n\t\n01 Des. 2023\n\t\n01 Gen. 2024\n\t\n01 Febr. 2024\n\t\n01 Març 2024\n\t\n01 Abr. 2024\n\t\n01 Maig 2024\n\t\n01 Juny 2024\n\t\n01 Jul. 2024\n\t\n01 Ag. 2024\n\t\n01 Set. 2024\n\t\n01 Oct. 2024\n\t\n01 Nov. 2024\n\t\n01 Des. 2024\n\t\n01 Gen. 2025\n\t\n01 Febr. 2025\n\t\n01 Març 2025\n\t\n01 Abr. 2025\n\t\n01 Maig 2025\n\t\n01 Juny 2025\n\t\n01 Jul. 2025\n\t\n01 Ag. 2025\n\t\n01 Set. 2025\n\t\n01 Oct. 2025\n\t\n01 Nov. 2025\n\t\n01 Des. 2025\n\t\n01 Gen. 2026\n\t\n01 Febr. 2026\n\t\n01 Març 2026\n\t\n01 Abr. 2026\n\t\n01 Maig 2026\n\t\n01 Juny 2026\n\t\n01 Jul. 2026\nTerritori\n\t\n01 Gen. 1997\n\t\n01 Gen. 1998\n\t\n01 Gen. 1999\n\t\n01 Gen. 2000\n\t\n01 Gen. 2001\n\t\n01 Gen. 2002\n\t\n01 Gen. 2003\n\t\n01 Gen. 2004\n\t\n01 Gen. 2005\n\t\n01 Gen. 2006\n\t\n01 Gen. 2007\n\t\n01 Gen. 2008\n\t\n01 Gen. 2009\n\t\n01 Gen. 2010\n\t\n01 Gen. 2011\n\t\n01 Gen. 2012\n\t\n01 Gen. 2013\n\t\n01 Gen. 2014\n\t\n01 Gen. 2015\n\t\n01 Gen. 2016\n\t\n01 Febr. 2016\n\t\n01 Març 2016\n\t\n01 Abr. 2016\n\t\n01 Maig 2016\n\t\n01 Juny 2016\n\t\n01 Jul. 2016\n\t\n01 Ag. 2016\n\t\n01 Set. 2016\n\t\n01 Oct. 2016\n\t\n01 Nov. 2016\n\t\n01 Des. 2016\n\t\n01 Gen. 2017\n\t\n01 Febr. 2017\n\t\n01 Març 2017\n\t\n01 Abr. 2017\n\t\n01 Maig 2017\n\t\n01 Juny 2017\n\t\n01 Jul. 2017\n\t\n01 Ag. 2017\n\t\n01 Set. 2017\n\t\n01 Oct. 2017\n\t\n01 Nov. 2017\n\t\n01 Des. 2017\n\t\n01 Gen. 2018\n\t\n01 Febr. 2018\n\t\n01 Març 2018\n\t\n01 Abr. 2018\n\t\n01 Maig 2018\n\t\n01 Juny 2018\n\t\n01 Jul. 2018\n\t\n01 Ag. 2018\n\t\n01 Set. 2018\n\t\n01 Oct. 2018\n\t\n01 Nov. 2018\n\t\n01 Des. 2018\n\t\n01 Gen. 2019\n\t\n01 Febr. 2019\n\t\n01 Març 2019\n\t\n01 Abr. 2019\n\t\n01 Maig 2019\n\t\n01 Juny 2019\n\t\n01 Jul. 2019\n\t\n01 Ag. 2019\n\t\n01 Set. 2019\n\t\n01 Oct. 2019\n\t\n01 Nov. 2019\n\t\n01 Des. 2019\n\t\n01 Gen. 2020\n\t\n01 Febr. 2020\n\t\n01 Març 2020\n\t\n01 Abr. 2020\n\t\n01 Maig 2020\n\t\n01 Juny 2020\n\t\n01 Jul. 2020\n\t\n01 Ag. 2020\n\t\n01 Set. 2020\n\t\n01 Oct. 2020\n\t\n01 Nov. 2020\n\t\n01 Des. 2020\n\t\n01 Gen. 2021\n\t\n01 Febr. 2021\n\t\n01 Març 2021\n\t\n01 Abr. 2021\n\t\n01 Maig 2021\n\t\n01 Juny 2021\n\t\n01 Jul. 2021\n\t\n01 Ag. 2021\n\t\n01 Set. 2021\n\t\n01 Oct. 2021\n\t\n01 Nov. 2021\n\t\n01 Des. 2021\n\t\n01 Gen. 2022\n\t\n01 Febr. 2022\n\t\n01 Març 2022\n\t\n01 Abr. 2022\n\t\n01 Maig 2022\n\t\n01 Juny 2022\n\t\n01 Jul. 2022\n\t\n01 Ag. 2022\n\t\n01 Set. 2022\n\t\n01 Oct. 2022\n\t\n01 Nov. 2022\n\t\n01 Des. 2022\n\t\n01 Gen. 2023\n\t\n01 Febr. 2023\n\t\n01 Març 2023\n\t\n01 Abr. 2023\n\t\n01 Maig 2023\n\t\n01 Juny 2023\n\t\n01 Jul. 2023\n\t\n01 Ag. 2023\n\t\n01 Set. 2023\n\t\n01 Oct. 2023\n\t\n01 Nov. 2023\n\t\n01 Des. 2023\n\t\n01 Gen. 2024\n\t\n01 Febr. 2024\n\t\n01 Març 2024\n\t\n01 Abr. 2024\n\t\n01 Maig 2024\n\t\n01 Juny 2024\n\t\n01 Jul. 2024\n\t\n01 Ag. 2024\n\t\n01 Set. 2024\n\t\n01 Oct. 2024\n\t\n01 Nov. 2024\n\t\n01 Des. 2024\n\t\n01 Gen. 2025\n\t\n01 Febr. 2025\n\t\n01 Març 2025\n\t\n01 Abr. 2025\n\t\n01 Maig 2025\n\t\n01 Juny 2025\n\t\n01 Jul. 2025\n\t\n01 Ag. 2025\n\t\n01 Set. 2025\n\t\n01 Oct. 2025\n\t\n01 Nov. 2025\n\t\n01 Des. 2025\n\t\n01 Gen. 2026\n\t\n01 Febr. 2026\n\t\n01 Març 2026\n\t\n01 Abr. 2026\n\t\n01 Maig 2026\n\t\n01 Juny 2026\n\t\n01 Jul. 2026\n\nBarcelona\t1.493.663\t1.507.026\t1.503.840\t1.497.436\t1.507.121\t1.555.426\t1.581.813\t1.588.617\t1.599.337\t1.610.057\t1.594.433\t1.615.178\t1.631.853\t1.619.613\t1.614.589\t1.619.830\t1.612.835\t1.602.450\t1.604.700\t1.610.427\t1.613.172\t1.604.242\t1.607.117\t1.611.198\t1.614.474\t1.608.908\t1.606.412\t1.610.215\t1.611.696\t1.618.481\t1.623.988\t1.625.137\t1.625.724\t1.608.602\t1.614.481\t1.618.387\t1.615.102\t1.617.690\t1.612.732\t1.614.232\t1.620.170\t1.624.312\t1.631.420\t1.628.936\t1.631.298\t1.630.905\t1.635.033\t1.639.158\t1.642.423\t1.641.753\t1.644.386\t1.647.152\t1.645.761\t1.653.190\t1.660.518\t1.650.358\t1.656.991\t1.664.853\t1.667.189\t1.667.056\t1.671.657\t1.674.994\t1.664.319\t1.666.916\t1.654.893\t1.665.487\t1.666.132\t1.666.530\t1.673.579\t1.659.334\t1.661.152\t1.658.279\t1.656.545\t1.655.513\t1.651.635\t1.651.886\t1.653.034\t1.656.366\t1.658.723\t1.660.314\t1.660.086\t1.661.691\t1.658.509\t1.648.983\t1.649.699\t1.653.123\t1.635.156\t1.639.089\t1.645.212\t1.646.303\t1.645.734\t1.639.981\t1.646.171\t1.627.474\t1.638.032\t1.645.219\t1.643.015\t1.646.788\t1.643.511\t1.648.736\t1.656.725\t1.663.665\t1.672.309\t1.660.435\t1.670.481\t1.666.203\t1.676.285\t1.683.904\t1.692.163\t1.697.550\t1.701.891\t1.700.895\t1.707.608\t1.706.712\t1.715.062\t1.702.814\t1.707.677\t1.700.006\t1.706.978\t1.713.060\t1.708.936\t1.711.753\t1.714.286\t1.718.149\t1.722.316\t1.733.123\t1.733.476\t1.732.066\t1.726.285\t1.718.620\t1.727.051\t1.733.130\t1.734.267\t1.730.640\t1.729.627\t1.733.394\t1.739.455\t1.733.434\t1.740.682\t1.729.963\t1.731.499\t1.720.347\t1.725.568\t1.730.126\t1.727.298\t1.733.455\nCiutat Vella\t82.270\t84.306\t84.540\t84.524\t89.003\t98.536\t106.627\t109.886\t113.097\t114.358\t111.792\t111.791\t110.016\t104.664\t103.569\t104.357\t103.311\t100.700\t100.169\t100.373\t100.741\t99.157\t99.711\t100.291\t100.837\t99.779\t99.191\t99.853\t100.045\t101.072\t101.922\t102.165\t102.283\t99.397\t100.123\t100.783\t100.010\t100.350\t99.435\t99.639\t100.750\t101.353\t102.283\t102.047\t102.492\t102.426\t103.106\t103.837\t104.421\t104.307\t104.888\t105.356\t105.114\t106.139\t107.232\t105.733\t106.707\t107.860\t108.271\t108.454\t109.186\t109.736\t107.843\t108.443\t106.294\t107.801\t107.976\t108.248\t109.408\t107.092\t107.521\t107.417\t107.394\t107.515\t107.256\t107.587\t107.919\t108.561\t109.246\t109.672\t109.791\t110.091\t109.549\t108.125\t108.351\t108.933\t106.123\t106.782\t107.524\t107.502\t107.094\t106.028\t106.963\t103.144\t104.502\t105.567\t104.710\t105.149\t104.426\t105.163\t106.270\t107.115\t108.274\t106.446\t107.641\t106.689\t107.871\t108.864\t110.109\t110.981\t111.430\t111.268\t112.187\t111.734\t112.838\t111.155\t111.648\t110.381\t111.214\t112.031\t111.262\t111.536\t111.945\t112.602\t113.388\t114.952\t115.071\t115.311\t114.982\t113.856\t115.491\t116.453\t116.587\t116.136\t116.119\t116.721\t117.556\t116.667\t117.544\t115.829\t115.950\t114.294\t115.013\t115.782\t115.333\t116.212\nel Raval\t34.099\t35.145\t35.356\t35.333\t37.584\t41.898\t45.627\t46.257\t47.329\t47.699\t46.061\t47.488\t47.963\t47.356\t47.725\t48.991\t48.771\t47.490\t47.150\t47.196\t47.358\t46.641\t46.925\t47.286\t47.590\t47.074\t46.659\t46.969\t46.957\t47.416\t47.827\t47.901\t47.912\t46.654\t47.039\t47.396\t47.029\t47.137\t46.670\t46.790\t47.152\t47.280\t47.698\t47.514\t47.655\t47.519\t47.724\t48.043\t48.227\t48.150\t48.399\t48.578\t48.311\t48.628\t48.979\t48.210\t48.576\t49.001\t49.103\t49.101\t49.299\t49.550\t48.646\t48.822\t47.730\t48.280\t48.215\t48.180\t48.566\t47.542\t47.723\t47.697\t47.709\t47.805\t47.670\t47.895\t48.002\t48.297\t48.577\t48.688\t48.775\t48.896\t48.576\t47.729\t47.770\t47.974\t46.712\t46.986\t47.244\t47.117\t47.022\t46.520\t46.815\t45.197\t45.609\t45.841\t45.387\t45.549\t45.123\t45.451\t45.799\t46.124\t46.527\t45.671\t46.084\t45.577\t46.011\t46.272\t46.711\t46.796\t46.893\t46.647\t47.024\t46.867\t47.485\t46.934\t47.334\t46.909\t47.354\t47.793\t47.559\t47.760\t48.045\t48.417\t48.923\t49.643\t49.691\t49.917\t49.692\t49.327\t50.232\t50.763\t50.948\t50.797\t50.912\t51.224\t51.601\t51.267\t51.608\t50.863\t50.983\t50.320\t50.677\t51.077\t50.929\t51.347\nel Barri Gòtic\t13.565\t14.127\t14.480\t14.807\t16.301\t19.835\t22.680\t25.089\t27.129\t27.556\t27.663\t25.505\t22.793\t18.520\t17.678\t16.881\t16.276\t15.735\t15.514\t15.729\t15.824\t15.470\t15.595\t15.721\t15.772\t15.606\t15.544\t15.690\t15.774\t15.994\t16.146\t16.240\t16.278\t15.783\t15.895\t15.986\t15.977\t16.116\t16.066\t16.129\t16.440\t16.763\t16.974\t17.035\t17.208\t17.309\t17.518\t17.747\t17.994\t18.002\t18.188\t18.345\t18.497\t18.816\t19.270\t19.180\t19.523\t19.981\t20.249\t20.480\t20.788\t20.941\t20.687\t20.927\t20.682\t21.159\t21.372\t21.715\t22.182\t21.879\t22.016\t22.007\t22.024\t22.056\t22.161\t22.244\t22.339\t22.446\t22.694\t22.850\t22.820\t22.918\t22.820\t22.759\t22.958\t23.159\t22.735\t22.956\t23.170\t23.315\t22.932\t22.748\t23.118\t22.301\t22.940\t23.493\t23.275\t23.503\t23.539\t23.775\t24.149\t24.411\t24.822\t24.460\t24.869\t24.940\t25.432\t25.944\t26.435\t27.060\t27.249\t27.476\t27.723\t27.555\t27.761\t27.222\t27.239\t26.864\t27.025\t27.139\t26.823\t26.917\t27.018\t27.160\t27.285\t27.696\t27.859\t27.878\t27.916\t27.429\t27.726\t27.915\t27.849\t27.744\t27.632\t27.783\t27.882\t27.469\t27.751\t27.312\t27.285\t26.860\t27.022\t27.235\t27.066\t27.313\nla Barceloneta\t14.764\t14.910\t14.937\t14.911\t15.110\t15.507\t15.983\t15.958\t15.796\t15.863\t15.646\t16.154\t16.231\t16.090\t15.749\t15.712\t15.493\t15.107\t15.037\t15.068\t15.109\t14.907\t14.962\t15.006\t15.065\t14.880\t14.792\t14.819\t14.826\t14.949\t15.066\t15.101\t15.125\t14.643\t14.726\t14.839\t14.689\t14.715\t14.562\t14.568\t14.739\t14.806\t14.950\t14.893\t14.911\t14.906\t15.004\t15.070\t15.143\t15.142\t15.175\t15.239\t15.163\t15.313\t15.422\t15.173\t15.254\t15.398\t15.383\t15.374\t15.468\t15.525\t15.198\t15.278\t14.938\t15.096\t15.142\t15.112\t15.292\t14.911\t14.985\t14.945\t14.900\t14.916\t14.842\t14.865\t14.923\t15.041\t15.071\t15.125\t15.070\t15.083\t15.030\t14.762\t14.744\t14.804\t14.365\t14.415\t14.504\t14.476\t14.488\t14.342\t14.443\t13.979\t14.125\t14.217\t14.180\t14.214\t14.102\t14.136\t14.294\t14.415\t14.536\t14.274\t14.415\t14.232\t14.348\t14.427\t14.534\t14.557\t14.609\t14.582\t14.708\t14.650\t14.753\t14.526\t14.589\t14.416\t14.486\t14.530\t14.426\t14.391\t14.438\t14.508\t14.562\t14.762\t14.729\t14.749\t14.602\t14.447\t14.595\t14.713\t14.718\t14.676\t14.672\t14.715\t14.837\t14.764\t14.877\t14.665\t14.700\t14.494\t14.582\t14.640\t14.573\t14.655\nSant Pere, Santa Caterina i la Ribera\t19.842\t20.124\t19.767\t19.473\t20.008\t21.296\t22.337\t22.582\t22.843\t23.240\t22.422\t22.644\t23.029\t22.698\t22.417\t22.773\t22.771\t22.368\t22.468\t22.380\t22.450\t22.139\t22.229\t22.278\t22.410\t22.219\t22.196\t22.375\t22.488\t22.713\t22.883\t22.923\t22.968\t22.317\t22.463\t22.562\t22.315\t22.382\t22.137\t22.152\t22.419\t22.504\t22.661\t22.605\t22.718\t22.692\t22.860\t22.977\t23.057\t23.013\t23.126\t23.194\t23.143\t23.382\t23.561\t23.170\t23.354\t23.480\t23.536\t23.499\t23.631\t23.720\t23.312\t23.416\t22.944\t23.266\t23.247\t23.241\t23.368\t22.760\t22.797\t22.768\t22.761\t22.738\t22.583\t22.583\t22.655\t22.777\t22.904\t23.009\t23.126\t23.194\t23.123\t22.875\t22.879\t22.996\t22.311\t22.425\t22.606\t22.594\t22.652\t22.418\t22.587\t21.667\t21.828\t22.016\t21.868\t21.883\t21.662\t21.801\t22.028\t22.165\t22.389\t22.041\t22.273\t21.940\t22.080\t22.221\t22.429\t22.568\t22.679\t22.563\t22.732\t22.662\t22.839\t22.473\t22.486\t22.192\t22.349\t22.569\t22.454\t22.468\t22.444\t22.517\t22.618\t22.851\t22.792\t22.767\t22.772\t22.653\t22.938\t23.062\t23.072\t22.919\t22.903\t22.999\t23.236\t23.167\t23.308\t22.989\t22.982\t22.620\t22.732\t22.830\t22.765\t22.897\nEixample\t246.061\t247.870\t247.740\t246.884\t248.625\t258.075\t261.908\t262.099\t263.691\t266.182\t262.198\t265.634\t268.429\t265.714\t264.296\t265.593\t264.967\t263.564\t263.557\t264.568\t265.023\t263.360\t263.978\t264.633\t265.185\t264.233\t263.629\t264.169\t264.556\t265.936\t267.088\t267.270\t267.202\t263.649\t264.650\t265.265\t264.572\t264.863\t263.801\t264.034\t265.283\t266.256\t267.376\t266.839\t267.061",
+      "tables": [
+        {
+          "headers": "Territori\n\t\n01 Gen. 1997\n\t\n01 Gen. 1998\n\t\n01 Gen. 1999\n\t\n01 Gen. 2000\n\t\n01 Gen. 2001\n\t\n01 Gen. 2002\n\t\n01 Gen. 2003\n\t\n01 Gen. 2004\n\t\n01 Gen. 2005\n\t\n01 Gen. 2006\n\t\n01 Gen. 2007\n\t\n01 Gen. 2008\n\t\n01 Gen. 2009\n\t\n01 Gen. 2010\n\t\n01 Gen. 2011\n\t\n01 Gen. 2012\n\t\n01 Gen. 2013\n\t\n01 Gen. 2014\n\t\n01 Gen. 2015\n\t\n01 Gen. 2016\n\t\n01 Febr. 2016\n\t\n01 Març 2016\n\t\n01 Abr. 2016\n\t\n01 Maig 2016\n\t\n01 Juny 2016\n\t\n01 Jul. 2016\n\t\n01 Ag. 2016\n\t\n01 Set. 2016\n\t\n01 Oct. 2016\n\t\n01 Nov. 2016\n\t\n01 Des. 2016\n\t\n01 Gen. 2017\n\t\n01 Febr. 2017\n\t\n01 Març 2017\n\t\n01 Abr. 2017\n\t\n01 Maig 2017\n\t\n01 Juny 2017\n\t\n01 Jul. 2017\n\t\n01 Ag. 2017\n\t\n01 Set. 2017\n\t\n01 Oct. 2017\n\t\n01 Nov. 2017\n\t\n01 Des. 2017\n\t\n01 Gen. 2018\n\t\n01 Febr. 2018\n\t\n01 Març 2018\n\t\n01 Abr. 2018\n\t\n01 Maig 2018\n\t\n01 Juny 2018\n\t\n01 Jul. 2018\n\t\n01 Ag. 2018\n\t\n01 Set. 2018\n\t\n01 Oct. 2018\n\t\n01 Nov. 2018\n\t\n01 Des. 2018\n\t\n01 Gen. 2019\n\t\n01 Febr. 2019\n\t\n01 Març 2019\n\t\n01 Abr. 2019\n\t\n01 Maig 2019\n\t\n01 Juny 2019\n\t\n01 Jul. 2019\n\t\n01 Ag. 2019\n\t\n01 Set. 2019\n\t\n01 Oct. 2019\n\t\n01 Nov. 2019\n",
+          "rows": 0
+        },
+        {
+          "headers": "Territori\n\t\n01 Gen. 1997\n\t\n01 Gen. 1998\n\t\n01 Gen. 1999\n\t\n01 Gen. 2000\n\t\n01 Gen. 2001\n\t\n01 Gen. 2002\n\t\n01 Gen. 2003\n\t\n01 Gen. 2004\n\t\n01 Gen. 2005\n\t\n01 Gen. 2006\n\t\n01 Gen. 2007\n\t\n01 Gen. 2008\n\t\n01 Gen. 2009\n\t\n01 Gen. 2010\n\t\n01 Gen. 2011\n\t\n01 Gen. 2012\n\t\n01 Gen. 2013\n\t\n01 Gen. 2014\n\t\n01 Gen. 2015\n\t\n01 Gen. 2016\n\t\n01 Febr. 2016\n\t\n01 Març 2016\n\t\n01 Abr. 2016\n\t\n01 Maig 2016\n\t\n01 Juny 2016\n\t\n01 Jul. 2016\n\t\n01 Ag. 2016\n\t\n01 Set. 2016\n\t\n01 Oct. 2016\n\t\n01 Nov. 2016\n\t\n01 Des. 2016\n\t\n01 Gen. 2017\n\t\n01 Febr. 2017\n\t\n01 Març 2017\n\t\n01 Abr. 2017\n\t\n01 Maig 2017\n\t\n01 Juny 2017\n\t\n01 Jul. 2017\n\t\n01 Ag. 2017\n\t\n01 Set. 2017\n\t\n01 Oct. 2017\n\t\n01 Nov. 2017\n\t\n01 Des. 2017\n\t\n01 Gen. 2018\n\t\n01 Febr. 2018\n\t\n01 Març 2018\n\t\n01 Abr. 2018\n\t\n01 Maig 2018\n\t\n01 Juny 2018\n\t\n01 Jul. 2018\n\t\n01 Ag. 2018\n\t\n01 Set. 2018\n\t\n01 Oct. 2018\n\t\n01 Nov. 2018\n\t\n01 Des. 2018\n\t\n01 Gen. 2019\n\t\n01 Febr. 2019\n\t\n01 Març 2019\n\t\n01 Abr. 2019\n\t\n01 Maig 2019\n\t\n01 Juny 2019\n\t\n01 Jul. 2019\n\t\n01 Ag. 2019\n\t\n01 Set. 2019\n\t\n01 Oct. 2019\n\t\n01 Nov. 2019\n",
+          "rows": 84
+        }
+      ]
+    }
+  },
+  "production": "NO_GO",
+  "canonical_EAM_closed": 0
+}
