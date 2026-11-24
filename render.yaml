@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: barcelona-3d-acquisition-dm16
+    runtime: python
+    region: frankfurt
+    plan: free
+    autoDeployTrigger: 'off'
+    buildCommand: python -m py_compile render_probe_dm16.py
+    startCommand: python render_probe_dm16.py
+    healthCheckPath: /healthz
