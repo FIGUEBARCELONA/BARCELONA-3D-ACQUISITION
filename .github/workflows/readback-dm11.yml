@@ -1,0 +1,30 @@
+name: DM-11 immutable custody readback and MDT viewer discovery
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/readback-dm11.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Verify original data from Git checkout
+        run: python3 qa_geoid_dm11.py
+      - name: Store new QA report only
+        if: always()
+        run: |
+          if [ ! -f custody/dm11/qa-geoid-readback.json ]; then exit 1; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- custody/dm11/qa-geoid-readback.json
+          if ! git diff --cached --quiet; then
+            git commit -m "DM-11: persistent raw data readback and geoid diagnostics"
+            git push origin HEAD:main
+          fi
