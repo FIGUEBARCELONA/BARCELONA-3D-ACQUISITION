@@ -1,0 +1,58 @@
+name: DM31 QR destinations and CartoBCN Atom
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm31-qr-atom.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve official links without inferring coordinates
+        run: |
+          python - <<'PY'
+          import pathlib,json,urllib.request,concurrent.futures,hashlib,xml.etree.ElementTree as E
+          d=pathlib.Path('custody/dm31')
+          qr=json.loads((d/'pdf_inspection.json').read_text())['parades']['qr'][:3]
+          codes=[['73100','73010'],['73009','73008','73007'],['73006','73005','73004']]
+          pairs=[]
+          for page,cc in zip(qr,codes):
+              assert len(page['hits'])==len(cc)
+              pairs += [(c,h['url']) for c,h in zip(cc,page['hits'])]
+          def resolve(p):
+              c,u=p
+              try:
+                  req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'})
+                  with urllib.request.urlopen(req,timeout=12) as f:
+                      return {'code':c,'qr_url':u,'resolved_url':f.geturl(),'http_status':f.status}
+              except Exception as e:return {'code':c,'qr_url':u,'error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:results=list(ex.map(resolve,pairs))
+          a={'url':'https://w20.bcn.cat/cartobcn/atom.ashx'}
+          try:
+              with urllib.request.urlopen(a['url'],timeout=15) as f:
+                  b=f.read(8000001);assert len(b)<=8000000
+                  a['bytes']=len(b);a['sha256']=hashlib.sha256(b).hexdigest()
+              root=E.fromstring(b)
+              a['root']=root.tag
+              assert root.tag.endswith('feed')
+              (d/'cartobcn_atom.original.xml').write_bytes(b)
+              entries=[]
+              for el in root.iter():
+                  if el.tag.split('}')[-1]=='entry':
+                      t=' '.join(el.itertext())
+                      if any(s in t.lower() for s in ['administrativ','administrati','district','barri']):
+                          entries.append({'text':t[:1000],'links':[x.attrib for x in el.iter() if x.tag.split('}')[-1]=='link']})
+              a['relevant_entries']=entries
+              a['status']='INSPECTED'
+          except Exception as e:a['status']='FAILED';a['error']=repr(e)
+          (d/'qr_atom.json').write_text(json.dumps({'qr_destinations':results,'atom':a},ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm31/
+          git commit -m 'DM31 record QR destinations and official Atom response'
+          git push origin HEAD:main
