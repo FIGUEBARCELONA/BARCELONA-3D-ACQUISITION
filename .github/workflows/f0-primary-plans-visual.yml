@@ -1,0 +1,64 @@
+name: F0 primary plans visual audit
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/f0-primary-plans-visual.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/f0deps" pymupdf
+      - name: Render exact primary documents
+        run: |
+          PYTHONPATH="$RUNNER_TEMP/f0deps" python - <<'PY'
+          import pathlib,urllib.request,hashlib,json,base64,concurrent.futures
+          import fitz
+          d=pathlib.Path('custody/f0-primary-plans-visual');d.mkdir(exist_ok=True,parents=True)
+          specs={'atm':('https://www.atm.cat/documents/d/portal-atm/anunci_dogc_tarifes_15_de_gener_2026_atm_i_propies-1-pdf',40000000),'deup':('https://www.portdebarcelona.cat/sites/default/files/content/file/2021/10/24/1/delimitacion-de-los-espacios-y-usos-portuarios-deup_1.pdf',40000000)}
+          def process(k, spec):
+              u,limit=spec
+              out={'url':u}
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0 public document audit'}),timeout=45) as f:
+                      b=f.read(limit+1);assert len(b)<=limit
+                      out.update({'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'http':f.status})
+                  with fitz.open(stream=b,filetype='pdf') as doc:
+                      out['pages']=len(doc);out['selected']=[]
+                      if k=='atm':
+                          assert out['sha256']=='d114aa555708fe3611b3a0fcb012c78c4174202b3003b1f94fea40f81bdd1459'
+                          indices=[90,91]
+                      else:
+                          indices=[]
+                          for i,p in enumerate(doc):
+                              s=' '.join(p.get_text().split()).upper()
+                              if 'COORDENADAS' in s and any(x in s for x in ['PARCELA TOTAL','PARCELA APB','LÍMITES FERROVIARIOS','LIMITES FERROVIARIOS']):
+                                  indices.append(i)
+                          out['text_candidates']=indices
+                      for i in indices:
+                          page=doc[i]
+                          # Cap rendered page to 1600 px on long side.
+                          scale=1600/max(page.rect.width,page.rect.height)
+                          pix=page.get_pixmap(matrix=fitz.Matrix(scale,scale),alpha=False)
+                          png=pix.tobytes('png')
+                          fn=f'{k}_p{i+1}.png.b64'
+                          (d/fn).write_text(base64.b64encode(png).decode('ascii'))
+                          out['selected'].append({'page':i+1,'path':fn,'png_sha256':hashlib.sha256(png).hexdigest(),'png_bytes':len(png),'text':page.get_text()[:12000] if k=='deup' else None})
+                  out['status']='RENDERED'
+              except Exception as e:out['status']='FAILED';out['error']=repr(e)
+              return out
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:
+              fs={k:ex.submit(process,k,v) for k,v in specs.items()}
+              report={k:v.result() for k,v in fs.items()}
+          # Keep audit report; page images are limited to public documentary excerpts for verification.
+          (d/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-primary-plans-visual/
+          git commit -m 'F0 primary document render evidence'
+          git push origin HEAD:main
