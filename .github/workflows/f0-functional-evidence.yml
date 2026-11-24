@@ -1,0 +1,72 @@
+name: F0 alternate functional source audit
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/f0-functional-evidence.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/f0deps" pymupdf
+      - name: Inspect exact alternate distributions
+        run: |
+          PYTHONPATH="$RUNNER_TEMP/f0deps" python - <<'PY'
+          import pathlib,urllib.request,json,hashlib,re,collections,concurrent.futures,zipfile,io
+          import fitz
+          p=pathlib.Path('custody/f0-functional-evidence');p.mkdir(parents=True,exist_ok=True)
+          def get(url,limit):
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; public data audit)'})
+              with urllib.request.urlopen(req,timeout=30) as f:
+                  b=f.read(limit+1);assert len(b)<=limit
+                  return b,{'url':url,'resolved_url':f.url,'status':f.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'last_modified':f.headers.get('Last-Modified')}
+          def atm():
+              u='https://www.atm.cat/documents/d/portal-atm/anunci_dogc_tarifes_15_de_gener_2026_atm_i_propies-1-pdf'
+              try:
+                  b,m=get(u,30000000)
+                  with fitz.open(stream=b,filetype='pdf') as d:
+                      m['pages']=len(d);m['annexes']={}
+                      assert len(d)==94
+                      for name,rg in [('annex1',range(77,90)),('annex2',range(90,92))]:
+                          rows=[];raw=[];tables=[]
+                          for i in rg:
+                              page=d[i];raw.append({'page':i+1,'text':page.get_text(sort=True)})
+                              for t in page.find_tables().tables:
+                                  for cells in t.extract():
+                                      if len(cells)==2 and cells[0] and cells[1] and re.fullmatch(r'[1-7][A-Z]?',cells[1].strip()):
+                                          rows.append({'municipi_literal':cells[0].strip(),'zona':cells[1].strip(),'page':i+1})
+                          m['annexes'][name]={'count':len(rows),'rows':rows,'raw_pages':raw}
+                  m['qualification']='Annex tariff membership, not municipal legal boundary geometry; no normalization of footnotes or locality aliases.'
+                  return m
+              except Exception as e:return {'url':u,'error':repr(e)}
+          def municipal():
+              u='https://analisi.transparenciacatalunya.cat/api/views/5ryy-c5zw'
+              try:
+                  b,m=get(u,5000000);j=json.loads(b)
+                  m['dataset_name']=j.get('name');m['columns']=[{'name':c.get('name'),'fieldName':c.get('fieldName'),'dataTypeName':c.get('dataTypeName'),'description':c.get('description')} for c in j.get('columns',[])]
+                  return m
+              except Exception as e:return {'url':u,'error':repr(e)}
+          def port():
+              u='https://opendata.portdebarcelona.cat/dataset/cf83860e-004f-4542-ade1-156ff2c7319c/resource/5b562611-694b-4e5f-a368-0dd1440c2eec/download/cartoagregada_25831.zip'
+              try:
+                  b,m=get(u,90000000)
+                  with zipfile.ZipFile(io.BytesIO(b)) as z:
+                      m['crc']=z.testzip();m['members']=z.namelist();m['shapefiles']=[n for n in z.namelist() if n.lower().endswith('.shp')]
+                  m['qualification']='Catalogued CC BY-SA 4.0; binary examined in runner only, original not published by this audit.'
+                  return m
+              except Exception as e:return {'url':u,'error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+              futures={k:pool.submit(fn) for k,fn in [('atm',atm),('municipal_metadata',municipal),('port',port)]}
+              report={k:f.result() for k,f in futures.items()}
+          (p/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Preserve evidence report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-functional-evidence/report.json
+          git commit -m 'F0 audit alternate ATM PDF municipal metadata and port distribution'
+          git push origin HEAD:main
