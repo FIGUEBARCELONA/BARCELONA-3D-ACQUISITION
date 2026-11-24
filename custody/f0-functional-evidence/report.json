@@ -1,0 +1,185 @@
+{
+  "atm": {
+    "url": "https://www.atm.cat/documents/d/portal-atm/anunci_dogc_tarifes_15_de_gener_2026_atm_i_propies-1-pdf",
+    "resolved_url": "https://www.atm.cat/documents/d/portal-atm/anunci_dogc_tarifes_15_de_gener_2026_atm_i_propies-1-pdf",
+    "status": 200,
+    "bytes": 21754349,
+    "sha256": "d114aa555708fe3611b3a0fcb012c78c4174202b3003b1f94fea40f81bdd1459",
+    "last_modified": "Wed, 14 Jan 2026 16:18:49 GMT",
+    "pages": 94,
+    "annexes": {
+      "annex1": {
+        "count": 0,
+        "rows": [],
+        "raw_pages": [
+          {
+            "page": 78,
+            "text": ""
+          },
+          {
+            "page": 79,
+            "text": ""
+          },
+          {
+            "page": 80,
+            "text": ""
+          },
+          {
+            "page": 81,
+            "text": ""
+          },
+          {
+            "page": 82,
+            "text": ""
+          },
+          {
+            "page": 83,
+            "text": ""
+          },
+          {
+            "page": 84,
+            "text": ""
+          },
+          {
+            "page": 85,
+            "text": ""
+          },
+          {
+            "page": 86,
+            "text": ""
+          },
+          {
+            "page": 87,
+            "text": ""
+          },
+          {
+            "page": 88,
+            "text": ""
+          },
+          {
+            "page": 89,
+            "text": ""
+          },
+          {
+            "page": 90,
+            "text": ""
+          }
+        ]
+      },
+      "annex2": {
+        "count": 0,
+        "rows": [],
+        "raw_pages": [
+          {
+            "page": 91,
+            "text": ""
+          },
+          {
+            "page": 92,
+            "text": ""
+          }
+        ]
+      }
+    },
+    "qualification": "Annex tariff membership, not municipal legal boundary geometry; no normalization of footnotes or locality aliases."
+  },
+  "municipal_metadata": {
+    "url": "https://analisi.transparenciacatalunya.cat/api/views/5ryy-c5zw",
+    "resolved_url": "https://analisi.transparenciacatalunya.cat/api/views/5ryy-c5zw",
+    "status": 200,
+    "bytes": 21821,
+    "sha256": "cb7dded1e8e72c3dce85c991f12ef2f5c76e82b92c58ec3b16c7d80d9f6a317e",
+    "last_modified": null,
+    "dataset_name": "Límits administratius municipals de Catalunya",
+    "columns": [
+      {
+        "name": "the_geom",
+        "fieldName": "the_geom",
+        "dataTypeName": "multipolygon",
+        "description": "Columna de georeferenciació"
+      },
+      {
+        "name": "CODIMUNI",
+        "fieldName": "codimuni",
+        "dataTypeName": "text",
+        "description": "Codi del municipi"
+      },
+      {
+        "name": "NOMMUNI",
+        "fieldName": "nommuni",
+        "dataTypeName": "text",
+        "description": "Nom del municipi"
+      },
+      {
+        "name": "CAPMUNI",
+        "fieldName": "capmuni",
+        "dataTypeName": "text",
+        "description": "Capital del municipi"
+      },
+      {
+        "name": "AREAM5000",
+        "fieldName": "aream5000",
+        "dataTypeName": "number",
+        "description": "Àrea del Municipi"
+      },
+      {
+        "name": "CODICOMAR",
+        "fieldName": "codicomar",
+        "dataTypeName": "text",
+        "description": "Codi de la comarca"
+      },
+      {
+        "name": "NOMCOMAR",
+        "fieldName": "nomcomar",
+        "dataTypeName": "text",
+        "description": "Nom de la comarca"
+      },
+      {
+        "name": "CAPCOMAR",
+        "fieldName": "capcomar",
+        "dataTypeName": "text",
+        "description": "Capital de la comarca"
+      },
+      {
+        "name": "CODIVEGUE",
+        "fieldName": "codivegue",
+        "dataTypeName": "text",
+        "description": "Codi de la vegueria"
+      },
+      {
+        "name": "NOMVEGUE",
+        "fieldName": "nomvegue",
+        "dataTypeName": "text",
+        "description": "Nom de la vegueria"
+      },
+      {
+        "name": "CAPVEGUE",
+        "fieldName": "capvegue",
+        "dataTypeName": "text",
+        "description": "Capital de la vegueria"
+      },
+      {
+        "name": "CODIPROV",
+        "fieldName": "codiprov",
+        "dataTypeName": "text",
+        "description": "Codi de la província"
+      },
+      {
+        "name": "NOMPROV",
+        "fieldName": "nomprov",
+        "dataTypeName": "text",
+        "description": "Nom de la província"
+      },
+      {
+        "name": "CAPPROV",
+        "fieldName": "capprov",
+        "dataTypeName": "text",
+        "description": "Capital de la província"
+      }
+    ]
+  },
+  "port": {
+    "url": "https://opendata.portdebarcelona.cat/dataset/cf83860e-004f-4542-ade1-156ff2c7319c/resource/5b562611-694b-4e5f-a368-0dd1440c2eec/download/cartoagregada_25831.zip",
+    "error": "<HTTPError 500: 'Internal Server Error'>"
+  }
+}
