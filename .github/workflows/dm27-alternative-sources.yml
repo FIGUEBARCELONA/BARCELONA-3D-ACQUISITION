@@ -1,0 +1,72 @@
+name: DM27 alternative primary data acquisition
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm27-alternative-sources.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect primary distributions
+        run: |
+          python - <<'PY'
+          import urllib.request,hashlib,io,zipfile,csv,collections,json,pathlib,re
+          out=pathlib.Path('custody/dm27');out.mkdir(exist_ok=True)
+          R={'production':'NO_GO','imputations':0,'sources':{}}
+          def download(url):
+              with urllib.request.urlopen(url,timeout=30) as f:
+                  b=f.read(30000001);assert len(b)<=30000000
+                  return b,{'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'last_modified':f.headers.get('Last-Modified'),'content_type':f.headers.get('Content-Type')}
+          def rows(z,n):
+              with z.open(n) as f:
+                  for r in csv.DictReader(io.TextIOWrapper(f,encoding='utf-8-sig',newline='')):
+                      yield {k.strip():v.strip() for k,v in r.items() if k is not None and v is not None}
+          u='https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip'
+          try:
+              b,m=download(u)
+              with zipfile.ZipFile(io.BytesIO(b)) as z:
+                  assert z.testzip() is None
+                  m['members']=z.namelist();m['crc_ok']=True
+                  ts=list(rows(z,'trips.txt'));m['trip_rows']=len(ts);m['trip_fields']=list(ts[0])
+                  targets=[str(n) for n in list(range(15040,15048))+list(range(15050,15056))]
+                  fields=['trip_id','trip_short_name','trip_headsign','block_id']
+                  cand={n:[r for r in ts if any(re.search(r'(?<![0-9])'+n+r'(?![0-9])',r.get(k,'')) for k in fields)] for n in targets}
+                  ids={r['trip_id'] for v in cand.values() for r in v}
+                  counts=collections.Counter(); firstlast={}
+                  for r in rows(z,'stop_times.txt'):
+                      t=r['trip_id']
+                      if t in ids:
+                          counts[t]+=1
+                          if t not in firstlast:firstlast[t]=[r,r]
+                          else:firstlast[t][1]=r
+                  m['candidates']={n:[{'trip':r,'stop_rows':counts[r['trip_id']],'first_last_in_file_order':firstlast.get(r['trip_id'])} for r in v] for n,v in cand.items()}
+                  m['candidate_count']=sum(map(len,cand.values()));m['numbers_with_candidates']=sum(bool(v) for v in cand.values())
+                  m['status']='INSPECTED';m['identity_recoveries']=0
+              R['sources']['renfe_md']=m
+          except Exception as e:R['sources']['renfe_md']={'url':u,'status':'FAILED','error':repr(e)}
+          u='https://opendata.portdebarcelona.cat/ca/dataset/5b8c4bdd-94c0-4273-83b0-bac1e2ee4334/resource/abbc81ff-802b-449b-9e5f-cce7a1fe57d3/download/trafic_vaixells_2025.csv'
+          try:
+              b,m=download(u)
+              for enc in ['utf-8-sig','cp1252']:
+                  try:s=b.decode(enc);break
+                  except UnicodeDecodeError:pass
+              assert not s.lstrip().startswith('<')
+              dia=csv.Sniffer().sniff(s[:8192],delimiters=',;\t')
+              rs=list(csv.DictReader(io.StringIO(s),dialect=dia));m['header']=list(rs[0]);m['rows']=len(rs);m['sample']=rs[:3]
+              m['status']='INSPECTED';m['encoding']=enc;m['delimiter']=dia.delimiter
+              R['sources']['port_csv']=m
+              (out/'port_vaixells_original.csv').write_bytes(b)
+          except Exception as e:R['sources']['port_csv']={'url':u,'status':'FAILED','error':repr(e)}
+          (out/'report.json').write_text(json.dumps(R,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Store new evidence only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm27/
+          git commit -m 'DM27 primary alternative source evidence'
+          git push origin HEAD:main
