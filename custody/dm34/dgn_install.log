@@ -1,0 +1,6 @@
+Collecting ezdgn==0.3.0
+  Downloading ezdgn-0.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Downloading ezdgn-0.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (604 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 604.1/604.1 kB 23.6 MB/s eta 0:00:00
+Installing collected packages: ezdgn
+Successfully installed ezdgn-0.3.0

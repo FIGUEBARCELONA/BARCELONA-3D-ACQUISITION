@@ -1,0 +1,289 @@
+{
+  "original_sha256": "ad38d369514a1c9e1dc29f7654173a7d600b8db72553af0e67ae193259f58ea6",
+  "original_bytes": 5804544,
+  "canonical_approved": false,
+  "geometry_repaired": false,
+  "version": "0.3.0",
+  "status": "NATIVE_READ_SUCCEEDED",
+  "levels": [
+    {
+      "id": 1,
+      "number": 1,
+      "name": "ADM_01_LN"
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "name": "ADM_02_LN"
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "name": "ADM_03_LN"
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "name": "ADM_04_LN"
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "name": "ADM_05_LN"
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "name": "ADM_06_LN"
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "name": "ADM_01_RT"
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "name": "ADM_02_RT"
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "name": "ADM_03_RT"
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "name": "ADM_04_RT"
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "name": "ADM_05_RT"
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "name": "ADM_06_RT"
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "name": "ADM_01_aux_RT"
+    },
+    {
+      "id": 14,
+      "number": 14,
+      "name": "ADM_03_PL"
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "name": "ADM_01_PL"
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "name": "ADM_02_PL"
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "name": "ADM_03_PL_S_AI"
+    },
+    {
+      "id": 18,
+      "number": 18,
+      "name": "ADM_04_PL"
+    },
+    {
+      "id": 19,
+      "number": 19,
+      "name": "ADM_05_PL"
+    },
+    {
+      "id": 20,
+      "number": 20,
+      "name": "ADM_09_PL"
+    },
+    {
+      "id": 21,
+      "number": 21,
+      "name": "ADM_08_PL"
+    },
+    {
+      "id": 22,
+      "number": 22,
+      "name": "ADM_06_PL"
+    },
+    {
+      "id": 64,
+      "number": 0,
+      "name": "Por defecto"
+    },
+    {
+      "id": 23,
+      "number": 23,
+      "name": "ADM_08_RT"
+    },
+    {
+      "id": 24,
+      "number": 24,
+      "name": "ADM_09_RT"
+    }
+  ],
+  "models": [
+    {
+      "name": "Default",
+      "dimension": 2,
+      "master_unit": "M",
+      "elements": 300100,
+      "entities": 6002,
+      "counts": [
+        {
+          "level": "1",
+          "type": "LINE_STRING",
+          "count": 76
+        },
+        {
+          "level": "10",
+          "type": "TEXT",
+          "count": 235
+        },
+        {
+          "level": "11",
+          "type": "TEXT",
+          "count": 1070
+        },
+        {
+          "level": "12",
+          "type": "TEXT",
+          "count": 3
+        },
+        {
+          "level": "13",
+          "type": "TEXT",
+          "count": 26
+        },
+        {
+          "level": "14",
+          "type": "SHAPE",
+          "count": 75
+        },
+        {
+          "level": "15",
+          "type": "SHAPE",
+          "count": 3
+        },
+        {
+          "level": "16",
+          "type": "SHAPE",
+          "count": 12
+        },
+        {
+          "level": "18",
+          "type": "SHAPE",
+          "count": 235
+        },
+        {
+          "level": "19",
+          "type": "SHAPE",
+          "count": 1070
+        },
+        {
+          "level": "2",
+          "type": "LINE_STRING",
+          "count": 268
+        },
+        {
+          "level": "20",
+          "type": "SHAPE",
+          "count": 76
+        },
+        {
+          "level": "21",
+          "type": "SHAPE",
+          "count": 42
+        },
+        {
+          "level": "22",
+          "type": "SHAPE",
+          "count": 3
+        },
+        {
+          "level": "23",
+          "type": "TEXT",
+          "count": 42
+        },
+        {
+          "level": "24",
+          "type": "TEXT",
+          "count": 76
+        },
+        {
+          "level": "3",
+          "type": "LINE_STRING",
+          "count": 489
+        },
+        {
+          "level": "4",
+          "type": "LINE_STRING",
+          "count": 690
+        },
+        {
+          "level": "5",
+          "type": "LINE_STRING",
+          "count": 1419
+        },
+        {
+          "level": "6",
+          "type": "LINE_STRING",
+          "count": 2
+        },
+        {
+          "level": "7",
+          "type": "TEXT",
+          "count": 3
+        },
+        {
+          "level": "8",
+          "type": "TEXT",
+          "count": 12
+        },
+        {
+          "level": "9",
+          "type": "TEXT",
+          "count": 75
+        }
+      ]
+    }
+  ],
+  "target_levels": [
+    {
+      "id": 14,
+      "number": 14,
+      "name": "ADM_03_PL"
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "name": "ADM_01_PL"
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "name": "ADM_02_PL"
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "name": "ADM_03_PL_S_AI"
+    },
+    {
+      "id": 22,
+      "number": 22,
+      "name": "ADM_06_PL"
+    }
+  ],
+  "geometry_equivalence": "NOT_TESTED"
+}
