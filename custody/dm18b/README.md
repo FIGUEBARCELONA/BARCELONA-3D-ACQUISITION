@@ -1,0 +1,1 @@
+DM-18b. Fonts originals públiques: Meteocat XEMA nzvn-apee/4fb2-n3yi; Idescat, Cens anual de població 2025. Atribució: Generalitat de Catalunya, Servei Meteorològic de Catalunya, FGC, Ajuntament de Barcelona. URL, hash i abast a report.json. Respostes originals gzip sense pèrdua. Períodes diagnòstics, no data de tall aprovada. No imputació, NO-GO.

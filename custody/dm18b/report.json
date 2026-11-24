@@ -1,0 +1,1499 @@
+{
+  "subdaily": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "metadata": {
+        "url": "https://analisi.transparenciacatalunya.cat/api/views/nzvn-apee.json",
+        "bytes": 18427,
+        "sha256": "67e3cd159a92501d7483893a57366fd46f185fb058f491f67dc5a36557d1fcca",
+        "content_type": "application/json; charset=utf-8",
+        "path": "custody/dm18b/xema_subdaily_metadata.json.gz",
+        "stored_sha256": "b0b9d7fc6adaef6ec943165cbbb8fdf496b06b22e8c03c3422def9745a009e37",
+        "stored_bytes": 3820
+      },
+      "fields": {
+        "id": "Columna d'identificació",
+        "codi_estacio": "Codi identificador de l’Estació Meteorològica Automàtica",
+        "codi_variable": "Codi identificador de la variable meteorològica",
+        "data_lectura": "Data i Hora Inicial de la lectura (els registres es troben etiquetats per davant). L’hora es facilita en Temps Universal (T.U.)",
+        "data_extrem": "Data i Hora en què s’ha registrat el valor màxim o mínim. L’hora es facilita en Temps Universal (T.U.). Aquest camp només apareix en variables extremes",
+        "valor_lectura": "Valor de la variable meteorològica",
+        "codi_estat": "Atribut que informa del resultat del procés de validació. Els possibles atributs són: espai en blanc (la dada no ha iniciat el procés de validació), T (el procés de validació s’ha iniciat, però no ha finalitzat), V (dada vàlida). Els valors no vàlids no es mostren",
+        "codi_base": "Base temporal en què s’ha mesurat la variable meteorològica. La base temporal pot ser HO (horària) o SH (semi-horària)"
+      },
+      "value_field": "valor_lectura",
+      "time_base_field": null,
+      "quality_field": "codi_estat",
+      "lots": [
+        {
+          "station": "D5",
+          "period": [
+            "2025-01-01",
+            "2025-02-01"
+          ],
+          "rows": 23712,
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27D5%27+AND+data_lectura%3E%3D%272025-01-01T00%3A00%3A00%27+AND+data_lectura%3C%272025-02-01T00%3A00%3A00%27&%24limit=100000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 3950053,
+            "sha256": "1f581664b1b0659638e97ec17373518b7c4a89381ada7b1970b6df3995e6620c",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm18b/subdaily_D5_2025-01.json.gz",
+            "stored_sha256": "0467204c5aeaa6a697e6d6faaf5f298bd3b7e109981eb42e73f6c57553db72ce",
+            "stored_bytes": 208948
+          },
+          "status": "CHECKS_RECORDED",
+          "flags": {
+            "ABSENT": 22464,
+            "T": 480,
+            "V": 768
+          },
+          "issues": {
+            "duplicate_keys": 0
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "2",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "3",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "30",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "31",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "32",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "33",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "34",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "35",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "36",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "40",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "42",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "44",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "50",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "51",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "72",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            }
+          ]
+        },
+        {
+          "station": "X2",
+          "period": [
+            "2021-01-01",
+            "2021-02-01"
+          ],
+          "rows": 8928,
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X2%27+AND+data_lectura%3E%3D%272021-01-01T00%3A00%3A00%27+AND+data_lectura%3C%272021-02-01T00%3A00%3A00%27&%24limit=100000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 1673899,
+            "sha256": "b4d133e296e82fe920f1ddcee11fd640afed9b6a18fea4e2abeb71a2b689865c",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm18b/subdaily_X2_2021-01.json.gz",
+            "stored_sha256": "0ed75ff574b0d0d49018a7ef185a1ed5e018c4e5ca59032b604ca1b8f06b48b2",
+            "stored_bytes": 85608
+          },
+          "status": "CHECKS_RECORDED",
+          "flags": {
+            "V": 8064,
+            "ABSENT": 847,
+            "T": 17
+          },
+          "issues": {
+            "duplicate_keys": 0
+          },
+          "observed_support": [
+            {
+              "variable": "3",
+              "base": "ABSENT",
+              "first": "2021-01-01T00:00:00.000",
+              "last": "2021-01-31T23:30:00.000",
+              "rows": 1488,
+              "distinct_times": 1488
+            },
+            {
+              "variable": "32",
+              "base": "ABSENT",
+              "first": "2021-01-01T00:00:00.000",
+              "last": "2021-01-31T23:30:00.000",
+              "rows": 1488,
+              "distinct_times": 1488
+            },
+            {
+              "variable": "33",
+              "base": "ABSENT",
+              "first": "2021-01-01T00:00:00.000",
+              "last": "2021-01-31T23:30:00.000",
+              "rows": 1488,
+              "distinct_times": 1488
+            },
+            {
+              "variable": "40",
+              "base": "ABSENT",
+              "first": "2021-01-01T00:00:00.000",
+              "last": "2021-01-31T23:30:00.000",
+              "rows": 1488,
+              "distinct_times": 1488
+            },
+            {
+              "variable": "42",
+              "base": "ABSENT",
+              "first": "2021-01-01T00:00:00.000",
+              "last": "2021-01-31T23:30:00.000",
+              "rows": 1488,
+              "distinct_times": 1488
+            },
+            {
+              "variable": "44",
+              "base": "ABSENT",
+              "first": "2021-01-01T00:00:00.000",
+              "last": "2021-01-31T23:30:00.000",
+              "rows": 1488,
+              "distinct_times": 1488
+            }
+          ]
+        },
+        {
+          "station": "X4",
+          "status": "FAILED",
+          "error": "IncompleteRead(0 bytes read)",
+          "rows": 0
+        },
+        {
+          "station": "X8",
+          "period": [
+            "2025-01-01",
+            "2025-02-01"
+          ],
+          "rows": 23712,
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27X8%27+AND+data_lectura%3E%3D%272025-01-01T00%3A00%3A00%27+AND+data_lectura%3C%272025-02-01T00%3A00%3A00%27&%24limit=100000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 3955190,
+            "sha256": "182d6a4c350912e036ea8e61b88d5132c719d3c26d35046c0cb65898cbfe8336",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm18b/subdaily_X8_2025-01.json.gz",
+            "stored_sha256": "8b14c56d9493b5da02c9e0000a97e5e10380a1577f8a283aada9922385db83f7",
+            "stored_bytes": 209152
+          },
+          "status": "CHECKS_RECORDED",
+          "flags": {
+            "ABSENT": 22464,
+            "T": 480,
+            "V": 768
+          },
+          "issues": {
+            "duplicate_keys": 0
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "2",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "3",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "30",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "31",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "32",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "33",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "34",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "35",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "36",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "40",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "42",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "44",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "50",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "51",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "72",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            }
+          ]
+        },
+        {
+          "station": "XL",
+          "period": [
+            "2025-01-01",
+            "2025-02-01"
+          ],
+          "rows": 19266,
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27XL%27+AND+data_lectura%3E%3D%272025-01-01T00%3A00%3A00%27+AND+data_lectura%3C%272025-02-01T00%3A00%3A00%27&%24limit=100000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 3173989,
+            "sha256": "31f4874780e5ddf2b85545caf6b8f4818de180c32d32418982837ba73e1849a8",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm18b/subdaily_XL_2025-01.json.gz",
+            "stored_sha256": "9af07222ee42e9ee7bf40478cc26bfb168cc92bb2287c8d2b4ed10fc4154628b",
+            "stored_bytes": 168100
+          },
+          "status": "CHECKS_RECORDED",
+          "flags": {
+            "ABSENT": 18241,
+            "T": 390,
+            "V": 635
+          },
+          "issues": {
+            "duplicate_keys": 0
+          },
+          "observed_support": [
+            {
+              "variable": "3",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "30",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "31",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "32",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "33",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "35",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "36",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "40",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "42",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "44",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "50",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "51",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "72",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            }
+          ]
+        },
+        {
+          "station": "Y7",
+          "period": [
+            "2025-01-01",
+            "2025-02-01"
+          ],
+          "rows": 5928,
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27Y7%27+AND+data_lectura%3E%3D%272025-01-01T00%3A00%3A00%27+AND+data_lectura%3C%272025-02-01T00%3A00%3A00%27&%24limit=100000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 929430,
+            "sha256": "c1ab721b33cfa2ad9be396e581af6f3b068ea7e1aafbf512c357f06a4fc9b9f2",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm18b/subdaily_Y7_2025-01.json.gz",
+            "stored_sha256": "21c159ff213c9c64c24de41dcc8f1966f4359b8af3a5efe3a3ac033b70e3dfae",
+            "stored_bytes": 53145
+          },
+          "status": "CHECKS_RECORDED",
+          "flags": {
+            "ABSENT": 5616,
+            "T": 120,
+            "V": 192
+          },
+          "issues": {
+            "duplicate_keys": 0
+          },
+          "observed_support": [
+            {
+              "variable": "30",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "31",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "50",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "51",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            }
+          ]
+        },
+        {
+          "station": "Y9",
+          "period": [
+            "2021-01-01",
+            "2021-02-01"
+          ],
+          "rows": 0,
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27Y9%27+AND+data_lectura%3E%3D%272021-01-01T00%3A00%3A00%27+AND+data_lectura%3C%272021-02-01T00%3A00%3A00%27&%24limit=100000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 3,
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm18b/subdaily_Y9_2021-01.json.gz",
+            "stored_sha256": "2ca4529576310b626c1bd48352d283b521d029d54f195d8416536872d826e4c6",
+            "stored_bytes": 23
+          },
+          "status": "CHECKS_RECORDED",
+          "flags": {},
+          "issues": {
+            "duplicate_keys": 0
+          },
+          "observed_support": []
+        },
+        {
+          "station": "YQ",
+          "period": [
+            "2025-01-01",
+            "2025-02-01"
+          ],
+          "rows": 23712,
+          "source": {
+            "url": "https://analisi.transparenciacatalunya.cat/resource/nzvn-apee.json?%24where=codi_estacio%3D%27YQ%27+AND+data_lectura%3E%3D%272025-01-01T00%3A00%3A00%27+AND+data_lectura%3C%272025-02-01T00%3A00%3A00%27&%24limit=100000&%24order=data_lectura%2Ccodi_variable%2C%3Aid",
+            "bytes": 3955220,
+            "sha256": "67af5856ec6d4f1632d355e821a0d8164711b007b120ec3df0197f4625e0c958",
+            "content_type": "application/json;charset=utf-8",
+            "path": "custody/dm18b/subdaily_YQ_2025-01.json.gz",
+            "stored_sha256": "1bec697473730776792ad2ef5e328793cd4a49a87ad1a468d3b77eecefe4b4e5",
+            "stored_bytes": 208757
+          },
+          "status": "CHECKS_RECORDED",
+          "flags": {
+            "ABSENT": 22453,
+            "T": 480,
+            "V": 779
+          },
+          "issues": {
+            "duplicate_keys": 0
+          },
+          "observed_support": [
+            {
+              "variable": "1",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "2",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "3",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "30",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "31",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "32",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "33",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "34",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "35",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "36",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "40",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "42",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "44",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "50",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "51",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            },
+            {
+              "variable": "72",
+              "base": "ABSENT",
+              "first": "2025-01-01T00:00:00.000",
+              "last": "2025-01-31T23:30:00.000",
+              "rows": 1482,
+              "distinct_times": 1482
+            }
+          ]
+        }
+      ],
+      "rows": 105258,
+      "sensor_lifecycle_verified": false
+    }
+  },
+  "population": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "source": {
+        "url": "https://www.idescat.cat/serveis/consultes/ca/censph_539_mun_2025_pc.csv",
+        "bytes": 3446348,
+        "sha256": "a76c8724fe1556972c6cc577875b53a9a14d34507b4d605ca78e30915c8fbba5",
+        "content_type": "text/csv; charset=utf-8",
+        "path": "custody/dm18b/idescat_census_2025_age5.csv.gz",
+        "stored_sha256": "c4e05fc5a9e9cbcd9a350f96f8890dd24cf265a9f0238a2a3955168f02cb8b9f",
+        "stored_bytes": 289787
+      },
+      "rows": 62569,
+      "delimiter": ";",
+      "header_excerpt": [
+        [
+          "any",
+          "municipi",
+          "edat",
+          "sexe",
+          "concepte",
+          "estat",
+          "valor"
+        ],
+        [
+          "2025",
+          "Abella de la Conca",
+          "de 0 a 4 anys",
+          "homes",
+          "població",
+          "",
+          "1"
+        ],
+        [
+          "2025",
+          "Abella de la Conca",
+          "de 0 a 4 anys",
+          "dones",
+          "població",
+          "",
+          "2"
+        ],
+        [
+          "2025",
+          "Abella de la Conca",
+          "de 0 a 4 anys",
+          "total",
+          "població",
+          "",
+          "3"
+        ],
+        [
+          "2025",
+          "Abella de la Conca",
+          "de 5 a 9 anys",
+          "homes",
+          "població",
+          "",
+          "1"
+        ],
+        [
+          "2025",
+          "Abella de la Conca",
+          "de 5 a 9 anys",
+          "dones",
+          "població",
+          "",
+          "3"
+        ],
+        [
+          "2025",
+          "Abella de la Conca",
+          "de 5 a 9 anys",
+          "total",
+          "població",
+          "",
+          "4"
+        ],
+        [
+          "2025",
+          "Abella de la Conca",
+          "de 10 a 14 anys",
+          "homes",
+          "població",
+          "",
+          "7"
+        ],
+        [
+          "2025",
+          "Abella de la Conca",
+          "de 10 a 14 anys",
+          "dones",
+          "població",
+          "",
+          "2"
+        ]
+      ],
+      "municipality_candidate_rows": [
+        [
+          "2025",
+          "Barcelona",
+          "de 0 a 4 anys",
+          "homes",
+          "població",
+          "",
+          "28695"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 0 a 4 anys",
+          "dones",
+          "població",
+          "",
+          "27153"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 0 a 4 anys",
+          "total",
+          "població",
+          "",
+          "55848"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 5 a 9 anys",
+          "homes",
+          "població",
+          "",
+          "32934"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 5 a 9 anys",
+          "dones",
+          "població",
+          "",
+          "31240"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 5 a 9 anys",
+          "total",
+          "població",
+          "",
+          "64174"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 10 a 14 anys",
+          "homes",
+          "població",
+          "",
+          "36420"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 10 a 14 anys",
+          "dones",
+          "població",
+          "",
+          "34455"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 10 a 14 anys",
+          "total",
+          "població",
+          "",
+          "70875"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 15 a 19 anys",
+          "homes",
+          "població",
+          "",
+          "39976"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 15 a 19 anys",
+          "dones",
+          "població",
+          "",
+          "37580"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 15 a 19 anys",
+          "total",
+          "població",
+          "",
+          "77556"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 20 a 24 anys",
+          "homes",
+          "població",
+          "",
+          "48631"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 20 a 24 anys",
+          "dones",
+          "població",
+          "",
+          "46751"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 20 a 24 anys",
+          "total",
+          "població",
+          "",
+          "95382"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 25 a 29 anys",
+          "homes",
+          "població",
+          "",
+          "64052"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 25 a 29 anys",
+          "dones",
+          "població",
+          "",
+          "65350"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 25 a 29 anys",
+          "total",
+          "població",
+          "",
+          "129402"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 30 a 34 anys",
+          "homes",
+          "població",
+          "",
+          "73422"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 30 a 34 anys",
+          "dones",
+          "població",
+          "",
+          "71860"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 30 a 34 anys",
+          "total",
+          "població",
+          "",
+          "145282"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 35 a 39 anys",
+          "homes",
+          "població",
+          "",
+          "66852"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 35 a 39 anys",
+          "dones",
+          "població",
+          "",
+          "64160"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 35 a 39 anys",
+          "total",
+          "població",
+          "",
+          "131012"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 40 a 44 anys",
+          "homes",
+          "població",
+          "",
+          "63044"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 40 a 44 anys",
+          "dones",
+          "població",
+          "",
+          "61526"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 40 a 44 anys",
+          "total",
+          "població",
+          "",
+          "124570"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 45 a 49 anys",
+          "homes",
+          "població",
+          "",
+          "64136"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 45 a 49 anys",
+          "dones",
+          "població",
+          "",
+          "64025"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 45 a 49 anys",
+          "total",
+          "població",
+          "",
+          "128161"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 50 a 54 anys",
+          "homes",
+          "població",
+          "",
+          "59012"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 50 a 54 anys",
+          "dones",
+          "població",
+          "",
+          "61585"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 50 a 54 anys",
+          "total",
+          "població",
+          "",
+          "120597"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 55 a 59 anys",
+          "homes",
+          "població",
+          "",
+          "51954"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 55 a 59 anys",
+          "dones",
+          "població",
+          "",
+          "57498"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 55 a 59 anys",
+          "total",
+          "població",
+          "",
+          "109452"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 60 a 64 anys",
+          "homes",
+          "població",
+          "",
+          "46422"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 60 a 64 anys",
+          "dones",
+          "població",
+          "",
+          "54941"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 60 a 64 anys",
+          "total",
+          "població",
+          "",
+          "101363"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 65 a 69 anys",
+          "homes",
+          "població",
+          "",
+          "39639"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 65 a 69 anys",
+          "dones",
+          "població",
+          "",
+          "49967"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 65 a 69 anys",
+          "total",
+          "població",
+          "",
+          "89606"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 70 a 74 anys",
+          "homes",
+          "població",
+          "",
+          "32305"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 70 a 74 anys",
+          "dones",
+          "població",
+          "",
+          "43599"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 70 a 74 anys",
+          "total",
+          "població",
+          "",
+          "75904"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 75 a 79 anys",
+          "homes",
+          "població",
+          "",
+          "29888"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 75 a 79 anys",
+          "dones",
+          "població",
+          "",
+          "42662"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 75 a 79 anys",
+          "total",
+          "població",
+          "",
+          "72550"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 80 a 84 anys",
+          "homes",
+          "població",
+          "",
+          "22012"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 80 a 84 anys",
+          "dones",
+          "població",
+          "",
+          "33916"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 80 a 84 anys",
+          "total",
+          "població",
+          "",
+          "55928"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 85 a 89 anys",
+          "homes",
+          "població",
+          "",
+          "12479"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 85 a 89 anys",
+          "dones",
+          "població",
+          "",
+          "23173"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 85 a 89 anys",
+          "total",
+          "població",
+          "",
+          "35652"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 90 a 94 anys",
+          "homes",
+          "població",
+          "",
+          "6556"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 90 a 94 anys",
+          "dones",
+          "població",
+          "",
+          "15855"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 90 a 94 anys",
+          "total",
+          "població",
+          "",
+          "22411"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 95 a 99 anys",
+          "homes",
+          "població",
+          "",
+          "1408"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 95 a 99 anys",
+          "dones",
+          "població",
+          "",
+          "5154"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "de 95 a 99 anys",
+          "total",
+          "població",
+          "",
+          "6562"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "100 anys o més",
+          "homes",
+          "població",
+          "",
+          "129"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "100 anys o més",
+          "dones",
+          "població",
+          "",
+          "831"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "100 anys o més",
+          "total",
+          "població",
+          "",
+          "960"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "total",
+          "homes",
+          "població",
+          "",
+          "819966"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "total",
+          "dones",
+          "població",
+          "",
+          "893281"
+        ],
+        [
+          "2025",
+          "Barcelona",
+          "total",
+          "total",
+          "població",
+          "",
+          "1713247"
+        ]
+      ],
+      "candidate_count": 66,
+      "aggregation_validated": false,
+      "source_kind": "Cens anual de població 2025, not municipal padró"
+    }
+  },
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO",
+  "email_submitted": false
+}
