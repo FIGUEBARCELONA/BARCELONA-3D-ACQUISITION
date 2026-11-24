@@ -1,0 +1,424 @@
+{
+  "qr_destinations": [
+    {
+      "code": "73100",
+      "qr_url": "https://maps.app.goo.gl/9CV6G1QcyvTt2G4Y6",
+      "resolved_url": "https://www.google.com/maps/place/La+Plana-Picamoixons/@41.3061061,1.1923464,816m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12a6aa8de011c0e1:0x6c84a32e77daf74a!8m2!3d41.3061021!4d1.1949213!16s%2Fg%2F120ldtgx?coh=277535&entry=tts&g_ep=EgoyMDI2MDEyMS4wIPu8ASoKLDEwMDc5MjA3M0gBUAM%3D&skid=4ff80998-b7bc-41f9-b503-961981bbb320",
+      "http_status": 200
+    },
+    {
+      "code": "73010",
+      "qr_url": "https://maps.app.goo.gl/aXvHU5QpHqb1v5Pv5",
+      "resolved_url": "https://www.google.com/maps/place/La+Riba/@41.318323,1.1803602,243m/data=!3m1!1e3!4m6!3m5!1s0x12a6aa57185c6d6b:0x191b43e80b4abfa7!8m2!3d41.3184926!4d1.1813126!16s%2Fg%2F121p62mw?coh=277535&entry=tts&g_ep=EgoyMDI2MDEyMS4wIPu8ASoKLDEwMDc5MjA3M0gBUAM%3D&skid=c825e680-99bb-4ca2-920b-6ac15ebbd3d1",
+      "http_status": 200
+    },
+    {
+      "code": "73009",
+      "qr_url": "https://maps.app.goo.gl/xCtyebXnKJa55EM38",
+      "resolved_url": "https://www.google.com/maps/place/Vilaverd/@41.3376536,1.1765736,144m/data=!3m1!1e3!4m6!3m5!1s0x12a6aa3453b1b4fb:0xa20163d13cf73469!8m2!3d41.3376328!4d1.1765186!16s%2Fg%2F125_dzrq5?coh=277535&entry=tts&g_ep=EgoyMDI2MDEyMS4wIPu8ASoKLDEwMDc5MjA3M0gBUAM%3D&skid=5de4479b-12f3-436b-a379-eb6637a33fba",
+      "http_status": 200
+    },
+    {
+      "code": "73008",
+      "qr_url": "https://maps.app.goo.gl/j5FfZAoRGDLLe2vMA",
+      "resolved_url": "https://www.google.com/maps/place/Parking+de+l'Estaci%C3%B3/@41.3762507,1.1653499,204m/data=!3m1!1e3!4m6!3m5!1s0x12a6a90008628c23:0x500f01cfb7ffb8be!8m2!3d41.3759718!4d1.1660706!16s%2Fg%2F11w9hmwljf?coh=277535&entry=tts&g_ep=EgoyMDI2MDEyMS4wIPu8ASoKLDEwMDc5MjA3M0gBUAM%3D&skid=c4b50d8a-0eb8-444e-bf5a-6484e0f2e3d9",
+      "http_status": 200
+    },
+    {
+      "code": "73007",
+      "qr_url": "https://maps.app.goo.gl/y8uAkKsSyng6oZfn9",
+      "resolved_url": "https://www.google.com/maps/dir//Oficina+de+Turisme+de+l'Espluga+de+Francol%C3%AD,+Pla%C3%A7a+del+Mil%C2%B7lenari,+1,+43440+L'Espluga+de+Francol%C3%AD,+Tarragona/@41.3965404,1.1049703,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12a6af7aaaaaaaab:0xbce01d4b28dfbe50!2m2!1d1.1075585!2d41.3965376!18m1!1e1?entry=tts&g_ep=EgoyMDI2MDkyMC4wIPu8ASoASAFQAw%3D%3D&skid=350c9c0a-5a34-4971-bcb5-3476b7d2e672",
+      "http_status": 200
+    },
+    {
+      "code": "73006",
+      "qr_url": "https://maps.app.goo.gl/ETvWEDXLQ31b7stj7",
+      "resolved_url": "https://www.google.com/maps/place/Raval+de+Lleida+(al+davant-marquesina)/@41.4009217,1.0470147,19.25z/data=!4m6!3m5!1s0x12a6b03180f43169:0xea1e498e86921364!8m2!3d41.401555!4d1.046804!16s%2Fg%2F11tg8wtfwj!18m1!1e1?entry=tts&g_ep=EgoyMDI2MDkyMC4wIPu8ASoASAFQAw%3D%3D&skid=dfc55c2e-a6cc-4dbf-abb7-d9d57d3babfd",
+      "http_status": 200
+    },
+    {
+      "code": "73005",
+      "qr_url": "https://maps.app.goo.gl/NCSETNY5waCWhqy86",
+      "resolved_url": "https://www.google.com/maps/search/41.428753,+0.973934?entry=tts&g_ep=EgoyMDI2MDkxNi4wIPu8ASoASAFQAw%3D%3D&skid=4c77197c-d2c0-4533-a511-0fd256308da7",
+      "http_status": 200
+    },
+    {
+      "code": "73004",
+      "qr_url": "https://maps.app.goo.gl/8PQ7qgkjw8DYGAz59",
+      "resolved_url": "https://www.google.com/maps/place/Estaci%C3%B3+de+tren+La+Floresta/@41.5044905,0.9233387,18.25z/data=!4m7!3m6!1s0x12a6b900746a5f4d:0x34783880d859af50!8m2!3d41.5042017!4d0.9244076!15sChhMYSBGbG9yZXN0YSBsbGVpZGEgcmVuZmUiA4gBAZIBFnRyYW5zcG9ydGF0aW9uX3NlcnZpY2XgAQA!16s%2Fg%2F11xmtq7ycn?entry=tts&g_ep=EgoyMDI2MDgwNS4xIPu8ASoASAFQAw%3D%3D&skid=44bad72c-d6bd-4dbd-80f8-e90c888b1717",
+      "http_status": 200
+    }
+  ],
+  "atom": {
+    "url": "https://w20.bcn.cat/cartobcn/atom.ashx",
+    "bytes": 154380,
+    "sha256": "41124ffa114dbea0a49c3f9e0fec175fefd2a02a4ea451431f3c73a9946406cc",
+    "root": "{http://www.w3.org/2005/Atom}feed",
+    "relevant_entries": [
+      {
+        "text": "\n Cartografia Topogràfica Municipal - CAD - Àmbit Barri - Distribució de productes en fitxers per Barri Municipal \n 93 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=93 \n 2026-10-29T22:01:44Z \n 2015-07-23T00:00:00Z \n 2026-10-29T22:01:44Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Cartografia Topogràfica Municipal Tridimensional, amb coordenades UTM (ETRS89), que recobreix el terme municipal de Barcelona. En la pestanya \"RECURSOS\" trobareu la informació associada auxiliar i d'estils..<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=93\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=93\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/C",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=93",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Col·lecció de plànols murals per districte en format JPG a escala 1:5000 - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal \n 130 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=130 \n 2026-11-17T11:05:33Z \n 2021-04-21T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapa Topogràfic Municipal a escala 1: 5.000 (121.1 x 84 cm.) Col·lecció de plànols murals per districte amb topònims. .<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=130\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=130\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=6010142873",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=130",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Col·lecció de plànols per districte en format JPG en mida A3 - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal \n 132 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=132 \n 2026-11-17T11:05:33Z \n 2023-04-17T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapa Topogràfic Municipal en mida A3 (29,7 x 42 cm.) Col·lecció de plànols per districte..<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=132\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=132\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=61053439517340\" target=\"_blank\" >Metadades del prod",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=132",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n ETRS89. ADRECES de carrer en format SHP/CSV/KMZ - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 76 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=76 \n 2019-05-07T00:00:00Z \n 2015-01-01T00:00:00Z \n 2019-05-07T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Informació per Adreça: Tipus Numeració, Codi carrer AJB, Codi carrer INE, Tipus via, Descripció Tipus via, Nom carrer, Illa, Parcel·la, Solar, Secció Censal, Secció Estadística, AEB, Barri i Districte Municipal.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=76\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=76\" target=\"_blank\" >Fitxa del producte</a><br/><a",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=76",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n ETRS89. DIVISIONS ADMINISTRATIVES HISTÒRIQUES, vigents l'any 1996, en format CAD/SHP/KMZ - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 92 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=92 \n 2015-01-07T00:00:00Z \n 2015-01-01T00:00:00Z \n 2015-01-07T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Informació Històrica de Districtes, Zones d'Estudi, Zones d'Estadística, Seccions Estadístiques i Seccions Censals vigents l'any 1996.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=92\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=92\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=92",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n ETRS89. DIVISIONS ADMINISTRATIVES HISTÒRIQUES, vigents l'any 2010, en format CAD/SHP/KMZ - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 82 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=82 \n 2015-01-07T00:00:00Z \n 2015-01-01T00:00:00Z \n 2015-01-07T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Informació Històrica de Districtes, Zones d'Estudi, Zones d'Estadística, Seccions Estadístiques i Seccions Censals vigents l'any 2010.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=82\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=82\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=82",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n ETRS89. DIVISIONS ADMINISTRATIVES HISTÒRIQUES, vigents l'any 2014, en format CAD/SHP/KMZ - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 111 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=111 \n 2019-11-07T00:00:00Z \n 2015-01-01T00:00:00Z \n 2019-11-07T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Informació de Districtes, Barris, Àrea Interès, AEB i Seccions Censals amb dades de Població.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=111\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=111\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=30700365586",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=111",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n ETRS89. PARCEL·LARI. Dades per DISTRICTE en format CAD - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal \n 66 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=66 \n 2015-01-07T00:00:00Z \n 2015-01-01T00:00:00Z \n 2015-01-07T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Informació de Parcel·lari i Numeració Postal.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=66\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=66\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=60703211535442\" target=\"_blank\" >Metadades del producte</a><br/><img src=\"http://w20.bcn.cat/CartoBCN/ge",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=66",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n ETRS89. PARCEL·LARI. Dades per FULL 1:1.000 en format CAD - Àmbit Full 1:1000 - Distribució de productes en fitxers per full 1:1000 UTM \n 71 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=71 \n 2016-03-16T00:00:00Z \n 2015-01-01T00:00:00Z \n 2016-03-16T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Informació de Parcel·lari, Edificació, Volumetria, Numeració Postal, Divisions Administratives i Toponímia.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=71\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=71\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=31549224337381\" target=\"_blank\" >Metadade",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=71",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n ETRS89. SUBPARCEL·LARI amb ALÇADES per DISTRICTES en format CAD/SHP - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal \n 75 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=75 \n 2015-01-07T00:00:00Z \n 2015-01-01T00:00:00Z \n 2015-01-07T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Informació de subparcel·les classificades segons el número de Plantes Edificades i de Plantes Subterrànies.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=75\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=75\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=46838239719852\" target=\"_bl",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=75",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Mapa Topogràfic Municipal en format DGN (Visió detallada per districte) - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal \n 141 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=141 \n 2026-11-10T14:33:42Z \n 2025-06-01T00:00:00Z \n 2026-11-10T14:33:42Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Visió detallada per districte en format DGN del Mapa Topogràfic Municipal.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=141\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=141\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=52562461414043\" target=\"_blank\" >Metadades del producte<",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=141",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Mapa Topogràfic Municipal en format DGN (Visió per districte) - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal \n 140 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=140 \n 2026-11-10T14:33:42Z \n 2025-06-01T00:00:00Z \n 2026-11-10T14:33:42Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Visió per districte en format DGN del Mapa Topogràfic Municipal.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=140\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=140\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=85117461796462\" target=\"_blank\" >Metadades del producte</a><br/><img src=\"ht",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=140",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS - Àmbit Barri - Distribució de productes en fitxers per Barri Municipal \n 135 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=135 \n 2026-11-17T10:42:21Z \n 2024-12-27T00:00:00Z \n 2026-11-17T10:42:21Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Multi base en format GeoPDF per barris per a la preparació de plànols a mida per el seu ús  en la edició de publicacions..<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=135\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=135\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=38912",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=135",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per DISTRICTES - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal \n 134 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=134 \n 2026-11-17T10:42:21Z \n 2024-06-01T00:00:00Z \n 2026-11-17T10:42:21Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Multi base en format GeoPDF per districtes per a la preparació de plànols a mida per el seu ús  en la edició de publicacions..<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=134\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=134\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=134",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Model Tridimensional d'edificacions CAD 3D - Àmbit Barri - Distribució de productes en fitxers per Barri Municipal \n 146 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=146 \n 2026-11-17T00:00:00Z \n 2026-04-01T00:00:00Z \n 2026-11-17T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Model Tridimensional d'edificacions de la cartografia municipal en format DWG 3D.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=146\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=146\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=40677489494910\" target=\"_blank\" >Metadades del producte</a><br/><img src=\"http://w20.b",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=146",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol A3 de GUIA URBANA de la ciutat en format PDF/JPG - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 62 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=62 \n 2019-10-01T00:00:00Z \n 2012-05-07T00:00:00Z \n 2019-10-01T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol de la Trama Urbana i amb Districtes.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=62\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=62\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=53953176050507\" target=\"_blank\" >Metadades del producte</a><br/><img src=\"http://w20.bcn.cat/CartoBCN/",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=62",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol A4 de GUIA URBANA de la ciutat en format PDF/JPG - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 63 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=63 \n 2019-10-05T00:00:00Z \n 2012-05-07T00:00:00Z \n 2019-10-05T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol de la Trama Urbana i amb Districtes.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=63\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=63\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=40861176388597\" target=\"_blank\" >Metadades del producte</a><br/><img src=\"http://w20.bcn.cat/CartoBCN/",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=63",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol esquemàtic de Barcelona amb Districtes Acolorits en format JPG  mida A4 - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 129 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=129 \n 2026-11-17T11:05:33Z \n 2021-04-21T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol esquemàtic de Barcelona, del Mapa Topogràfic Municipal, mida A4 (29.7x21cm), amb divisió per districtes acolorits..<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=129\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=129\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=129",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol esquemàtic de Barcelona amb Districtes Acolorits en format JPG mida A3 - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 127 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=127 \n 2026-11-17T11:05:33Z \n 2021-04-21T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol esquemàtic de Barcelona, del Mapa Topogràfic Municipal, mida A3 (42x29.7cm), amb Districtes Acolorits..<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=127\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=127\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=37846427583",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=127",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol esquemàtic de Barcelona en format JPG mida A3 - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 126 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=126 \n 2026-11-17T11:05:33Z \n 2021-04-21T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol esquemàtic de Barcelona, del Mapa Topogràfic Municipal, mida A3 (42x29.7cm), amb divisió per districtes. .<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=126\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=126\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=67119427120829\" target=\"_blank\" >",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=126",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol esquemàtic de Barcelona en format JPG mida A4 - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 128 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=128 \n 2026-11-17T11:05:33Z \n 2021-04-21T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol esquemàtic de Barcelona, del Mapa Topogràfic Municipal, mida A4 (29.7x21cm), amb divisió per districtes..<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=128\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=128\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=28760427999194\" target=\"_blank\" >M",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=128",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol mural de Barcelona amb districtes acolorits en format JPG georeferenciat 1:10.000  - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 123 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=123 \n 2026-11-17T11:05:33Z \n 2021-04-21T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol mural de Barcelona (160 x 88 cm) del Mapa topogràfic Municipal 1:10.000.  Conté districtes acolorits, amb topònims, numeració postal i divisió de Barris i Districtes. S'inclou fitxer .jgw que permet georeferenciar en aplicatius CAD i GIS..<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=123\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.as",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=123",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol mural de Barcelona amb districtes acolorits en format JPG 1:20.000  - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 125 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=125 \n 2026-11-17T11:05:33Z \n 2021-04-21T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol mural de Barcelona (102,7x84cm) del Mapa Topogràfic Municipal a escala 1: 20.000 amb topònims i divisió de Barris i Districtes acolorits. .<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=125\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=125\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/get",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=125",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol mural de Barcelona amb districtes en format JPG 1:20.000  - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 124 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=124 \n 2026-11-17T11:05:33Z \n 2021-04-21T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol mural de Barcelona (102,7x84cm) del Mapa Topogràfic Municipal a escala 1: 20.000 amb topònims i divisió de Barris i Districtes. .<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=124\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=124\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=124",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol mural de Barcelona en format JPG georeferenciat Mapa Topogràfic Municipal a escala 1:10.000 - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 122 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=122 \n 2026-11-17T11:05:33Z \n 2021-04-21T00:00:00Z \n 2026-11-17T11:05:33Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol mural de Barcelona (160 x 88 cm) del Mapa Topogràfic Municipal a escala 1: 10.000. Conté topònims, numeració postal i divisió de Barris i Districtes. S'inclou fitxer .jgw que permet georeferenciar en aplicatius CAD i GIS. .<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=122\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=122",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol 1:10.000 de GUIA URBANA/DISTRICTES acolorits i BARRIS de la ciutat en format PDF/JPG - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 59 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=59 \n 2019-10-01T00:00:00Z \n 2012-04-26T00:00:00Z \n 2019-10-01T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol amb Trama urbana, Topònims, Numeració Postal, Transports, Barris i Districtes.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=59\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=59\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=17958165431728\" target=\"",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=59",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol 1:10.000 GUIA URBANA de la Ciutat amb BARRIS en format PDF/JPG - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 47 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=47 \n 2019-10-01T00:00:00Z \n 2011-01-10T00:00:00Z \n 2019-10-01T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol amb Trama urbana, Topònims, Numeració Postal, Transports, Barris i Districtes.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=47\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=47\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=67432177836643\" target=\"_blank\" >Metadades del",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=47",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol 1:20.000 de GUIA URBANA de la ciutat amb BARRIS en format PDF/JPG - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 30 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=30 \n 2019-10-01T00:00:00Z \n 2010-11-17T00:00:00Z \n 2019-10-01T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol amb Trama urbana, Topònims dels Vials Principals, Barris i Districtes.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=30\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=30\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=46001177290237\" target=\"_blank\" >Metadades del prod",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=30",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol 1:20.000 de GUIA URBANA de la ciutat en format PDF/JPG - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 61 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=61 \n 2019-10-01T00:00:00Z \n 2012-05-07T00:00:00Z \n 2019-10-01T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol de la Trama Urbana i amb Districtes.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=61\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=61\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=72447137457314\" target=\"_blank\" >Metadades del producte</a><br/><img src=\"http://w20.bcn.cat/Car",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=61",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànol 1:20.000 de GUIA URBANA/DISTRICTES acolorits i BARRIS de la ciutat en format PDF/JPG - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 64 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=64 \n 2019-10-01T00:00:00Z \n 2012-05-08T00:00:00Z \n 2019-10-01T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol amb Trama urbana, Topònims, Numeració Postal, Transports, Barris i Districtes.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=64\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=64\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=67883176931205\" target=\"",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=64",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Plànols 1:5.000 de GUIA URBANA per DISTRICTES i amb BARRIS en format PDF/JPG - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal \n 29 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=29 \n 2019-10-01T00:00:00Z \n 2010-11-17T00:00:00Z \n 2019-10-01T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Plànol amb Trama urbana, Topònims, Numeració Postal, Transports i Barris.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=29\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=29\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=59027177587405\" target=\"_blank\" >Metadades del product",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=29",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Unitats Administratives VIGENTS de Barcelona - CAD - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 97 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=97 \n 2019-12-27T00:00:00Z \n 2018-05-28T00:00:00Z \n 2019-12-27T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Informació de Districtes, Barris, Àrea Interès, AEB i Seccions Censals.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=97\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=97\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=18085359723466\" target=\"_blank\" >Metadades del producte</a><br/><img src=\"http://",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=97",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "text": "\n Unitats Administratives VIGENTS de Barcelona - GIS - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  \n 102 \n http://w20.bcn.cat/CartoBCN \n \n \n \n \n \n \n CartoBCN - Ajuntament de Barcelona \n http://bcn.cat/cartobcn \n cartografia@bcn.cat \n \n \n Institut Municipal d'Informàtica \n http://guia.bcn.cat/institut-municipal-d-informatica_92086026158.html \n \n \n IMI \n \n http://w20.bcn.cat/CartoBCN/atom.ashx?file=102 \n 2020-03-11T00:00:00Z \n 2018-11-28T00:00:00Z \n 2020-03-11T00:00:00Z \n  <div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Informació de Districtes, Barris, Àrea Interès, AEB i Seccions Censals.<br/><a href=\"http://w20.bcn.cat/CartoBCN/?prod=102\" target=\"_blank\" >Veieu-lo en línia al CartoBCN</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/fitxaproducte.ashx?lang=CA&amp;idproducte=102\" target=\"_blank\" >Fitxa del producte</a><br/><a href=\"http://w20.bcn.cat/CartoBCN/getFile.ashx?t=bdd&amp;f=42588360097904\" target=\"_blank\" >Metadades del producte</a><br/><img src=",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=102",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      }
+    ],
+    "status": "INSPECTED"
+  }
+}
