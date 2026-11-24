@@ -1,0 +1,3682 @@
+{
+  "FGC": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "unique_schedule_pairs": 1633,
+      "active_stops_direct": 188,
+      "unambiguous_sequence_candidates": 185,
+      "exact_normalized_names": 185,
+      "distance_bands_m": {
+        "0.01": 185,
+        "1": 185,
+        "5": 185,
+        "10": 185,
+        "25": 185,
+        "50": 185,
+        "100": 185
+      },
+      "max_distance_m": 0.006201349288035536,
+      "trip_multiset_matches": 1634,
+      "edge_matches": 668,
+      "unmapped_trips": 393,
+      "crosswalk": [
+        {
+          "direct": "AB1",
+          "atm": "FGC_AB1",
+          "direct_name": "Abrera",
+          "atm_name": "Abrera",
+          "name_exact_normalized": true,
+          "distance_m": 0.0033368914266508013,
+          "support_unique_trip_pairs": 52,
+          "direct_coords": [
+            "1.906805399",
+            "41.52256137"
+          ],
+          "atm_coords": [
+            "1.9068054",
+            "41.5225614"
+          ]
+        },
+        {
+          "direct": "AB2",
+          "atm": "FGC_AB2",
+          "direct_name": "Abrera",
+          "atm_name": "Abrera",
+          "name_exact_normalized": true,
+          "distance_m": 0.0033368914266508013,
+          "support_unique_trip_pairs": 55,
+          "direct_coords": [
+            "1.906805399",
+            "41.52256137"
+          ],
+          "atm_coords": [
+            "1.9068054",
+            "41.5225614"
+          ]
+        },
+        {
+          "direct": "AE1",
+          "atm": "FGC_AE1",
+          "direct_name": "Montserrat-Aeri",
+          "atm_name": "Montserrat-Aeri",
+          "name_exact_normalized": true,
+          "distance_m": 0.0022624413164824496,
+          "support_unique_trip_pairs": 61,
+          "direct_coords": [
+            "1.853361605",
+            "41.59119812"
+          ],
+          "atm_coords": [
+            "1.8533616",
+            "41.5911981"
+          ]
+        },
+        {
+          "direct": "AL1",
+          "atm": "FGC_AL1",
+          "direct_name": "Almeda",
+          "atm_name": "Almeda",
+          "name_exact_normalized": true,
+          "distance_m": 0.003340027220486763,
+          "support_unique_trip_pairs": 198,
+          "direct_coords": [
+            "2.085251402",
+            "41.35306747"
+          ],
+          "atm_coords": [
+            "2.0852514",
+            "41.3530675"
+          ]
+        },
+        {
+          "direct": "AL2",
+          "atm": "FGC_AL2",
+          "direct_name": "Almeda",
+          "atm_name": "Almeda",
+          "name_exact_normalized": true,
+          "distance_m": 0.003340027220486763,
+          "support_unique_trip_pairs": 199,
+          "direct_coords": [
+            "2.085251402",
+            "41.35306747"
+          ],
+          "atm_coords": [
+            "2.0852514",
+            "41.3530675"
+          ]
+        },
+        {
+          "direct": "AR1",
+          "atm": "FGC_AR1",
+          "direct_name": "Àger",
+          "atm_name": "Àger",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.851596",
+            "42.006741"
+          ],
+          "atm_coords": [
+            "0.8515960",
+            "42.0067410"
+          ]
+        },
+        {
+          "direct": "AT1",
+          "atm": "FGC_AT1",
+          "direct_name": "Alcoletge",
+          "atm_name": "Alcoletge",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 22,
+          "direct_coords": [
+            "0.686458",
+            "41.654738"
+          ],
+          "atm_coords": [
+            "0.6864580",
+            "41.6547380"
+          ]
+        },
+        {
+          "direct": "BE1",
+          "atm": "FGC_BE1",
+          "direct_name": "La Beguda",
+          "atm_name": "La Beguda",
+          "name_exact_normalized": true,
+          "distance_m": 0.002331781855376028,
+          "support_unique_trip_pairs": 62,
+          "direct_coords": [
+            "1.838788972",
+            "41.5017639"
+          ],
+          "atm_coords": [
+            "1.8387890",
+            "41.5017639"
+          ]
+        },
+        {
+          "direct": "BG1",
+          "atm": "FGC_BG1",
+          "direct_name": "Balaguer",
+          "atm_name": "Balaguer",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 17,
+          "direct_coords": [
+            "0.814761",
+            "41.789215"
+          ],
+          "atm_coords": [
+            "0.8147610",
+            "41.7892150"
+          ]
+        },
+        {
+          "direct": "BG2",
+          "atm": "FGC_BG2",
+          "direct_name": "Balaguer",
+          "atm_name": "Balaguer",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 5,
+          "direct_coords": [
+            "0.814761",
+            "41.789215"
+          ],
+          "atm_coords": [
+            "0.8147610",
+            "41.7892150"
+          ]
+        },
+        {
+          "direct": "BN1",
+          "atm": "FGC_BN1",
+          "direct_name": "La Bonanova",
+          "atm_name": "La Bonanova",
+          "name_exact_normalized": true,
+          "distance_m": 0.003046189900163237,
+          "support_unique_trip_pairs": 329,
+          "direct_coords": [
+            "2.136433966",
+            "41.39781569"
+          ],
+          "atm_coords": [
+            "2.1364340",
+            "41.3978157"
+          ]
+        },
+        {
+          "direct": "BN2",
+          "atm": "FGC_BN2",
+          "direct_name": "La Bonanova",
+          "atm_name": "La Bonanova",
+          "name_exact_normalized": true,
+          "distance_m": 0.003046189900163237,
+          "support_unique_trip_pairs": 318,
+          "direct_coords": [
+            "2.136433966",
+            "41.39781569"
+          ],
+          "atm_coords": [
+            "2.1364340",
+            "41.3978157"
+          ]
+        },
+        {
+          "direct": "BO1",
+          "atm": "FGC_BO1",
+          "direct_name": "Sant Boi",
+          "atm_name": "Sant Boi",
+          "name_exact_normalized": true,
+          "distance_m": 0.0034830020488476037,
+          "support_unique_trip_pairs": 198,
+          "direct_coords": [
+            "2.042855988",
+            "41.34856143"
+          ],
+          "atm_coords": [
+            "2.0428560",
+            "41.3485614"
+          ]
+        },
+        {
+          "direct": "BO2",
+          "atm": "FGC_BO2",
+          "direct_name": "Sant Boi",
+          "atm_name": "Sant Boi",
+          "name_exact_normalized": true,
+          "distance_m": 0.0034830020488476037,
+          "support_unique_trip_pairs": 199,
+          "direct_coords": [
+            "2.042855988",
+            "41.34856143"
+          ],
+          "atm_coords": [
+            "2.0428560",
+            "41.3485614"
+          ]
+        },
+        {
+          "direct": "BT1",
+          "atm": "FGC_BT1",
+          "direct_name": "Bellaterra",
+          "atm_name": "Bellaterra",
+          "name_exact_normalized": true,
+          "distance_m": 0.004667685727077032,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.090556583",
+            "41.50085844"
+          ],
+          "atm_coords": [
+            "2.0905566",
+            "41.5008584"
+          ]
+        },
+        {
+          "direct": "BT2",
+          "atm": "FGC_BT2",
+          "direct_name": "Bellaterra",
+          "atm_name": "Bellaterra",
+          "name_exact_normalized": true,
+          "distance_m": 0.004667685727077032,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.090556583",
+            "41.50085844"
+          ],
+          "atm_coords": [
+            "2.0905566",
+            "41.5008584"
+          ]
+        },
+        {
+          "direct": "CA1",
+          "atm": "FGC_CA1",
+          "direct_name": "Capellades",
+          "atm_name": "Capellades",
+          "name_exact_normalized": true,
+          "distance_m": 0.003931891981166667,
+          "support_unique_trip_pairs": 17,
+          "direct_coords": [
+            "1.695130725",
+            "41.52153533"
+          ],
+          "atm_coords": [
+            "1.6951307",
+            "41.5215353"
+          ]
+        },
+        {
+          "direct": "CA2",
+          "atm": "FGC_CA2",
+          "direct_name": "Capellades",
+          "atm_name": "Capellades",
+          "name_exact_normalized": true,
+          "distance_m": 0.003931891981166667,
+          "support_unique_trip_pairs": 51,
+          "direct_coords": [
+            "1.695130725",
+            "41.52153533"
+          ],
+          "atm_coords": [
+            "1.6951307",
+            "41.5215353"
+          ]
+        },
+        {
+          "direct": "CB1",
+          "atm": "FGC_CB1",
+          "direct_name": "Castellbell i El Vilar",
+          "atm_name": "Castellbell i El Vilar",
+          "name_exact_normalized": true,
+          "distance_m": 0.004808867387023373,
+          "support_unique_trip_pairs": 61,
+          "direct_coords": [
+            "1.854793522",
+            "41.64051706"
+          ],
+          "atm_coords": [
+            "1.8547935",
+            "41.6405171"
+          ]
+        },
+        {
+          "direct": "CF1",
+          "atm": "FGC_CF1",
+          "direct_name": "Can Feu - Gràcia",
+          "atm_name": "Can Feu - Gràcia",
+          "name_exact_normalized": true,
+          "distance_m": 0.004722308567975456,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.100463866",
+            "41.542522966"
+          ],
+          "atm_coords": [
+            "2.1004639",
+            "41.5425230"
+          ]
+        },
+        {
+          "direct": "CF2",
+          "atm": "FGC_CF2",
+          "direct_name": "Can Feu - Gràcia",
+          "atm_name": "Can Feu - Gràcia",
+          "name_exact_normalized": true,
+          "distance_m": 0.004722308567975456,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.100463866",
+            "41.542522966"
+          ],
+          "atm_coords": [
+            "2.1004639",
+            "41.5425230"
+          ]
+        },
+        {
+          "direct": "CG1",
+          "atm": "FGC_CG1",
+          "direct_name": "Colònia Güell",
+          "atm_name": "Colònia Güell",
+          "name_exact_normalized": true,
+          "distance_m": 0.004643912673354979,
+          "support_unique_trip_pairs": 89,
+          "direct_coords": [
+            "2.031859416",
+            "41.36386336"
+          ],
+          "atm_coords": [
+            "2.0318594",
+            "41.3638634"
+          ]
+        },
+        {
+          "direct": "CG2",
+          "atm": "FGC_CG2",
+          "direct_name": "Colònia Güell",
+          "atm_name": "Colònia Güell",
+          "name_exact_normalized": true,
+          "distance_m": 0.004643912673354979,
+          "support_unique_trip_pairs": 89,
+          "direct_coords": [
+            "2.031859416",
+            "41.36386336"
+          ],
+          "atm_coords": [
+            "2.0318594",
+            "41.3638634"
+          ]
+        },
+        {
+          "direct": "CL1",
+          "atm": "FGC_CL1",
+          "direct_name": "Santa Coloma de Cervelló",
+          "atm_name": "Santa Coloma de Cervelló",
+          "name_exact_normalized": true,
+          "distance_m": 0.0056114382419341835,
+          "support_unique_trip_pairs": 118,
+          "direct_coords": [
+            "2.023520241",
+            "41.37064766"
+          ],
+          "atm_coords": [
+            "2.0235202",
+            "41.3706477"
+          ]
+        },
+        {
+          "direct": "CL2",
+          "atm": "FGC_CL2",
+          "direct_name": "Santa Coloma de Cervelló",
+          "atm_name": "Santa Coloma de Cervelló",
+          "name_exact_normalized": true,
+          "distance_m": 0.0056114382419341835,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.023520241",
+            "41.37064766"
+          ],
+          "atm_coords": [
+            "2.0235202",
+            "41.3706477"
+          ]
+        },
+        {
+          "direct": "CO1",
+          "atm": "FGC_CO1",
+          "direct_name": "Cornellà Riera",
+          "atm_name": "Cornellà Riera",
+          "name_exact_normalized": true,
+          "distance_m": 0.0031662225032477926,
+          "support_unique_trip_pairs": 198,
+          "direct_coords": [
+            "2.071263627",
+            "41.35147828"
+          ],
+          "atm_coords": [
+            "2.0712636",
+            "41.3514783"
+          ]
+        },
+        {
+          "direct": "CO2",
+          "atm": "FGC_CO2",
+          "direct_name": "Cornellà Riera",
+          "atm_name": "Cornellà Riera",
+          "name_exact_normalized": true,
+          "distance_m": 0.0031662225032477926,
+          "support_unique_trip_pairs": 199,
+          "direct_coords": [
+            "2.071263627",
+            "41.35147828"
+          ],
+          "atm_coords": [
+            "2.0712636",
+            "41.3514783"
+          ]
+        },
+        {
+          "direct": "CP1",
+          "atm": "FGC_CP1",
+          "direct_name": "Can Parellada",
+          "atm_name": "Can Parellada",
+          "name_exact_normalized": true,
+          "distance_m": 0.004541154568539008,
+          "support_unique_trip_pairs": 62,
+          "direct_coords": [
+            "1.830813063",
+            "41.50222357"
+          ],
+          "atm_coords": [
+            "1.8308131",
+            "41.5022236"
+          ]
+        },
+        {
+          "direct": "CR1",
+          "atm": "FGC_CR1",
+          "direct_name": "Can Ros",
+          "atm_name": "Can Ros",
+          "name_exact_normalized": true,
+          "distance_m": 0.0036754638978746053,
+          "support_unique_trip_pairs": 142,
+          "direct_coords": [
+            "2.005346458",
+            "41.39882061"
+          ],
+          "atm_coords": [
+            "2.0053465",
+            "41.3988206"
+          ]
+        },
+        {
+          "direct": "CR2",
+          "atm": "FGC_CR2",
+          "direct_name": "Can Ros",
+          "atm_name": "Can Ros",
+          "name_exact_normalized": true,
+          "distance_m": 0.0036754638978746053,
+          "support_unique_trip_pairs": 144,
+          "direct_coords": [
+            "2.005346458",
+            "41.39882061"
+          ],
+          "atm_coords": [
+            "2.0053465",
+            "41.3988206"
+          ]
+        },
+        {
+          "direct": "CT1",
+          "atm": "FGC_CT1",
+          "direct_name": "La Creu Alta",
+          "atm_name": "La Creu Alta",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.100385",
+            "41.554954"
+          ],
+          "atm_coords": [
+            "2.1003850",
+            "41.5549540"
+          ]
+        },
+        {
+          "direct": "CT2",
+          "atm": "FGC_CT2",
+          "direct_name": "La Creu Alta",
+          "atm_name": "La Creu Alta",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.100385",
+            "41.554954"
+          ],
+          "atm_coords": [
+            "2.1003850",
+            "41.5549540"
+          ]
+        },
+        {
+          "direct": "EN1",
+          "atm": "FGC_EN1",
+          "direct_name": "Terrassa  Estació del nord",
+          "atm_name": "Terrassa  Estació del nord",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.015487",
+            "41.5701675"
+          ],
+          "atm_coords": [
+            "2.0154870",
+            "41.5701675"
+          ]
+        },
+        {
+          "direct": "EN2",
+          "atm": "FGC_EN2",
+          "direct_name": "Terrassa  Estació del nord",
+          "atm_name": "Terrassa  Estació del nord",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.015487",
+            "41.5701675"
+          ],
+          "atm_coords": [
+            "2.0154870",
+            "41.5701675"
+          ]
+        },
+        {
+          "direct": "EP1",
+          "atm": "FGC_EP1",
+          "direct_name": "El Putxet",
+          "atm_name": "El Putxet",
+          "name_exact_normalized": true,
+          "distance_m": 0.002217212335866951,
+          "support_unique_trip_pairs": 139,
+          "direct_coords": [
+            "2.139151477",
+            "41.40582569"
+          ],
+          "atm_coords": [
+            "2.1391515",
+            "41.4058257"
+          ]
+        },
+        {
+          "direct": "EP2",
+          "atm": "FGC_EP2",
+          "direct_name": "El Putxet",
+          "atm_name": "El Putxet",
+          "name_exact_normalized": true,
+          "distance_m": 0.002217212335866951,
+          "support_unique_trip_pairs": 138,
+          "direct_coords": [
+            "2.139151477",
+            "41.40582569"
+          ],
+          "atm_coords": [
+            "2.1391515",
+            "41.4058257"
+          ]
+        },
+        {
+          "direct": "EU1",
+          "atm": "FGC_EU1",
+          "direct_name": "Europa | Fira",
+          "atm_name": "Europa | Fira",
+          "name_exact_normalized": true,
+          "distance_m": 0.004293308562114367,
+          "support_unique_trip_pairs": 198,
+          "direct_coords": [
+            "2.124199344",
+            "41.35655892"
+          ],
+          "atm_coords": [
+            "2.1241993",
+            "41.3565589"
+          ]
+        },
+        {
+          "direct": "EU2",
+          "atm": "FGC_EU2",
+          "direct_name": "Europa | Fira",
+          "atm_name": "Europa | Fira",
+          "name_exact_normalized": true,
+          "distance_m": 0.004293308562114367,
+          "support_unique_trip_pairs": 199,
+          "direct_coords": [
+            "2.124199344",
+            "41.35655892"
+          ],
+          "atm_coords": [
+            "2.1241993",
+            "41.3565589"
+          ]
+        },
+        {
+          "direct": "FN1",
+          "atm": "FGC_FN1",
+          "direct_name": "Les Fonts",
+          "atm_name": "Les Fonts",
+          "name_exact_normalized": true,
+          "distance_m": 0.0022301242582467296,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.033582202",
+            "41.52846982"
+          ],
+          "atm_coords": [
+            "2.0335822",
+            "41.5284698"
+          ]
+        },
+        {
+          "direct": "FN2",
+          "atm": "FGC_FN2",
+          "direct_name": "Les Fonts",
+          "atm_name": "Les Fonts",
+          "name_exact_normalized": true,
+          "distance_m": 0.0022301242582467296,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.033582202",
+            "41.52846982"
+          ],
+          "atm_coords": [
+            "2.0335822",
+            "41.5284698"
+          ]
+        },
+        {
+          "direct": "GB1",
+          "atm": "FGC_GB1",
+          "direct_name": "Gerb",
+          "atm_name": "Gerb",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.812079",
+            "41.823301"
+          ],
+          "atm_coords": [
+            "0.8120790",
+            "41.8233010"
+          ]
+        },
+        {
+          "direct": "GO1",
+          "atm": "FGC_GO1",
+          "direct_name": "Gornal",
+          "atm_name": "Gornal",
+          "name_exact_normalized": true,
+          "distance_m": 0.003677720446768783,
+          "support_unique_trip_pairs": 198,
+          "direct_coords": [
+            "2.117431558",
+            "41.35488589"
+          ],
+          "atm_coords": [
+            "2.1174316",
+            "41.3548859"
+          ]
+        },
+        {
+          "direct": "GO2",
+          "atm": "FGC_GO2",
+          "direct_name": "Gornal",
+          "atm_name": "Gornal",
+          "name_exact_normalized": true,
+          "distance_m": 0.003677720446768783,
+          "support_unique_trip_pairs": 199,
+          "direct_coords": [
+            "2.117431558",
+            "41.35488589"
+          ],
+          "atm_coords": [
+            "2.1174316",
+            "41.3548859"
+          ]
+        },
+        {
+          "direct": "GR1",
+          "atm": "FGC_GR1",
+          "direct_name": "Gràcia",
+          "atm_name": "Gràcia",
+          "name_exact_normalized": true,
+          "distance_m": 0.003933975383209234,
+          "support_unique_trip_pairs": 329,
+          "direct_coords": [
+            "2.152662325",
+            "41.39909823"
+          ],
+          "atm_coords": [
+            "2.1526623",
+            "41.3990982"
+          ]
+        },
+        {
+          "direct": "GR2",
+          "atm": "FGC_GR2",
+          "direct_name": "Gràcia",
+          "atm_name": "Gràcia",
+          "name_exact_normalized": true,
+          "distance_m": 0.003933975383209234,
+          "support_unique_trip_pairs": 318,
+          "direct_coords": [
+            "2.152662325",
+            "41.39909823"
+          ],
+          "atm_coords": [
+            "2.1526623",
+            "41.3990982"
+          ]
+        },
+        {
+          "direct": "GR3",
+          "atm": "FGC_GR3",
+          "direct_name": "Gràcia",
+          "atm_name": "Gràcia",
+          "name_exact_normalized": true,
+          "distance_m": 0.003933975383209234,
+          "support_unique_trip_pairs": 139,
+          "direct_coords": [
+            "2.152662325",
+            "41.39909823"
+          ],
+          "atm_coords": [
+            "2.1526623",
+            "41.3990982"
+          ]
+        },
+        {
+          "direct": "GR4",
+          "atm": "FGC_GR4",
+          "direct_name": "Gràcia",
+          "atm_name": "Gràcia",
+          "name_exact_normalized": true,
+          "distance_m": 0.003933975383209234,
+          "support_unique_trip_pairs": 138,
+          "direct_coords": [
+            "2.152662325",
+            "41.39909823"
+          ],
+          "atm_coords": [
+            "2.1526623",
+            "41.3990982"
+          ]
+        },
+        {
+          "direct": "GT1",
+          "atm": "FGC_GT1",
+          "direct_name": "Guardia de Tremp",
+          "atm_name": "Guardia de Tremp",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.88809",
+            "42.101399"
+          ],
+          "atm_coords": [
+            "0.8880900",
+            "42.1013990"
+          ]
+        },
+        {
+          "direct": "HG1",
+          "atm": "FGC_HG1",
+          "direct_name": "Hospital General",
+          "atm_name": "Hospital General",
+          "name_exact_normalized": true,
+          "distance_m": 0.0033730962522383642,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.046514894",
+            "41.47620923"
+          ],
+          "atm_coords": [
+            "2.0465149",
+            "41.4762092"
+          ]
+        },
+        {
+          "direct": "HG2",
+          "atm": "FGC_HG2",
+          "direct_name": "Hospital General",
+          "atm_name": "Hospital General",
+          "name_exact_normalized": true,
+          "distance_m": 0.0033730962522383642,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.046514894",
+            "41.47620923"
+          ],
+          "atm_coords": [
+            "2.0465149",
+            "41.4762092"
+          ]
+        },
+        {
+          "direct": "IC1",
+          "atm": "FGC_IC1",
+          "direct_name": "Ildefons Cerdà",
+          "atm_name": "Ildefons Cerdà",
+          "name_exact_normalized": true,
+          "distance_m": 0.004379484581339733,
+          "support_unique_trip_pairs": 198,
+          "direct_coords": [
+            "2.130023266",
+            "41.36090867"
+          ],
+          "atm_coords": [
+            "2.1300233",
+            "41.3609087"
+          ]
+        },
+        {
+          "direct": "IC2",
+          "atm": "FGC_IC2",
+          "direct_name": "Ildefons Cerdà",
+          "atm_name": "Ildefons Cerdà",
+          "name_exact_normalized": true,
+          "distance_m": 0.004379484581339733,
+          "support_unique_trip_pairs": 199,
+          "direct_coords": [
+            "2.130023266",
+            "41.36090867"
+          ],
+          "atm_coords": [
+            "2.1300233",
+            "41.3609087"
+          ]
+        },
+        {
+          "direct": "IG2",
+          "atm": "FGC_IG2",
+          "direct_name": "Igualada",
+          "atm_name": "Igualada",
+          "name_exact_normalized": true,
+          "distance_m": 0.002961602568405429,
+          "support_unique_trip_pairs": 68,
+          "direct_coords": [
+            "1.629951133",
+            "41.57802651"
+          ],
+          "atm_coords": [
+            "1.6299511",
+            "41.5780265"
+          ]
+        },
+        {
+          "direct": "LE1",
+          "atm": "FGC_LE1",
+          "direct_name": "Lleida",
+          "atm_name": "Lleida",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 18,
+          "direct_coords": [
+            "0.633672",
+            "41.620098"
+          ],
+          "atm_coords": [
+            "0.6336720",
+            "41.6200980"
+          ]
+        },
+        {
+          "direct": "LE2",
+          "atm": "FGC_LE2",
+          "direct_name": "Lleida",
+          "atm_name": "Lleida",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 4,
+          "direct_coords": [
+            "0.633672",
+            "41.620098"
+          ],
+          "atm_coords": [
+            "0.6336720",
+            "41.6200980"
+          ]
+        },
+        {
+          "direct": "LF1",
+          "atm": "FGC_LF1",
+          "direct_name": "La Floresta",
+          "atm_name": "La Floresta",
+          "name_exact_normalized": true,
+          "distance_m": 0.004289044030852952,
+          "support_unique_trip_pairs": 238,
+          "direct_coords": [
+            "2.073166144",
+            "41.44487408"
+          ],
+          "atm_coords": [
+            "2.0731661",
+            "41.4448741"
+          ]
+        },
+        {
+          "direct": "LF2",
+          "atm": "FGC_LF2",
+          "direct_name": "La Floresta",
+          "atm_name": "La Floresta",
+          "name_exact_normalized": true,
+          "distance_m": 0.004289044030852952,
+          "support_unique_trip_pairs": 232,
+          "direct_coords": [
+            "2.073166144",
+            "41.44487408"
+          ],
+          "atm_coords": [
+            "2.0731661",
+            "41.4448741"
+          ]
+        },
+        {
+          "direct": "LH1",
+          "atm": "FGC_LH1",
+          "direct_name": "L'Hospitalet Av. Carrilet",
+          "atm_name": "L'Hospitalet Av. Carrilet",
+          "name_exact_normalized": true,
+          "distance_m": 0.0027313853310305014,
+          "support_unique_trip_pairs": 198,
+          "direct_coords": [
+            "2.102709519",
+            "41.35793378"
+          ],
+          "atm_coords": [
+            "2.1027095",
+            "41.3579338"
+          ]
+        },
+        {
+          "direct": "LH2",
+          "atm": "FGC_LH2",
+          "direct_name": "L'Hospitalet Av. Carrilet",
+          "atm_name": "L'Hospitalet Av. Carrilet",
+          "name_exact_normalized": true,
+          "distance_m": 0.0027313853310305014,
+          "support_unique_trip_pairs": 198,
+          "direct_coords": [
+            "2.102709519",
+            "41.35793378"
+          ],
+          "atm_coords": [
+            "2.1027095",
+            "41.3579338"
+          ]
+        },
+        {
+          "direct": "LH4",
+          "atm": "FGC_LH4",
+          "direct_name": "L'Hospitalet Av. Carrilet",
+          "atm_name": "L'Hospitalet Av. Carrilet",
+          "name_exact_normalized": true,
+          "distance_m": 0.0027313853310305014,
+          "support_unique_trip_pairs": 1,
+          "direct_coords": [
+            "2.102709519",
+            "41.35793378"
+          ],
+          "atm_coords": [
+            "2.1027095",
+            "41.3579338"
+          ]
+        },
+        {
+          "direct": "LL1",
+          "atm": "FGC_LL1",
+          "direct_name": "Cellers-Llimiana",
+          "atm_name": "Cellers-Llimiana",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.882707",
+            "42.058631"
+          ],
+          "atm_coords": [
+            "0.8827070",
+            "42.0586310"
+          ]
+        },
+        {
+          "direct": "LP1",
+          "atm": "FGC_LP1",
+          "direct_name": "Les Planes",
+          "atm_name": "Les Planes",
+          "name_exact_normalized": true,
+          "distance_m": 0.004447802972291281,
+          "support_unique_trip_pairs": 238,
+          "direct_coords": [
+            "2.0916176",
+            "41.42740264"
+          ],
+          "atm_coords": [
+            "2.0916176",
+            "41.4274026"
+          ]
+        },
+        {
+          "direct": "LP2",
+          "atm": "FGC_LP2",
+          "direct_name": "Les Planes",
+          "atm_name": "Les Planes",
+          "name_exact_normalized": true,
+          "distance_m": 0.004447802972291281,
+          "support_unique_trip_pairs": 232,
+          "direct_coords": [
+            "2.0916176",
+            "41.42740264"
+          ],
+          "atm_coords": [
+            "2.0916176",
+            "41.4274026"
+          ]
+        },
+        {
+          "direct": "LS1",
+          "atm": "FGC_LS1",
+          "direct_name": "Vilanova de la Sal",
+          "atm_name": "Vilanova de la Sal",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.830401",
+            "41.91207"
+          ],
+          "atm_coords": [
+            "0.8304010",
+            "41.9120700"
+          ]
+        },
+        {
+          "direct": "MA1",
+          "atm": "FGC_MA1",
+          "direct_name": "Manresa-Alta",
+          "atm_name": "Manresa-Alta",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 29,
+          "direct_coords": [
+            "1.832986",
+            "41.73224"
+          ],
+          "atm_coords": [
+            "1.8329860",
+            "41.7322400"
+          ]
+        },
+        {
+          "direct": "MA2",
+          "atm": "FGC_MA2",
+          "direct_name": "Manresa-Alta",
+          "atm_name": "Manresa-Alta",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 38,
+          "direct_coords": [
+            "1.832986",
+            "41.73224"
+          ],
+          "atm_coords": [
+            "1.8329860",
+            "41.7322400"
+          ]
+        },
+        {
+          "direct": "MB1",
+          "atm": "FGC_MB1",
+          "direct_name": "Manresa-Baixador",
+          "atm_name": "Manresa-Baixador",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 2,
+          "direct_coords": [
+            "1.827904",
+            "41.731457"
+          ],
+          "atm_coords": [
+            "1.8279040",
+            "41.7314570"
+          ]
+        },
+        {
+          "direct": "MB2",
+          "atm": "FGC_MB2",
+          "direct_name": "Manresa-Baixador",
+          "atm_name": "Manresa-Baixador",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 65,
+          "direct_coords": [
+            "1.827904",
+            "41.731457"
+          ],
+          "atm_coords": [
+            "1.8279040",
+            "41.7314570"
+          ]
+        },
+        {
+          "direct": "MC1",
+          "atm": "FGC_MC1",
+          "direct_name": "Martorell Central",
+          "atm_name": "Martorell Central",
+          "name_exact_normalized": true,
+          "distance_m": 0.0020826706390464954,
+          "support_unique_trip_pairs": 130,
+          "direct_coords": [
+            "1.925294975",
+            "41.4792845"
+          ],
+          "atm_coords": [
+            "1.9252950",
+            "41.4792845"
+          ]
+        },
+        {
+          "direct": "MC2",
+          "atm": "FGC_MC2",
+          "direct_name": "Martorell Central",
+          "atm_name": "Martorell Central",
+          "name_exact_normalized": true,
+          "distance_m": 0.0020826706390464954,
+          "support_unique_trip_pairs": 123,
+          "direct_coords": [
+            "1.925294975",
+            "41.4792845"
+          ],
+          "atm_coords": [
+            "1.9252950",
+            "41.4792845"
+          ]
+        },
+        {
+          "direct": "ME1",
+          "atm": "FGC_ME1",
+          "direct_name": "Martorell Enllaç",
+          "atm_name": "Martorell Enllaç",
+          "name_exact_normalized": true,
+          "distance_m": 0.004721010364988318,
+          "support_unique_trip_pairs": 126,
+          "direct_coords": [
+            "1.918677519",
+            "41.48396936"
+          ],
+          "atm_coords": [
+            "1.9186775",
+            "41.4839694"
+          ]
+        },
+        {
+          "direct": "ME2",
+          "atm": "FGC_ME2",
+          "direct_name": "Martorell Enllaç",
+          "atm_name": "Martorell Enllaç",
+          "name_exact_normalized": true,
+          "distance_m": 0.004721010364988318,
+          "support_unique_trip_pairs": 117,
+          "direct_coords": [
+            "1.918677519",
+            "41.48396936"
+          ],
+          "atm_coords": [
+            "1.9186775",
+            "41.4839694"
+          ]
+        },
+        {
+          "direct": "MG1",
+          "atm": "FGC_MG1",
+          "direct_name": "Magòria La Campana",
+          "atm_name": "Magòria La Campana",
+          "name_exact_normalized": true,
+          "distance_m": 0.004508784174847017,
+          "support_unique_trip_pairs": 192,
+          "direct_coords": [
+            "2.138879447",
+            "41.36748768"
+          ],
+          "atm_coords": [
+            "2.1388794",
+            "41.3674877"
+          ]
+        },
+        {
+          "direct": "MG2",
+          "atm": "FGC_MG2",
+          "direct_name": "Magòria La Campana",
+          "atm_name": "Magòria La Campana",
+          "name_exact_normalized": true,
+          "distance_m": 0.004508784174847017,
+          "support_unique_trip_pairs": 193,
+          "direct_coords": [
+            "2.138879447",
+            "41.36748768"
+          ],
+          "atm_coords": [
+            "2.1388794",
+            "41.3674877"
+          ]
+        },
+        {
+          "direct": "ML1",
+          "atm": "FGC_ML1",
+          "direct_name": "Molí Nou - Ciutat Cooperativa",
+          "atm_name": "Molí Nou - Ciutat Cooperativa",
+          "name_exact_normalized": true,
+          "distance_m": 0.004489540002562189,
+          "support_unique_trip_pairs": 190,
+          "direct_coords": [
+            "2.035276936",
+            "41.35751473"
+          ],
+          "atm_coords": [
+            "2.0352769",
+            "41.3575147"
+          ]
+        },
+        {
+          "direct": "ML2",
+          "atm": "FGC_ML2",
+          "direct_name": "Molí Nou - Ciutat Cooperativa",
+          "atm_name": "Molí Nou - Ciutat Cooperativa",
+          "name_exact_normalized": true,
+          "distance_m": 0.004489540002562189,
+          "support_unique_trip_pairs": 195,
+          "direct_coords": [
+            "2.035276936",
+            "41.35751473"
+          ],
+          "atm_coords": [
+            "2.0352769",
+            "41.3575147"
+          ]
+        },
+        {
+          "direct": "MM2",
+          "atm": "FGC_MM2",
+          "direct_name": "Montserrat",
+          "atm_name": "Montserrat",
+          "name_exact_normalized": true,
+          "distance_m": 0.004021138051110874,
+          "support_unique_trip_pairs": 43,
+          "direct_coords": [
+            "1.836497527",
+            "41.59225373"
+          ],
+          "atm_coords": [
+            "1.8364975",
+            "41.5922537"
+          ]
+        },
+        {
+          "direct": "MN1",
+          "atm": "FGC_MN1",
+          "direct_name": "Muntaner",
+          "atm_name": "Muntaner",
+          "name_exact_normalized": true,
+          "distance_m": 0.005610543673830765,
+          "support_unique_trip_pairs": 329,
+          "direct_coords": [
+            "2.142346041",
+            "41.39852644"
+          ],
+          "atm_coords": [
+            "2.1423460",
+            "41.3985264"
+          ]
+        },
+        {
+          "direct": "MN2",
+          "atm": "FGC_MN2",
+          "direct_name": "Muntaner",
+          "atm_name": "Muntaner",
+          "name_exact_normalized": true,
+          "distance_m": 0.005610543673830765,
+          "support_unique_trip_pairs": 318,
+          "direct_coords": [
+            "2.142346041",
+            "41.39852644"
+          ],
+          "atm_coords": [
+            "2.1423460",
+            "41.3985264"
+          ]
+        },
+        {
+          "direct": "MO1",
+          "atm": "FGC_MO1",
+          "direct_name": "Monistrol de Montserrat",
+          "atm_name": "Monistrol de Montserrat",
+          "name_exact_normalized": true,
+          "distance_m": 0.002494143573872067,
+          "support_unique_trip_pairs": 32,
+          "direct_coords": [
+            "1.84919403",
+            "41.6103596"
+          ],
+          "atm_coords": [
+            "1.8491940",
+            "41.6103596"
+          ]
+        },
+        {
+          "direct": "MO2",
+          "atm": "FGC_MO2",
+          "direct_name": "Monistrol de Montserrat",
+          "atm_name": "Monistrol de Montserrat",
+          "name_exact_normalized": true,
+          "distance_m": 0.002494143573872067,
+          "support_unique_trip_pairs": 34,
+          "direct_coords": [
+            "1.84919403",
+            "41.6103596"
+          ],
+          "atm_coords": [
+            "1.8491940",
+            "41.6103596"
+          ]
+        },
+        {
+          "direct": "MO3",
+          "atm": "FGC_MO3",
+          "direct_name": "Monistrol de Montserrat",
+          "atm_name": "Monistrol de Montserrat",
+          "name_exact_normalized": true,
+          "distance_m": 0.002494143573872067,
+          "support_unique_trip_pairs": 1,
+          "direct_coords": [
+            "1.84919403",
+            "41.6103596"
+          ],
+          "atm_coords": [
+            "1.8491940",
+            "41.6103596"
+          ]
+        },
+        {
+          "direct": "MO4",
+          "atm": "FGC_MO4",
+          "direct_name": "Monistrol de Montserrat",
+          "atm_name": "Monistrol de Montserrat",
+          "name_exact_normalized": true,
+          "distance_m": 0.002494143573872067,
+          "support_unique_trip_pairs": 22,
+          "direct_coords": [
+            "1.84919403",
+            "41.6103596"
+          ],
+          "atm_coords": [
+            "1.8491940",
+            "41.6103596"
+          ]
+        },
+        {
+          "direct": "MP1",
+          "atm": "FGC_MP1",
+          "direct_name": "Monistrol-Vila",
+          "atm_name": "Monistrol-Vila",
+          "name_exact_normalized": true,
+          "distance_m": 0.0017336678526109319,
+          "support_unique_trip_pairs": 1,
+          "direct_coords": [
+            "1.843723316",
+            "41.61562791"
+          ],
+          "atm_coords": [
+            "1.8437233",
+            "41.6156279"
+          ]
+        },
+        {
+          "direct": "MP2",
+          "atm": "FGC_MP2",
+          "direct_name": "Monistrol-Vila",
+          "atm_name": "Monistrol-Vila",
+          "name_exact_normalized": true,
+          "distance_m": 0.0017336678526109319,
+          "support_unique_trip_pairs": 42,
+          "direct_coords": [
+            "1.843723316",
+            "41.61562791"
+          ],
+          "atm_coords": [
+            "1.8437233",
+            "41.6156279"
+          ]
+        },
+        {
+          "direct": "MQ1",
+          "atm": "FGC_MQ1",
+          "direct_name": "Masquefa",
+          "atm_name": "Masquefa",
+          "name_exact_normalized": true,
+          "distance_m": 0.002331741522215811,
+          "support_unique_trip_pairs": 34,
+          "direct_coords": [
+            "1.812625072",
+            "41.502884"
+          ],
+          "atm_coords": [
+            "1.8126251",
+            "41.5028840"
+          ]
+        },
+        {
+          "direct": "MQ2",
+          "atm": "FGC_MQ2",
+          "direct_name": "Masquefa",
+          "atm_name": "Masquefa",
+          "name_exact_normalized": true,
+          "distance_m": 0.002331741522215811,
+          "support_unique_trip_pairs": 34,
+          "direct_coords": [
+            "1.812625072",
+            "41.502884"
+          ],
+          "atm_coords": [
+            "1.8126251",
+            "41.5028840"
+          ]
+        },
+        {
+          "direct": "MS1",
+          "atm": "FGC_MS1",
+          "direct_name": "Mira-Sol",
+          "atm_name": "Mira-Sol",
+          "name_exact_normalized": true,
+          "distance_m": 0.004023523524684381,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.061380927",
+            "41.46936873"
+          ],
+          "atm_coords": [
+            "2.0613809",
+            "41.4693687"
+          ]
+        },
+        {
+          "direct": "MS2",
+          "atm": "FGC_MS2",
+          "direct_name": "Mira-Sol",
+          "atm_name": "Mira-Sol",
+          "name_exact_normalized": true,
+          "distance_m": 0.004023523524684381,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.061380927",
+            "41.46936873"
+          ],
+          "atm_coords": [
+            "2.0613809",
+            "41.4693687"
+          ]
+        },
+        {
+          "direct": "MV1",
+          "atm": "FGC_MV1",
+          "direct_name": "Martorell Vila",
+          "atm_name": "Martorell Vila",
+          "name_exact_normalized": true,
+          "distance_m": 0.0037490045580829104,
+          "support_unique_trip_pairs": 63,
+          "direct_coords": [
+            "1.938956855",
+            "41.4758714"
+          ],
+          "atm_coords": [
+            "1.9389569",
+            "41.4758714"
+          ]
+        },
+        {
+          "direct": "MV2",
+          "atm": "FGC_MV2",
+          "direct_name": "Martorell Vila",
+          "atm_name": "Martorell Vila",
+          "name_exact_normalized": true,
+          "distance_m": 0.0037490045580829104,
+          "support_unique_trip_pairs": 62,
+          "direct_coords": [
+            "1.938956855",
+            "41.4758714"
+          ],
+          "atm_coords": [
+            "1.9389569",
+            "41.4758714"
+          ]
+        },
+        {
+          "direct": "NA1",
+          "atm": "FGC_NA1",
+          "direct_name": "Terrassa Nacions Unides",
+          "atm_name": "Terrassa Nacions Unides",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 102,
+          "direct_coords": [
+            "2.0134592",
+            "41.5801339"
+          ],
+          "atm_coords": [
+            "2.0134592",
+            "41.5801339"
+          ]
+        },
+        {
+          "direct": "NA2",
+          "atm": "FGC_NA2",
+          "direct_name": "Terrassa Nacions Unides",
+          "atm_name": "Terrassa Nacions Unides",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 133,
+          "direct_coords": [
+            "2.0134592",
+            "41.5801339"
+          ],
+          "atm_coords": [
+            "2.0134592",
+            "41.5801339"
+          ]
+        },
+        {
+          "direct": "NO1",
+          "atm": "FGC_NO1",
+          "direct_name": "Sabadell Nord",
+          "atm_name": "Sabadell Nord",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.096657",
+            "41.561225"
+          ],
+          "atm_coords": [
+            "2.0966570",
+            "41.5612250"
+          ]
+        },
+        {
+          "direct": "NO2",
+          "atm": "FGC_NO2",
+          "direct_name": "Sabadell Nord",
+          "atm_name": "Sabadell Nord",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.096657",
+            "41.561225"
+          ],
+          "atm_coords": [
+            "2.0966570",
+            "41.5612250"
+          ]
+        },
+        {
+          "direct": "OL1",
+          "atm": "FGC_OL1",
+          "direct_name": "Olesa de Montserrat",
+          "atm_name": "Olesa de Montserrat",
+          "name_exact_normalized": true,
+          "distance_m": 0.0028806784307770545,
+          "support_unique_trip_pairs": 33,
+          "direct_coords": [
+            "1.888618922",
+            "41.54105908"
+          ],
+          "atm_coords": [
+            "1.8886189",
+            "41.5410591"
+          ]
+        },
+        {
+          "direct": "OL2",
+          "atm": "FGC_OL2",
+          "direct_name": "Olesa de Montserrat",
+          "atm_name": "Olesa de Montserrat",
+          "name_exact_normalized": true,
+          "distance_m": 0.0028806784307770545,
+          "support_unique_trip_pairs": 38,
+          "direct_coords": [
+            "1.888618922",
+            "41.54105908"
+          ],
+          "atm_coords": [
+            "1.8886189",
+            "41.5410591"
+          ]
+        },
+        {
+          "direct": "OL4",
+          "atm": "FGC_OL4",
+          "direct_name": "Olesa de Montserrat",
+          "atm_name": "Olesa de Montserrat",
+          "name_exact_normalized": true,
+          "distance_m": 0.0028806784307770545,
+          "support_unique_trip_pairs": 36,
+          "direct_coords": [
+            "1.888618922",
+            "41.54105908"
+          ],
+          "atm_coords": [
+            "1.8886189",
+            "41.5410591"
+          ]
+        },
+        {
+          "direct": "PA1",
+          "atm": "FGC_PA1",
+          "direct_name": "Pallejà",
+          "atm_name": "Pallejà",
+          "name_exact_normalized": true,
+          "distance_m": 0.005575364118691173,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "1.995677605",
+            "41.42078685"
+          ],
+          "atm_coords": [
+            "1.9956776",
+            "41.4207869"
+          ]
+        },
+        {
+          "direct": "PA2",
+          "atm": "FGC_PA2",
+          "direct_name": "Pallejà",
+          "atm_name": "Pallejà",
+          "name_exact_normalized": true,
+          "distance_m": 0.005575364118691173,
+          "support_unique_trip_pairs": 120,
+          "direct_coords": [
+            "1.995677605",
+            "41.42078685"
+          ],
+          "atm_coords": [
+            "1.9956776",
+            "41.4207869"
+          ]
+        },
+        {
+          "direct": "PC1",
+          "atm": "FGC_PC1",
+          "direct_name": "Barcelona - Plaça Catalunya",
+          "atm_name": "Barcelona - Plaça Catalunya",
+          "name_exact_normalized": true,
+          "distance_m": 0.004721815367741423,
+          "support_unique_trip_pairs": 334,
+          "direct_coords": [
+            "2.168720219",
+            "41.38563194"
+          ],
+          "atm_coords": [
+            "2.1687202",
+            "41.3856319"
+          ]
+        },
+        {
+          "direct": "PC2",
+          "atm": "FGC_PC2",
+          "direct_name": "Barcelona - Plaça Catalunya",
+          "atm_name": "Barcelona - Plaça Catalunya",
+          "name_exact_normalized": true,
+          "distance_m": 0.004721815367741423,
+          "support_unique_trip_pairs": 312,
+          "direct_coords": [
+            "2.168720219",
+            "41.38563194"
+          ],
+          "atm_coords": [
+            "2.1687202",
+            "41.3856319"
+          ]
+        },
+        {
+          "direct": "PC3",
+          "atm": "FGC_PC3",
+          "direct_name": "Barcelona - Plaça Catalunya",
+          "atm_name": "Barcelona - Plaça Catalunya",
+          "name_exact_normalized": true,
+          "distance_m": 0.004721815367741423,
+          "support_unique_trip_pairs": 1,
+          "direct_coords": [
+            "2.168720219",
+            "41.38563194"
+          ],
+          "atm_coords": [
+            "2.1687202",
+            "41.3856319"
+          ]
+        },
+        {
+          "direct": "PC4",
+          "atm": "FGC_PC4",
+          "direct_name": "Barcelona - Plaça Catalunya",
+          "atm_name": "Barcelona - Plaça Catalunya",
+          "name_exact_normalized": true,
+          "distance_m": 0.004721815367741423,
+          "support_unique_trip_pairs": 276,
+          "direct_coords": [
+            "2.168720219",
+            "41.38563194"
+          ],
+          "atm_coords": [
+            "2.1687202",
+            "41.3856319"
+          ]
+        },
+        {
+          "direct": "PC5",
+          "atm": "FGC_PC5",
+          "direct_name": "Barcelona - Plaça Catalunya",
+          "atm_name": "Barcelona - Plaça Catalunya",
+          "name_exact_normalized": true,
+          "distance_m": 0.004721815367741423,
+          "support_unique_trip_pairs": 1,
+          "direct_coords": [
+            "2.168720219",
+            "41.38563194"
+          ],
+          "atm_coords": [
+            "2.1687202",
+            "41.3856319"
+          ]
+        },
+        {
+          "direct": "PD1",
+          "atm": "FGC_PD1",
+          "direct_name": "Pàdua",
+          "atm_name": "Pàdua",
+          "name_exact_normalized": true,
+          "distance_m": 0.005582228998353369,
+          "support_unique_trip_pairs": 139,
+          "direct_coords": [
+            "2.142759094",
+            "41.40351065"
+          ],
+          "atm_coords": [
+            "2.1427591",
+            "41.4035107"
+          ]
+        },
+        {
+          "direct": "PD2",
+          "atm": "FGC_PD2",
+          "direct_name": "Pàdua",
+          "atm_name": "Pàdua",
+          "name_exact_normalized": true,
+          "distance_m": 0.005582228998353369,
+          "support_unique_trip_pairs": 138,
+          "direct_coords": [
+            "2.142759094",
+            "41.40351065"
+          ],
+          "atm_coords": [
+            "2.1427591",
+            "41.4035107"
+          ]
+        },
+        {
+          "direct": "PE1",
+          "atm": "FGC_PE1",
+          "direct_name": "Barcelona - Plaça Espanya",
+          "atm_name": "Barcelona - Plaça Espanya",
+          "name_exact_normalized": true,
+          "distance_m": 0.0027535562220569803,
+          "support_unique_trip_pairs": 95,
+          "direct_coords": [
+            "2.148458333",
+            "41.3747199"
+          ],
+          "atm_coords": [
+            "2.1484583",
+            "41.3747199"
+          ]
+        },
+        {
+          "direct": "PE2",
+          "atm": "FGC_PE2",
+          "direct_name": "Barcelona - Plaça Espanya",
+          "atm_name": "Barcelona - Plaça Espanya",
+          "name_exact_normalized": true,
+          "distance_m": 0.0027535562220569803,
+          "support_unique_trip_pairs": 79,
+          "direct_coords": [
+            "2.148458333",
+            "41.3747199"
+          ],
+          "atm_coords": [
+            "2.1484583",
+            "41.3747199"
+          ]
+        },
+        {
+          "direct": "PE3",
+          "atm": "FGC_PE3",
+          "direct_name": "Barcelona - Plaça Espanya",
+          "atm_name": "Barcelona - Plaça Espanya",
+          "name_exact_normalized": true,
+          "distance_m": 0.0027535562220569803,
+          "support_unique_trip_pairs": 110,
+          "direct_coords": [
+            "2.148458333",
+            "41.3747199"
+          ],
+          "atm_coords": [
+            "2.1484583",
+            "41.3747199"
+          ]
+        },
+        {
+          "direct": "PE4",
+          "atm": "FGC_PE4",
+          "direct_name": "Barcelona - Plaça Espanya",
+          "atm_name": "Barcelona - Plaça Espanya",
+          "name_exact_normalized": true,
+          "distance_m": 0.0027535562220569803,
+          "support_unique_trip_pairs": 113,
+          "direct_coords": [
+            "2.148458333",
+            "41.3747199"
+          ],
+          "atm_coords": [
+            "2.1484583",
+            "41.3747199"
+          ]
+        },
+        {
+          "direct": "PF1",
+          "atm": "FGC_PF1",
+          "direct_name": "Peu del Funicular",
+          "atm_name": "Peu del Funicular",
+          "name_exact_normalized": true,
+          "distance_m": 0.005610201923541442,
+          "support_unique_trip_pairs": 238,
+          "direct_coords": [
+            "2.111181541",
+            "41.40921616"
+          ],
+          "atm_coords": [
+            "2.1111815",
+            "41.4092162"
+          ]
+        },
+        {
+          "direct": "PF2",
+          "atm": "FGC_PF2",
+          "direct_name": "Peu del Funicular",
+          "atm_name": "Peu del Funicular",
+          "name_exact_normalized": true,
+          "distance_m": 0.005610201923541442,
+          "support_unique_trip_pairs": 232,
+          "direct_coords": [
+            "2.111181541",
+            "41.40921616"
+          ],
+          "atm_coords": [
+            "2.1111815",
+            "41.4092162"
+          ]
+        },
+        {
+          "direct": "PG1",
+          "atm": "FGC_PG1",
+          "direct_name": "Polígon industrial del Segre",
+          "atm_name": "Polígon industrial del Segre",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 22,
+          "direct_coords": [
+            "0.652806",
+            "41.622808"
+          ],
+          "atm_coords": [
+            "0.6528060",
+            "41.6228080"
+          ]
+        },
+        {
+          "direct": "PI1",
+          "atm": "FGC_PI1",
+          "direct_name": "Piera",
+          "atm_name": "Piera",
+          "name_exact_normalized": true,
+          "distance_m": 0.0027337648775337636,
+          "support_unique_trip_pairs": 34,
+          "direct_coords": [
+            "1.75450443",
+            "41.52591339"
+          ],
+          "atm_coords": [
+            "1.7545044",
+            "41.5259134"
+          ]
+        },
+        {
+          "direct": "PI2",
+          "atm": "FGC_PI2",
+          "direct_name": "Piera",
+          "atm_name": "Piera",
+          "name_exact_normalized": true,
+          "distance_m": 0.0027337648775337636,
+          "support_unique_trip_pairs": 34,
+          "direct_coords": [
+            "1.75450443",
+            "41.52591339"
+          ],
+          "atm_coords": [
+            "1.7545044",
+            "41.5259134"
+          ]
+        },
+        {
+          "direct": "PJ1",
+          "atm": "FGC_PJ1",
+          "direct_name": "Sabadell Plaça Major",
+          "atm_name": "Sabadell Plaça Major",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.1088815",
+            "41.5474198"
+          ],
+          "atm_coords": [
+            "2.1088815",
+            "41.5474198"
+          ]
+        },
+        {
+          "direct": "PJ2",
+          "atm": "FGC_PJ2",
+          "direct_name": "Sabadell Plaça Major",
+          "atm_name": "Sabadell Plaça Major",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.1088815",
+            "41.5474198"
+          ],
+          "atm_coords": [
+            "2.1088815",
+            "41.5474198"
+          ]
+        },
+        {
+          "direct": "PL1",
+          "atm": "FGC_PL1",
+          "direct_name": "El Palau",
+          "atm_name": "El Palau",
+          "name_exact_normalized": true,
+          "distance_m": 0.004447802972291281,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "1.9622947",
+            "41.45588074"
+          ],
+          "atm_coords": [
+            "1.9622947",
+            "41.4558807"
+          ]
+        },
+        {
+          "direct": "PL2",
+          "atm": "FGC_PL2",
+          "direct_name": "El Palau",
+          "atm_name": "El Palau",
+          "name_exact_normalized": true,
+          "distance_m": 0.004447802972291281,
+          "support_unique_trip_pairs": 117,
+          "direct_coords": [
+            "1.9622947",
+            "41.45588074"
+          ],
+          "atm_coords": [
+            "1.9622947",
+            "41.4558807"
+          ]
+        },
+        {
+          "direct": "PM1",
+          "atm": "FGC_PM1",
+          "direct_name": "Pl. Molina",
+          "atm_name": "Pl. Molina",
+          "name_exact_normalized": true,
+          "distance_m": 0.0018349427105386583,
+          "support_unique_trip_pairs": 139,
+          "direct_coords": [
+            "2.146754722",
+            "41.4016938"
+          ],
+          "atm_coords": [
+            "2.1467547",
+            "41.4016938"
+          ]
+        },
+        {
+          "direct": "PM2",
+          "atm": "FGC_PM2",
+          "direct_name": "Pl. Molina",
+          "atm_name": "Pl. Molina",
+          "name_exact_normalized": true,
+          "distance_m": 0.0018349427105386583,
+          "support_unique_trip_pairs": 138,
+          "direct_coords": [
+            "2.146754722",
+            "41.4016938"
+          ],
+          "atm_coords": [
+            "2.1467547",
+            "41.4016938"
+          ]
+        },
+        {
+          "direct": "PN1",
+          "atm": "FGC_PN1",
+          "direct_name": "Sabadell Parc del Nord",
+          "atm_name": "Sabadell Parc del Nord",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 61,
+          "direct_coords": [
+            "2.089499",
+            "41.571291"
+          ],
+          "atm_coords": [
+            "2.0894990",
+            "41.5712910"
+          ]
+        },
+        {
+          "direct": "PN2",
+          "atm": "FGC_PN2",
+          "direct_name": "Sabadell Parc del Nord",
+          "atm_name": "Sabadell Parc del Nord",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 174,
+          "direct_coords": [
+            "2.089499",
+            "41.571291"
+          ],
+          "atm_coords": [
+            "2.0894990",
+            "41.5712910"
+          ]
+        },
+        {
+          "direct": "PO1",
+          "atm": "FGC_PO1",
+          "direct_name": "La Pobla de Claramunt",
+          "atm_name": "La Pobla de Claramunt",
+          "name_exact_normalized": true,
+          "distance_m": 0.00592265434757193,
+          "support_unique_trip_pairs": 1,
+          "direct_coords": [
+            "1.677906247",
+            "41.55461094"
+          ],
+          "atm_coords": [
+            "1.6779062",
+            "41.5546109"
+          ]
+        },
+        {
+          "direct": "PO2",
+          "atm": "FGC_PO2",
+          "direct_name": "La Pobla de Claramunt",
+          "atm_name": "La Pobla de Claramunt",
+          "name_exact_normalized": true,
+          "distance_m": 0.00592265434757193,
+          "support_unique_trip_pairs": 67,
+          "direct_coords": [
+            "1.677906247",
+            "41.55461094"
+          ],
+          "atm_coords": [
+            "1.6779062",
+            "41.5546109"
+          ]
+        },
+        {
+          "direct": "PR1",
+          "atm": "FGC_PR1",
+          "direct_name": "Provença",
+          "atm_name": "Provença",
+          "name_exact_normalized": true,
+          "distance_m": 0.005144911798632626,
+          "support_unique_trip_pairs": 468,
+          "direct_coords": [
+            "2.158030869",
+            "41.39281434"
+          ],
+          "atm_coords": [
+            "2.1580309",
+            "41.3928143"
+          ]
+        },
+        {
+          "direct": "PR2",
+          "atm": "FGC_PR2",
+          "direct_name": "Provença",
+          "atm_name": "Provença",
+          "name_exact_normalized": true,
+          "distance_m": 0.005144911798632626,
+          "support_unique_trip_pairs": 456,
+          "direct_coords": [
+            "2.158030869",
+            "41.39281434"
+          ],
+          "atm_coords": [
+            "2.1580309",
+            "41.3928143"
+          ]
+        },
+        {
+          "direct": "PS1",
+          "atm": "FGC_PS1",
+          "direct_name": "La Pobla de Segur",
+          "atm_name": "La Pobla de Segur",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.965917",
+            "42.239877"
+          ],
+          "atm_coords": [
+            "0.9659170",
+            "42.2398770"
+          ]
+        },
+        {
+          "direct": "PT1",
+          "atm": "FGC_PT1",
+          "direct_name": "Palau de Noguera",
+          "atm_name": "Palau de Noguera",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.892435",
+            "42.147002"
+          ],
+          "atm_coords": [
+            "0.8924350",
+            "42.1470020"
+          ]
+        },
+        {
+          "direct": "QC3",
+          "atm": "FGC_QC3",
+          "direct_name": "Quatre Camins",
+          "atm_name": "Quatre Camins",
+          "name_exact_normalized": true,
+          "distance_m": 0.0026374086555100706,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.001715183",
+            "41.40629238"
+          ],
+          "atm_coords": [
+            "2.0017152",
+            "41.4062924"
+          ]
+        },
+        {
+          "direct": "QC4",
+          "atm": "FGC_QC4",
+          "direct_name": "Quatre Camins",
+          "atm_name": "Quatre Camins",
+          "name_exact_normalized": true,
+          "distance_m": 0.0026374086555100706,
+          "support_unique_trip_pairs": 123,
+          "direct_coords": [
+            "2.001715183",
+            "41.40629238"
+          ],
+          "atm_coords": [
+            "2.0017152",
+            "41.4062924"
+          ]
+        },
+        {
+          "direct": "RB1",
+          "atm": "FGC_RB1",
+          "direct_name": "Rubí Centre",
+          "atm_name": "Rubí Centre",
+          "name_exact_normalized": true,
+          "distance_m": 0.0034078821610793843,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.031357969",
+            "41.48628798"
+          ],
+          "atm_coords": [
+            "2.0313580",
+            "41.4862880"
+          ]
+        },
+        {
+          "direct": "RB2",
+          "atm": "FGC_RB2",
+          "direct_name": "Rubí Centre",
+          "atm_name": "Rubí Centre",
+          "name_exact_normalized": true,
+          "distance_m": 0.0034078821610793843,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.031357969",
+            "41.48628798"
+          ],
+          "atm_coords": [
+            "2.0313580",
+            "41.4862880"
+          ]
+        },
+        {
+          "direct": "RE1",
+          "atm": "FGC_RE1",
+          "direct_name": "Reina Elisenda",
+          "atm_name": "Reina Elisenda",
+          "name_exact_normalized": true,
+          "distance_m": 0.002363203441422095,
+          "support_unique_trip_pairs": 237,
+          "direct_coords": [
+            "2.118932325",
+            "41.39874599"
+          ],
+          "atm_coords": [
+            "2.1189323",
+            "41.3987460"
+          ]
+        },
+        {
+          "direct": "RM1",
+          "atm": "FGC_RM1",
+          "direct_name": "Térmens",
+          "atm_name": "Térmens",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 22,
+          "direct_coords": [
+            "0.764899",
+            "41.717644"
+          ],
+          "atm_coords": [
+            "0.7648990",
+            "41.7176440"
+          ]
+        },
+        {
+          "direct": "SA1",
+          "atm": "FGC_SA1",
+          "direct_name": "Sant Andreu de la Barca",
+          "atm_name": "Sant Andreu de la Barca",
+          "name_exact_normalized": true,
+          "distance_m": 0.0011243767412985337,
+          "support_unique_trip_pairs": 122,
+          "direct_coords": [
+            "1.973673502",
+            "41.44648001"
+          ],
+          "atm_coords": [
+            "1.9736735",
+            "41.4464800"
+          ]
+        },
+        {
+          "direct": "SA2",
+          "atm": "FGC_SA2",
+          "direct_name": "Sant Andreu de la Barca",
+          "atm_name": "Sant Andreu de la Barca",
+          "name_exact_normalized": true,
+          "distance_m": 0.0011243767412985337,
+          "support_unique_trip_pairs": 123,
+          "direct_coords": [
+            "1.973673502",
+            "41.44648001"
+          ],
+          "atm_coords": [
+            "1.9736735",
+            "41.4464800"
+          ]
+        },
+        {
+          "direct": "SC1",
+          "atm": "FGC_SC1",
+          "direct_name": "Sant Cugat Centre",
+          "atm_name": "Sant Cugat Centre",
+          "name_exact_normalized": true,
+          "distance_m": 0.0024383301859169718,
+          "support_unique_trip_pairs": 238,
+          "direct_coords": [
+            "2.078203288",
+            "41.46791038"
+          ],
+          "atm_coords": [
+            "2.0782033",
+            "41.4679104"
+          ]
+        },
+        {
+          "direct": "SC2",
+          "atm": "FGC_SC2",
+          "direct_name": "Sant Cugat Centre",
+          "atm_name": "Sant Cugat Centre",
+          "name_exact_normalized": true,
+          "distance_m": 0.0024383301859169718,
+          "support_unique_trip_pairs": 232,
+          "direct_coords": [
+            "2.078203288",
+            "41.46791038"
+          ],
+          "atm_coords": [
+            "2.0782033",
+            "41.4679104"
+          ]
+        },
+        {
+          "direct": "SD1",
+          "atm": "FGC_SD1",
+          "direct_name": "Salàs de Pallars",
+          "atm_name": "Salàs de Pallars",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.940463",
+            "42.206835"
+          ],
+          "atm_coords": [
+            "0.9404630",
+            "42.2068350"
+          ]
+        },
+        {
+          "direct": "SE1",
+          "atm": "FGC_SE1",
+          "direct_name": "Sant Esteve Sesrovires",
+          "atm_name": "Sant Esteve Sesrovires",
+          "name_exact_normalized": true,
+          "distance_m": 0.005559753892195118,
+          "support_unique_trip_pairs": 34,
+          "direct_coords": [
+            "1.8724438",
+            "41.49767605"
+          ],
+          "atm_coords": [
+            "1.8724438",
+            "41.4976761"
+          ]
+        },
+        {
+          "direct": "SE2",
+          "atm": "FGC_SE2",
+          "direct_name": "Sant Esteve Sesrovires",
+          "atm_name": "Sant Esteve Sesrovires",
+          "name_exact_normalized": true,
+          "distance_m": 0.005559753892195118,
+          "support_unique_trip_pairs": 34,
+          "direct_coords": [
+            "1.8724438",
+            "41.49767605"
+          ],
+          "atm_coords": [
+            "1.8724438",
+            "41.4976761"
+          ]
+        },
+        {
+          "direct": "SG1",
+          "atm": "FGC_SG1",
+          "direct_name": "Sant Gervasi",
+          "atm_name": "Sant Gervasi",
+          "name_exact_normalized": true,
+          "distance_m": 0.0026374699606871947,
+          "support_unique_trip_pairs": 329,
+          "direct_coords": [
+            "2.147133783",
+            "41.40106608"
+          ],
+          "atm_coords": [
+            "2.1471338",
+            "41.4010661"
+          ]
+        },
+        {
+          "direct": "SG2",
+          "atm": "FGC_SG2",
+          "direct_name": "Sant Gervasi",
+          "atm_name": "Sant Gervasi",
+          "name_exact_normalized": true,
+          "distance_m": 0.0026374699606871947,
+          "support_unique_trip_pairs": 318,
+          "direct_coords": [
+            "2.147133783",
+            "41.40106608"
+          ],
+          "atm_coords": [
+            "2.1471338",
+            "41.4010661"
+          ]
+        },
+        {
+          "direct": "SJ1",
+          "atm": "FGC_SJ1",
+          "direct_name": "Sant Joan",
+          "atm_name": "Sant Joan",
+          "name_exact_normalized": true,
+          "distance_m": 0.004075292858590941,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.076498641",
+            "41.49015388"
+          ],
+          "atm_coords": [
+            "2.0764986",
+            "41.4901539"
+          ]
+        },
+        {
+          "direct": "SJ2",
+          "atm": "FGC_SJ2",
+          "direct_name": "Sant Joan",
+          "atm_name": "Sant Joan",
+          "name_exact_normalized": true,
+          "distance_m": 0.004075292858590941,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.076498641",
+            "41.49015388"
+          ],
+          "atm_coords": [
+            "2.0764986",
+            "41.4901539"
+          ]
+        },
+        {
+          "direct": "SM1",
+          "atm": "FGC_SM1",
+          "direct_name": "St. Llorenç de Montgai",
+          "atm_name": "St. Llorenç de Montgai",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.832571",
+            "41.866379"
+          ],
+          "atm_coords": [
+            "0.8325710",
+            "41.8663790"
+          ]
+        },
+        {
+          "direct": "SN1",
+          "atm": "FGC_SN1",
+          "direct_name": "Santa Linya",
+          "atm_name": "Santa Linya",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.852312",
+            "41.93156"
+          ],
+          "atm_coords": [
+            "0.8523120",
+            "41.9315600"
+          ]
+        },
+        {
+          "direct": "SP1",
+          "atm": "FGC_SP1",
+          "direct_name": "Sant Josep",
+          "atm_name": "Sant Josep",
+          "name_exact_normalized": true,
+          "distance_m": 0.004728560403500297,
+          "support_unique_trip_pairs": 198,
+          "direct_coords": [
+            "2.10991665",
+            "41.36070098"
+          ],
+          "atm_coords": [
+            "2.1099167",
+            "41.3607010"
+          ]
+        },
+        {
+          "direct": "SP2",
+          "atm": "FGC_SP2",
+          "direct_name": "Sant Josep",
+          "atm_name": "Sant Josep",
+          "name_exact_normalized": true,
+          "distance_m": 0.004728560403500297,
+          "support_unique_trip_pairs": 199,
+          "direct_coords": [
+            "2.10991665",
+            "41.36070098"
+          ],
+          "atm_coords": [
+            "2.1099167",
+            "41.3607010"
+          ]
+        },
+        {
+          "direct": "SQ1",
+          "atm": "FGC_SQ1",
+          "direct_name": "Sant Quirze",
+          "atm_name": "Sant Quirze",
+          "name_exact_normalized": true,
+          "distance_m": 0.006201349288035536,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.088722533",
+            "41.52999155"
+          ],
+          "atm_coords": [
+            "2.0887225",
+            "41.5299916"
+          ]
+        },
+        {
+          "direct": "SQ2",
+          "atm": "FGC_SQ2",
+          "direct_name": "Sant Quirze",
+          "atm_name": "Sant Quirze",
+          "name_exact_normalized": true,
+          "distance_m": 0.006201349288035536,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.088722533",
+            "41.52999155"
+          ],
+          "atm_coords": [
+            "2.0887225",
+            "41.5299916"
+          ]
+        },
+        {
+          "direct": "SR1",
+          "atm": "FGC_SR1",
+          "direct_name": "Sarrià",
+          "atm_name": "Sarrià",
+          "name_exact_normalized": true,
+          "distance_m": 0.003048617424835758,
+          "support_unique_trip_pairs": 329,
+          "direct_coords": [
+            "2.125574875",
+            "41.39849938"
+          ],
+          "atm_coords": [
+            "2.1255749",
+            "41.3984994"
+          ]
+        },
+        {
+          "direct": "SR2",
+          "atm": "FGC_SR2",
+          "direct_name": "Sarrià",
+          "atm_name": "Sarrià",
+          "name_exact_normalized": true,
+          "distance_m": 0.003048617424835758,
+          "support_unique_trip_pairs": 318,
+          "direct_coords": [
+            "2.125574875",
+            "41.39849938"
+          ],
+          "atm_coords": [
+            "2.1255749",
+            "41.3984994"
+          ]
+        },
+        {
+          "direct": "SR4",
+          "atm": "FGC_SR4",
+          "direct_name": "Sarrià",
+          "atm_name": "Sarrià",
+          "name_exact_normalized": true,
+          "distance_m": 0.003048617424835758,
+          "support_unique_trip_pairs": 237,
+          "direct_coords": [
+            "2.125574875",
+            "41.39849938"
+          ],
+          "atm_coords": [
+            "2.1255749",
+            "41.3984994"
+          ]
+        },
+        {
+          "direct": "SV1",
+          "atm": "FGC_SV1",
+          "direct_name": "Sant Vicenç-Castellgalí",
+          "atm_name": "Sant Vicenç-Castellgalí",
+          "name_exact_normalized": true,
+          "distance_m": 0.004447803679615348,
+          "support_unique_trip_pairs": 33,
+          "direct_coords": [
+            "1.8596058",
+            "41.66791016"
+          ],
+          "atm_coords": [
+            "1.8596058",
+            "41.6679102"
+          ]
+        },
+        {
+          "direct": "SV2",
+          "atm": "FGC_SV2",
+          "direct_name": "Sant Vicenç-Castellgalí",
+          "atm_name": "Sant Vicenç-Castellgalí",
+          "name_exact_normalized": true,
+          "distance_m": 0.004447803679615348,
+          "support_unique_trip_pairs": 32,
+          "direct_coords": [
+            "1.8596058",
+            "41.66791016"
+          ],
+          "atm_coords": [
+            "1.8596058",
+            "41.6679102"
+          ]
+        },
+        {
+          "direct": "SV4",
+          "atm": "FGC_SV4",
+          "direct_name": "Sant Vicenç-Castellgalí",
+          "atm_name": "Sant Vicenç-Castellgalí",
+          "name_exact_normalized": true,
+          "distance_m": 0.004447803679615348,
+          "support_unique_trip_pairs": 2,
+          "direct_coords": [
+            "1.8596058",
+            "41.66791016"
+          ],
+          "atm_coords": [
+            "1.8596058",
+            "41.6679102"
+          ]
+        },
+        {
+          "direct": "TB1",
+          "atm": "FGC_TB1",
+          "direct_name": "Av. Tibidabo",
+          "atm_name": "Av. Tibidabo",
+          "name_exact_normalized": true,
+          "distance_m": 0.0013415594448117655,
+          "support_unique_trip_pairs": 277,
+          "direct_coords": [
+            "2.137162791",
+            "41.40964799"
+          ],
+          "atm_coords": [
+            "2.1371628",
+            "41.4096480"
+          ]
+        },
+        {
+          "direct": "TP1",
+          "atm": "FGC_TP1",
+          "direct_name": "Tremp",
+          "atm_name": "Tremp",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 10,
+          "direct_coords": [
+            "0.891057",
+            "42.167348"
+          ],
+          "atm_coords": [
+            "0.8910570",
+            "42.1673480"
+          ]
+        },
+        {
+          "direct": "TR1",
+          "atm": "FGC_TR1",
+          "direct_name": "Terrassa - Rambla",
+          "atm_name": "Terrassa - Rambla",
+          "name_exact_normalized": true,
+          "distance_m": 0.002581453756963141,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.007525272",
+            "41.55974631"
+          ],
+          "atm_coords": [
+            "2.0075253",
+            "41.5597463"
+          ]
+        },
+        {
+          "direct": "TR2",
+          "atm": "FGC_TR2",
+          "direct_name": "Terrassa - Rambla",
+          "atm_name": "Terrassa - Rambla",
+          "name_exact_normalized": true,
+          "distance_m": 0.002581453756963141,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.007525272",
+            "41.55974631"
+          ],
+          "atm_coords": [
+            "2.0075253",
+            "41.5597463"
+          ]
+        },
+        {
+          "direct": "TT1",
+          "atm": "FGC_TT1",
+          "direct_name": "Les Tres Torres",
+          "atm_name": "Les Tres Torres",
+          "name_exact_normalized": true,
+          "distance_m": 0.002883254686632594,
+          "support_unique_trip_pairs": 329,
+          "direct_coords": [
+            "2.130811822",
+            "41.39780042"
+          ],
+          "atm_coords": [
+            "2.1308118",
+            "41.3978004"
+          ]
+        },
+        {
+          "direct": "TT2",
+          "atm": "FGC_TT2",
+          "direct_name": "Les Tres Torres",
+          "atm_name": "Les Tres Torres",
+          "name_exact_normalized": true,
+          "distance_m": 0.002883254686632594,
+          "support_unique_trip_pairs": 318,
+          "direct_coords": [
+            "2.130811822",
+            "41.39780042"
+          ],
+          "atm_coords": [
+            "2.1308118",
+            "41.3978004"
+          ]
+        },
+        {
+          "direct": "UN1",
+          "atm": "FGC_UN1",
+          "direct_name": "Universitat Autònoma",
+          "atm_name": "Universitat Autònoma",
+          "name_exact_normalized": true,
+          "distance_m": 0.00407473185158052,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.102510441",
+            "41.50285282"
+          ],
+          "atm_coords": [
+            "2.1025104",
+            "41.5028528"
+          ]
+        },
+        {
+          "direct": "UN2",
+          "atm": "FGC_UN2",
+          "direct_name": "Universitat Autònoma",
+          "atm_name": "Universitat Autònoma",
+          "name_exact_normalized": true,
+          "distance_m": 0.00407473185158052,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.102510441",
+            "41.50285282"
+          ],
+          "atm_coords": [
+            "2.1025104",
+            "41.5028528"
+          ]
+        },
+        {
+          "direct": "VA1",
+          "atm": "FGC_VA1",
+          "direct_name": "Vallbona d'Anoia",
+          "atm_name": "Vallbona d'Anoia",
+          "name_exact_normalized": true,
+          "distance_m": 0.0019335501755757168,
+          "support_unique_trip_pairs": 1,
+          "direct_coords": [
+            "1.709010719",
+            "41.52025979"
+          ],
+          "atm_coords": [
+            "1.7090107",
+            "41.5202598"
+          ]
+        },
+        {
+          "direct": "VA2",
+          "atm": "FGC_VA2",
+          "direct_name": "Vallbona d'Anoia",
+          "atm_name": "Vallbona d'Anoia",
+          "name_exact_normalized": true,
+          "distance_m": 0.0019335501755757168,
+          "support_unique_trip_pairs": 67,
+          "direct_coords": [
+            "1.709010719",
+            "41.52025979"
+          ],
+          "atm_coords": [
+            "1.7090107",
+            "41.5202598"
+          ]
+        },
+        {
+          "direct": "VB1",
+          "atm": "FGC_VB1",
+          "direct_name": "Vilanova de la Barca",
+          "atm_name": "Vilanova de la Barca",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 22,
+          "direct_coords": [
+            "0.727903",
+            "41.687347"
+          ],
+          "atm_coords": [
+            "0.7279030",
+            "41.6873470"
+          ]
+        },
+        {
+          "direct": "VD1",
+          "atm": "FGC_VD1",
+          "direct_name": "Valldoreix",
+          "atm_name": "Valldoreix",
+          "name_exact_normalized": true,
+          "distance_m": 0.005102265667521521,
+          "support_unique_trip_pairs": 238,
+          "direct_coords": [
+            "2.06831203",
+            "41.45784156"
+          ],
+          "atm_coords": [
+            "2.0683120",
+            "41.4578416"
+          ]
+        },
+        {
+          "direct": "VD2",
+          "atm": "FGC_VD2",
+          "direct_name": "Valldoreix",
+          "atm_name": "Valldoreix",
+          "name_exact_normalized": true,
+          "distance_m": 0.005102265667521521,
+          "support_unique_trip_pairs": 232,
+          "direct_coords": [
+            "2.06831203",
+            "41.45784156"
+          ],
+          "atm_coords": [
+            "2.0683120",
+            "41.4578416"
+          ]
+        },
+        {
+          "direct": "VF1",
+          "atm": "FGC_VF1",
+          "direct_name": "Vallfogona de Balaguer",
+          "atm_name": "Vallfogona de Balaguer",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 22,
+          "direct_coords": [
+            "0.805247",
+            "41.755094"
+          ],
+          "atm_coords": [
+            "0.8052470",
+            "41.7550940"
+          ]
+        },
+        {
+          "direct": "VH1",
+          "atm": "FGC_VH1",
+          "direct_name": "Sant Vicenç dels Horts",
+          "atm_name": "Sant Vicenç dels Horts",
+          "name_exact_normalized": true,
+          "distance_m": 0.0041558680552454055,
+          "support_unique_trip_pairs": 147,
+          "direct_coords": [
+            "2.012398952",
+            "41.38810839"
+          ],
+          "atm_coords": [
+            "2.0123990",
+            "41.3881084"
+          ]
+        },
+        {
+          "direct": "VH2",
+          "atm": "FGC_VH2",
+          "direct_name": "Sant Vicenç dels Horts",
+          "atm_name": "Sant Vicenç dels Horts",
+          "name_exact_normalized": true,
+          "distance_m": 0.0041558680552454055,
+          "support_unique_trip_pairs": 150,
+          "direct_coords": [
+            "2.012398952",
+            "41.38810839"
+          ],
+          "atm_coords": [
+            "2.0123990",
+            "41.3881084"
+          ]
+        },
+        {
+          "direct": "VH3",
+          "atm": "FGC_VH3",
+          "direct_name": "Sant Vicenç dels Horts",
+          "atm_name": "Sant Vicenç dels Horts",
+          "name_exact_normalized": true,
+          "distance_m": 0.0041558680552454055,
+          "support_unique_trip_pairs": 1,
+          "direct_coords": [
+            "2.012398952",
+            "41.38810839"
+          ],
+          "atm_coords": [
+            "2.0123990",
+            "41.3881084"
+          ]
+        },
+        {
+          "direct": "VI1",
+          "atm": "FGC_VI1",
+          "direct_name": "Manresa Viladordis",
+          "atm_name": "Manresa Viladordis",
+          "name_exact_normalized": true,
+          "distance_m": 0.00429595268764126,
+          "support_unique_trip_pairs": 67,
+          "direct_coords": [
+            "1.83398595",
+            "41.72436991"
+          ],
+          "atm_coords": [
+            "1.8339860",
+            "41.7243699"
+          ]
+        },
+        {
+          "direct": "VL1",
+          "atm": "FGC_VL1",
+          "direct_name": "Baixador de Vallvidrera",
+          "atm_name": "Baixador de Vallvidrera",
+          "name_exact_normalized": true,
+          "distance_m": 0.0022168471460661606,
+          "support_unique_trip_pairs": 238,
+          "direct_coords": [
+            "2.096936777",
+            "41.42009441"
+          ],
+          "atm_coords": [
+            "2.0969368",
+            "41.4200944"
+          ]
+        },
+        {
+          "direct": "VL2",
+          "atm": "FGC_VL2",
+          "direct_name": "Baixador de Vallvidrera",
+          "atm_name": "Baixador de Vallvidrera",
+          "name_exact_normalized": true,
+          "distance_m": 0.0022168471460661606,
+          "support_unique_trip_pairs": 232,
+          "direct_coords": [
+            "2.096936777",
+            "41.42009441"
+          ],
+          "atm_coords": [
+            "2.0969368",
+            "41.4200944"
+          ]
+        },
+        {
+          "direct": "VN1",
+          "atm": "FGC_VN1",
+          "direct_name": "Vilanova del Camí",
+          "atm_name": "Vilanova del Camí",
+          "name_exact_normalized": true,
+          "distance_m": 0.0025917619178779773,
+          "support_unique_trip_pairs": 34,
+          "direct_coords": [
+            "1.642009216",
+            "41.57331472"
+          ],
+          "atm_coords": [
+            "1.6420092",
+            "41.5733147"
+          ]
+        },
+        {
+          "direct": "VN2",
+          "atm": "FGC_VN2",
+          "direct_name": "Vilanova del Camí",
+          "atm_name": "Vilanova del Camí",
+          "name_exact_normalized": true,
+          "distance_m": 0.0025917619178779773,
+          "support_unique_trip_pairs": 34,
+          "direct_coords": [
+            "1.642009216",
+            "41.57331472"
+          ],
+          "atm_coords": [
+            "1.6420092",
+            "41.5733147"
+          ]
+        },
+        {
+          "direct": "VO1",
+          "atm": "FGC_VO1",
+          "direct_name": "Volpelleres",
+          "atm_name": "Volpelleres",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.072928",
+            "41.481248"
+          ],
+          "atm_coords": [
+            "2.0729280",
+            "41.4812480"
+          ]
+        },
+        {
+          "direct": "VO2",
+          "atm": "FGC_VO2",
+          "direct_name": "Volpelleres",
+          "atm_name": "Volpelleres",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.072928",
+            "41.481248"
+          ],
+          "atm_coords": [
+            "2.0729280",
+            "41.4812480"
+          ]
+        },
+        {
+          "direct": "VP1",
+          "atm": "FGC_VP1",
+          "direct_name": "Vallparadís Universitat",
+          "atm_name": "Vallparadís Universitat",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 119,
+          "direct_coords": [
+            "2.0190489",
+            "41.5633063"
+          ],
+          "atm_coords": [
+            "2.0190489",
+            "41.5633063"
+          ]
+        },
+        {
+          "direct": "VP2",
+          "atm": "FGC_VP2",
+          "direct_name": "Vallparadís Universitat",
+          "atm_name": "Vallparadís Universitat",
+          "name_exact_normalized": true,
+          "distance_m": 0.0,
+          "support_unique_trip_pairs": 116,
+          "direct_coords": [
+            "2.0190489",
+            "41.5633063"
+          ],
+          "atm_coords": [
+            "2.0190489",
+            "41.5633063"
+          ]
+        }
+      ],
+      "physical_identity_approved": false,
+      "merged": 0,
+      "method": "Unique route label plus full ordered time sequence, mutual unambiguous votes; spatial distance diagnostic, no threshold for production."
+    }
+  },
+  "ATM": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "active_templates": 64034,
+      "classes": {
+        "FEWER_THAN_TWO_STOPS": 30,
+        "COMPLETE_TIME_FIELDS": 49011,
+        "INTERMEDIATE_TIMES_ABSENT": 14993
+      },
+      "missing_rows_by_class": {
+        "FEWER_THAN_TWO_STOPS": 0,
+        "COMPLETE_TIME_FIELDS": 0,
+        "INTERMEDIATE_TIMES_ABSENT": 285726
+      },
+      "by_operator": {
+        "Hispano Igualadina": {
+          "FEWER_THAN_TWO_STOPS": 3,
+          "COMPLETE_TIME_FIELDS": 7
+        },
+        "ALSINA GRAELLS": {
+          "COMPLETE_TIME_FIELDS": 322
+        },
+        "Monbus (Horta)": {
+          "COMPLETE_TIME_FIELDS": 284
+        },
+        "Monbus (Aerobús)": {
+          "COMPLETE_TIME_FIELDS": 704
+        },
+        "DIREXIS TUSGSAL": {
+          "COMPLETE_TIME_FIELDS": 4385,
+          "FEWER_THAN_TWO_STOPS": 4
+        },
+        "Avanza": {
+          "COMPLETE_TIME_FIELDS": 2494
+        },
+        "Soler i Sauret": {
+          "COMPLETE_TIME_FIELDS": 810
+        },
+        "Moventis": {
+          "COMPLETE_TIME_FIELDS": 1599
+        },
+        "Monbus i Julià": {
+          "COMPLETE_TIME_FIELDS": 1858
+        },
+        "Moventis (Port)": {
+          "COMPLETE_TIME_FIELDS": 192
+        },
+        "Monbus (Papiol)": {
+          "COMPLETE_TIME_FIELDS": 53
+        },
+        "DIREXIS TGO": {
+          "COMPLETE_TIME_FIELDS": 114
+        },
+        "Moventis (Cerdanyola)": {
+          "COMPLETE_TIME_FIELDS": 186
+        },
+        "HIFE": {
+          "COMPLETE_TIME_FIELDS": 157
+        },
+        "RENFE OPERADORA": {
+          "COMPLETE_TIME_FIELDS": 254,
+          "FEWER_THAN_TWO_STOPS": 14
+        },
+        "Sagalés (Bages)": {
+          "COMPLETE_TIME_FIELDS": 10
+        },
+        "Autocares Izaro": {
+          "COMPLETE_TIME_FIELDS": 11
+        },
+        "HIFE - Hispano de Fuente en Segures, SA": {
+          "COMPLETE_TIME_FIELDS": 59
+        },
+        "Sagalés (Mataró - St. Celoni)": {
+          "COMPLETE_TIME_FIELDS": 7
+        },
+        "Sagalés (Costa)": {
+          "COMPLETE_TIME_FIELDS": 232
+        },
+        "Empresa Plana": {
+          "COMPLETE_TIME_FIELDS": 16
+        },
+        "Estarriol Bus": {
+          "COMPLETE_TIME_FIELDS": 14
+        },
+        "FGC": {
+          "COMPLETE_TIME_FIELDS": 2027
+        },
+        "Figueres de Serveis, SA": {
+          "COMPLETE_TIME_FIELDS": 244
+        },
+        "Autocars Barrera, SL": {
+          "COMPLETE_TIME_FIELDS": 4
+        },
+        "Sagalés (Vallès Oriental)": {
+          "COMPLETE_TIME_FIELDS": 86
+        },
+        "Autocares Julià, SL": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Autocars Martí Pi, SA (AMPSA)": {
+          "COMPLETE_TIME_FIELDS": 52
+        },
+        "17 Bages Bus, SAU": {
+          "COMPLETE_TIME_FIELDS": 550
+        },
+        "La Hispano Igualadina, SL": {
+          "COMPLETE_TIME_FIELDS": 1095,
+          "INTERMEDIATE_TIMES_ABSENT": 1
+        },
+        "Teresa y José Plana, Empresa Plana, SL": {
+          "COMPLETE_TIME_FIELDS": 1431
+        },
+        "La Hispano de Fuente en Segures, SA (HIFE)": {
+          "COMPLETE_TIME_FIELDS": 761
+        },
+        "Empresa Sagalés, SA": {
+          "COMPLETE_TIME_FIELDS": 2180
+        },
+        "Barcelona Bus, SL": {
+          "COMPLETE_TIME_FIELDS": 515,
+          "FEWER_THAN_TWO_STOPS": 1
+        },
+        "SA Alsina Graells de Auto Transportes": {
+          "COMPLETE_TIME_FIELDS": 834
+        },
+        "SARFA SL": {
+          "COMPLETE_TIME_FIELDS": 448
+        },
+        "Autocars Vendrell, SL": {
+          "COMPLETE_TIME_FIELDS": 25
+        },
+        "Autocares R. Font, SAU": {
+          "COMPLETE_TIME_FIELDS": 297
+        },
+        "Estarriol Bus, SL": {
+          "COMPLETE_TIME_FIELDS": 25
+        },
+        "Montferri Hermanos, SL": {
+          "COMPLETE_TIME_FIELDS": 193
+        },
+        "Miguel Gamón, SL": {
+          "COMPLETE_TIME_FIELDS": 162
+        },
+        "Transports Elèctrics Interurbans, SA -TEISA-": {
+          "COMPLETE_TIME_FIELDS": 1367
+        },
+        "Hispano Hilarienca, SA": {
+          "COMPLETE_TIME_FIELDS": 91
+        },
+        "Cingles Bus, SA": {
+          "COMPLETE_TIME_FIELDS": 422
+        },
+        "Companyia del Ferrocarril d'Olot a Girona, SA": {
+          "COMPLETE_TIME_FIELDS": 64
+        },
+        "La Vallesana, SA": {
+          "COMPLETE_TIME_FIELDS": 405
+        },
+        "Transports Públics del Priorat i Doménech, SL": {
+          "COMPLETE_TIME_FIELDS": 72
+        },
+        "Transportes Generales de Olesa, SA": {
+          "COMPLETE_TIME_FIELDS": 443
+        },
+        "Autocars del Penedès, SA": {
+          "COMPLETE_TIME_FIELDS": 216
+        },
+        "Empresa Lax SL": {
+          "COMPLETE_TIME_FIELDS": 49
+        },
+        "Cots Alsina, SL": {
+          "COMPLETE_TIME_FIELDS": 118
+        },
+        "Marfina Bus, SA": {
+          "COMPLETE_TIME_FIELDS": 1162
+        },
+        "David Roque García": {
+          "COMPLETE_TIME_FIELDS": 7
+        },
+        "Josep Colom Prió": {
+          "COMPLETE_TIME_FIELDS": 11
+        },
+        "Bus Castellví, SA": {
+          "COMPLETE_TIME_FIELDS": 25
+        },
+        "Autocars Agramunt, SL": {
+          "COMPLETE_TIME_FIELDS": 23
+        },
+        "La Hispano Llacunense, SL": {
+          "COMPLETE_TIME_FIELDS": 219
+        },
+        "Autocars LLadós-Montaña, SL": {
+          "COMPLETE_TIME_FIELDS": 3
+        },
+        "Autocars Mario, SL": {
+          "COMPLETE_TIME_FIELDS": 7
+        },
+        "Víctor Rey Huguet": {
+          "COMPLETE_TIME_FIELDS": 5
+        },
+        "Serveis Turístics Gabriel, SL": {
+          "COMPLETE_TIME_FIELDS": 12
+        },
+        "Casimiro Porta Vilanova": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Autocars Vilà Betriu, SL": {
+          "COMPLETE_TIME_FIELDS": 6
+        },
+        "MOTILAND, SL": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Marcos López Perona": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Serveis Turístics Delamoga, SL": {
+          "COMPLETE_TIME_FIELDS": 4
+        },
+        "Joaquim Puigdemasa Obiols": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Mario Ferrer Garcia": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Benito Espuñes Vila": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Autocars Aler, SL": {
+          "COMPLETE_TIME_FIELDS": 6
+        },
+        "Josep M. Llop Masip": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Autocars Vidao, SL": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Daniel Herencia Juárez": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Josep M. Llor Bringue": {
+          "COMPLETE_TIME_FIELDS": 6
+        },
+        "Jordi Cases Blasi": {
+          "COMPLETE_TIME_FIELDS": 6
+        },
+        "Empresa Casas, SA": {
+          "COMPLETE_TIME_FIELDS": 1144
+        },
+        "Lluís Betriu Sabata": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "José Miguel Rodríguez de la Paz López": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Francisco Baena Abril": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Joan Bellera Bellera": {
+          "COMPLETE_TIME_FIELDS": 7
+        },
+        "Autocars Tarrés, SL": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "SA Masats Transports Generals": {
+          "COMPLETE_TIME_FIELDS": 255
+        },
+        "Josep M. Rabasa Arajol": {
+          "COMPLETE_TIME_FIELDS": 4
+        },
+        "Transports Mir, SA": {
+          "COMPLETE_TIME_FIELDS": 61
+        },
+        "Circuitos Ruri SLU": {
+          "COMPLETE_TIME_FIELDS": 187
+        },
+        "Autocars Emili Coll, SL": {
+          "COMPLETE_TIME_FIELDS": 6
+        },
+        "TRANSPORTES REGINA, SA": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Sílvia Arbonés Cuadrat": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Carlos Gómez Hinojosa": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "25 Osona Bus, SA": {
+          "COMPLETE_TIME_FIELDS": 618
+        },
+        "Autocars del Pla, SL": {
+          "COMPLETE_TIME_FIELDS": 9
+        },
+        "Aurora Cadena Coma": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Enric Sirvent Faus": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Autocorb, SA": {
+          "COMPLETE_TIME_FIELDS": 216
+        },
+        "Eix-Bus, SA": {
+          "COMPLETE_TIME_FIELDS": 20
+        },
+        "Ferrocarriles y Transportes, SA": {
+          "COMPLETE_TIME_FIELDS": 575
+        },
+        "Autocars Morell, SL": {
+          "COMPLETE_TIME_FIELDS": 39
+        },
+        "Ivan Porredón Antelo": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Joan Vernet Graell": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Joan Baldomà Noves": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Soler i Sauret, SA": {
+          "COMPLETE_TIME_FIELDS": 547
+        },
+        "Lluís Obiols Capdevila": {
+          "COMPLETE_TIME_FIELDS": 4
+        },
+        "Cintoi Bus, SL": {
+          "COMPLETE_TIME_FIELDS": 740
+        },
+        "Laura Campi Giró": {
+          "COMPLETE_TIME_FIELDS": 4
+        },
+        "Autocars Salvia SL": {
+          "COMPLETE_TIME_FIELDS": 20
+        },
+        "Autocares Ízaro, SA": {
+          "COMPLETE_TIME_FIELDS": 34
+        },
+        "Empresa Sagalés, SA i Empresa Casas, SA": {
+          "COMPLETE_TIME_FIELDS": 53
+        },
+        "Luis Vidal Antolín": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Manuel Julio Tersa Segarra": {
+          "COMPLETE_TIME_FIELDS": 3
+        },
+        "Autocars Solé Seró, SL": {
+          "COMPLETE_TIME_FIELDS": 9
+        },
+        "Pilar de Matias Blazquez": {
+          "COMPLETE_TIME_FIELDS": 4
+        },
+        "Xavier Marco Agulló": {
+          "COMPLETE_TIME_FIELDS": 6
+        },
+        "Ivan Pey Queró": {
+          "COMPLETE_TIME_FIELDS": 3
+        },
+        "Josep Lladós Callís": {
+          "COMPLETE_TIME_FIELDS": 3
+        },
+        "Autocares R. Font, SAU i Marfina Bus, SA": {
+          "COMPLETE_TIME_FIELDS": 56
+        },
+        "Cintoi Bus - Empresa Plana": {
+          "COMPLETE_TIME_FIELDS": 5
+        },
+        "Autocares Prat, SA": {
+          "COMPLETE_TIME_FIELDS": 24
+        },
+        "Grup d'empreses: SA Alsina Graells AT, LHIFE": {
+          "COMPLETE_TIME_FIELDS": 4
+        },
+        "Ampurdan Bus, SL": {
+          "COMPLETE_TIME_FIELDS": 11
+        },
+        "PERE CORTINA BOCHACA": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Transports Municipals del Girones": {
+          "COMPLETE_TIME_FIELDS": 738
+        },
+        "Transgran": {
+          "COMPLETE_TIME_FIELDS": 78
+        },
+        ".liO 31": {
+          "COMPLETE_TIME_FIELDS": 6
+        },
+        ".liO 66": {
+          "COMPLETE_TIME_FIELDS": 11
+        },
+        "AUTOBUSOS DE LLEIDA": {
+          "COMPLETE_TIME_FIELDS": 1071
+        },
+        "Balliu SL": {
+          "COMPLETE_TIME_FIELDS": 5
+        },
+        "BusManresa": {
+          "COMPLETE_TIME_FIELDS": 428
+        },
+        "Entitat Pública Empresarial de Serveis i Obres - Nostreserveis": {
+          "COMPLETE_TIME_FIELDS": 8
+        },
+        "TPP Domènech Autocars": {
+          "COMPLETE_TIME_FIELDS": 2
+        },
+        "Sagalés (Osona)": {
+          "COMPLETE_TIME_FIELDS": 21
+        },
+        "E. MONTFERRI HNOS., S.L.": {
+          "COMPLETE_TIME_FIELDS": 76
+        },
+        "TPVP Transport públic de viatgers Puigcerdà": {
+          "COMPLETE_TIME_FIELDS": 3
+        },
+        "Rodalies de Catalunya - Renfe Cercanías": {
+          "COMPLETE_TIME_FIELDS": 2473
+        },
+        "REUS TRANSPORT": {
+          "COMPLETE_TIME_FIELDS": 243
+        },
+        "TEISA": {
+          "COMPLETE_TIME_FIELDS": 61
+        },
+        "SARFA": {
+          "COMPLETE_TIME_FIELDS": 64
+        },
+        "SARBUS": {
+          "COMPLETE_TIME_FIELDS": 739,
+          "FEWER_THAN_TWO_STOPS": 3
+        },
+        "Busgarvi, SL": {
+          "COMPLETE_TIME_FIELDS": 4
+        },
+        "EMT": {
+          "COMPLETE_TIME_FIELDS": 1026
+        },
+        "TRAMBESÒS": {
+          "COMPLETE_TIME_FIELDS": 741
+        },
+        "TRAMBAIX": {
+          "COMPLETE_TIME_FIELDS": 468
+        },
+        "TCC": {
+          "COMPLETE_TIME_FIELDS": 139,
+          "FEWER_THAN_TWO_STOPS": 5
+        },
+        "Teisa Interurbans": {
+          "COMPLETE_TIME_FIELDS": 410
+        },
+        "TMB": {
+          "COMPLETE_TIME_FIELDS": 4760,
+          "INTERMEDIATE_TIMES_ABSENT": 14992
+        },
+        "Autocares Barrera, SL": {
+          "COMPLETE_TIME_FIELDS": 26
+        },
+        "Transports Urbans de Sabadell": {
+          "COMPLETE_TIME_FIELDS": 1190
+        },
+        "Autocars del Penedès": {
+          "COMPLETE_TIME_FIELDS": 27
+        },
+        "Bus Municipal Vandellós i l'Hosp. de l'Infant": {
+          "COMPLETE_TIME_FIELDS": 28
+        }
+      },
+      "quarantined_templates": 15023,
+      "complete_field_templates": 49011,
+      "exclusions": {
+        "path": "custody/dm21/atm_active_temporal_exclusions.json.gz",
+        "bytes": 44791,
+        "sha256": "14402d12a3431b7ff9dddb084f6116658348907dd297c17a21f2ec4594de3fe3"
+      },
+      "original_changed": false,
+      "imputed_times": 0,
+      "policy": "Diagnostic strict timed subset, not a decision that intermediate blank times are invalid; no restoration of missing source."
+    }
+  },
+  "population": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "url": "https://portaldades.ajuntament.barcelona.cat/ca/estad%C3%ADstiques/yzlntdm2fs",
+      "html_sha256": "048832feebb308620401b88da9e196c5e510310d7422a9c0c940f1d4d5c6390f",
+      "bytes": 3525,
+      "tables": [],
+      "status": "INSPECTED_NOT_VALIDATED"
+    }
+  },
+  "geometry": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "url": "https://geoportal.barcelona.cat/geoBCN/serveis/territori/barris/?extensio=true&geometria=true&out_proj=EPSG:25831",
+      "raw_sha256": "6bacf44fa2076620b519d0dfd6de33dddc35d77fd4390cda3919593aff9dd0db",
+      "source": {
+        "path": "custody/dm21/geobcn_barris.json.gz",
+        "bytes": 144688,
+        "sha256": "b5cc3aa821fe78086c748c3ca1f4b5199c6959b39be91615d8cc8ff5660c1e23"
+      },
+      "type": "dict",
+      "count": 2,
+      "first": "{'estat': 'OK', 'resultats': [{'codi': '58', 'nom': 'Baró de Viver', 'extensio': {'proj': 'EPSG:25831', 'xMin': 432802.679, 'xMax': 433452.267, 'yMin': 4588191.726, 'yMax': 4588911.158}, 'geometria': {'proj': 'EPSG:25831', 'type': 'Polygon', 'coordinates': [[[432890.035, 4588199.376], [433146.813, 4588224.117], [433118.249, 4588442.677], [433114.658, 4588471.824], [433125.405, 4588479.011], [433319.323, 4588605.583], [433338.041, 4588612.949], [433452.268, 4588685.334], [433443.408, 4588698.047], [433338.76, 4588842.03], [433287.333, 4588911.159], [433198.172, 4588872.247], [433020.705, 4588793.476], [432983.363, 4588777.197], [432941.911, 4588758.457], [432891.155, 4588545.999], [432865.976, 4588446.122], [432849.782, 4588378.635], [432830.87, 4588305.145], [432802.68, 4588191.727], [432890.035, 4588199.376]]]}, 'localitzacio': {'x': 433135.886, 'y': 4588624.769, 'proj': 'EPSG:25831'}}, {'codi': '34', 'nom': 'Can Baró', 'extensio': {'proj': 'EPSG:25831', 'xMin': 429394.93, 'xMax': 430510.495, 'yMin': 4585023.302, 'yMax': 4585737.578}, 'geometria': {'proj': 'EPSG:25831', 'type': 'Polygon', 'coordinates': [[[430320.681, 4585720.699], [430316.002, 4585729.101], [430309.177, 4585736.039], [430300.071, 4585737.579], [430285.305, 4585737.029], [430267.243, 4585734.709], [430259.889, 4585733.944], [430239.644, 4585724.544], [430231.564, 4585721.2], [430214.366, 4585718.819], [430198.015, 4585717.813], [430179.441, 4585719.507], [430166.159, 4585719.612], [430129.488, 4585716.702], [430109.961, 4585715.485], [430091.917, 4585711.516], [430077.312, 4585710.458], [430061.913, 4585711.199], [430040.323, 4585718.395], [430029.687, 4585723.422], [430013.177, 4585729.825], [429997.672, 4585733.635], [429986.771, 4585735.223], [429966.154, 4585727.441], [429950.941, 4585721.263], [42",
+      "geometry_validation_pending": true
+    }
+  },
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO"
+}

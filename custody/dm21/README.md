@@ -1,0 +1,1 @@
+DM-21. Source GTFS ATM via Mobility Database/NAP: Powered by MITRAMS https://www.transportes.gob.es/ ; FGC original. OMD and GeoBCN: Ajuntament de Barcelona. Diagnostic candidate matches and exclusions only, no modification of originals or imputation. NO-GO.
