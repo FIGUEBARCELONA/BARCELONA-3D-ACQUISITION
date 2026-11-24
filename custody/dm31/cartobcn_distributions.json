@@ -1,0 +1,98 @@
+{
+  "gis_2": {
+    "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.2",
+    "bytes": 1792879,
+    "sha256": "9002d5806bd6f8689865cb61ebbaf9d9849f45b9c34fde9e4eaebfa473a4f61f",
+    "content_type": "application/octet-stream; charset=UTF-8",
+    "disposition": "attachment;filename=BCN_UNITATS_ADM.zip",
+    "members": [
+      "UNITATS_ADM_CATALEG.mdb",
+      "0301040100_GranBarri_UNITATS_ADM.shp",
+      "0301040100_GranBarri_UNITATS_ADM.shx",
+      "0301040100_SecCens_UNITATS_ADM.dbf",
+      "0301040100_SecCens_UNITATS_ADM.prj",
+      "0301040100_SecCens_UNITATS_ADM.shp",
+      "0301040100_SecCens_UNITATS_ADM.shx",
+      "0301040100_TermeMunicipal_UNITATS_ADM.dbf",
+      "0301040100_TermeMunicipal_UNITATS_ADM.prj",
+      "0301040100_TermeMunicipal_UNITATS_ADM.shp",
+      "0301040100_TermeMunicipal_UNITATS_ADM.shx",
+      "0301040100_ZUA_UNITATS_ADM.dbf",
+      "0301040100_ZUA_UNITATS_ADM.prj",
+      "0301040100_ZUA_UNITATS_ADM.shp",
+      "0301040100_ZUA_UNITATS_ADM.shx",
+      "0301040100_AEB_UNITATS_ADM.dbf",
+      "0301040100_AEB_UNITATS_ADM.prj",
+      "0301040100_AEB_UNITATS_ADM.shp",
+      "0301040100_AEB_UNITATS_ADM.shx",
+      "0301040100_Àrea_I_UNITATS_ADM.dbf",
+      "0301040100_Àrea_I_UNITATS_ADM.prj",
+      "0301040100_Àrea_I_UNITATS_ADM.shp",
+      "0301040100_Àrea_I_UNITATS_ADM.shx",
+      "0301040100_Barris_UNITATS_ADM.dbf",
+      "0301040100_Barris_UNITATS_ADM.prj",
+      "0301040100_Barris_UNITATS_ADM.shp",
+      "0301040100_Barris_UNITATS_ADM.shx",
+      "0301040100_Districtes_UNITATS_ADM.dbf",
+      "0301040100_Districtes_UNITATS_ADM.prj",
+      "0301040100_Districtes_UNITATS_ADM.shp",
+      "0301040100_Districtes_UNITATS_ADM.shx",
+      "0301040100_GranBarri_UNITATS_ADM.dbf",
+      "0301040100_GranBarri_UNITATS_ADM.prj",
+      "0301040100_GranBarri_UNITATS_ADM.cpg",
+      "0301040100_GranBarri_UNITATS_ADM.shp.xml",
+      "0301040100_TermeMunicipal_UNITATS_ADM.cpg",
+      "0301040100_TermeMunicipal_UNITATS_ADM.shp.xml"
+    ],
+    "xml_members": [
+      {
+        "name": "0301040100_GranBarri_UNITATS_ADM.shp.xml",
+        "sha256": "4fb8d51e249b4b06637388b8f19bcef0f2a269fb34226dbf57f898f2b1a79010",
+        "root": "metadata"
+      },
+      {
+        "name": "0301040100_TermeMunicipal_UNITATS_ADM.shp.xml",
+        "sha256": "1322fac79e4d243e3f079de0c179036f2412185eb0a169906f4dd9ad18910db2",
+        "root": "metadata"
+      }
+    ],
+    "status": "INSPECTED"
+  },
+  "gis_40": {
+    "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.40",
+    "bytes": 2829598,
+    "sha256": "72c3164b6c7f80a43bed3a187793b06a2abe136163e5a028289556d857d4ca19",
+    "content_type": "application/octet-stream; charset=UTF-8",
+    "disposition": "attachment;filename=BCN_UNITATS_ADM.zip",
+    "members": [
+      "0301190100_AEB_UNITATS_ADM_KMZ.kmz",
+      "0301190100_ÀREA_INTERÉS_UNITATS_ADM_KMZ.kmz",
+      "0301190100_BARRI_UNITATS_ADM_KMZ.kmz",
+      "0301190100_DISTRICTE_UNITATS_ADM_KMZ.kmz",
+      "0301190100_GRANBARRI_UNITATS_ADM_KMZ.kmz",
+      "0301190100_SECCIONS_CENSALS_UNITATS_ADM_KMZ.kmz",
+      "0301190100_TERME_MUNICIPAL_UNITATS_ADM_KMZ.kmz",
+      "0301190100_ZUA_UNITATS_ADM_KMZ.kmz"
+    ],
+    "xml_members": [],
+    "status": "INSPECTED"
+  },
+  "gis_41": {
+    "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.41",
+    "bytes": 2738138,
+    "sha256": "96fd6b591e17e537bdaf3dc97bbfd9c1aef1bedcbbe871942cbd2c7f8746e96a",
+    "content_type": "application/octet-stream; charset=UTF-8",
+    "disposition": "attachment;filename=BCN_UNITATS_ADM.zip",
+    "members": [
+      "0301100100_UNITATS_ADM_PUNTS.json",
+      "0301100100_UNITATS_ADM_POLIGONS.json"
+    ],
+    "xml_members": [],
+    "status": "INSPECTED"
+  },
+  "cad_1": {
+    "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=97.BARCELONA.1",
+    "status": "FAILED",
+    "error": "AssertionError('not an archive')"
+  }
+}
