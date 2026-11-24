@@ -1,0 +1,87 @@
+{
+  "url": "https://www.portdebarcelona.cat/sites/default/files/content/file/2021/10/24/1/delimitacion-de-los-espacios-y-usos-portuarios-deup_1.pdf",
+  "bytes": 30932935,
+  "sha256": "2fa06be75e20eba812dca128508972082e1d40b4b213c33d34dfdd5b68bcb721",
+  "pages": 108,
+  "renders": [
+    {
+      "page": 70,
+      "type": "full",
+      "path": "p70_full.jpg.b64",
+      "sha256": "9472fad4f28f46a4d4ac923583ac3b2d0083f5da6f0712cce8f0a6fd3907eb19",
+      "bytes": 494582,
+      "clip": [
+        0.0,
+        0.0,
+        1191.0,
+        842.0
+      ]
+    },
+    {
+      "page": 70,
+      "type": "table",
+      "path": "p70_table.png.b64",
+      "sha256": "c301ad260d313a062afeb8a1ec88ac748a66a0a48e7d5a85e36633a7b79ee469",
+      "bytes": 1226674,
+      "clip": [
+        952.8000000000001,
+        353.64,
+        1191.0,
+        791.4799999999999
+      ]
+    },
+    {
+      "page": 70,
+      "type": "title",
+      "path": "p70_title.png.b64",
+      "sha256": "7badd70d20e027086a6101890c17c0cb00e0de57d4f087bd2e7428c5eb7b54c3",
+      "bytes": 29085,
+      "clip": [
+        809.8800000000001,
+        783.0600000000001,
+        1191.0,
+        842.0
+      ]
+    },
+    {
+      "page": 74,
+      "type": "full",
+      "path": "p74_full.jpg.b64",
+      "sha256": "f02dc7a27eaa62a8bd7e4051d783ac07c86bc6f0a391179deadb7e1fce3508be",
+      "bytes": 464122,
+      "clip": [
+        0.0,
+        0.0,
+        1191.0,
+        842.0
+      ]
+    },
+    {
+      "page": 74,
+      "type": "table",
+      "path": "p74_table.png.b64",
+      "sha256": "eb3e1d333b376fec8c3cfaea53b5689ed8d2ee77fc5fa9be772dea14d79680b8",
+      "bytes": 350031,
+      "clip": [
+        952.8000000000001,
+        353.64,
+        1191.0,
+        791.4799999999999
+      ]
+    },
+    {
+      "page": 74,
+      "type": "title",
+      "path": "p74_title.png.b64",
+      "sha256": "66eea7480e8b5c8b9733f299a7b935a7212033e881b498caf40f80b12b196b4d",
+      "bytes": 30368,
+      "clip": [
+        809.8800000000001,
+        783.0600000000001,
+        1191.0,
+        842.0
+      ]
+    }
+  ],
+  "status": "RENDERED"
+}
