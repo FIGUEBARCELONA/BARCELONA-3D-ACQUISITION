@@ -1,0 +1,72 @@
+name: DM26 primary data inspection
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm26-tmb-evidence.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect official files without modifying existing custody
+        run: |
+          python - <<'PY'
+          import urllib.request,io,zipfile,hashlib,xml.etree.ElementTree as E,json,pathlib,datetime
+          sources={
+            'metro':'https://transparencia.tmb.cat/documents/525003/1477764/Resum%2Bdades%2Bmensuals%2Bi%2Bdi%C3%A0ries%2Bde%2Bviatgers%2BFMB%2B2025.xlsx/5d0569be-2352-3003-c90d-a20de72cd94a?t=1773398012897',
+            'bus':'https://transparencia.tmb.cat/documents/525003/1477766/Resum%2Bdades%2Bmensuals%2Bi%2Bdi%C3%A0ries%2Bde%2Bviatgers%2BTB%2B2025.xlsx/eeb08133-9af2-a3ac-d850-42d54301a2f2?t=1773398046103',
+            'merce_attendance':'https://opendata-ajuntament.barcelona.cat/data/dataset/f3510ae4-5399-464e-9442-da24c11f3576/resource/532285aa-1541-4e5e-b067-3abf74f4cd75/download',
+            'cartobcn_catalog_rdf':'https://datos.gob.es/en/catalogo/l01080193-unidades-administrativas-de-la-ciudad-de-barcelona.xml'}
+          ns={'x':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
+          out={'production':'NO_GO','imputations':0,'source_results':{}}
+          for key,url in sources.items():
+              try:
+                  with urllib.request.urlopen(url,timeout=15) as f:
+                      b=f.read(8_000_001); m={'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':f.headers.get('Content-Type'),'last_modified':f.headers.get('Last-Modified')}
+                  assert len(b)<=8_000_000
+                  if key in ('metro','bus'):
+                      with zipfile.ZipFile(io.BytesIO(b)) as z:
+                          assert z.testzip() is None
+                          ss=[]
+                          if 'xl/sharedStrings.xml' in z.namelist():
+                              ss=[''.join(x.itertext()) for x in E.fromstring(z.read('xl/sharedStrings.xml')).findall('x:si',ns)]
+                          wb=E.fromstring(z.read('xl/workbook.xml'))
+                          m['sheet_names']=[x.get('name') for x in wb.findall('x:sheets/x:sheet',ns)]
+                          m['sheets']={}
+                          for name in z.namelist():
+                              if not name.startswith('xl/worksheets/sheet') or not name.endswith('.xml'):continue
+                              rows=[]
+                              for row in E.fromstring(z.read(name)).findall('x:sheetData/x:row',ns):
+                                  vals={}
+                                  for c in row.findall('x:c',ns):
+                                      v=c.find('x:v',ns)
+                                      if v is None:continue
+                                      val=v.text
+                                      if c.get('t')=='s': val=ss[int(val)]
+                                      vals[c.get('r')]=val
+                                  if vals:rows.append({'row':row.get('r'),'cells':vals})
+                              m['sheets'][name]={'rows':len(rows),'sample':rows[:8],'september_candidates':[r for r in rows if any(('setembre' in str(v).lower() or 'septiembre' in str(v).lower() or '2025-09-' in str(v) or str(v) in [str((datetime.date(2025,9,k)-datetime.date(1899,12,30)).days) for k in range(1,31)]) for v in r['cells'].values())][:35]}
+                      m['status']='INSPECTED'
+                  elif key=='cartobcn_catalog_rdf':
+                      root=E.fromstring(b); assert 'rdf' in root.tag.lower();m['root']=root.tag;m['status']='CATALOG_METADATA_ONLY'
+                  else:
+                      import csv
+                      s=b.decode('utf-8-sig');assert not s.lstrip().startswith('<')
+                      dialect=csv.Sniffer().sniff(s[:4096],delimiters=',;\t')
+                      rows=list(csv.reader(io.StringIO(s),dialect))
+                      m['header']=rows[0];m['row_count']=len(rows)-1;m['rows_2025']=[r for r in rows[1:] if '2025' in r];m['status']='INSPECTED'
+                  out['source_results'][key]=m
+              except Exception as e:out['source_results'][key]={'url':url,'status':'FAILED','error':repr(e)}
+          p=pathlib.Path('custody/dm26');p.mkdir(exist_ok=True)
+          (p/'report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Preserve only new evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm26/report.json
+          git commit -m 'DM26 inspect TMB and municipal primary distributions'
+          git push origin HEAD:main
