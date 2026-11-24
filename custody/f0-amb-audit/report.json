@@ -1,0 +1,275 @@
+{
+  "amb": {
+    "url": "https://ide.amb.cat/geoserveispi/rest/services/SIGMIT/Situacio_AMB/MapServer/2/query?where=1%3D1&outFields=MUNICIPI%2CNOM_MUNI%2CSUP_MUNI&returnGeometry=true&outSR=4326&f=geojson",
+    "bytes": 477010,
+    "sha256": "275abe982e037ad3d7d33e7d05a380cfe95b78ada4259ee7e170da9e4a8dd676",
+    "http_status": 200,
+    "last_modified": null,
+    "count": 36,
+    "unique_codes": 36,
+    "features": [
+      {
+        "code": "081252",
+        "name": "Montcada i Reixac",
+        "area_m2": 23461233.095359422,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082520",
+        "name": "Barberà del Vallès",
+        "area_m2": 8301650.206053688,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080543",
+        "name": "Castellbisbal",
+        "area_m2": 30928058.587931458,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082055",
+        "name": "Sant Cugat del Vallès",
+        "area_m2": 48236114.86764783,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "089045",
+        "name": "Badia del Vallès",
+        "area_m2": 928935.0146145135,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082665",
+        "name": "Cerdanyola del Vallès",
+        "area_m2": 30571199.25948264,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "081803",
+        "name": "Ripollet",
+        "area_m2": 4329280.335036235,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082824",
+        "name": "Tiana",
+        "area_m2": 7903311.660277437,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080155",
+        "name": "Badalona",
+        "area_m2": 21181303.490541223,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "081265",
+        "name": "Montgat",
+        "area_m2": 2898876.3557101977,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082457",
+        "name": "Santa Coloma de Gramenet",
+        "area_m2": 7003373.29079094,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "081960",
+        "name": "Sant Andreu de la Barca",
+        "area_m2": 5619687.487574158,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "081580",
+        "name": "el Papiol",
+        "area_m2": 8942761.255147228,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "081234",
+        "name": "Molins de Rei",
+        "area_m2": 15939600.858082237,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080728",
+        "name": "Corbera de Llobregat",
+        "area_m2": 18392028.16263279,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "081574",
+        "name": "Pallejà",
+        "area_m2": 8295518.541968266,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "081944",
+        "name": "Sant Adrià de Besòs",
+        "area_m2": 3957873.0326522966,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "089058",
+        "name": "la Palma de Cervelló",
+        "area_m2": 5477762.877711783,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082114",
+        "name": "Sant Feliu de Llobregat",
+        "area_m2": 11822214.047196232,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080689",
+        "name": "Cervelló",
+        "area_m2": 24098493.99995035,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082634",
+        "name": "Sant Vicenç dels Horts",
+        "area_m2": 9122750.079221155,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082212",
+        "name": "Sant Just Desvern",
+        "area_m2": 7815040.012088651,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080771",
+        "name": "Esplugues de Llobregat",
+        "area_m2": 4604852.374476708,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082444",
+        "name": "Santa Coloma de Cervelló",
+        "area_m2": 7494330.746348968,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "081017",
+        "name": "l'Hospitalet de Llobregat",
+        "area_m2": 12476625.254414072,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082172",
+        "name": "Sant Joan Despí",
+        "area_m2": 6169393.590087789,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082896",
+        "name": "Torrelles de Llobregat",
+        "area_m2": 13556065.271331703,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080734",
+        "name": "Cornellà de Llobregat",
+        "area_m2": 6987930.493221627,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082009",
+        "name": "Sant Boi de Llobregat",
+        "area_m2": 21467245.59340298,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080207",
+        "name": "Begues",
+        "area_m2": 50436671.23154861,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "082042",
+        "name": "Sant Climent de Llobregat",
+        "area_m2": 10806743.54574582,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "081691",
+        "name": "el Prat de Llobregat",
+        "area_m2": 33572796.24826493,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "083015",
+        "name": "Viladecans",
+        "area_m2": 20393996.68066986,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080193",
+        "name": "Barcelona",
+        "area_m2": 101635916.36463505,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080898",
+        "name": "Gavà",
+        "area_m2": 30773193.312745642,
+        "valid": true,
+        "empty": false
+      },
+      {
+        "code": "080569",
+        "name": "Castelldefels",
+        "area_m2": 12923260.341467734,
+        "valid": true,
+        "empty": false
+      }
+    ],
+    "union_area_m2": 638526087.5660317,
+    "union_valid": true,
+    "overlaps": [],
+    "status": "INSPECTED"
+  },
+  "municipal_metadata": {
+    "url": "https://datacloud.ide.cat/metadades/mapa-municipal-v2r0-metadades.zip",
+    "status": "FAILED",
+    "error": "URLError(TimeoutError('timed out'))"
+  },
+  "qualification": "Audit-only acquisition, no canonical boundary approval, no geometry repairs, no production execution."
+}
