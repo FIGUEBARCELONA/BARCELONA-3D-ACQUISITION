@@ -1,0 +1,36 @@
+name: Barcelona 3D - public source acquisition
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/acquire.yml'
+permissions:
+  contents: read
+jobs:
+  acquire:
+    if: github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      REPOSITORY_VISIBILITY: ${{ github.event.repository.visibility }}
+    steps:
+      - name: Checkout public source only
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install public dependencies without cache
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install --no-cache-dir numpy requests rasterio shapely pyproj pyshp
+          .venv/bin/python -m pip freeze
+      - name: Acquire and check public official sources
+        run: .venv/bin/python acquire.py --out evidence
+      - name: Report (no artifact or cache upload)
+        if: always()
+        run: |
+          if [ -f evidence/report.json ]; then
+            cat evidence/report.json >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'No acquisition report generated; not verified.' >> "$GITHUB_STEP_SUMMARY"
+          fi
