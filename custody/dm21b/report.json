@@ -1,0 +1,1998 @@
+{
+  "geometry": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "rows": [
+        {
+          "code": 1,
+          "district_OMD": "Ciutat Vella",
+          "barri_OMD": "el Raval",
+          "barri_GeoBCN": "el Raval",
+          "name_match_normalized": true,
+          "pob_2026": 50863,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1100291.155051476,
+          "bounds": [
+            430018.618,
+            4580195.745,
+            431677.343,
+            4581936.984
+          ]
+        },
+        {
+          "code": 2,
+          "district_OMD": "Ciutat Vella",
+          "barri_OMD": "el Barri Gòtic",
+          "barri_GeoBCN": "el Barri Gòtic",
+          "name_match_normalized": true,
+          "pob_2026": 27312,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 815594.8892258981,
+          "bounds": [
+            430600.818,
+            4580632.918,
+            431848.142,
+            4582212.56
+          ]
+        },
+        {
+          "code": 3,
+          "district_OMD": "Ciutat Vella",
+          "barri_OMD": "la Barceloneta",
+          "barri_GeoBCN": "la Barceloneta",
+          "name_match_normalized": true,
+          "pob_2026": 14665,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1179392.984856661,
+          "bounds": [
+            431637.755,
+            4578790.28,
+            433088.279,
+            4582125.838
+          ]
+        },
+        {
+          "code": 4,
+          "district_OMD": "Ciutat Vella",
+          "barri_OMD": "Sant Pere, Santa Caterina i la Ribera",
+          "barri_GeoBCN": "Sant Pere, Santa Caterina i la Ribera",
+          "name_match_normalized": true,
+          "pob_2026": 22989,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1109653.1878287857,
+          "bounds": [
+            430837.807,
+            4581402.283,
+            432575.407,
+            4582622.263
+          ]
+        },
+        {
+          "code": 5,
+          "district_OMD": "Eixample",
+          "barri_OMD": "el Fort Pienc",
+          "barri_GeoBCN": "el Fort Pienc",
+          "name_match_normalized": true,
+          "pob_2026": 37672,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 929367.553916212,
+          "bounds": [
+            430897.017,
+            4582526.053,
+            432033.186,
+            4583811.336
+          ]
+        },
+        {
+          "code": 6,
+          "district_OMD": "Eixample",
+          "barri_OMD": "la Sagrada Família",
+          "barri_GeoBCN": "la Sagrada Família",
+          "name_match_normalized": true,
+          "pob_2026": 53201,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1041790.9928366853,
+          "bounds": [
+            430514.442,
+            4583489.966,
+            431933.456,
+            4584826.653
+          ]
+        },
+        {
+          "code": 7,
+          "district_OMD": "Eixample",
+          "barri_OMD": "la Dreta de l'Eixample",
+          "barri_GeoBCN": "la Dreta de l'Eixample",
+          "name_match_normalized": true,
+          "pob_2026": 45464,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 2119880.4343433804,
+          "bounds": [
+            429335.996,
+            4581889.9,
+            431465.116,
+            4583791.611
+          ]
+        },
+        {
+          "code": 8,
+          "district_OMD": "Eixample",
+          "barri_OMD": "l'Antiga Esquerra de l'Eixample",
+          "barri_GeoBCN": "l'Antiga Esquerra de l'Eixample",
+          "name_match_normalized": true,
+          "pob_2026": 42921,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1228455.2326378005,
+          "bounds": [
+            428405.997,
+            4581521.078,
+            430220.33,
+            4582987.307
+          ]
+        },
+        {
+          "code": 9,
+          "district_OMD": "Eixample",
+          "barri_OMD": "la Nova Esquerra de l'Eixample",
+          "barri_GeoBCN": "la Nova Esquerra de l'Eixample",
+          "name_match_normalized": true,
+          "pob_2026": 59117,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1340065.982388668,
+          "bounds": [
+            428282.675,
+            4580773.298,
+            429644.567,
+            4582461.569
+          ]
+        },
+        {
+          "code": 10,
+          "district_OMD": "Eixample",
+          "barri_OMD": "Sant Antoni",
+          "barri_GeoBCN": "Sant Antoni",
+          "name_match_normalized": true,
+          "pob_2026": 38978,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 804724.8007091573,
+          "bounds": [
+            428881.008,
+            4580718.405,
+            430408.289,
+            4581983.155
+          ]
+        },
+        {
+          "code": 11,
+          "district_OMD": "Sants-Montjuïc",
+          "barri_OMD": "el Poble-sec",
+          "barri_GeoBCN": "el Poble-sec",
+          "name_match_normalized": true,
+          "pob_2026": 40136,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 4585332.171007774,
+          "bounds": [
+            428235.608,
+            4578154.58,
+            431117.418,
+            4580798.984
+          ]
+        },
+        {
+          "code": 12,
+          "district_OMD": "Sants-Montjuïc",
+          "barri_OMD": "la Marina del Prat Vermell",
+          "barri_GeoBCN": "la Marina del Prat Vermell",
+          "name_match_normalized": true,
+          "pob_2026": 3174,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 14237639.754679011,
+          "bounds": [
+            424738.012,
+            4574282.45,
+            431707.26,
+            4580486.827
+          ]
+        },
+        {
+          "code": 13,
+          "district_OMD": "Sants-Montjuïc",
+          "barri_OMD": "la Marina de Port",
+          "barri_GeoBCN": "la Marina de Port",
+          "name_match_normalized": true,
+          "pob_2026": 31768,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1268606.7696968843,
+          "bounds": [
+            427399.24,
+            4578313.04,
+            428855.521,
+            4580027.292
+          ]
+        },
+        {
+          "code": 14,
+          "district_OMD": "Sants-Montjuïc",
+          "barri_OMD": "la Font de la Guatlla",
+          "barri_GeoBCN": "la Font de la Guatlla",
+          "name_match_normalized": true,
+          "pob_2026": 10869,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 297072.30580741604,
+          "bounds": [
+            428042.156,
+            4579729.712,
+            428947.991,
+            4580588.34
+          ]
+        },
+        {
+          "code": 15,
+          "district_OMD": "Sants-Montjuïc",
+          "barri_OMD": "Hostafrancs",
+          "barri_GeoBCN": "Hostafrancs",
+          "name_match_normalized": true,
+          "pob_2026": 17021,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 409925.2886340345,
+          "bounds": [
+            428122.142,
+            4580179.567,
+            428856.029,
+            4581325.711
+          ]
+        },
+        {
+          "code": 16,
+          "district_OMD": "Sants-Montjuïc",
+          "barri_OMD": "la Bordeta",
+          "barri_GeoBCN": "la Bordeta",
+          "name_match_normalized": true,
+          "pob_2026": 21153,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 572210.4380723815,
+          "bounds": [
+            427241.782,
+            4579473.118,
+            428287.899,
+            4580612.433
+          ]
+        },
+        {
+          "code": 17,
+          "district_OMD": "Sants-Montjuïc",
+          "barri_OMD": "Sants - Badal",
+          "barri_GeoBCN": "Sants - Badal",
+          "name_match_normalized": true,
+          "pob_2026": 25243,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 414594.5758914215,
+          "bounds": [
+            426561.547,
+            4580206.256,
+            427396.986,
+            4581239.834
+          ]
+        },
+        {
+          "code": 18,
+          "district_OMD": "Sants-Montjuïc",
+          "barri_OMD": "Sants",
+          "barri_GeoBCN": "Sants",
+          "name_match_normalized": true,
+          "pob_2026": 46676,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1094645.0827065406,
+          "bounds": [
+            427181.742,
+            4580292.914,
+            428332.375,
+            4581920.251
+          ]
+        },
+        {
+          "code": 19,
+          "district_OMD": "Les Corts",
+          "barri_OMD": "les Corts",
+          "barri_GeoBCN": "les Corts",
+          "name_match_normalized": true,
+          "pob_2026": 46672,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1410413.3068425192,
+          "bounds": [
+            427001.883,
+            4581239.834,
+            428466.179,
+            4582715.353
+          ]
+        },
+        {
+          "code": 20,
+          "district_OMD": "Les Corts",
+          "barri_OMD": "la Maternitat i Sant Ramon",
+          "barri_GeoBCN": "la Maternitat i Sant Ramon",
+          "name_match_normalized": true,
+          "pob_2026": 24622,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1915395.5110663327,
+          "bounds": [
+            424889.525,
+            4580833.038,
+            427181.742,
+            4582224.987
+          ]
+        },
+        {
+          "code": 21,
+          "district_OMD": "Les Corts",
+          "barri_OMD": "Pedralbes",
+          "barri_GeoBCN": "Pedralbes",
+          "name_match_normalized": true,
+          "pob_2026": 12479,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 2684960.324970743,
+          "bounds": [
+            424576.1,
+            4581534.102,
+            427233.111,
+            4583673.98
+          ]
+        },
+        {
+          "code": 22,
+          "district_OMD": "Sarrià-Sant Gervasi",
+          "barri_OMD": "Vallvidrera, el Tibidabo i les Planes",
+          "barri_GeoBCN": "Vallvidrera, el Tibidabo i les Planes",
+          "name_match_normalized": true,
+          "pob_2026": 4867,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 11329840.927426888,
+          "bounds": [
+            420812.539,
+            4583641.093,
+            427405.048,
+            4587641.026
+          ]
+        },
+        {
+          "code": 23,
+          "district_OMD": "Sarrià-Sant Gervasi",
+          "barri_OMD": "Sarrià",
+          "barri_GeoBCN": "Sarrià",
+          "name_match_normalized": true,
+          "pob_2026": 24937,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 3047452.7545827697,
+          "bounds": [
+            425043.973,
+            4582435.117,
+            427251.958,
+            4585109.609
+          ]
+        },
+        {
+          "code": 24,
+          "district_OMD": "Sarrià-Sant Gervasi",
+          "barri_OMD": "les Tres Torres",
+          "barri_GeoBCN": "les Tres Torres",
+          "name_match_normalized": true,
+          "pob_2026": 16341,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 787976.5867844542,
+          "bounds": [
+            426680.663,
+            4582588.939,
+            427803.102,
+            4584050.365
+          ]
+        },
+        {
+          "code": 25,
+          "district_OMD": "Sarrià-Sant Gervasi",
+          "barri_OMD": "Sant Gervasi - la Bonanova",
+          "barri_GeoBCN": "Sant Gervasi - la Bonanova",
+          "name_match_normalized": true,
+          "pob_2026": 26801,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 2233614.047928527,
+          "bounds": [
+            426357.959,
+            4583450.935,
+            428177.663,
+            4585741.539
+          ]
+        },
+        {
+          "code": 26,
+          "district_OMD": "Sarrià-Sant Gervasi",
+          "barri_OMD": "Sant Gervasi - Galvany",
+          "barri_GeoBCN": "Sant Gervasi - Galvany",
+          "name_match_normalized": true,
+          "pob_2026": 49202,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1669205.323664535,
+          "bounds": [
+            427505.875,
+            4582547.525,
+            429419.867,
+            4584009.112
+          ]
+        },
+        {
+          "code": 27,
+          "district_OMD": "Sarrià-Sant Gervasi",
+          "barri_OMD": "el Putxet i el Farró",
+          "barri_GeoBCN": "el Putxet i el Farró",
+          "name_match_normalized": true,
+          "pob_2026": 30795,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 847872.2691290681,
+          "bounds": [
+            427882.512,
+            4583564.572,
+            429051.317,
+            4585087.56
+          ]
+        },
+        {
+          "code": 28,
+          "district_OMD": "Gràcia",
+          "barri_OMD": "Vallcarca i els Penitents",
+          "barri_GeoBCN": "Vallcarca i els Penitents",
+          "name_match_normalized": true,
+          "pob_2026": 16928,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1250953.3854818055,
+          "bounds": [
+            427240.153,
+            4584238.898,
+            429063.828,
+            4586285.398
+          ]
+        },
+        {
+          "code": 29,
+          "district_OMD": "Gràcia",
+          "barri_OMD": "el Coll",
+          "barri_GeoBCN": "el Coll",
+          "name_match_normalized": true,
+          "pob_2026": 8056,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 353226.13339277543,
+          "bounds": [
+            428459.269,
+            4585003.788,
+            429138.593,
+            4585913.954
+          ]
+        },
+        {
+          "code": 30,
+          "district_OMD": "Gràcia",
+          "barri_OMD": "la Salut",
+          "barri_GeoBCN": "la Salut",
+          "name_match_normalized": true,
+          "pob_2026": 13947,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 648382.6383359744,
+          "bounds": [
+            428792.729,
+            4584384.196,
+            429965.734,
+            4585386.146
+          ]
+        },
+        {
+          "code": 31,
+          "district_OMD": "Gràcia",
+          "barri_OMD": "la Vila de Gràcia",
+          "barri_GeoBCN": "la Vila de Gràcia",
+          "name_match_normalized": true,
+          "pob_2026": 51477,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1321182.4319781202,
+          "bounds": [
+            428908.464,
+            4583014.58,
+            430222.971,
+            4584680.451
+          ]
+        },
+        {
+          "code": 32,
+          "district_OMD": "Gràcia",
+          "barri_OMD": "el Camp d'en Grassot i Gràcia Nova",
+          "barri_GeoBCN": "el Camp d'en Grassot i Gràcia Nova",
+          "name_match_normalized": true,
+          "pob_2026": 36422,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 650534.3648146457,
+          "bounds": [
+            429644.109,
+            4583591.828,
+            430794.541,
+            4584907.963
+          ]
+        },
+        {
+          "code": 33,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "el Baix Guinardó",
+          "barri_GeoBCN": "el Baix Guinardó",
+          "name_match_normalized": true,
+          "pob_2026": 26277,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 562467.4178618081,
+          "bounds": [
+            429901.099,
+            4584265.068,
+            430992.829,
+            4585245.947
+          ]
+        },
+        {
+          "code": 34,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "Can Baró",
+          "barri_GeoBCN": "Can Baró",
+          "name_match_normalized": true,
+          "pob_2026": 9645,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 384186.4275340125,
+          "bounds": [
+            429394.931,
+            4585023.302,
+            430510.496,
+            4585737.579
+          ]
+        },
+        {
+          "code": 35,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "el Guinardó",
+          "barri_GeoBCN": "el Guinardó",
+          "name_match_normalized": true,
+          "pob_2026": 39144,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1308729.4102394865,
+          "bounds": [
+            430198.409,
+            4584732.723,
+            431545.871,
+            4586437.556
+          ]
+        },
+        {
+          "code": 36,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "la Font d'en Fargues",
+          "barri_GeoBCN": "la Font d'en Fargues",
+          "name_match_normalized": true,
+          "pob_2026": 9845,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 657222.7441294797,
+          "bounds": [
+            429654.687,
+            4585790.846,
+            430856.328,
+            4586609.341
+          ]
+        },
+        {
+          "code": 37,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "el Carmel",
+          "barri_GeoBCN": "el Carmel",
+          "name_match_normalized": true,
+          "pob_2026": 33799,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 939980.7884423666,
+          "bounds": [
+            428908.621,
+            4585163.543,
+            430259.889,
+            4586761.343
+          ]
+        },
+        {
+          "code": 38,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "la Teixonera",
+          "barri_GeoBCN": "la Teixonera",
+          "name_match_normalized": true,
+          "pob_2026": 12727,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 337543.2699156166,
+          "bounds": [
+            428172.685,
+            4585751.928,
+            429181.858,
+            4586404.8
+          ]
+        },
+        {
+          "code": 39,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "Sant Genís dels Agudells",
+          "barri_GeoBCN": "Sant Genís dels Agudells",
+          "name_match_normalized": true,
+          "pob_2026": 7890,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1681201.3446777998,
+          "bounds": [
+            426500.79,
+            4585462.589,
+            428333.375,
+            4587316.189
+          ]
+        },
+        {
+          "code": 40,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "Montbau",
+          "barri_GeoBCN": "Montbau",
+          "name_match_normalized": true,
+          "pob_2026": 5353,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 2055236.3403640317,
+          "bounds": [
+            427013.946,
+            4586269.028,
+            428867.298,
+            4588490.674
+          ]
+        },
+        {
+          "code": 41,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "la Vall d'Hebron",
+          "barri_GeoBCN": "la Vall d'Hebron",
+          "name_match_normalized": true,
+          "pob_2026": 6087,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 744539.5160299405,
+          "bounds": [
+            428333.375,
+            4586201.461,
+            429297.634,
+            4587654.217
+          ]
+        },
+        {
+          "code": 42,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "la Clota",
+          "barri_GeoBCN": "la Clota",
+          "name_match_normalized": true,
+          "pob_2026": 1123,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 178495.03271608832,
+          "bounds": [
+            428942.525,
+            4586373.179,
+            429565.276,
+            4587026.187
+          ]
+        },
+        {
+          "code": 43,
+          "district_OMD": "Horta-Guinardó",
+          "barri_OMD": "Horta",
+          "barri_GeoBCN": "Horta",
+          "name_match_normalized": true,
+          "pob_2026": 31116,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 3070026.2240843917,
+          "bounds": [
+            427563.644,
+            4586337.543,
+            430328.761,
+            4589112.038
+          ]
+        },
+        {
+          "code": 44,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "Vilapicina i la Torre Llobeta",
+          "barri_GeoBCN": "Vilapicina i la Torre Llobeta",
+          "name_match_normalized": true,
+          "pob_2026": 26478,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 564272.3562990616,
+          "bounds": [
+            430116.91,
+            4586315.394,
+            431850.295,
+            4586938.404
+          ]
+        },
+        {
+          "code": 45,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "Porta",
+          "barri_GeoBCN": "Porta",
+          "name_match_normalized": true,
+          "pob_2026": 31199,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 836828.5278274243,
+          "bounds": [
+            430828.142,
+            4586836.102,
+            431950.337,
+            4587890.412
+          ]
+        },
+        {
+          "code": 46,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "el Turó de la Peira",
+          "barri_GeoBCN": "el Turó de la Peira",
+          "name_match_normalized": true,
+          "pob_2026": 17378,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 354209.4426453551,
+          "bounds": [
+            430077.967,
+            4586856.225,
+            431042.671,
+            4587419.498
+          ]
+        },
+        {
+          "code": 47,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "Can Peguera",
+          "barri_GeoBCN": "Can Peguera",
+          "name_match_normalized": true,
+          "pob_2026": 2122,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 118688.54306503771,
+          "bounds": [
+            430101.166,
+            4587160.439,
+            430640.889,
+            4587584.455
+          ]
+        },
+        {
+          "code": 48,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "la Guineueta",
+          "barri_GeoBCN": "la Guineueta",
+          "name_match_normalized": true,
+          "pob_2026": 15624,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 611951.6004214248,
+          "bounds": [
+            429956.602,
+            4587356.242,
+            431088.085,
+            4588302.451
+          ]
+        },
+        {
+          "code": 49,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "Canyelles",
+          "barri_GeoBCN": "Canyelles",
+          "name_match_normalized": true,
+          "pob_2026": 6906,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 790102.7488296969,
+          "bounds": [
+            429473.817,
+            4587934.876,
+            430812.167,
+            4589112.026
+          ]
+        },
+        {
+          "code": 50,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "les Roquetes",
+          "barri_GeoBCN": "les Roquetes",
+          "name_match_normalized": true,
+          "pob_2026": 17595,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 643008.5427699287,
+          "bounds": [
+            430467.851,
+            4588302.451,
+            431876.785,
+            4589533.991
+          ]
+        },
+        {
+          "code": 51,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "Verdun",
+          "barri_GeoBCN": "Verdun",
+          "name_match_normalized": true,
+          "pob_2026": 13507,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 237120.83476196037,
+          "bounds": [
+            430812.167,
+            4587822.078,
+            431462.397,
+            4588579.632
+          ]
+        },
+        {
+          "code": 52,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "la Prosperitat",
+          "barri_GeoBCN": "la Prosperitat",
+          "name_match_normalized": true,
+          "pob_2026": 28174,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 591232.0367197397,
+          "bounds": [
+            431052.551,
+            4587753.847,
+            432148.431,
+            4588694.539
+          ]
+        },
+        {
+          "code": 53,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "la Trinitat Nova",
+          "barri_GeoBCN": "la Trinitat Nova",
+          "name_match_normalized": true,
+          "pob_2026": 8128,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 576712.9926800344,
+          "bounds": [
+            431444.276,
+            4588610.082,
+            432255.357,
+            4589798.332
+          ]
+        },
+        {
+          "code": 54,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "Torre Baró",
+          "barri_GeoBCN": "Torre Baró",
+          "name_match_normalized": true,
+          "pob_2026": 3236,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1741827.4916698164,
+          "bounds": [
+            430160.375,
+            4588612.226,
+            432143.169,
+            4590435.469
+          ]
+        },
+        {
+          "code": 55,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "Ciutat Meridiana",
+          "barri_GeoBCN": "Ciutat Meridiana",
+          "name_match_normalized": true,
+          "pob_2026": 11493,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 376678.6024291977,
+          "bounds": [
+            430416.608,
+            4589982.759,
+            431568.349,
+            4590653.885
+          ]
+        },
+        {
+          "code": 56,
+          "district_OMD": "Nou Barris",
+          "barri_OMD": "Vallbona",
+          "barri_GeoBCN": "Vallbona",
+          "name_match_normalized": true,
+          "pob_2026": 1440,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 613842.4042703741,
+          "bounds": [
+            431409.809,
+            4589763.017,
+            432249.5,
+            4591066.026
+          ]
+        },
+        {
+          "code": 57,
+          "district_OMD": "Sant Andreu",
+          "barri_OMD": "la Trinitat Vella",
+          "barri_GeoBCN": "la Trinitat Vella",
+          "name_match_normalized": true,
+          "pob_2026": 11307,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 809972.6777315107,
+          "bounds": [
+            432138.399,
+            4588674.656,
+            433287.333,
+            4590377.238
+          ]
+        },
+        {
+          "code": 58,
+          "district_OMD": "Sant Andreu",
+          "barri_OMD": "Baró de Viver",
+          "barri_GeoBCN": "Baró de Viver",
+          "name_match_normalized": true,
+          "pob_2026": 2668,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 229885.3449336314,
+          "bounds": [
+            432802.68,
+            4588191.727,
+            433452.268,
+            4588911.159
+          ]
+        },
+        {
+          "code": 59,
+          "district_OMD": "Sant Andreu",
+          "barri_OMD": "el Bon Pastor",
+          "barri_GeoBCN": "el Bon Pastor",
+          "name_match_normalized": true,
+          "pob_2026": 15871,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1868382.4494523238,
+          "bounds": [
+            432665.508,
+            4586433.867,
+            434060.1,
+            4588685.334
+          ]
+        },
+        {
+          "code": 60,
+          "district_OMD": "Sant Andreu",
+          "barri_OMD": "Sant Andreu",
+          "barri_GeoBCN": "Sant Andreu",
+          "name_match_normalized": true,
+          "pob_2026": 59330,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1865052.5234006073,
+          "bounds": [
+            431711.134,
+            4586462.715,
+            432941.911,
+            4588793.954
+          ]
+        },
+        {
+          "code": 61,
+          "district_OMD": "Sant Andreu",
+          "barri_OMD": "la Sagrera",
+          "barri_GeoBCN": "la Sagrera",
+          "name_match_normalized": true,
+          "pob_2026": 31247,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 986313.4653962806,
+          "bounds": [
+            431807.939,
+            4585091.848,
+            432865.713,
+            4586663.729
+          ]
+        },
+        {
+          "code": 62,
+          "district_OMD": "Sant Andreu",
+          "barri_OMD": "el Congrés i els Indians",
+          "barri_GeoBCN": "el Congrés i els Indians",
+          "name_match_normalized": true,
+          "pob_2026": 15254,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 409214.06339131924,
+          "bounds": [
+            431152.914,
+            4585637.919,
+            431843.267,
+            4586616.768
+          ]
+        },
+        {
+          "code": 63,
+          "district_OMD": "Sant Andreu",
+          "barri_OMD": "Navas",
+          "barri_GeoBCN": "Navas",
+          "name_match_normalized": true,
+          "pob_2026": 22607,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 423819.70054825704,
+          "bounds": [
+            431506.067,
+            4584998.137,
+            432428.394,
+            4585999.239
+          ]
+        },
+        {
+          "code": 64,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "el Camp de l'Arpa del Clot",
+          "barri_GeoBCN": "el Camp de l'Arpa del Clot",
+          "name_match_normalized": true,
+          "pob_2026": 39535,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 740639.2033199373,
+          "bounds": [
+            431088.915,
+            4584154.546,
+            432048.013,
+            4585476.97
+          ]
+        },
+        {
+          "code": 65,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "el Clot",
+          "barri_GeoBCN": "el Clot",
+          "name_match_normalized": true,
+          "pob_2026": 26907,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 696823.6322329916,
+          "bounds": [
+            431744.132,
+            4583931.459,
+            432894.144,
+            4585203.589
+          ]
+        },
+        {
+          "code": 66,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "el Parc i la Llacuna del Poblenou",
+          "barri_GeoBCN": "el Parc i la Llacuna del Poblenou",
+          "name_match_normalized": true,
+          "pob_2026": 17639,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1122054.0081669525,
+          "bounds": [
+            431645.093,
+            4582345.842,
+            432906.459,
+            4584232.684
+          ]
+        },
+        {
+          "code": 67,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "la Vila Olímpica del Poblenou",
+          "barri_GeoBCN": "la Vila Olímpica del Poblenou",
+          "name_match_normalized": true,
+          "pob_2026": 9293,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 924835.1351936368,
+          "bounds": [
+            432105.194,
+            4581623.145,
+            433641.716,
+            4583081.442
+          ]
+        },
+        {
+          "code": 68,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "el Poblenou",
+          "barri_GeoBCN": "el Poblenou",
+          "name_match_normalized": true,
+          "pob_2026": 34736,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1567029.552970823,
+          "bounds": [
+            432600.285,
+            4582517.052,
+            434078.668,
+            4584320.663
+          ]
+        },
+        {
+          "code": 69,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "Diagonal Mar i el Front Marítim del Poblenou",
+          "barri_GeoBCN": "Diagonal Mar i el Front Marítim del Poblenou",
+          "name_match_normalized": true,
+          "pob_2026": 13771,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1226941.1407725038,
+          "bounds": [
+            433453.029,
+            4582911.327,
+            434898.282,
+            4584771.846
+          ]
+        },
+        {
+          "code": 70,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "el Besòs i el Maresme",
+          "barri_GeoBCN": "el Besòs i el Maresme",
+          "name_match_normalized": true,
+          "pob_2026": 30695,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1202692.798352563,
+          "bounds": [
+            433750.374,
+            4583841.79,
+            435480.358,
+            4585868.395
+          ]
+        },
+        {
+          "code": 71,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "Provençals del Poblenou",
+          "barri_GeoBCN": "Provençals del Poblenou",
+          "name_match_normalized": true,
+          "pob_2026": 22076,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1085719.952573178,
+          "bounds": [
+            432417.197,
+            4584045.045,
+            434133.313,
+            4585632.872
+          ]
+        },
+        {
+          "code": 72,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "Sant Martí de Provençals",
+          "barri_GeoBCN": "Sant Martí de Provençals",
+          "name_match_normalized": true,
+          "pob_2026": 27035,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 733992.9004310397,
+          "bounds": [
+            432507.852,
+            4584698.762,
+            433564.833,
+            4585960.718
+          ]
+        },
+        {
+          "code": 73,
+          "district_OMD": "Sant Martí",
+          "barri_OMD": "la Verneda i la Pau",
+          "barri_GeoBCN": "la Verneda i la Pau",
+          "name_match_normalized": true,
+          "pob_2026": 30938,
+          "valid": true,
+          "validity": "Valid Geometry",
+          "type": "Polygon",
+          "area_m2": 1127215.8861777475,
+          "bounds": [
+            432772.714,
+            4585353.857,
+            434136.839,
+            4586821.113
+          ]
+        }
+      ],
+      "matched_codes": 73,
+      "name_matches": 73,
+      "valid_geometries": 73,
+      "sum_areas_m2": 101696942.68211873,
+      "union_area_m2": 101696740.40265617,
+      "sum_minus_union_m2": 202.27946256101131,
+      "positive_area_intersections": [
+        {
+          "codes": [
+            3,
+            4
+          ],
+          "area_m2": 6.0843977255970465
+        },
+        {
+          "codes": [
+            4,
+            66
+          ],
+          "area_m2": 0.01039953181589226
+        },
+        {
+          "codes": [
+            5,
+            6
+          ],
+          "area_m2": 7.116319517102966
+        },
+        {
+          "codes": [
+            5,
+            7
+          ],
+          "area_m2": 0.7692130984742684
+        },
+        {
+          "codes": [
+            6,
+            7
+          ],
+          "area_m2": 0.28087882218779975
+        },
+        {
+          "codes": [
+            6,
+            32
+          ],
+          "area_m2": 1.0764737086217067
+        },
+        {
+          "codes": [
+            6,
+            64
+          ],
+          "area_m2": 2.564307447727174
+        },
+        {
+          "codes": [
+            6,
+            65
+          ],
+          "area_m2": 0.03630362671538023
+        },
+        {
+          "codes": [
+            7,
+            26
+          ],
+          "area_m2": 0.20362917706206232
+        },
+        {
+          "codes": [
+            7,
+            31
+          ],
+          "area_m2": 0.8128366132035479
+        },
+        {
+          "codes": [
+            7,
+            32
+          ],
+          "area_m2": 1.1771345229358303
+        },
+        {
+          "codes": [
+            8,
+            26
+          ],
+          "area_m2": 0.07459850992920672
+        },
+        {
+          "codes": [
+            9,
+            15
+          ],
+          "area_m2": 0.09448393666389165
+        },
+        {
+          "codes": [
+            9,
+            18
+          ],
+          "area_m2": 0.010447925426660731
+        },
+        {
+          "codes": [
+            11,
+            12
+          ],
+          "area_m2": 81.6632579190235
+        },
+        {
+          "codes": [
+            11,
+            14
+          ],
+          "area_m2": 0.005655107141054866
+        },
+        {
+          "codes": [
+            12,
+            13
+          ],
+          "area_m2": 15.569251009830339
+        },
+        {
+          "codes": [
+            13,
+            14
+          ],
+          "area_m2": 0.0027298911815183953
+        },
+        {
+          "codes": [
+            14,
+            15
+          ],
+          "area_m2": 7.430337951800539
+        },
+        {
+          "codes": [
+            15,
+            16
+          ],
+          "area_m2": 0.4295633733051082
+        },
+        {
+          "codes": [
+            15,
+            18
+          ],
+          "area_m2": 1.0130266337641172
+        },
+        {
+          "codes": [
+            16,
+            17
+          ],
+          "area_m2": 1.7097048260519918e-05
+        },
+        {
+          "codes": [
+            16,
+            18
+          ],
+          "area_m2": 0.2075432122293906
+        },
+        {
+          "codes": [
+            19,
+            20
+          ],
+          "area_m2": 4.10660727739779
+        },
+        {
+          "codes": [
+            21,
+            22
+          ],
+          "area_m2": 0.0003003969699766599
+        },
+        {
+          "codes": [
+            21,
+            23
+          ],
+          "area_m2": 0.4406304889034076
+        },
+        {
+          "codes": [
+            22,
+            23
+          ],
+          "area_m2": 0.3398342048856712
+        },
+        {
+          "codes": [
+            22,
+            25
+          ],
+          "area_m2": 0.0010684909945253955
+        },
+        {
+          "codes": [
+            23,
+            24
+          ],
+          "area_m2": 0.390756330094272
+        },
+        {
+          "codes": [
+            23,
+            25
+          ],
+          "area_m2": 0.5579671009375647
+        },
+        {
+          "codes": [
+            24,
+            25
+          ],
+          "area_m2": 3.2754933423331636
+        },
+        {
+          "codes": [
+            24,
+            26
+          ],
+          "area_m2": 1.7040705427266687
+        },
+        {
+          "codes": [
+            25,
+            27
+          ],
+          "area_m2": 2.2339913029279557
+        },
+        {
+          "codes": [
+            26,
+            27
+          ],
+          "area_m2": 0.7323307760816307
+        },
+        {
+          "codes": [
+            27,
+            28
+          ],
+          "area_m2": 0.001270996771548781
+        },
+        {
+          "codes": [
+            27,
+            31
+          ],
+          "area_m2": 0.0013434993947427643
+        },
+        {
+          "codes": [
+            28,
+            30
+          ],
+          "area_m2": 0.7138698913066304
+        },
+        {
+          "codes": [
+            29,
+            30
+          ],
+          "area_m2": 0.02168103488020323
+        },
+        {
+          "codes": [
+            29,
+            37
+          ],
+          "area_m2": 0.2516189667242685
+        },
+        {
+          "codes": [
+            30,
+            31
+          ],
+          "area_m2": 0.12749709243513954
+        },
+        {
+          "codes": [
+            30,
+            33
+          ],
+          "area_m2": 0.023147388888388166
+        },
+        {
+          "codes": [
+            31,
+            32
+          ],
+          "area_m2": 4.099598991410176
+        },
+        {
+          "codes": [
+            32,
+            33
+          ],
+          "area_m2": 3.010159773799239e-06
+        },
+        {
+          "codes": [
+            33,
+            34
+          ],
+          "area_m2": 0.7322659955255233
+        },
+        {
+          "codes": [
+            34,
+            35
+          ],
+          "area_m2": 0.0033236995119744882
+        },
+        {
+          "codes": [
+            35,
+            36
+          ],
+          "area_m2": 0.208381259665084
+        },
+        {
+          "codes": [
+            35,
+            37
+          ],
+          "area_m2": 0.013221811665538041
+        },
+        {
+          "codes": [
+            35,
+            44
+          ],
+          "area_m2": 0.005638167767553862
+        },
+        {
+          "codes": [
+            36,
+            44
+          ],
+          "area_m2": 0.0038972714852995643
+        },
+        {
+          "codes": [
+            37,
+            42
+          ],
+          "area_m2": 0.72285668040498
+        },
+        {
+          "codes": [
+            38,
+            41
+          ],
+          "area_m2": 1.2726605609144066
+        },
+        {
+          "codes": [
+            38,
+            42
+          ],
+          "area_m2": 0.1239118220922526
+        },
+        {
+          "codes": [
+            39,
+            40
+          ],
+          "area_m2": 3.264271834865128
+        },
+        {
+          "codes": [
+            40,
+            41
+          ],
+          "area_m2": 14.345434171714139
+        },
+        {
+          "codes": [
+            40,
+            43
+          ],
+          "area_m2": 1.717005602545244
+        },
+        {
+          "codes": [
+            41,
+            42
+          ],
+          "area_m2": 1.1097364981997322
+        },
+        {
+          "codes": [
+            41,
+            43
+          ],
+          "area_m2": 2.511997157273285
+        },
+        {
+          "codes": [
+            43,
+            47
+          ],
+          "area_m2": 0.016926480363053997
+        },
+        {
+          "codes": [
+            43,
+            48
+          ],
+          "area_m2": 0.0030424917245398374
+        },
+        {
+          "codes": [
+            44,
+            45
+          ],
+          "area_m2": 6.958107581622763e-05
+        },
+        {
+          "codes": [
+            44,
+            46
+          ],
+          "area_m2": 0.017337208792347958
+        },
+        {
+          "codes": [
+            45,
+            48
+          ],
+          "area_m2": 2.4154963386084205
+        },
+        {
+          "codes": [
+            45,
+            52
+          ],
+          "area_m2": 10.183578053482051
+        },
+        {
+          "codes": [
+            46,
+            47
+          ],
+          "area_m2": 0.002240599639278037
+        },
+        {
+          "codes": [
+            47,
+            48
+          ],
+          "area_m2": 0.014739401589654533
+        },
+        {
+          "codes": [
+            48,
+            51
+          ],
+          "area_m2": 1.1097102022302854
+        },
+        {
+          "codes": [
+            49,
+            54
+          ],
+          "area_m2": 0.5107422682764329
+        },
+        {
+          "codes": [
+            50,
+            53
+          ],
+          "area_m2": 0.3896521278126106
+        },
+        {
+          "codes": [
+            50,
+            54
+          ],
+          "area_m2": 0.7980416616026634
+        },
+        {
+          "codes": [
+            52,
+            53
+          ],
+          "area_m2": 2.285707011349018
+        },
+        {
+          "codes": [
+            53,
+            54
+          ],
+          "area_m2": 0.9388814235130525
+        },
+        {
+          "codes": [
+            54,
+            56
+          ],
+          "area_m2": 0.37340330645383424
+        },
+        {
+          "codes": [
+            55,
+            56
+          ],
+          "area_m2": 0.11144669533923322
+        },
+        {
+          "codes": [
+            59,
+            60
+          ],
+          "area_m2": 0.005847072319307953
+        },
+        {
+          "codes": [
+            61,
+            62
+          ],
+          "area_m2": 0.002802734001105954
+        },
+        {
+          "codes": [
+            61,
+            72
+          ],
+          "area_m2": 0.48124216663711844
+        },
+        {
+          "codes": [
+            62,
+            63
+          ],
+          "area_m2": 0.014275764042807282
+        },
+        {
+          "codes": [
+            67,
+            68
+          ],
+          "area_m2": 6.230083500317505
+        },
+        {
+          "codes": [
+            68,
+            69
+          ],
+          "area_m2": 0.1290681669271248
+        },
+        {
+          "codes": [
+            70,
+            73
+          ],
+          "area_m2": 0.34565235921312387
+        },
+        {
+          "codes": [
+            71,
+            73
+          ],
+          "area_m2": 2.6897167064064047
+        },
+        {
+          "codes": [
+            72,
+            73
+          ],
+          "area_m2": 1.5192728530473687
+        }
+      ],
+      "district": {
+        "source": {
+          "path": "custody/dm21b/geobcn_districtes.json.gz",
+          "sha256": "1e5f0a6d6f0e03a3d305707031443ca1bb6fa8b1be1b7b40d0c2700b08e6ac28",
+          "bytes": 37513
+        },
+        "raw_sha256": "50ca6a8d4efa0b5b5ad669a1efbbea52ddc9df4503203a6ee3301f229f252f6e",
+        "units": [],
+        "error": "'nom'"
+      },
+      "temporal_geometry_version_certified": false
+    }
+  },
+  "FGC": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "residual_pairs": [
+        {
+          "direct": "MM1",
+          "name": "Montserrat",
+          "candidates": [
+            {
+              "atm": "FGC_MM1",
+              "name": "Montserrat",
+              "distance_m": 0.004021138051110874
+            },
+            {
+              "atm": "FGC_VR1",
+              "name": "Vallvidrera Inferior",
+              "distance_m": 30615.82282307961
+            },
+            {
+              "atm": "FGC_VS1",
+              "name": "Vallvidrera Superior",
+              "distance_m": 29922.943624140196
+            }
+          ]
+        },
+        {
+          "direct": "VR1",
+          "name": "Vallvidrera Inferior",
+          "candidates": [
+            {
+              "atm": "FGC_MM1",
+              "name": "Montserrat",
+              "distance_m": 30615.82229133382
+            },
+            {
+              "atm": "FGC_VR1",
+              "name": "Vallvidrera Inferior",
+              "distance_m": 0.0
+            },
+            {
+              "atm": "FGC_VS1",
+              "name": "Vallvidrera Superior",
+              "distance_m": 699.4704161175067
+            }
+          ]
+        },
+        {
+          "direct": "VS1",
+          "name": "Vallvidrera Superior",
+          "candidates": [
+            {
+              "atm": "FGC_MM1",
+              "name": "Montserrat",
+              "distance_m": 29922.94446769231
+            },
+            {
+              "atm": "FGC_VR1",
+              "name": "Vallvidrera Inferior",
+              "distance_m": 699.4695184301122
+            },
+            {
+              "atm": "FGC_VS1",
+              "name": "Vallvidrera Superior",
+              "distance_m": 0.00353481647667391
+            }
+          ]
+        }
+      ],
+      "new_name_unique_candidates": {
+        "MM1": "FGC_MM1",
+        "VR1": "FGC_VR1",
+        "VS1": "FGC_VS1"
+      },
+      "candidate_total": 188,
+      "trip_multiset_matches": 2027,
+      "edge_matches": 671,
+      "unmapped_trips": 0,
+      "production_merges": 0,
+      "physical_identity_approved": false
+    }
+  },
+  "production": "NO_GO"
+}
