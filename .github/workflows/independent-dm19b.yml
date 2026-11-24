@@ -1,0 +1,26 @@
+name: DM-19b alternate public source acquisition
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/independent-dm19b.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 independent_dm19b.py
+      - name: Persist evidence in ordinary Git, no LFS or artifacts
+        run: |
+          test -f custody/dm19b/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- custody/dm19b
+          if ! git diff --cached --quiet; then
+            git commit -m "DM-19b alternative source results"
+            git push origin HEAD:main
+          fi
