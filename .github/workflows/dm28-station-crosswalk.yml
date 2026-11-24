@@ -1,0 +1,56 @@
+name: DM28 station crosswalk
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm28-station-crosswalk.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Map primary stop rows against immutable ATM stops
+        run: |
+          python - <<'PY'
+          import csv,io,zipfile,hashlib,json,pathlib,collections,re
+          p=pathlib.Path('custody/dm19b/ATM_NAP_mdb2832_20261117.zip')
+          h=hashlib.sha256(p.read_bytes()).hexdigest()
+          assert h=='af45496d45406ca8d3d123232b9f42f1c8dcf5757aef5c123c56ce8e556396d3'
+          r=json.loads(pathlib.Path('custody/dm27/renfe_independent_edition.json').read_text())['sources']['renfe']
+          assert r['sha256']=='47a95c28fa59adf11c4c80ceba78804ae99bbb5bd626976b6279e587dde3b3ed'
+          def rows(z,n):
+              with z.open(n) as f:
+                  for x in csv.DictReader(io.TextIOWrapper(f,encoding='utf-8-sig',newline='')):
+                      yield {k.strip():v.strip() for k,v in x.items() if k is not None and v is not None}
+          active=[x for x in r['results'] if x['active']]
+          codes={s['stop_id'] for x in active for s in x['stops']}
+          with zipfile.ZipFile(p) as z:
+              stops=list(rows(z,'stops.txt'))
+              exact=collections.defaultdict(list); prefix=collections.defaultdict(list)
+              for s in stops:
+                  for c in codes:
+                      if s['stop_id']=='REG_'+c:exact[c].append(s)
+                      elif s['stop_id'].startswith('REG_') and re.search(r'(?<![0-9])'+re.escape(c)+r'(?![0-9])',s['stop_id']):prefix[c].append(s)
+              result=[]
+              for x in active:
+                  for s in x['stops']:
+                      c=s['stop_id'];result.append({'atm_trip_id':x['atm_id'],'primary_trip_id':x['primary_id'],'primary_stop_row':s,'exact_atm_stop_candidates':exact[c],'other_reg_candidates':prefix[c]})
+              # Examine alternative-service evidence in ATM's own records, not inferred routes.
+              relevant=[x for x in rows(z,'routes.txt') if x.get('route_id') in ('REG_R13','REG_R14','ABR_1','SAB_365','SAB_711','TCC_157')]
+              agency=[x for x in rows(z,'agency.txt') if x.get('agency_id') in {y['agency_id'] for y in relevant}]
+              files=z.namelist()
+              flex=[x for x in files if any(k in x for k in ('location_group','booking_rules','locations.geojson'))]
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==h
+          out={'primary_report_sha256':r['sha256'],'atm_zip_sha256':h,'row_count':len(result),'distinct_primary_stop_ids':len(codes),'unique_exact_rows':sum(len(x['exact_atm_stop_candidates'])==1 for x in result),'unmatched_rows':sum(not x['exact_atm_stop_candidates'] for x in result),'ambiguous_rows':sum(len(x['exact_atm_stop_candidates'])>1 for x in result),'codes':{c:{'exact':exact[c],'other':prefix[c]} for c in sorted(codes)},'rows':result,'atm_routes':relevant,'atm_agencies':agency,'flex_members':flex,'originals_unchanged':True,'production':'NO_GO','imputations':0}
+          d=pathlib.Path('custody/dm28');d.mkdir(exist_ok=True)
+          (d/'station_crosswalk.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Persist evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm28/station_crosswalk.json
+          git commit -m 'DM28 stop code crosswalk and ATM service schema evidence'
+          git push origin HEAD:main
