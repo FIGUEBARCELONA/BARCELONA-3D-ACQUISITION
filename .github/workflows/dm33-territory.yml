@@ -1,0 +1,54 @@
+name: DM33 territorial localization and GTFS evidence
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm33-territory.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/dm33deps" shapely pyshp olefile pymupdf
+      - name: Localize differences and inspect preserved binary
+        run: |
+          PYTHONPATH="$RUNNER_TEMP/dm33deps" python - <<'PY'
+          import pathlib,zipfile,io,hashlib,json,collections,xml.etree.ElementTree as E,os,subprocess,shutil
+          import shapefile,olefile,fitz
+          from shapely.geometry import shape
+          from shapely.ops import unary_union
+          d=pathlib.Path('custody/dm33');d.mkdir(exist_ok=True)
+          p=pathlib.Path('custody/dm31/gis_2.original.zip');b=p.read_bytes()
+          assert hashlib.sha256(b).hexdigest()=='9002d5806bd6f8689865cb61ebbaf9d9849f45b9c34fde9e4eaebfa473a4f61f'
+          z=zipfile.ZipFile(io.BytesIO(b));out={'individual':{},'metadata':{},'cad':{},'repairs':0,'canonical_approved':False}
+          for key,fragment,h in [('barris','_Barris_','6bacf44fa2076620b519d0dfd6de33dddc35d77fd4390cda3919593aff9dd0db'),('districtes','_Districtes_','50ca6a8d4efa0b5b5ad669a1efbbea52ddc9df4503203a6ee3301f229f252f6e')]:
+              n=next(n for n in z.namelist() if fragment in n and n.endswith('.shp'));base=n[:-4]
+              r=shapefile.Reader(shp=io.BytesIO(z.read(n)),shx=io.BytesIO(z.read(base+'.shx')),dbf=io.BytesIO(z.read(base+'.dbf')),encoding='utf-8')
+              a={x.record.as_dict()['CODI_UA']:(x.record.as_dict(),shape(x.shape.__geo_interface__)) for x in r.iterShapeRecords()}
+              b=pathlib.Path('custody/dm30',key+'_geometria.original.json').read_bytes();assert hashlib.sha256(b).hexdigest()==h
+              g={x['codi']:shape(x['geometria']) for x in json.loads(b)['resultats']};assert set(g)==set(a)
+              out['individual'][key]=sorted([{'code':c,'name':r['NOM'],'district':r['DISTRICTE'],'shp_type':s.geom_type,'rest_type':g[c].geom_type,'shp_parts':len(s.geoms) if s.geom_type=='MultiPolygon' else 1,'rest_area_m2':g[c].area,'shp_area_m2':s.area,'rest_only_m2':g[c].difference(s).area,'shp_only_m2':s.difference(g[c]).area,'symdiff_m2':s.symmetric_difference(g[c]).area,'hausdorff_m':s.hausdorff_distance(g[c])} for c,(r,s) in a.items()],key=lambda x:-x['symdiff_m2'])
+          for n in z.namelist():
+              if n.endswith('.xml'):
+                  root=E.fromstring(z.read(n)); out['metadata'][n]={'sha256':hashlib.sha256(z.read(n)).hexdigest(),'fields':[{'tag':x.tag,'text':x.text.strip()} for x in root.iter() if x.text and x.text.strip() and any(k in x.tag.lower() for k in ('date','title','scale','edition','abstract','purpose','lineage','credit','useconst','resconst','time','mdlang'))][:100]}
+          for k in ['gis_meta','cad_meta']:
+              p=pathlib.Path('custody/dm31',k+'.original.pdf')
+              with fitz.open(str(p)) as doc:out['metadata'][k]={'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'text':[x.get_text() for x in doc]}
+          p=pathlib.Path('custody/dm32/cad_response.original');b=p.read_bytes();assert hashlib.sha256(b).hexdigest()=='ad38d369514a1c9e1dc29f7654173a7d600b8db72553af0e67ae193259f58ea6'
+          with olefile.OleFileIO(io.BytesIO(b)) as f:out['cad']['streams']=[{'path':n,'size':f.get_size(n)} for n in f.listdir(streams=True,storages=False)]
+          # Probe installed GDAL, explicitly report driver availability; never convert via an unsupported driver.
+          import shutil
+          for cmd in ['ogrinfo','gdalinfo']:
+              if shutil.which(cmd):
+                  q=subprocess.run([cmd,'--formats'],capture_output=True,text=True);out['cad'][cmd+'_dgn_formats']=[l for l in q.stdout.splitlines() if 'DGN' in l]
+          (d/'territory_report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Preserve report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm33/territory_report.json
+          git commit -m 'DM33 localize per-unit differences and inspect DGN container metadata'
+          git push origin HEAD:main
