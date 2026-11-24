@@ -1,0 +1,57 @@
+name: DM28 homogeneous port workbooks and airport alternate dataset
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm28-port-xlsx.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect workbooks
+        run: |
+          python - <<'PY'
+          import urllib.request,concurrent.futures,io,zipfile,hashlib,json,pathlib,xml.etree.ElementTree as E,re
+          root=pathlib.Path('custody/dm28');root.mkdir(exist_ok=True)
+          ns={'x':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
+          ids=[5467,5469,5471,5473,5475,5477,5479,5481,5483,5485,5487,5465]
+          def one(pair):
+              month,i=pair;u='https://www.puertos.es/en/file-download/download/private/'+str(i)
+              try:
+                  with urllib.request.urlopen(u,timeout=20) as f:
+                      b=f.read(20000001); m={'month':month,'url':u,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)}
+                  assert len(b)<=20000000
+                  with zipfile.ZipFile(io.BytesIO(b)) as z:
+                      assert z.testzip() is None
+                      ss=[]
+                      if 'xl/sharedStrings.xml' in z.namelist():ss=[''.join(x.itertext()) for x in E.fromstring(z.read('xl/sharedStrings.xml')).findall('x:si',ns)]
+                      sheets=[]
+                      for name in z.namelist():
+                          if not re.fullmatch(r'xl/worksheets/sheet\d+.xml',name):continue
+                          rows=[]
+                          for row in E.fromstring(z.read(name)).findall('x:sheetData/x:row',ns):
+                              cells={}
+                              for c in row.findall('x:c',ns):
+                                  v=c.find('x:v',ns)
+                                  if v is not None:cells[c.get('r')]=ss[int(v.text)] if c.get('t')=='s' else v.text
+                                  elif c.get('t')=='inlineStr':cells[c.get('r')]=''.join(c.find('x:is',ns).itertext())
+                              if cells:rows.append(cells)
+                          label=' '.join(str(v) for r in rows[:15] for v in r.values()).upper()
+                          if 'UNIDADES DE TRANSPORTE INTERMODAL RO-RO' in label or ('BUQUES MERCANTES' in label and 'NÚMERO' in label):
+                              sheets.append({'sheet':name,'header_rows':rows[:12],'barcelona_rows':[r for r in rows if any(str(v).strip().lower()=='barcelona' for v in r.values())]})
+                      m.update({'status':'INSPECTED','sheets':sheets})
+                  return m
+              except Exception as e:return {'month':month,'url':u,'status':'FAILED','error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool: results=list(pool.map(one,enumerate(ids,1)))
+          (root/'port_xlsx_inspection.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Persist report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm28/port_xlsx_inspection.json
+          git commit -m 'DM28 inspect twelve official port workbooks'
+          git push origin HEAD:main
