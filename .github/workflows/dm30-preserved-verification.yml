@@ -1,0 +1,81 @@
+name: DM30 preserved source verification
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm30-preserved-verification.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect preserved sources with failure reporting
+        run: |
+          python - <<'PY'
+          import pathlib,hashlib,json,collections,math,importlib.util,subprocess,sys,shutil
+          d=pathlib.Path('custody/dm30');p=pathlib.Path('custody/dm29')
+          out={'geometry':{},'pdfs':{},'tools':{},'imputations':0}
+          for k,h in [('barris','6bacf44fa2076620b519d0dfd6de33dddc35d77fd4390cda3919593aff9dd0db'),('districtes','50ca6a8d4efa0b5b5ad669a1efbbea52ddc9df4503203a6ee3301f229f252f6e')]:
+              f=d/(k+'_geometria.original.json');b=f.read_bytes();assert hashlib.sha256(b).hexdigest()==h
+              rs=json.loads(b)['resultats'];types=collections.Counter();crs=collections.Counter();issues=[];ringcount=0
+              for r in rs:
+                  g=r['geometria'];types[g['type']]+=1;crs[g['proj']]+=1
+                  polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates'] if g['type']=='MultiPolygon' else []
+                  if not polys:issues.append([r['codi'],'not_polygon'])
+                  for poly in polys:
+                      for ring in poly:
+                          ringcount+=1
+                          if len(ring)<4 or ring[0]!=ring[-1]:issues.append([r['codi'],'open_or_short_ring'])
+                          if not all(len(v)==2 and all(math.isfinite(float(q)) for q in v) for v in ring):issues.append([r['codi'],'nonfinite_coordinate'])
+              out['geometry'][k]={'sha256':h,'types':dict(types),'crs':dict(crs),'rings':ringcount,'structural_issues':issues}
+          for k in ['parades','horaris','anuari']:
+              f=p/(k+'.pdf')
+              if f.exists():
+                  b=f.read_bytes();out['pdfs'][k]={'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'pdf_signature':b.startswith(b'%PDF-')}
+              else:out['pdfs'][k]={'status':'MISSING'}
+          for k in ['fitz','cv2','numpy','shapely','pypdf']:out['tools'][k]=bool(importlib.util.find_spec(k))
+          # Persist a report even if optional PDF tools are unavailable.
+          if not out['tools']['fitz']:
+              try:
+                  x=subprocess.run([sys.executable,'-m','pip','install','--disable-pip-version-check','--quiet','pymupdf'],capture_output=True,text=True,timeout=65)
+                  out['tools']['pymupdf_install']={'returncode':x.returncode,'stderr':x.stderr[-1200:]}
+              except Exception as e:out['tools']['pymupdf_install']={'error':repr(e)}
+          try:
+              import fitz
+              for k in ['parades','horaris','anuari']:
+                  f=p/(k+'.pdf')
+                  if not f.exists():continue
+                  with fitz.open(str(f)) as doc:
+                      m=out['pdfs'][k];m['pages']=len(doc)
+                      if k=='horaris':m['text']=[page.get_text(sort=True) for page in doc]
+                      if k=='parades':
+                          m['links']=[page.get_links() for page in doc]
+                          try:
+                              import cv2,numpy as np
+                              qr=[]
+                              for i,page in enumerate(doc):
+                                  pix=page.get_pixmap(matrix=fitz.Matrix(3,3),colorspace=fitz.csGRAY)
+                                  a=np.frombuffer(pix.samples,dtype=np.uint8).reshape(pix.height,pix.width)
+                                  ok,vals,points,_=cv2.QRCodeDetector().detectAndDecodeMulti(a)
+                                  qr.append({'page':i+1,'values':list(vals) if ok else [],'points':points.tolist() if ok else []})
+                              m['qr']=qr
+                          except Exception as e:m['qr_error']=repr(e)
+                      if k=='anuari':
+                          m['candidate_pages']=[]
+                          for i,page in enumerate(doc):
+                              t=page.get_text(sort=True)
+                              if 'Barcelona' in t and any(x in t.upper() for x in ['UNIDADES DE TRANSPORTE INTERMODAL','BUQUES MERCANTES','BUQUES ENTRADOS']):
+                                  m['candidate_pages'].append({'page':i+1,'text':t[:12000]})
+                          m['candidate_pages']=m['candidate_pages'][:15]
+          except Exception as e:out['pdf_inspection_error']=repr(e)
+          (d/'preserved_verification.json').write_text(json.dumps(out,ensure_ascii=False,indent=2,default=str)+'\n')
+          PY
+      - name: Persist QA
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm30/preserved_verification.json
+          git commit -m 'DM30 preserved geometry and PDF verification evidence'
+          git push origin HEAD:main
