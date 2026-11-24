@@ -1,0 +1,557 @@
+{
+  "custody_readback": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "PENR2009.gsb": {
+        "bytes": 667552,
+        "sha256": "eb6bc0ca1de4591851d2113f44b6a16fb44ad67ab49dd7216ca471c41ce45221",
+        "crc32": "262b7f6f",
+        "git_blob_sha1": "4bdfa4ddef1adc4a32f7daf0956fe65b91d4aafa"
+      },
+      "ICGC_080193.json": {
+        "bytes": 458348,
+        "sha256": "c5605416b9e25b84eaaa6f9eb7a2bb8e15622644de2a40a799dcd1911be1078e",
+        "crc32": "2a9fee70",
+        "git_blob_sha1": "b9187a6227556cd207349b62056efa6e85f3555f"
+      },
+      "cat80000.gr": {
+        "bytes": 535816,
+        "sha256": "1008a221282bce3b5d17d463f866a45b8011e63768fb718c48f5e126b2873ed9",
+        "crc32": "6b1c94a2",
+        "git_blob_sha1": "2877e6e4553faa533238b10846c0d38975676827"
+      }
+    }
+  },
+  "geoid": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "rows": 181,
+      "columns": 211,
+      "nodes": 38191,
+      "min_m": 46.377,
+      "max_m": 53.938,
+      "mean_m": 49.546010735513605,
+      "corners_nw_ne_sw_se_m": [
+        52.299,
+        49.157,
+        50.26,
+        48.112
+      ],
+      "node_424_m": 52.657,
+      "node_reproduction_max_abs_m": 4.263256414560601e-14,
+      "bounds_lonlat": [
+        0,
+        40,
+        3.5,
+        43
+      ],
+      "grid_step_arcmin": 1,
+      "reference_system": "ETRS89/00-EGM08D595",
+      "declared_estimated_std_m": 0.05,
+      "reference_examples": [
+        {
+          "id": 1,
+          "lon": 0.660797125,
+          "lat": 42.798186913888884,
+          "calculated_m": 53.08945796362157,
+          "published_m": 53.0895,
+          "delta_m": -4.2036378431475896e-05
+        },
+        {
+          "id": 2,
+          "lon": 0.016666666666666666,
+          "lat": 42.983333333333334,
+          "calculated_m": 52.498999999999995,
+          "published_m": 52.499,
+          "delta_m": -7.105427357601002e-15
+        },
+        {
+          "id": 3,
+          "lon": 0.03333333333333333,
+          "lat": 42.983333333333334,
+          "calculated_m": 52.53199999999999,
+          "published_m": 52.532,
+          "delta_m": -7.105427357601002e-15
+        },
+        {
+          "id": 4,
+          "lon": 0.9756675583333333,
+          "lat": 42.69357636388889,
+          "calculated_m": 53.74590945683333,
+          "published_m": 53.7459,
+          "delta_m": 9.456833332421866e-06
+        },
+        {
+          "id": 5,
+          "lon": 0.7505361416666667,
+          "lat": 41.88161009722222,
+          "calculated_m": 49.85287448063141,
+          "published_m": 49.8529,
+          "delta_m": -2.5519368591631064e-05
+        },
+        {
+          "id": 6,
+          "lon": 2.9041730027777777,
+          "lat": 41.88288689444445,
+          "calculated_m": 49.4552700622334,
+          "published_m": 49.4553,
+          "delta_m": -2.9937766598209237e-05
+        },
+        {
+          "id": 7,
+          "lon": 1.91404025,
+          "lat": 41.292941363888886,
+          "calculated_m": 49.3595763782794,
+          "published_m": 49.3596,
+          "delta_m": -2.3621720600885965e-05
+        },
+        {
+          "id": 8,
+          "lon": 1.973052963888889,
+          "lat": 42.47812805,
+          "calculated_m": 52.816123480298444,
+          "published_m": 52.8161,
+          "delta_m": 2.3480298445122116e-05
+        },
+        {
+          "id": 9,
+          "lon": 2.4288588555555553,
+          "lat": 41.53992939722222,
+          "calculated_m": 49.23937561591205,
+          "published_m": 49.2394,
+          "delta_m": -2.438408795057967e-05
+        },
+        {
+          "id": 10,
+          "lon": 1.9869563916666668,
+          "lat": 41.41852835555555,
+          "calculated_m": 49.37009701116077,
+          "published_m": 49.3701,
+          "delta_m": -2.9888392276689046e-06
+        },
+        {
+          "id": 11,
+          "lon": 1.1685313722222224,
+          "lat": 41.17000521666667,
+          "calculated_m": 49.13660894808498,
+          "published_m": 49.1366,
+          "delta_m": 8.948084975202164e-06
+        },
+        {
+          "id": 12,
+          "lon": 2.174297794444444,
+          "lat": 41.98011151944445,
+          "calculated_m": 50.485113381833344,
+          "published_m": 50.4851,
+          "delta_m": 1.3381833340986304e-05
+        },
+        {
+          "id": 13,
+          "lon": 1.1327543944444445,
+          "lat": 42.37453301111111,
+          "calculated_m": 52.45930777981101,
+          "published_m": 52.4593,
+          "delta_m": 7.779811014074767e-06
+        },
+        {
+          "id": 14,
+          "lon": 0.5962970805555556,
+          "lat": 41.62928939166667,
+          "calculated_m": 49.413748531557005,
+          "published_m": 49.4137,
+          "delta_m": 4.853155700601519e-05
+        },
+        {
+          "id": 15,
+          "lon": 1.5168265027777776,
+          "lat": 41.992238586111114,
+          "calculated_m": 50.528770194357506,
+          "published_m": 50.5288,
+          "delta_m": -2.9805642490998707e-05
+        }
+      ],
+      "within_0_0001m": 15,
+      "max_abs_m": 4.853155700601519e-05,
+      "rmse_m": 2.4055739928033862e-05,
+      "reference_source": "https://icgc-web-pro.s3.eu-central-1.amazonaws.com/produccio/s3fs-public/INFO_cat80000%20to%20GEM_Leica%20Geoystems%20Geoid_21620.pdf p.6",
+      "independent_vertical_accuracy_verified": false
+    }
+  },
+  "viewer_alternate": {
+    "status": "CHECKS_RECORDED",
+    "data": {
+      "http": 200,
+      "url": "https://visors.icgc.cat/appdownloads/?c=fmevtmet",
+      "sha256": "e0d8d8818d6a03583b387e3f62c65607c85f448961d30e48cbf0e4d638a38c11",
+      "elements": [
+        [
+          "a",
+          {
+            "href": "#maintabs-1",
+            "id": "titleBasic",
+            "title": "Descarrega una imatge de l'àrea i el producte que seleccionis"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "#maintabs-2",
+            "id": "titleAdvanced",
+            "title": "Descarrega un arxiu ZIP amb tots els fulls de l'àrea que seleccionis"
+          }
+        ],
+        [
+          "button",
+          {
+            "class": "downloadButton",
+            "onclick": "updateSelect('0')"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "#tabsfme-3",
+            "id": "titleElevationsFME"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "171",
+            "onclick": "handleRadSerieElevcionsFME(this)",
+            "checked": null
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-territorial/Models-delevacions",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "172",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-territorial/Models-delevacions",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "186",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-territorial/Models-delevacions",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "173",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-territorial/Models-delevacions",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "174",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-litoral/Models-delevacions-especifics-del-litoral",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "175",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-litoral/Models-delevacions-especifics-del-litoral",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "176",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-litoral/Models-delevacions-especifics-del-litoral",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "177",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-litoral/Models-delevacions-especifics-del-litoral",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "178",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-territorial/Models-delevacions",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "179",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-territorial/Models-delevacions",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "180",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-litoral/Models-delevacions-especifics-del-litoral",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "181",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-litoral/Models-delevacions-especifics-del-litoral",
+            "target": "prodInfo"
+          }
+        ],
+        [
+          "input",
+          {
+            "type": "radio",
+            "name": "dwlElevationsSerieFme",
+            "value": "182",
+            "onclick": "handleRadSerieElevcionsFME(this)"
+          }
+        ],
+        [
+          "a",
+          {
+            "href": "https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Elevacions/Elevacions-litoral/Models-delevacions-especifics-del-litoral",
+            "target": "prodInfo"
+          }
+        ]
+      ],
+      "scripts": [
+        "lib/proj4.js",
+        "lib/25831.js",
+        "lib/jquery-2.1.3.min.js",
+        "lib/jquery-ui-1.11.4/jquery-ui.min.js",
+        "lib/i18n-properties/jquery.i18n.properties.js",
+        "lib/params.js",
+        "./ICGC-Cookie-GDPR-master/dist/cookies-icgc.js",
+        "v3.18.2/ol.js",
+        "lib/transforminteraction.js",
+        "jsUpload/vendor/jquery.ui.widget.js",
+        "jsUpload/jquery.iframe-transport.js",
+        "jsUpload/jquery.fileupload.js",
+        "lib/customFunctions300926.js",
+        "lib/downloads300926.js",
+        "lib/controlsChangeRadioSerie070426.js"
+      ],
+      "script_inspection": [
+        {
+          "url": "https://visors.icgc.cat/appdownloads/lib/proj4.js",
+          "http": 200,
+          "sha256": "c9b0907a0b2e31e0646fc90dd03b295e808bfeae836df5a37c50a8878becfe3b",
+          "matches": []
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/lib/25831.js",
+          "http": 200,
+          "sha256": "b4949b0376393e5e21aa6dc199e2a0fdb375deba82a0222d1251fb82f2f8dc09",
+          "matches": []
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/lib/jquery-2.1.3.min.js",
+          "http": 200,
+          "sha256": "8af93bd675e1cfd9ecc850e862819fdac6e3ad1f5d761f970e409c7d9c63bdc3",
+          "matches": []
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/lib/jquery-ui-1.11.4/jquery-ui.min.js",
+          "http": 200,
+          "sha256": "c4d8dbe77feb63e5a61bee0bead4e5f66e8fa6a927599bd1b74aced52467273c",
+          "matches": []
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/lib/i18n-properties/jquery.i18n.properties.js",
+          "http": 200,
+          "sha256": "69cbddb3a688686eb9b3a1174e88cfb6f504ea26929e4d23f9ea05b94a172730",
+          "matches": []
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/lib/params.js",
+          "http": 200,
+          "sha256": "a71cf8f78f3f6d324cc0663612bb763d018855aeb0e066a418d4547e21e580ba",
+          "matches": []
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/ICGC-Cookie-GDPR-master/dist/cookies-icgc.js",
+          "http": 200,
+          "sha256": "dd9a08bf0f88dd309e7b73fc4e9969760ffcf8c97f4192079ee0db3c33e6c40b",
+          "matches": []
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/v3.18.2/ol.js",
+          "http": 200,
+          "sha256": "df972d6792237ddb225f3ef4dce0e926e8f811d2548982f8e68da49f534a91a1",
+          "matches": [
+            {
+              "term": "GetMap",
+              "context": "N(Qs,{westBoundLongitude:K(Hn),\neastBoundLongitude:K(Hn),southBoundLatitude:K(Hn),northBoundLatitude:K(Hn)}),Ts=N(Qs,{GetCapabilities:K(Ls),GetMap:K(Ls),GetFeatureInfo:K(Ls)}),Ms=N(Qs,{Format:Mm(T),DCPType:Mm(function(a,b){return O({},bt,a,b)})}),bt=N(Qs,{HTTP:K(function(a,b){return O({},ct,a,b)})}),ct=N(Qs,{Get:K(Js),Post:K"
+            },
+            {
+              "term": "GetMap",
+              "context": "d 0!==this.T){var d=this.T,f=gc(a),g=this.na,h=ec(a),l=fc(a),m=e[0],n=e[1],p=.0254/this.s,e={OPERATION:this.za?\"GETDYNAMICMAPOVERLAYIMAGE\":\"GETMAPIMAGE\",VERSION:\"2.0.0\",LOCALE:\"en\",CLIENTAGENT:\"ol.source.ImageMapGuide source\",CLIP:\"1\",SETDISPLAYDPI:this.s,SETDISPLAYWIDTH:Math.round(e[0]),SETDISPLAYHEIGHT:Math.round(e[1]),\nSE"
+            },
+            {
+              "term": "GetMap",
+              "context": ")return l;if(1!=this.s){var l=this.s*ec(a)/2,m=this.s*fc(a)/2;a[0]=e-l;a[1]=f-m;a[2]=e+l;a[3]=f+m}e={SERVICE:\"WMS\",VERSION:\"1.3.0\",REQUEST:\"GetMap\",FORMAT:\"image/png\",TRANSPARENT:!0};za(e,this.i);this.T[0]=Math.ceil(h*this.s);this.T[1]=Math.ceil(g*this.s);d=Bv(this,\na,this.T,c,d,e);this.c=new Ct(a,b,c,this.l,d,this.na,this.R"
+            }
+          ]
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/lib/transforminteraction.js",
+          "http": 200,
+          "sha256": "6dcd7a020e997d7ad98882c5af8f9ef23c58bb937a4738db686a10efc53e5c3d",
+          "matches": [
+            {
+              "term": "25cm.?2022",
+              "context": "/ pixelSize)));\n\t\tconst params = [\n\t\t\t'SERVICE=WMS',\n\t\t\t'VERSION=1.3.0',\n\t\t\t'REQUEST=GetMap',\n\t\t\t'LAYERS=model-elevacions-terreny-amb-lidar-25cm-2022',\n\t\t\t'STYLES=',\n\t\t\t'CRS=EPSG:25831',\n\t\t\t'BBOX=' + extent.join(','),\n\t\t\t'WIDTH=' + width,\n\t\t\t'HEIGHT=' + height,\n\t\t\t'FORMAT=image/png',\n\t\t\t'TRANSPARENT=TRUE'\n\t\t].join('&');\n\t\tconst"
+            },
+            {
+              "term": "model-elevacions-terreny",
+              "context": "h.min(1024, Math.ceil(extentHeight / pixelSize)));\n\t\tconst params = [\n\t\t\t'SERVICE=WMS',\n\t\t\t'VERSION=1.3.0',\n\t\t\t'REQUEST=GetMap',\n\t\t\t'LAYERS=model-elevacions-terreny-amb-lidar-25cm-2022',\n\t\t\t'STYLES=',\n\t\t\t'CRS=EPSG:25831',\n\t\t\t'BBOX=' + extent.join(','),\n\t\t\t'WIDTH=' + width,\n\t\t\t'HEIGHT=' + height,\n\t\t\t'FORMAT=image/png',\n\t\t\t'TRANSPARENT=TRUE'\n\t\t"
+            },
+            {
+              "term": "GetMap",
+              "context": "t = Math.max(16, Math.min(1024, Math.ceil(extentHeight / pixelSize)));\n\t\tconst params = [\n\t\t\t'SERVICE=WMS',\n\t\t\t'VERSION=1.3.0',\n\t\t\t'REQUEST=GetMap',\n\t\t\t'LAYERS=model-elevacions-terreny-amb-lidar-25cm-2022',\n\t\t\t'STYLES=',\n\t\t\t'CRS=EPSG:25831',\n\t\t\t'BBOX=' + extent.join(','),\n\t\t\t'WIDTH=' + width,\n\t\t\t'HEIGHT=' + height,\n\t\t\t'FORMA"
+            },
+            {
+              "term": "GetMap",
+              "context": " from the current map.\n * @param {ol.Map} map Map.\n * @api stable\n */\nol.interaction.Transform.prototype.setMap = function(map) \n{\tif (this.getMap()) this.getMap().removeLayer(this.overlayLayer_);\n\tol.interaction.Pointer.prototype.setMap.call (this, map);\n\tthis.overlayLayer_.setMap(map);\n \tif (map !== null) {\n\t\tthis.isTouch "
+            },
+            {
+              "term": "GetMap",
+              "context": "nt map.\n * @param {ol.Map} map Map.\n * @api stable\n */\nol.interaction.Transform.prototype.setMap = function(map) \n{\tif (this.getMap()) this.getMap().removeLayer(this.overlayLayer_);\n\tol.interaction.Pointer.prototype.setMap.call (this, map);\n\tthis.overlayLayer_.setMap(map);\n \tif (map !== null) {\n\t\tthis.isTouch = /touch/.test("
+            }
+          ]
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/jsUpload/vendor/jquery.ui.widget.js",
+          "http": 200,
+          "sha256": "0afa8c947b435fc74382c870974ded570bf39dcaaa30a37414bcd9acd6a9e3e2",
+          "matches": []
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/jsUpload/jquery.iframe-transport.js",
+          "http": 200,
+          "sha256": "f6e9864c545c938343a869fcf464beaad8cdf5fadc80a68842f47836adf225b4",
+          "matches": []
+        },
+        {
+          "url": "https://visors.icgc.cat/appdownloads/jsUpload/jquery.fileupload.js",
+          "http": 200,
+          "sha256": "07ddae60f2d6d708b6251b9e9ade4c8bb7d4e0af905a8e2f95dfea2dd8588c36",
+          "matches": []
+        }
+      ],
+      "native_cells_acquired": 0
+    }
+  },
+  "canonical_EAM_closed": 0,
+  "production": "NO_GO"
+}
