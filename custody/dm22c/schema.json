@@ -1,0 +1,271 @@
+{
+  "schema": {
+    "code": "200",
+    "count": "12264",
+    "time": "2026-11-24T16:17:04Z",
+    "data": {
+      "length": 1,
+      "first": {
+        "id": "yzlntdm2fs",
+        "source": "STATISTICS",
+        "title": "Població",
+        "thesaurus": {
+          "length": 1,
+          "first": {
+            "length": 3,
+            "first": "Població",
+            "last": null
+          },
+          "last": {
+            "length": 3,
+            "first": "Població",
+            "last": null
+          }
+        },
+        "license": "CC BY 4.0",
+        "publishDate": "2026-11-06T07:27:52Z",
+        "showDate": "2026-07-01T00:00:00Z",
+        "typeTime": "dia",
+        "docSource": {
+          "length": 1,
+          "first": "Ajuntament de Barcelona. Oficina Municipal de Dades (OMD). Padró Municipal d'Habitants",
+          "last": "Ajuntament de Barcelona. Oficina Municipal de Dades (OMD). Padró Municipal d'Habitants"
+        },
+        "description": "Nombre de persones de Barcelona segons el padró municipal a data 1 de cada mes",
+        "unit": "Nombre",
+        "measureUnit": "Persones",
+        "symbolUnit": "None",
+        "notes": "Si la dada és menor que 5 s’indica com ‘..’.",
+        "popularity": "33840",
+        "time": {
+          "length": 1,
+          "first": "dia",
+          "last": "dia"
+        },
+        "territories": {
+          "length": 3,
+          "first": "municipi",
+          "last": "barri"
+        },
+        "favourites": {
+          "length": 0,
+          "first": null,
+          "last": null
+        },
+        "frequency": "Mes",
+        "serieInterrompuda": "False",
+        "docCount": "1"
+      },
+      "last": {
+        "id": "yzlntdm2fs",
+        "source": "STATISTICS",
+        "title": "Població",
+        "thesaurus": {
+          "length": 1,
+          "first": {
+            "length": 3,
+            "first": "Població",
+            "last": null
+          },
+          "last": {
+            "length": 3,
+            "first": "Població",
+            "last": null
+          }
+        },
+        "license": "CC BY 4.0",
+        "publishDate": "2026-11-06T07:27:52Z",
+        "showDate": "2026-07-01T00:00:00Z",
+        "typeTime": "dia",
+        "docSource": {
+          "length": 1,
+          "first": "Ajuntament de Barcelona. Oficina Municipal de Dades (OMD). Padró Municipal d'Habitants",
+          "last": "Ajuntament de Barcelona. Oficina Municipal de Dades (OMD). Padró Municipal d'Habitants"
+        },
+        "description": "Nombre de persones de Barcelona segons el padró municipal a data 1 de cada mes",
+        "unit": "Nombre",
+        "measureUnit": "Persones",
+        "symbolUnit": "None",
+        "notes": "Si la dada és menor que 5 s’indica com ‘..’.",
+        "popularity": "33840",
+        "time": {
+          "length": 1,
+          "first": "dia",
+          "last": "dia"
+        },
+        "territories": {
+          "length": 3,
+          "first": "municipi",
+          "last": "barri"
+        },
+        "favourites": {
+          "length": 0,
+          "first": null,
+          "last": null
+        },
+        "frequency": "Mes",
+        "serieInterrompuda": "False",
+        "docCount": "1"
+      }
+    },
+    "dims": {
+      "length": 2,
+      "first": {
+        "id": "dim0",
+        "type": "time",
+        "labelType": {
+          "dia": "dia"
+        },
+        "label": "Temps",
+        "values": {
+          "length": 1,
+          "first": {
+            "type": "period",
+            "label": "period",
+            "values": {
+              "length": 146,
+              "first": {
+                "keys": [
+                  "id",
+                  "type",
+                  "start",
+                  "end"
+                ]
+              },
+              "last": null
+            }
+          },
+          "last": {
+            "type": "period",
+            "label": "period",
+            "values": {
+              "length": 146,
+              "first": {
+                "keys": [
+                  "id",
+                  "type",
+                  "start",
+                  "end"
+                ]
+              },
+              "last": null
+            }
+          }
+        }
+      },
+      "last": {
+        "id": "dim1",
+        "type": "location",
+        "label": "Territori",
+        "labelType": {
+          "Barri": "Barri",
+          "Districte": "Districte",
+          "Municipi": "Municipi"
+        },
+        "values": {
+          "length": 1,
+          "first": {
+            "id": "lMunBarcelona",
+            "type": "Municipi",
+            "label": "Barcelona",
+            "count": "146",
+            "order": "1",
+            "values": {
+              "length": 10,
+              "first": {
+                "keys": [
+                  "id",
+                  "type",
+                  "label",
+                  "count",
+                  "order",
+                  "values"
+                ]
+              },
+              "last": null
+            }
+          },
+          "last": {
+            "id": "lMunBarcelona",
+            "type": "Municipi",
+            "label": "Barcelona",
+            "count": "146",
+            "order": "1",
+            "values": {
+              "length": 10,
+              "first": {
+                "keys": [
+                  "id",
+                  "type",
+                  "label",
+                  "count",
+                  "order",
+                  "values"
+                ]
+              },
+              "last": null
+            }
+          }
+        }
+      }
+    },
+    "values": {
+      "length": 12264,
+      "first": {
+        "value": "34263.0",
+        "secret": "False",
+        "valor": "None",
+        "valornum": "None",
+        "dataInici": "None",
+        "dataFinal": "None",
+        "territori1": "None",
+        "territori2": "None",
+        "territori3": "None",
+        "territori4": "None",
+        "territori5": "None",
+        "tipusTerritori1": "None",
+        "tipusTerritori2": "None",
+        "tipusTerritori3": "None",
+        "tipusTerritori4": "None",
+        "tipusTerritori5": "None",
+        "territori1Order": "None",
+        "dim0": "t_dia_2019-10-01T00:00:00Z",
+        "dim1": "lBarelPoblenou"
+      },
+      "last": {
+        "value": "31891.0",
+        "secret": "False",
+        "valor": "None",
+        "valornum": "None",
+        "dataInici": "None",
+        "dataFinal": "None",
+        "territori1": "None",
+        "territori2": "None",
+        "territori3": "None",
+        "territori4": "None",
+        "territori5": "None",
+        "tipusTerritori1": "None",
+        "tipusTerritori2": "None",
+        "tipusTerritori3": "None",
+        "tipusTerritori4": "None",
+        "tipusTerritori5": "None",
+        "territori1Order": "None",
+        "dim0": "t_dia_2018-02-01T00:00:00Z",
+        "dim1": "lBarelCarmel"
+      }
+    },
+    "mask": "0,0"
+  },
+  "arrays": [
+    {
+      "path": "/dims/0/values/0/values",
+      "length": 146,
+      "first": "{'id': 't_dia_1997-01-01T00:00:00Z', 'type': 'dia', 'start': '1997-01-01T00:00:00Z', 'end': '1997-01-01T00:00:00Z'}"
+    },
+    {
+      "path": "/values",
+      "length": 12264,
+      "first": "{'value': 34263.0, 'secret': False, 'valor': None, 'valornum': None, 'dataInici': None, 'dataFinal': None, 'territori1': None, 'territori2': None, 'territori3': None, 'territori4': None, 'territori5': None, 'tipusTerritori1': None, 'tipusTerritori2': None, 'tipusTerritori3': None, 'tipusTerritori4': None, 'tipusTerritori5': None, 'territori1Order': None, 'dim0': 't_dia_2019-10-01T00:00:00Z', 'dim1': 'lBarelPoblenou'}"
+    }
+  ]
+}
