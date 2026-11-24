@@ -1,0 +1,72 @@
+name: F0 exact plan and alternate metadata readback
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/f0-plan-readback.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/f0readback" pymupdf
+      - run: |
+          PYTHONPATH="$RUNNER_TEMP/f0readback" python - <<'PY'
+          import pathlib,urllib.request,urllib.parse,hashlib,json,base64,concurrent.futures,re
+          import fitz
+          d=pathlib.Path('custody/f0-plan-readback');d.mkdir(parents=True,exist_ok=True)
+          def get(url,limit):
+              with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 public documentary audit'}),timeout=35) as f:
+                  b=f.read(limit+1);assert len(b)<=limit
+                  return b,{'url':url,'resolved_url':f.url,'http':f.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+          def plan():
+              u='https://contentv5.portdebarcelona.cat/cntmng/gd/d/workspace/SpacesStore/5d1e0670-b850-480f-86c0-ae9aa11079a4/DEUP_Port_de_Barcelona.pdf'
+              try:
+                  b,m=get(u,40000000)
+                  assert m['sha256']=='2fa06be75e20eba812dca128508972082e1d40b4b213c33d34dfdd5b68bcb721'
+                  m['plans']=[]
+                  with fitz.open(stream=b,filetype='pdf') as doc:
+                      m['pages']=len(doc)
+                      for i,p in enumerate(doc):
+                          t=p.get_text()
+                          if i<43:continue
+                          s=' '.join(t.upper().split())
+                          if ('PARCELA APB' in s and 'MODIFICACI' in s) or ('LÍMITES FERROVIARIOS' in s and 'CALLE 4' in s):
+                              if len(s)>2500:continue
+                              fn=f'p{i+1}.png.b64'
+                              scale=2000/max(p.rect.width,p.rect.height)
+                              png=p.get_pixmap(matrix=fitz.Matrix(scale,scale),alpha=False).tobytes('png')
+                              if len(png)>700000:
+                                  png=p.get_pixmap(matrix=fitz.Matrix(scale*0.65,scale*0.65),alpha=False).tobytes('png')
+                              (d/fn).write_text(base64.b64encode(png).decode())
+                              m['plans'].append({'page':i+1,'path':fn,'png_sha256':hashlib.sha256(png).hexdigest(),'text':t,'size':len(png)})
+                      m['status']='RENDERED' if m['plans'] else 'NO_MATCH'
+                  return m
+              except Exception as e:return {'url':u,'error':repr(e)}
+          def metadata():
+              u='https://analisi.transparenciacatalunya.cat/api/views/mxiy-fthq.json'
+              try:
+                  b,m=get(u,3000000);j=json.loads(b)
+                  m['name']=j.get('name');m['columns']=[{'field':x.get('fieldName'),'name':x.get('name'),'description':x.get('description')} for x in j.get('columns',[])]
+                  m['tableId']=j.get('tableId');m['viewType']=j.get('viewType');m['license']=j.get('licenseId')
+                  fields=[x['field'] for x in m['columns']]
+                  if 'validde' in fields and 'dataalta' in fields and 'codimuni' in fields:
+                      old=json.loads(pathlib.Path('custody/f0-amb-audit/report.json').read_text())
+                      codes=[x['code'] for x in old['amb']['features']]
+                      q='codimuni in ('+','.join("'"+x+"'" for x in codes)+')'
+                      url='https://analisi.transparenciacatalunya.cat/resource/mxiy-fthq.json?'+urllib.parse.urlencode({'$where':q,'$select':'codimuni,validde,dataalta','$limit':1000})
+                      bb,mm=get(url,2000000);m['data']=mm;m['rows']=json.loads(bb)
+                  return m
+              except Exception as e:return {'url':u,'error':repr(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as e:
+              a=e.submit(plan);b=e.submit(metadata);r={'deup':a.result(),'metadata':b.result()}
+          (d/'report.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-plan-readback/
+          git commit -m 'F0 audit readback of exact plan pages and alternate metadata'
+          git push origin HEAD:main
