@@ -1,0 +1,60 @@
+name: DM34 later full ATM archive
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm34-atm-later.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python - <<'PY'
+          import pathlib,urllib.request,zipfile,io,csv,hashlib,json,collections,datetime
+          d=pathlib.Path('custody/dm34');d.mkdir(exist_ok=True)
+          u='https://files.mobilitydatabase.org/mdb-2826/mdb-2826-202611210129/mdb-2826-202611210129.zip'
+          out={'url':u,'edition':'2026-11-21','day_tested':'20261124','prior_edition_repeated':False,'imputations':0}
+          try:
+              with urllib.request.urlopen(u,timeout=45) as f:
+                  b=f.read(110000001);assert len(b)<=110000000
+                  out.update({'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'last_modified':f.headers.get('Last-Modified')})
+              with zipfile.ZipFile(io.BytesIO(b)) as z:
+                  assert z.testzip() is None
+                  out['members']=z.namelist()
+                  def rows(n):
+                      with z.open(n) as f:
+                          for r in csv.DictReader(io.TextIOWrapper(f,encoding='utf-8-sig',newline='')):
+                              yield {k.strip():v.strip() for k,v in r.items() if k is not None and v is not None}
+                  prior=json.loads(pathlib.Path('custody/dm25/report.json').read_text())['atm_targets']
+                  ids={x['target'] for x in prior}
+                  trips={r['trip_id']:r for r in rows('trips.txt') if r['trip_id'] in ids}
+                  cal={r['service_id']:r for r in rows('calendar.txt')} if 'calendar.txt' in z.namelist() else {}
+                  ex=collections.defaultdict(list)
+                  if 'calendar_dates.txt' in z.namelist():
+                      for r in rows('calendar_dates.txt'):
+                          if r['date']=='20261124':ex[r['service_id']].append(r['exception_type'])
+                  def act(s):
+                      c=cal.get(s); e=ex[s]
+                      if len(e)>1:return None
+                      if e:return e[0]=='1' if e[0] in ('1','2') else None
+                      return bool(c and c['start_date']<='20261124'<=c['end_date'] and c['tuesday']=='1')
+                  stoprows=collections.defaultdict(list)
+                  for r in rows('stop_times.txt'):
+                      if r['trip_id'] in trips:stoprows[r['trip_id']].append(r)
+                  out['target_rows']=[{'id':t,'present':t in trips,'active':act(trips[t]['service_id']) if t in trips else None,'trip':trips.get(t),'stop_rows':stoprows[t]} for t in sorted(ids)]
+                  out['target_count']=len(ids);out['present_count']=len(trips);out['two_or_more_stop_rows']=sum(len(v)>=2 for v in stoprows.values())
+                  stop_ids={r['stop_id'] for v in stoprows.values() for r in v if r.get('stop_id')}
+                  out['stops']=[r for r in rows('stops.txt') if r['stop_id'] in stop_ids]
+                  out['status']='INSPECTED'
+          except Exception as e:out['status']='FAILED';out['error']=repr(e)
+          (d/'atm_later_report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm34/atm_later_report.json
+          git commit -m 'DM34 compare affected identities in later complete ATM edition'
+          git push origin HEAD:main
