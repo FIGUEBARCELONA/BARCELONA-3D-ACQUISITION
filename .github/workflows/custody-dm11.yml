@@ -18,8 +18,8 @@ jobs:
       - name: Install pinned dependencies from DM-10
         run: |
           python3 -m venv .venv
-          .venv/bin/pip install --no-cache-dir numpy==2.5.5 requests==2.34.2 rasterio==1.5.2 shapely==2.2.0 pyproj==3.8.0 pyshp==3.1.9
-          command -v pdftotext
+          .venv/bin/pip install --no-cache-dir numpy==2.5.5 requests==2.34.2 rasterio==1.5.2 shapely==2.2.0 pyproj==3.8.0 pyshp==3.1.9 pypdf
+          .venv/bin/pip freeze
       - name: Reacquire exact sources, validate, and probe
         run: .venv/bin/python custody_dm11.py
       - name: Persist licensed geographical data and report only
