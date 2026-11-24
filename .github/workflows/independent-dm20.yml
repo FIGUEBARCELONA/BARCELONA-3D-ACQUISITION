@@ -1,0 +1,26 @@
+name: DM-20 offline transit QA and Y9 inventory
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/independent-dm20.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 independent_dm20.py
+      - name: Persist diagnostic graph and reports
+        run: |
+          test -f custody/dm20/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- custody/dm20
+          if ! git diff --cached --quiet; then
+            git commit -m "DM-20 transport and Y9 diagnostics"
+            git push origin HEAD:main
+          fi
