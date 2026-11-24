@@ -1,0 +1,27 @@
+name: DM-23b Renfe primary source
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/renfe-dm23b.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - run: python3 renfe_dm23b.py
+      - run: |
+          test -f custody/dm23b/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- custody/dm23b
+          if ! git diff --cached --quiet; then
+            git commit -m "DM-23b Renfe original custody and target diagnostics"
+            git push origin HEAD:main
+          fi
