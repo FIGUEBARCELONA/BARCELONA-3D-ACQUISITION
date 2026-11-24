@@ -1,0 +1,48 @@
+name: DM34 independent DGNv8 reader
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm34-native-dgn.yml']
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned open reader and inspect original
+        run: |
+          mkdir -p custody/dm34
+          python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/dm34deps" ezdgn==0.3.0 > custody/dm34/dgn_install.log 2>&1 || true
+          PYTHONPATH="$RUNNER_TEMP/dm34deps" python - <<'PY'
+          import pathlib,hashlib,json,collections,importlib.metadata
+          d=pathlib.Path('custody/dm34')
+          p=pathlib.Path('custody/dm32/cad_response.original')
+          h=hashlib.sha256(p.read_bytes()).hexdigest()
+          assert h=='ad38d369514a1c9e1dc29f7654173a7d600b8db72553af0e67ae193259f58ea6'
+          out={'original_sha256':h,'original_bytes':p.stat().st_size,'canonical_approved':False,'geometry_repaired':False}
+          try:
+              import ezdgn
+              out['version']=importlib.metadata.version('ezdgn')
+              doc=ezdgn.read_v8(str(p))
+              out['status']='NATIVE_READ_SUCCEEDED'
+              out['levels']=[{'id':l.level_id,'number':l.number,'name':l.name} for l in doc.levels]
+              out['models']=[]
+              for m in doc.models:
+                  counts=collections.Counter((str(e.level),str(e.dxftype())) for e in m.entities)
+                  rows=[{'level':l,'type':t,'count':n} for (l,t),n in sorted(counts.items())]
+                  out['models'].append({'name':m.metadata.name,'dimension':m.metadata.dimension,'master_unit':str(m.metadata.master_unit),'elements':len(m.elements),'entities':len(m.entities),'counts':rows})
+              out['target_levels']=[l for l in out['levels'] if l['name'] in ('ADM_01_PL','ADM_02_PL','ADM_03_PL','ADM_03_PL_S_AI','ADM_06_PL')]
+              out['geometry_equivalence']='NOT_TESTED'
+          except Exception as e:out['status']='FAILED_OR_PARTIAL';out['error']=repr(e)
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==h
+          (d/'dgn_native_report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2,default=str)+'\n')
+          PY
+      - name: Persist result
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm34/
+          git commit -m 'DM34 independent DGNv8 native inspection'
+          git push origin HEAD:main
