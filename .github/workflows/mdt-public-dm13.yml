@@ -1,0 +1,29 @@
+name: DM-13 public MDT alternatives without email
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/mdt-public-dm13.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.repository == 'FIGUEBARCELONA/BARCELONA-3D-ACQUISITION' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - run: |
+          python3 -m venv .venv
+          .venv/bin/pip install --no-cache-dir numpy==2.5.5 requests==2.34.2 rasterio==1.5.2
+          .venv/bin/python mdt_public_dm13.py
+      - name: Preserve source evidence
+        run: |
+          test -f custody/dm13/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- custody/dm13
+          if ! git diff --cached --quiet; then
+            git commit -m "DM-13 public terrain alternatives evidence"
+            git push origin HEAD:main
+          fi
