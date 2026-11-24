@@ -1,0 +1,89 @@
+name: DM24 read-only Renfe custody and CartoBCN acquisition
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/dm24-renfe-carto.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify custodied archive without editing it
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, io, json, zipfile, hashlib, datetime, pathlib, collections, urllib.request, xml.etree.ElementTree as ET
+          out=pathlib.Path('custody/dm24'); out.mkdir(parents=True,exist_ok=True)
+          r={'production':'NO_GO','canonical_EAM_closed':0,'imputations':0}
+          p=pathlib.Path('custody/dm23b/renfe_cercanias.zip')
+          try:
+              sha=hashlib.sha256(p.read_bytes()).hexdigest()
+              assert sha=='0609cbf45a41dcc6a328bf82271d80f6675947b5a54168a453d5e98d407b8100', 'custody SHA mismatch'
+              day=datetime.date(2026,11,24)
+              def rows(z,name):
+                  with z.open(name) as f:
+                      reader=csv.reader(io.TextIOWrapper(f,encoding='utf-8-sig',newline=''))
+                      h=next(reader); keys=[x.strip() for x in h]
+                      assert len(set(keys))==len(keys), 'header collision'
+                      for line, vals in enumerate(reader,2):
+                          if len(vals)!=len(keys): raise ValueError((name,line,len(vals),len(keys)))
+                          yield dict(zip(keys,vals))
+              def date(s):
+                  t=s.strip()
+                  if len(t)!=8 or not t.isascii() or not t.isdigit(): raise ValueError(repr(s))
+                  return datetime.datetime.strptime(t,'%Y%m%d').date()
+              with zipfile.ZipFile(p) as z:
+                  assert z.testzip() is None
+                  cal=list(rows(z,'calendar.txt')); active=set(); seen=set(); duplicate=0; padded=0
+                  for x in cal:
+                      sid=x['service_id'].strip(); duplicate+=sid in seen; seen.add(sid)
+                      padded+=x['start_date']!=x['start_date'].strip() or x['end_date']!=x['end_date'].strip()
+                      a,b=date(x['start_date']),date(x['end_date'])
+                      assert a<=b
+                      flags=[x[k].strip() for k in ('monday','tuesday','wednesday','thursday','friday','saturday','sunday')]
+                      assert set(flags)<={'0','1'}
+                      if a<=day<=b and flags[day.weekday()]=='1':active.add(sid)
+                  assert 'calendar_dates.txt' not in z.namelist(), 'unexpected exception file'
+                  trips=collections.Counter(); active_trips=set(); missing=0; routes=collections.Counter()
+                  for x in rows(z,'trips.txt'):
+                      tid=x['trip_id'].strip(); sid=x['service_id'].strip()
+                      trips[tid]+=1; missing+=sid not in seen
+                      if sid in active: active_trips.add(tid); routes[x['route_id'].strip()]+=1
+                  stopcounts=collections.Counter()
+                  for x in rows(z,'stop_times.txt'):
+                      tid=x['trip_id'].strip()
+                      if tid in active_trips: stopcounts[tid]+=1
+                  r['renfe']={'status':'CHECKS_RECORDED','sha256':sha,'crc_ok':True,'day':day.isoformat(),'calendar_rows':len(cal),'calendar_unique_service_ids':len(seen),'duplicate_calendar_service_ids':duplicate,'padded_date_rows':padded,'active_services':len(active),'trip_rows':sum(trips.values()),'unique_trip_ids':len(trips),'duplicate_trip_id_rows':sum(n-1 for n in trips.values()),'unknown_service_trip_rows':missing,'active_trip_ids':len(active_trips),'active_short_trips':sum(stopcounts[t]<2 for t in active_trips),'active_routes':dict(routes),'identity_recoveries':0,'archive_unchanged':hashlib.sha256(p.read_bytes()).hexdigest()==sha}
+          except Exception as e:
+              r['renfe']={'status':'FAILED','error':repr(e)}
+          sources={'cartobcn_shp':'https://opendata-ajuntament.barcelona.cat/data/dataset/808daafa-d9ce-48c0-925a-fa5afdb1ed41/resource/11851135-6919-4dcb-91ed-821e5e87a428/download','cartobcn_xml':'https://opendata-ajuntament.barcelona.cat/data/dataset/808daafa-d9ce-48c0-925a-fa5afdb1ed41/resource/732506ee-bcdf-409f-bed8-0b25cbc0e948/download'}
+          for key,url in sources.items():
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Barcelona3D public data validation'}),timeout=20) as f:
+                      data=f.read(20_000_001); meta={'url':url,'http_status':f.status,'content_type':f.headers.get('Content-Type'),'last_modified':f.headers.get('Last-Modified'),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+                  assert len(data)<=20_000_000
+                  if key.endswith('shp'):
+                      with zipfile.ZipFile(io.BytesIO(data)) as z:
+                          assert z.testzip() is None
+                          meta['members']=z.namelist()
+                          assert any(x.lower().endswith('.shp') for x in z.namelist())
+                      (out/'cartobcn_shp.zip').write_bytes(data)
+                  else:
+                      root=ET.fromstring(data); assert 'html' not in root.tag.lower()
+                      meta['root']=root.tag
+                      (out/'cartobcn_metadata.xml').write_bytes(data)
+                  meta['status']='ACQUIRED'; r[key]=meta
+              except Exception as e: r[key]={'url':url,'status':'FAILED','error':repr(e)}
+          (out/'report.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps(r,ensure_ascii=False,indent=2))
+          PY
+      - name: Preserve only new evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/dm24/
+          git commit -m 'DM24 preserve Renfe calendar and CartoBCN evidence'
+          git push origin HEAD:main
