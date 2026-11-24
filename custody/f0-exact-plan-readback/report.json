@@ -1,0 +1,20 @@
+{
+  "deup": {
+    "url": "https://www.portdebarcelona.cat/sites/default/files/content/file/2021/10/24/1/delimitacion-de-los-espacios-y-usos-portuarios-deup_1.pdf",
+    "resolved_url": "https://www.portdebarcelona.cat/sites/default/files/content/file/2021/10/24/1/delimitacion-de-los-espacios-y-usos-portuarios-deup_1.pdf",
+    "http": 200,
+    "bytes": 30932935,
+    "sha256": "2fa06be75e20eba812dca128508972082e1d40b4b213c33d34dfdd5b68bcb721",
+    "plans": [
+      {
+        "page": 57,
+        "path": "p57.png.b64",
+        "png_sha256": "9371642e4c721f65acf00ee58e812b35b63ea270315c5af3c7389e4b6877f950",
+        "text": " \nJulio 2022 \n \n \n \n \n \nDELIMITACIÓN DE LOS ESPACIOS Y USOS PORTUARIOS  \nDEL PUERTO DE BARCELONA. AÑO 2020 \n \n \n \nSUPERFICIES DESAFECTADAS (TÉRMINO MUNICIPAL DEL PRAT DE LLOBREGAT) \nFICHA \nN.º \nMODIFICACIÓN \nMODIFICACIÓN \nREFERENCIA CATASTRAL \nLOCALIZACIÓN \nSUPERFICIE \nCATASTRAL \n(m2) \nSUPERFICIE A \nDESAFECTAR \n(m2) \n4 \n6 \nModificación de los límites \nferroviarios en el acceso de \ncalle 4 \n8352401DF2785C0001GQ \nCL A ZONA FRANCA 2(P) BCN 8352401DF2785C, 08040 \nBARCELONA (BARCELONA) \n214.625 \n5.095,75 \n \nA continuación, se adjuntan las fichas catastrales de la finca en la que está incluida la superficie a desafectar \n \n \n",
+        "size": 100535
+      }
+    ],
+    "pages": 108,
+    "status": "RENDERED"
+  }
+}
