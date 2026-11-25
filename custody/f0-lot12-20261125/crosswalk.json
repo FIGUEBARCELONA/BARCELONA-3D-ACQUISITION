@@ -1,0 +1,88 @@
+{
+  "utc": "2026-11-25T07:00:00.162712+00:00",
+  "results": [
+    {
+      "prefix": "hourly/doc/",
+      "status": "INSPECTED",
+      "http": 200,
+      "sha256": "2678d7e7957b540578533d435b99d9c7deb1158cc21374a4bcd3000cd7cfb97b",
+      "key_count": 11,
+      "truncated": "false",
+      "directories": [],
+      "matching_keys": [
+        "hourly/doc/ghcn-countries.txt",
+        "hourly/doc/ghcn-states.txt",
+        "hourly/doc/ghcnh-columns.pdf",
+        "hourly/doc/ghcnh-inventory.txt",
+        "hourly/doc/ghcnh-present-weather-elements.pdf",
+        "hourly/doc/ghcnh-sky-cover-elements.pdf",
+        "hourly/doc/ghcnh-source-list.pdf",
+        "hourly/doc/ghcnh-station-list.csv",
+        "hourly/doc/ghcnh-station-list.txt",
+        "hourly/doc/ghcnh-version-updates.pdf",
+        "hourly/doc/ghcnh_DOCUMENTATION.pdf"
+      ]
+    },
+    {
+      "prefix": "hourly/access/by-station/GHCNh_SP",
+      "status": "INSPECTED",
+      "http": 200,
+      "sha256": "ba9e958a97c22d297d323ce51a50c977e1601f96a55f591ad1451cf37a690475",
+      "key_count": 1000,
+      "truncated": "true",
+      "directories": [],
+      "matching_keys": []
+    },
+    {
+      "prefix": "hourly/access/by-station/GHCNh_ES",
+      "status": "INSPECTED",
+      "http": 200,
+      "sha256": "b3c42b0e1fabfb4a695b0c168f8ab4e4ca5784eac36c28b7b936dd11f3af52f3",
+      "key_count": 10,
+      "truncated": "false",
+      "directories": [],
+      "matching_keys": []
+    },
+    {
+      "prefix": "hourly/access/by-station/GHCNh_SPM00008181",
+      "status": "INSPECTED",
+      "http": 200,
+      "sha256": "8a3e3105f320f725f610a3a28ccab3ff87d4bd3f0d5dbba2646445c8e0e1cd05",
+      "key_count": 0,
+      "truncated": "false",
+      "directories": [],
+      "matching_keys": []
+    },
+    {
+      "prefix": "hourly/access/by-station/GHCNh_SPI0000LEBL",
+      "status": "INSPECTED",
+      "http": 200,
+      "sha256": "15d159c71d6a92565cdd1851a5a48d0c899b0da9617682c092db8f688bf2e8de",
+      "key_count": 0,
+      "truncated": "false",
+      "directories": [],
+      "matching_keys": []
+    },
+    {
+      "prefix": "hourly/access/by-station/GHCNh_ESM00008181",
+      "status": "INSPECTED",
+      "http": 200,
+      "sha256": "00fe508ec040555c336bc79f746837490bd5b919858428c6a3b04e1855692e07",
+      "key_count": 0,
+      "truncated": "false",
+      "directories": [],
+      "matching_keys": []
+    },
+    {
+      "prefix": "hourly/access/by-station/GHCNh_ESI0000LEBL",
+      "status": "INSPECTED",
+      "http": 200,
+      "sha256": "b8bb245ff645994c4b95f069accfacdb205e64e6e401f861cdf0c9f9fd461d0a",
+      "key_count": 0,
+      "truncated": "false",
+      "directories": [],
+      "matching_keys": []
+    }
+  ],
+  "qualification": "Candidate prefixes only; catalog existence does not prove station identity."
+}
