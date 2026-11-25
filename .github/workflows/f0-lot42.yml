@@ -1,0 +1,83 @@
+name: F0 lot42 residents filter correction and parking capacity validation
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot42.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Correct municipality filter and inspect declared capacities
+        shell: python
+        run: |
+          import pathlib,urllib.request,urllib.parse,json,hashlib,collections,concurrent.futures,datetime,math,re
+          out=pathlib.Path('custody/f0-lot42-20261125');out.mkdir(parents=True,exist_ok=True)
+          def get(u,p):
+              url=u+'?'+urllib.parse.urlencode(p)
+              with urllib.request.urlopen(url,timeout=25) as x:b=x.read(12000001)
+              if len(b)>12000000:raise ValueError('size bound')
+              d=json.loads(b)
+              if 'error' in d:raise ValueError(str(d['error']))
+              return d,{'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+          def inspect(task):
+              name,u,field,where=task;r={'name':name,'source':u,'municipality_field':field,'status':'BLOCKED','requests':[]}
+              try:
+                  meta,p=get(u,{'f':'json'});r['requests'].append(p)
+                  oid=next(f['name'] for f in meta['fields'] if f['type']=='esriFieldTypeOID')
+                  d,p=get(u+'/query',{'where':where,'returnIdsOnly':'true','f':'json'});r['requests'].append(p)
+                  ids=sorted(d.get('objectIds') or [])
+                  if len(ids)!=len(set(ids)) or len(ids)>10000:raise ValueError('invalid universe')
+                  features=[]
+                  for i in range(0,len(ids),500):
+                      q,p=get(u+'/query',{'objectIds':','.join(map(str,ids[i:i+500])),'outFields':'*','returnGeometry':'true','outSR':25831,'f':'json'})
+                      r['requests'].append({'batch':i//500,'bytes':p['bytes'],'sha256':p['sha256']})
+                      if q.get('exceededTransferLimit') or q.get('spatialReference',{}).get('wkid')!=25831:raise ValueError('truncation or CRS')
+                      features+=q.get('features',[])
+                  if sorted(f['attributes'][oid] for f in features)!=ids:raise ValueError('ID mismatch')
+                  cities=collections.Counter(str(f['attributes'].get(field)) for f in features)
+                  bcn=[f for f in features if str(f['attributes'].get(field,'')).strip().casefold()=='barcelona']
+                  r.update(universe=len(ids),municipalities=dict(cities),barcelona=len(bcn))
+                  if name=='residents':
+                      r.update(active_values=dict(collections.Counter(str(f['attributes'].get('ACTIU')) for f in bcn)),centroid_pair_present=sum(f['attributes'].get('CENTROID_X') is not None and f['attributes'].get('CENTROID_Y') is not None for f in bcn),polygon_present=sum(bool(f.get('geometry',{}).get('rings')) for f in bcn),business_ids_unique=len(set(str(f['attributes'].get('ID')) for f in bcn)))
+                  else:
+                      caps=collections.Counter();counts=collections.Counter();invalid=collections.Counter();zeros=collections.Counter();duplicates=collections.Counter(str(f['attributes'].get('TRAM_ID')) for f in bcn);geom_bad=0
+                      for f in bcn:
+                          a=f['attributes'];k=str(a['TRAM_TIPUS']);counts[k]+=1
+                          v=str(a.get('PLACES','')).strip()
+                          if re.fullmatch(r'[0-9]+',v):
+                              caps[k]+=int(v)
+                              if int(v)==0:zeros[k]+=1
+                          else:invalid[k]+=1
+                          paths=f.get('geometry',{}).get('paths') or []
+                          if not paths or any(len(path)<2 or any(len(p)<2 or not all(math.isfinite(float(x)) for x in p[:2]) for p in path) for path in paths):geom_bad+=1
+                      r.update(trams_by_type=dict(counts),declared_capacity_by_type=dict(caps),invalid_capacity_by_type=dict(invalid),zero_capacity_by_type=dict(zeros),duplicate_tram_id_groups=sum(v>1 for v in duplicates.values()),invalid_path_structure=geom_bad)
+                  r['status']='STRUCTURE_INSPECTED'
+              except Exception as e:r['error']=repr(e)
+              return r
+          tasks=[('residents','https://geoportal.amb.cat/geoserveis/rest/services/arees_aparcament_residents/MapServer/0','MUNICIPI','1=1'),('parking','https://ide.amb.cat/geoserveis/rest/services/plataforma_metropolitana_aparcament/MapServer/0','CIUTAT',"CIUTAT = 'Barcelona'")]
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:results=list(ex.map(inspect,tasks))
+          s=json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'qualification':'Declared capacity, structural checks only; no occupied places or individual bay geometries.'},ensure_ascii=False,indent=2)+'\n'
+          (out/'report.json').write_text(s);print(s)
+      - name: Preserve report without force
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot42-20261125/report.json
+          git commit -m 'Preserve lot42 corrected AMB controls'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
