@@ -1,0 +1,103 @@
+name: F0 lot37 bounded public source acquisition
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot37.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Bounded independent acquisitions
+        shell: python
+        run: |
+          import concurrent.futures,urllib.request,datetime,hashlib,json,csv,io,zipfile,pathlib,collections,struct
+          out=pathlib.Path('custody/f0-lot37-20261125');out.mkdir(parents=True,exist_ok=True)
+          def acquire(t):
+              name,url,limit=t
+              r={'name':name,'url':url,'status':'BLOCKED'}
+              try:
+                  with urllib.request.urlopen(url,timeout=25) as x:
+                      r.update(http=x.status,content_type=x.headers.get('Content-Type'))
+                      b=x.read(limit+1)
+                  if len(b)>limit:raise ValueError('size bound exceeded')
+                  r.update(bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+                  if name=='lidar_metadata':
+                      with zipfile.ZipFile(io.BytesIO(b)) as z:
+                          entries=z.infolist()
+                          r['entries']=[{'name':e.filename,'bytes':e.file_size} for e in entries]
+                          if sum(e.file_size for e in entries)>150000000:raise ValueError('uncompressed size bound')
+                          if z.testzip():raise ValueError('ZIP CRC mismatch')
+                          required={'.shp','.shx','.dbf','.prj'}
+                          suffixes={pathlib.Path(e.filename).suffix.lower() for e in entries}
+                          if not required<=suffixes:raise ValueError('incomplete shapefile')
+                          dbfs=[]
+                          for e in entries:
+                              if e.filename.lower().endswith('.dbf'):
+                                  with z.open(e) as f:
+                                      head=f.read(32)
+                                      count,hsize,recsize=struct.unpack_from('<IHH',head,4)
+                                      if hsize<33 or hsize>65535:raise ValueError('invalid DBF header')
+                                      descriptors=f.read(hsize-32)
+                                      fields=[]
+                                      for pos in range(0,len(descriptors)-1,32):
+                                          d=descriptors[pos:pos+32]
+                                          if len(d)!=32 or d[0]==13:break
+                                          fields.append({'name':d[:11].split(b'\x00')[0].decode('ascii','replace'),'type':chr(d[11]),'length':d[16]})
+                                      dbfs.append({'name':e.filename,'rows':count,'fields':fields,'record_size':recsize})
+                          r.update(dbfs=dbfs,status='ZIP_STRUCTURE_INSPECTED')
+                  else:
+                      year=int(name[-4:])
+                      d=csv.DictReader(io.StringIO(b.decode('utf-8-sig')))
+                      fields=['FLT_DEP_1','FLT_ARR_1','FLT_TOT_1','FLT_DEP_IFR_2','FLT_ARR_IFR_2','FLT_TOT_IFR_2']
+                      if not set(['APT_ICAO','FLT_DATE']+fields)<=set(d.fieldnames or []):raise ValueError('unexpected CSV schema: '+str(d.fieldnames))
+                      dates={};sums=collections.Counter();counts=collections.Counter();monthly=collections.defaultdict(collections.Counter);bad=0;duplicates=0
+                      for row in d:
+                          if row['APT_ICAO']!='LEBL':continue
+                          date=None
+                          for fmt in ('%Y-%m-%d','%d-%b-%Y','%d/%m/%Y','%Y-%m-%d %H:%M:%S'):
+                              try:date=datetime.datetime.strptime(row['FLT_DATE'],fmt).date();break
+                              except ValueError:pass
+                          if date is None or date.year!=year:raise ValueError('invalid date: '+row['FLT_DATE'])
+                          if date in dates:duplicates+=1;continue
+                          dates[date]=True;v={}
+                          for f in fields:
+                              val=row[f].strip()
+                              if val:
+                                  n=float(val)
+                                  if not n.is_integer() or n<0:raise ValueError('invalid count')
+                                  v[f]=int(n);sums[f]+=int(n);counts[f]+=1;monthly[date.strftime('%Y-%m')][f]+=int(n)
+                          for a,b,c in (fields[:3],fields[3:]):
+                              if all(k in v for k in (a,b,c)) and v[a]+v[b]!=v[c]:bad+=1
+                      expected=(datetime.date(year+1,1,1)-datetime.date(year,1,1)).days
+                      r.update(status='CSV_SUBUNIVERSE_INSPECTED',fields=d.fieldnames,dates=len(dates),expected_days=expected,duplicates=duplicates,sum_mismatches=bad,nonblank=dict(counts),sums=dict(sums),monthly={k:dict(v) for k,v in monthly.items()})
+              except Exception as e:r['error']=repr(e)
+              return r
+          tasks=[('lidar_metadata','https://datacloud.ide.cat/metadades/lidar-territorial-metadades.zip',50000000)]+[(f'airport_{y}',f'https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_{y}.csv',20000000) for y in range(2021,2026)]
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:results=list(ex.map(acquire,tasks))
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'qualification':'Bounded public source inspection; no raw data redistribution, no acceptance tolerances.'}
+          s=json.dumps(report,indent=2,ensure_ascii=False)
+          (out/'report.json').write_text(s+'\n')
+          print(s)
+      - name: Preserve public audit report without force
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot37-20261125/report.json
+          git commit -m 'Preserve lot37 bounded source inspection'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
