@@ -1,0 +1,1079 @@
+{
+  "utc": "2026-11-25T07:16:38.374192+00:00",
+  "xom": [
+    {
+      "year": 2021,
+      "kind": 0,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 522867,
+      "sha256": "f144e1cc28b44aca5da848ea40c7ff3c7b902da9ac68ecfb6a975eb0e743abd8",
+      "candidate_lines": [
+        {
+          "page": 10,
+          "line": "Baix Llobregat         BL014      Olesa de Montserrat                  Olesa de Montserrat                                 407992   4600564     164"
+        },
+        {
+          "page": 10,
+          "line": "Barcelonès          BN062      Badalona - Bufalà                    Badalona                                          436884   4590234      58"
+        },
+        {
+          "page": 10,
+          "line": "                   BN022      Barcelona - Can Bruixa                Barcelona                                         427507   4581733      61"
+        },
+        {
+          "page": 10,
+          "line": "                   BN040      Barcelona - Font del Gat               Barcelona                                         429575   4579928      69"
+        },
+        {
+          "page": 10,
+          "line": "                   BN007       Observatori Fabra                     Barcelona                                         426770   4585408     410"
+        },
+        {
+          "page": 11,
+          "line": "                  OS075      Borgonyà – C. de Barcelona            Sant Vicenç de Torelló                               437664   4657314     532"
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    },
+    {
+      "year": 2021,
+      "kind": 1,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 6545190,
+      "sha256": "d8a1fb3f5d6e200fc6f742ce84d711f8521e8035f803f59c177a849784543d01",
+      "candidate_lines": [
+        {
+          "page": 111,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                       89         95         94         93         95         92         94         94         94         95         91         90           93"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                  89         95         94         94         95         88         92         91         97         97         92         91           93"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                                                                                                                                            89 *               d.i."
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat D3  Vallirana                                87         91         89         90         87         82         83         86         92         93         88         87           88"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat UG  Viladecans                              91         95         95         93         96         90         90         90         94         95         95         96           93"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   WU Badalona - Museu                        80         89         85         84         86         82         81         83         85         87         82         81           84"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   X4  Barcelona - el Raval                       76         89         84         82         85         79         78         83         84         84         79         80           82"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra               87         94         91         90         91         84         87         90         96         95         89         89           90"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària              86         94         91         90         91         84         88         91         95         97         89         88           90"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   X2  Barcelona - Zoo                          86         91         89         86         87         85         84         87         89         90         88         89           88"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                       48         60         51         50         49         44         44         48         52         56         49         50           50"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                  56         63         50         53         49         43         45         51         56         62         55         57           53"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                                                                                                                                            50                  d.i."
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat D3  Vallirana                                51         57         44         47         41         38         36         44         49         54         52         52           47"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat UG  Viladecans                              51         60         51         48         49         43         44         49         53         56         52         53           51"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   WU Badalona - Museu                        49         60         52         53         53         50         51         54         56         56         49         51           53"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   X4  Barcelona - el Raval                       45         55         48         47         46         43         42         49         49         52         46         47           47"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra               55         62         49         52         48         43         43         49         52         57         55         55           51"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària              48         57         47         46         45         42         42         48         50         56         49         49           48"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   X2  Barcelona - Zoo                          47         58         51         51         50         49         50         53         53         55         50         52           52"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                           7.2           9.0         15.5         17.4         22.9         24.9         25.4         19.9         15.2         11.8           7.4           7.1           15.4"
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                     7.6           9.4         16.0         17.6         23.2         26.1         26.3         19.9         15.8         10.9           8.1           7.5           15.7"
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                                                                                                                                                                         7.0 *               d.i."
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat D3  Vallirana                                      7.6           9.1         15.5         16.3         23.2         25.2         25.8         19.6         14.9         11.1           7.7           7.5           15.3"
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat UG  Viladecans                                   7.4           9.4         15.8         18.0         23.6         25.7         26.1         20.6         15.9         11.9           7.6           7.2           15.8"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   WU Badalona - Museu                            7.6           9.5         16.0         17.7         23.5         26.0         26.2         20.6         15.6         12.3           7.6           7.3           15.9"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   X4  Barcelona - el Raval                           7.5           9.4         16.0         17.5         23.0         25.5         25.7         20.1         15.6         12.1           7.5           7.4           15.6"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra                 7.5           9.2         15.2         16.1         22.6         24.1         24.8         19.0         14.2         11.1           7.6           7.3           14.9"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària                 7.3           9.2         15.5         16.7         22.3         24.7         25.5         19.7         14.9         11.5           7.5           7.2           15.2"
+        },
+        {
+          "page": 124,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                                                                                                                                                       1017.7              d.i."
+        },
+        {
+          "page": 124,
+          "line": "Baix Llobregat D3  Vallirana                                   983.9        988.0        991.7        986.0        986.5        987.3        985.6        986.3        988.1        989.1        984.3        987.8        987.0"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   WU Badalona - Museu                         1009.6      1013.8      1017.6      1011.7      1011.9      1012.2      1010.3      1011.1      1012.9      1014.3      1009.8      1013.4      1012.4"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   X4  Barcelona - el Raval                       1010.2      1014.3      1018.1      1012.5      1012.6      1012.9      1011.1      1011.8      1013.6      1015.1      1010.6      1014.2      1013.1"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra                965.2        969.7        973.3        967.8        968.5        969.7        968.1        968.9        970.5        971.2        966.0        969.3        969.0"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària              1004.6      1008.8      1012.6      1006.7      1007.0      1007.3      1005.5      1006.3      1008.1      1009.4      1004.8      1008.4      1007.5"
+        },
+        {
+          "page": 126,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                                                                                                                                                  1030.9 17         d.i."
+        },
+        {
+          "page": 126,
+          "line": "Baix Llobregat D3  Vallirana                             997.3 18   1006.1 23   1002.4 29    995.9 08    996.4 25    993.6 05    994.8 08    992.7 13    996.6 29    997.5 19    999.8 19   1000.9 17   1006.1 23/02"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   WU Badalona - Museu                   1023.6 18   1032.3 15   1028.7 29   1022.0 07   1022.0 25   1019.2 05   1019.9 08   1017.5 13   1021.8 29   1022.8 19   1025.8 19   1027.0 17   1032.3 15/02"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   X4  Barcelona - el Raval                  1024.1 18   1032.8 15   1029.6 29   1022.9 08   1022.9 25   1019.9 05   1020.6 08   1018.1 13   1022.7 29   1023.6 19   1026.7 19   1028.0 17   1032.8 15/02"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra          978.7 18    987.5 23    984.2 29    977.2 08    978.1 25    975.7 05    977.0 08    975.5 13    978.7 29    979.5 19    981.3 19    982.1 17    987.5 23/02"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària         1018.4 18   1027.1 23   1023.5 29   1016.9 08   1017.2 25   1014.2 05   1015.0 08   1012.5 13   1016.9 29   1018.0 19   1020.7 19   1021.9 17   1027.1 23/02"
+        },
+        {
+          "page": 128,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                                                                                                                                                  1003.6 08         d.i."
+        },
+        {
+          "page": 128,
+          "line": "Baix Llobregat D3  Vallirana                             968.1 24    967.2 08    979.6 19    975.2 27    975.9 09    977.9 20    978.8 31    976.3 07    982.3 15    976.8 30    966.9 27    973.9 08    966.9 27/11"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   WU Badalona - Museu                     992.4 24    992.3 08   1006.1 19   1000.4 27   1000.8 09   1002.1 20   1002.9 31   1000.7 07   1006.5 15   1001.6 30    992.4 27    998.7 08    992.3 08/02"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   X4  Barcelona - el Raval                   993.4 22    992.9 08   1006.3 19   1001.2 27   1001.6 09   1003.0 20   1004.0 31   1001.5 07   1007.2 15   1002.3 31    993.4 27   1000.6 08    992.9 08/02"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra          948.9 22    948.7 08    961.6 19    957.1 27    958.1 09    960.5 20    961.1 31    959.0 07    964.7 15    959.2 30    948.7 27    955.2 08    948.7 27/11"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària          988.1 22    987.3 08   1000.9 19    995.5 27    995.9 09    997.6 20    998.5 31    996.0 07   1001.8 15    996.8 30    987.6 27    994.5 08    987.3 08/02"
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    },
+    {
+      "year": 2022,
+      "kind": 0,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 623564,
+      "sha256": "6acc6ce976273d8342b0b2506e07b51687b84558e11edb83f54a21be4c6bf2cd",
+      "candidate_lines": [
+        {
+          "page": 10,
+          "line": "Baix Llobregat         BL014      Olesa de Montserrat                  Olesa de Montserrat                                 407992   4600564     164"
+        },
+        {
+          "page": 10,
+          "line": "Barcelonès          BN062      Badalona - Bufalà                    Badalona                                          436884   4590234      58"
+        },
+        {
+          "page": 10,
+          "line": "                   BN022      Barcelona - Can Bruixa                Barcelona                                         427507   4581733      61"
+        },
+        {
+          "page": 10,
+          "line": "                   BN040      Barcelona - Font del Gat               Barcelona                                         429575   4579928      69"
+        },
+        {
+          "page": 10,
+          "line": "                   BN007       Observatori Fabra                     Barcelona                                         426770   4585408     410"
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    },
+    {
+      "year": 2022,
+      "kind": 1,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 6675106,
+      "sha256": "40599bb9bcc1e15c3179ff6f4d0acd36d347fcf88013247ef1f4091d8984c8d0",
+      "candidate_lines": [
+        {
+          "page": 111,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                       90         94         90         92         93         92         91         94         97         99         96         97           94"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                  83         91         96         82         75         86         81         92         94         95         90         91           88"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                88         98         97         93         96         94         88         87         90         95         83         91           92"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat D3  Vallirana                                82         86         90         82         77         81         76         85         89         92         84         89           84"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat UG  Viladecans                              95         99         95         97         98         98         93         93         89         96         91         95           95"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   WU Badalona - Museu                        79         84         86         81         85         86         82         82         83         88         81         85           83"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   X4  Barcelona - el Raval                       76         83         88         79         81         83         76         76         79         89         79         88           81"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra               80         92         95         83         78         87         81         86         94         97         90         91           88"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària              85         93         91         85         85         88         84         85         92         97         89         94           89"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   X2  Barcelona - Zoo                          89         91         88         85         88         86         84         84         85         92         86         93           88"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                       44         46         55         43         40         43         39         43         50         57         48         54           47"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                  40         48         63         43         36         37         37         41         51         54         51         57           46"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                46         49         57         45         47         53         46         49         51         62         48         54           51"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat D3  Vallirana                                40         44         56         40         32         34         34         36         46         49         47         53           43"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat UG  Viladecans                              49         49         54         43         43         45         41         47         49         58         50         57           49"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   WU Badalona - Museu                        41         47         56         43         46         50         46         47         52         61         47         52           49"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   X4  Barcelona - el Raval                       39         43         53         39         38         44         41         41         47         56         44         48           44"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra               38         46         62         43         37         38         37         39         48         55         49         55           46"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària              40         44         53         39         37         41         39         40         49         56         45         51           44"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   X2  Barcelona - Zoo                          43         46         56         43         46         52         48         47         51         58         48         54           49"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                           8.8         10.7           9.6         18.7         24.8         26.7         25.6         22.5         16.0         12.0           8.3           6.6           15.9"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                     9.2         10.9           9.1         19.3         25.5         27.2         26.4         23.3         16.3         12.0           8.8           6.7           16.2"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                  8.8         11.1         10.1         19.0         25.0         26.7         25.9         23.1         16.8         12.3           8.4           6.5           16.2"
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat D3  Vallirana                                      9.1         11.1           8.2         18.6         25.2         27.5         26.3         22.9         16.0         12.1           8.5           6.5           16.0"
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat UG  Viladecans                                   8.8         11.0         10.1         19.0         25.2         27.4         26.2         23.2         16.7         12.4           8.6           6.5           16.3"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   WU Badalona - Museu                            9.2         11.4           9.5         19.1         24.9         27.3         26.2         23.1         16.8         12.5           8.6           6.7           16.3"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   X4  Barcelona - el Raval                           9.2         11.3           9.5         18.8         25.0         26.9         25.8         22.8         16.7         12.2           8.4           6.7           16.1"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra                 9.4         11.0           8.3         18.2         25.2         26.3         25.2         22.4         15.5         11.4           8.5           6.6           15.7"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària                 9.1         10.9           9.3         18.4         24.8         26.4         25.4         22.3         16.0         11.8           8.4           6.5           15.8"
+        },
+        {
+          "page": 124,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat               1024.9      1023.3      1018.9      1012.6      1016.4      1014.2      1016.8      1013.1      1012.8      1019.7      1016.0      1014.7      1016.9"
+        },
+        {
+          "page": 124,
+          "line": "Baix Llobregat D3  Vallirana                                   995.0        993.5        989.3        983.3        987.4        985.6        988.3        984.9        984.4        990.9        986.8        985.2        987.9"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   WU Badalona - Museu                         1021.0      1019.4      1015.2      1008.8      1012.7      1010.6      1013.2      1009.5      1009.3      1016.2      1012.3      1010.9      1013.2"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   X4  Barcelona - el Raval                       1021.8      1020.2      1015.9      1009.7      1013.4      1011.2      1013.8      1010.1      1009.9      1016.8      1013.0      1011.6      1013.9"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra                976.4        975.0        970.9        965.2        969.7        968.3        971.1        967.7        966.9        973.2        968.7        967.0        970.0"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària              1015.9      1014.4      1010.1      1003.9      1007.7      1005.6      1008.3      1004.7      1004.4      1011.1      1007.3      1005.8      1008.2"
+        },
+        {
+          "page": 126,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat          1034.6 13   1032.7 08   1029.2 22   1023.5 29   1024.8 20   1021.1 11   1021.8 08   1018.5 19   1019.5 10   1027.2 06   1028.6 11   1030.6 27   1034.6 13/01"
+        },
+        {
+          "page": 126,
+          "line": "Baix Llobregat D3  Vallirana                            1004.3 13   1002.6 08    999.2 22    994.2 29    995.9 20    992.7 11    993.4 08    990.1 19    990.7 10    998.1 06    999.4 12   1000.8 27   1004.3 13/01"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   WU Badalona - Museu                   1030.6 13   1028.8 08   1025.8 22   1019.6 29   1021.2 20   1017.4 11   1018.1 08   1014.9 19   1016.0 10   1023.6 06   1025.2 11   1026.7 27   1030.6 13/01"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   X4  Barcelona - el Raval                  1031.8 13   1029.7 08   1026.6 22   1020.7 29   1022.0 20   1018.3 11   1018.9 08   1015.7 19   1016.6 10   1024.3 06   1025.8 11   1027.5 27   1031.8 13/01"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra          985.4 13    984.0 08    980.7 22    976.4 29    978.2 20    974.9 11    975.8 08    972.5 19    973.3 10    980.3 06    981.5 11    982.4 27    985.4 13/01"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària         1025.5 13   1023.8 08   1020.5 22   1014.7 29   1016.2 20   1012.7 11   1013.4 08   1010.1 19   1010.9 10   1018.6 06   1020.0 11   1021.6 27   1025.5 13/01"
+        },
+        {
+          "page": 128,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat          1003.0 04   1011.1 14    997.6 31    995.6 23   1004.2 30   1007.2 22   1010.4 27   1005.4 14   1000.3 29   1012.4 21   1000.9 21    994.9 15    994.9 15/12"
+        },
+        {
+          "page": 128,
+          "line": "Baix Llobregat D3  Vallirana                             974.0 05    981.8 14    968.2 31    966.6 23    976.0 30    979.2 22    982.1 27    977.3 14    971.8 29    983.8 21    971.7 21    966.2 15    966.2 15/12"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   WU Badalona - Museu                     999.4 05   1007.0 14    994.1 31    991.8 23   1000.6 30   1003.3 22   1006.9 27   1002.0 16    996.9 29   1008.5 21    996.7 21    990.9 15    990.9 15/12"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   X4  Barcelona - el Raval                  1000.3 04   1008.0 14    994.5 31    992.6 23   1001.4 30   1004.2 22   1007.4 27   1002.4 14    997.7 29   1009.2 21    997.7 21    991.9 15    991.9 15/12"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra          956.1 04    963.3 14    950.7 31    948.9 23    958.0 30    961.5 22    965.0 27    960.5 16    954.7 29    966.1 21    953.5 21    948.4 15    948.4 15/12"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària          994.4 04   1002.3 14    988.9 31    986.8 23    995.7 30    998.7 22   1002.0 27    997.0 14    992.1 29   1003.8 21    992.2 21    986.3 15    986.3 15/12"
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    },
+    {
+      "year": 2023,
+      "kind": 0,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 1203923,
+      "sha256": "0ca579d944785afc766086819de77ba1c906f8b8fbecfafffe254e65228230e1",
+      "candidate_lines": [
+        {
+          "page": 10,
+          "line": "el Baix Llobregat       BL014      Olesa de Montserrat                  Olesa de Montserrat                                 407992   4600564     164"
+        },
+        {
+          "page": 10,
+          "line": "el Barcelonès         BN062      Badalona - Bufalà                    Badalona                                          436884   4590234      58"
+        },
+        {
+          "page": 10,
+          "line": "                   BN022      Barcelona - Can Bruixa                Barcelona                                         427507   4581733      61"
+        },
+        {
+          "page": 10,
+          "line": "                   BN007       Observatori Fabra                     Barcelona                                         426770   4585408     410"
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    },
+    {
+      "year": 2023,
+      "kind": 1,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 4856227,
+      "sha256": "f844be38b839dfd3ded83bf11c822cd027bd8d60743e9e51f29833cb28d7d0cc",
+      "candidate_lines": [
+        {
+          "page": 111,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                       89         93         95         99         99         99        100         98         98         98         94         96           96"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                  88         83         90         93         91         92         95         89         94         95         83         84           90"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                76         83         85         87         88         88         87         86         86         87         83         82           85"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat D3  Vallirana                                80         82         83         85         87         84         87         85         89         89         77         79           84"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat UG  Viladecans                              87         91         92         93         92         92         90         90         91         93         90         91           91"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   WU Badalona - Museu                        73         80         81         83         85         87         86         83         83         82         78         76           81"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   X4  Barcelona - el Raval                       71         79         82         85         88         89         90         85         82         84         76         73           82"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra               83         82         90         93         92         94         98         91         94         93         83         82           90"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària              79         84         88         90         93         94         93         89         92         92         82         82           88"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   X2  Barcelona - Zoo                          82         88         86         86         90         89         89         87         88         87         85         85           87"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                       41         43         44         42         45         45         46         46         50         55         46         43           46"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                  44         42         44         37         42         45         47         44         47         57         49         42           45"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                40         43         45         46         50         52         54         52         53         54         46         43           48"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat D3  Vallirana                                39         39         38         32         37         39         42         38         42         49         43         40           40"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat UG  Viladecans                              42         45         44         44         45         45         48         47         50         55         50         47           47"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   WU Badalona - Museu                        41         44         45         44         52         56         57         53         51         55         45         42           49"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   X4  Barcelona - el Raval                       38         40         40         39         45         46         48         47         46         50         41         40           43"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra               42         42         42         37         47         46         48         45         45         53         46         40           44"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària              38         39         40         37         43         44         45         45         45         51         42         38           42"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   X2  Barcelona - Zoo                          42         43         42         43         52         54         53         51         51         53         45         45           48"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                           8,3         11,3         17,0         22,7         22,9         24,0         24,1         21,7         17,8         12,5           8,8           7,4           16,6"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                     9,4         11,7         17,7         23,2         23,6         24,0         23,9         21,6         17,7         12,3           9,1           7,7           16,8"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                  8,3         11,4         17,3         23,3         23,3         24,8         25,3         22,5         17,9         12,9           8,7           7,4           17,0"
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat D3  Vallirana                                      8,7         11,2         17,2         22,9         22,3         23,3         24,0         22,8         17,7         12,7           9,1           7,5           16,6"
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat UG  Viladecans                                   8,6         11,5         17,2         23,3         23,4         24,8         25,1         22,4         17,9         13,0           8,6           7,4           17,0"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   WU Badalona - Museu                            8,5         11,5         17,5         22,9         21,8         24,4         25,4         22,7         18,4         13,2           8,8           7,7           16,9"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   X4  Barcelona - el Raval                           8,5         11,2         17,1         22,8         22,3         24,4         24,8         22,3         18,2         13,1           8,9           7,6           16,8"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra                 8,6         11,5         16,6         21,9         21,1         23,3         23,2         21,5         17,8         12,4           8,9           7,6           16,2"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària                 8,4         11,5         16,6         22,3         21,9         23,8         23,7         21,5         17,9         12,6           8,7           7,4           16,4"
+        },
+        {
+          "page": 124,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat               1019,2      1024,1      1015,5      1014,7      1015,1      1013,7      1014,6      1014,3      1016,0      1013,4      1013,5      1019,9      1016,1"
+        },
+        {
+          "page": 124,
+          "line": "Baix Llobregat D3  Vallirana                                   989,3        994,1        985,9        985,2        986,0        985,2        986,2        985,9        987,5        984,7        984,2        990,2        987,0"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   WU Badalona - Museu                         1015,3      1020,3      1011,7      1011,0      1011,5      1010,2      1011,1      1010,9      1012,6      1009,8      1009,7      1016,1      1012,5"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   X4  Barcelona - el Raval                       1016,0      1021,0      1012,4      1011,7      1012,1      1010,8      1011,6      1011,3      1013,1      1010,4      1010,4      1016,7      1013,1"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra                970,7        975,5        967,8        967,3        968,2        967,7        968,9        968,7        970,0        967,0        966,1        971,8        969,1"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària              1010,2      1015,1      1006,7      1005,9      1006,4      1005,2      1006,1      1005,9      1007,5      1004,8      1004,7      1010,9      1007,4"
+        },
+        {
+          "page": 126,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat          1033,3 04   1037,8 10   1026,2 28   1022,9 10   1020,6 26   1022,5 23   1020,5 10   1020,2 11   1024,0 30   1025,9 03   1026,2 18   1038,0 17   1038,0 17/12"
+        },
+        {
+          "page": 126,
+          "line": "Baix Llobregat D3  Vallirana                            1003,3 04   1007,1 10    996,0 28    993,4 11    991,5 07    993,8 23    992,0 10    991,8 11    995,4 30    997,2 03    996,6 18   1007,5 17   1007,5 17/12"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   WU Badalona - Museu                   1029,6 04   1033,9 10   1022,5 28   1019,2 10   1017,1 26   1018,9 23   1017,0 10   1016,6 11   1020,5 30   1022,3 03   1022,5 18   1034,3 17   1034,3 17/12"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   X4  Barcelona - el Raval                  1030,2 04   1034,7 10   1023,2 28   1019,9 10   1017,6 26   1019,5 23   1017,6 10   1017,1 11   1021,0 30   1023,0 03   1023,1 18   1034,9 17   1034,9 17/12"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra          984,7 04    988,3 10    977,8 28    975,2 11    973,5 07    976,3 23    974,7 10    974,6 11    978,0 30    979,4 03    978,4 18    988,8 17    988,8 17/12"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària         1024,3 04   1028,6 10   1017,2 28   1014,0 10   1011,9 07   1013,9 23   1011,9 10   1011,7 11   1015,6 30   1017,3 03   1017,3 18   1028,9 17   1028,9 17/12"
+        },
+        {
+          "page": 128,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat            989,9 17    999,5 26   1003,9 07   1005,8 12   1009,3 16   1006,5 13   1005,6 24   1004,7 27   1002,8 21    986,6 20    991,7 04    993,5 01    986,6 20/10"
+        },
+        {
+          "page": 128,
+          "line": "Baix Llobregat D3  Vallirana                             960,7 17    969,9 26    974,8 07    976,7 20    979,7 16    977,8 13    978,1 24    977,4 27    974,5 21    958,0 20    963,1 04    965,3 01    958,0 20/10"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   WU Badalona - Museu                     985,2 17    996,0 26    999,7 07   1001,4 12   1005,8 16   1002,8 13   1002,4 24   1001,4 27    999,0 21    982,5 19    987,8 04    990,1 01    982,5 19/10"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   X4  Barcelona - el Raval                   986,7 17    996,4 26   1000,6 07   1001,9 12   1006,2 16   1003,4 13   1002,9 24   1001,9 27    999,7 21    983,5 20    988,9 04    990,8 01    983,5 20/10"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra          942,1 17    952,0 26    956,7 07    959,1 20    962,8 16    960,4 13    960,4 24    958,4 27    957,3 21    940,3 19    945,6 04    947,6 01    940,3 19/10"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   X8  Barcelona - Zona Universitària          981,0 17    990,5 26    995,0 07    996,9 12   1000,8 16    997,6 13    997,7 24    996,6 27    994,4 21    978,1 20    983,2 04    985,2 01    978,1 20/10"
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    },
+    {
+      "year": 2024,
+      "kind": 0,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 935052,
+      "sha256": "834bb46d7520017d18831f285e0eafd7cba7d3d9eb062b60cc1e104bea47cc09",
+      "candidate_lines": [
+        {
+          "page": 10,
+          "line": "el Baix Llobregat       BL014      Olesa de Montserrat                  Olesa de Montserrat                                 407992   4600564     164"
+        },
+        {
+          "page": 10,
+          "line": "el Barcelonès         BN062      Badalona - Bufalà                    Badalona                                          436884   4590234      58"
+        },
+        {
+          "page": 10,
+          "line": "                   BN022      Barcelona - Can Bruixa                Barcelona                                         427507   4581733      61"
+        },
+        {
+          "page": 10,
+          "line": "                   BN007       Observatori Fabra                     Barcelona                                         426770   4585408     410"
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    },
+    {
+      "year": 2024,
+      "kind": 1,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 823536,
+      "sha256": "83e5ce80f413e6eb692eb0343c2263f3606ff631dd0367058d775968f8be327d",
+      "candidate_lines": [
+        {
+          "page": 111,
+          "line": "                                     el                                                                                                  de                                                                                                                                                    Raval                   -                                                                                        "
+        },
+        {
+          "page": 111,
+          "line": "                                                                                             de de de                          Ebre Ebre Ebre Ebre Empordà Empordà Empordà Empordà Empordà  Llobregat  Llobregat  Llobregat  Llobregat  Llobregat Penedès Penedès Penedès Penedès                                COMARCA    Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix"
+        },
+        {
+          "page": 116,
+          "line": "                                     el                                                                                                  de                                                                                                                                                    Raval                   -                                                                                        "
+        },
+        {
+          "page": 116,
+          "line": "                                                                                             de de de                          Ebre Ebre Ebre Ebre Empordà Empordà Empordà Empordà Empordà  Llobregat  Llobregat  Llobregat  Llobregat  Llobregat Penedès Penedès Penedès Penedès                                COMARCA    Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix Baix"
+        },
+        {
+          "page": 121,
+          "line": "                                          -                                                                                      de                                                                                                                      d'Alp                                                                                                                                                  "
+        },
+        {
+          "page": 121,
+          "line": "     i                          Port  Vallirana  Viladecans Cunit el el  Badalona  Barcelona  Barcelona  Barcelona  Guardiola  Santuari Cadí Das la Malniu  Puigcerdà  l'Espluga Santa  Canyelles  Vilanova la les la Olot Cassà Girona  Perafita Cabrils Dosrius Malgrat Amposta els Illa les Mas  Ulldecona Albesa Algerri  Baldomar"
+        },
+        {
+          "page": 121,
+          "line": "                                                      de de                                                            Llobregat  Llobregat  Llobregat Penedès Penedès Penedès                                COMARCA    Baix Baix Baix Baix Baix Baix  Barcelonès  Barcelonès  Barcelonès  Barcelonès  Berguedà  Berguedà  Cerdanya  Cerdanya  Cerdanya  Cerdanya  Cerdanya Conca Conca Garraf Garraf  Garrigue"
+        },
+        {
+          "page": 124,
+          "line": "                                            i                                                                                                                                                                                                                                                    d'Empordà                                                                                                      "
+        },
+        {
+          "page": 124,
+          "line": "                                                                                      de                                                                                                                                                   Ribagorça                    Camp Ebre Ebre Empordà Empordà  Llobregat  Llobregat Penedès Penedès                          Camp                                      "
+        },
+        {
+          "page": 126,
+          "line": "                                            i                                                                                                                                                                                                                                                    d'Empordà                                                                                                      "
+        },
+        {
+          "page": 126,
+          "line": "     i                                                                         Vila-rodona Pantà Portbou Roses Sant  Font-rubí la Organyà el els la Òdena Sant Miami el PN Castell la Port  Vallirana Cunit el  Badalona  Barcelona  Barcelona  Barcelona  Guardiola la Das  Puigcerdà  l'Espluga  Vilanova les Olot Girona Cabrils Malgrat Amposta els Illa"
+        },
+        {
+          "page": 126,
+          "line": "                                                                                      de                                                                                                                                                   Ribagorça                    Camp Ebre Ebre Empordà Empordà  Llobregat  Llobregat Penedès Penedès                                COMARCA    CampAlt EmpordàAlt Empord"
+        },
+        {
+          "page": 128,
+          "line": "                                            i                                                                                                                                                                                                                                                    d'Empordà                                                                                                      "
+        },
+        {
+          "page": 128,
+          "line": "     i                                                                         Vila-rodona Pantà Portbou Roses Sant  Font-rubí la Organyà el els la Òdena Sant Miami el PN Castell la Port  Vallirana Cunit el  Badalona  Barcelona  Barcelona  Barcelona  Guardiola la Das  Puigcerdà  l'Espluga  Vilanova les Olot Girona Cabrils Malgrat Amposta els Illa"
+        },
+        {
+          "page": 128,
+          "line": "                                                                                      de                                                                                                                                                   Ribagorça                    Camp Ebre Ebre Empordà Empordà  Llobregat  Llobregat Penedès Penedès                          Camp                                      "
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    },
+    {
+      "year": 2025,
+      "kind": 0,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 943515,
+      "sha256": "5205804395eeda6b1b258898c6f79610c4d83f2e3a5138f642fbcda0f81344fd",
+      "candidate_lines": [
+        {
+          "page": 10,
+          "line": "el Baix Llobregat       BL014      Olesa de Montserrat                  Olesa de Montserrat                                 407992   4600564     164"
+        },
+        {
+          "page": 10,
+          "line": "el Barcelonès         BN062      Badalona - Bufalà                    Badalona                                          436884   4590234      58"
+        },
+        {
+          "page": 10,
+          "line": "                   BN022      Barcelona - Can Bruixa                Barcelona                                         427507   4581733      61"
+        },
+        {
+          "page": 10,
+          "line": "                   BN007       Observatori Fabra                     Barcelona                                         426770   4585408     410"
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    },
+    {
+      "year": 2025,
+      "kind": 1,
+      "status": "TARGETED_TEXT_INSPECTED",
+      "http": 200,
+      "bytes": 3063752,
+      "sha256": "a5fd774fb0c2732eadc9b82fd19b3973c9dbe1d2b3417f05ead31cea4edf1d4e",
+      "candidate_lines": [
+        {
+          "page": 111,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                        95         100          99         100          99         100          98         100         100          99          96          99           99"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                   89          96          94          96          95          87 *        96          90          98          97          88          96           94"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                81          91          89          90          90          86          84          85          86          87          81          90           86"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat D3  Vallirana                                83          94          92          90          90          78          87          86          92          91          83          93           88"
+        },
+        {
+          "page": 111,
+          "line": "Baix Llobregat UG  Viladecans                              89          96          94          94          95          91          88          91          92          92          89          95           92"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   WU Badalona - Museu                         75          87          89          88          87          84          83          84          86          84          77          88           84"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès    X4  Barcelona - el Raval                       74          91          87          92          86          82          81          83          85          86          74          89           84"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra               83          94          95          96          91          81          90          89          96          93          83          94           90"
+        },
+        {
+          "page": 111,
+          "line": "Barcelonès    X8  Barcelona - Zona Universitària               81          98          93          94          94          85          88          91          95          94          83          95           91"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                        45          61          61          52          49          40          44          42          49          53          46          63           50"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                   48          64          62          53          47          37 *        47          38          53          58          50          70           52"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                44          59          58          57          52          49          48          48          53          52          44          62           52"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat D3  Vallirana                                44          58          58          47          41          32          42          37          49          50          46          64           47"
+        },
+        {
+          "page": 116,
+          "line": "Baix Llobregat UG  Viladecans                              45          59          58          51          47          42          44          45          52          54          48          66           51"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   WU Badalona - Museu                         43          60          57          57          54          47          51          48          55          52          46          61           53"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès    X4  Barcelona - el Raval                       40          56          54          50          45          39          45          42          49          48          42          60           47"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra               46          62          62          52          47          34          43          38          53          54          48          68           51"
+        },
+        {
+          "page": 116,
+          "line": "Barcelonès    X8  Barcelona - Zona Universitària               41          56          57          49          44          37          43          41          49          50          44          62           48"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat XL   el Prat de Llobregat                            8,1           9,1         12,2         20,7         24,9         27,3         23,7         21,5         16,2         12,0           8,8           5,5           15,9"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat UF PN del Garraf - el Rascler                      8,5           8,8         11,6         19,7         24,6         27,6         23,4         21,6         16,3         12,0           9,3           5,4           15,8"
+        },
+        {
+          "page": 120,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                   8,3           9,4         13,0         21,2         25,7         27,4         24,9         22,0         17,3         12,5           8,9           5,5           16,4"
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat D3  Vallirana                                      8,2           8,6         10,9         19,7         25,0         27,7         23,5         21,8         15,9         11,7           8,9           5,3           15,6"
+        },
+        {
+          "page": 121,
+          "line": "Baix Llobregat UG  Viladecans                                    8,1           9,2         12,7         21,1         25,6         27,4         24,4         22,1         16,5         11,9           8,7           5,4           16,1"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   WU Badalona - Museu                             8,5           9,3         12,7         20,8         25,5         27,6         24,7         22,1         17,0         12,6           9,1           5,6           16,3"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès    X4  Barcelona - el Raval                           8,4           9,4         12,4         20,8         25,3         27,2         24,1         22,0         16,6         12,5           9,1           5,6           16,2"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra                  8,3           8,3         11,0         19,9         23,3         27,4         22,8         21,2         15,2         11,6           8,8           5,4           15,3"
+        },
+        {
+          "page": 121,
+          "line": "Barcelonès    X8  Barcelona - Zona Universitària                 8,2           8,8         11,8         20,0         24,3         26,9         22,9         21,2         16,2         12,0           8,9           5,6           15,6"
+        },
+        {
+          "page": 124,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat                1018,2      1021,1      1012,5      1014,0      1015,1      1017,2      1014,7      1014,3      1017,2      1016,6      1014,8      1015,7      1015,9"
+        },
+        {
+          "page": 124,
+          "line": "Baix Llobregat D3  Vallirana                                   988,3        991,1        983,0        984,6        986,0        988,6        986,2        986,1        988,5        987,7        985,5        986,1        986,8"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   WU Badalona - Museu                         1014,4      1017,5      1009,0      1010,5      1011,6      1013,7      1011,2      1011,0      1013,9      1013,2      1011,3      1012,2      1012,4"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès    X4  Barcelona - el Raval                       1014,9      1017,9      1009,4      1010,8      1011,9      1014,0      1011,5      1011,2      1014,1      1013,4      1011,6      1012,4      1012,7"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra                970,0        972,9        964,8        966,7        968,2        971,2        968,9        968,8        970,9        969,7        967,1        967,6        968,9"
+        },
+        {
+          "page": 124,
+          "line": "Barcelonès    X8  Barcelona - Zona Universitària               1009,2      1012,1      1003,7      1005,2      1006,3      1008,5      1006,1      1005,8      1008,6      1007,9      1006,0      1006,8      1007,1"
+        },
+        {
+          "page": 126,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat           1031,2 01   1032,2 05   1023,8 20   1022,9 08   1022,8 28   1022,1 28   1020,9 04   1020,6 04   1024,8 19   1025,5 06   1024,8 03   1027,0 13   1032,2 05/02"
+        },
+        {
+          "page": 126,
+          "line": "Baix Llobregat D3  Vallirana                            1001,1 01   1001,9 05    994,1 20    993,1 08    994,0 28    993,7 28    992,8 04    992,1 04    996,0 19    996,3 11    995,5 03    997,5 13   1001,9 05/02"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   WU Badalona - Museu                    1027,7 01   1028,5 05   1020,6 20   1019,5 08   1019,4 28   1018,7 28   1017,5 04   1017,2 04   1021,5 19   1022,1 06   1021,5 03   1023,7 13   1028,5 05/02"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès    X4  Barcelona - el Raval                  1028,1 01   1029,0 05   1020,9 20   1019,8 08   1019,7 28   1019,0 28   1017,9 04   1017,5 04   1021,6 19   1022,2 11   1021,7 03   1023,9 13   1029,0 05/02"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra           982,6 01    983,4 05    975,9 20    975,3 08    976,2 28    976,5 28    975,3 04    974,8 10    978,4 19    978,1 11    977,1 03    978,9 13    983,4 05/02"
+        },
+        {
+          "page": 126,
+          "line": "Barcelonès    X8  Barcelona - Zona Universitària         1022,2 01   1023,1 05   1015,1 20   1014,0 08   1014,1 28   1013,5 28   1012,3 04   1012,0 04   1016,0 19   1016,6 11   1016,0 03   1018,3 13   1023,1 05/02"
+        },
+        {
+          "page": 128,
+          "line": "Baix Llobregat YQ  Port de Barcelona - ZAL Prat           1002,5 06   1011,9 16    995,7 13   1000,2 15   1005,0 04   1009,4 03   1004,6 20   1004,6 27   1005,5 01   1003,6 23   1003,0 24   1001,6 23    995,7 13/03"
+        },
+        {
+          "page": 128,
+          "line": "Baix Llobregat D3  Vallirana                              973,5 06    982,1 16    966,6 13    971,1 15    975,9 04    981,0 03    976,5 20    977,0 28    977,3 01    974,6 23    974,0 24    972,0 23    966,6 13/03"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   WU Badalona - Museu                     998,7 27   1008,2 16    992,1 13    996,8 15   1001,4 04   1005,8 03   1001,0 20   1001,4 27   1002,6 01    998,9 23    999,4 24    997,5 23    992,1 13/03"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès    X4  Barcelona - el Raval                    999,3 27   1008,6 16    992,7 13    997,2 15   1001,7 04   1006,4 03   1001,5 20   1001,6 27   1002,6 01    999,9 23    999,8 24    998,1 23    992,7 13/03"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès   D5  Barcelona - Observatori Fabra           955,9 27    964,0 16    948,5 13    953,7 15    958,7 04    963,3 03    959,6 20    959,7 28    960,0 01    956,6 23    955,7 24    953,2 23    948,5 13/03"
+        },
+        {
+          "page": 128,
+          "line": "Barcelonès    X8  Barcelona - Zona Universitària           993,9 06   1002,9 16    987,0 13    991,6 15    996,3 04   1000,8 03    996,2 20    996,4 27    997,1 01    995,0 23    994,4 24    992,4 23    987,0 13/03"
+        }
+      ],
+      "qualification": "Candidate text lines only; row alignment and numeric series not yet validated."
+    }
+  ],
+  "elevation": {
+    "status": "CATALOG_INSPECTED",
+    "http": 200,
+    "bytes": 67430,
+    "sha256": "15c04455c4cbcf76ccf54ae85319d20f7a22d455ec295fbc54655911b8c5176a",
+    "layers": {
+      "model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023": {
+        "queryable": "1",
+        "title": "Model d’elevacions del terreny edificis Catalunya – 2021-2023",
+        "metadata_urls": [
+          {
+            "{http://www.w3.org/1999/xlink}type": "simple",
+            "{http://www.w3.org/1999/xlink}href": "http://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?request=GetMetadata&layer=model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023"
+          }
+        ],
+        "data_urls": []
+      },
+      "model-elevacions-terreny-edificis-vegetacio-catalunya-lidar-1m-2021-2023": {
+        "queryable": "1",
+        "title": "Model d’elevacions del terreny edificis vegetació Catalunya – 2021-2023",
+        "metadata_urls": [
+          {
+            "{http://www.w3.org/1999/xlink}type": "simple",
+            "{http://www.w3.org/1999/xlink}href": "http://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?request=GetMetadata&layer=model-elevacions-terreny-edificis-vegetacio-catalunya-lidar-1m-2021-2023"
+          }
+        ],
+        "data_urls": []
+      },
+      "model-alcaries-catalunya-lidar-1m-2021-2023": {
+        "queryable": "1",
+        "title": "Model d’alçàries Catalunya – 2021-2023",
+        "metadata_urls": [
+          {
+            "{http://www.w3.org/1999/xlink}type": "simple",
+            "{http://www.w3.org/1999/xlink}href": "http://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?request=GetMetadata&layer=model-alcaries-catalunya-lidar-1m-2021-2023"
+          }
+        ],
+        "data_urls": []
+      },
+      "model-alcaries-vegetacio-catalunya-lidar-1m-2021-2023": {
+        "queryable": "1",
+        "title": "Model d’alçàries de vegetació Catalunya – 2021-2023",
+        "metadata_urls": [
+          {
+            "{http://www.w3.org/1999/xlink}type": "simple",
+            "{http://www.w3.org/1999/xlink}href": "http://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?request=GetMetadata&layer=model-alcaries-vegetacio-catalunya-lidar-1m-2021-2023"
+          }
+        ],
+        "data_urls": []
+      }
+    },
+    "formats": [
+      "image/png",
+      "image/jpeg",
+      "image/vnd.jpeg-png",
+      "image/vnd.jpeg-png8",
+      "image/png; mode=8bit",
+      "application/x-pdf",
+      "image/svg+xml",
+      "image/tiff",
+      "application/vnd.google-earth.kml+xml",
+      "application/vnd.google-earth.kmz",
+      "application/vnd.mapbox-vector-tile",
+      "application/x-protobuf",
+      "application/json"
+    ],
+    "qualification": "WMS is a map service; not proof of original numerical GeoTIFF."
+  }
+}
