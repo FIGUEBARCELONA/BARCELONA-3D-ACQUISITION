@@ -1,0 +1,112 @@
+name: F0 lot46 full public MTM ZIP and SQLite inspection
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot46.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Download public source and inspect without redistribution
+        shell: python
+        run: |
+          import pathlib,urllib.request,hashlib,json,zipfile,sqlite3,tempfile,shutil,datetime,time,concurrent.futures,collections
+          out=pathlib.Path('custody/f0-lot46-20261125');out.mkdir(parents=True,exist_ok=True)
+          u='https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42'
+          r={'url':u,'status':'BLOCKED','expected_bytes':652217937,'expected_prefix_sha256':'0937488739adcd6f13b7efe7e4725117f9782a178fdf0eab334949416ceaa831'}
+          def save():
+              (out/'report.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+          def inspect(task):
+              p,member=task
+              res={'member':member,'bytes':p.stat().st_size,'status':'BLOCKED'}
+              try:
+                  h=hashlib.sha256()
+                  with p.open('rb') as f:
+                      for b in iter(lambda:f.read(4*1024*1024),b''):h.update(b)
+                  res['sha256']=h.hexdigest()
+                  with sqlite3.connect(p.as_uri()+'?mode=ro&immutable=1',uri=True) as db:
+                      db.execute('PRAGMA query_only=ON')
+                      res['application_id']=db.execute('PRAGMA application_id').fetchone()[0]
+                      res['quick_check']=db.execute('PRAGMA quick_check').fetchall()
+                      res['integrity_check']=db.execute('PRAGMA integrity_check').fetchall()
+                      res['foreign_key_violations']=sum(1 for _ in db.execute('PRAGMA foreign_key_check'))
+                      res['srs']=db.execute('SELECT srs_id,organization,organization_coordsys_id FROM gpkg_spatial_ref_sys').fetchall()
+                      res['geometry_columns']=db.execute('SELECT table_name,column_name,geometry_type_name,srs_id,z,m FROM gpkg_geometry_columns').fetchall()
+                      res['layers']=[]
+                      for row in db.execute('SELECT table_name,data_type,identifier,last_change,srs_id FROM gpkg_contents').fetchall():
+                          name=row[0];q='"'+name.replace('"','""')+'"'
+                          cols=db.execute('PRAGMA table_info('+q+')').fetchall()
+                          count=db.execute('SELECT COUNT(*) FROM '+q).fetchone()[0]
+                          res['layers'].append({'name':name,'data_type':row[1],'identifier':row[2],'last_change':row[3],'srs_id':row[4],'count':count,'columns':[{'name':c[1],'type':c[2],'pk':c[5]} for c in cols]})
+                      res['status']='SQLITE_INSPECTED' if res['integrity_check']==[('ok',)] and res['quick_check']==[('ok',)] else 'INTEGRITY_FAIL'
+              except Exception as e:res['error']=repr(e)
+              return res
+          try:
+              with tempfile.TemporaryDirectory() as td:
+                  d=pathlib.Path(td);zpath=d/'MTM_GPKG.zip';h=hashlib.sha256();prefix=bytearray();n=0;t=time.monotonic()
+                  r['disk_free_before']=shutil.disk_usage(d).free
+                  if r['disk_free_before']<5_000_000_000:raise ValueError('insufficient temporary disk')
+                  req=urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-public-data-audit/1.0','Accept-Encoding':'identity'})
+                  with urllib.request.urlopen(req,timeout=40) as x,zpath.open('wb') as f:
+                      r.update(http=x.status,content_length=x.headers.get('Content-Length'),content_disposition=x.headers.get('Content-Disposition'))
+                      while True:
+                          b=x.read(2*1024*1024)
+                          if not b:break
+                          n+=len(b)
+                          if n>r['expected_bytes'] or time.monotonic()-t>420:raise ValueError('bounded download exceeded')
+                          if len(prefix)<65536:prefix.extend(b[:65536-len(prefix)])
+                          h.update(b);f.write(b)
+                  r.update(bytes=n,sha256=h.hexdigest(),prefix_sha256=hashlib.sha256(prefix).hexdigest(),download_seconds=round(time.monotonic()-t,2))
+                  if n!=r['expected_bytes']:raise ValueError('length mismatch')
+                  if r['prefix_sha256']!=r['expected_prefix_sha256']:raise ValueError('snapshot prefix changed')
+                  r['status']='ZIP_BYTES_ACQUIRED';save()
+                  with zipfile.ZipFile(zpath) as z:
+                      infos=z.infolist()
+                      r['members']=[{'name':e.filename,'bytes':e.file_size,'compressed_bytes':e.compress_size,'crc32':format(e.CRC,'08x')} for e in infos]
+                      if sum(e.file_size for e in infos)>min(8_000_000_000,shutil.disk_usage(d).free-500_000_000):raise ValueError('expanded size bound')
+                      if len(infos)>200:raise ValueError('unexpected member count')
+                      tasks=[]
+                      for i,e in enumerate(infos):
+                          if e.is_dir():continue
+                          p=d/(str(i)+'.gpkg') if e.filename.lower().endswith('.gpkg') else None
+                          with z.open(e) as src:
+                              if p:
+                                  with p.open('wb') as dest:shutil.copyfileobj(src,dest,1024*1024)
+                                  tasks.append((p,e.filename))
+                              else:
+                                  for _ in iter(lambda:src.read(1024*1024),b''):pass
+                      r['crc_verified_members']=sum(not e.is_dir() for e in infos)
+                      r['status']='ZIP_CRC_VERIFIED';save()
+                      if not tasks:raise ValueError('no GeoPackages')
+                      with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:r['geopackages']=list(ex.map(inspect,tasks))
+                      r['status']='GPKG_INSPECTED' if all(g['status']=='SQLITE_INSPECTED' for g in r['geopackages']) else 'GPKG_PARTIAL'
+          except Exception as e:r['error']=repr(e)
+          r['utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+          r['qualification']='Original public binary processed in temporary runner storage; only audit report retained; no geometry tolerance or source redistribution.'
+          save()
+          print(json.dumps({k:v for k,v in r.items() if k!='geopackages'},ensure_ascii=False))
+      - name: Preserve report even on acquisition failure
+        if: always()
+        run: |
+          set -euo pipefail
+          test -f custody/f0-lot46-20261125/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot46-20261125/report.json
+          git commit -m 'Preserve lot46 public municipal ZIP and GeoPackage audit'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
