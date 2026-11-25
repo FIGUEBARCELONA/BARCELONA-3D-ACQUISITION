@@ -1,0 +1,63 @@
+name: F0 lot12 GHCNh directed station acquisition
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot12-noaa.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect NOAA source files
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,json,hashlib,pathlib,datetime,xml.etree.ElementTree as ET,csv,io,collections,concurrent.futures
+          base='https://noaa-ghcnh-pds.s3.us-east-1.amazonaws.com/'
+          station='SP000008181'
+          out=pathlib.Path('custody/f0-lot12-20261125');out.mkdir(parents=True,exist_ok=True)
+          def get(url,limit=40000000):
+              with urllib.request.urlopen(url,timeout=45) as x:
+                  b=x.read(limit+1)
+                  if len(b)>limit:raise ValueError('size limit')
+                  return b,{'http':x.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':x.headers.get('Content-Type')}
+          def ls(prefix):
+              b,m=get(base+'?'+urllib.parse.urlencode({'list-type':2,'prefix':prefix,'max-keys':100,'delimiter':'/'}))
+              x=ET.fromstring(b)
+              if not x.tag.endswith('ListBucketResult'):raise ValueError('not S3 listing')
+              return {**m,'prefix':prefix,'keys':[a.text for a in x.findall('.//{*}Contents/{*}Key')],'directories':[a.text for a in x.findall('.//{*}CommonPrefixes/{*}Prefix')]}
+          def year(y):
+              r={'year':y,'status':'BLOCKED','listings':[]}
+              try:
+                  p=f'hourly/access/by-year/{y}/psv/'
+                  a=ls(p);r['listings'].append(a)
+                  if not a['keys']:raise ValueError('no direct sample keys')
+                  sample=a['keys'][0];name=sample.rsplit('/',1)[1]
+                  import re
+                  match=re.search(r'[A-Z]{2}[A-Z0-9]{9}',name)
+                  if not match:raise ValueError('station naming pattern not recognized')
+                  prefix=p+name[:match.start()]+station
+                  a=ls(prefix);r['listings'].append(a)
+                  keys=[k for k in a['keys'] if station in k and k.endswith('.psv')]
+                  if len(keys)!=1:raise ValueError('station key not unique')
+                  key=keys[0];r['key']=key
+                  b,m=get(base+urllib.parse.quote(key,safe='/'));r.update(m)
+                  t=b.decode('utf-8-sig');reader=csv.DictReader(io.StringIO(t),delimiter='|');fields=reader.fieldnames or []
+                  if len(fields)<3:raise ValueError('invalid PSV')
+                  rows=list(reader)
+                  if not rows:raise ValueError('empty PSV')
+                  r.update(fields=fields,rows=len(rows),first_record=rows[0],last_record=rows[-1],malformed_rows=sum(None in x or None in x.values() for x in rows),status='STRUCTURE_INSPECTED',qualification='Station key candidate; internal station, date, unit and quality semantics need validation before counting observations.')
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:results=list(ex.map(year,range(2021,2026)))
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'station_candidate':station,'results':results}
+          (out/'noaa.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot12-20261125/noaa.json
+          git commit -m 'Preserve NOAA directed station audit'
+          git push origin HEAD:audit/f0-lot06-20261125
