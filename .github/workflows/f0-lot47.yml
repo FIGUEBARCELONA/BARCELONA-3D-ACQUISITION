@@ -1,0 +1,67 @@
+name: F0 lot47 municipal district distribution
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot47.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Inspect district-specific official Atom feed and distribution headers
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,hashlib,json,xml.etree.ElementTree as ET,concurrent.futures,pathlib,datetime
+          out=pathlib.Path('custody/f0-lot47-20261125');out.mkdir(parents=True,exist_ok=True)
+          r={'source':'https://w20.bcn.cat/cartobcn/atom.ashx?file=140','status':'BLOCKED'}
+          def get(u,method='GET',limit=2000000):
+              with urllib.request.urlopen(urllib.request.Request(u,method=method,headers={'User-Agent':'GTA-BCN-public-data-audit/1.0','Accept-Encoding':'identity'}),timeout=20) as x:
+                  b=x.read(limit+1) if method=='GET' else b''
+                  if len(b)>limit:raise ValueError('metadata limit')
+                  return b,{'http':x.status,'effective_url':x.geturl(),'headers':{k:x.headers.get(k) for k in ('Content-Type','Content-Length','Content-Disposition','Accept-Ranges','Last-Modified','ETag')}}
+          def head(item):
+              u=item['href'];q=urllib.parse.urlsplit(u)
+              if q.hostname!='w20.bcn.cat':return {**item,'error':'unapproved hostname'}
+              u=urllib.parse.urlunsplit(('https',q.netloc,q.path,q.query,q.fragment))
+              try:
+                  _,m=get(u,'HEAD')
+                  return {**item,'https_url':u,**m}
+              except Exception as e:return {**item,'https_url':u,'error':repr(e)}
+          try:
+              b,m=get(r['source']);r.update(m,bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+              root=ET.fromstring(b);ns={'a':'http://www.w3.org/2005/Atom'}
+              entries=[]
+              for entry in root.findall('a:entry',ns):
+                  for el in entry.findall('a:link',ns):
+                      if el.get('rel')=='section':
+                          entries.append({'entry_title':entry.findtext('a:title',namespaces=ns),'updated':entry.findtext('a:updated',namespaces=ns),**el.attrib})
+              if not entries or len(entries)>30:raise ValueError('unexpected district distribution count')
+              r['entries']=entries
+              with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:r['headers_by_entry']=list(ex.map(head,entries))
+              r['status']='DISTRICT_METADATA_INSPECTED'
+          except Exception as e:r['error']=repr(e)
+          r['utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+          r['qualification']='Public feed and HEAD only; no full district binary or spatial validation claimed.'
+          s=json.dumps(r,indent=2,ensure_ascii=False)+'\n';(out/'report.json').write_text(s);print(s)
+      - name: Preserve report
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot47-20261125/report.json
+          git commit -m 'Preserve lot47 district distribution inventory'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
