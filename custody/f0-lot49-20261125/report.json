@@ -1,0 +1,235 @@
+{
+  "catalogue": {
+    "source": "https://w20.bcn.cat/cartobcn/atom.ashx",
+    "status": "CATALOGUE_INSPECTED",
+    "http": 200,
+    "effective_url": "https://w20.bcn.cat/cartobcn/atom.ashx",
+    "content_length": "154380",
+    "content_type": "text/xml; charset=UTF-8",
+    "content_range": null,
+    "bytes": 154380,
+    "sha256": "7bba4eb2c44f6902e76825a0283f4f5062cac44c99a04d478c0289e16d6654bc",
+    "total_entries": 70,
+    "matched": [
+      {
+        "title": "ADRECES ELEMENTALS en format Geopackage - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat ",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=119",
+        "updated": "2020-12-20T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=119",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Cartografia Topogràfica Municipal - CAD - Àmbit Barri - Distribució de productes en fitxers per Barri Municipal",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=93",
+        "updated": "2015-07-23T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=93",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Cartografia Topogràfica Municipal - GIS - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat ",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=113",
+        "updated": "2019-03-13T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=113",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Cartografia Topogràfica Municipal - GIS GPKG - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat ",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=144",
+        "updated": "2025-12-13T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=144",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "ETRS89. TOPOGRÀFIC. Dades per FULL 1:1.000 en format CAD - Àmbit Full 1:1000 - Distribució de productes en fitxers per full 1:1000 UTM",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=69",
+        "updated": "2015-01-01T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=69",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "MAPA TEMÀTIC per ALÇADES i EDIFICACIÓ en format Geopackage - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat ",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=118",
+        "updated": "2020-12-20T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=118",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Mapa Topogràfic Municipal en format DGN (Visió de ciutat) - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat ",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=139",
+        "updated": "2025-06-20T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=139",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Mapa Topogràfic Municipal en format DGN (Visió detallada per districte) - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=141",
+        "updated": "2025-06-01T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=141",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte) - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=140",
+        "updated": "2025-06-01T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=140",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "MAPA TOPOGRÀFIC MUNICIPAL en format Geopackage - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat ",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=131",
+        "updated": "2020-12-20T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=131",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat ",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=121",
+        "updated": "2020-12-20T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=121",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS - Àmbit Barri - Distribució de productes en fitxers per Barri Municipal",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=135",
+        "updated": "2024-12-27T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=135",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per DISTRICTES - Àmbit Districte - Distribució de productes en fitxers per Districte Municipal",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=134",
+        "updated": "2024-06-01T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=134",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "Plànol mural de Barcelona en format JPG georeferenciat Mapa Topogràfic Municipal a escala 1:10.000 - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat ",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=122",
+        "updated": "2021-04-21T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=122",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      },
+      {
+        "title": "XARXA TOPOGRÀFICA MUNICIPAL - Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat ",
+        "id": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=115",
+        "updated": "2018-02-01T00:00:00Z",
+        "links": [
+          {
+            "rel": "enclosure",
+            "type": "application/atom+xml",
+            "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=115",
+            "title": "Anar al conjunt de dades del producte"
+          }
+        ]
+      }
+    ]
+  },
+  "zip_member": {
+    "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+    "status": "HEADER_FIELDS_INSPECTED",
+    "http": 200,
+    "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+    "content_length": "652217937",
+    "content_type": "application/octet-stream; charset=UTF-8",
+    "content_range": null,
+    "bytes": 65536,
+    "sha256": "0937488739adcd6f13b7efe7e4725117f9782a178fdf0eab334949416ceaa831",
+    "name": "Base (Línies).gpkg",
+    "flags": 2048,
+    "method": 8,
+    "crc32": "4cbcafa0",
+    "compressed_bytes": 50732725,
+    "expanded_bytes": 93929472,
+    "data_offset": 49,
+    "data_descriptor": false,
+    "zip64_size_placeholder": false,
+    "member_end_exclusive": 50732774,
+    "fits_previous_partial_length": true
+  },
+  "utc": "2026-11-25T11:19:28.153828+00:00",
+  "qualification": "Public metadata and ZIP local header only; no member integrity or geometric acceptance."
+}
