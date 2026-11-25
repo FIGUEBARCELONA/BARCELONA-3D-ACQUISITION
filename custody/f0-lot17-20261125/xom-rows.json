@@ -1,0 +1,1779 @@
+{
+  "utc": "2026-11-25T07:44:17.911225+00:00",
+  "results": [
+    {
+      "year": 2021,
+      "status": "ROWS_INSPECTED",
+      "rows": [
+        {
+          "station": "BN062",
+          "page": 47,
+          "rotation": 0,
+          "line": "Barcelonès BN062 Badalona - Bufalà 17.8 19.2 12.1 42.4 10.6 3.9 8.7 2.5 36.5 111.4 64.5 2.4 332.0",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "17.8"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "19.2"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "12.1"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "42.4"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "10.6"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "3.9"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "8.7"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "2.5"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "36.5"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "111.4"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "64.5"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "2.4"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "332.0"
+              ]
+            }
+          ],
+          "values_mm": [
+            "17.8",
+            "19.2",
+            "12.1",
+            "42.4",
+            "10.6",
+            "3.9",
+            "8.7",
+            "2.5",
+            "36.5",
+            "111.4",
+            "64.5",
+            "2.4",
+            "332.0"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN022",
+          "page": 47,
+          "rotation": 0,
+          "line": "BN022 Barcelona - Can Bruixa 32.8 17.2 7.0 36.8 9.2 4.8 6.8 14.5 64.3 90.4 79.5 1.4 364.7",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "32.8"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "17.2"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "7.0"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "36.8"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "9.2"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "4.8"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "6.8"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "14.5"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "64.3"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "90.4"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "79.5"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "1.4"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "364.7"
+              ]
+            }
+          ],
+          "values_mm": [
+            "32.8",
+            "17.2",
+            "7.0",
+            "36.8",
+            "9.2",
+            "4.8",
+            "6.8",
+            "14.5",
+            "64.3",
+            "90.4",
+            "79.5",
+            "1.4",
+            "364.7"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN040",
+          "page": 47,
+          "rotation": 0,
+          "line": "BN040 Barcelona - Font del Gat 33.7 22.9 6.0 37.7 9.2 5.0 7.0 7.6 62.2 86.6 63.5 1.5 342.9",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "33.7"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "22.9"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "6.0"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "37.7"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "9.2"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "5.0"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "7.0"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "7.6"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "62.2"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "86.6"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "63.5"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "1.5"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "342.9"
+              ]
+            }
+          ],
+          "values_mm": [
+            "33.7",
+            "22.9",
+            "6.0",
+            "37.7",
+            "9.2",
+            "5.0",
+            "7.0",
+            "7.6",
+            "62.2",
+            "86.6",
+            "63.5",
+            "1.5",
+            "342.9"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN007",
+          "page": 47,
+          "rotation": 0,
+          "line": "BN007 Observatori Fabra 26.2 26.5 7.7 62.7 13.1 7.8 9.0 8.3 23.2 63.0 75.9 3.8 327.2",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "26.2"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "26.5"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "7.7"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "62.7"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "13.1"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "7.8"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "9.0"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "8.3"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "23.2"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "63.0"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "75.9"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "3.8"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "327.2"
+              ]
+            }
+          ],
+          "values_mm": [
+            "26.2",
+            "26.5",
+            "7.7",
+            "62.7",
+            "13.1",
+            "7.8",
+            "9.0",
+            "8.3",
+            "23.2",
+            "63.0",
+            "75.9",
+            "3.8",
+            "327.2"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "status": "ROWS_INSPECTED",
+      "rows": [
+        {
+          "station": "BN062",
+          "page": 47,
+          "rotation": 0,
+          "line": "Barcelonès BN062 Badalona - Bufalà 6.6 0.8 116.8 44.1 18.0 5.0 8.4 88.3 22.1 16.9 7.4 31.5 365.9",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "6.6"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "0.8"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "116.8"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "44.1"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "18.0"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "5.0"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "8.4"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "88.3"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "22.1"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "16.9"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "7.4"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "31.5"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "365.9"
+              ]
+            }
+          ],
+          "values_mm": [
+            "6.6",
+            "0.8",
+            "116.8",
+            "44.1",
+            "18.0",
+            "5.0",
+            "8.4",
+            "88.3",
+            "22.1",
+            "16.9",
+            "7.4",
+            "31.5",
+            "365.9"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN022",
+          "page": 47,
+          "rotation": 0,
+          "line": "BN022 Barcelona - Can Bruixa 9.5 1.4 78.6 37.1 16.8 4.5 2.6 49.7 16.8 10.5 19.9 31.3 278.7",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "9.5"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "1.4"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "78.6"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "37.1"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "16.8"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "4.5"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "2.6"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "49.7"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "16.8"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "10.5"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "19.9"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "31.3"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "278.7"
+              ]
+            }
+          ],
+          "values_mm": [
+            "9.5",
+            "1.4",
+            "78.6",
+            "37.1",
+            "16.8",
+            "4.5",
+            "2.6",
+            "49.7",
+            "16.8",
+            "10.5",
+            "19.9",
+            "31.3",
+            "278.7"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN040",
+          "page": 47,
+          "rotation": 0,
+          "line": "BN040 Barcelona - Font del Gat 8.2 1.0 58.8 21.9 18.0 5.3 4.0 d.i. d.i.",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "8.2"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "1.0"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "58.8"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "21.9"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "18.0"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "5.3"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "4.0"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "d.i."
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": []
+            },
+            {
+              "column": "OCT",
+              "tokens": []
+            },
+            {
+              "column": "NOV",
+              "tokens": []
+            },
+            {
+              "column": "DES",
+              "tokens": []
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "d.i."
+              ]
+            }
+          ],
+          "values_mm": [
+            "8.2",
+            "1.0",
+            "58.8",
+            "21.9",
+            "18.0",
+            "5.3",
+            "4.0",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "sum_minus_printed_annual_mm": null,
+          "status": "REVIEW_REQUIRED"
+        },
+        {
+          "station": "BN007",
+          "page": 47,
+          "rotation": 0,
+          "line": "BN007 Observatori Fabra 12.3 1.9 89.4 38.9 20.0 9.5 2.6 67.9 13.1 11.3 7.6 32.8 307.3",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "12.3"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "1.9"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "89.4"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "38.9"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "20.0"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "9.5"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "2.6"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "67.9"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "13.1"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "11.3"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "7.6"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "32.8"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "307.3"
+              ]
+            }
+          ],
+          "values_mm": [
+            "12.3",
+            "1.9",
+            "89.4",
+            "38.9",
+            "20.0",
+            "9.5",
+            "2.6",
+            "67.9",
+            "13.1",
+            "11.3",
+            "7.6",
+            "32.8",
+            "307.3"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "status": "ROWS_INSPECTED",
+      "rows": [
+        {
+          "station": "BN062",
+          "page": 47,
+          "rotation": 0,
+          "line": "Barcelonès BN062 Badalona - Bufalà 2,8 33,5 0,0 7,0 36,5 17,6 1,8 48,3 39,0 80,3 4,2 1,1 272,1",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "2,8"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "33,5"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "0,0"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "7,0"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "36,5"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "17,6"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "1,8"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "48,3"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "39,0"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "80,3"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "4,2"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "1,1"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "272,1"
+              ]
+            }
+          ],
+          "values_mm": [
+            "2.8",
+            "33.5",
+            "0.0",
+            "7.0",
+            "36.5",
+            "17.6",
+            "1.8",
+            "48.3",
+            "39.0",
+            "80.3",
+            "4.2",
+            "1.1",
+            "272.1"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN022",
+          "page": 47,
+          "rotation": 0,
+          "line": "BN022 Barcelona - Can Bruixa 2,9 41,4 1,6 19,3 40,9 5,3 2,8 51,3 53,8 28,4 1,5 1,4 250,6",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "2,9"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "41,4"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "1,6"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "19,3"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "40,9"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "5,3"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "2,8"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "51,3"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "53,8"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "28,4"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "1,5"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "1,4"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "250,6"
+              ]
+            }
+          ],
+          "values_mm": [
+            "2.9",
+            "41.4",
+            "1.6",
+            "19.3",
+            "40.9",
+            "5.3",
+            "2.8",
+            "51.3",
+            "53.8",
+            "28.4",
+            "1.5",
+            "1.4",
+            "250.6"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN007",
+          "page": 47,
+          "rotation": 0,
+          "line": "BN007 Observatori Fabra 8,7 40,7 1,0 36,0 46,5 39,8 6,2 44,6 50,4 29,2 3,7 2,7 309,5",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "8,7"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "40,7"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "1,0"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "36,0"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "46,5"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "39,8"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "6,2"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "44,6"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "50,4"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "29,2"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "3,7"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "2,7"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "309,5"
+              ]
+            }
+          ],
+          "values_mm": [
+            "8.7",
+            "40.7",
+            "1.0",
+            "36.0",
+            "46.5",
+            "39.8",
+            "6.2",
+            "44.6",
+            "50.4",
+            "29.2",
+            "3.7",
+            "2.7",
+            "309.5"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "status": "ROWS_INSPECTED",
+      "rows": [
+        {
+          "station": "BN062",
+          "page": 47,
+          "rotation": 90,
+          "line": "Barcelonès BN062 Badalona - Bufalà 33,5 22,6 92,6 84,9 36,6 67,7 21,6 8,1 116,6 107,1 35,5 42,9 669,7",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "33,5"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "22,6"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "92,6"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "84,9"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "36,6"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "67,7"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "21,6"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "8,1"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "116,6"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "107,1"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "35,5"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "42,9"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "669,7"
+              ]
+            }
+          ],
+          "values_mm": [
+            "33.5",
+            "22.6",
+            "92.6",
+            "84.9",
+            "36.6",
+            "67.7",
+            "21.6",
+            "8.1",
+            "116.6",
+            "107.1",
+            "35.5",
+            "42.9",
+            "669.7"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN022",
+          "page": 47,
+          "rotation": 90,
+          "line": "Barcelonès BN022 Barcelona - Can Bruixa 23,7 13,3 84,9 94,4 39,9 92,8 15,0 8,1 89,5 110,7 53,0 35,5 660,8",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "23,7"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "13,3"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "84,9"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "94,4"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "39,9"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "92,8"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "15,0"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "8,1"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "89,5"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "110,7"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "53,0"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "35,5"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "660,8"
+              ]
+            }
+          ],
+          "values_mm": [
+            "23.7",
+            "13.3",
+            "84.9",
+            "94.4",
+            "39.9",
+            "92.8",
+            "15.0",
+            "8.1",
+            "89.5",
+            "110.7",
+            "53.0",
+            "35.5",
+            "660.8"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN007",
+          "page": 47,
+          "rotation": 90,
+          "line": "Barcelonès BN007 Observatori Fabra 26,4 27,2 87,9 94,5 29,6 74,7 33,4 17,6 70,7 118,5 54,3 38,4 673,2",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "26,4"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "27,2"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "87,9"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "94,5"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "29,6"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "74,7"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "33,4"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "17,6"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "70,7"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "118,5"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "54,3"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "38,4"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "673,2"
+              ]
+            }
+          ],
+          "values_mm": [
+            "26.4",
+            "27.2",
+            "87.9",
+            "94.5",
+            "29.6",
+            "74.7",
+            "33.4",
+            "17.6",
+            "70.7",
+            "118.5",
+            "54.3",
+            "38.4",
+            "673.2"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "status": "ROWS_INSPECTED",
+      "rows": [
+        {
+          "station": "BN062",
+          "page": 47,
+          "rotation": 0,
+          "line": "Barcelonès BN062 Badalona - Bufalà 4,4 23,8 104,6 24,8 60,9 0,0 69,6 72,1 61,6 26,6 44,7 207,3 700,4",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "4,4"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "23,8"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "104,6"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "24,8"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "60,9"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "0,0"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "69,6"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "72,1"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "61,6"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "26,6"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "44,7"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "207,3"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "700,4"
+              ]
+            }
+          ],
+          "values_mm": [
+            "4.4",
+            "23.8",
+            "104.6",
+            "24.8",
+            "60.9",
+            "0.0",
+            "69.6",
+            "72.1",
+            "61.6",
+            "26.6",
+            "44.7",
+            "207.3",
+            "700.4"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN022",
+          "page": 47,
+          "rotation": 0,
+          "line": "Barcelonès BN022 Barcelona - Can Bruixa 5,4 54,8 113,7 11,6 67,0 0,0 64,0 42,8 63,8 94,5 34,0 157,6 709,2",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "5,4"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "54,8"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "113,7"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "11,6"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "67,0"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "0,0"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "64,0"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "42,8"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "63,8"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "94,5"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "34,0"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "157,6"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "709,2"
+              ]
+            }
+          ],
+          "values_mm": [
+            "5.4",
+            "54.8",
+            "113.7",
+            "11.6",
+            "67.0",
+            "0.0",
+            "64.0",
+            "42.8",
+            "63.8",
+            "94.5",
+            "34.0",
+            "157.6",
+            "709.2"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        },
+        {
+          "station": "BN007",
+          "page": 47,
+          "rotation": 0,
+          "line": "Barcelonès BN007 Observatori Fabra 2,6 60,1 155,8 20,7 63,6 0,0 38,7 39,5 61,6 32,3 59,6 135,9 670,4",
+          "cells": [
+            {
+              "column": "GEN",
+              "tokens": [
+                "2,6"
+              ]
+            },
+            {
+              "column": "FEB",
+              "tokens": [
+                "60,1"
+              ]
+            },
+            {
+              "column": "MAR",
+              "tokens": [
+                "155,8"
+              ]
+            },
+            {
+              "column": "ABR",
+              "tokens": [
+                "20,7"
+              ]
+            },
+            {
+              "column": "MAI",
+              "tokens": [
+                "63,6"
+              ]
+            },
+            {
+              "column": "JUN",
+              "tokens": [
+                "0,0"
+              ]
+            },
+            {
+              "column": "JUL",
+              "tokens": [
+                "38,7"
+              ]
+            },
+            {
+              "column": "AGO",
+              "tokens": [
+                "39,5"
+              ]
+            },
+            {
+              "column": "SET",
+              "tokens": [
+                "61,6"
+              ]
+            },
+            {
+              "column": "OCT",
+              "tokens": [
+                "32,3"
+              ]
+            },
+            {
+              "column": "NOV",
+              "tokens": [
+                "59,6"
+              ]
+            },
+            {
+              "column": "DES",
+              "tokens": [
+                "135,9"
+              ]
+            },
+            {
+              "column": "ANY",
+              "tokens": [
+                "670,4"
+              ]
+            }
+          ],
+          "values_mm": [
+            "2.6",
+            "60.1",
+            "155.8",
+            "20.7",
+            "63.6",
+            "0.0",
+            "38.7",
+            "39.5",
+            "61.6",
+            "32.3",
+            "59.6",
+            "135.9",
+            "670.4"
+          ],
+          "sum_minus_printed_annual_mm": "0.0",
+          "status": "ALL_13_NUMERIC"
+        }
+      ]
+    }
+  ],
+  "qualification": "Text coordinate extraction; visual check and source footnotes still required; no imputation."
+}
