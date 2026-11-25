@@ -1,0 +1,273 @@
+{
+  "utc": "2026-11-25T06:39:45.076790+00:00",
+  "status": "INSPECTED",
+  "samples": [
+    {
+      "oid": 28,
+      "temporalitat": "TAL",
+      "status": "NONUNIFORM_IMAGE_ACQUIRED",
+      "http": 200,
+      "bytes": 176554,
+      "sha256": "256bb6e847ebc2b06c65994f25fc544aff5f4c168a048f71c5118db17d03ada2",
+      "content_type": "image/png",
+      "size": [
+        300,
+        300
+      ],
+      "extrema": [
+        [
+          24,
+          255
+        ],
+        [
+          9,
+          254
+        ],
+        [
+          0,
+          249
+        ]
+      ],
+      "stddev": [
+        46.326954332764004,
+        44.39158684538914,
+        39.82592072673554
+      ],
+      "file": "ICGC_CC-BY-4.0_territorial2025_oid_28.png",
+      "attribution": "ICGC CC BY 4.0, annual 2025 layer; actual flight date pending",
+      "feature_info": {
+        "http": 200,
+        "bytes": 214,
+        "sha256": "74c5f49b592798fbf76bf9e81d9426981f6e6e328b1944cb9a14d85e1c4a8662",
+        "content_type": "text/plain; charset=UTF-8",
+        "text": "GetFeatureInfo results:\n\nLayer 'ortofoto_25cm_color_2025'\n  Feature 0: \n    color = 'RGB'\n    gsd = '0.25'\n    data_inicial = '2025/06/18 00:00:00'\n    data_final = '2025/06/28 00:00:00'\n    origen = 'Píxel Font'\n"
+      }
+    },
+    {
+      "oid": 1116,
+      "temporalitat": "TAL",
+      "status": "NONUNIFORM_IMAGE_ACQUIRED",
+      "http": 200,
+      "bytes": 188694,
+      "sha256": "e540552f81ab8cb1241b57aa7a88378a1823994c1feaa229b808ae4a53b89710",
+      "content_type": "image/png",
+      "size": [
+        300,
+        300
+      ],
+      "extrema": [
+        [
+          22,
+          255
+        ],
+        [
+          8,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "stddev": [
+        43.97219064412568,
+        44.6233176421321,
+        45.668044931588426
+      ],
+      "file": "ICGC_CC-BY-4.0_territorial2025_oid_1116.png",
+      "attribution": "ICGC CC BY 4.0, annual 2025 layer; actual flight date pending",
+      "feature_info": {
+        "http": 200,
+        "bytes": 214,
+        "sha256": "74c5f49b592798fbf76bf9e81d9426981f6e6e328b1944cb9a14d85e1c4a8662",
+        "content_type": "text/plain; charset=UTF-8",
+        "text": "GetFeatureInfo results:\n\nLayer 'ortofoto_25cm_color_2025'\n  Feature 0: \n    color = 'RGB'\n    gsd = '0.25'\n    data_inicial = '2025/06/18 00:00:00'\n    data_final = '2025/06/28 00:00:00'\n    origen = 'Píxel Font'\n"
+      }
+    },
+    {
+      "oid": 2682,
+      "temporalitat": "TAL",
+      "status": "NONUNIFORM_IMAGE_ACQUIRED",
+      "http": 200,
+      "bytes": 145198,
+      "sha256": "d0d65afd3d64b4b8c5b267ce3d8c4fd60f674df14fabe7dad074651dc62149e8",
+      "content_type": "image/png",
+      "size": [
+        300,
+        300
+      ],
+      "extrema": [
+        [
+          23,
+          255
+        ],
+        [
+          3,
+          252
+        ],
+        [
+          0,
+          244
+        ]
+      ],
+      "stddev": [
+        25.33690997400798,
+        30.111048027352986,
+        30.919071203239398
+      ],
+      "file": "ICGC_CC-BY-4.0_territorial2025_oid_2682.png",
+      "attribution": "ICGC CC BY 4.0, annual 2025 layer; actual flight date pending",
+      "feature_info": {
+        "http": 200,
+        "bytes": 214,
+        "sha256": "c1c96ea1503a0f632275c404e52688043f702f3d10a061f1945e65ef2c1d0037",
+        "content_type": "text/plain; charset=UTF-8",
+        "text": "GetFeatureInfo results:\n\nLayer 'ortofoto_25cm_color_2025'\n  Feature 0: \n    color = 'RGB'\n    gsd = '0.25'\n    data_inicial = '2025/06/19 00:00:00'\n    data_final = '2025/06/26 00:00:00'\n    origen = 'Píxel Font'\n"
+      }
+    },
+    {
+      "oid": 10,
+      "temporalitat": "PER",
+      "status": "NONUNIFORM_IMAGE_ACQUIRED",
+      "http": 200,
+      "bytes": 227657,
+      "sha256": "1909a1f43a2a7e68884550b28b18fb3f4f12ef5c3e4e0550302d4e0cd107864b",
+      "content_type": "image/png",
+      "size": [
+        300,
+        300
+      ],
+      "extrema": [
+        [
+          14,
+          255
+        ],
+        [
+          15,
+          252
+        ],
+        [
+          0,
+          236
+        ]
+      ],
+      "stddev": [
+        57.99703846332624,
+        57.32662117776641,
+        55.194434329178755
+      ],
+      "file": "ICGC_CC-BY-4.0_territorial2025_oid_10.png",
+      "attribution": "ICGC CC BY 4.0, annual 2025 layer; actual flight date pending",
+      "feature_info": {
+        "http": 200,
+        "bytes": 214,
+        "sha256": "250a8b159f46cc7a1e8245eaf485988c5105d830c71e77b9d56c11a1d5e50eed",
+        "content_type": "text/plain; charset=UTF-8",
+        "text": "GetFeatureInfo results:\n\nLayer 'ortofoto_25cm_color_2025'\n  Feature 0: \n    color = 'RGB'\n    gsd = '0.25'\n    data_inicial = '2025/06/19 00:00:00'\n    data_final = '2025/06/28 00:00:00'\n    origen = 'Píxel Font'\n"
+      }
+    },
+    {
+      "oid": 1077,
+      "temporalitat": "PER",
+      "status": "NONUNIFORM_IMAGE_ACQUIRED",
+      "http": 200,
+      "bytes": 181094,
+      "sha256": "466d1601c912405b1be14dd9b422bfbe3e1997cf263cb75141a2936471697e52",
+      "content_type": "image/png",
+      "size": [
+        300,
+        300
+      ],
+      "extrema": [
+        [
+          24,
+          255
+        ],
+        [
+          9,
+          254
+        ],
+        [
+          0,
+          249
+        ]
+      ],
+      "stddev": [
+        35.44232950144164,
+        37.20782277282993,
+        34.34730250583962
+      ],
+      "file": "ICGC_CC-BY-4.0_territorial2025_oid_1077.png",
+      "attribution": "ICGC CC BY 4.0, annual 2025 layer; actual flight date pending",
+      "feature_info": {
+        "http": 200,
+        "bytes": 214,
+        "sha256": "74c5f49b592798fbf76bf9e81d9426981f6e6e328b1944cb9a14d85e1c4a8662",
+        "content_type": "text/plain; charset=UTF-8",
+        "text": "GetFeatureInfo results:\n\nLayer 'ortofoto_25cm_color_2025'\n  Feature 0: \n    color = 'RGB'\n    gsd = '0.25'\n    data_inicial = '2025/06/18 00:00:00'\n    data_final = '2025/06/28 00:00:00'\n    origen = 'Píxel Font'\n"
+      }
+    },
+    {
+      "oid": 2677,
+      "temporalitat": "PER",
+      "status": "NONUNIFORM_IMAGE_ACQUIRED",
+      "http": 200,
+      "bytes": 215053,
+      "sha256": "769dc0bd34e263c63dc1e8d7792c446f1a13398ca8963f77e5e0eb29c5585874",
+      "content_type": "image/png",
+      "size": [
+        300,
+        300
+      ],
+      "extrema": [
+        [
+          17,
+          255
+        ],
+        [
+          4,
+          254
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "stddev": [
+        40.85251290069086,
+        46.32365304842779,
+        51.718554850953744
+      ],
+      "file": "ICGC_CC-BY-4.0_territorial2025_oid_2677.png",
+      "attribution": "ICGC CC BY 4.0, annual 2025 layer; actual flight date pending",
+      "feature_info": {
+        "http": 200,
+        "bytes": 214,
+        "sha256": "c1c96ea1503a0f632275c404e52688043f702f3d10a061f1945e65ef2c1d0037",
+        "content_type": "text/plain; charset=UTF-8",
+        "text": "GetFeatureInfo results:\n\nLayer 'ortofoto_25cm_color_2025'\n  Feature 0: \n    color = 'RGB'\n    gsd = '0.25'\n    data_inicial = '2025/06/19 00:00:00'\n    data_final = '2025/06/26 00:00:00'\n    origen = 'Píxel Font'\n"
+      }
+    }
+  ],
+  "source": {
+    "http": 200,
+    "bytes": 80195,
+    "sha256": "3557b32d90c6f7da495d308cbb8aae688513f8928a13d2dc7d2145efe17259c7",
+    "content_type": "application/geo+json; charset=UTF-8"
+  },
+  "previous_nine_temporalitat": {
+    "1": "PER",
+    "1111": "TAL",
+    "2683": "TAL",
+    "204": "PER",
+    "369": "TAL",
+    "937": "TAL",
+    "1476": "PER",
+    "1894": "TAL",
+    "1956": "PER"
+  },
+  "unclassified_ids": [
+    2286
+  ],
+  "population": 496
+}
