@@ -1,0 +1,81 @@
+name: F0 lot18 coordinated XOM maxima and raster routes
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot18.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check pymupdf==1.26.5
+      - name: Inspect new source evidence
+        shell: python
+        run: |
+          import pathlib,json,hashlib,urllib.request,datetime,re,concurrent.futures
+          import fitz
+          out=pathlib.Path('custody/f0-lot18-20261125');out.mkdir(parents=True,exist_ok=True)
+          def get(u,lim=20000000):
+              with urllib.request.urlopen(u,timeout=35) as x:
+                  b=x.read(lim+1)
+                  if len(b)>lim:raise ValueError('size limit')
+                  return b,{'http':x.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+          def xom(f):
+              r={'year':f['year'],'status':'BLOCKED','rows':[]}
+              try:
+                  b,m=get(f['url']);r.update(m)
+                  if m['sha256']!=f['sha256']:raise ValueError('edition changed')
+                  d=fitz.open(stream=b,filetype='pdf');p=d[55];words=p.get_text('words')
+                  ws=[]
+                  for w in words:
+                      q=fitz.Rect(w[:4])*p.rotation_matrix
+                      ws.append((q.x0,q.y0,q.x1,q.y1,*w[4:]))
+                  for w in ws:
+                      if w[4] not in ('BN062','BN022','BN040','BN007'):continue
+                      cy=(w[1]+w[3])/2
+                      line=sorted([z for z in ws if abs((z[1]+z[3])/2-cy)<3],key=lambda z:z[0])
+                      r['rows'].append({'station':w[4],'page':56,'rotation':p.rotation,'line':' '.join(z[4] for z in line),'tokens':[{'x':round((z[0]+z[2])/2,2),'y':round((z[1]+z[3])/2,2),'text':z[4]} for z in line]})
+                  r['status']='ROW_TOKENS_INSPECTED';r['header']=p.get_text()[:300]
+              except Exception as e:r['error']=repr(e)
+              return r
+          def scripts():
+              r=[]
+              for n in ['downloads300926.js','controlsChangeRadioSerie070426.js','params.js']:
+                  a={'file':n,'status':'BLOCKED'}
+                  try:
+                      b,m=get('https://visors.icgc.cat/appdownloads/lib/'+n);a.update(m)
+                      t=b.decode(errors='replace')
+                      a['relevant_lines']=[l[:700] for l in t.splitlines() if re.search(r'186|dwlElevationsSerieFme|datacloud|download.*url|fmevtmet|fmevtld|geotiff',l,re.I)][:90]
+                      a['status']='INSPECTED'
+                  except Exception as e:a['error']=repr(e)
+                  r.append(a)
+              return r
+          def municipal():
+              r={'status':'BLOCKED','url':'https://opendata-ajuntament.barcelona.cat/data/dataset/1090983a-1c40-4609-8620-14ad49aae3ab/resource/c97072a3-3619-4547-84dd-f1999d2a3fec/download'}
+              try:
+                  import csv,io
+                  b,m=get(r['url']);r.update(m)
+                  t=b.decode('utf-8-sig')
+                  if '<html' in t[:1000].lower():raise ValueError('not CSV')
+                  d=csv.DictReader(io.StringIO(t),dialect=csv.Sniffer().sniff(t[:20000],delimiters=',;'))
+                  rows=list(d)
+                  if len(d.fieldnames or [])<3:raise ValueError('unexpected schema')
+                  r.update(status='INSPECTED',fields=d.fieldnames,rows=len(rows),malformed=sum(None in a or None in a.values() for a in rows))
+              except Exception as e:r['error']=repr(e)
+              return r
+          prev=json.loads(pathlib.Path('custody/f0-lot15-20261125/report.json').read_text())
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:
+              a=ex.submit(scripts);b=ex.submit(municipal)
+              xs=list(ex.map(xom,[f for f in prev['xom'] if f['kind']==1]))
+              report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'xom':xs,'icgc_scripts':a.result(),'municipal':b.result()}
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot18-20261125
+          git commit -m 'Preserve coordinated lot18 source audit'
+          git push origin HEAD:audit/f0-lot06-20261125
