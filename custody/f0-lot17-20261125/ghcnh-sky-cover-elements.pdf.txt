@@ -1,0 +1,409 @@
+Sky Cover / Cloud Elements
+
+
+The sky coverage, cloud base heights, and ceiling elements in GHCNh are equivalent to the legacy Global Hourly product
+known as the Integrated Surface Dataset (ISD). For those familiar with ISD, we have provided the matchup between
+GHCNh and ISD code groups of GA, GD, GF and the mandatory ceiling (CIG) element in the table below. The ISD manual
+can be found here: https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf.
+
+
+IMPORTANT UPDATE:
+       The previous version of GHCNh (v1.0.1) had only a limited number of sky elements, called sky_cover_[1-3] and
+       sky_cover_baseht_[1-3] . This latest version (v1.1.0) dramatically expands the number of elements (see below).
+        In addition, sky_cover_[1-3] and sky_cover_baseht_[1-3] are now called sky_cover_layer_[1-4] and
+        sky_cover_layer_baseht_[1-4]. EXCEPTION: For sources 343 and 344 only, data from the previous elements,
+        sky_cover_[1-3] and sky_cover_baseht_[1-3], are now in sky_cover_summation_[1-4] and
+       sky_cover_summation_baseht_[1-4].
+
+
+Depending on the data source, sky/cloud data are derived from Synoptic messages, METARs, SPECIs, Surface Airways
+Observations, among others.
+
+
+SYNOP (Surface Synoptic Observations) are recorded in the sky_condition and sky_cover_layer elements. For the
+sky_cover_layer elements, each cloud layer is reported independently.
+
+
+METARs (Meteorological Aerodrome Reports) and SAOs (Surface Airways Observations) are generally reported in the
+sky_cover_summation elements for the U.S./Canada and in sky_cover_layer elements for all other stations
+(international). The U.S./Canada stations follow the summation principle, which means that each reported cloud layer
+adds to the total sky coverage; whereas, International stations report each cloud layer independently (discrete layers).
+
+
+Note: not all sky elements are reported for any given station.
+
+
+Quality codes are source-specific and are listed in the main GHCNh readme document. Source codes are found here:
+ghcnh-source-list.pdf
+
+
+GHCNh elements and associated ISD code groups:
+
+GHCNh element names        ISD code group
+
+sky_condition                   GF1 SKY SKY-CONDITION-OBSERVATION
+
+sky_condition_baseht             GF1 SKY SKY-CONDITION-OBSERVATION
+
+ ceiling_height                    SKY-CONDITION-OBSERVATION ceiling height (mandatory data section)
+
+sky_cover_layer_1 - 4             GA1-GA4 SKY-COVER-LAYER
+
+sky_cover_layer_baseht_1 -4       GA1-GA4 SKY-COVER-LAYER
+
+sky_cover_summation_1 -4        GD1-GD4 SKY-COVER-SUMMATION-STATE
+
+sky_cover_summation_baseht_1 -4  GD1-GD4 SKY-COVER-SUMMATION-STATE
+
+sky_condition
+
+
+       Sky condition observation coverage codes for (1) total coverage code: denotes the fraction of the total celestial
+      dome covered by clouds or other obscuring phenomena; (2) total opaque coverage code: denotes the fraction of
+       the total celestial dome covered by opaque clouds or other obscuring phenomena (only reported by selected
+        U.S. stations during selected periods); and (3) total lowest cloud coverage code: represents the fraction of the
+         celestial dome covered by all low clouds present. If no low clouds are present; the code denotes the fraction
+       covered by all middle level clouds present.
+
+
+       Data field: contains up to 3 coverage codes separated by a semicolon:
+
+
+                 total ; opaque ; lowest
+
+
+              Examples:
+                       00;;05
+                         ;;01
+                         02;;
+
+
+              Coverage code key:
+                   00 = None, SKC or CLR
+                   01 = One okta - 1/10 or less but not zero
+                   02 = Two oktas - 2/10 - 3/10, or FEW
+                   03 = Three oktas - 4/10
+                   04 = Four oktas - 5/10, or SCT
+                   05 = Five oktas - 6/10
+                   06 = Six oktas - 7/10 - 8/10
+                   07 = Seven oktas - 9/10 or more but not 10/10, or BKN
+                   08 = Eight oktas - 10/10, or OVC
+                   09 = Sky obscured, or cloud amount cannot be estimated
+                   10 = Partial obscuration
+                   11 = Thin scattered
+                   12 = Scattered
+                   13 = Dark scattered
+                   14 = Thin broken
+                   15 = Broken
+                   16 = Dark broken
+                   17 = Thin overcast
+                   18 = Overcast
+                   19 = Dark overcast
+
+
+        Quality field: contains up to 2 quality codes for total and and lowest coverage codes separated by semicolon:
+
+
+                 total ; lowest
+              Examples:
+                        ​        2;
+                       2;1
+
+                         ;1
+                        ​           ; (no codes reported)
+               *note: there is no quality code for opaque coverage codes
+
+
+
+sky_condition_baseht
+
+
+       Height above ground level (AGL) of the base of the lowest cloud layer. Units: meters. Corresponds with lowest
+       coverage code in sky_condition. Note: there are no base heights for the mid or high cloud layers given. The
+      measurement code field contains cloud genus types for low, mid, and high cloud layers.
+
+
+      Measurement code: up to 3 cloud genus codes for low, mid and high cloud layers each separated by semicolon
+       with corresponding quality code after the colon:
+
+
+             low : QC ; mid : QC ; high : QC
+
+
+              Examples:
+                         08:1;04:9;:
+                           :;07:1;:
+                                     :;:;: (no codes reported)
+
+
+              Lowest Cloud Genus code:
+                   00 = No low clouds
+                   01 = Cumulus humulis or Cumulus fractus other than of bad weather or both
+                   02 = Cumulus mediocris or congestus, with or without Cumulus of species fractus or humulis or
+                      Stratocumulus all having bases at the same level
+                   03 = Cumulonimbus calvus, with or without Cumulus, Stratocumulus or Stratus
+                   04 = Stratocumulus cumulogenitus
+                   05 = Stratocumulus other than Stratocumulus cumulogenitus
+                   06 = Stratus nebulosus or Stratus fractus other than of bad weather, or both
+                   07 = Stratus fractus or Cumulus fractus of bad weather, both (pannus) usually below Altostratus
+                      or Nimbostratus.
+                   08 = Cumulus and Stratocumulus other than Stratocumulus cumulogenitus, with bases at
+                         different levels
+                   09 = Cumulonimbus capillatus (often with an anvil), with or without Cumulonimbus calvus,
+                     Cumulus, Stratocumulus, Stratus or pannus
+
+
+              Middle Cloud Genus codes:
+                   00 = No middle clouds
+                   01 = Altostratus translucidus
+                   02 = Altostratus opacus or Nimbostratus
+                   03 = Altocumulus translucidus at a single level
+                   04 = Patches (often lenticulre) of Altocumulus translucidus, continually changing and occurring at
+                   one or more levels
+                   05 = Altocumulus translucidus in bands, or one or more layers of Altocumulus translucidus or
+                      opacus, progressing invading the sky; these Altocumulus clouds generally thicken as a whole
+
+                   06 = Altocumulus cumulogentis (or cumulonimbogentus)
+                   07 = Altocumulus translucidus or opacus in two or more layers, or Altocumulus opacus in a single
+                            layer, not progressively invading the sky, or Altocumulus with Altostratus or Nimbostratus
+                   08 = Altocumulus castellanus or floccus
+                   09 = Altocumulus of a chaotic sky; generally at several levels
+
+
+              High Cloud Genus codes:
+                   00 = No High Clouds
+                   01 = Cirrus fibratus, sometimes uncinus, not progressively invading the sky
+                   02 = Cirrus spissatus, in patches or entangled sheaves, which usually do not increase and
+                    sometimes seem to be the remains of the upper part of a Cumulonimbus; or Cirrus castellanus
+                      or floccus
+                   03 = Cirrus spissatus cumulonimbogenitus
+                   04 = Cirrus unicinus or fibratus, or both, progressively invading the sky; they generally thicken as
+                    a whole
+                   05 = Cirrus (often in bands) and Cirrostratus, or Cirrostratus alone, progressively invading the
+                         sky; they generally thicken as a whole, but the continuous veil does not reach 45 degrees above
+                      the horizon
+                   06 = Cirrus (often in bands) and Cirrostratus, or Cirrostratus alone, progressively invading the
+                         sky; they generally thicken as a whole; the continuous veil extends more than 45 degrees above
+                      the horizon, without the sky being totally covered.
+                   07 = Cirrostratus covering the whole sky
+                   08 = Cirrostratus not progressively invading the sky and not entirely covering it
+                   09 = Cirrocumulus alone, or Cirrocumulus predominant among the High clouds
+
+
+
+ceiling_height
+
+
+       Height above ground level (AGL) of the lowest cloud or obscuring phenomena layer aloft with 5/8 or more
+      summation total sky cover, which may be predominantly opaque, or the vertical visibility into a surface-based
+        obstruction. Units: meters. Unlimited ceiling is 22000 meters.
+
+
+      Measurement code: up to 2 codes separated by a semicolon: 1) the determination code that denotes the
+      method used to determine the ceiling and 2) the CAVOK code which indicates whether the ‘Ceiling and Visibility
+       Okay’ condition has been reported:
+
+            ​       determination ; CAVOK
+
+
+              Examples:
+                         C;
+                   W;Y
+                     ;N
+                                     ; (no codes reported)
+
+            ​        Ceiling Determination code:
+                 A = Aircraft
+
+                  B = Balloon
+                  C = Statistically derived
+                D = Persistent cirriform ceiling (pre-1950 data)
+                    E = Estimated
+           M = Measured
+                   P = Precipitation ceiling (pre-1950 data)
+                  R = Radar
+                     S = ASOS augmented
+               U = Unknown ceiling (pre-1950 data)
+                 V = Variable ceiling (pre-1950 data)
+           W = Obscured
+
+
+            CAVOK code:
+               N = No
+                    Y = Yes
+
+
+
+sky_cover_layer_[1,2,3,4]
+
+
+      Up to 4 codes denoting the fraction of the total celestial dome covered by each sky cover layer. This is for
+        discrete cloud layers (as opposed to the summation of cloud layers in the sky_cover_summation elements).
+
+
+       Data field: contains a string description (abbreviated) and its corresponding numeric code separated by colon:
+
+
+               sky cover abbreviation string : code
+
+
+              Example:
+                   FEW:02
+
+
+              Coverage code key:
+                     CLR:00 = None, SKC or CLR
+                   FEW:01 = One okta - 1/10 or less but not zero
+                   FEW:02 = Two oktas - 2/10 - 3/10, or FEW
+                      SCT:03 = Three oktas - 4/10
+                      SCT:04 = Four oktas - 5/10, or SCT
+                    BKN:05 = Five oktas - 6/10
+                    BKN:06 = Six oktas - 7/10 - 8/10
+                    BKN:07 = Seven oktas - 9/10 or more but not 10/10, or BKN
+                   OVC:08 = Eight oktas - 10/10, or OVC
+                     VV:09 = Sky obscured, or cloud amount cannot be estimated
+                      X:10 = Partial obscuration
+
+
+
+sky_cover_layer_baseht_[1,2,3,4]
+
+       The height relative to a vertical-reference-datum of the lowest surface of a cloud. Units: meters. Up to 4 discrete
+       cloud base heights at lowest point of layer; clear skies reported as a single layer; corresponds with coverage
+       codes in sky_cover_layer_1-4 elements
+
+
+      Measurement code: contains the classification of the clouds that comprise a sky cover layer and the quality code
+        for the reported cloud type separated by a colon with no space
+
+            ​       cloud type code : quality code
+
+
+                     Example:
+                             00:5
+                                                 : (no cloud type given by source)
+
+
+                    Type codes:
+                          00 = Cirrus (Ci)
+                          01 = Cirrocumulus (Cc)
+                          02 = Cirrostratus (Cs)
+                          03 = Altocumulus (Ac)
+                          04 = Altostratus (As)
+                          05 = Nimbostratus (Ns)
+                          06 = Stratocumulus (Sc)
+                          07 = Stratus (St)
+                          08 = Cumulus (Cu)
+                          09 = Cumulonimbus (Cb)
+                          10 = Cloud not visible owing to darkness, fog, duststorm, sandstorm, or other analogous
+                        phenomena / sky obscured
+                          11 = Not used
+                          12 = Towering Cumulus (Tcu)
+                          13 = Stratus fractus (Stfra)
+                          14 = Stratocumulus Lenticular (Scsl)
+                          15 = Cumulus Fractus (Cufra)
+                          16 = Cumulonimbus Mammatus (Cbmam)
+                          17 = Altocumulus Lenticular (Acsl)
+                          18 = Altocumulus Castellanus (Accas)
+                          19 = Altocumulus Mammatus (Acmam)
+                          20 = Cirrocumulus Lenticular (Ccsl)
+                          21 = Cirrus and/or Cirrocumulus
+                          22 = Stratus and/or Fracto-stratus
+                          23 = Cumulus and/or Fracto-cumulus
+
+
+
+sky_cover_summation_[1,2,3,4]
+
+
+      Up to 2 sky cover summation coverage codes can be reported for up to 4 vertical layers. Code 1 denotes the
+        portion of the total celestial dome covered by all layers of clouds and other obscuring phenomena at or below a
+        given height. Code 2 denotes the fraction of the total celestial dome covered by all layers of clouds and other
+
+obscuring phenomena at or below a given height, if reported by the station in octas. Each reported cloud layer
+adds to the total sky coverage and is the summation of cloud layers (as opposed to the discrete layers found in
+the sky_cover_layer elements). Since up to 4 cloud layers can be reported, the full state of the sky can best be
+determined by the last layer's value. In other words if three layers are reported and the third layer uses BKN then
+the total state of sky is BKN which is similar in definition to “mostly cloudy.” OVC is similar to “cloudy” or overcast
+and FEW or SCT is similar to “partly cloudy.” These coverage codes correspond to the sky cover summation base
+height layers. The highest reported layer is the total sky coverage up to that level.
+
+
+Data field: may contain one or both coverage codes: code 1 has an abbreviated string, then colon, then its
+corresponding numeric code (e.g., FEW:02) followed by semicolon and code 2 which is just the numeric code
+(e.g., 02).
+
+
+       sky cover code 1 string : sky cover code 1 ; sky cover 2 code
+
+
+              Examples:
+                    FEW:02;02 (both codes reported)
+                       ;01 (no code 1 reported)
+                    FEW:02; (no code 2 reported)
+​           ​       *note: only 1 quality code is given for both sky cover codes
+
+​           ​      Coverage code 1 key:
+​           ​           ​      CLR:00 = Clear - No coverage
+                   FEW:02 = FEW - 2/8 or less coverage (not including zero)
+                      SCT:04 = SCATTERED - 3/8-4/8 coverage
+                    BKN:07 = BROKEN - 5/8-7/8 coverage
+                   OVC:08 = OVERCAST - 8/8 coverage
+                     VV:09 = OBSCURED
+                      X:10 = PARTIALLY OBSCURED
+
+
+              Coverage code 2 key:
+                   00 = None, SKC or CLR
+                   01 = One okta - 1/10 or less but not zero
+                   02 = Two oktas - 2/10 - 3/10, or FEW
+                   03 = Three oktas - 4/10
+                   04 = Four oktas - 5/10, or SCT
+                   05 = Five oktas - 6/10
+                   06 = Six oktas - 7/10 - 8/10
+                   07 = Seven oktas - 9/10 or more but not 10/10, or BKN
+                   08 = Eight oktas - 10/10, or OVC
+                   09 = Sky obscured, or cloud amount cannot be estimated
+                   10 = Partial Obscuration
+                   11 = Thin Scattered
+                   12 = Scattered
+                   13 = Dark Scattered
+                   14 = Thin Broken
+                   15 = Broken
+
+                          16 = Dark Broken
+                          17 = Thin Overcast
+                          18 = Overcast
+                          19 = Dark overcast
+
+
+
+      sky_cover_summation_baseht_[1-4]
+
+
+               Height above ground level (AGL) of the base of the cloud layer or obscuring phenomena. Units: meters.
+           Up to 4 vertical layers can be reported. Corresponds with coverage codes in sky_cover_summation_1-4
+               elements. Each reported cloud layer adds to the total sky coverage and is the summation of cloud layers
+                 (as opposed to the discrete layers found in the sky_cover_layer_baseht elements).
+
+
+            Measurement code: a code that represents a characteristic of a specific cloud or other obscuring
+            phenomena layer with no quality code. *NOTE: for sources 343 and 344, the measurement code
+                indicates the cloud type and its QC code separated by a colon. When no code is given, the field will
+               contain only a colon.
+
+
+                      Examples:
+                             09:5 (source codes 343/344)
+                                                 : (no codes given)
+                          2 (all other source codes)
+​           ​           ​
+                         Code key for most sources:
+                                1 = Variable height
+                                2 = Variable amount
+                                3 = Thin clouds
+                                4 = Dark layer (reported in data prior to 1950)
+            ​           ​           ​
+                         Code key for sources 343 and 344:
+                                09 = Cumulonimbus (Cb)
+                                12 = Towering Cumulus (Tcu)

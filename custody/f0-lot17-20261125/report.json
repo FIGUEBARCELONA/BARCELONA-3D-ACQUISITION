@@ -1,0 +1,455 @@
+{
+  "utc": "2026-11-25T07:20:07.921738+00:00",
+  "noaa": [
+    {
+      "name": "ghcnh-present-weather-elements.pdf",
+      "status": "PRESERVED_EXTRACTED",
+      "http": 200,
+      "bytes": 102475,
+      "sha256": "55f9c98b473a0885a378259b563390e78308a671bbaff0ec8670f68cea1814dc",
+      "pages": 6,
+      "text_file": "ghcnh-present-weather-elements.pdf.txt",
+      "code_candidates": []
+    },
+    {
+      "name": "ghcnh-sky-cover-elements.pdf",
+      "status": "PRESERVED_EXTRACTED",
+      "http": 200,
+      "bytes": 169699,
+      "sha256": "75c18663b7a9b885b9aeca7cc6ecca2851e037328a11a5e3608f4e77a4fd7d16",
+      "pages": 8,
+      "text_file": "ghcnh-sky-cover-elements.pdf.txt",
+      "code_candidates": []
+    },
+    {
+      "name": "ghcnh-version-updates.pdf",
+      "status": "PRESERVED_EXTRACTED",
+      "http": 200,
+      "bytes": 65505,
+      "sha256": "dbbc3475685764b0f42351cb1c853f823127a1191573a59c24f14c0493136532",
+      "pages": 2,
+      "text_file": "ghcnh-version-updates.pdf.txt",
+      "code_candidates": []
+    }
+  ],
+  "xom": [
+    {
+      "year": 2021,
+      "status": "STATION_CODE_PAGES_LOCATED",
+      "http": 200,
+      "bytes": 6545190,
+      "sha256": "d8a1fb3f5d6e200fc6f742ce84d711f8521e8035f803f59c177a849784543d01",
+      "hits": [
+        {
+          "page": 47,
+          "rotation": 0,
+          "size": [
+            841.6799926757812,
+            595.2000122070312
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN040",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2021 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL XOM - DIA PLUVIOMÈTRIC ( mm ) - 2021\nCOMARCA\nCODI i NOM EM\nGEN\nFEB\nMAR\nABR\nMAI\nJUN\nJUL\nAGO\nSET\nOCT\nNOV\nDES\nANY\nAlt Camp\nAC028\nQuerol\n64.1\n41.3\n13.9\n69.8\n16.1\n45.5\n25.8\n8.0\n84.0\n37.9\n104.4\n4.2\n515.0\nAC010\nValls\n45.7\n52.5\n13.1\n48.4\n9.4\n32.3\n37.9\n25.9\n61.5"
+        },
+        {
+          "page": 56,
+          "rotation": 0,
+          "size": [
+            841.6799926757812,
+            595.2000122070312
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN040",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2021 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL MÀXIMA EN 24 HORES XOM - DIA PLUVIOMÈTRIC ( mm ) - 2021\nCOMARCA\nCODI i NOM EM\nAlt Camp\nAC028 Querol\n28.8 09\n24.0 22\n12.1 08\n30.1 30\n7.3 13\n22.9 17\n13.8 26\n6.6 30\n48.8 18\n16.1 29\n47.4 23\n1.7 07\n48.8 18/09\nAC010 Valls\n24.0 09\n40.5 22\n11.5 08\n19.0 30\n4.5 1"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "status": "STATION_CODE_PAGES_LOCATED",
+      "http": 200,
+      "bytes": 6675106,
+      "sha256": "40599bb9bcc1e15c3179ff6f4d0acd36d347fcf88013247ef1f4091d8984c8d0",
+      "hits": [
+        {
+          "page": 47,
+          "rotation": 0,
+          "size": [
+            842.0399780273438,
+            594.9600219726562
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN040",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2022 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL XOM - DIA PLUVIOMÈTRIC ( mm ) - 2022\nCOMARCA\nCODI i NOM EM\nGEN\nFEB\nMAR\nABR\nMAI\nJUN\nJUL\nAGO\nSET\nOCT\nNOV\nDES\nANY\nAlt Camp\nAC028\nQuerol\n1.4\n1.7\n85.0\n54.0\n46.9\n29.1\n16.4\n58.7\n24.6\n5.3\n14.3\n53.3\n390.7\nAC010\nValls\n1.2\n1.5\n67.3\n67.0\n37.9\n31.0\n8.0\n60.4\n47.7\n32."
+        },
+        {
+          "page": 56,
+          "rotation": 0,
+          "size": [
+            842.0399780273438,
+            594.9600219726562
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN040",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2022 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL MÀXIMA EN 24 HORES XOM - DIA PLUVIOMÈTRIC ( mm ) - 2022\nCOMARCA\nCODI i NOM EM\nAlt Camp\nAC028 Querol\n0.8 10\n1.3 13\n39.1 11\n28.5 20\n38.8 24\n18.6 27\n6.0 06\n12.2 05\n10.4 23\n3.2 20\n8.5 28\n14.5) 08\n39.1 11/03\nAC010 Valls\n1.2 10\n1.0 13\n36.4 11\n42.0 20\n32.5 24\n"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "status": "STATION_CODE_PAGES_LOCATED",
+      "http": 200,
+      "bytes": 4856227,
+      "sha256": "f844be38b839dfd3ded83bf11c822cd027bd8d60743e9e51f29833cb28d7d0cc",
+      "hits": [
+        {
+          "page": 47,
+          "rotation": 0,
+          "size": [
+            841.6799926757812,
+            595.2000122070312
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2023 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL XOM - DIA PLUVIOMÈTRIC ( mm ) - 2023\nCOMARCA\nCODI i NOM EM\nGEN\nFEB\nMAR\nABR\nMAI\nJUN\nJUL\nAGO\nSET\nOCT\nNOV\nDES\nANY\nAlt Camp\nAC028\nQuerol\n13,0\n48,3\n1,8\n2,9\n91,7\n48,6\n43,9\n14,4\n47,9\n32,6\n6,6\n3,2\n354,9\nAC010\nValls\n6,0\n20,0\n3,3\n7,0\n42,8\n36,7\n26,6\n10,0\n55,8\n31,3"
+        },
+        {
+          "page": 56,
+          "rotation": 0,
+          "size": [
+            841.6799926757812,
+            595.2000122070312
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2023 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL MÀXIMA EN 24 HORES XOM - DIA PLUVIOMÈTRIC ( mm ) - 2023\nCOMARCA\nCODI i NOM EM\nAlt Camp\nAC028 Querol\n7,5 17\n28,9 07\n1,8 09\n2,1 29\n26,5 25\n16,5 29\n32,5 06\n7,9 27\n32,7 15\n12,8 19\n3,0 08\n2,2 01\n32,7 15/09\nAC010 Valls\n5,0 17\n11,0 23\n3,3 09\n4,0 18\n21,5 18\n17,"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "status": "STATION_CODE_PAGES_LOCATED",
+      "http": 200,
+      "bytes": 823536,
+      "sha256": "83e5ce80f413e6eb692eb0343c2263f3606ff631dd0367058d775968f8be327d",
+      "hits": [
+        {
+          "page": 47,
+          "rotation": 90,
+          "size": [
+            842.0,
+            595.219970703125
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2024 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL XOM - DIA PLUVIOMÈTRIC ( mm ) - 2024\nCOMARCA\nCODI i NOM EM\nGEN\nFEB\nMAR\nABR\nMAI\nJUN\nJUL\nAGO\nSET\nOCT\nNOV\nDES\nANY\nAlt Camp\nAC028\nQuerol\n27,8\n18,8\n88,3\n59,9\n66,3\n57,2\n12,4\n32,9\n193,5\n178,0\n64,9\n24,8\n824,8\nAlt Camp\nAC010\nValls\n29,3\n13,5\n73,1\n33,1\n40,8\n87,3\n1"
+        },
+        {
+          "page": 56,
+          "rotation": 90,
+          "size": [
+            842.0,
+            595.219970703125
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2024 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL MÀXIMA EN 24 HORES XOM - DIA PLUVIOMÈTRIC ( mm ) - 2024\nCOMARCA\nCODI i NOM EM\nAlt Camp\nAC028 Querol\n16,8 19\n11,1 09\n22,5 09\n36,7 29\n34,4 17\n19,3 29\n7,9 06\n9,4 14\n94,1 06\n87,0 25\n17,9 02\n11,6 12\n94,1\n06/09\nAlt Camp\nAC010 Valls\n21,5 19\n6,5 09\n15,0 09\n27,0"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "status": "STATION_CODE_PAGES_LOCATED",
+      "http": 200,
+      "bytes": 3063752,
+      "sha256": "a5fd774fb0c2732eadc9b82fd19b3973c9dbe1d2b3417f05ead31cea4edf1d4e",
+      "hits": [
+        {
+          "page": 47,
+          "rotation": 0,
+          "size": [
+            841.9199829101562,
+            595.3200073242188
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2025 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL XOM - DIA PLUVIOMÈTRIC ( mm ) - 2025\nCOMARCA\nCODI i NOM EM\nGEN\nFEB\nMAR\nABR\nMAI\nJUN\nJUL\nAGO\nSET\nOCT\nNOV\nDES\nANY\nAlt Camp\nAC028\nQuerol\n8,2\n41,9\n151,0\n23,2\n80,8\n1,8\n158,2\n15,1\n40,4\n25,6\n31,6\n112,1\n689,9\nAlt Camp\nAC010\nValls\n2,1\n33,6\n102,6\n12,2\n64,0\n4,3\n58,"
+        },
+        {
+          "page": 56,
+          "rotation": 0,
+          "size": [
+            841.9199829101562,
+            595.3200073242188
+          ],
+          "codes": [
+            "BN062",
+            "BN022",
+            "BN007"
+          ],
+          "header": "0\nAnuari de dades meteorològiques 2025 / Servei Meteorològic de Catalunya\n3\nPRECIPITACIÓ MENSUAL MÀXIMA EN 24 HORES XOM - DIA PLUVIOMÈTRIC ( mm ) - 2025\nCOMARCA\nCODI i NOM EM\nAlt Camp\nAC028 Querol\n4,9 27\n18,1 12\n33,7 08\n8,8 02\n26,6 03\n1,5 22\n119,7 12\n4,7 19\n33,4 08\n13,1 29\n12,0 05\n39,5 26\n119,7\n12/07\nAC010 Valls\n1,0 05\n12,5 22\n24,0 08\n6,6 22\n18,5 0"
+        }
+      ]
+    }
+  ],
+  "icgc": {
+    "status": "VIEWER_INSPECTED",
+    "requests": [
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/25831.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/proj4.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/i18n-properties/jquery.i18n.properties.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/params.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/ICGC-Cookie-GDPR-master/dist/cookies-icgc.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/jquery-2.1.3.min.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/transforminteraction.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/jquery-ui-1.11.4/jquery-ui.min.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/v3.18.2/ol.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/jsUpload/vendor/jquery.ui.widget.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/jsUpload/jquery.iframe-transport.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/jsUpload/jquery.fileupload.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/customFunctions300926.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/downloads300926.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/controlsChangeRadioSerie070426.js",
+        "status": 200,
+        "type": "text/javascript"
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/i18n-properties/bundle/Messages.properties",
+        "status": 200,
+        "type": ""
+      },
+      {
+        "url": "https://visors.icgc.cat/appdownloads/lib/i18n-properties/bundle/Messages_ca.properties",
+        "status": 200,
+        "type": ""
+      }
+    ],
+    "title": "Descarregar la cartografia de Catalunya ICGC",
+    "controls": [
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "171",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "172",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "186",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "173",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "174",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "175",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "176",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "177",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "178",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "179",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "180",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "181",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "182",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "183",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "184",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "name": "dwlElevationsSerieFme",
+        "value": "185",
+        "label": null,
+        "title": ""
+      },
+      {
+        "tag": "INPUT",
+        "id": "checkboxPreviewImgElevationsFME",
+        "name": "previewElevationsFME",
+        "value": "",
+        "label": null,
+        "title": ""
+      }
+    ]
+  }
+}

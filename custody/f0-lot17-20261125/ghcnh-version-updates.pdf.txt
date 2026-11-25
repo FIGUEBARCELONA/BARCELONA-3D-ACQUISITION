@@ -1,0 +1,63 @@
+GHCNh VERSION UPDATE: From v1.0.1 (previous) to v1.1.0 (new)
+
+March 10, 2026
+
+Changes from previous version:
+
+1) New variables added (19 cloud/sky and 2 high-resolution precipitation elements)
+2) Some sky variables were removed and replaced
+3) Some data abbreviations, measurement codes, and report type codes have been changed
+4) Header/column changes
+
+
+
+1) 21 new/replaced elements (21 cloud/sky and 2 high-resolution precipitation variables) in the new version
+    ●​  sky_condition
+    ●​  sky_condition_baseht
+    ●​  ceiling_height
+    ●​  sky_cover_layer_1 (formerly sky_cover_1)
+    ●​  sky_cover_layer_2 (formerly sky_cover_2)
+    ●​  sky_cover_layer_3 (formerly sky_cover_3)
+    ●​  sky_cover_layer_4
+    ●​  sky_cover_layer_baseht_1 (formerly sky_cover_baseht_1)
+    ●​  sky_cover_layer_baseht_2 (formerly sky_cover_baseht_2)
+    ●​  sky_cover_layer_baseht_3 (formerly sky_cover_baseht_3)
+    ●​  sky_cover_layer_baseht_4
+    ●​ sky_cover_summation_1
+    ●​ sky_cover_summation_2
+    ●​ sky_cover_summation_3
+    ●​ sky_cover_summation_4
+    ●​ sky_cover_summation_baseht_1
+    ●​ sky_cover_summation_baseht_2
+    ●​ sky_cover_summation_baseht_3
+    ●​ sky_cover_summation_baseht_4
+    ●​  precipitation_5_minute
+    ●​  precipitation_15_minute
+
+         All new/existing elements continue to have associated columns for codes, etc:
+             precipitation_15_minute_Measurement_Code
+              precipitation_15_minute_Quality_Code
+              precipitation_15_minute_Report_Type
+             precipitation_15_minute_Source_Code
+              precipitation_15_minute_Source_Station_ID
+
+2) These sky cover elements were removed and replaced in the new version, along with the expanded set of
+sky elements shown above.
+      sky_cover_1
+      sky_cover_2
+      sky_cover_3
+      sky_cover_baseht_1
+
+      sky_cover_baseht_2
+      sky_cover_baseht_3
+
+3) Cleaner/truncated data/code fields in the new version (these are just a few examples). See the GHCNh
+readme documentation for more details.
+    ●​ FM15-METAR is now FM15 (report_type)
+    ●​ AUTO_4-USA is now AUTO (report_type)
+    ●​ C-Calm is now C (measurement_code_1 for wind elements)
+    ●​ FG:45-Fog- is now FG:45 (present weather codes will be abbreviated)
+    ●​  9-Missing is now be blank fields
+
+4) See more details on header and element differences here: ghcnh-columns.pdf. Be sure to scroll down to
+view all changes.
