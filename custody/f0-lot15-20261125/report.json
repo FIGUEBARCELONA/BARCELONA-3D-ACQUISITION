@@ -1,0 +1,1765 @@
+{
+  "utc": "2026-11-25T07:10:20.785725+00:00",
+  "manuals": [
+    {
+      "name": "ghcnh_DOCUMENTATION.pdf",
+      "status": "TEXT_EXTRACTED",
+      "sha256": "df5694efdc2d498f006a343165bae65701d14809174b9bed660149bd4fe591b7",
+      "pages": 18,
+      "text_file": "ghcnh_DOCUMENTATION.txt"
+    },
+    {
+      "name": "ghcnh-columns.pdf",
+      "status": "TEXT_EXTRACTED",
+      "sha256": "2eb051a2919be41a57c5c49ae6aa0f077194fe1983417a2e8ba4fbbaf16ea7b5",
+      "pages": 40,
+      "text_file": "ghcnh-columns.txt"
+    },
+    {
+      "name": "ghcnh-source-list.pdf",
+      "status": "TEXT_EXTRACTED",
+      "sha256": "4f6a18c0b18825f28e72af04cc3a2ac8a26bd7015910798d1a0cee2a114f689d",
+      "pages": 16,
+      "text_file": "ghcnh-source-list.txt"
+    }
+  ],
+  "xom": [
+    {
+      "year": 2021,
+      "kind": 0,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200400/Introduccio_Anuari_2021.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 522867,
+      "sha256": "f144e1cc28b44aca5da848ea40c7ff3c7b902da9ac68ecfb6a975eb0e743abd8",
+      "pages": 13,
+      "relevant_pages": [
+        {
+          "page": 2,
+          "matches": [
+            "XOM",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 3,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 6,
+          "matches": [
+            "Barcelona",
+            "Baix Llobregat",
+            "XOM"
+          ]
+        },
+        {
+          "page": 7,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 10,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 11,
+          "matches": [
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "XOM"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "kind": 1,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200344/EMA-EM_taules2021.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 6545190,
+      "sha256": "d8a1fb3f5d6e200fc6f742ce84d711f8521e8035f803f59c177a849784543d01",
+      "pages": 130,
+      "relevant_pages": [
+        {
+          "page": 3,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 8,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 18,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 23,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 28,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 33,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 38,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 43,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 47,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 48,
+          "matches": [
+            "XOM",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 49,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 50,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 52,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 56,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 57,
+          "matches": [
+            "XOM",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 58,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 59,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 61,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 66,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 71,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 76,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 81,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 86,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 91,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 96,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 101,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 106,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 111,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 116,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 120,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 121,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 124,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 126,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 128,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "kind": 0,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064319/Introduccio_Anuari_2022.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 623564,
+      "sha256": "6acc6ce976273d8342b0b2506e07b51687b84558e11edb83f54a21be4c6bf2cd",
+      "pages": 13,
+      "relevant_pages": [
+        {
+          "page": 2,
+          "matches": [
+            "XOM",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 3,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 6,
+          "matches": [
+            "Barcelona",
+            "XOM",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 7,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 10,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "XOM"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "kind": 1,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064315/EMA-EM_taules2022.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 6675106,
+      "sha256": "40599bb9bcc1e15c3179ff6f4d0acd36d347fcf88013247ef1f4091d8984c8d0",
+      "pages": 130,
+      "relevant_pages": [
+        {
+          "page": 3,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 8,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 18,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 23,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 28,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 33,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 38,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 43,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 47,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 48,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 49,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 50,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 52,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 56,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 61,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 66,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 71,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 76,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 81,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 85,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 86,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 90,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 91,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 95,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 96,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 100,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 101,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 106,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 111,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 116,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 120,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 121,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 124,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 126,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 128,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "kind": 0,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28103953/Introduccio_Anuari_2023.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 1203923,
+      "sha256": "0ca579d944785afc766086819de77ba1c906f8b8fbecfafffe254e65228230e1",
+      "pages": 13,
+      "relevant_pages": [
+        {
+          "page": 2,
+          "matches": [
+            "XOM",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 3,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 6,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 7,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 10,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "XOM"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "kind": 1,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28102930/EMA-EM_taules2023.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 4856227,
+      "sha256": "f844be38b839dfd3ded83bf11c822cd027bd8d60743e9e51f29833cb28d7d0cc",
+      "pages": 130,
+      "relevant_pages": [
+        {
+          "page": 3,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 8,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 18,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 23,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 28,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 33,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 38,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 43,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 47,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 48,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 49,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 50,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 52,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 56,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 57,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 58,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 61,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 66,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 71,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 76,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 81,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 85,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 86,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 90,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 91,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 95,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 96,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 100,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 101,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 106,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 111,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 116,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 120,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 121,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 124,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 126,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 128,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "kind": 0,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20113908/Introduccio_Anuari_2024-1.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 935052,
+      "sha256": "834bb46d7520017d18831f285e0eafd7cba7d3d9eb062b60cc1e104bea47cc09",
+      "pages": 13,
+      "relevant_pages": [
+        {
+          "page": 2,
+          "matches": [
+            "XOM",
+            "Barcelona",
+            "Barcelonès",
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 3,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 6,
+          "matches": [
+            "Barcelona",
+            "Barcelonès",
+            "XOM"
+          ]
+        },
+        {
+          "page": 7,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 10,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "XOM"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "kind": 1,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20112112/EMA-EM_taules2024.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 823536,
+      "sha256": "83e5ce80f413e6eb692eb0343c2263f3606ff631dd0367058d775968f8be327d",
+      "pages": 130,
+      "relevant_pages": [
+        {
+          "page": 3,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 8,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 18,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 23,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 28,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 33,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 38,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 43,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 47,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 48,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 49,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 50,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 52,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 56,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 57,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 58,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 59,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 61,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 66,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 71,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 76,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 81,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 86,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 91,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 96,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 101,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 106,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 111,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 116,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 120,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 121,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 124,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 126,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 128,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "kind": 0,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091939/Introduccio_Anuari_2025.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 943515,
+      "sha256": "5205804395eeda6b1b258898c6f79610c4d83f2e3a5138f642fbcda0f81344fd",
+      "pages": 13,
+      "relevant_pages": [
+        {
+          "page": 2,
+          "matches": [
+            "XOM",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 3,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 6,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 7,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 10,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "XOM"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "kind": 1,
+      "url": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091938/EMA-EM_taules2025.pdf",
+      "status": "PDF_INSPECTED",
+      "http": 200,
+      "bytes": 3063752,
+      "sha256": "a5fd774fb0c2732eadc9b82fd19b3973c9dbe1d2b3417f05ead31cea4edf1d4e",
+      "pages": 130,
+      "relevant_pages": [
+        {
+          "page": 3,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 8,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 13,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 18,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 23,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 28,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 33,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 38,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 43,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 47,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 48,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 49,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 50,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 52,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 56,
+          "matches": [
+            "XOM",
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 57,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 58,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 59,
+          "matches": [
+            "XOM"
+          ]
+        },
+        {
+          "page": 61,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 66,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 71,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 76,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 81,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 85,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 86,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 90,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 91,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 95,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 96,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 100,
+          "matches": [
+            "Baix Llobregat"
+          ]
+        },
+        {
+          "page": 101,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 106,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 111,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 116,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 120,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 121,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelonès",
+            "Barcelona"
+          ]
+        },
+        {
+          "page": 124,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 126,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        },
+        {
+          "page": 128,
+          "matches": [
+            "Baix Llobregat",
+            "Barcelona",
+            "Barcelonès"
+          ]
+        }
+      ]
+    }
+  ]
+}

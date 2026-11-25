@@ -1,0 +1,418 @@
+Table  6:  List  of  Data  Source  Codes  and  Attributes    
+Source  code  
+Source  Data  Policy  Dataset  name  source_name  domain  
+First  year  
+Last  year  
+83  Open  Access  
+Deutscher  Wetterdienst  
+Deutscher  Wetterdienst  subdaily  Germany    
+88  
+Creative  Commons  Attri  
+unden_UERRA_algeria  
+Bulletin  Meteorologique  de  Algerie–Contact:  Per  Unden   Algeria  1879  1968  
+158  
+Creative  Common  Attribute  4.0  Met  Eirann   Met  Eirann  Synoptic  Ireland    
+171  Open  Access  
+meteo_godisnjak_UERRA_europe  
+Meteoroloski  godisnjak  1  BulteniAvailable  through  NOAA  CDMP  Europe  1877  2012  
+172  Open  Access  
+kaspar_UERRA_europe  
+Cyprus  Meteorological  Returns  Norwegian  Meteorological  InstituteContact:  Cristian  Lussana  cristianl@met.no  and  Provi  Europe  1881  1922  
+173  Open  Access  
+unden_UERRA_europe  
+Rocenka  Contact:  Per  Unden  Per.Unden@smhi.se  Europe  1948  1968  
+174  Open  Access  
+egypt_daily_weather_UERRA_africa  
+Egypt  Daily  Weather  Report  Africa  1948  1957  
+
+175  Open  Access  
+romainian_met_UERRA_africa/europeG176  
+Romanian  National  Meteorological  Administration  BulteniAvailable  through  NOAACDMP  
+Africa/Europe  1950  1977  
+176  Open  Access  dwd_UERRA_europe  
+UERRA_Deutscher  Wetterdienst  Europe  1958  1978  
+177  Open  Access  
+lussana_UERRA_europe  
+Instituto  Nacional  de  MeteorologÃa  Banco  de  Datos  Contact:  Cristian  Lussana  cristianl@met.no  Europe  1959  1984  
+179  Open  Access  
+slovenia_met_UERRA_europe  
+Slovenian  Environmental  Agency  Available  through  NOAACDMP  Europe  1950  1977  
+180  Open  Access  yillik_UERRA_europe  UERRA_Yillik  Europe  1950  1971  
+220  
+WMO  Resolution  40  
+USAF/14th  Weather  Squadron  Surface  Weather  Observation  database  
+Stations  indexed  to  World  Meteorological  Organization  (WMO)  Identifier  Global    
+221  
+WMO  Resolution  40  
+USAF/14th  Weather  Squadron  Surface  Weather  Observation  database  
+Stations  indexed  to  former  World  Meteorological  Organization  (WMO)  Identifiers  (termed  “AFWA”  id’s)  Global    
+222  
+WMO  Resolution  40  
+USAF/14th  Weather  Squadron  Surface  Weather  Observation  database  
+NOAA  Coastal  -Marine  Automated  Network  (C-MAN)  stations  
+North  America    
+223  
+WMO  Resolution  40  
+USAF/14th  Weather  Squadron  Surface  Weather  Observation  database  
+Stations  indexed  to  an  International  Civil  Aviation  Organization  (ICAO)  Identifier  Global    
+
+246  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Federal  Climate  Com  
+International  Surface  Pressure  databank_Federal  Climate  Complex  Integrated  Surface  Data  Global  1928  1948  
+247  Open  Access  
+ISPD_International  Surface  Pressure  databank_CDMP  SAO/1001  For  
+International  Surface  Pressure  databank_CDMP  SAO/1001  Forms  USA  Global  1849  2000  
+248  Open  Access  
+ISPD_International  Surface  Pressure  databank_Russian  Empire  Station  
+International  Surface  Pressure  databank_Russian  Empire  Stations  Global  1901  1973  
+249  
+Mixed  data  policy  
+ISPD_International  Surface  Pressure  databank_Air  Weather  Service  T  
+International  Surface  Pressure  databank_Air  Weather  Service  TD13  USA  Global  1833  2017  
+250  Open  Access  
+ISPD_International  Surface  Pressure  databank_Hadley  Center  UK_su  
+International  Surface  Pressure  databank_Hadley  Center  UK  Global  1800  1980  
+251  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_CDMP-International  c  
+International  Surface  Pressure  databank_CDMP-International  collection  Global  1947  2007  
+252  Open  Access  
+ISPD_International  Surface  Pressure  databank_READER  Antarctic&So  
+International  Surface  Pressure  databank_READER  Antarctic&Southern  Hemisphere  Global  1911  2006  
+253  
+Creative  Commons  Attri  
+ISPD_International  Surface  Pressure  databank_KNMI  Holland_sub_d  
+International  Surface  Pressure  databank_KNMI  Holland  Global  1816  1932  
+
+254  Open  Access  
+ISPD_International  Surface  Pressure  databank_US  Army  Signal  Service  
+International  Surface  Pressure  databank_US  Army  Signal  Service  and  other  19th  Century  Voluntary  Obs  Global  1784  1961  
+255  Open  Access  
+ISPD_International  Surface  Pressure  databank_international  stations  
+International  Surface  Pressure  databank_international  stations  recovered  by  Atmospheric  Circulation  Reconstructions  o  Global  1848  1915  
+256  Open  Access  
+ISPD_International  Surface  Pressure  databank_Early  Arctic  observation  
+International  Surface  Pressure  databank_Early  Arctic  observations  Global  1877  1978  
+257  Open  Access  
+ISPD_International  Surface  Pressure  databank_EURO4M/MEDARE/C3  
+International  Surface  Pressure  databank_EURO4M/MEDARE/C3  hourly  SLP  observations  for  North  African  stations  Global  1843  1914  
+258  Open  Access  
+ISPD_International  Surface  Pressure  databank_International  stations  
+International  Surface  Pressure  databank_International  stations,  University  of  South  Carolina  Historical  Climate  Lab  Global    
+259  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Meteo_France_sub_d  
+International  Surface  Pressure  databank_Meteo_France  Global  1822  1956  
+
+260  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_University  of  Giessen  
+International  Surface  Pressure  databank_University  of  Giessen  worldwide  early  data  Global  1871  1996  
+261  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_WASA  Stations  Obser  
+International  Surface  Pressure  databank_WASA  Stations  Observations  SLP  Global  1842  2004  
+262  Open  Access  
+ISPD_International  Surface  Pressure  databank_Environment  Canada  
+International  Surface  Pressure  databank_Environment  Canada  Pressure  Obs  Global  1850  1980  
+263  Open  Access  
+ISPD_International  Surface  Pressure  databank_West  African  Synoptic  
+International  Surface  Pressure  databank_West  African  Synoptic  observations  digitized  by  MeteoFrance  Global  1900  1956  
+264  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_The  Australian  Bureau  of  Meteorology  
+International  Surface  Pressure  databank_The  Australian  Bureau  of  Meteorology  Station  Pressure  Dataset  Global  1803  1999  
+265  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Northern  Italian  Pressure  data  
+International  Surface  Pressure  databank_Northern  Italian  Pressure  Observations  Global  1951  1980  
+
+266  Open  Access  
+ISPD_International  Surface  Pressure  databank_Hourly  Surface  observations  
+International  Surface  Pressure  databank_Hourly  Surface  Observations  for  Brazile  Global  1850  2003  
+267  Open  Access  
+ISPD_International  Surface  Pressure  databank_Spanish  Hourly  Press  
+International  Surface  Pressure  databank_Spanish  Hourly  Pressure  Observations  Global  1876  2000  
+268  Open  Access  
+ISPD_International  Surface  Pressure  databank_German  climate  observations  
+International  Surface  Pressure  databank_German  climate  observations  Global  1872  2002  
+269  Open  Access  
+ISPD_International  Surface  Pressure  databank_ZAMG  Austrian  station  obs  
+International  Surface  Pressure  databank_ZAMG  Austrian  station  observations  Global  1964  2002  
+270  Open  Access  
+ISPD_International  Surface  Pressure  databank_Meteoswiss  station  collection  
+International  Surface  Pressure  databank_Meteoswiss  station  collection  Global  1850  2003  
+271  Open  Access  
+ISPD_International  Surface  Pressure  databank_South  African  Weather  Service  
+International  Surface  Pressure  databank_South  African  Weather  Service  Meteorological  collection  Global  1863  2007  
+272  
+Creative  Commons  Attri  
+ISPD_International  Surface  Pressure  databank_National  Norwegian  
+International  Surface  Pressure  databank_National  Norwegian  meteorological  database  Global  1858  2005  
+
+273  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Croatian  Meteorologi  
+International  Surface  Pressure  databank_Croatian  Meteorological  and  Hydrological  Service  land  stations  Global  1860  2006  
+274  Open  Access  
+ISPD_International  Surface  Pressure  databank_Signatures  of  environ  
+International  Surface  Pressure  databank_Signatures  of  environmental  change  in  the  observations  of  the  Geophysical  Ins  Global  1815  1941  
+275  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_French  hourly  SLP  fro  
+International  Surface  Pressure  databank_French  hourly  SLP  from  Meteo-France  Global  1788  1848  
+276  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Australia  historical  su  
+International  Surface  Pressure  databank_Australia  historical  surface  pressure  Global  1937  1999  
+277  Open  Access  
+ISPD_International  Surface  Pressure  databank_ACRE-Pacific:  NIWA  a  
+International  Surface  Pressure  databank_ACRE-Pacific:  NIWA  and  NZMet  Service  Global  1920  1972  
+278  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Spanish  Met  Office  st  
+International  Surface  Pressure  databank_Spanish  Met  Office  stations  Global  1755  1861  
+
+279  
+Mixed  data  policy  
+ISPD_International  Surface  Pressure  databank_EMULATE  Daily  MSLP  
+International  Surface  Pressure  databank_EMULATE  Daily  MSLP  station  data  Global  1951  2005  
+280  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Mozambique  station  
+International  Surface  Pressure  databank_Mozambique  station  pressure  Global  1913  1938  
+281  Open  Access  
+ISPD_International  Surface  Pressure  databank_Japan  Agency  for  Mar  
+International  Surface  Pressure  databank_Japan  Agency  for  Marine-earth  Science  and  Technology  (JAMSTEC)  archive  Global  1899  1962  
+282  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_African  SLP  from  Met  
+International  Surface  Pressure  databank_African  SLP  from  Meteo  France  Global  1972  2005  
+283  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Tanzania  station  pres  
+International  Surface  Pressure  databank_Tanzania  station  pressure  Global  1950  2004  
+284  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Hourly  pressure  from  
+International  Surface  Pressure  databank_Hourly  pressure  from  China  Global  1965  2010  
+285  Open  Access  
+ISPD_International  Surface  Pressure  databank_All-Russia  Research  I  
+International  Surface  Pressure  databank_All-Russia  Research  Institute  of  Hydrometeorological  Information  -  World  Data  Global  2004  2012  
+
+286  Open  Access  
+ISPD_International  Surface  Pressure  databank_Data  from  Russian  Hydromet  
+International  Surface  Pressure  databank_Data  from  Russian  Hydrometcentre  Global  1835  1840  
+287  Open  Access  
+ISPD_International  Surface  Pressure  databank_Early  Russian  Empire  
+International  Surface  Pressure  databank_Early  Russian  Empire  Stations,  ,  digitized  in  LDEO  from  Kupffers  Annuaires  Global  1879  1900  
+288  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Australian  Meteorolo  
+International  Surface  Pressure  databank_Australian  Meteorological  Association,  Todd  Project  team  Global  1798  1869  
+289  Open  Access  
+ISPD_International  Surface  Pressure  databank_Canadian  Volunteer  
+International  Surface  Pressure  databank_Canadian  Volunteer  Climate  Data  Rescue  project  Global  1867  2011  
+290  Open  Access  
+ISPD_International  Surface  Pressure  databank_University  of  Aberde  
+International  Surface  Pressure  databank_University  of  Aberdeen  historical  pressure  observations  Global  1845  1873  
+291  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Icelandic  Meteorolog  
+International  Surface  Pressure  databank_Icelandic  Meteorological  Office  (IMO)  Sea  Level  Pressure  Global  1915  1946  
+
+292  Open  Access  
+ISPD_International  Surface  Pressure  databank_ERA-CLIM  FFCUL_sub  
+International  Surface  Pressure  databank_ERA-CLIM  FFCUL  Global  1992  2013  
+293  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Australian  Bureau  of  
+International  Surface  Pressure  databank_Australian  Bureau  of  Meteorology—Australian  Baseline  Sea  Level  Monitoring  Global  1722  1865  
+294  Open  Access  
+ISPD_International  Surface  Pressure  databank_Project  IMPROVE_su  
+International  Surface  Pressure  databank_Project  IMPROVE  Global  1811  1820  
+295  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_University  of  Barcelo  
+International  Surface  Pressure  databank_University  of  Barcelona  Global  1796  1863  
+296  Open  Access  
+ISPD_International  Surface  Pressure  databank_University  of  Bern_su  
+International  Surface  Pressure  databank_University  of  Bern  Global  1756  2012  
+297  
+creative  Commons  Attri  
+ISPD_International  Surface  Pressure  databank_Stockholm  University  
+International  Surface  Pressure  databank_Stockholm  University  Global  1815  1817  
+298  Open  access  
+ISPD_International  Surface  Pressure  databank_University  of  East  An  
+International  Surface  Pressure  databank_University  of  East  Anglia  Global  1815  1817  
+299  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_University  of  Gdansk  
+International  Surface  Pressure  databank_University  of  Gdansk  Global  1929  2010  
+
+300  Open  Access  
+ISPD_International  Surface  Pressure  databank_ACRE-Pacific:  Cook  Isl  
+International  Surface  Pressure  databank_ACRE-Pacific:  Cook  Island  Met  Services  Global  1929  1950  
+301  Open  Access  
+ISPD_International  Surface  Pressure  databank_ACRE-Pacific:  Pacific  I  
+International  Surface  Pressure  databank_ACRE-Pacific:  Pacific  Island  Met  Services  Global  1885  2011  
+302  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Hong  Kong  Hourly  Pr  
+International  Surface  Pressure  databank_Hong  Kong  Hourly  Pressure  Observations  Global  1866  1944  
+303  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_Jakarta/Batavia  Press  
+International  Surface  Pressure  databank_Jakarta/Batavia  Pressure  Observations  Global  1768  1793  
+304  Open  Access  
+ISPD_International  Surface  Pressure  databank_William  Hutchinson  p  
+International  Surface  Pressure  databank_William  Hutchinson  pressure,  Liverpool  Global  1859  1913  
+305  Open  Access  
+ISPD_International  Surface  Pressure  databank_Jersey,  Channel  Islan  
+International  Surface  Pressure  databank_Jersey,  Channel  Island  Pressure  Obs  Global  1841  1913  
+306  Open  access  
+ISPD_International  Surface  Pressure  databank_CMDP-USNO_sub_dai  
+International  Surface  Pressure  databank_CMDP-USNO  Global  1843  1867  
+
+307  Open  access  
+ISPD_International  Surface  Pressure  databank_Russian  Sitka  Sea  Lev  
+International  Surface  Pressure  databank_Russian  Sitka  Sea  Level  Pressure,  University  of  South  Carolina  Climate  Lab  Global  1924  1924  
+308  Open  access  
+ISPD_International  Surface  Pressure  databank_University  of  Toronto  
+International  Surface  Pressure  databank_University  of  Toronto  British  Everest  Expedition  meteorological  observation  co  Global  1814  1817  
+309  
+WMO  resolution  40  
+ISPD_International  Surface  Pressure  databank_University  of  Extrema  
+International  Surface  Pressure  databank_University  of  Extremadura  Global  1800  1838  
+310  Open  Access  
+ISPD_International  Surface  Pressure  databank_University  of  Helsinki  
+International  Surface  Pressure  databank_University  of  Helsinki  Global  1899  1941  
+311  Open  Access  
+ISPD_International  Surface  Pressure  databank_Antarctic  Expeditions  
+International  Surface  Pressure  databank_Antarctic  Expeditions  Global  1882  1883  
+312  Open  Access  
+ISPD_International  Surface  Pressure  databank_Canadian  Arctic  Fort  
+International  Surface  Pressure  databank_Canadian  Arctic  Fort  Rae  SLP  Global    
+313  Open  Access  
+NOAA  CDMP_sub_daily_US  
+The  Climate  Database  Modernization  Program  (CDMP)  DSI  3850  USA  1892  1948  
+314  Open  Access  
+NOAA  CDMP_sub_daily_US  
+The  Climate  Database  Modernization  Program  (CDMP)  DSI  3851  USA  1928  1948  
+315  Open  Access  
+NOAA  CDMP_sub_daily_US  
+The  Climate  Database  Modernization  Program  (CDMP)  DSI  3853  USA  1948  1997  
+
+316  Open  Access  
+DWRUK_sub_daily_europe  
+The  UK  Met  Office  Daily  Weather  Reports  Europe  1899  1910  
+317  
+WMO  resolution  40  
+NCAR_sub_daily_greenland_iceland  
+NCAR’s  Greenland/Iceland  dataset  
+Greenland/Iceland  1976  1999  
+318  
+WMO  resolution  40  
+BAM_sub_daily_brazil  
+Brazilian  Air  Ministry/Brazil.  1994  (NCAR/RDA)  Brazil  1951  1981  
+319  
+WMO  resolution  40  
+ASODSO_sub_daily_australia  
+Australia  Summary  of  Day  and  Surface  Observations  (NCAR/RDA)  Australia  1799  2020  
+320  Open  Access  
+NMB_UKMO_CCSP_China_ACRE  
+Nanking  Meteorological  Bulletins  -[pending  China  1930  1931  
+321  Open  Access  
+DWD_overseas  data_China_Pacific_Togo  
+german  meteorological  service  deutscher  wetterdienst  DWD  
+China,  Sth  Pacific  1890  1914  
+322  
+WMO  resolution  40  Mexico_ISD  Mexico_ISD  NCEI  datasets  Mexico  1973  1999  
+323  Open  Access  
+UNI_GIESSEN_India_sbdy  
+Digitisation  and  QC  funded  by  the  University  of  Giessen,  (  India_sbdy)  India  1874  1890  
+324  Open  Access  CHIMES  University  of  Bern  Switzerland  1708  1873  
+325  
+WMO  resolution  40  
+Austrian  pressure  data  
+The  Central  Institution  for  Meteorology  and  Geodynamics  (ZAMG)  Austria  1874  2002  
+326  Open  Access  
+C3S_south_africa_data_rescue_Uni_Witwatesrand  
+University  of  Witwatersrand  South  Africa  1819  1903  
+327  Open  Access  
+MeteoCat_UERRA_sub_daily_spain  
+Meteorological  Service  of  Catalonia  Spain  1988  2015  
+328  Open  Access  
+Bulletin_Climatologique_UERRA_sub_daily_lebanon  
+Bulletin  Climatologique,  Lebanon  Lebanon  1930  1939  
+329  Open  Access  
+Rocenka-annuaire_UERRA_sub_daily_czech  Rocenka-annuaire  
+Czech  republic  1949  1984  
+330  Open  Access  
+Bulletin_Meteoorologique_  
+Bulletin  Meteoorologique  du  Maroc  Morocco  1953  1968  
+
+du_maroc_UERRA_sub_daily_Morocco  
+331  
+Creative  Commons  Attri  
+Met_No_UERRA_sub_daily_Norway  Met  Norway  Norway  1959  2016  
+332  
+Creative  Commons  Attri  
+Uerra_SMHI_sub_daily_sweden  
+SMHI,  the  Swedish  Meteorological  and  Hydrological  Institute  Sweden  1947  2015  
+333  
+WMO  resolution  40??  
+Chile_Met_Service_hourly_data_chile  
+Chile  Meteorological  Directorate  Chile  1950  2020  
+334  Open  Access  
+UNI_GIESSEN_Australia_sbdy  
+Digitisation  and  QC  funded  by  the  University  of  Giessen,  (Australia-Adelaide_sbdy)  Australia  1876  1897  
+335  Open  Access  NCEI  DSI-3280  NOAA/NCEI     
+336  Open  Access  
+CMA_sub_Daily_china  
+National_Climate_Centre_CMA_ISPD3043  China  1902  1953  
+337  Open  Access  
+CCSP_China_India_sbdy  CCSP_China_India  
+India  /Sri  Lanka  1934  1935  
+338  Open  Access  
+ACRE_African  _stations_late19thC_sbdy  
+ACRE_African  _stations_late19thC_sbdy  Africa  1892  1907  
+339  Open  Access  Metoe_lux_sbdy  Meteo  Lux  Luxembourg  2011  2020  
+340  Open  Access  
+ACRE_Solomon_Islands_sbdy  ACRE_Solomon_Islands  
+Solomon  Islands  1909  1940  
+341  Open  Access  ECC_Canada_hourly  
+Environment  &  Climate  Change  Canada  Canada  1953  ongoing  
+342  Open  Access?  
+INMET_Brazil_Hourly_Daily  
+INMET  brazilian  met  service  Brazil  1904  2021  
+343  Open  Access  
+NCEI/ASOS/AWOS  (NOAA  Surface  Weather  Observations)  
+NOAA's  National  Centers  for  Environmental  Information  (NCEI)  NCEI/ASOS/AWOS  USA 2004  ongoing  
+344  Open  Access  NCEI/MAPSO  
+NOAA's  National  Centers  for  Environmental  Information  (NCEI)  NCEI/MAPSO  USA 2004  ongoing  
+
+345  Open  Access  NCEI/US  CRN  
+NOAA's  National  Centers  for  Environmental  Information  (NCEI)  NCEI/US  CRN  USA 2001  ongoing  
+346  Open  Access  NCEI/SURFRAD  
+NOAA's  National  Centers  for  Environmental  Information  (NCEI)  NCEI/SURFRAD  USA 2004  ongoing  
+347  Open  Access  NCEI/FAA  
+NOAA's  National  Centers  for  Environmental  Information  (NCEI)NCEI/FAA  USA  ongoing  
+348  Open  Access  NCEI/CANA  
+NOAA's  National  Centers  for  Environmental  Information  (NCEI)  NCEI/CANA  USA  ongoing  
+349  Open  Access  DWD  Overseas  Data  DWD  Overseas  Data   
+Canada  (New  Foundland/Labrador)  1882  1939  
+350  Open  Access  DWD  Overseas  Data  DWD  Cameroon  1885  1939  
+356  Open  Access  Japan  Met  Service  JMA  Japan  1975  2008  
+357  CC-BY-NC  University  of  Bern  University  of  Bern  Europe  1781  1792  
+382  Open  Access  Coop  HPD   
+U.S.  Coop  Hourly  Precipitation  (HPD),  Version  2  and  NOAA/NCEI  DSI  3240  and  3260  USA   ongoing   
+412  Open  Access  
+SYNOP/FM12  or  BURF  Surface  Land  Observations  decoded  by  NOAA/NCEI  
+NOAA's  National  Centers  for  Environmental  Information  Global  2026  ongoing  
+413  Open  Access  
+METAR/FM15/FM16  decoded  by  NOAA/NCEI  
+NOAA's  National  Centers  for  Environmental  Information  Global  2026  ongoing   
+
+ 
