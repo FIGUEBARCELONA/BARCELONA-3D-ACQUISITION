@@ -1,0 +1,322 @@
+{
+  "utc": "2026-11-25T08:12:03.203504+00:00",
+  "coverages": [
+    {
+      "coverage": "icc:met5",
+      "metadata": {
+        "url": "https://geoserveis.icgc.cat/icc_mdt/wcs/service?SERVICE=WCS&VERSION=1.0.0&REQUEST=DescribeCoverage&COVERAGE=icc%3Amet5",
+        "http": 200,
+        "bytes": 2282,
+        "sha256": "b8b298d276b9e0e1fd9392a992b860cbf8a1675f2077019953aed29ff45bc175",
+        "status": "DESCRIBED",
+        "root": "{http://www.opengis.net/wcs}CoverageDescription",
+        "grid": [
+          {
+            "tag": "description",
+            "text": "Generated from ImageMosaic",
+            "attributes": {}
+          },
+          {
+            "tag": "name",
+            "text": "icc:met5",
+            "attributes": {}
+          },
+          {
+            "tag": "label",
+            "text": "met5",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "-0.0646918697411995 40.468605560662766",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "3.6133747999691486 42.99227438775573",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "249997.5 4483947.5",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "550002.5 4760002.5",
+            "attributes": {}
+          },
+          {
+            "tag": "low",
+            "text": "0 0",
+            "attributes": {}
+          },
+          {
+            "tag": "high",
+            "text": "60000 55210",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "250000.0 4760000.0",
+            "attributes": {}
+          },
+          {
+            "tag": "offsetVector",
+            "text": "5.0 0.0",
+            "attributes": {}
+          },
+          {
+            "tag": "offsetVector",
+            "text": "0.0 -5.0",
+            "attributes": {}
+          },
+          {
+            "tag": "name",
+            "text": "met5",
+            "attributes": {}
+          },
+          {
+            "tag": "label",
+            "text": "met5",
+            "attributes": {}
+          },
+          {
+            "tag": "name",
+            "text": "Band",
+            "attributes": {}
+          },
+          {
+            "tag": "label",
+            "text": "Band",
+            "attributes": {}
+          },
+          {
+            "tag": "requestResponseCRSs",
+            "text": "EPSG:25831",
+            "attributes": {}
+          },
+          {
+            "tag": "supportedFormats",
+            "text": null,
+            "attributes": {
+              "nativeFormat": "ImageMosaic"
+            }
+          }
+        ]
+      },
+      "sample": {
+        "url": "https://geoserveis.icgc.cat/icc_mdt/wcs/service?SERVICE=WCS&REQUEST=GetCoverage&VERSION=1.0.0&CRS=EPSG%3A25831&COVERAGE=icc%3Amet5&WIDTH=5&HEIGHT=5&FORMAT=ArcGrid&EXCEPTIONS=XML&BBOX=430427.5%2C4582302.5%2C430502.5%2C4582377.5",
+        "http": 200,
+        "bytes": 10538,
+        "sha256": "66bb232acab7540a29fc4242be7d87c8f864219c7b1d43191ca677f1752d30d3",
+        "status": "BLOCKED",
+        "error": "ValueError('could not convert string to float: \\'version=\"1.0\"\\'')"
+      }
+    },
+    {
+      "coverage": "icc:met15",
+      "metadata": {
+        "url": "https://geoserveis.icgc.cat/icc_mdt/wcs/service?SERVICE=WCS&VERSION=1.0.0&REQUEST=DescribeCoverage&COVERAGE=icc%3Amet15",
+        "http": 200,
+        "bytes": 2284,
+        "sha256": "38bde2217e2f82f48c58d81b5120e720e31c08bfeffe2ae05c3e598de3ef82ae",
+        "status": "DESCRIBED",
+        "root": "{http://www.opengis.net/wcs}CoverageDescription",
+        "grid": [
+          {
+            "tag": "description",
+            "text": "Generated from GeoTIFF",
+            "attributes": {}
+          },
+          {
+            "tag": "name",
+            "text": "icc:met15",
+            "attributes": {}
+          },
+          {
+            "tag": "label",
+            "text": "met15",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "-0.0407031597904348 40.46692729525101",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "3.445324929767308 42.94096587233679",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "251752.5 4483702.5",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "536332.5 4754347.5",
+            "attributes": {}
+          },
+          {
+            "tag": "low",
+            "text": "0 0",
+            "attributes": {}
+          },
+          {
+            "tag": "high",
+            "text": "18971 18042",
+            "attributes": {}
+          },
+          {
+            "tag": "pos",
+            "text": "251760.0 4754340.0",
+            "attributes": {}
+          },
+          {
+            "tag": "offsetVector",
+            "text": "15.0 0.0",
+            "attributes": {}
+          },
+          {
+            "tag": "offsetVector",
+            "text": "0.0 -15.0",
+            "attributes": {}
+          },
+          {
+            "tag": "name",
+            "text": "met15",
+            "attributes": {}
+          },
+          {
+            "tag": "label",
+            "text": "met15",
+            "attributes": {}
+          },
+          {
+            "tag": "name",
+            "text": "Band",
+            "attributes": {}
+          },
+          {
+            "tag": "label",
+            "text": "Band",
+            "attributes": {}
+          },
+          {
+            "tag": "requestResponseCRSs",
+            "text": "EPSG:25831",
+            "attributes": {}
+          },
+          {
+            "tag": "supportedFormats",
+            "text": null,
+            "attributes": {
+              "nativeFormat": "GeoTIFF"
+            }
+          }
+        ]
+      },
+      "sample": {
+        "url": "https://geoserveis.icgc.cat/icc_mdt/wcs/service?SERVICE=WCS&REQUEST=GetCoverage&VERSION=1.0.0&CRS=EPSG%3A25831&COVERAGE=icc%3Amet15&WIDTH=5&HEIGHT=5&FORMAT=ArcGrid&EXCEPTIONS=XML&BBOX=430427.5%2C4582302.5%2C430502.5%2C4582377.5",
+        "http": 200,
+        "bytes": 10540,
+        "sha256": "06fed8bc248056d1aee62124accd4e536a971016e1b68afaca903013fd579b43",
+        "status": "BLOCKED",
+        "error": "ValueError('could not convert string to float: \\'version=\"1.0\"\\'')"
+      }
+    }
+  ],
+  "points": [
+    {
+      "case": "grid1_center",
+      "status": "POINT_INSPECTED",
+      "url": "https://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&LAYERS=model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023&QUERY_LAYERS=model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023&CRS=EPSG%3A25831&BBOX=430449.5%2C4582324.5%2C430480.5%2C4582355.5&WIDTH=31&HEIGHT=31&I=15&J=15&STYLES=&FORMAT=image%2Fpng&INFO_FORMAT=text%2Fplain&FEATURE_COUNT=1",
+      "http": 200,
+      "bytes": 172,
+      "sha256": "a7cf9017f58510330005eb5264035b6e407c691705414a1247f02b74641b0415",
+      "requested_center": [
+        430465.0,
+        4582340.0
+      ],
+      "returned": [
+        430462.5,
+        4582342.5
+      ],
+      "value": 23.104,
+      "delta": [
+        -2.5,
+        2.5
+      ],
+      "distance": 3.5355339059327378
+    },
+    {
+      "case": "grid1_east",
+      "status": "POINT_INSPECTED",
+      "url": "https://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&LAYERS=model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023&QUERY_LAYERS=model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023&CRS=EPSG%3A25831&BBOX=430449.5%2C4582324.5%2C430480.5%2C4582355.5&WIDTH=31&HEIGHT=31&I=20&J=15&STYLES=&FORMAT=image%2Fpng&INFO_FORMAT=text%2Fplain&FEATURE_COUNT=1",
+      "http": 200,
+      "bytes": 172,
+      "sha256": "e9ba991b3844c12dfea10156cff01b8d8d280025d53787d8fb247c12c36fdc42",
+      "requested_center": [
+        430470.0,
+        4582340.0
+      ],
+      "returned": [
+        430467.5,
+        4582342.5
+      ],
+      "value": 23.048,
+      "delta": [
+        -2.5,
+        2.5
+      ],
+      "distance": 3.5355339059327378
+    },
+    {
+      "case": "grid1_north",
+      "status": "POINT_INSPECTED",
+      "url": "https://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&LAYERS=model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023&QUERY_LAYERS=model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023&CRS=EPSG%3A25831&BBOX=430449.5%2C4582324.5%2C430480.5%2C4582355.5&WIDTH=31&HEIGHT=31&I=15&J=10&STYLES=&FORMAT=image%2Fpng&INFO_FORMAT=text%2Fplain&FEATURE_COUNT=1",
+      "http": 200,
+      "bytes": 175,
+      "sha256": "e39535700e204053b8d331052e53c77ff18b5ca553057bca2dc9507711d5144c",
+      "requested_center": [
+        430465.0,
+        4582345.0
+      ],
+      "returned": [
+        430462.5,
+        4582347.5
+      ],
+      "value": 23.184999,
+      "delta": [
+        -2.5,
+        2.5
+      ],
+      "distance": 3.5355339059327378
+    },
+    {
+      "case": "grid5_center",
+      "status": "POINT_INSPECTED",
+      "url": "https://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&LAYERS=model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023&QUERY_LAYERS=model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023&CRS=EPSG%3A25831&BBOX=430437.5%2C4582312.5%2C430492.5%2C4582367.5&WIDTH=11&HEIGHT=11&I=5&J=5&STYLES=&FORMAT=image%2Fpng&INFO_FORMAT=text%2Fplain&FEATURE_COUNT=1",
+      "http": 200,
+      "bytes": 175,
+      "sha256": "c2ab273c0ad33a53643b19e7f328483ec96b743875773899cc78482f85c7e3c3",
+      "requested_center": [
+        430465.0,
+        4582340.0
+      ],
+      "returned": [
+        430458.5,
+        4582354.5
+      ],
+      "value": 23.332001,
+      "delta": [
+        -6.5,
+        14.5
+      ],
+      "distance": 15.890248582070704
+    }
+  ],
+  "qualification": "Diagnostic samples, not positional acceptance or whole raster acquisition."
+}

@@ -1,0 +1,7 @@
+GetFeatureInfo results:
+
+Layer 'model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023'
+  Feature 0: 
+    x = '430462.5'
+    y = '4582342.5'
+    value_0 = '23.104'
