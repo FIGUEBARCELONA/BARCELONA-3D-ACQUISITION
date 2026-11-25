@@ -1,0 +1,77 @@
+name: F0 lot49 alternate topographic product discovery
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot49.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Inspect main Atom product catalogue and exact first ZIP member header
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,hashlib,json,xml.etree.ElementTree as ET,pathlib,datetime,concurrent.futures,struct,unicodedata
+          out=pathlib.Path('custody/f0-lot49-20261125');out.mkdir(parents=True,exist_ok=True)
+          def get(u,n,range_value=None):
+              headers={'User-Agent':'GTA-BCN-public-data-audit/1.0','Accept-Encoding':'identity'}
+              if range_value:headers['Range']=range_value
+              with urllib.request.urlopen(urllib.request.Request(u,headers=headers),timeout=25) as x:
+                  b=x.read(n)
+                  return b,{'http':x.status,'effective_url':x.geturl(),'content_length':x.headers.get('Content-Length'),'content_type':x.headers.get('Content-Type'),'content_range':x.headers.get('Content-Range'),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+          def catalog():
+              r={'source':'https://w20.bcn.cat/cartobcn/atom.ashx','status':'BLOCKED'}
+              try:
+                  b,m=get(r['source'],8000001)
+                  if len(b)>8000000:raise ValueError('catalogue bound')
+                  r.update(m);root=ET.fromstring(b);ns={'a':'http://www.w3.org/2005/Atom'}
+                  entries=[]
+                  for e in root.findall('a:entry',ns):
+                      title=e.findtext('a:title',default='',namespaces=ns)
+                      norm=''.join(c for c in unicodedata.normalize('NFKD',title.lower()) if not unicodedata.combining(c))
+                      if any(s in norm for s in ('topograf','geopackage','vorera','aparcament','estacionament','altimet','lidar')):
+                          entries.append({'title':title,'id':e.findtext('a:id',namespaces=ns),'updated':e.findtext('a:updated',namespaces=ns),'links':[dict(l.attrib) for l in e.findall('a:link',ns)]})
+                  r.update(total_entries=len(root.findall('a:entry',ns)),matched=entries,status='CATALOGUE_INSPECTED')
+              except Exception as e:r['error']=repr(e)
+              return r
+          def prefix():
+              r={'source':'https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42','status':'BLOCKED'}
+              try:
+                  b,m=get(r['source'],65536,'bytes=0-65535');r.update(m)
+                  if m['sha256']!='0937488739adcd6f13b7efe7e4725117f9782a178fdf0eab334949416ceaa831':raise ValueError('prefix identity mismatch')
+                  sig,version,flags,method,mt,md,crc,comp,uncomp,nl,xl=struct.unpack_from('<4s5H3I2H',b)
+                  if sig!=b'PK\x03\x04':raise ValueError('unexpected signature')
+                  r.update(name=b[30:30+nl].decode('utf-8' if flags&2048 else 'cp437'),flags=flags,method=method,crc32=format(crc,'08x'),compressed_bytes=comp,expanded_bytes=uncomp,data_offset=30+nl+xl,data_descriptor=bool(flags&8),zip64_size_placeholder=comp==0xffffffff or uncomp==0xffffffff)
+                  if not r['data_descriptor'] and not r['zip64_size_placeholder']:
+                      r['member_end_exclusive']=30+nl+xl+comp
+                      r['fits_previous_partial_length']=r['member_end_exclusive']<=156613034
+                  r['status']='HEADER_FIELDS_INSPECTED'
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:
+              a=ex.submit(catalog);b=ex.submit(prefix);r={'catalogue':a.result(),'zip_member':b.result()}
+          r['utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+          r['qualification']='Public metadata and ZIP local header only; no member integrity or geometric acceptance.'
+          s=json.dumps(r,ensure_ascii=False,indent=2)+'\n';(out/'report.json').write_text(s);print(s)
+      - name: Preserve report
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot49-20261125/report.json
+          git commit -m 'Preserve lot49 alternative product discovery'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
