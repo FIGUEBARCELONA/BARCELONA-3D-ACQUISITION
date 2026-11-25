@@ -1,0 +1,292 @@
+{
+  "source": "https://w20.bcn.cat/cartobcn/atom.ashx?file=140",
+  "status": "DISTRICT_METADATA_INSPECTED",
+  "http": 200,
+  "effective_url": "https://w20.bcn.cat/cartobcn/atom.ashx?file=140",
+  "headers": {
+    "Content-Type": "text/xml; charset=UTF-8",
+    "Content-Length": "8324",
+    "Content-Disposition": null,
+    "Accept-Ranges": null,
+    "Last-Modified": null,
+    "ETag": null
+  },
+  "bytes": 8324,
+  "sha256": "a92e8c87028c09b8df7bbc1c85521ab8713b8337c5ece36895789d640bcd7fab",
+  "entries": [
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.01.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.02.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.06.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.07.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.04.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.08.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.09.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.10.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.03.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.05.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)"
+    }
+  ],
+  "headers_by_entry": [
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.01.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.01.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.01.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "909824",
+        "Content-Disposition": "attachment;filename=Districte_01_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.02.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.02.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.02.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "1075200",
+        "Content-Disposition": "attachment;filename=Districte_02_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.06.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.06.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.06.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "1945600",
+        "Content-Disposition": "attachment;filename=Districte_06_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.07.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.07.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.07.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "10221568",
+        "Content-Disposition": "attachment;filename=Districte_07_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.04.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.04.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.04.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "2903040",
+        "Content-Disposition": "attachment;filename=Districte_04_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.08.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.08.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.08.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "5474816",
+        "Content-Disposition": "attachment;filename=Districte_08_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.09.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.09.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.09.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "1719296",
+        "Content-Disposition": "attachment;filename=Districte_09_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.10.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.10.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.10.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "1786368",
+        "Content-Disposition": "attachment;filename=Districte_10_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.03.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.03.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.03.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "5264384",
+        "Content-Disposition": "attachment;filename=Districte_03_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "entry_title": "Àmbit Districte - Distribució de productes en fitxers per Districte Municipal - Mapa Topogràfic Municipal en format DGN (Visió per districte) (DGN)",
+      "updated": "2025-06-01T00:00:00Z",
+      "rel": "section",
+      "type": "application/x-compressed",
+      "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.05.37",
+      "title": "Mapa Topogràfic Municipal en format DGN (Visió per districte)",
+      "https_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.05.37",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.05.37",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "37072384",
+        "Content-Disposition": "attachment;filename=Districte_05_MTM.dgn",
+        "Accept-Ranges": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    }
+  ],
+  "utc": "2026-11-25T10:39:39.143013+00:00",
+  "qualification": "Public feed and HEAD only; no full district binary or spatial validation claimed."
+}
