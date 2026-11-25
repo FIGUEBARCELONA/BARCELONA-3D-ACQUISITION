@@ -1,0 +1,76 @@
+name: F0 lot45b CartoBCN bounded binary identification
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot45b.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Inspect bounded header and range
+        shell: python
+        run: |
+          import urllib.request,urllib.error,hashlib,json,datetime,pathlib,re,struct
+          from html.parser import HTMLParser
+          out=pathlib.Path('custody/f0-lot45b-20261125');out.mkdir(parents=True,exist_ok=True)
+          u='https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42'
+          class Links(HTMLParser):
+              def __init__(self):super().__init__();self.links=[]
+              def handle_starttag(self,tag,attrs):
+                  d=dict(attrs)
+                  if tag in ('a','iframe','form') and (d.get('href') or d.get('src') or d.get('action')):self.links.append({'tag':tag,'target':d.get('href') or d.get('src') or d.get('action')})
+          def inspect(method,range_value=None,limit=65536):
+              r={'method':method,'url':u,'range':range_value,'status':'BLOCKED'}
+              try:
+                  headers={'User-Agent':'GTA-BCN-public-data-audit/1.0','Accept-Encoding':'identity'}
+                  if range_value:headers['Range']=range_value
+                  with urllib.request.urlopen(urllib.request.Request(u,headers=headers,method=method),timeout=25) as x:
+                      r.update(http=x.status,effective_url=x.geturl(),headers={k:x.headers.get(k) for k in ('Content-Type','Content-Length','Content-Range','Accept-Ranges','Content-Disposition','Last-Modified','ETag')})
+                      b=x.read(limit) if method!='HEAD' else b''
+                  r.update(bytes_sampled=len(b),sample_sha256=hashlib.sha256(b).hexdigest(),first16_hex=b[:16].hex())
+                  if b.startswith(b'PK\x03\x04'):
+                      r['format']='ZIP local header'
+                      if len(b)>=30:
+                          fn,extra=struct.unpack_from('<HH',b,26)
+                          if len(b)>=30+fn:r['first_member_name']=b[30:30+fn].decode('utf-8','replace')
+                  elif b.startswith(b'SQLite format 3\x00'):r['format']='SQLite container'
+                  elif b.lstrip().lower().startswith((b'<!doctype',b'<html',b'<head')):
+                      r['format']='HTML'
+                      p=Links();p.feed(b.decode('utf-8','replace'));r['links']=p.links[:50]
+                  else:r['format']='UNIDENTIFIED' if b else 'NO_BODY'
+                  r['status']='RESPONSE_INSPECTED'
+              except urllib.error.HTTPError as e:r.update(http=e.code,error=str(e))
+              except Exception as e:r['error']=repr(e)
+              return r
+          results=[inspect('HEAD'),inspect('GET','bytes=0-65535')]
+          r=results[-1]
+          if r.get('http')==206 and r.get('format')=='ZIP local header':
+              cr=r['headers'].get('Content-Range') or ''
+              m=re.fullmatch(r'bytes \d+-\d+/(\d+)',cr)
+              if m:
+                  total=int(m.group(1));tail=inspect('GET',f'bytes={max(0,total-65557)}-{total-1}',65557);results.append(tail)
+          s=json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'qualification':'Bounded samples only, no full-file SHA or ZIP integrity claim.'},indent=2,ensure_ascii=False)+'\n'
+          (out/'report.json').write_text(s);print(s)
+      - name: Preserve report
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot45b-20261125/report.json
+          git commit -m 'Preserve lot45b bounded CartoBCN binary identification'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
