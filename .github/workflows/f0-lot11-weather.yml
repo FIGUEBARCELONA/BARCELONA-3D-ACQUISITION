@@ -1,0 +1,88 @@
+name: F0 lot11 NOAA cloud station discovery and XOM public viewer
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot11-weather.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check playwright==1.51.0
+      - name: Inspect public distribution
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,hashlib,json,pathlib,datetime,xml.etree.ElementTree as ET,re,csv,io
+          from playwright.sync_api import sync_playwright
+          out=pathlib.Path('custody/f0-lot11-20261125');out.mkdir(parents=True,exist_ok=True)
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'noaa':{},'xom':{}}
+          base='https://noaa-ghcnh-pds.s3.us-east-1.amazonaws.com/'
+          def get(u,limit=30000000):
+              with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-F0-audit/1.0'}),timeout=30) as res:
+                  b=res.read(limit+1)
+                  if len(b)>limit:raise ValueError('limit')
+                  return b,{'http':res.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':res.headers.get('Content-Type')}
+          def ls(prefix,delimiter='/'):
+              b,m=get(base+'?'+urllib.parse.urlencode({'list-type':2,'delimiter':delimiter,'max-keys':100,'prefix':prefix}))
+              x=ET.fromstring(b)
+              if not x.tag.endswith('ListBucketResult'):raise ValueError('not bucket listing')
+              return {**m,'prefix':prefix,'directories':[a.text for a in x.findall('.//{*}CommonPrefixes/{*}Prefix')],'keys':[a.text for a in x.findall('.//{*}Contents/{*}Key')]}
+          r=report['noaa'];r.update(status='BLOCKED',listings=[],matching_objects=[],files=[])
+          try:
+              root=ls('hourly/access/');r['listings'].append(root)
+              dirs=root['directories']
+              for d in dirs[:8]:
+                  a=ls(d);r['listings'].append(a)
+                  for year in range(2021,2026):
+                      for p in a['directories']:
+                          if p.rstrip('/').split('/')[-1]!=str(year):continue
+                          b=ls(p);r['listings'].append(b)
+                          for k in b['keys'][:10]:
+                              filename=k.split('/')[-1]
+                              match=re.search(r'[A-Z]{2}[A-Z0-9]{9}',filename)
+                              if match:
+                                  prefix=k[:k.rfind(filename)]+filename[:match.start()]+'SP000008181'
+                                  c=ls(prefix,'');r['listings'].append(c)
+                                  r['matching_objects']+=c['keys'];break
+              r['matching_objects']=sorted(set(r['matching_objects']))
+              for key in r['matching_objects'][:5]:
+                  f={'key':key,'status':'BLOCKED'}
+                  try:
+                      b,m=get(base+urllib.parse.quote(key,safe='/'));f.update(m)
+                      if key.endswith(('.psv','.csv')):
+                          text=b.decode('utf-8-sig');reader=csv.DictReader(io.StringIO(text),delimiter='|' if key.endswith('.psv') else ',');fields=reader.fieldnames or []
+                          rows=list(reader);f.update(fields=fields,rows=len(rows),first_record=rows[0] if rows else None,last_record=rows[-1] if rows else None,status='INSPECTED' if rows else 'EMPTY')
+                      else:f['status']='BINARY_ACQUIRED_UNPARSED'
+                  except Exception as e:f['error']=repr(e)
+                  r['files'].append(f)
+              r['status']='CATALOG_INSPECTED'
+          except Exception as e:r['error']=repr(e)
+          r=report['xom'];r.update(status='BLOCKED',requests=[])
+          try:
+              with sync_playwright() as pw:
+                  browser=pw.chromium.launch(channel='chrome',headless=True)
+                  page=browser.new_page()
+                  def capture(response):
+                      u=urllib.parse.urlsplit(response.url);host=u.hostname or ''
+                      if not (host.endswith('meteo.cat') or host.endswith('meteocat.gencat.cat')):return
+                      if response.request.resource_type not in ('xhr','fetch'):return
+                      item={'url':urllib.parse.urlunsplit((u.scheme,u.netloc,u.path,'','')),'http':response.status,'type':response.headers.get('content-type',''),'method':response.request.method,'query_keys':sorted(urllib.parse.parse_qs(u.query))}
+                      r['requests'].append(item)
+                  page.on('response',capture)
+                  page.goto('https://www.meteo.cat/observacions/xom_observacio',wait_until='domcontentloaded',timeout=45000)
+                  page.wait_for_timeout(10000)
+                  r['title']=page.title();r['date_controls']=page.locator('input[type=date],select').evaluate_all("(els)=>els.map(e=>({tag:e.tagName,type:e.type,id:e.id,name:e.name,min:e.min,max:e.max,value:e.value,optionCount:e.options?.length}))")
+                  r['status']='BROWSER_INSPECTED';r['qualification']='Public request metadata only; no credentials, no historical observations claimed.'
+                  browser.close()
+          except Exception as e:r['error']=repr(e)
+          (out/'weather.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot11-20261125/weather.json
+          git commit -m 'Preserve NOAA cloud and XOM public discovery report'
+          git push origin HEAD:audit/f0-lot06-20261125
