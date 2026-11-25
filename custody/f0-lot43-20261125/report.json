@@ -1,0 +1,189 @@
+{
+  "utc": "2026-11-25T09:30:49.890618+00:00",
+  "results": [
+    {
+      "name": "parking",
+      "source": "https://ide.amb.cat/geoserveis/rest/services/plataforma_metropolitana_aparcament/MapServer/0",
+      "municipality_field": "CIUTAT",
+      "status": "STRUCTURE_INSPECTED",
+      "requests": [
+        {
+          "url": "https://ide.amb.cat/geoserveis/rest/services/plataforma_metropolitana_aparcament/MapServer/0?f=json",
+          "bytes": 8667,
+          "sha256": "86c274b5df314a2536e8a1a3e417f1c26783ad6502d26948703cfc02e21d115e"
+        },
+        {
+          "url": "https://ide.amb.cat/geoserveis/rest/services/plataforma_metropolitana_aparcament/MapServer/0/query?where=1%3D1&returnIdsOnly=true&f=json",
+          "bytes": 62350,
+          "sha256": "4fa52f8ef6e33a6e352a80865e0b8d89288f65d198f1045c93d3ebf1457a3819"
+        },
+        {
+          "batch": 0,
+          "bytes": 240663,
+          "sha256": "3bcd4e21a7462a3b486187a68f1d91e393ad216cdd936bb9cd2b3e32e827a50a"
+        },
+        {
+          "batch": 1,
+          "bytes": 241539,
+          "sha256": "6b65273157350d76f14b943c273bcd43940d4e7d95b9d9d2780c8d38701e6a6d"
+        },
+        {
+          "batch": 2,
+          "bytes": 246083,
+          "sha256": "4f9f9ae4e670f12fa89690d5e9c5dc90b6283f298ac05ebe7bf55ecdb08e4586"
+        },
+        {
+          "batch": 3,
+          "bytes": 244805,
+          "sha256": "6d9139a6045588aca235777493f1941a66e48115d10f9201a3bac3afe1e308d8"
+        },
+        {
+          "batch": 4,
+          "bytes": 245169,
+          "sha256": "63d1579d1fb1244d5afc1dda0269dcdb0dd4a2266973b14b14fcb74e63c3a7bb"
+        },
+        {
+          "batch": 5,
+          "bytes": 247638,
+          "sha256": "2fe14011b6281e4506c972bf3396283b6277b8a3acd9dcbe5385762c29523dec"
+        },
+        {
+          "batch": 6,
+          "bytes": 239699,
+          "sha256": "276670e8e0ebb2fb709be7132a5475389a3c1f67066de04857989d27a733e160"
+        },
+        {
+          "batch": 7,
+          "bytes": 242571,
+          "sha256": "ebbfc4393c7b8a2d203738f1b0be4d558ae58a24ee6573a3969f05705f26c2b9"
+        },
+        {
+          "batch": 8,
+          "bytes": 247959,
+          "sha256": "3709446c8554019b4a28d22b0af1eddc4d233e6e6df8801c826d110012dbd798"
+        },
+        {
+          "batch": 9,
+          "bytes": 243893,
+          "sha256": "2bfea4a1e3e892a71aafe6cad95650194f061349db496130f367d7a5f7e16778"
+        },
+        {
+          "batch": 10,
+          "bytes": 243374,
+          "sha256": "a3f854d163b6a09dc9ba72aba3cb7326375e2c97d97f33aa8945d7117793f808"
+        },
+        {
+          "batch": 11,
+          "bytes": 245081,
+          "sha256": "519c3707e3365d02f68a95fb488e8483f05a2cb248de05e25985479eb5684482"
+        },
+        {
+          "batch": 12,
+          "bytes": 249523,
+          "sha256": "39c95367a9f2ad795905da942cf278b69ac10fa6918548a2cf627dc27af202da"
+        },
+        {
+          "batch": 13,
+          "bytes": 244996,
+          "sha256": "ff5655687381917fa1433973848495f2443dc72647368671d15ecc8ee70ea754"
+        },
+        {
+          "batch": 14,
+          "bytes": 237508,
+          "sha256": "1b4a8b46d3e287acf5a7f28de7ac83f7b5d310499c2513ad7c919c3f599eab75"
+        },
+        {
+          "batch": 15,
+          "bytes": 232020,
+          "sha256": "c1b786354d22b0f8076c1a865107ad8a23c006c5825976e3134b0c6bfc9deaf3"
+        },
+        {
+          "batch": 16,
+          "bytes": 249168,
+          "sha256": "5c6ba8b2199180423cef0a086abd0fd41da56a6096204f84caf2fb796640e7f9"
+        },
+        {
+          "batch": 17,
+          "bytes": 246100,
+          "sha256": "65696990cd37952645dcc3b6f715f989ec78b3805e2be77128b5163b82478a52"
+        },
+        {
+          "batch": 18,
+          "bytes": 237019,
+          "sha256": "6fee6cad2d01c4d3e60ec5f0ebe3683ffbcfdd8d8d23b8266cd7ce2565f086b8"
+        },
+        {
+          "batch": 19,
+          "bytes": 220165,
+          "sha256": "a4683d16989918a363c2f6c9821ddbaa64cbea7e925cef7efac6e08150bbe6f9"
+        },
+        {
+          "batch": 20,
+          "bytes": 219912,
+          "sha256": "b0c99980463ffaa53a7fe0487179937a313fb0a9a5f67197853e4d65d37b566a"
+        },
+        {
+          "batch": 21,
+          "bytes": 230259,
+          "sha256": "34801d9f8a57b1a17ebacd440940840d52779b049fc13f8d694d53d9c7b845f1"
+        },
+        {
+          "batch": 22,
+          "bytes": 241126,
+          "sha256": "7076c8198281622770dd1e5e82ea9708e3b70cb5fdb019aa7ce39ecae407a52f"
+        },
+        {
+          "batch": 23,
+          "bytes": 234639,
+          "sha256": "212fdcd1912d0b662e5a9819ccc98703183856ff4627f22d9f4acbc87b2c8f38"
+        },
+        {
+          "batch": 24,
+          "bytes": 109899,
+          "sha256": "04690aa991e9c3829cfa3387719b9dfbc26a2d5885a3743ae23de7f539d57a49"
+        }
+      ],
+      "universe": 12235,
+      "municipalities": {
+        "Barcelona": 7281,
+        "L'Hospitalet de Llobregat": 1696,
+        "Badalona": 89,
+        "Sant Joan Despí": 171,
+        "Santa Coloma de Gramenet": 58,
+        "Castelldefels": 1312,
+        "Sant Just Desvern": 141,
+        "Esplugues de Llobregat": 267,
+        "El Prat del Llobregat": 142,
+        "Montgat": 151,
+        "Sant Boi de Llobregat": 113,
+        "Sant Adrià de Besòs": 74,
+        "Gavà": 260,
+        "Sant Vicenç dels Horts": 80,
+        "Sant Feliu de Llobregat": 45,
+        "Viladecans": 266,
+        "Sant Andreu de la Barca": 40,
+        "Cornellà de Llobregat": 49
+      },
+      "barcelona": 7281,
+      "trams_by_type": {
+        "Zona Verda": 6385,
+        "Zona Blava": 896
+      },
+      "declared_capacity_by_type": {
+        "Zona Verda": 58716,
+        "Zona Blava": 5394
+      },
+      "invalid_capacity_by_type": {},
+      "zero_capacity_by_type": {
+        "Zona Blava": 1
+      },
+      "duplicate_tram_id_groups": 0,
+      "invalid_path_structure": 0,
+      "snapshot_match_count": 27,
+      "snapshot_expected": 27,
+      "snapshot_current": 27,
+      "snapshot_identical": true
+    }
+  ],
+  "qualification": "Declared capacity, structural checks only; no occupied places or individual bay geometries."
+}
