@@ -1,0 +1,90 @@
+name: F0 lot03 read-only source audit
+on:
+  push:
+    branches: [audit/f0-lot03-20261125]
+    paths: ['.github/workflows/f0-lot03-20261125.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install inspection libraries
+        run: python -m pip install --disable-pip-version-check pyshp==2.3.1 shapely==2.1.2
+      - name: Inspect official distributions
+        shell: python
+        run: |
+          import urllib.request, json, hashlib, io, zipfile, pathlib, tempfile, math, collections, datetime, concurrent.futures
+          import shapefile
+          from shapely.geometry import shape
+          from shapely.validation import explain_validity
+          urls = {
+            'port':'https://opendata.portdebarcelona.cat/dataset/cf83860e-004f-4542-ade1-156ff2c7319c/resource/5b562611-694b-4e5f-a368-0dd1440c2eec/download/cartoagregada_25831.zip',
+            'mmc':'https://datacloud.ide.cat/metadades/mapa-municipal-v2r0-metadades.zip',
+            'amb':'https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?where=1%3D1&outFields=objectid%2Cmunicipi%2Cdata_inst%2Ctemporalitat%2Clast_edited_date&returnGeometry=true&outSR=25831&f=geojson'
+          }
+          codes=set("080155 089045 082520 080193 080207 080543 080569 082665 080689 080728 080734 080771 080898 081017 081234 081252 081265 081574 089058 081580 081691 081803 081944 081960 082009 082042 082055 082114 082172 082212 082634 082444 082457 082824 082896 083015".split())
+          def inspect(k,u):
+              r={'url':u,'status':'BLOCKED'}
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-F0-documentary-audit/1.0'}),timeout=90) as res:
+                      b=res.read(150_000_001)
+                      r.update(http=res.status,bytes=len(b),resolved=res.url,sha256=hashlib.sha256(b).hexdigest(),content_type=res.headers.get('Content-Type'))
+                  if len(b)>150_000_000: raise ValueError('size limit')
+                  if k=='amb':
+                      j=json.loads(b); fs=j['features']; ids=[f.get('properties',{}).get('objectid') for f in fs]; coords=[]; bad=[]; nonpoint=[]; dates=collections.Counter()
+                      for f in fs:
+                          p=f.get('properties',{}); oid=p.get('objectid')
+                          for field in ('data_inst','last_edited_date','temporalitat','municipi'):
+                              dates[field]+=p.get(field) is not None
+                          try:
+                              g=shape(f['geometry'])
+                              if g.geom_type!='Point': nonpoint.append(oid)
+                              if g.is_empty or not g.is_valid or not all(math.isfinite(v) for v in g.bounds): bad.append({'id':oid,'reason':explain_validity(g)})
+                              elif g.geom_type=='Point': coords.append(tuple(g.coords[0]))
+                          except Exception as e: bad.append({'id':oid,'reason':str(e)})
+                      r.update(features=len(fs),crs=j.get('crs'),duplicate_ids=len(ids)-len(set(ids)),null_ids=ids.count(None),invalid=bad,nonpoint=nonpoint,coincident_points=len(coords)-len(set(coords)),non_null_fields=dict(dates),extent=[min(x[0] for x in coords),min(x[1] for x in coords),max(x[0] for x in coords),max(x[1] for x in coords)] if coords else None,status='INSPECTED',qualification='Internal geometric checks only; no independent accuracy, legal rights or physical completeness.')
+                  else:
+                      z=zipfile.ZipFile(io.BytesIO(b)); r['zip_crc_bad']=z.testzip(); r['entries']=len(z.namelist()); r['layers']=[]
+                      for name in z.namelist():
+                          if not name.lower().endswith('.shp'): continue
+                          stem=name[:-4]; names={n.lower():n for n in z.namelist()}
+                          dbf=names.get((stem+'.dbf').lower()); shx=names.get((stem+'.shx').lower()); prj=names.get((stem+'.prj').lower())
+                          if not dbf: continue
+                          with shapefile.Reader(shp=io.BytesIO(z.read(name)),dbf=io.BytesIO(z.read(dbf)),shx=io.BytesIO(z.read(shx)) if shx else None,encodingErrors='replace') as s:
+                              fields=[f[0] for f in s.fields[1:]]
+                              layer={'name':name,'features':len(s),'fields':fields,'shape_type':s.shapeTypeName,'prj':z.read(prj).decode(errors='replace') if prj else None}
+                              r['layers'].append(layer)
+                              if k=='mmc':
+                                  matched=[]
+                                  for rec in s.iterRecords():
+                                      d=rec.as_dict()
+                                      if any(str(v).strip().zfill(6) in codes or (len(str(v).strip())==5 and any(c[:5]==str(v).strip() for c in codes)) for v in d.values() if isinstance(v,(str,int))):
+                                          matched.append(d)
+                                  layer['candidate_municipal_records']=matched
+                              elif 'zones_port' in name.lower() or 'limit_port' in name.lower():
+                                  layer['invalid_count']=0; layer['empty_count']=0; layer['geometry_errors']=0
+                                  for sh in s.iterShapes():
+                                      try:
+                                          g=shape(sh.__geo_interface__)
+                                          layer['invalid_count']+=not g.is_valid
+                                          layer['empty_count']+=g.is_empty
+                                      except Exception: layer['geometry_errors']+=1
+                      r['status']='INSPECTED'
+                      r['qualification']='Layer inventory or metadata; legal equivalence and individual source dates require explicit subsequent contrast.'
+              except Exception as e: r['error']=repr(e)
+              return k,r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
+              report=dict(ex.map(lambda item: inspect(*item),urls.items()))
+          out=pathlib.Path('custody/f0-lot03-20261125/report.json');out.parent.mkdir(parents=True,exist_ok=True)
+          out.write_text(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':report},ensure_ascii=False,indent=2,default=str)+'\n')
+          print(json.dumps({k:{'status':v['status'],'bytes':v.get('bytes'),'error':v.get('error')} for k,v in report.items()},ensure_ascii=False))
+      - name: Preserve audit report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot03-20261125/report.json
+          git commit -m 'Preserve F0 lot03 source audit report'
+          git push origin HEAD:audit/f0-lot03-20261125
