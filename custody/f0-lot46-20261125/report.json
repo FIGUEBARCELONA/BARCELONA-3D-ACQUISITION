@@ -1,0 +1,17 @@
+{
+  "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+  "status": "BLOCKED",
+  "expected_bytes": 652217937,
+  "expected_prefix_sha256": "0937488739adcd6f13b7efe7e4725117f9782a178fdf0eab334949416ceaa831",
+  "disk_free_before": 94603177984,
+  "http": 200,
+  "content_length": "652217937",
+  "content_disposition": "attachment;filename=MTM_GPKG.zip",
+  "bytes": 156613034,
+  "sha256": "b5a463f35bd14f49bbae4cef3ec686a165b85ff25a9e7de83dd9fbf594b8edd0",
+  "prefix_sha256": "0937488739adcd6f13b7efe7e4725117f9782a178fdf0eab334949416ceaa831",
+  "download_seconds": 243.92,
+  "error": "ValueError('length mismatch')",
+  "utc": "2026-11-25T09:56:11.383944+00:00",
+  "qualification": "Original public binary processed in temporary runner storage; only audit report retained; no geometry tolerance or source redistribution."
+}
