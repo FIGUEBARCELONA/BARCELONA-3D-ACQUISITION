@@ -1,0 +1,49 @@
+{
+  "utc": "2026-11-25T05:16:13.864349+00:00",
+  "results": {
+    "port": {
+      "url": "https://opendata.portdebarcelona.cat/dataset/cf83860e-004f-4542-ade1-156ff2c7319c/resource/5b562611-694b-4e5f-a368-0dd1440c2eec/download/cartoagregada_25831.zip",
+      "status": "BLOCKED",
+      "error": "<HTTPError 500: 'Internal Server Error'>"
+    },
+    "mmc": {
+      "url": "https://datacloud.ide.cat/metadades/mapa-municipal-v2r0-metadades.zip",
+      "status": "BLOCKED",
+      "error": "URLError(TimeoutError('timed out'))"
+    },
+    "amb": {
+      "url": "https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?where=1%3D1&outFields=objectid%2Cmunicipi%2Cdata_inst%2Ctemporalitat%2Clast_edited_date&returnGeometry=true&outSR=25831&f=geojson",
+      "status": "INSPECTED",
+      "http": 200,
+      "bytes": 109547,
+      "resolved": "https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?where=1%3D1&outFields=objectid%2Cmunicipi%2Cdata_inst%2Ctemporalitat%2Clast_edited_date&returnGeometry=true&outSR=25831&f=geojson",
+      "sha256": "3824ce283fa13882451ce26810d33935ccae848a7d656d65812ff48512f17d16",
+      "content_type": "application/geo+json; charset=UTF-8",
+      "features": 496,
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "EPSG:25831"
+        }
+      },
+      "duplicate_ids": 0,
+      "null_ids": 0,
+      "invalid": [],
+      "nonpoint": [],
+      "coincident_points": 0,
+      "non_null_fields": {
+        "data_inst": 0,
+        "last_edited_date": 120,
+        "temporalitat": 495,
+        "municipi": 496
+      },
+      "extent": [
+        411643.3161000004,
+        4568617.7641,
+        440283.05599999987,
+        4590927.8111000005
+      ],
+      "qualification": "Internal geometric checks only; no independent accuracy, legal rights or physical completeness."
+    }
+  }
+}
