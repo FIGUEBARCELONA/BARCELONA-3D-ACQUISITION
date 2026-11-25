@@ -1,0 +1,100 @@
+name: F0 lot51 bounded altimetric and next-member discovery
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot51.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Inspect alternative binary distribution and next MTM member
+        shell: python
+        run: |
+          import urllib.request, urllib.parse, hashlib, struct, json, pathlib, datetime, concurrent.futures, time, xml.etree.ElementTree as ET
+          out=pathlib.Path('custody/f0-lot51-20261125');out.mkdir(parents=True,exist_ok=True)
+          headers={'User-Agent':'GTA-BCN-public-data-audit/1.0','Accept-Encoding':'identity'}
+          def header(b):
+              if len(b)<30:raise ValueError('short local header')
+              sig,v,flags,method,mt,md,crc,cs,us,nl,xl=struct.unpack_from('<4s5H3I2H',b)
+              if sig!=b'PK\x03\x04':raise ValueError('not ZIP local header: '+sig.hex())
+              off=30+nl+xl
+              if len(b)<off:raise ValueError('short name/extra')
+              return {'name':b[30:30+nl].decode('utf-8' if flags&2048 else 'cp437'),'flags':flags,'method':method,'crc32':format(crc,'08x'),'compressed_bytes':cs,'expanded_bytes':us,'data_offset':off,'descriptor':bool(flags&8),'zip64_placeholder':cs==0xffffffff or us==0xffffffff}
+          def alt():
+              u='https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=118.BARCELONA.42';r={'source':u,'status':'BLOCKED'}
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(u,headers=headers,method='HEAD'),timeout=20) as x:r['head']={'http':x.status,**{k:x.headers.get(k) for k in ('Content-Length','Content-Type','Content-Disposition','Accept-Ranges')}}
+                  with urllib.request.urlopen(urllib.request.Request(u,headers={**headers,'Range':'bytes=0-65535'}),timeout=25) as x:
+                      b=x.read(65536);r['get']={'http':x.status,'length':x.headers.get('Content-Length'),'content_range':x.headers.get('Content-Range'),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'signature':b[:16].hex()}
+                  if b.startswith(b'PK\x03\x04'):r['member']=header(b)
+                  elif b.startswith(b'SQLite format 3\x00'):r['format']='SQLite'
+                  else:raise ValueError('unsupported binary prefix')
+                  r['status']='BINARY_HEADER_INSPECTED'
+              except Exception as e:r['error']=repr(e)
+              return r
+          def next_member():
+              u='https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42';r={'source':u,'status':'BLOCKED','offset':50732774}
+              try:
+                  h=hashlib.sha256();left=r['offset'];start=time.monotonic()
+                  with urllib.request.urlopen(urllib.request.Request(u,headers=headers),timeout=35) as x:
+                      r['http']=x.status
+                      while left:
+                          b=x.read(min(left,1048576))
+                          if not b:raise ValueError('stream truncated before next member')
+                          left-=len(b);h.update(b)
+                          if time.monotonic()-start>200:raise ValueError('time bound')
+                      if h.hexdigest()!='4ed6b96c50bad68da90ce9ed0af45163b028a37ac1139d678476b5f5ef834b65':raise ValueError('prefix changed')
+                      r['previous_prefix_sha256']=h.hexdigest()
+                      b=x.read(65536)
+                  r['header_sample_bytes']=len(b);r['header_sample_sha256']=hashlib.sha256(b).hexdigest();r['member']=header(b)
+                  m=r['member']
+                  if not m['descriptor'] and not m['zip64_placeholder']:r['end_exclusive']=r['offset']+m['data_offset']+m['compressed_bytes']
+                  r['seconds']=round(time.monotonic()-start,2);r['status']='NEXT_HEADER_INSPECTED'
+              except Exception as e:r['error']=repr(e)
+              return r
+          def feed(task):
+              n,suffix=task;u='https://w20.bcn.cat/cartobcn/atom.ashx?file='+str(n)+suffix
+              r={'source':u,'product':n,'status':'BLOCKED'}
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(u,headers=headers),timeout=20) as x:
+                      b=x.read(2000001);r['http']=x.status
+                  r['bytes']=len(b);r['sha256']=hashlib.sha256(b).hexdigest()
+                  if len(b)>2000000:raise ValueError('feed bound')
+                  ns={'a':'http://www.w3.org/2005/Atom'};root=ET.fromstring(b)
+                  r['links']=[{'updated':e.findtext('a:updated',namespaces=ns),**l.attrib} for e in root.findall('a:entry',ns) for l in e.findall('a:link',ns) if l.get('rel')=='section']
+                  r['count']=len(r['links']);r['status']='FEED_INSPECTED' if r['count'] else 'NO_DISTRIBUTIONS'
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
+              a=ex.submit(alt);b=ex.submit(next_member)
+              fs=list(ex.map(feed,[(146,''),(144,'.en')]))
+              r={'altimetric':a.result(),'next_member':b.result(),'feeds':fs}
+          r['utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+          r['qualification']='Public bounded metadata/header inspection, no complete additional member or geometry acceptance.'
+          (out/'report.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps({**r,'feeds':[{k:v for k,v in f.items() if k!='links'} for f in fs]},ensure_ascii=False))
+      - name: Preserve report
+        if: always()
+        run: |
+          set -euo pipefail
+          test -f custody/f0-lot51-20261125/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot51-20261125/report.json
+          git commit -m 'Preserve lot51 altimetric and next-member header audit'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
