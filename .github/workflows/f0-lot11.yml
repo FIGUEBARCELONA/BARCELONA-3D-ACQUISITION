@@ -1,0 +1,64 @@
+name: F0 lot11 NOAA and SPA
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot11.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install SPA implementation
+        run: python -m pip install --disable-pip-version-check pvlib==0.13.0
+      - name: Independent SPA and weather archival audit
+        shell: python
+        run: |
+          import pathlib, datetime, json, urllib.request, hashlib, csv, io, collections, concurrent.futures
+          import numpy as np
+          import pandas as pd
+          import pvlib
+          out=pathlib.Path('custody/f0-lot11-20261125');out.mkdir(parents=True,exist_ok=True)
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'spa':{},'noaa':[]}
+          def fetch_year(year):
+              u=f'https://www.ncei.noaa.gov/data/global-hourly/access/{year}/08181099999.csv'
+              r={'year':year,'url':u,'status':'BLOCKED'}
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-F0-audit/1.0'}),timeout=45) as res:
+                      b=res.read(25000001)
+                      r.update(http=res.status,bytes=len(b),sha256=hashlib.sha256(b).hexdigest(),content_type=res.headers.get('Content-Type'))
+                  if len(b)>25000000:raise ValueError('size limit')
+                  d=csv.DictReader(io.StringIO(b.decode('utf-8-sig'))); fields=d.fieldnames or []
+                  if not {'STATION','DATE','NAME'}.issubset(fields):raise ValueError('invalid station CSV')
+                  rows=list(d)
+                  if not rows or set(x['STATION'] for x in rows)!={'08181099999'}:raise ValueError('unexpected station')
+                  dates=[datetime.datetime.fromisoformat(x['DATE']) for x in rows]
+                  if any(x.year!=year for x in dates):raise ValueError('unexpected year')
+                  r.update(status='INSPECTED',fields=fields,rows=len(rows),unique_instants=len(set(dates)),first=min(dates).isoformat(),last=max(dates).isoformat(),names=sorted(set(x['NAME'] for x in rows)),coordinates=sorted(set((x.get('LATITUDE',''),x.get('LONGITUDE',''),x.get('ELEVATION','')) for x in rows)),report_types=dict(collections.Counter(x.get('REPORT_TYPE','') for x in rows)),field_nonempty={k:sum(bool(x.get(k)) for x in rows) for k in ('TMP','DEW','WND','VIS','SLP','AA1','GA1','GF1','MW1','AW1')},qualification='Nonempty fields can contain missing-value sentinels or rejected QC codes; no interpolation or physical completeness claim.')
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:report['noaa']=list(ex.map(fetch_year,range(2021,2026)))
+          r=report['spa'];r.update(status='BLOCKED',qualification='Third computational method; pressure zero for geometric elevation; altitude datum remains unverified; not acceptance.')
+          try:
+              p=pathlib.Path('custody/f0-lot07-20261125/horizons.json')
+              b=p.read_bytes();t=json.loads(b)['result'];rows=[x.split(',') for x in t.split('$$SOE')[1].split('$$EOE')[0].strip().splitlines()]
+              times=pd.to_datetime([x[0].strip() for x in rows],format='%Y-%b-%d %H:%M',utc=True)
+              j_a=np.array([float(x[3]) for x in rows]);j_e=np.array([float(x[4]) for x in rows])
+              result=pvlib.solarposition.spa_python(times,41.38386,2.16774,altitude=33,pressure=0,delta_t=None)
+              az=result.azimuth.to_numpy();el=result.elevation.to_numpy()
+              a=(az-j_a+180)%360-180;e=el-j_e
+              sep=np.rad2deg(np.arccos(np.clip(np.sin(np.deg2rad(el))*np.sin(np.deg2rad(j_e))+np.cos(np.deg2rad(el))*np.cos(np.deg2rad(j_e))*np.cos(np.deg2rad(a)),-1,1)))
+              def stats(x):
+                  return dict(mean_abs=float(np.mean(np.abs(x))),rmse=float(np.sqrt(np.mean(x*x))),p95_abs=float(np.percentile(np.abs(x),95)),max_abs=float(np.max(np.abs(x))))
+              r.update(status='INSPECTED',pvlib=pvlib.__version__,jpl_sha256=hashlib.sha256(b).hexdigest(),rows=len(rows),finite=int(np.isfinite(sep).sum()),azimuth_deg=stats(a),elevation_deg=stats(e),angular_deg=stats(sep),delta_t='pvlib calculate_deltat approximation',pressure_pa=0)
+          except Exception as e:r['error']=repr(e)
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve audit only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot11-20261125/report.json
+          git commit -m 'Preserve F0 lot11 diagnostic audit'
+          git push origin HEAD:audit/f0-lot06-20261125
