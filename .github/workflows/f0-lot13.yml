@@ -1,0 +1,81 @@
+name: F0 lot13 NOAA exact custody and per-element audit
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot13.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify original bytes and audit each element
+        shell: python
+        run: |
+          import pathlib,datetime,json,urllib.request,urllib.parse,hashlib,gzip,csv,io,collections,concurrent.futures
+          out=pathlib.Path('custody/f0-lot13-20261125');out.mkdir(parents=True,exist_ok=True)
+          base='https://noaa-ghcnh-pds.s3.us-east-1.amazonaws.com/'
+          prev=json.loads(pathlib.Path('custody/f0-lot12-20261125/station-list.json').read_text())
+          def sha(b):return hashlib.sha256(b).hexdigest()
+          def get(u,limit=40000000):
+              with urllib.request.urlopen(u,timeout=50) as x:
+                  b=x.read(limit+1)
+                  if len(b)>limit:raise ValueError('size limit')
+                  return b,{'http':x.status,'bytes':len(b),'sha256':sha(b),'type':x.headers.get('Content-Type')}
+          def audit(f):
+              r={'station':f['station'],'year':f['year'],'key':f['key'],'expected_sha256':f['sha256'],'status':'BLOCKED'}
+              try:
+                  b,m=get(base+urllib.parse.quote(f['key'],safe='/'));r.update(m)
+                  if sha(b)!=f['sha256']:raise ValueError('source changed since lot12; do not substitute')
+                  gz=gzip.compress(b,compresslevel=9,mtime=0)
+                  assert gzip.decompress(gz)==b
+                  p=out/(f['key'].split('/')[-1]+'.gz');p.write_bytes(gz)
+                  r.update(custody=p.name,gzip_sha256=sha(gz),gzip_bytes=len(gz))
+                  d=csv.DictReader(io.StringIO(b.decode('utf-8-sig')),delimiter='|');fields=d.fieldnames
+                  elements=[k for k in fields if k+'_Quality_Code' in fields]
+                  ec={k:collections.Counter() for k in elements};provenance={k:collections.Counter() for k in elements}
+                  dates=collections.Counter();stations=collections.Counter();names=collections.Counter();coords=collections.Counter();bad=0;calendar_bad=0;year_bad=0
+                  for a in d:
+                      t=datetime.datetime.fromisoformat(a['DATE']);dates[t]+=1;stations[a['STATION']]+=1;names[a['Station_name']]+=1;coords[(a['LATITUDE'],a['LONGITUDE'],a['ELEVATION'])]+=1
+                      bad+=None in a or None in a.values()
+                      calendar_bad+=tuple(int(a[k]) for k in ('Year','Month','Day','Hour','Minute'))!=(t.year,t.month,t.day,t.hour,t.minute)
+                      year_bad+=t.year!=f['year']
+                      for k in elements:
+                          v=a[k]
+                          if not v.strip():ec[k]['blank']+=1;continue
+                          ec[k]['nonblank']+=1
+                          ptuple=tuple(a[k+s] for s in ('_Measurement_Code','_Quality_Code','_Report_Type','_Source_Code','_Source_Station_ID'))
+                          provenance[k][ptuple]+=1
+                  r.update(rows=sum(dates.values()),unique_instants=len(dates),duplicate_rows=sum(dates.values())-len(dates),first=min(dates).isoformat(),last=max(dates).isoformat(),minute_histogram=dict(collections.Counter(t.minute for t in dates)),station_ids=dict(stations),station_names=dict(names),coordinates=[{'value':k,'count':v} for k,v in coords.items()],malformed=bad,calendar_mismatch=calendar_bad,year_mismatch=year_bad,variables={k:{**dict(ec[k]),'provenance':[{'measurement':p[0],'quality':p[1],'report_type':p[2],'source_code':p[3],'source_station':p[4],'count':v} for p,v in sorted(provenance[k].items())]} for k in elements},status='AUDITED_CODES_RAW',qualification='Code census, not quality approval; blank quality not PASS; distinct source IDs not independent station observations.')
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:rs=list(ex.map(audit,[f for f in prev['files'] if f['status']=='STRUCTURE_INSPECTED']))
+          docs=[]
+          for k in ('ghcnh_DOCUMENTATION.pdf','ghcnh-columns.pdf','ghcnh-source-list.pdf'):
+              r={'key':k,'status':'BLOCKED'}
+              try:
+                  b,m=get(base+'hourly/doc/'+k);r.update(m)
+                  if not b.startswith(b'%PDF-'):raise ValueError('not PDF')
+                  (out/k).write_bytes(b);r['status']='PRESERVED'
+              except Exception as e:r['error']=repr(e)
+              docs.append(r)
+          terraces={'status':'BLOCKED'}
+          try:
+              u='https://opendata-ajuntament.barcelona.cat/data/dataset/9cefbfa2-bcdf-44a0-b63a-372b48f9da93/resource/3be007e1-d1c8-4480-ab33-ba30da5eda1d/download'
+              b,m=get(u);terraces.update(m,url=u)
+              t=b.decode('utf-8-sig');d=csv.DictReader(io.StringIO(t),dialect=csv.Sniffer().sniff(t[:32768],delimiters=',;\t'))
+              fields=d.fieldnames;rows=0;bad=0
+              if len(fields)<3 or '<html' in t[:1000].lower():raise ValueError('not CSV')
+              for a in d:rows+=1;bad+=None in a or None in a.values()
+              terraces.update(status='INSPECTED',fields=fields,rows=rows,malformed=bad)
+          except Exception as e:terraces['error']=repr(e)
+          (out/'report.json').write_text(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'files':rs,'docs':docs,'terraces':terraces},ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve exact recoverable originals and audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot13-20261125
+          git commit -m 'Preserve NOAA original bytes compressed and audit report'
+          git push origin HEAD:audit/f0-lot06-20261125
