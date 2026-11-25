@@ -1,0 +1,56 @@
+{
+  "utc": "2026-11-25T08:05:35.434761+00:00",
+  "wcs": {
+    "status": "NUMERIC_SAMPLE_INSPECTED",
+    "url": "https://geoserveis.icgc.cat/icc_mdt/wcs/service?SERVICE=WCS&REQUEST=GetCoverage&VERSION=1.0.0&CRS=EPSG%3A25831&COVERAGE=icc%3Amet&WIDTH=5&HEIGHT=5&FORMAT=ArcGrid&EXCEPTIONS=XML&BBOX=430427.5%2C4582302.5%2C430502.5%2C4582377.5",
+    "http": 200,
+    "bytes": 559,
+    "sha256": "68f3f74b0a9878c93ff17fd4642cb8b2fc1f37ff3dab883a95836184b5227443",
+    "content_type": "text/json;charset=UTF-8",
+    "header": {
+      "ncols": 5.0,
+      "nrows": 5.0,
+      "xllcorner": 430427.5,
+      "yllcorner": 4582302.5,
+      "cellsize": 15.0,
+      "nodata_value": -9999.0
+    },
+    "valid_cells": 25,
+    "min": 22.53499984741211,
+    "max": 23.628000259399414,
+    "values": [
+      23.628000259399414,
+      23.395999908447266,
+      23.163000106811523,
+      22.93000030517578,
+      22.69700050354004,
+      23.527999877929688,
+      23.302000045776367,
+      23.086000442504883,
+      22.868999481201172,
+      22.652999877929688,
+      23.39900016784668,
+      23.264999389648438,
+      23.048999786376953,
+      22.83300018310547,
+      22.615999221801758,
+      23.264999389648438,
+      23.131999969482422,
+      23.011999130249023,
+      22.79599952697754,
+      22.575000762939453,
+      23.131000518798828,
+      22.976999282836914,
+      22.891000747680664,
+      22.759000778198242,
+      22.53499984741211
+    ],
+    "qualification": "WCS legacy terrain sample, not MDTe/MDTev/nDSM/CHM; edition and vertical datum pending"
+  },
+  "datastore": {
+    "status": "BLOCKED",
+    "resource": "ee11333b-361e-4076-bcba-bf12cf6876e5",
+    "url": "https://opendata-ajuntament.barcelona.cat/data/api/action/datastore_search?resource_id=ee11333b-361e-4076-bcba-bf12cf6876e5&limit=0",
+    "error": "<HTTPError 404: 'Not Found'>"
+  }
+}
