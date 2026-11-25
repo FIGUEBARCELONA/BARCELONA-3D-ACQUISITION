@@ -1,0 +1,65 @@
+name: F0 lot10 dated territorial orthophoto audit
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot10.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check pillow==11.3.0
+      - name: Dated WMS and image-content checks
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,json,hashlib,pathlib,datetime,io,collections,concurrent.futures
+          from PIL import Image,ImageStat
+          out=pathlib.Path('custody/f0-lot10-20261125');out.mkdir(parents=True,exist_ok=True)
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'BLOCKED','samples':[]}
+          def get(u):
+              with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-F0-audit/1.0'}),timeout=25) as r:
+                  b=r.read(10000001)
+                  if len(b)>10000000:raise ValueError('size limit')
+                  return b,{'http':r.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':r.headers.get('Content-Type')}
+          try:
+              p={'where':'1=1','outFields':'objectid,temporalitat','returnGeometry':'true','outSR':'25831','f':'geojson'}
+              b,report['source']=get('https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?'+urllib.parse.urlencode(p))
+              fs=json.loads(b)['features'];byid={f['properties']['objectid']:f for f in fs}
+              previous=[1,1111,2683,204,369,937,1476,1894,1956]
+              report['previous_nine_temporalitat']={str(i):byid[i]['properties'].get('temporalitat') for i in previous}
+              report['unclassified_ids']=[f['properties']['objectid'] for f in fs if f['properties'].get('temporalitat') is None]
+              report['population']=len(fs)
+              ids=[28,1116,2682,10,1077,2677]
+              def sample(oid):
+                  f=byid[oid];x,y=f['geometry']['coordinates'][:2];s={'oid':oid,'temporalitat':f['properties'].get('temporalitat'),'status':'BLOCKED'}
+                  url='https://geoserveis.icgc.cat/servei/catalunya/orto-territorial/wms'
+                  p={'SERVICE':'WMS','VERSION':'1.3.0','REQUEST':'GetMap','LAYERS':'ortofoto_color_2025','STYLES':'','CRS':'EPSG:25831','BBOX':','.join(map(str,[x-30,y-30,x+30,y+30])),'WIDTH':300,'HEIGHT':300,'FORMAT':'image/png','TRANSPARENT':'FALSE'}
+                  try:
+                      im,m=get(url+'?'+urllib.parse.urlencode(p));s.update(m)
+                      img=Image.open(io.BytesIO(im)).convert('RGB');img.load()
+                      s.update(size=img.size,extrema=img.getextrema(),stddev=ImageStat.Stat(img).stddev)
+                      if img.size!=(300,300) or max(s['stddev'])<1:raise ValueError('blank or near-uniform or incorrect size')
+                      n=f'ICGC_CC-BY-4.0_territorial2025_oid_{oid}.png';(out/n).write_bytes(im);s.update(status='NONUNIFORM_IMAGE_ACQUIRED',file=n,attribution='ICGC CC BY 4.0, annual 2025 layer; actual flight date pending')
+                      q=dict(p,REQUEST='GetFeatureInfo',QUERY_LAYERS=p['LAYERS'],I=150,J=150,INFO_FORMAT='text/plain')
+                      try:
+                          d,m=get(url+'?'+urllib.parse.urlencode(q));s['feature_info']={**m,'text':d.decode(errors='replace')[:3000]}
+                      except Exception as e:s['feature_info_error']=repr(e)
+                  except Exception as e:s['error']=repr(e)
+                  return s
+              with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:report['samples']=list(ex.map(sample,ids))
+              counts=collections.Counter(s.get('sha256') for s in report['samples'] if s.get('sha256'))
+              for s in report['samples']:
+                  if s.get('sha256') and counts[s['sha256']]>1:s['status']='DUPLICATE_RESPONSE_REJECTED'
+              report['status']='INSPECTED'
+          except Exception as e:report['error']=repr(e)
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve audit evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot10-20261125
+          git commit -m 'Preserve F0 lot10 dated imagery audit'
+          git push origin HEAD:audit/f0-lot06-20261125
