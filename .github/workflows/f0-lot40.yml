@@ -1,0 +1,82 @@
+name: F0 lot40 parking original ZIP inspection
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot40.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Inspect public municipal quarterly distributions
+        shell: python
+        run: |
+          import pathlib,urllib.request,urllib.error,json,hashlib,zipfile,io,csv,collections,concurrent.futures,datetime
+          out=pathlib.Path('custody/f0-lot40-20261125');out.mkdir(parents=True,exist_ok=True)
+          base='https://opendata-ajuntament.barcelona.cat/data/dataset/40743bb8-e4e0-457f-aa15-87007a0bdb6a/resource/'
+          ids={'2025_1T':'1f1f60fa-017e-4781-82e2-ea7cb6ee8aa9','2025_2T':'76f4888b-6465-4821-8e3e-013902b2b6c2','2025_3T':'8e7d2094-5da9-4624-85d8-cd26797bff05','2025_4T':'c4621b31-182c-4ab6-802c-2bfe6f78e677','2026_1T':'ee11333b-361e-4076-bcba-bf12cf6876e5'}
+          def acquire(pair):
+              name,rid=pair;u=base+rid+'/download';r={'edition':name,'url':u,'status':'BLOCKED'}
+              try:
+                  req=urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-public-data-audit/1.0','Accept':'application/zip, application/octet-stream, */*'})
+                  with urllib.request.urlopen(req,timeout=20) as x:
+                      r.update(http=x.status,content_type=x.headers.get('Content-Type'),effective_url=x.geturl(),last_modified=x.headers.get('Last-Modified'),etag=x.headers.get('ETag'))
+                      b=x.read(15000001)
+                  if len(b)>15000000:raise ValueError('download limit')
+                  r.update(bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+                  with zipfile.ZipFile(io.BytesIO(b)) as z:
+                      infos=z.infolist()
+                      if sum(e.file_size for e in infos)>100000000:raise ValueError('expanded size limit')
+                      if z.testzip() is not None:raise ValueError('CRC mismatch')
+                      r['members']=[{'name':e.filename,'bytes':e.file_size} for e in infos]
+                      reports=[]
+                      for e in infos:
+                          if not e.filename.lower().endswith('.csv'):continue
+                          raw=z.read(e)
+                          for enc in ('utf-8-sig','cp1252'):
+                              try:t=raw.decode(enc);break
+                              except UnicodeDecodeError:continue
+                          else:raise ValueError('unknown encoding')
+                          dialect=csv.Sniffer().sniff(t[:24000],delimiters=';,\t')
+                          d=csv.DictReader(io.StringIO(t),dialect=dialect)
+                          fields=d.fieldnames or []
+                          if len(fields)<2:raise ValueError('invalid CSV schema')
+                          counts=collections.Counter();rows=bad=0
+                          for row in d:
+                              rows+=1
+                              if None in row or any(v is None for v in row.values()):bad+=1;continue
+                              for k,v in row.items():
+                                  if v.strip():counts[k]+=1
+                          reports.append({'name':e.filename,'sha256':hashlib.sha256(raw).hexdigest(),'encoding':enc,'delimiter':dialect.delimiter,'fields':fields,'rows':rows,'malformed':bad,'nonblank':dict(counts)})
+                      if not reports:raise ValueError('no CSV members')
+                      r.update(status='ZIP_CSV_STRUCTURE_INSPECTED',csvs=reports)
+              except urllib.error.HTTPError as e:
+                  r.update(http=e.code,error=str(e))
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:results=list(ex.map(acquire,ids.items()))
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'qualification':'Public catalogue URLs, bounded original bytes, no redistribution of raw records; schema inspection only, no geometric acceptance.'}
+          s=json.dumps(report,ensure_ascii=False,indent=2)+'\n'
+          (out/'report.json').write_text(s);print(s)
+      - name: Preserve audit report without force
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot40-20261125/report.json
+          git commit -m 'Preserve lot40 parking ZIP diagnostic'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
