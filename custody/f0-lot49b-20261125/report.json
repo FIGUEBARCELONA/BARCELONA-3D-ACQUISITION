@@ -1,0 +1,760 @@
+{
+  "member": {
+    "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+    "status": "MEMBER_SQLITE_INSPECTED",
+    "member": "Base (Línies).gpkg",
+    "http": 200,
+    "received_bytes": 50732774,
+    "seconds": 93.27,
+    "prefix_sha256": "0937488739adcd6f13b7efe7e4725117f9782a178fdf0eab334949416ceaa831",
+    "acquired_prefix_sha256": "4ed6b96c50bad68da90ce9ed0af45163b028a37ac1139d678476b5f5ef834b65",
+    "member_bytes": 93929472,
+    "member_sha256": "a890e652f5c66a8c05a7e92b64717c5ff76fcdda9f90458cce1bc3d020604ae2",
+    "crc32": "4cbcafa0",
+    "application_id": 1196444487,
+    "quick_check": [
+      [
+        "ok"
+      ]
+    ],
+    "integrity_check": [
+      [
+        "ok"
+      ]
+    ],
+    "foreign_key_violations": 0,
+    "srs": [
+      [
+        -1,
+        "NONE",
+        -1
+      ],
+      [
+        0,
+        "NONE",
+        0
+      ],
+      [
+        4326,
+        "EPSG",
+        4326
+      ],
+      [
+        25831,
+        "EPSG",
+        25831
+      ]
+    ],
+    "geometry_columns": [
+      [
+        "Base (Línies)",
+        "geometria",
+        "MULTILINESTRING",
+        25831,
+        0,
+        0
+      ]
+    ],
+    "layers": [
+      {
+        "name": "Base (Línies)",
+        "type": "features",
+        "identifier": "Base (Línies)",
+        "last_change": "2026-11-10T13:10:51.680Z",
+        "srs_id": 25831,
+        "count": 21182,
+        "columns": [
+          {
+            "name": "FID",
+            "type": "INTEGER"
+          },
+          {
+            "name": "geometria",
+            "type": "MULTILINESTRING"
+          },
+          {
+            "name": "ID_INSPIRE",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "NIVELL",
+            "type": "TEXT(35)"
+          },
+          {
+            "name": "NIVELL_DESCRIPCIO",
+            "type": "TEXT(100)"
+          },
+          {
+            "name": "NIVELL_DESCRIPCIO_ES",
+            "type": "TEXT(100)"
+          },
+          {
+            "name": "NIVELL_DESCRIPCIO_EN",
+            "type": "TEXT(100)"
+          },
+          {
+            "name": "LLEGENDA",
+            "type": "TEXT(85)"
+          },
+          {
+            "name": "ORDRE_REPRESENTACIO",
+            "type": "SMALLINT"
+          },
+          {
+            "name": "RANG_ESCALA",
+            "type": "TEXT(12)"
+          },
+          {
+            "name": "GRUIX_QGIS",
+            "type": "FLOAT"
+          },
+          {
+            "name": "ESTIL_QGIS",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "HEX_COLOR7",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "RED",
+            "type": "SMALLINT"
+          },
+          {
+            "name": "GREEN",
+            "type": "SMALLINT"
+          },
+          {
+            "name": "BLUE",
+            "type": "SMALLINT"
+          },
+          {
+            "name": "IDENT_ANEXO",
+            "type": "TEXT(5)"
+          },
+          {
+            "name": "ANEXO_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "IDENT_TEMA",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "TEMA_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "IDENT_CONJUNT",
+            "type": "TEXT(15)"
+          },
+          {
+            "name": "CONJUNT_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "IDENT_SUBCONJUNT",
+            "type": "TEXT(20)"
+          },
+          {
+            "name": "SUBCONJUNT_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "IDENT_ELEMENT",
+            "type": "TEXT(25)"
+          },
+          {
+            "name": "ELEMENT_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "HEX_COLOR9",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "ALPHA",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "DISTRICTE",
+            "type": "TEXT(2)"
+          },
+          {
+            "name": "BARRI",
+            "type": "TEXT(2)"
+          }
+        ]
+      }
+    ]
+  },
+  "feeds": [
+    {
+      "product": 144,
+      "source": "https://w20.bcn.cat/cartobcn/atom.ashx?file=144",
+      "status": "BLOCKED",
+      "http": 200,
+      "error": "ParseError('no element found: line 1, column 0')"
+    },
+    {
+      "product": 113,
+      "source": "https://w20.bcn.cat/cartobcn/atom.ashx?file=113",
+      "status": "FEED_INSPECTED",
+      "http": 200,
+      "bytes": 4736,
+      "sha256": "b76dcbebf4736f00931ed43cc4376482a23f49882f5c86fd75d228aed9860bb7",
+      "count": 1,
+      "links": [
+        {
+          "updated": "2019-03-13T00:00:00Z",
+          "rel": "section",
+          "type": "text/plain",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=113.BARCELONA.2",
+          "title": "Cartografia Topogràfica Municipal - GIS"
+        }
+      ]
+    },
+    {
+      "product": 118,
+      "source": "https://w20.bcn.cat/cartobcn/atom.ashx?file=118",
+      "status": "FEED_INSPECTED",
+      "http": 200,
+      "bytes": 4967,
+      "sha256": "afef73fcd43c3515c29c82642ac9dfbefcc537ab8f8aa6c077636d19af1d4f40",
+      "count": 1,
+      "links": [
+        {
+          "updated": "2020-12-20T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=118.BARCELONA.42",
+          "title": "MAPA TEMÀTIC per ALÇADES i EDIFICACIÓ en format Geopackage"
+        }
+      ]
+    },
+    {
+      "product": 135,
+      "source": "https://w20.bcn.cat/cartobcn/atom.ashx?file=135",
+      "status": "FEED_INSPECTED",
+      "http": 200,
+      "bytes": 38068,
+      "sha256": "744a1ae28d5832c30d3651194c5d9bcf3ebca1798f2f07cf9bec2908251002c4",
+      "count": 73,
+      "links": [
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.58.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.34.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.47.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.49.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.55.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.69.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.33.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.02.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.70.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.59.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.64.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.32.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.37.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.65.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.29.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.62.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.05.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.35.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.66.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.68.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.11.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.27.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.01.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.46.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.43.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.15.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.03.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.16.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.42.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.07.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.14.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.36.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.48.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.13.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.12.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.20.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.09.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.52.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.06.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.61.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.30.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.38.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.53.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.57.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.41.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.73.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.31.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.67.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.08.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.19.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.50.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.24.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.40.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.63.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.21.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.45.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.71.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.60.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.10.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.39.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.26.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.25.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.72.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.04.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.18.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.17.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.23.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.54.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.56.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.28.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.22.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.51.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        },
+        {
+          "updated": "2024-12-27T00:00:00Z",
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=135.44.35",
+          "title": "Mapa Topogràfic Municipal en format GeoPDF (amb Capes i Georeferenciat) per BARRIS"
+        }
+      ]
+    }
+  ],
+  "utc": "2026-11-25T11:22:02.243550+00:00",
+  "qualification": "Only the complete first member is acquired; no central directory or complete ZIP validation. Temporary original bytes not redistributed. No spatial homologation."
+}

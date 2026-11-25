@@ -1,0 +1,13 @@
+{
+  "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+  "status": "MEMBER_CRC_VERIFIED",
+  "member": "Base (L\u00ednies).gpkg",
+  "http": 200,
+  "received_bytes": 50732774,
+  "seconds": 93.27,
+  "prefix_sha256": "0937488739adcd6f13b7efe7e4725117f9782a178fdf0eab334949416ceaa831",
+  "acquired_prefix_sha256": "4ed6b96c50bad68da90ce9ed0af45163b028a37ac1139d678476b5f5ef834b65",
+  "member_bytes": 93929472,
+  "member_sha256": "a890e652f5c66a8c05a7e92b64717c5ff76fcdda9f90458cce1bc3d020604ae2",
+  "crc32": "4cbcafa0"
+}
