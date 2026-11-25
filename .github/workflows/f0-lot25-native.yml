@@ -1,0 +1,81 @@
+name: F0 lot25 native coverage format and inventory binaries
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot25-native.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Independent bounded native format and CSV acquisition
+        shell: python
+        run: |
+          import pathlib,json,datetime,urllib.request,urllib.parse,hashlib,concurrent.futures,xml.etree.ElementTree as ET,csv,io,math
+          out=pathlib.Path('custody/f0-lot25-20261125')
+          def get(url,limit):
+              with urllib.request.urlopen(url,timeout=22) as x:
+                  b=x.read(limit+1)
+                  if len(b)>limit:raise ValueError('size bound')
+                  return b,{'url':url,'http':x.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+          def coverage(c):
+              name,step,origin=c;r={'coverage':name,'status':'BLOCKED'}
+              try:
+                  x=origin[0]+step*round((430465-origin[0])/step);y=origin[1]+step*round((4582340-origin[1])/step)
+                  bbox=[x-2.5*step,y-2.5*step,x+2.5*step,y+2.5*step]
+                  p={'SERVICE':'WCS','REQUEST':'GetCoverage','VERSION':'1.0.0','CRS':'EPSG:25831','COVERAGE':name,'WIDTH':5,'HEIGHT':5,'FORMAT':'ARCGRID','BBOX':','.join(map(str,bbox))}
+                  b,m=get('https://geoserveis.icgc.cat/icc_mdt/wcs/service?'+urllib.parse.urlencode(p),1000000);r.update(m)
+                  if b.lstrip().startswith(b'<'):
+                      z=ET.fromstring(b);r['ogc_root']=z.tag;r['exception']=[(e.text or '')[:300] for e in z.iter() if e.tag.split('}')[-1] in ('ServiceException','ExceptionText')];raise ValueError('XML response, not raster')
+                  lines=b.decode('ascii').splitlines();h={l.split()[0].lower():float(l.split()[1]) for l in lines[:6]};v=[float(x) for l in lines[6:] for x in l.split()]
+                  if h.get('ncols')!=5 or h.get('nrows')!=5 or h.get('cellsize')!=step or len(v)!=25:raise ValueError('grid mismatch')
+                  if abs(h['xllcorner']-bbox[0])>1e-6 or abs(h['yllcorner']-bbox[1])>1e-6:raise ValueError('origin mismatch')
+                  good=[a for a in v if math.isfinite(a) and a!=h.get('nodata_value')]
+                  if not good:raise ValueError('no valid cells')
+                  (out/(name.replace(':','_')+'_native.asc')).write_bytes(b)
+                  r.update(status='NATIVE_GRID_SAMPLE_INSPECTED',header=h,valid_cells=len(good),values=v)
+              except Exception as e:r['error']=repr(e)
+              return r
+          def inventory(pair):
+              name,url=pair;r={'name':name,'url':url,'status':'BLOCKED'}
+              try:
+                  b,m=get(url,20000000);r.update(m)
+                  t=b.decode('utf-8-sig')
+                  if t.lstrip().startswith('<'):raise ValueError('not CSV')
+                  d=csv.DictReader(io.StringIO(t),dialect=csv.Sniffer().sniff(t[:16000],delimiters=',;\t'))
+                  if len(d.fieldnames or [])<2:raise ValueError('invalid schema')
+                  count=bad=0
+                  for row in d:
+                      count+=1;bad+=None in row or None in row.values()
+                  if not count:raise ValueError('empty CSV')
+                  r.update(status='CSV_STRUCTURE_INSPECTED',fields=d.fieldnames,rows=count,malformed=bad)
+              except Exception as e:r['error']=repr(e)
+              return r
+          c=[('icc:met5',5,(250000,4760000)),('icc:met15',15,(251760,4754340))]
+          i=[('inventory','https://opendata-ajuntament.barcelona.cat/data/dataset/802c9d1b-11d5-4f74-a319-0fcf23b96d56/resource/20bd3dd1-efb0-490e-acd1-c7d0be170419/download'),('typology','https://opendata-ajuntament.barcelona.cat/data/dataset/66ce661b-5951-40fb-9035-9ecb49bc6ff1/resource/9d31d2e0-5ba7-412d-b68a-c788d311b6e9/download')]
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+              cs=[ex.submit(coverage,v) for v in c];iv=[ex.submit(inventory,v) for v in i]
+              report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'coverages':[f.result() for f in cs],'inventories':[f.result() for f in iv]}
+          (out/'native.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Publish without force
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot25-20261125
+          git commit -m 'Preserve native grid and inventory audit'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
