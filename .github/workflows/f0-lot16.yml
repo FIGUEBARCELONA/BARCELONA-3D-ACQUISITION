@@ -1,0 +1,62 @@
+name: F0 lot16 XOM extraction and elevation distribution discovery
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot16.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check pymupdf==1.26.5
+      - name: Inspect XOM table rows and elevation catalog
+        shell: python
+        run: |
+          import pathlib,hashlib,json,datetime,urllib.request,urllib.parse,re,concurrent.futures,xml.etree.ElementTree as ET
+          import fitz
+          out=pathlib.Path('custody/f0-lot16-20261125');out.mkdir(parents=True,exist_ok=True)
+          prev=json.loads(pathlib.Path('custody/f0-lot15-20261125/report.json').read_text())
+          def get(url,limit=30000000):
+              with urllib.request.urlopen(url,timeout=30) as x:
+                  b=x.read(limit+1)
+                  if len(b)>limit:raise ValueError('size limit')
+                  return b,{'http':x.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+          def inspect(f):
+              r={'year':f['year'],'kind':f['kind'],'status':'BLOCKED'}
+              try:
+                  b,m=get(f['url']);r.update(m)
+                  if m['sha256']!=f['sha256']:raise ValueError('edition changed')
+                  d=fitz.open(stream=b,filetype='pdf')
+                  rows=[]
+                  for i in (range(9,11) if f['kind']==0 else range(110,len(d))):
+                      p=d[i];t=p.get_text('text',sort=True)
+                      for line in t.splitlines():
+                          if re.search(r'Barcelona|Barcelonès|Baix Llobregat|Badalona|Hospitalet|Cornellà|Gavà|Castelldefels|Sant Boi|Prat de Llobregat|Viladecans',line,re.I):
+                              rows.append({'page':i+1,'line':line[:400]})
+                  r.update(status='TARGETED_TEXT_INSPECTED',candidate_lines=rows,qualification='Candidate text lines only; row alignment and numeric series not yet validated.')
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:rs=list(ex.map(inspect,prev['xom']))
+          r={'status':'BLOCKED'}
+          try:
+              url='https://geoserveis.icgc.cat/servei/catalunya/elevacions-territorial/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0'
+              b,m=get(url);r.update(m);z=ET.fromstring(b)
+              wanted=['model-elevacions-terreny-edificis-catalunya-lidar-1m-2021-2023','model-elevacions-terreny-edificis-vegetacio-catalunya-lidar-1m-2021-2023','model-alcaries-catalunya-lidar-1m-2021-2023','model-alcaries-vegetacio-catalunya-lidar-1m-2021-2023']
+              layers={}
+              for layer in z.findall('.//{*}Layer'):
+                  name=layer.findtext('{*}Name')
+                  if name not in wanted:continue
+                  layers[name]={'queryable':layer.get('queryable'),'title':layer.findtext('{*}Title'),'metadata_urls':[a.attrib for a in layer.findall('.//{*}MetadataURL/{*}OnlineResource')],'data_urls':[a.attrib for a in layer.findall('.//{*}DataURL/{*}OnlineResource')]}
+              r.update(status='CATALOG_INSPECTED',layers=layers,formats=[a.text for a in z.findall('.//{*}GetMap/{*}Format')],qualification='WMS is a map service; not proof of original numerical GeoTIFF.')
+          except Exception as e:r['error']=repr(e)
+          (out/'report.json').write_text(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'xom':rs,'elevation':r},ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve audit report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot16-20261125/report.json
+          git commit -m 'Preserve XOM targeted extraction and elevation catalog audit'
+          git push origin HEAD:audit/f0-lot06-20261125
