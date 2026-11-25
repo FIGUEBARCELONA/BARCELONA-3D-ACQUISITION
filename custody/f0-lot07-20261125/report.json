@@ -1,0 +1,86 @@
+{
+  "utc": "2026-11-25T05:45:22.756826+00:00",
+  "horizons": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons_file.api",
+    "status": "INSPECTED",
+    "input": "!$$SOF\nCOMMAND='10'\nOBJ_DATA='NO'\nMAKE_EPHEM='YES'\nTABLE_TYPE='OBSERVER'\nCENTER='coord@399'\nCOORD_TYPE='GEODETIC'\nSITE_COORD='2.16774,41.38386,0.033'\nSTART_TIME='2021-01-01 12:00'\nSTOP_TIME='2025-12-31 12:00'\nSTEP_SIZE='1 d'\nQUANTITIES='4'\nCSV_FORMAT='YES'\n",
+    "qualification": "Diagnostic 12 UTC at XEMA X4; altitude datum unconfirmed. Not complete universe.",
+    "http": "200",
+    "curl_exit": 0,
+    "bytes": 99229,
+    "sha256": "e569b8318695c96c613c0837abee9543a040b9012bd315f74ed00021828d5b24",
+    "signature": {
+      "version": "1.0",
+      "source": "NASA/JPL Horizons API"
+    },
+    "rows": 1826,
+    "expected": 1826,
+    "first": "2021-Jan-01 12:00,*, , 181.276456,    25.646364,",
+    "last": "2025-Dec-31 12:00,*, , 181.422289,    25.544237,"
+  },
+  "orthophoto": {
+    "status": "ACQUISITION_ATTEMPTED",
+    "samples": [
+      {
+        "sample": 1,
+        "objectid": 1,
+        "status": "IMAGE_ACQUIRED",
+        "selection": "sorted OID first/middle/last",
+        "layer": "orto-costa-rgb-10cm-202602-202602",
+        "bytes": 132840,
+        "content_type": "image/png",
+        "sha256": "b35a3f5fa7e157b88ed6405b697d0211cfc87bec06c6b74aedd5335a8d534271",
+        "width": 300,
+        "height": 300,
+        "file": "ICGC_CC-BY-4.0_sample_1.png",
+        "center_pixel": [
+          150,
+          150
+        ],
+        "pixel_size_m": 0.1,
+        "attribution": "Institut Cartogràfic i Geològic de Catalunya (ICGC), CC BY 4.0, flight February 2026"
+      },
+      {
+        "sample": 2,
+        "objectid": 1111,
+        "status": "IMAGE_ACQUIRED",
+        "selection": "sorted OID first/middle/last",
+        "layer": "orto-costa-rgb-10cm-202602-202602",
+        "bytes": 133539,
+        "content_type": "image/png",
+        "sha256": "fab5a6acb713a92bfd032f004e5d9dc2d941da5ae4c57cf9075b47170161ca08",
+        "width": 300,
+        "height": 300,
+        "file": "ICGC_CC-BY-4.0_sample_2.png",
+        "center_pixel": [
+          150,
+          150
+        ],
+        "pixel_size_m": 0.1,
+        "attribution": "Institut Cartogràfic i Geològic de Catalunya (ICGC), CC BY 4.0, flight February 2026"
+      },
+      {
+        "sample": 3,
+        "objectid": 2683,
+        "status": "IMAGE_ACQUIRED",
+        "selection": "sorted OID first/middle/last",
+        "layer": "orto-costa-rgb-10cm-202602-202602",
+        "bytes": 121989,
+        "content_type": "image/png",
+        "sha256": "6f0dd4a35fb106afa1f324fe38434f04b3e535953ca344570ac2ade09405557c",
+        "width": 300,
+        "height": 300,
+        "file": "ICGC_CC-BY-4.0_sample_3.png",
+        "center_pixel": [
+          150,
+          150
+        ],
+        "pixel_size_m": 0.1,
+        "attribution": "Institut Cartogràfic i Geològic de Catalunya (ICGC), CC BY 4.0, flight February 2026"
+      }
+    ],
+    "qualification": "Three deterministic diagnostic samples only, not positional validation; ICGC CC BY 4.0. No AMB source geometry published in bulk.",
+    "source_sha256": "728a52962de66d3f5e76c106f2d0d4123297d3328a47eab2b2ecf21d71904578",
+    "population": 496
+  }
+}
