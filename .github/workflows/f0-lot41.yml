@@ -1,0 +1,83 @@
+name: F0 lot41 AMB public parking vector audit
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot41.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Inspect official public vector distributions
+        shell: python
+        run: |
+          import pathlib,urllib.request,urllib.parse,hashlib,json,collections,concurrent.futures,datetime,math
+          out=pathlib.Path('custody/f0-lot41-20261125');out.mkdir(parents=True,exist_ok=True)
+          def get(url,params):
+              u=url+'?'+urllib.parse.urlencode(params)
+              with urllib.request.urlopen(u,timeout=25) as x:
+                  b=x.read(15000001)
+              if len(b)>15000000:raise ValueError('size bound')
+              j=json.loads(b)
+              if 'error' in j:raise ValueError(str(j['error']))
+              return j,{'url':u,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+          def inspect(pair):
+              name,u=pair;r={'name':name,'source':u,'status':'BLOCKED','requests':[]}
+              try:
+                  meta,p=get(u,{'f':'json'});r['requests'].append(p)
+                  r.update(fields=[{'name':f['name'],'type':f['type']} for f in meta['fields']],geometry_type=meta.get('geometryType'),extent=meta.get('extent'),max_records=meta.get('maxRecordCount'))
+                  oid=meta.get('objectIdField') or next(f['name'] for f in meta['fields'] if f['type']=='esriFieldTypeOID')
+                  ids,p=get(u+'/query',{'where':'1=1','returnIdsOnly':'true','f':'json'});r['requests'].append(p)
+                  allids=ids.get('objectIds') or [];r['universe_count']=len(allids);r['unique_ids']=len(set(allids))
+                  if len(set(allids))!=len(allids):raise ValueError('duplicate IDs')
+                  if len(allids)>20000:raise ValueError('universe limit')
+                  features=[]
+                  for i in range(0,len(allids),500):
+                      batch=sorted(allids)[i:i+500]
+                      data,p=get(u+'/query',{'objectIds':','.join(map(str,batch)),'outFields':'*','returnGeometry':'true','outSR':25831,'f':'json'});r['requests'].append(p)
+                      if data.get('exceededTransferLimit'):raise ValueError('truncated batch')
+                      if data.get('spatialReference',{}).get('wkid')!=25831:raise ValueError('CRS not 25831')
+                      features+=data.get('features',[])
+                  seen=[f['attributes'][oid] for f in features]
+                  if sorted(seen)!=sorted(allids):raise ValueError('ID mismatch')
+                  cities=collections.Counter(str(f['attributes'].get('CIUTAT')) for f in features) if any(x['name']=='CIUTAT' for x in r['fields']) else {}
+                  r.update(recovered=len(features),municipalities=dict(cities))
+                  bcn=[f for f in features if str(f['attributes'].get('CIUTAT','')).strip().casefold()=='barcelona']
+                  def counts(fs):
+                      c=collections.Counter();types=collections.Counter();bad=0
+                      for f in fs:
+                          a=f['attributes'];g=f.get('geometry')
+                          for k,v in a.items():
+                              if v is not None and str(v).strip():c[k]+=1
+                          if not g or not any(g.get(k) for k in ('paths','rings','points','x')):bad+=1
+                          if 'TRAM_TIPUS' in a:types[str(a['TRAM_TIPUS'])]+=1
+                      return {'records':len(fs),'nonblank':dict(c),'missing_geometry':bad,'types':dict(types)}
+                  r.update(all_summary=counts(features),barcelona_summary=counts(bcn),status='VECTOR_UNIVERSE_INSPECTED')
+              except Exception as e:r['error']=repr(e)
+              return r
+          pairs=[('parking','https://ide.amb.cat/geoserveis/rest/services/plataforma_metropolitana_aparcament/MapServer/0'),('residents','https://geoportal.amb.cat/geoserveis/rest/services/arees_aparcament_residents/MapServer/0')]
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:results=list(ex.map(inspect,pairs))
+          s=json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'qualification':'Public source vector structure and counts only; not individual parking spaces, no visual homologation, no raw redistribution.'},ensure_ascii=False,indent=2)+'\n'
+          (out/'report.json').write_text(s);print(s)
+      - name: Preserve report without force
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot41-20261125/report.json
+          git commit -m 'Preserve lot41 AMB parking vector audit'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
