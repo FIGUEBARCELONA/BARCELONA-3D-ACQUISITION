@@ -1,0 +1,83 @@
+{
+  "utc": "2026-11-25T06:55:26.028215+00:00",
+  "spa": {
+    "status": "INSPECTED",
+    "qualification": "Third computational method; pressure zero for geometric elevation; altitude datum remains unverified; not acceptance.",
+    "pvlib": "0.13.0",
+    "jpl_sha256": "e569b8318695c96c613c0837abee9543a040b9012bd315f74ed00021828d5b24",
+    "rows": 1826,
+    "finite": 1826,
+    "azimuth_deg": {
+      "mean_abs": 0.00045798324273778026,
+      "rmse": 0.0006236083822037924,
+      "p95_abs": 0.001417877750157004,
+      "max_abs": 0.002032355352042714
+    },
+    "elevation_deg": {
+      "mean_abs": 2.8848176058915126e-05,
+      "rmse": 3.439267419939159e-05,
+      "p95_abs": 6.176888618369958e-05,
+      "max_abs": 8.219649180318811e-05
+    },
+    "angular_deg": {
+      "mean_abs": 0.0002601122185913204,
+      "rmse": 0.0003255841297428335,
+      "p95_abs": 0.0006580957092619884,
+      "max_abs": 0.0006985032091801446
+    },
+    "delta_t": "pvlib calculate_deltat approximation",
+    "pressure_pa": 0
+  },
+  "noaa": [
+    {
+      "year": 2021,
+      "url": "https://www.ncei.noaa.gov/data/global-hourly/access/2021/08181099999.csv",
+      "status": "BLOCKED",
+      "http": 200,
+      "bytes": 36822,
+      "sha256": "48661c476a2bde160781f149d112592fa9ef719376f181049b351a585491d9a2",
+      "content_type": "text/html",
+      "error": "ValueError('invalid station CSV')"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.ncei.noaa.gov/data/global-hourly/access/2022/08181099999.csv",
+      "status": "BLOCKED",
+      "http": 200,
+      "bytes": 36822,
+      "sha256": "48661c476a2bde160781f149d112592fa9ef719376f181049b351a585491d9a2",
+      "content_type": "text/html",
+      "error": "ValueError('invalid station CSV')"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.ncei.noaa.gov/data/global-hourly/access/2023/08181099999.csv",
+      "status": "BLOCKED",
+      "http": 200,
+      "bytes": 36822,
+      "sha256": "48661c476a2bde160781f149d112592fa9ef719376f181049b351a585491d9a2",
+      "content_type": "text/html",
+      "error": "ValueError('invalid station CSV')"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.ncei.noaa.gov/data/global-hourly/access/2024/08181099999.csv",
+      "status": "BLOCKED",
+      "http": 200,
+      "bytes": 36822,
+      "sha256": "48661c476a2bde160781f149d112592fa9ef719376f181049b351a585491d9a2",
+      "content_type": "text/html",
+      "error": "ValueError('invalid station CSV')"
+    },
+    {
+      "year": 2025,
+      "url": "https://www.ncei.noaa.gov/data/global-hourly/access/2025/08181099999.csv",
+      "status": "BLOCKED",
+      "http": 200,
+      "bytes": 36822,
+      "sha256": "48661c476a2bde160781f149d112592fa9ef719376f181049b351a585491d9a2",
+      "content_type": "text/html",
+      "error": "ValueError('invalid station CSV')"
+    }
+  ]
+}
