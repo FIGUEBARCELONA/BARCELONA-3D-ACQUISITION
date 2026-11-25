@@ -1,0 +1,61 @@
+name: F0 lot25 alias native grid verification
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot25-alias.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Test official alias on distinct native aligned windows
+        shell: python
+        run: |
+          import pathlib,json,datetime,urllib.request,urllib.parse,hashlib,concurrent.futures,xml.etree.ElementTree as ET,math
+          out=pathlib.Path('custody/f0-lot25-20261125')
+          def run(step):
+              r={'step':step,'status':'BLOCKED'}
+              try:
+                  origin={5:(250000,4760000),15:(251760,4754340)}[step]
+                  x=origin[0]+step*round((430465-origin[0])/step);y=origin[1]+step*round((4582340-origin[1])/step)
+                  bbox=[x-2.5*step,y-2.5*step,x+2.5*step,y+2.5*step]
+                  p={'SERVICE':'WCS','REQUEST':'GetCoverage','VERSION':'1.0.0','CRS':'EPSG:25831','COVERAGE':'icc:met','WIDTH':5,'HEIGHT':5,'FORMAT':'ARCGRID','BBOX':','.join(map(str,bbox))}
+                  url='https://geoserveis.icgc.cat/icc_mdt/wcs/service?'+urllib.parse.urlencode(p);r['url']=url
+                  with urllib.request.urlopen(url,timeout=22) as resp:
+                      b=resp.read(1000001);r.update(http=resp.status,bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+                  if len(b)>1000000:raise ValueError('size bound')
+                  if b.lstrip().startswith(b'<'):
+                      z=ET.fromstring(b);r['ogc_root']=z.tag;r['exception']=[(e.text or '')[:300] for e in z.iter() if e.tag.split('}')[-1] in ('ServiceException','ExceptionText')];raise ValueError('XML response')
+                  lines=b.decode('ascii').splitlines();h={l.split()[0].lower():float(l.split()[1]) for l in lines[:6]};v=[float(x) for l in lines[6:] for x in l.split()]
+                  if h.get('ncols')!=5 or h.get('nrows')!=5 or h.get('cellsize')!=step or len(v)!=25:raise ValueError('grid mismatch')
+                  if abs(h['xllcorner']-bbox[0])>1e-6 or abs(h['yllcorner']-bbox[1])>1e-6:raise ValueError('origin mismatch')
+                  good=[a for a in v if math.isfinite(a) and a!=h.get('nodata_value')]
+                  if not good:raise ValueError('no valid cells')
+                  (out/('alias_'+str(step)+'m.asc')).write_bytes(b)
+                  r.update(status='ALIAS_GRID_SAMPLE_INSPECTED',header=h,valid_cells=len(good),values=v)
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:results=list(ex.map(run,[5,15]))
+          (out/'alias.json').write_text(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'qualification':'Native-aligned requested grid; alias implementation and source edition not independently established.'},ensure_ascii=False,indent=2)+'\n')
+      - name: Publish without force
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot25-20261125
+          git commit -m 'Preserve official alias grid verification'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
