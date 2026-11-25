@@ -1,0 +1,78 @@
+name: F0 lot08 municipal GeoPackage audit
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot08-mmc.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect official municipal packages
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,json,hashlib,pathlib,datetime,zipfile,io,sqlite3,tempfile,concurrent.futures,re
+          from html.parser import HTMLParser
+          out=pathlib.Path('custody/f0-lot08-20261125');out.mkdir(parents=True,exist_ok=True)
+          base='https://datacloud.icgc.cat/datacloud/mapa-municipal/gpkg/'
+          state='https://datacloud.icgc.cat/datacloud/mapa-municipal-estat/gpkg/mapa-municipal-estat-v1r0-20260824.zip'
+          mm=json.loads(pathlib.Path('custody/f0-lot06-20261125/mmc.json').read_text())
+          wanted={r['fields']['nom_fitxer']:r['fields'] for r in mm['candidate_rows']}
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'directory':{},'municipal_packages':[],'state':{}}
+          def get(u):
+              with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-F0-audit/1.0'}),timeout=60) as x:
+                  b=x.read(200000001)
+                  if len(b)>200000000:raise ValueError('size limit')
+                  return b,{'http':x.status,'resolved':x.url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':x.headers.get('Content-Type')}
+          class Links(HTMLParser):
+              def __init__(self):super().__init__();self.links=[]
+              def handle_starttag(self,t,a):
+                  self.links.extend(v for k,v in a if k=='href' and v)
+          def inspect(u,expected=None):
+              r={'url':u,'status':'BLOCKED','expected':expected}
+              try:
+                  b,m=get(u);r.update(m);z=zipfile.ZipFile(io.BytesIO(b));r['crc_bad']=z.testzip()
+                  r['layers']=[]
+                  for n in z.namelist():
+                      if not n.lower().endswith('.gpkg'):continue
+                      with tempfile.TemporaryDirectory() as d:
+                          p=pathlib.Path(d)/'source.gpkg';p.write_bytes(z.read(n))
+                          con=sqlite3.connect(f'file:{p}?mode=ro',uri=True);tables=con.execute('select table_name,data_type,srs_id from gpkg_contents').fetchall()
+                          for table,typ,srs in tables:
+                              t='"'+table.replace('"','""')+'"';cols=[a[1] for a in con.execute('pragma table_info('+t+')')]
+                              a={'name':table,'type':typ,'srs':srs,'fields':cols,'count':con.execute('select count(*) from '+t).fetchone()[0]}
+                              f=[c for c in cols if c.lower() in ('codimuni','validde','dataalta','codi_unit','nommuni','estat','codimuni1','codimuni2')]
+                              if expected and f:
+                                  q=','.join('"'+c.replace('"','""')+'"' for c in f)
+                                  a['distinct_values']=con.execute('select distinct '+q+' from '+t+' limit 100').fetchall();a['selected_fields']=f
+                              r['layers'].append(a)
+                          con.close()
+                  if not r['layers']:raise ValueError('no GPKG found')
+                  r['status']='INSPECTED'
+              except Exception as e:r['error']=repr(e)
+              return r
+          try:
+              b,m=get(base);h=Links();h.feed(b.decode(errors='replace'));links=[urllib.parse.urljoin(base,v) for v in h.links]
+              report['directory'].update(m,status='INSPECTED',link_count=len(links),matched={k:[v for v in links if k in urllib.parse.unquote(v)] for k in wanted})
+          except Exception as e:report['directory'].update(status='BLOCKED',error=repr(e))
+          work=[]
+          for k,v in wanted.items():
+              matches=report['directory'].get('matched',{}).get(k,[])
+              z=[u for u in matches if urllib.parse.urlsplit(u).path.endswith('.zip')]
+              if len(z)==1:work.append((z[0],v))
+              else:report['municipal_packages'].append({'name':k,'status':'NO_UNAMBIGUOUS_LINK','matches':matches})
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+              futures=[ex.submit(inspect,u,v) for u,v in work]
+              fstate=ex.submit(inspect,state)
+              report['municipal_packages'] += [f.result() for f in futures];report['state']=fstate.result()
+          (out/'mmc-gpkg.json').write_text(json.dumps(report,ensure_ascii=False,indent=2,default=str)+'\n')
+      - name: Preserve audit report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot08-20261125/mmc-gpkg.json
+          git commit -m 'Preserve F0 lot08 municipal GPKG audit'
+          git push origin HEAD:audit/f0-lot06-20261125
