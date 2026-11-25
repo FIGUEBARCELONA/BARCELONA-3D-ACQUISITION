@@ -1,0 +1,49 @@
+{
+  "utc": "2026-11-25T09:42:22.765906+00:00",
+  "results": [
+    {
+      "method": "HEAD",
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+      "range": null,
+      "status": "RESPONSE_INSPECTED",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "652217937",
+        "Content-Range": null,
+        "Accept-Ranges": null,
+        "Content-Disposition": "attachment;filename=MTM_GPKG.zip",
+        "Last-Modified": null,
+        "ETag": null
+      },
+      "bytes_sampled": 0,
+      "sample_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first16_hex": "",
+      "format": "NO_BODY"
+    },
+    {
+      "method": "GET",
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+      "range": "bytes=0-65535",
+      "status": "RESPONSE_INSPECTED",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+      "headers": {
+        "Content-Type": "application/octet-stream; charset=UTF-8",
+        "Content-Length": "652217937",
+        "Content-Range": null,
+        "Accept-Ranges": null,
+        "Content-Disposition": "attachment;filename=MTM_GPKG.zip",
+        "Last-Modified": null,
+        "ETag": null
+      },
+      "bytes_sampled": 65536,
+      "sample_sha256": "0937488739adcd6f13b7efe7e4725117f9782a178fdf0eab334949416ceaa831",
+      "first16_hex": "504b030414000008080067716a5da0af",
+      "format": "ZIP local header",
+      "first_member_name": "Base (Línies).gpkg"
+    }
+  ],
+  "qualification": "Bounded samples only, no full-file SHA or ZIP integrity claim."
+}
