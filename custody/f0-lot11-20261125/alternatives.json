@@ -1,0 +1,54 @@
+{
+  "utc": "2026-11-25T06:56:17.449763+00:00",
+  "aws": {
+    "status": "INSPECTED",
+    "root": {
+      "http": 200,
+      "bytes": 615,
+      "sha256": "92014944bf84a003758a8b4202b78f15beac3db2d03fe10f49164e9b10ef2fb7",
+      "content_type": "application/xml",
+      "prefix": "",
+      "directories": [
+        "hourly/"
+      ],
+      "keys": [
+        "index.html"
+      ]
+    },
+    "subdirectories": [
+      {
+        "http": 200,
+        "bytes": 464,
+        "sha256": "c813b781b340b5df1ed3aa506d1a2bb38e298ce3307baeee4e21b6676c002096",
+        "content_type": "application/xml",
+        "prefix": "hourly/",
+        "directories": [
+          "hourly/access/",
+          "hourly/archive/",
+          "hourly/doc/"
+        ],
+        "keys": []
+      }
+    ]
+  },
+  "amb": {
+    "status": "INSPECTED",
+    "layer": {
+      "http": 200,
+      "bytes": 15009,
+      "sha256": "364bc0f29488b4a6bb9ed8fb7aed280c5ce52136e5c86f4a8018945c87bd0e93",
+      "content_type": "text/plain; charset=UTF-8",
+      "hasAttachments": false
+    },
+    "response": {
+      "http": 200,
+      "bytes": 42383,
+      "sha256": "e201abac7f18657ce3ede99f4da52f84c36d58cad4a6f98f34a079c3a2d88af2",
+      "content_type": "application/json; charset=UTF-8"
+    },
+    "count": 496,
+    "documents_nonblank": 0,
+    "observ_nonblank": 0,
+    "qualification": "Only aggregate field presence, no document content or private names preserved; no evidence of external positional corroboration."
+  }
+}
