@@ -1,0 +1,121 @@
+{
+  "package": "ezdgn==0.3.2",
+  "wheel_sha256_expected": "e4a2f55306ea67e6a1d798e62e5675d52618f6f234471e09475942ff8ec6294c",
+  "status": "RUN_COMPLETED",
+  "results": [
+    {
+      "filename": "Districte_01_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.01.37",
+      "expected_sha256": "8f84b463d4521db112761b01befbf2039f5c1225d7475657166b122f5abf67f8",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 909824,
+      "sha256": "8f84b463d4521db112761b01befbf2039f5c1225d7475657166b122f5abf67f8",
+      "v8_markers": true,
+      "model_storage_count": 1,
+      "error": "InvalidDgnError('invalid V8 hierarchy at object index 0: header role has no supported child-count field')"
+    },
+    {
+      "filename": "Districte_02_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.02.37",
+      "expected_sha256": "d889743d20bb1360ba58dc27afaab34c977db6177196bd6c0631d0d5b21c3c1f",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 1075200,
+      "sha256": "d889743d20bb1360ba58dc27afaab34c977db6177196bd6c0631d0d5b21c3c1f",
+      "v8_markers": true,
+      "model_storage_count": 1,
+      "error": "InvalidDgnError('invalid V8 hierarchy at object index 167: header role has no supported child-count field')"
+    },
+    {
+      "filename": "Districte_06_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.06.37",
+      "expected_sha256": "7bd0098aafb8655788522c8ba600ad2079c0bb5c2b30f393ff906cf28b5e1dbc",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 1945600,
+      "sha256": "7bd0098aafb8655788522c8ba600ad2079c0bb5c2b30f393ff906cf28b5e1dbc",
+      "v8_markers": true,
+      "model_storage_count": 1,
+      "error": "InvalidDgnError('invalid V8 hierarchy at object index 1: header role has no supported child-count field')"
+    },
+    {
+      "filename": "Districte_07_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.07.37",
+      "expected_sha256": "3123a8d39ccdc92248352edf9eaffc0c1aa6f9cfa75d415cb1caf8671b17fa55",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 10221568,
+      "sha256": "3123a8d39ccdc92248352edf9eaffc0c1aa6f9cfa75d415cb1caf8671b17fa55",
+      "error": "InvalidDgnError('invalid V8/CFB container: DIFAT chain includes sector index 19963, but sector count is only 19963')"
+    },
+    {
+      "filename": "Districte_04_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.04.37",
+      "expected_sha256": "d27e215802b0856a0ea9be35b6a63fc69e5ffb2bf8e7e335dc51d3521406b862",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 2903040,
+      "sha256": "d27e215802b0856a0ea9be35b6a63fc69e5ffb2bf8e7e335dc51d3521406b862",
+      "v8_markers": true,
+      "model_storage_count": 1,
+      "error": "InvalidDgnError('invalid V8 hierarchy at object index 10: header role has no supported child-count field')"
+    },
+    {
+      "filename": "Districte_08_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.08.37",
+      "expected_sha256": "5053753b39300804fd72c0dcab9cce8ad9dd1b36815b5ffe25fa26b3e34ba710",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 5474816,
+      "sha256": "5053753b39300804fd72c0dcab9cce8ad9dd1b36815b5ffe25fa26b3e34ba710",
+      "v8_markers": true,
+      "model_storage_count": 1,
+      "error": "InvalidDgnError('invalid V8 hierarchy at object index 10: header role has no supported child-count field')"
+    },
+    {
+      "filename": "Districte_09_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.09.37",
+      "expected_sha256": "abadf2d80c57d71203c90f456cd9157572c2c9dedf2c6f61f538cef2edfa386a",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 1719296,
+      "sha256": "abadf2d80c57d71203c90f456cd9157572c2c9dedf2c6f61f538cef2edfa386a",
+      "v8_markers": true,
+      "model_storage_count": 1,
+      "error": "InvalidDgnError('invalid V8 hierarchy at object index 0: header role has no supported child-count field')"
+    },
+    {
+      "filename": "Districte_10_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.10.37",
+      "expected_sha256": "06dc905fe7159aa2b7905be367203d58aafdaccd2a18c395076c6d8e42b4c91b",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 1786368,
+      "sha256": "06dc905fe7159aa2b7905be367203d58aafdaccd2a18c395076c6d8e42b4c91b",
+      "v8_markers": true,
+      "model_storage_count": 1,
+      "error": "InvalidDgnError('invalid V8 hierarchy at object index 47: header role has no supported child-count field')"
+    },
+    {
+      "filename": "Districte_03_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.03.37",
+      "expected_sha256": "21c18b28cb08a9d5c901d7d35f15eb180c9868a8c996ffa9def7a1dab7b9dc6c",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 5264384,
+      "sha256": "21c18b28cb08a9d5c901d7d35f15eb180c9868a8c996ffa9def7a1dab7b9dc6c",
+      "v8_markers": true,
+      "model_storage_count": 1,
+      "error": "InvalidDgnError('invalid V8 hierarchy at object index 1: header role has no supported child-count field')"
+    },
+    {
+      "filename": "Districte_05_MTM.dgn",
+      "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.05.37",
+      "expected_sha256": "cde018325eda1939ac6e7a7c4223b11114d76609c74a015cbde716a73cdf386c",
+      "status": "IDENTITY_VERIFIED",
+      "bytes": 37072384,
+      "sha256": "cde018325eda1939ac6e7a7c4223b11114d76609c74a015cbde716a73cdf386c",
+      "error": "InvalidDgnError('invalid V8/CFB container: DIFAT chain includes sector index 72406, but sector count is only 72406')"
+    }
+  ],
+  "installation": {
+    "returncode": 0,
+    "stdout": "Collecting ezdgn==0.3.2 (from -r custody/f0-lot48-20261125/requirements.txt (line 1))\n  Downloading ezdgn-0.3.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (606 kB)\n     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 606.2/606.2 kB 15.3 MB/s eta 0:00:00\nInstalling collected packages: ezdgn\nSuccessfully installed ezdgn-0.3.2\n",
+    "stderr": ""
+  },
+  "installed_version": "0.3.2",
+  "utc": "2026-11-25T10:45:28.595239+00:00",
+  "qualification": "Pre-alpha reader, exact source identity checked; counts are reader outputs, not independent geometry validation or proof of reference expansion. No raw source redistribution."
+}
