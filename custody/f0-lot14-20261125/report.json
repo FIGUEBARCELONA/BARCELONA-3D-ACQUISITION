@@ -1,0 +1,269 @@
+{
+  "utc": "2026-11-25T07:07:27.909482+00:00",
+  "manuals": [
+    {
+      "name": "ghcnh_DOCUMENTATION.pdf",
+      "status": "BLOCKED",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    {
+      "name": "ghcnh-columns.pdf",
+      "status": "BLOCKED",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    {
+      "name": "ghcnh-source-list.pdf",
+      "status": "BLOCKED",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    }
+  ],
+  "xom": {
+    "status": "INDEX_INSPECTED",
+    "http": 200,
+    "sha256": "57d00f21a24e035ae4253754d7c7d69b75cf036f40810094432595830d585f94",
+    "bytes": 109170,
+    "forms": [
+      {
+        "tag": "form",
+        "attributes": {
+          "class": "smc-combobox"
+        }
+      },
+      {
+        "tag": "select",
+        "attributes": {
+          "id": "optone",
+          "name": "optone"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "init"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "0"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "1"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "2"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "3"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "4"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "5"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "6"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "7"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "8"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "9"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "10"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "11"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "12"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "13"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "14"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "15"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "16"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "17"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "18"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "19"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "20"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "21"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "22"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "23"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "24"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "25"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "26"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "27"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "28"
+        }
+      },
+      {
+        "tag": "select",
+        "attributes": {
+          "id": "opttwo",
+          "name": "opttwo"
+        }
+      },
+      {
+        "tag": "option",
+        "attributes": {
+          "value": "init"
+        }
+      },
+      {
+        "tag": "button",
+        "attributes": {
+          "id": "go",
+          "type": "button"
+        }
+      }
+    ],
+    "annual_links": [
+      "https://www.meteo.cat/wpweb/climatologia/dades-i-productes-climatics/anuari-de-dades/",
+      "https://www.meteo.cat/wpweb/climatologia/dades-i-productes-climatics/anuari-de-dades/",
+      "https://www.meteo.cat/wpweb/climatologia/dades-i-productes-climatics/anuari-de-dades/",
+      "https://static-m.meteo.cat/content/files/METEOCAT_AR_Q_2024CAT.pdf"
+    ],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2",
+      "https://www.meteo.cat/wpweb/wp-content/plugins/cookie-notice/js/front.min.js?ver=2.4.11",
+      "https://code.jquery.com/ui/1.10.3/jquery-ui.js?ver=1.10.3",
+      "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js?ver=1.4.1",
+      "https://www.meteo.cat/wpweb/wp-content/plugins/cf7-email-otp/cf7-email-otp.js",
+      "https://www.meteo.cat/wpweb/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1",
+      "https://www.meteo.cat/wpweb/wp-includes/js/jquery/ui/controlgroup.min.js?ver=1.12.1",
+      "https://www.meteo.cat/wpweb/wp-includes/js/jquery/ui/checkboxradio.min.js?ver=1.12.1",
+      "https://www.meteo.cat/wpweb/wp-includes/js/jquery/ui/button.min.js?ver=1.12.1",
+      "https://www.meteo.cat/wpweb/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1",
+      "https://www.meteo.cat/wpweb/wp-content/plugins/contact-form-7-datepicker-fix/js/jquery.ui.spinner.js?ver=5.7.2",
+      "https://www.meteo.cat/wpweb/wp-content/plugins/contact-form-7-datepicker-fix/js/cf7-datepicker-ie-fixer.js?ver=5.7.2",
+      "https://www.meteo.cat/wpweb/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4",
+      "https://www.meteo.cat/wpweb/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.1",
+      "https://www.meteo.cat/wpweb/wp-content/plugins/date-picker-for-contact-form-7//assents/js/script.js?ver=1.0.0",
+      "https://www.meteo.cat/wpweb/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=2.0.4",
+      "https://www.google.com/recaptcha/api.js?render=6LcsJdoaAAAAAMqvfBX777f8et97NAuxiJAKOiRI&ver=3.0",
+      "https://www.meteo.cat/wpweb/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.4.1",
+      "https://www.meteo.cat/wpweb/wp-content/themes/meteocat-static/assets/javascripts/meteocat.js?ver=0.1.26",
+      "https://www.meteo.cat/wpweb/wp-includes/js/wp-embed.min.js?ver=5.7.2"
+    ]
+  }
+}
