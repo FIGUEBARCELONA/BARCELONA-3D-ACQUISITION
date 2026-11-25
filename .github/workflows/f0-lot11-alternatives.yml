@@ -1,0 +1,51 @@
+name: F0 lot11 alternative NOAA and AMB document audit
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot11-alternatives.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Discover public NOAA object keys and AMB document references
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,json,hashlib,pathlib,datetime,collections,xml.etree.ElementTree as ET
+          out=pathlib.Path('custody/f0-lot11-20261125');out.mkdir(parents=True,exist_ok=True)
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'aws':{},'amb':{}}
+          def get(u,limit=20000000):
+              with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-F0-audit/1.0'}),timeout=35) as res:
+                  b=res.read(limit+1)
+                  if len(b)>limit:raise ValueError('limit')
+                  return b,{'http':res.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':res.headers.get('Content-Type')}
+          r=report['aws'];r['status']='BLOCKED'
+          try:
+              base='https://noaa-ghcnh-pds.s3.us-east-1.amazonaws.com/'
+              def ls(prefix):
+                  b,m=get(base+'?'+urllib.parse.urlencode({'list-type':2,'delimiter':'/','max-keys':50,'prefix':prefix}))
+                  x=ET.fromstring(b)
+                  if not x.tag.endswith('ListBucketResult'):raise ValueError('not bucket listing')
+                  return {**m,'prefix':prefix,'directories':[a.text for a in x.findall('.//{*}CommonPrefixes/{*}Prefix')],'keys':[a.text for a in x.findall('.//{*}Contents/{*}Key')]}
+              r['root']=ls('');r['subdirectories']=[ls(p) for p in r['root']['directories'][:6]]
+              r['status']='INSPECTED'
+          except Exception as e:r['error']=repr(e)
+          r=report['amb'];r['status']='BLOCKED'
+          try:
+              base='https://ide.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19'
+              b,m=get(base+'?f=pjson');j=json.loads(b);r['layer']={**m,'hasAttachments':j.get('hasAttachments')}
+              u=base+'/query?'+urllib.parse.urlencode({'where':'1=1','outFields':'objectid,documents,observ,temporalitat','returnGeometry':'false','f':'json'})
+              b,m=get(u);fs=json.loads(b)['features'];p=[f['attributes'] for f in fs]
+              r.update(response=m,count=len(p),documents_nonblank=sum(bool(str(x.get('documents') or '').strip()) for x in p),observ_nonblank=sum(bool(str(x.get('observ') or '').strip()) for x in p),status='INSPECTED',qualification='Only aggregate field presence, no document content or private names preserved; no evidence of external positional corroboration.')
+          except Exception as e:r['error']=repr(e)
+          (out/'alternatives.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot11-20261125/alternatives.json
+          git commit -m 'Preserve alternative source audit'
+          git push origin HEAD:audit/f0-lot06-20261125
