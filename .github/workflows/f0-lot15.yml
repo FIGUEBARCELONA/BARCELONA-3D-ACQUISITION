@@ -1,0 +1,59 @@
+name: F0 lot15 portable PDF extraction and XOM acquisition
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot15.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check pypdf==5.9.0
+      - name: Extract verified NOAA manuals and inspect XOM PDFs
+        shell: python
+        run: |
+          import pathlib,hashlib,json,datetime,urllib.request,io,re,concurrent.futures
+          from pypdf import PdfReader
+          src=pathlib.Path('custody/f0-lot13-20261125')
+          out=pathlib.Path('custody/f0-lot15-20261125');out.mkdir(parents=True,exist_ok=True)
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'manuals':[],'xom':[]}
+          prev=json.loads((src/'report.json').read_text())
+          for d in prev['docs']:
+              r={'name':d['key'],'status':'BLOCKED'}
+              try:
+                  b=(src/d['key']).read_bytes();assert hashlib.sha256(b).hexdigest()==d['sha256']
+                  pdf=PdfReader(io.BytesIO(b));pages=[p.extract_text() or '' for p in pdf.pages]
+                  name=pathlib.Path(d['key']).stem+'.txt'
+                  (out/name).write_text('\n\f\n'.join(pages))
+                  r.update(status='TEXT_EXTRACTED',sha256=d['sha256'],pages=len(pages),text_file=name)
+              except Exception as e:r['error']=repr(e)
+              report['manuals'].append(r)
+          rec=json.loads(pathlib.Path('custody/f0-lot14-20261125/recovery.json').read_text())
+          def audit(item):
+              year,kind,url=item;r={'year':year,'kind':kind,'url':url,'status':'BLOCKED'}
+              try:
+                  with urllib.request.urlopen(url,timeout=45) as x:
+                      b=x.read(30000001);r.update(http=x.status,bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+                  if len(b)>30000000 or not b.startswith(b'%PDF-'):raise ValueError('invalid or oversized PDF')
+                  pdf=PdfReader(io.BytesIO(b));r['pages']=len(pdf.pages)
+                  hits=[]
+                  for i,p in enumerate(pdf.pages):
+                      t=p.extract_text() or ''
+                      if re.search(r'\bXOM\b|Xarxa d.Observadors Meteorol|Barcelona|Barcelonès|Baix Llobregat',t,re.I):
+                          hits.append({'page':i+1,'matches':list(dict.fromkeys(re.findall(r'\bXOM\b|Barcelona|Barcelonès|Baix Llobregat',t,re.I)))})
+                  r.update(status='PDF_INSPECTED',relevant_pages=hits)
+              except Exception as e:r['error']=repr(e)
+              return r
+          items=[(a['year'],i,v['value']) for a in rec['xom']['annual'] for i,v in enumerate(a['types']) if i<2]
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:report['xom']=list(ex.map(audit,items))
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve audit and public-domain NOAA extracts
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot15-20261125
+          git commit -m 'Preserve portable manual extraction and XOM PDF audit'
+          git push origin HEAD:audit/f0-lot06-20261125
