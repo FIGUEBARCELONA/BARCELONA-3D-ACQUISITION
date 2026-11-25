@@ -1,0 +1,1027 @@
+{
+  "utc": "2026-11-25T10:41:49.203749+00:00",
+  "dgn_drivers": [],
+  "results": [
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.01.37",
+      "filename": "Districte_01_MTM.dgn",
+      "expected_bytes": 909824,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 909824,
+      "sha256": "8f84b463d4521db112761b01befbf2039f5c1225d7475657166b122f5abf67f8",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 1024
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 4145
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 874320
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    },
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.02.37",
+      "filename": "Districte_02_MTM.dgn",
+      "expected_bytes": 1075200,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 1075200,
+      "sha256": "d889743d20bb1360ba58dc27afaab34c977db6177196bd6c0631d0d5b21c3c1f",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 5120
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 4034
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 1038477
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    },
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.06.37",
+      "filename": "Districte_06_MTM.dgn",
+      "expected_bytes": 1945600,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 1945600,
+      "sha256": "7bd0098aafb8655788522c8ba600ad2079c0bb5c2b30f393ff906cf28b5e1dbc",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 4992
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 3940
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 1902531
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    },
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.07.37",
+      "filename": "Districte_07_MTM.dgn",
+      "expected_bytes": 10221568,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 10221568,
+      "sha256": "3123a8d39ccdc92248352edf9eaffc0c1aa6f9cfa75d415cb1caf8671b17fa55",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 5056
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 4017
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 10113345
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    },
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.04.37",
+      "filename": "Districte_04_MTM.dgn",
+      "expected_bytes": 2903040,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 2903040,
+      "sha256": "d27e215802b0856a0ea9be35b6a63fc69e5ffb2bf8e7e335dc51d3521406b862",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 1024
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 4109
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 2851342
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    },
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.08.37",
+      "filename": "Districte_08_MTM.dgn",
+      "expected_bytes": 5474816,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 5474816,
+      "sha256": "5053753b39300804fd72c0dcab9cce8ad9dd1b36815b5ffe25fa26b3e34ba710",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 1024
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 4120
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 5403173
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    },
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.09.37",
+      "filename": "Districte_09_MTM.dgn",
+      "expected_bytes": 1719296,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 1719296,
+      "sha256": "abadf2d80c57d71203c90f456cd9157572c2c9dedf2c6f61f538cef2edfa386a",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 1024
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 4186
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 1677220
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    },
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.10.37",
+      "filename": "Districte_10_MTM.dgn",
+      "expected_bytes": 1786368,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 1786368,
+      "sha256": "06dc905fe7159aa2b7905be367203d58aafdaccd2a18c395076c6d8e42b4c91b",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 1024
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 4153
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 1743649
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    },
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.03.37",
+      "filename": "Districte_03_MTM.dgn",
+      "expected_bytes": 5264384,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 5264384,
+      "sha256": "21c18b28cb08a9d5c901d7d35f15eb180c9868a8c996ffa9def7a1dab7b9dc6c",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 1024
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 4230
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 5194532
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    },
+    {
+      "url": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=140.05.37",
+      "filename": "Districte_05_MTM.dgn",
+      "expected_bytes": 37072384,
+      "status": "BYTES_VERIFIED",
+      "http": 200,
+      "bytes": 37072384,
+      "sha256": "cde018325eda1939ac6e7a7c4223b11114d76609c74a015cbde716a73cdf386c",
+      "signature_hex": "d0cf11e0a1b11ae10000000000000000",
+      "cfb": {
+        "sector_size": 512,
+        "directory_entries": [
+          {
+            "name": "Root Entry",
+            "type": 5,
+            "bytes": 5120
+          },
+          {
+            "name": "Dgn~H",
+            "type": 2,
+            "bytes": 79
+          },
+          {
+            "name": "Dgn~S",
+            "type": 2,
+            "bytes": 208
+          },
+          {
+            "name": "Dgn~Mf",
+            "type": 2,
+            "bytes": 14
+          },
+          {
+            "name": "\u0005SummaryInformation",
+            "type": 2,
+            "bytes": 18844
+          },
+          {
+            "name": "\u0005DocumentSummaryInformation",
+            "type": 2,
+            "bytes": 244
+          },
+          {
+            "name": "DgnTk",
+            "type": 2,
+            "bytes": 64
+          },
+          {
+            "name": "Dgn^Ix",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mix",
+            "type": 2,
+            "bytes": 45
+          },
+          {
+            "name": "Dgn^Nm",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 4069
+          },
+          {
+            "name": "Dgn-Md",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "#000000",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn^G",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "$1",
+            "type": 2,
+            "bytes": 14470136
+          },
+          {
+            "name": "$2",
+            "type": 2,
+            "bytes": 15159295
+          },
+          {
+            "name": "$3",
+            "type": 2,
+            "bytes": 7123327
+          },
+          {
+            "name": "Dgn^C",
+            "type": 1,
+            "bytes": 0
+          },
+          {
+            "name": "Dgn~Mh",
+            "type": 2,
+            "bytes": 174
+          }
+        ]
+      },
+      "file_identification": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.1, Code page: 1200, Locale ID: 1027, Total Editing Time: 00:00, Create Time/Date: Mon Jan 27 17:26:39 2025, Author: ANU0, Last Saved By: ANU0, Last Saved Time/Date: Tue Jan 28 17:16:23 2025, Revision Number: 12, Name of Creating Application: MicroStation , 0: 2, Title: 10, Subject: MicroSt"
+    }
+  ],
+  "qualification": "Byte count, SHA-256 and compound-directory inspection only. No assertion of complete embedded geometry, edition equivalence, or legal/topological validation."
+}
