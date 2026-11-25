@@ -1,0 +1,120 @@
+{
+  "utc": "2026-11-25T05:42:09.690293+00:00",
+  "results": {
+    "census": {
+      "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/fe177673-0f83-42e7-b35a-ddea901be8bc/resource/38babeec-5c47-43d3-84e7-b13a4b89004f/download",
+      "status": "BLOCKED",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    "horizons": {
+      "url": "https://ssd-api.jpl.nasa.gov/horizons.api?format=json&COMMAND=%2710%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%272.16774%2C41.38386%2C0.033%27&START_TIME=%272021-01-01+12%3A00%27&STOP_TIME=%272025-12-31+12%3A00%27&STEP_SIZE=%271+d%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&OBJ_DATA=%27NO%27",
+      "status": "BLOCKED",
+      "error": "<HTTPError 404: 'Not Found'>"
+    },
+    "wms": {
+      "url": "https://geoserveis.icgc.cat/servei/catalunya/orto-costa/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+      "status": "INSPECTED",
+      "http": 200,
+      "bytes": 68862,
+      "sha256": "399fcaa9ffe16fb54f4e9fb93cafe0bc7c374ec0e67383c06c6daf178f96514b",
+      "content_type": "text/xml; charset=UTF-8",
+      "layer_names": [
+        "orto-costa",
+        "orto-costa-rgb-10cm-199806-199811",
+        "orto-costa-rgb-10cm-200908-200909",
+        "orto-costa-rgb-10cm-201102-201111",
+        "orto-costa-rgb-10cm-201203-201204",
+        "orto-costa-rgb-10cm-201305-201312",
+        "orto-costa-rgb-15cm-201401-201406",
+        "orto-costa-rgb-10cm-201502-201504",
+        "orto-costa-rgb-15cm-201510-201511",
+        "orto-costa-rgb-15cm-201601-201602",
+        "orto-costa-rgb-25cm-201701-201701-temporal-gener",
+        "orto-costa-rgb-15cm-201702-201703",
+        "orto-costa-rgb-25cm-201803-201803-temporal-marc",
+        "orto-costa-rgb-10cm-201809-201812",
+        "orto-costa-rgb-10cm-201902-201902",
+        "orto-costa-rgb-10cm-201904-201905-temporal-abril-maig",
+        "orto-costa-rgb-25cm-201910-201910-temporal-octubre",
+        "orto-costa-rgb-10cm-201912-201912-temporal-desembre",
+        "orto-costa-rgb-10cm-202001-202001",
+        "orto-costa-rgb-10cm-202001-202002-temporal-gloria",
+        "orto-costa-rgb-10cm-202005-202005",
+        "orto-costa-rgb-10cm-202101-202101-temporal-filomena",
+        "orto-costa-rgb-10cm-202103-202103",
+        "orto-costa-rgb-10cm-202201-202201",
+        "orto-costa-rgb-10cm-202204-202204-temporal-celia",
+        "orto-costa-rgb-5cm-202206-202207-batimetria",
+        "orto-costa-rgb-10cm-202212-202301",
+        "orto-costa-rgb-10cm-202303-202304",
+        "orto-costa-rgb-10cm-202311-202312",
+        "orto-costa-rgb-10cm-202403-202404",
+        "orto-costa-rgb-10cm-202404-202404-temporal-nelson",
+        "orto-costa-rgb-10cm-202410-202411",
+        "orto-costa-rgb-10cm-202501-202504",
+        "orto-costa-rgb-10cm-202510-202511",
+        "orto-costa-rgb-10cm-202512-202512-temporal-desembre",
+        "orto-costa-rgb-10cm-202601-202601-temporal-harry",
+        "orto-costa-rgb-10cm-202602-202602"
+      ],
+      "layer_count": 37
+    },
+    "instamaps": {
+      "status": "BROWSER_INSPECTED",
+      "requests": [
+        {
+          "url": "https://www.instamaps.cat/static/geocatweb/cesium/Cesium.js",
+          "http": 200,
+          "type": "application/javascript"
+        },
+        {
+          "url": "https://www.instamaps.cat/static/geocatweb/cesium/Cesium.PinBuilder_IM.js",
+          "http": 200,
+          "type": "application/javascript"
+        },
+        {
+          "url": "https://www.instamaps.cat/static/geocatweb/cesium/cesium-navigation.js",
+          "http": 200,
+          "type": "application/javascript"
+        },
+        {
+          "url": "https://www.instamaps.cat/geocat/aplications/map/getCacheMapByBusinessId.action?businessId=c9ad61b54360453980cb30327e98d641",
+          "http": 200,
+          "type": "application/json;charset=UTF-8"
+        },
+        {
+          "url": "https://www.instamaps.cat/geocat/aplications/map/getCacheMapByBusinessId.action?businessId=c9ad61b54360453980cb30327e98d641",
+          "http": 200,
+          "type": "application/json;charset=UTF-8"
+        },
+        {
+          "url": "https://www.instamaps.cat/static/geocatweb/templates/modalDownloadLayer.html",
+          "http": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "https://www.instamaps.cat/static/geocatweb/templates/modalRemoveColumn.html",
+          "http": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "https://www.instamaps.cat/static/geocatweb/templates/modalEditColumnName.html",
+          "http": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "https://www.instamaps.cat/static/geocatweb/templates/modalAddNewColumn.html",
+          "http": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "https://www.instamaps.cat/capesuser/45341204/d6fb97c6f313e63acce55f605738f6cc.json",
+          "http": 200,
+          "type": "application/json"
+        }
+      ],
+      "title": "Instamaps",
+      "qualification": "Only public network request metadata; no authenticated data."
+    }
+  }
+}
