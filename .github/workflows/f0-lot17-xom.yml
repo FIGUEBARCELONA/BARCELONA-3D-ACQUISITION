@@ -1,0 +1,71 @@
+name: F0 lot17 XOM coordinate reconciliation
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot17-xom.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check pymupdf==1.26.5
+      - name: Reconcile XOM rows and months
+        shell: python
+        run: |
+          import pathlib,json,hashlib,urllib.request,datetime,re,concurrent.futures
+          from decimal import Decimal
+          import fitz
+          out=pathlib.Path('custody/f0-lot17-20261125')
+          prev=json.loads((out/'report.json').read_text())
+          urls={f['year']:f['url'] for f in json.loads(pathlib.Path('custody/f0-lot15-20261125/report.json').read_text())['xom'] if f['kind']==1}
+          months='GEN FEB MAR ABR MAI JUN JUL AGO SET OCT NOV DES ANY'.split()
+          def inspect(f):
+              r={'year':f['year'],'status':'BLOCKED','rows':[]}
+              try:
+                  with urllib.request.urlopen(urls[f['year']],timeout=30) as x:b=x.read(10000000)
+                  assert hashlib.sha256(b).hexdigest()==f['sha256']
+                  d=fitz.open(stream=b,filetype='pdf')
+                  p=d[46]; words=p.get_text('words')
+                  # PyMuPDF text coordinates are unrotated; transform only if header runs vertically.
+                  def transform(w):
+                      q=fitz.Rect(w[:4])*p.rotation_matrix
+                      return (q.x0,q.y0,q.x1,q.y1,*w[4:])
+                  candidates=[words,[transform(w) for w in words]]
+                  def score(ws):
+                      h={w[4]:w for w in ws if w[4] in months}
+                      if len(h)!=13:return -1
+                      xs=[(h[m][0]+h[m][2])/2 for m in months]
+                      ys=[(h[m][1]+h[m][3])/2 for m in months]
+                      return (max(xs)-min(xs))-(max(ys)-min(ys)) if all(a<b for a,b in zip(xs,xs[1:])) else -1
+                  ws=max(candidates,key=score)
+                  if score(ws)<0:raise ValueError('header alignment unresolved')
+                  h={w[4]:w for w in ws if w[4] in months}
+                  xs=[(h[m][0]+h[m][2])/2 for m in months];spacing=min(b-a for a,b in zip(xs,xs[1:]))
+                  for w in ws:
+                      if w[4] not in ('BN062','BN022','BN040','BN007'):continue
+                      cy=(w[1]+w[3])/2;line=sorted([z for z in ws if abs((z[1]+z[3])/2-cy)<3],key=lambda z:z[0])
+                      cells=[]
+                      for m,x in zip(months,xs):
+                          vals=[z[4] for z in line if abs((z[0]+z[2])/2-x)<spacing*.48]
+                          cells.append({'column':m,'tokens':vals})
+                      nums=[]
+                      for c in cells:
+                          t=' '.join(c['tokens'])
+                          nums.append(str(Decimal(t.replace(',','.'))) if re.fullmatch(r'\d+[.,]\d+',t) else None)
+                      total=None if any(n is None for n in nums) else str(sum(Decimal(n) for n in nums[:12])-Decimal(nums[12]))
+                      r['rows'].append({'station':w[4],'page':47,'rotation':p.rotation,'line':' '.join(z[4] for z in line),'cells':cells,'values_mm':nums,'sum_minus_printed_annual_mm':total,'status':'ALL_13_NUMERIC' if total is not None else 'REVIEW_REQUIRED'})
+                  r['status']='ROWS_INSPECTED'
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:rs=list(ex.map(inspect,prev['xom']))
+          (out/'xom-rows.json').write_text(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':rs,'qualification':'Text coordinate extraction; visual check and source footnotes still required; no imputation.'},ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot17-20261125/xom-rows.json
+          git commit -m 'Preserve XOM monthly coordinate extraction'
+          git push origin HEAD:audit/f0-lot06-20261125
