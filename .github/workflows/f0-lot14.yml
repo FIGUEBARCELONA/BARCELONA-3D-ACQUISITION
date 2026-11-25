@@ -1,0 +1,52 @@
+name: F0 lot14 NOAA manuals and XOM annual index
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot14.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract preserved manuals and inspect annual index
+        shell: python
+        run: |
+          import pathlib,hashlib,subprocess,json,datetime,urllib.request,urllib.parse,re
+          from html.parser import HTMLParser
+          src=pathlib.Path('custody/f0-lot13-20261125')
+          out=pathlib.Path('custody/f0-lot14-20261125');out.mkdir(parents=True,exist_ok=True)
+          prev=json.loads((src/'report.json').read_text())
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'manuals':[],'xom':{}}
+          for d in prev['docs']:
+              r={'name':d['key'],'status':'BLOCKED'}
+              try:
+                  p=src/d['key'];b=p.read_bytes();assert hashlib.sha256(b).hexdigest()==d['sha256']
+                  t=subprocess.check_output(['pdftotext','-layout',str(p),'-']).decode()
+                  name=p.stem+'.txt';(out/name).write_text(t)
+                  r.update(status='TEXT_EXTRACTED',sha256=d['sha256'],pages=len(t.rstrip('\f').split('\f')),text_file=name,text_sha256=hashlib.sha256(t.encode()).hexdigest())
+              except Exception as e:r['error']=repr(e)
+              report['manuals'].append(r)
+          class Parser(HTMLParser):
+              def __init__(self):super().__init__();self.forms=[];self.links=[];self.scripts=[]
+              def handle_starttag(self,tag,attrs):
+                  a=dict(attrs)
+                  if tag in ('form','input','select','option','button'):self.forms.append({'tag':tag,'attributes':{k:v for k,v in a.items() if k in ('action','method','name','id','value','type','data-action','class')}})
+                  if tag=='a' and a.get('href'):self.links.append(a['href'])
+                  if tag=='script' and a.get('src'):self.scripts.append(a['src'])
+          r=report['xom'];r['status']='BLOCKED'
+          try:
+              u='https://www.meteo.cat/wpweb/climatologia/dades-i-productes-climatics/anuari-de-dades/estacions-meteorologiques/'
+              with urllib.request.urlopen(u,timeout=35) as x:b=x.read(4000000);r.update(http=x.status,sha256=hashlib.sha256(b).hexdigest(),bytes=len(b))
+              p=Parser();p.feed(b.decode(errors='replace'));r.update(status='INDEX_INSPECTED',forms=p.forms,annual_links=[urllib.parse.urljoin(u,v) for v in p.links if re.search(r'anuari|202[1-5]|\.pdf',v,re.I)],scripts=p.scripts)
+          except Exception as e:r['error']=repr(e)
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve extracted documentation and audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot14-20261125
+          git commit -m 'Preserve NOAA manual extracts and annual index audit'
+          git push origin HEAD:audit/f0-lot06-20261125
