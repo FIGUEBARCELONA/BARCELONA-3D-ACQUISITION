@@ -1,0 +1,722 @@
+{
+  "utc": "2026-11-25T08:48:45.521350+00:00",
+  "results": [
+    {
+      "name": "lidar_metadata",
+      "url": "https://datacloud.ide.cat/metadades/lidar-territorial-metadades.zip",
+      "status": "BLOCKED",
+      "error": "URLError(TimeoutError('timed out'))"
+    },
+    {
+      "name": "airport_2021",
+      "url": "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2021.csv",
+      "status": "CSV_SUBUNIVERSE_INSPECTED",
+      "http": 200,
+      "content_type": "text/csv",
+      "bytes": 7083993,
+      "sha256": "1cc441bbcd9683fe2c60f284d9b48416b0ccec72f5c466b5024659edd0dfd353",
+      "fields": [
+        "YEAR",
+        "MONTH_NUM",
+        "MONTH_MON",
+        "FLT_DATE",
+        "APT_ICAO",
+        "APT_NAME",
+        "STATE_NAME",
+        "FLT_DEP_1",
+        "FLT_ARR_1",
+        "FLT_TOT_1",
+        "FLT_DEP_IFR_2",
+        "FLT_ARR_IFR_2",
+        "FLT_TOT_IFR_2"
+      ],
+      "dates": 365,
+      "expected_days": 365,
+      "duplicates": 0,
+      "sum_mismatches": 0,
+      "nonblank": {
+        "FLT_DEP_1": 365,
+        "FLT_ARR_1": 365,
+        "FLT_TOT_1": 365,
+        "FLT_DEP_IFR_2": 365,
+        "FLT_ARR_IFR_2": 365,
+        "FLT_TOT_IFR_2": 365
+      },
+      "sums": {
+        "FLT_DEP_1": 81819,
+        "FLT_ARR_1": 81875,
+        "FLT_TOT_1": 163694,
+        "FLT_DEP_IFR_2": 81151,
+        "FLT_ARR_IFR_2": 80369,
+        "FLT_TOT_IFR_2": 161520
+      },
+      "monthly": {
+        "2021-01": {
+          "FLT_DEP_1": 2784,
+          "FLT_ARR_1": 2785,
+          "FLT_TOT_1": 5569,
+          "FLT_DEP_IFR_2": 2755,
+          "FLT_ARR_IFR_2": 2706,
+          "FLT_TOT_IFR_2": 5461
+        },
+        "2021-02": {
+          "FLT_DEP_1": 1987,
+          "FLT_ARR_1": 1998,
+          "FLT_TOT_1": 3985,
+          "FLT_DEP_IFR_2": 1955,
+          "FLT_ARR_IFR_2": 1927,
+          "FLT_TOT_IFR_2": 3882
+        },
+        "2021-03": {
+          "FLT_DEP_1": 2644,
+          "FLT_ARR_1": 2643,
+          "FLT_TOT_1": 5287,
+          "FLT_DEP_IFR_2": 2540,
+          "FLT_ARR_IFR_2": 2458,
+          "FLT_TOT_IFR_2": 4998
+        },
+        "2021-04": {
+          "FLT_DEP_1": 3181,
+          "FLT_ARR_1": 3183,
+          "FLT_TOT_1": 6364,
+          "FLT_DEP_IFR_2": 3148,
+          "FLT_ARR_IFR_2": 3093,
+          "FLT_TOT_IFR_2": 6241
+        },
+        "2021-05": {
+          "FLT_DEP_1": 4670,
+          "FLT_ARR_1": 4678,
+          "FLT_TOT_1": 9348,
+          "FLT_DEP_IFR_2": 4624,
+          "FLT_ARR_IFR_2": 4567,
+          "FLT_TOT_IFR_2": 9191
+        },
+        "2021-06": {
+          "FLT_DEP_1": 6667,
+          "FLT_ARR_1": 6693,
+          "FLT_TOT_1": 13360,
+          "FLT_DEP_IFR_2": 6620,
+          "FLT_ARR_IFR_2": 6572,
+          "FLT_TOT_IFR_2": 13192
+        },
+        "2021-07": {
+          "FLT_DEP_1": 9882,
+          "FLT_ARR_1": 9871,
+          "FLT_TOT_1": 19753,
+          "FLT_DEP_IFR_2": 9802,
+          "FLT_ARR_IFR_2": 9706,
+          "FLT_TOT_IFR_2": 19508
+        },
+        "2021-08": {
+          "FLT_DEP_1": 10922,
+          "FLT_ARR_1": 10935,
+          "FLT_TOT_1": 21857,
+          "FLT_DEP_IFR_2": 10840,
+          "FLT_ARR_IFR_2": 10795,
+          "FLT_TOT_IFR_2": 21635
+        },
+        "2021-09": {
+          "FLT_DEP_1": 10423,
+          "FLT_ARR_1": 10423,
+          "FLT_TOT_1": 20846,
+          "FLT_DEP_IFR_2": 10369,
+          "FLT_ARR_IFR_2": 10271,
+          "FLT_TOT_IFR_2": 20640
+        },
+        "2021-10": {
+          "FLT_DEP_1": 10020,
+          "FLT_ARR_1": 10026,
+          "FLT_TOT_1": 20046,
+          "FLT_DEP_IFR_2": 9951,
+          "FLT_ARR_IFR_2": 9865,
+          "FLT_TOT_IFR_2": 19816
+        },
+        "2021-11": {
+          "FLT_DEP_1": 8915,
+          "FLT_ARR_1": 8919,
+          "FLT_TOT_1": 17834,
+          "FLT_DEP_IFR_2": 8869,
+          "FLT_ARR_IFR_2": 8799,
+          "FLT_TOT_IFR_2": 17668
+        },
+        "2021-12": {
+          "FLT_DEP_1": 9724,
+          "FLT_ARR_1": 9721,
+          "FLT_TOT_1": 19445,
+          "FLT_DEP_IFR_2": 9678,
+          "FLT_ARR_IFR_2": 9610,
+          "FLT_TOT_IFR_2": 19288
+        }
+      }
+    },
+    {
+      "name": "airport_2022",
+      "url": "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2022.csv",
+      "status": "CSV_SUBUNIVERSE_INSPECTED",
+      "http": 200,
+      "content_type": "text/csv",
+      "bytes": 7211028,
+      "sha256": "b68e1f35baf4a0c77390fc36f2bf309ea55b8ea13b1d23c85516f3c9fe436e5b",
+      "fields": [
+        "YEAR",
+        "MONTH_NUM",
+        "MONTH_MON",
+        "FLT_DATE",
+        "APT_ICAO",
+        "APT_NAME",
+        "STATE_NAME",
+        "FLT_DEP_1",
+        "FLT_ARR_1",
+        "FLT_TOT_1",
+        "FLT_DEP_IFR_2",
+        "FLT_ARR_IFR_2",
+        "FLT_TOT_IFR_2"
+      ],
+      "dates": 365,
+      "expected_days": 365,
+      "duplicates": 0,
+      "sum_mismatches": 0,
+      "nonblank": {
+        "FLT_DEP_1": 365,
+        "FLT_ARR_1": 365,
+        "FLT_TOT_1": 365,
+        "FLT_DEP_IFR_2": 365,
+        "FLT_ARR_IFR_2": 365,
+        "FLT_TOT_IFR_2": 365
+      },
+      "sums": {
+        "FLT_DEP_1": 141717,
+        "FLT_ARR_1": 141727,
+        "FLT_TOT_1": 283444,
+        "FLT_DEP_IFR_2": 140297,
+        "FLT_ARR_IFR_2": 139501,
+        "FLT_TOT_IFR_2": 279798
+      },
+      "monthly": {
+        "2022-01": {
+          "FLT_DEP_1": 7784,
+          "FLT_ARR_1": 7787,
+          "FLT_TOT_1": 15571,
+          "FLT_DEP_IFR_2": 7727,
+          "FLT_ARR_IFR_2": 7667,
+          "FLT_TOT_IFR_2": 15394
+        },
+        "2022-02": {
+          "FLT_DEP_1": 7621,
+          "FLT_ARR_1": 7631,
+          "FLT_TOT_1": 15252,
+          "FLT_DEP_IFR_2": 7480,
+          "FLT_ARR_IFR_2": 7449,
+          "FLT_TOT_IFR_2": 14929
+        },
+        "2022-03": {
+          "FLT_DEP_1": 9972,
+          "FLT_ARR_1": 9962,
+          "FLT_TOT_1": 19934,
+          "FLT_DEP_IFR_2": 9938,
+          "FLT_ARR_IFR_2": 9850,
+          "FLT_TOT_IFR_2": 19788
+        },
+        "2022-04": {
+          "FLT_DEP_1": 12320,
+          "FLT_ARR_1": 12327,
+          "FLT_TOT_1": 24647,
+          "FLT_DEP_IFR_2": 12265,
+          "FLT_ARR_IFR_2": 12203,
+          "FLT_TOT_IFR_2": 24468
+        },
+        "2022-05": {
+          "FLT_DEP_1": 13339,
+          "FLT_ARR_1": 13326,
+          "FLT_TOT_1": 26665,
+          "FLT_DEP_IFR_2": 13247,
+          "FLT_ARR_IFR_2": 13162,
+          "FLT_TOT_IFR_2": 26409
+        },
+        "2022-06": {
+          "FLT_DEP_1": 13323,
+          "FLT_ARR_1": 13334,
+          "FLT_TOT_1": 26657,
+          "FLT_DEP_IFR_2": 13232,
+          "FLT_ARR_IFR_2": 13160,
+          "FLT_TOT_IFR_2": 26392
+        },
+        "2022-07": {
+          "FLT_DEP_1": 14133,
+          "FLT_ARR_1": 14133,
+          "FLT_TOT_1": 28266,
+          "FLT_DEP_IFR_2": 14038,
+          "FLT_ARR_IFR_2": 13949,
+          "FLT_TOT_IFR_2": 27987
+        },
+        "2022-08": {
+          "FLT_DEP_1": 13894,
+          "FLT_ARR_1": 13886,
+          "FLT_TOT_1": 27780,
+          "FLT_DEP_IFR_2": 13790,
+          "FLT_ARR_IFR_2": 13731,
+          "FLT_TOT_IFR_2": 27521
+        },
+        "2022-09": {
+          "FLT_DEP_1": 13556,
+          "FLT_ARR_1": 13591,
+          "FLT_TOT_1": 27147,
+          "FLT_DEP_IFR_2": 13024,
+          "FLT_ARR_IFR_2": 12985,
+          "FLT_TOT_IFR_2": 26009
+        },
+        "2022-10": {
+          "FLT_DEP_1": 13703,
+          "FLT_ARR_1": 13679,
+          "FLT_TOT_1": 27382,
+          "FLT_DEP_IFR_2": 13613,
+          "FLT_ARR_IFR_2": 13532,
+          "FLT_TOT_IFR_2": 27145
+        },
+        "2022-11": {
+          "FLT_DEP_1": 10890,
+          "FLT_ARR_1": 10899,
+          "FLT_TOT_1": 21789,
+          "FLT_DEP_IFR_2": 10835,
+          "FLT_ARR_IFR_2": 10784,
+          "FLT_TOT_IFR_2": 21619
+        },
+        "2022-12": {
+          "FLT_DEP_1": 11182,
+          "FLT_ARR_1": 11172,
+          "FLT_TOT_1": 22354,
+          "FLT_DEP_IFR_2": 11108,
+          "FLT_ARR_IFR_2": 11029,
+          "FLT_TOT_IFR_2": 22137
+        }
+      }
+    },
+    {
+      "name": "airport_2023",
+      "url": "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2023.csv",
+      "status": "CSV_SUBUNIVERSE_INSPECTED",
+      "http": 200,
+      "content_type": "text/csv",
+      "bytes": 7225803,
+      "sha256": "7d6657ed8ecf47676ce25080cec7095e6c1c13bb173a6e119c59facd98e80526",
+      "fields": [
+        "YEAR",
+        "MONTH_NUM",
+        "MONTH_MON",
+        "FLT_DATE",
+        "APT_ICAO",
+        "APT_NAME",
+        "STATE_NAME",
+        "FLT_DEP_1",
+        "FLT_ARR_1",
+        "FLT_TOT_1",
+        "FLT_DEP_IFR_2",
+        "FLT_ARR_IFR_2",
+        "FLT_TOT_IFR_2"
+      ],
+      "dates": 365,
+      "expected_days": 365,
+      "duplicates": 0,
+      "sum_mismatches": 0,
+      "nonblank": {
+        "FLT_DEP_1": 365,
+        "FLT_ARR_1": 365,
+        "FLT_TOT_1": 365,
+        "FLT_DEP_IFR_2": 365,
+        "FLT_ARR_IFR_2": 365,
+        "FLT_TOT_IFR_2": 365
+      },
+      "sums": {
+        "FLT_DEP_1": 159483,
+        "FLT_ARR_1": 159494,
+        "FLT_TOT_1": 318977,
+        "FLT_DEP_IFR_2": 158203,
+        "FLT_ARR_IFR_2": 157208,
+        "FLT_TOT_IFR_2": 315411
+      },
+      "monthly": {
+        "2023-01": {
+          "FLT_DEP_1": 10463,
+          "FLT_ARR_1": 10467,
+          "FLT_TOT_1": 20930,
+          "FLT_DEP_IFR_2": 10413,
+          "FLT_ARR_IFR_2": 10335,
+          "FLT_TOT_IFR_2": 20748
+        },
+        "2023-02": {
+          "FLT_DEP_1": 10375,
+          "FLT_ARR_1": 10394,
+          "FLT_TOT_1": 20769,
+          "FLT_DEP_IFR_2": 10303,
+          "FLT_ARR_IFR_2": 10260,
+          "FLT_TOT_IFR_2": 20563
+        },
+        "2023-03": {
+          "FLT_DEP_1": 12102,
+          "FLT_ARR_1": 12077,
+          "FLT_TOT_1": 24179,
+          "FLT_DEP_IFR_2": 12030,
+          "FLT_ARR_IFR_2": 11893,
+          "FLT_TOT_IFR_2": 23923
+        },
+        "2023-04": {
+          "FLT_DEP_1": 13439,
+          "FLT_ARR_1": 13450,
+          "FLT_TOT_1": 26889,
+          "FLT_DEP_IFR_2": 13351,
+          "FLT_ARR_IFR_2": 13287,
+          "FLT_TOT_IFR_2": 26638
+        },
+        "2023-05": {
+          "FLT_DEP_1": 14362,
+          "FLT_ARR_1": 14355,
+          "FLT_TOT_1": 28717,
+          "FLT_DEP_IFR_2": 13834,
+          "FLT_ARR_IFR_2": 13758,
+          "FLT_TOT_IFR_2": 27592
+        },
+        "2023-06": {
+          "FLT_DEP_1": 14124,
+          "FLT_ARR_1": 14142,
+          "FLT_TOT_1": 28266,
+          "FLT_DEP_IFR_2": 14001,
+          "FLT_ARR_IFR_2": 13900,
+          "FLT_TOT_IFR_2": 27901
+        },
+        "2023-07": {
+          "FLT_DEP_1": 15325,
+          "FLT_ARR_1": 15328,
+          "FLT_TOT_1": 30653,
+          "FLT_DEP_IFR_2": 15260,
+          "FLT_ARR_IFR_2": 15158,
+          "FLT_TOT_IFR_2": 30418
+        },
+        "2023-08": {
+          "FLT_DEP_1": 14928,
+          "FLT_ARR_1": 14922,
+          "FLT_TOT_1": 29850,
+          "FLT_DEP_IFR_2": 14883,
+          "FLT_ARR_IFR_2": 14809,
+          "FLT_TOT_IFR_2": 29692
+        },
+        "2023-09": {
+          "FLT_DEP_1": 14229,
+          "FLT_ARR_1": 14229,
+          "FLT_TOT_1": 28458,
+          "FLT_DEP_IFR_2": 14177,
+          "FLT_ARR_IFR_2": 14091,
+          "FLT_TOT_IFR_2": 28268
+        },
+        "2023-10": {
+          "FLT_DEP_1": 14541,
+          "FLT_ARR_1": 14529,
+          "FLT_TOT_1": 29070,
+          "FLT_DEP_IFR_2": 14461,
+          "FLT_ARR_IFR_2": 14379,
+          "FLT_TOT_IFR_2": 28840
+        },
+        "2023-11": {
+          "FLT_DEP_1": 12584,
+          "FLT_ARR_1": 12587,
+          "FLT_TOT_1": 25171,
+          "FLT_DEP_IFR_2": 12533,
+          "FLT_ARR_IFR_2": 12454,
+          "FLT_TOT_IFR_2": 24987
+        },
+        "2023-12": {
+          "FLT_DEP_1": 13011,
+          "FLT_ARR_1": 13014,
+          "FLT_TOT_1": 26025,
+          "FLT_DEP_IFR_2": 12957,
+          "FLT_ARR_IFR_2": 12884,
+          "FLT_TOT_IFR_2": 25841
+        }
+      }
+    },
+    {
+      "name": "airport_2024",
+      "url": "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2024.csv",
+      "status": "CSV_SUBUNIVERSE_INSPECTED",
+      "http": 200,
+      "content_type": "text/csv",
+      "bytes": 8200707,
+      "sha256": "399e19bc7ad521c5410757a9b598a4e63a4797eacba0264542b014e1c54a5f0f",
+      "fields": [
+        "YEAR",
+        "MONTH_NUM",
+        "MONTH_MON",
+        "FLT_DATE",
+        "APT_ICAO",
+        "APT_NAME",
+        "STATE_NAME",
+        "FLT_DEP_1",
+        "FLT_ARR_1",
+        "FLT_TOT_1",
+        "FLT_DEP_IFR_2",
+        "FLT_ARR_IFR_2",
+        "FLT_TOT_IFR_2"
+      ],
+      "dates": 366,
+      "expected_days": 366,
+      "duplicates": 0,
+      "sum_mismatches": 0,
+      "nonblank": {
+        "FLT_DEP_1": 366,
+        "FLT_ARR_1": 366,
+        "FLT_TOT_1": 366,
+        "FLT_DEP_IFR_2": 366,
+        "FLT_ARR_IFR_2": 366,
+        "FLT_TOT_IFR_2": 366
+      },
+      "sums": {
+        "FLT_DEP_1": 173982,
+        "FLT_ARR_1": 174010,
+        "FLT_TOT_1": 347992,
+        "FLT_DEP_IFR_2": 173197,
+        "FLT_ARR_IFR_2": 172237,
+        "FLT_TOT_IFR_2": 345434
+      },
+      "monthly": {
+        "2024-01": {
+          "FLT_DEP_1": 11803,
+          "FLT_ARR_1": 11809,
+          "FLT_TOT_1": 23612,
+          "FLT_DEP_IFR_2": 11768,
+          "FLT_ARR_IFR_2": 11688,
+          "FLT_TOT_IFR_2": 23456
+        },
+        "2024-02": {
+          "FLT_DEP_1": 11797,
+          "FLT_ARR_1": 11788,
+          "FLT_TOT_1": 23585,
+          "FLT_DEP_IFR_2": 11745,
+          "FLT_ARR_IFR_2": 11651,
+          "FLT_TOT_IFR_2": 23396
+        },
+        "2024-03": {
+          "FLT_DEP_1": 13505,
+          "FLT_ARR_1": 13509,
+          "FLT_TOT_1": 27014,
+          "FLT_DEP_IFR_2": 13458,
+          "FLT_ARR_IFR_2": 13370,
+          "FLT_TOT_IFR_2": 26828
+        },
+        "2024-04": {
+          "FLT_DEP_1": 14909,
+          "FLT_ARR_1": 14905,
+          "FLT_TOT_1": 29814,
+          "FLT_DEP_IFR_2": 14859,
+          "FLT_ARR_IFR_2": 14763,
+          "FLT_TOT_IFR_2": 29622
+        },
+        "2024-05": {
+          "FLT_DEP_1": 15793,
+          "FLT_ARR_1": 15811,
+          "FLT_TOT_1": 31604,
+          "FLT_DEP_IFR_2": 15756,
+          "FLT_ARR_IFR_2": 15610,
+          "FLT_TOT_IFR_2": 31366
+        },
+        "2024-06": {
+          "FLT_DEP_1": 15684,
+          "FLT_ARR_1": 15676,
+          "FLT_TOT_1": 31360,
+          "FLT_DEP_IFR_2": 15609,
+          "FLT_ARR_IFR_2": 15496,
+          "FLT_TOT_IFR_2": 31105
+        },
+        "2024-07": {
+          "FLT_DEP_1": 16385,
+          "FLT_ARR_1": 16385,
+          "FLT_TOT_1": 32770,
+          "FLT_DEP_IFR_2": 16303,
+          "FLT_ARR_IFR_2": 16191,
+          "FLT_TOT_IFR_2": 32494
+        },
+        "2024-08": {
+          "FLT_DEP_1": 16054,
+          "FLT_ARR_1": 16065,
+          "FLT_TOT_1": 32119,
+          "FLT_DEP_IFR_2": 15987,
+          "FLT_ARR_IFR_2": 15935,
+          "FLT_TOT_IFR_2": 31922
+        },
+        "2024-09": {
+          "FLT_DEP_1": 15841,
+          "FLT_ARR_1": 15849,
+          "FLT_TOT_1": 31690,
+          "FLT_DEP_IFR_2": 15744,
+          "FLT_ARR_IFR_2": 15712,
+          "FLT_TOT_IFR_2": 31456
+        },
+        "2024-10": {
+          "FLT_DEP_1": 15759,
+          "FLT_ARR_1": 15755,
+          "FLT_TOT_1": 31514,
+          "FLT_DEP_IFR_2": 15650,
+          "FLT_ARR_IFR_2": 15595,
+          "FLT_TOT_IFR_2": 31245
+        },
+        "2024-11": {
+          "FLT_DEP_1": 13018,
+          "FLT_ARR_1": 13019,
+          "FLT_TOT_1": 26037,
+          "FLT_DEP_IFR_2": 12937,
+          "FLT_ARR_IFR_2": 12911,
+          "FLT_TOT_IFR_2": 25848
+        },
+        "2024-12": {
+          "FLT_DEP_1": 13434,
+          "FLT_ARR_1": 13439,
+          "FLT_TOT_1": 26873,
+          "FLT_DEP_IFR_2": 13381,
+          "FLT_ARR_IFR_2": 13315,
+          "FLT_TOT_IFR_2": 26696
+        }
+      }
+    },
+    {
+      "name": "airport_2025",
+      "url": "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2025.csv",
+      "status": "CSV_SUBUNIVERSE_INSPECTED",
+      "http": 200,
+      "content_type": "text/csv",
+      "bytes": 8275390,
+      "sha256": "b9dae4924d77e7229b8cea43e6219a62c2ef914ed5bae3c6760b39902a6402c1",
+      "fields": [
+        "YEAR",
+        "MONTH_NUM",
+        "MONTH_MON",
+        "FLT_DATE",
+        "APT_ICAO",
+        "APT_NAME",
+        "STATE_NAME",
+        "FLT_DEP_1",
+        "FLT_ARR_1",
+        "FLT_TOT_1",
+        "FLT_DEP_IFR_2",
+        "FLT_ARR_IFR_2",
+        "FLT_TOT_IFR_2"
+      ],
+      "dates": 365,
+      "expected_days": 365,
+      "duplicates": 0,
+      "sum_mismatches": 0,
+      "nonblank": {
+        "FLT_DEP_1": 365,
+        "FLT_ARR_1": 365,
+        "FLT_TOT_1": 365,
+        "FLT_DEP_IFR_2": 365,
+        "FLT_ARR_IFR_2": 365,
+        "FLT_TOT_IFR_2": 365
+      },
+      "sums": {
+        "FLT_DEP_1": 180403,
+        "FLT_ARR_1": 180428,
+        "FLT_TOT_1": 360831,
+        "FLT_DEP_IFR_2": 179569,
+        "FLT_ARR_IFR_2": 178852,
+        "FLT_TOT_IFR_2": 358421
+      },
+      "monthly": {
+        "2025-01": {
+          "FLT_DEP_1": 12303,
+          "FLT_ARR_1": 12288,
+          "FLT_TOT_1": 24591,
+          "FLT_DEP_IFR_2": 12231,
+          "FLT_ARR_IFR_2": 12157,
+          "FLT_TOT_IFR_2": 24388
+        },
+        "2025-02": {
+          "FLT_DEP_1": 12205,
+          "FLT_ARR_1": 12213,
+          "FLT_TOT_1": 24418,
+          "FLT_DEP_IFR_2": 12166,
+          "FLT_ARR_IFR_2": 12095,
+          "FLT_TOT_IFR_2": 24261
+        },
+        "2025-03": {
+          "FLT_DEP_1": 14202,
+          "FLT_ARR_1": 14212,
+          "FLT_TOT_1": 28414,
+          "FLT_DEP_IFR_2": 14142,
+          "FLT_ARR_IFR_2": 14000,
+          "FLT_TOT_IFR_2": 28142
+        },
+        "2025-04": {
+          "FLT_DEP_1": 15420,
+          "FLT_ARR_1": 15420,
+          "FLT_TOT_1": 30840,
+          "FLT_DEP_IFR_2": 15362,
+          "FLT_ARR_IFR_2": 15297,
+          "FLT_TOT_IFR_2": 30659
+        },
+        "2025-05": {
+          "FLT_DEP_1": 16559,
+          "FLT_ARR_1": 16580,
+          "FLT_TOT_1": 33139,
+          "FLT_DEP_IFR_2": 16489,
+          "FLT_ARR_IFR_2": 16438,
+          "FLT_TOT_IFR_2": 32927
+        },
+        "2025-06": {
+          "FLT_DEP_1": 16356,
+          "FLT_ARR_1": 16349,
+          "FLT_TOT_1": 32705,
+          "FLT_DEP_IFR_2": 16287,
+          "FLT_ARR_IFR_2": 16202,
+          "FLT_TOT_IFR_2": 32489
+        },
+        "2025-07": {
+          "FLT_DEP_1": 16834,
+          "FLT_ARR_1": 16828,
+          "FLT_TOT_1": 33662,
+          "FLT_DEP_IFR_2": 16735,
+          "FLT_ARR_IFR_2": 16688,
+          "FLT_TOT_IFR_2": 33423
+        },
+        "2025-08": {
+          "FLT_DEP_1": 16651,
+          "FLT_ARR_1": 16647,
+          "FLT_TOT_1": 33298,
+          "FLT_DEP_IFR_2": 16584,
+          "FLT_ARR_IFR_2": 16542,
+          "FLT_TOT_IFR_2": 33126
+        },
+        "2025-09": {
+          "FLT_DEP_1": 16202,
+          "FLT_ARR_1": 16210,
+          "FLT_TOT_1": 32412,
+          "FLT_DEP_IFR_2": 16136,
+          "FLT_ARR_IFR_2": 16111,
+          "FLT_TOT_IFR_2": 32247
+        },
+        "2025-10": {
+          "FLT_DEP_1": 16400,
+          "FLT_ARR_1": 16407,
+          "FLT_TOT_1": 32807,
+          "FLT_DEP_IFR_2": 16288,
+          "FLT_ARR_IFR_2": 16274,
+          "FLT_TOT_IFR_2": 32562
+        },
+        "2025-11": {
+          "FLT_DEP_1": 13381,
+          "FLT_ARR_1": 13379,
+          "FLT_TOT_1": 26760,
+          "FLT_DEP_IFR_2": 13319,
+          "FLT_ARR_IFR_2": 13264,
+          "FLT_TOT_IFR_2": 26583
+        },
+        "2025-12": {
+          "FLT_DEP_1": 13890,
+          "FLT_ARR_1": 13895,
+          "FLT_TOT_1": 27785,
+          "FLT_DEP_IFR_2": 13830,
+          "FLT_ARR_IFR_2": 13784,
+          "FLT_TOT_IFR_2": 27614
+        }
+      }
+    }
+  ],
+  "qualification": "Bounded public source inspection; no raw data redistribution, no acceptance tolerances."
+}
