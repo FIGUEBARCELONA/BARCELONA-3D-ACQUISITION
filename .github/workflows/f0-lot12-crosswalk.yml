@@ -1,0 +1,41 @@
+name: F0 lot12 NOAA station crosswalk discovery
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot12-crosswalk.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect official catalog identifiers
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,json,hashlib,pathlib,datetime,xml.etree.ElementTree as ET,concurrent.futures
+          base='https://noaa-ghcnh-pds.s3.us-east-1.amazonaws.com/'
+          out=pathlib.Path('custody/f0-lot12-20261125');out.mkdir(parents=True,exist_ok=True)
+          def ls(prefix):
+              r={'prefix':prefix,'status':'BLOCKED'}
+              try:
+                  u=base+'?'+urllib.parse.urlencode({'list-type':2,'prefix':prefix,'max-keys':1000,'delimiter':'/'})
+                  with urllib.request.urlopen(u,timeout=30) as x:
+                      b=x.read(2000000);r.update(http=x.status,sha256=hashlib.sha256(b).hexdigest())
+                  z=ET.fromstring(b)
+                  if not z.tag.endswith('ListBucketResult'):raise ValueError('not listing')
+                  keys=[a.text for a in z.findall('.//{*}Contents/{*}Key')]
+                  r.update(status='INSPECTED',key_count=len(keys),truncated=z.findtext('.//{*}IsTruncated'),directories=[a.text for a in z.findall('.//{*}CommonPrefixes/{*}Prefix')],matching_keys=[k for k in keys if '08181' in k or 'LEBL' in k] if 'by-station/' in prefix else keys)
+              except Exception as e:r['error']=repr(e)
+              return r
+          prefixes=['hourly/doc/','hourly/access/by-station/GHCNh_SP','hourly/access/by-station/GHCNh_ES','hourly/access/by-station/GHCNh_SPM00008181','hourly/access/by-station/GHCNh_SPI0000LEBL','hourly/access/by-station/GHCNh_ESM00008181','hourly/access/by-station/GHCNh_ESI0000LEBL']
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:results=list(ex.map(ls,prefixes))
+          (out/'crosswalk.json').write_text(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'qualification':'Candidate prefixes only; catalog existence does not prove station identity.'},ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot12-20261125/crosswalk.json
+          git commit -m 'Preserve station crosswalk catalog evidence'
+          git push origin HEAD:audit/f0-lot06-20261125
