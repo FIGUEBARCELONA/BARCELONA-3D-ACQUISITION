@@ -1,0 +1,43 @@
+name: F0 lot19 independent local ZAL observation acquisition
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot19-zal.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit primary source CSV
+        shell: python
+        run: |
+          import pathlib,json,hashlib,urllib.request,datetime,csv,io,collections
+          out=pathlib.Path('custody/f0-lot19-20261125');out.mkdir(parents=True,exist_ok=True)
+          u='https://opendata.portdebarcelona.cat/ca/dataset/4b393a29-1e57-4b93-b340-63bdde4107b4/resource/9d17c8af-7cdf-4c9c-87e8-b4e990cc5b72/download/2025_10-zalprat_opd_10m.csv'
+          r={'url':u,'status':'BLOCKED'}
+          try:
+              with urllib.request.urlopen(u,timeout=40) as x:
+                  b=x.read(10000001);r.update(http=x.status,bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+              if len(b)>10000000:raise ValueError('size limit')
+              t=b.decode('utf-8-sig');d=csv.DictReader(io.StringIO(t),dialect=csv.Sniffer().sniff(t[:16000],delimiters=',;\t'))
+              fields=d.fieldnames or []
+              if not {'TIMESTAMP','RECORD','VV_S_WVT','DV_D1_WVT'}.issubset(fields):raise ValueError('unexpected schema')
+              dates=collections.Counter();records=collections.Counter();nonempty=collections.Counter();bad=0
+              for row in d:
+                  dt=datetime.datetime.fromisoformat(row['TIMESTAMP'].strip());dates[dt]+=1;records[row['RECORD']]+=1
+                  bad+=None in row or None in row.values()
+                  for k,v in row.items():
+                      if k is not None and v is not None and v.strip():nonempty[k]+=1
+              r.update(status='STRUCTURE_INSPECTED',fields=fields,rows=sum(dates.values()),unique_instants=len(dates),unique_record_ids=len(records),first=min(dates).isoformat(),last=max(dates).isoformat(),nonempty=dict(nonempty),malformed=bad,interval_histogram=dict(collections.Counter(str((b-a).total_seconds()) for a,b in zip(sorted(dates),sorted(dates)[1:]))),qualification='Nonempty is not physical QC; local provenance requires validation; no time imputation.')
+          except Exception as e:r['error']=repr(e)
+          (out/'zal.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot19-20261125/zal.json
+          git commit -m 'Preserve local ZAL observation audit'
+          git push origin HEAD:audit/f0-lot06-20261125
