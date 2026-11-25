@@ -1,0 +1,5 @@
+{
+  "url": "https://opendata.portdebarcelona.cat/ca/dataset/4b393a29-1e57-4b93-b340-63bdde4107b4/resource/9d17c8af-7cdf-4c9c-87e8-b4e990cc5b72/download/2025_10-zalprat_opd_10m.csv",
+  "status": "BLOCKED",
+  "error": "<HTTPError 500: 'Internal Server Error'>"
+}
