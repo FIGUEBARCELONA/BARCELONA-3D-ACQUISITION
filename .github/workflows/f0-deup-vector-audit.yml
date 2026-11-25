@@ -1,0 +1,41 @@
+name: F0 DEUP vector topology audit
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/f0-deup-vector-audit.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check --target "$RUNNER_TEMP/f0vector" pymupdf
+      - run: |
+          PYTHONPATH="$RUNNER_TEMP/f0vector" python - <<'PY'
+          import pathlib,urllib.request,hashlib,json,collections
+          import fitz
+          out={'source':'https://www.portdebarcelona.cat/sites/default/files/content/file/2021/10/24/1/delimitacion-de-los-espacios-y-usos-portuarios-deup_1.pdf','page':74}
+          try:
+              with urllib.request.urlopen(out['source'],timeout=40) as f:b=f.read(40000001)
+              out.update({'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+              assert out['sha256']=='2fa06be75e20eba812dca128508972082e1d40b4b213c33d34dfdd5b68bcb721'
+              with fitz.open(stream=b,filetype='pdf') as doc:
+                  p=doc[73];v=p.get_drawings()
+                  out['vector_path_count']=len(v)
+                  out['image_count']=len(p.get_images(full=True))
+                  out['text_chars']=len(p.get_text())
+                  out['path_type_counts']=dict(collections.Counter(x['type'] for x in v))
+                  out['filled_green_paths']=[{'seqno':x.get('seqno'),'fill':x.get('fill'),'rect':list(x['rect']),'items':len(x['items']),'closePath':x.get('closePath')} for x in v if x.get('fill') and len(x['fill'])==3 and x['fill'][1]>x['fill'][0]+0.05 and x['fill'][1]>x['fill'][2]+0.05]
+                  out['status']='VECTOR_CANDIDATES' if out['filled_green_paths'] else 'NO_GREEN_VECTOR_PATH_RECOVERED'
+              out['qualification']='No coordinate editing, no assumed vertex order, no canonical adoption.'
+          except Exception as e:out['status']='FAILED';out['error']=repr(e)
+          d=pathlib.Path('custody/f0-deup-vector-audit');d.mkdir(exist_ok=True,parents=True);(d/'report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-deup-vector-audit/report.json
+          git commit -m 'F0 inspect native PDF vector paths, not repeat visual review'
+          git push origin HEAD:main
