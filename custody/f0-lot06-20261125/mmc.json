@@ -1,0 +1,277 @@
+{
+  "url": "https://www.instamaps.cat/capesuser/45341204/d6fb97c6f313e63acce55f605738f6cc.json",
+  "status": "INSPECTED",
+  "expected_codes": [
+    "080155",
+    "080193",
+    "080207",
+    "080543",
+    "080569",
+    "080689",
+    "080728",
+    "080734",
+    "080771",
+    "080898",
+    "081017",
+    "081234",
+    "081252",
+    "081265",
+    "081574",
+    "081580",
+    "081691",
+    "081803",
+    "081944",
+    "081960",
+    "082009",
+    "082042",
+    "082055",
+    "082114",
+    "082172",
+    "082212",
+    "082444",
+    "082457",
+    "082520",
+    "082634",
+    "082665",
+    "082824",
+    "082896",
+    "083015",
+    "089045",
+    "089058"
+  ],
+  "http": 200,
+  "bytes": 22759201,
+  "sha256": "26307cfd5acd619f5e83eb5f73b2a56e79fc2e80e37d31e7d8b3bcb5aa8b407b",
+  "content_type": "application/json",
+  "top_level_keys": [
+    "geometries",
+    "results"
+  ],
+  "field_names": [
+    [
+      "id",
+      1222
+    ],
+    [
+      "businessId",
+      1222
+    ],
+    [
+      "type",
+      1220
+    ],
+    [
+      "color",
+      610
+    ],
+    [
+      "opacity",
+      610
+    ],
+    [
+      "radius",
+      610
+    ],
+    [
+      "simbolSize",
+      610
+    ],
+    [
+      "lineWidth",
+      610
+    ],
+    [
+      "borderWidth",
+      610
+    ],
+    [
+      "borderColor",
+      610
+    ],
+    [
+      "label",
+      610
+    ],
+    [
+      "labelSize",
+      610
+    ],
+    [
+      "labelHaloWidth",
+      610
+    ],
+    [
+      "nom_fitxer",
+      610
+    ],
+    [
+      "codi_unit",
+      610
+    ],
+    [
+      "nom_unit",
+      610
+    ],
+    [
+      "data_inici",
+      610
+    ],
+    [
+      "nom",
+      2
+    ],
+    [
+      "geometryType",
+      2
+    ],
+    [
+      "options",
+      2
+    ],
+    [
+      "uid",
+      2
+    ],
+    [
+      "publica",
+      1
+    ],
+    [
+      "tipus",
+      1
+    ],
+    [
+      "geometriesBusinessId",
+      1
+    ],
+    [
+      "layerName",
+      1
+    ]
+  ],
+  "candidate_rows": [
+    {
+      "candidate_codes": [
+        "081234"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-molins-rei-20190408",
+        "codi_unit": "081234",
+        "nom_unit": "Molins de Rei",
+        "data_inici": "2019-04-08"
+      }
+    },
+    {
+      "candidate_codes": [
+        "089045"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-badia-valles-20040325",
+        "codi_unit": "089045",
+        "nom_unit": "Badia del Vallès",
+        "data_inici": "2004-03-25"
+      }
+    },
+    {
+      "candidate_codes": [
+        "081960"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-sant-andreu-barca-20160727",
+        "codi_unit": "081960",
+        "nom_unit": "Sant Andreu de la Barca",
+        "data_inici": "2016-07-27"
+      }
+    },
+    {
+      "candidate_codes": [
+        "080728"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-corbera-llobregat-20181210",
+        "codi_unit": "080728",
+        "nom_unit": "Corbera de Llobregat",
+        "data_inici": "2018-12-10"
+      }
+    },
+    {
+      "candidate_codes": [
+        "083015"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-viladecans-20220721",
+        "codi_unit": "083015",
+        "nom_unit": "Viladecans",
+        "data_inici": "2022-07-21"
+      }
+    },
+    {
+      "candidate_codes": [
+        "089058"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-palma-cervello-20160505",
+        "codi_unit": "089058",
+        "nom_unit": "la Palma de Cervelló",
+        "data_inici": "2016-05-05"
+      }
+    },
+    {
+      "candidate_codes": [
+        "081265"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-montgat-20260720",
+        "codi_unit": "081265",
+        "nom_unit": "Montgat",
+        "data_inici": "2026-07-20"
+      }
+    },
+    {
+      "candidate_codes": [
+        "080543"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-castellbisbal-20111214",
+        "codi_unit": "080543",
+        "nom_unit": "Castellbisbal",
+        "data_inici": "2011-12-14"
+      }
+    },
+    {
+      "candidate_codes": [
+        "082042"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-sant-climent-llobregat-20260720",
+        "codi_unit": "082042",
+        "nom_unit": "Sant Climent de Llobregat",
+        "data_inici": "2026-07-20"
+      }
+    },
+    {
+      "candidate_codes": [
+        "081580"
+      ],
+      "fields": {
+        "nom_fitxer": "mapa-municipal-v2r0-papiol-20141022",
+        "codi_unit": "081580",
+        "nom_unit": "el Papiol",
+        "data_inici": "2014-10-22"
+      }
+    }
+  ],
+  "matched_codes": [
+    "080543",
+    "080728",
+    "081234",
+    "081265",
+    "081580",
+    "081960",
+    "082042",
+    "083015",
+    "089045",
+    "089058"
+  ],
+  "qualification": "Candidate code matches; source field semantics and individual original GeoPackage require further independent validation."
+}
