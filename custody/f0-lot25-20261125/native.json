@@ -1,0 +1,45 @@
+{
+  "utc": "2026-11-25T08:13:14.381922+00:00",
+  "coverages": [
+    {
+      "coverage": "icc:met5",
+      "status": "BLOCKED",
+      "url": "https://geoserveis.icgc.cat/icc_mdt/wcs/service?SERVICE=WCS&REQUEST=GetCoverage&VERSION=1.0.0&CRS=EPSG%3A25831&COVERAGE=icc%3Amet5&WIDTH=5&HEIGHT=5&FORMAT=ARCGRID&BBOX=430452.5%2C4582327.5%2C430477.5%2C4582352.5",
+      "http": 200,
+      "bytes": 10536,
+      "sha256": "81d4774a2e336da40e41915653ef00c1c7d06cf9281363ff31dfbd15feeee31d",
+      "ogc_root": "ServiceExceptionReport",
+      "exception": [
+        "\n      Could not find coverage 'icc:met55'\nDetails:\norg.vfny.geoserver.wcs.WcsException: Could not find coverage 'icc:met55'\n\tat org.geoserver.wcs.kvp.CoverageKvpParser.parse(CoverageKvpParser.java:51)\n\tat org.geoserver.ows.util.KvpUtils.parse(KvpUtils.java:388)\n\tat org.geoserver.ows.Dispatcher.pars"
+      ],
+      "error": "ValueError('XML response, not raster')"
+    },
+    {
+      "coverage": "icc:met15",
+      "status": "BLOCKED",
+      "url": "https://geoserveis.icgc.cat/icc_mdt/wcs/service?SERVICE=WCS&REQUEST=GetCoverage&VERSION=1.0.0&CRS=EPSG%3A25831&COVERAGE=icc%3Amet15&WIDTH=5&HEIGHT=5&FORMAT=ARCGRID&BBOX=430432.5%2C4582297.5%2C430507.5%2C4582372.5",
+      "http": 200,
+      "bytes": 10540,
+      "sha256": "06fed8bc248056d1aee62124accd4e536a971016e1b68afaca903013fd579b43",
+      "ogc_root": "ServiceExceptionReport",
+      "exception": [
+        "\n      Could not find coverage 'icc:met1515'\nDetails:\norg.vfny.geoserver.wcs.WcsException: Could not find coverage 'icc:met1515'\n\tat org.geoserver.wcs.kvp.CoverageKvpParser.parse(CoverageKvpParser.java:51)\n\tat org.geoserver.ows.util.KvpUtils.parse(KvpUtils.java:388)\n\tat org.geoserver.ows.Dispatcher."
+      ],
+      "error": "ValueError('XML response, not raster')"
+    }
+  ],
+  "inventories": [
+    {
+      "name": "inventory",
+      "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/802c9d1b-11d5-4f74-a319-0fcf23b96d56/resource/20bd3dd1-efb0-490e-acd1-c7d0be170419/download",
+      "status": "BLOCKED",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
+      "name": "typology",
+      "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/66ce661b-5951-40fb-9035-9ecb49bc6ff1/resource/9d31d2e0-5ba7-412d-b68a-c788d311b6e9/download",
+      "status": "BLOCKED",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    }
+  ]
+}
