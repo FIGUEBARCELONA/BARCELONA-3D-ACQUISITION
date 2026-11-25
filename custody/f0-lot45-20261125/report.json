@@ -1,0 +1,534 @@
+{
+  "utc": "2026-11-25T09:41:32.038689+00:00",
+  "results": [
+    {
+      "name": "dataset131",
+      "url": "https://w20.bcn.cat/cartobcn/atom.ashx?file=131",
+      "status": "METADATA_INSPECTED",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/cartobcn/atom.ashx?file=131",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 4763,
+      "sha256": "9188b6275436b596a74e052d04130e5324efe0e2bb33bdf7ea9fb172c99d55a2",
+      "root": "{http://www.w3.org/2005/Atom}feed",
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=131",
+          "title": "Referència a aquest feed"
+        },
+        {
+          "rel": "alternative",
+          "type": "application/atom+xml",
+          "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=131.es",
+          "title": "Versión del feed en español",
+          "hreflang": "es"
+        },
+        {
+          "rel": "alternative",
+          "type": "application/atom+xml",
+          "href": "http://w20.bcn.cat/CartoBCN/atom.ashx?file=131.en",
+          "title": "English feed version",
+          "hreflang": "en"
+        },
+        {
+          "rel": "up",
+          "type": "application/atom+xml",
+          "href": "http://w20.bcn.cat/CartoBCN/atom.ashx",
+          "title": "Referència al feed principal",
+          "hreflang": "ca"
+        },
+        {
+          "rel": "section",
+          "type": "application/octet-stream",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+          "title": "MAPA TOPOGRÀFIC MUNICIPAL en format Geopackage"
+        }
+      ],
+      "titles": [
+        "Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  - MAPA TOPOGRÀFIC MUNICIPAL en format Geopackage",
+        "Àmbit Ciutat -  Distribució de productes que inclouen la totalitat de la ciutat  - MAPA TOPOGRÀFIC MUNICIPAL en format Geopackage (GeoPackage)"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "url": "https://w20.bcn.cat/cartobcn/opensearch.ashx",
+      "status": "METADATA_INSPECTED",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/cartobcn/opensearch.ashx",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 20454,
+      "sha256": "5e1556cd08f92ccfffb9f18f61e5bff8844e98481e94c52fa59671a40728c79a",
+      "root": "{http://a9.com/-/spec/opensearch/1.1/}OpenSearchDescription",
+      "links": [
+        {
+          "type": "application/opensearchdescription+xml",
+          "rel": "self",
+          "template": "http://w20.bcn.cat/CartoBCN/opensearch.ashx"
+        },
+        {
+          "type": "text/html",
+          "rel": "results",
+          "template": "http://w20.bcn.cat/CartoBCN/search.ashx?q={searchTerms}"
+        },
+        {
+          "type": "application/atom+xml",
+          "rel": "results",
+          "template": "http://w20.bcn.cat/CartoBCN/search.ashx?uri_code={inspire_dls:spatial_dataset_identifier_code}&uri_namespace={inspire_dls:spatial_dataset_identifier_namespace}&crs={inspire_dls:crs}&language={language}"
+        },
+        {
+          "type": "application/atom+xml",
+          "rel": "describedby",
+          "template": "http://w20.bcn.cat/CartoBCN/search.ashx?uri_code={inspire_dls:spatial_dataset_identifier_code}&uri_namespace={inspire_dls:spatial_dataset_identifier_namespace}&language={language}"
+        }
+      ],
+      "titles": []
+    },
+    {
+      "name": "portal131",
+      "url": "https://portaldades.ajuntament.barcelona.cat/mapes/131",
+      "status": "METADATA_INSPECTED",
+      "http": 200,
+      "effective_url": "https://portaldades.ajuntament.barcelona.cat/mapes/131",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 3525,
+      "sha256": "b0af4cefc84b1615eabe60f1b69946e01f18dbde9075e66e82c9f838f4d179ec",
+      "links": [
+        {
+          "tag": "link",
+          "url": "https://portaldades.ajuntament.barcelona.cat/favicon.ico",
+          "rel": "icon",
+          "type": null
+        },
+        {
+          "tag": "link",
+          "url": "https://www.barcelona.cat/assets/core/stylesheets/core.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "script",
+          "url": "https://www.barcelona.cat/assets/core/javascripts/core.js",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "link",
+          "url": "https://portaldades.ajuntament.barcelona.cat/css/app.08470ad1.css",
+          "rel": "preload",
+          "type": null
+        },
+        {
+          "tag": "link",
+          "url": "https://portaldades.ajuntament.barcelona.cat/css/chunk-vendors.91ed9183.css",
+          "rel": "preload",
+          "type": null
+        },
+        {
+          "tag": "link",
+          "url": "https://portaldades.ajuntament.barcelona.cat/js/app.def82d46.js",
+          "rel": "preload",
+          "type": null
+        },
+        {
+          "tag": "link",
+          "url": "https://portaldades.ajuntament.barcelona.cat/js/chunk-vendors.33d87f88.js",
+          "rel": "preload",
+          "type": null
+        },
+        {
+          "tag": "link",
+          "url": "https://portaldades.ajuntament.barcelona.cat/css/chunk-vendors.91ed9183.css",
+          "rel": "stylesheet",
+          "type": null
+        },
+        {
+          "tag": "link",
+          "url": "https://portaldades.ajuntament.barcelona.cat/css/app.08470ad1.css",
+          "rel": "stylesheet",
+          "type": null
+        },
+        {
+          "tag": "script",
+          "url": "https://portaldades.ajuntament.barcelona.cat/js/chunk-vendors.33d87f88.js",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "script",
+          "url": "https://portaldades.ajuntament.barcelona.cat/js/app.def82d46.js",
+          "rel": null,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "cartobcn131",
+      "url": "https://w20.bcn.cat/CartoBCN/?prod=131",
+      "status": "METADATA_INSPECTED",
+      "http": 200,
+      "effective_url": "https://w20.bcn.cat/CartoBCN/?prod=131",
+      "content_type": "text/html; charset=iso-8859-15",
+      "bytes": 53640,
+      "sha256": "d789ccccc1cff5edbf023eb4344dc6ab585ea306f3f9b83970245d6f1a8b104a",
+      "links": [
+        {
+          "tag": "link",
+          "url": "https://www.barcelona.cat/assets/core/stylesheets/core.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/opensearch.ashx?description=true",
+          "rel": "search",
+          "type": "application/opensearchdescription+xml"
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/favicon.ico",
+          "rel": "shortcut icon",
+          "type": null
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/css/jquery-ui-1.8.21.custom.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/css/jquery.flexbox.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/css/OpenLayers/style.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/css/jquery.qtip.min.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/css/jquery.autocomplete.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/fancybox/jquery.fancybox-1.3.4.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/css/estils.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "link",
+          "url": "https://w20.bcn.cat/CartoBCN/css/complex.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "script",
+          "url": "https://www.barcelona.cat/estatics/geobcn/1.0/api-services-ca.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://www.barcelona.cat/assets/core/javascripts/core.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/textesweb.js.ashx?lang=ca",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/config.js.ashx",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/OpenLayers/OpenLayers.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/proj4js/proj4js-combined.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery-1.7.2.min.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery-ui-1.8.21.custom.min.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.layout_1.3.0.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.flexbox.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.form.min.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.qtip.min.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.simplemodal-1.3.5.min.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.humanMsg.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.progressbar.min.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.youtube.player.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.placeholder.min.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/jquery.cookie.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/library/jquery/fancybox/jquery.fancybox-1.3.4.pack.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/layout.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/inici.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/cataleg.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/projeccions.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/mapa.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/cercador.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/menuprincipal.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/utils.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/cistella.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/distribucions.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/productes.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/String.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/links.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/tramits.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/noticies.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/youtube.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "script",
+          "url": "https://w20.bcn.cat/CartoBCN/js/clippo.js",
+          "rel": null,
+          "type": "text/javascript"
+        },
+        {
+          "tag": "link",
+          "url": "https://www.barcelona.cat/assets/core/stylesheets/core.css",
+          "rel": "stylesheet",
+          "type": "text/css"
+        },
+        {
+          "tag": "script",
+          "url": "https://www.barcelona.cat/assets/core/javascripts/core.js",
+          "rel": null,
+          "type": "application/javascript"
+        },
+        {
+          "tag": "a",
+          "url": "https://www.barcelona.cat/geoportal/ca",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "a",
+          "url": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset?q=&name=cataleg-cartobcn",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "a",
+          "url": "https://w20.bcn.cat/CartoBCN/rss.ashx?lang=CA",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "a",
+          "url": "https://w20.bcn.cat/CartoBCN/atom.ashx",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "a",
+          "url": "http://www.google.com/chrome",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "a",
+          "url": "http://www.mozilla.com",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "a",
+          "url": "http://windows.microsoft.com/es-ES/internet-explorer/products/ie/home",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "a",
+          "url": "https://validator.w3.org/check?uri=referer",
+          "rel": null,
+          "type": null
+        },
+        {
+          "tag": "a",
+          "url": "http://www.nexusgeografics.com",
+          "rel": null,
+          "type": null
+        }
+      ]
+    }
+  ],
+  "qualification": "Public metadata only; no large file acquisition or private data."
+}
