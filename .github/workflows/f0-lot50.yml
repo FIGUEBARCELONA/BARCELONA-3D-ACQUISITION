@@ -1,0 +1,148 @@
+name: F0 lot50 semantic inventory of exact GeoPackage member
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot50.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Inspect original line geometries and semantic classes
+        shell: python
+        run: |
+          import urllib.request,hashlib,struct,zlib,sqlite3,tempfile,pathlib,json,datetime,time,concurrent.futures,xml.etree.ElementTree as ET
+          out=pathlib.Path('custody/f0-lot50-20261125');out.mkdir(parents=True,exist_ok=True)
+          old=json.loads(pathlib.Path('custody/f0-lot49-20261125/report.json').read_text())
+          def member():
+              a=old['zip_member'];r={'source':a['source'],'status':'BLOCKED','member':a['name']}
+              try:
+                  limit=a['member_end_exclusive']
+                  if limit!=50732774 or a['expanded_bytes']!=93929472:raise ValueError('unexpected bounds')
+                  t=time.monotonic()
+                  req=urllib.request.Request(a['source'],headers={'Accept-Encoding':'identity','User-Agent':'GTA-BCN-public-data-audit/1.0'})
+                  with urllib.request.urlopen(req,timeout=35) as x:
+                      r['http']=x.status
+                      buf=bytearray()
+                      while len(buf)<limit:
+                          b=x.read(min(1048576,limit-len(buf)))
+                          if not b:break
+                          buf.extend(b)
+                          if time.monotonic()-t>230:raise ValueError('time bound')
+                      r['received_bytes']=len(buf)
+                  r['seconds']=round(time.monotonic()-t,2)
+                  if len(buf)!=limit:raise ValueError('member truncated')
+                  if hashlib.sha256(buf[:65536]).hexdigest()!=a['sha256']:raise ValueError('snapshot prefix mismatch')
+                  r['prefix_sha256']=a['sha256'];r['acquired_prefix_sha256']=hashlib.sha256(buf).hexdigest()
+                  sig,v,flags,method,mt,md,crc,csize,usize,nl,xl=struct.unpack_from('<4s5H3I2H',buf)
+                  if sig!=b'PK\x03\x04' or flags!=2048 or method!=8 or csize!=a['compressed_bytes'] or usize!=a['expanded_bytes'] or format(crc,'08x')!=a['crc32']:raise ValueError('header mismatch')
+                  offset=30+nl+xl
+                  if offset+csize!=limit or buf[30:30+nl].decode('utf-8')!=a['name']:raise ValueError('member identity mismatch')
+                  dec=zlib.decompressobj(-15)
+                  raw=dec.decompress(memoryview(buf)[offset:],usize+1)
+                  if len(raw)!=usize or not dec.eof or dec.unused_data or dec.unconsumed_tail:raise ValueError('DEFLATE termination or size')
+                  if zlib.crc32(raw)&0xffffffff!=crc:raise ValueError('CRC mismatch')
+                  r.update(member_bytes=len(raw),member_sha256=hashlib.sha256(raw).hexdigest(),crc32=format(crc,'08x'),status='MEMBER_CRC_VERIFIED')
+                  (out/'member_checkpoint.json').write_text(json.dumps(r,indent=2)+'\n')
+                  with tempfile.TemporaryDirectory() as td:
+                      p=pathlib.Path(td)/'source.gpkg';p.write_bytes(raw);del raw,buf
+                      with sqlite3.connect(p.as_uri()+'?mode=ro&immutable=1',uri=True) as db:
+                          db.execute('PRAGMA query_only=ON')
+                          r['application_id']=db.execute('PRAGMA application_id').fetchone()[0]
+                          r['quick_check']=db.execute('PRAGMA quick_check').fetchall()
+                          r['integrity_check']=db.execute('PRAGMA integrity_check').fetchall()
+                          r['foreign_key_violations']=sum(1 for _ in db.execute('PRAGMA foreign_key_check'))
+                          r['srs']=db.execute('SELECT srs_id,organization,organization_coordsys_id FROM gpkg_spatial_ref_sys').fetchall()
+                          r['geometry_columns']=db.execute('SELECT table_name,column_name,geometry_type_name,srs_id,z,m FROM gpkg_geometry_columns').fetchall()
+                          r['layers']=[]
+                          for name,typ,ident,last,srs in db.execute('SELECT table_name,data_type,identifier,last_change,srs_id FROM gpkg_contents'):
+                              q='"'+name.replace('"','""')+'"'
+                              r['layers'].append({'name':name,'type':typ,'identifier':ident,'last_change':last,'srs_id':srs,'count':db.execute('SELECT count(*) FROM '+q).fetchone()[0],'columns':[{'name':c[1],'type':c[2]} for c in db.execute('PRAGMA table_info('+q+')')]})
+                          if r['quick_check']!=[('ok',)] or r['integrity_check']!=[('ok',)]:raise ValueError('SQLite integrity failure')
+                          if r['member_sha256']!='a890e652f5c66a8c05a7e92b64717c5ff76fcdda9f90458cce1bc3d020604ae2':raise ValueError('full member identity mismatch')
+                          q='"Base (Línies)"'
+                          cols=['NIVELL','NIVELL_DESCRIPCIO','IDENT_TEMA','TEMA_DESCRIPCIO','IDENT_CONJUNT','CONJUNT_DESCRIPCIO','IDENT_SUBCONJUNT','SUBCONJUNT_DESCRIPCIO','IDENT_ELEMENT','ELEMENT_DESCRIPCIO']
+                          quoted=','.join('"'+c+'"' for c in cols)
+                          r['classes']=[dict(zip(cols+['count'],row)) for row in db.execute('SELECT '+quoted+',count(*) FROM '+q+' GROUP BY '+quoted)]
+                          r['district_counts']=db.execute('SELECT DISTRICTE,count(*) FROM '+q+' GROUP BY DISTRICTE').fetchall()
+                          r['neighborhood_counts']=db.execute('SELECT BARRI,count(*) FROM '+q+' GROUP BY BARRI').fetchall()
+                          r['id_controls']=db.execute('SELECT count(*),count(DISTINCT FID),count(ID_INSPIRE),count(DISTINCT ID_INSPIRE),sum(CASE WHEN geometria IS NULL THEN 1 ELSE 0 END) FROM '+q).fetchone()
+                          import math,collections
+                          bad=collections.Counter();points=0;parts=0;valid=0
+                          for fid,g in db.execute('SELECT FID,geometria FROM '+q):
+                              try:
+                                  if g is None or g[:2]!=b'GP' or len(g)<8:raise ValueError('invalid GPKG header')
+                                  flag=g[3];end='<' if flag&1 else '>';srs=struct.unpack_from(end+'i',g,4)[0]
+                                  if srs!=25831:raise ValueError('wrong SRS')
+                                  env=(flag>>1)&7
+                                  if env not in (0,1,2,3,4):raise ValueError('invalid envelope')
+                                  pos=8+[0,32,48,48,64][env]
+                                  def wkb(p):
+                                      if p+5>len(g) or g[p] not in (0,1):raise ValueError('invalid byte order')
+                                      e='<' if g[p] else '>';t=struct.unpack_from(e+'I',g,p+1)[0]
+                                      return e,t,p+5
+                                  e,t,pos=wkb(pos)
+                                  if t!=5:raise ValueError('not 2D MULTILINESTRING')
+                                  n=struct.unpack_from(e+'I',g,pos)[0];pos+=4
+                                  if n==0:raise ValueError('empty multiline')
+                                  local_points=0
+                                  for _ in range(n):
+                                      e,t,pos=wkb(pos)
+                                      if t!=2:raise ValueError('invalid line type')
+                                      m=struct.unpack_from(e+'I',g,pos)[0];pos+=4
+                                      if m<2 or pos+16*m>len(g):raise ValueError('invalid point count')
+                                      for x,y in struct.iter_unpack(e+'dd',g[pos:pos+16*m]):
+                                          if not math.isfinite(x) or not math.isfinite(y):raise ValueError('nonfinite coordinate')
+                                      pos+=16*m;local_points+=m
+                                  if pos!=len(g):raise ValueError('trailing geometry bytes')
+                                  valid+=1;parts+=n;points+=local_points
+                              except Exception as ex:bad[str(ex)]+=1
+                          r['geometry_structure']={'valid':valid,'invalid':dict(bad),'parts':parts,'points':points}
+                          r['status']='MEMBER_SEMANTICS_INSPECTED'
+              except Exception as e:r['error']=repr(e)
+              return r
+          def feed(n):
+              u='https://w20.bcn.cat/cartobcn/atom.ashx?file='+str(n)
+              r={'product':n,'source':u,'status':'BLOCKED'}
+              try:
+                  with urllib.request.urlopen(u,timeout=20) as x:
+                      b=x.read(2000001);r['http']=x.status
+                  if len(b)>2000000:raise ValueError('feed bound')
+                  ns={'a':'http://www.w3.org/2005/Atom'}
+                  root=ET.fromstring(b)
+                  links=[{'updated':e.findtext('a:updated',namespaces=ns),**l.attrib} for e in root.findall('a:entry',ns) for l in e.findall('a:link',ns) if l.get('rel')=='section']
+                  r.update(bytes=len(b),sha256=hashlib.sha256(b).hexdigest(),count=len(links),links=links,status='FEED_INSPECTED')
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
+              future=ex.submit(member)
+              feeds=[]
+              r={'member':future.result(),'feeds':feeds}
+          r['utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+          r['qualification']='Only the complete first member is acquired; no central directory or complete ZIP validation. Temporary original bytes not redistributed. No spatial homologation.'
+          (out/'report.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps({'member':{k:v for k,v in r['member'].items() if k not in ('layers','geometry_columns','classes','district_counts','neighborhood_counts')},'feeds':[{k:v for k,v in f.items() if k!='links'} for f in feeds]},ensure_ascii=False))
+      - name: Preserve report and intermediate checkpoint
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot50-20261125/
+          git diff --cached --quiet && exit 1
+          git commit -m 'Preserve lot50 original member and alternative feed audit'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
