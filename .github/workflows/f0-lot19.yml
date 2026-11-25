@@ -1,0 +1,62 @@
+name: F0 lot19 bounded COG original range audit
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot19.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --disable-pip-version-check rasterio==1.4.3
+      - name: Inspect bounded original COG windows
+        shell: python
+        run: |
+          import pathlib,datetime,json,urllib.request,hashlib,concurrent.futures,math
+          import rasterio,numpy as np
+          from rasterio.windows import Window
+          from rasterio.warp import transform
+          out=pathlib.Path('custody/f0-lot19-20261125');out.mkdir(parents=True,exist_ok=True)
+          names={'MDTe':'model-elevacions-terreny-edificis','MDTev':'model-elevacions-terreny-edificis-vegetacio','nDSM':'model-alcaries','CHM':'model-alcaries-vegetacio'}
+          sizes={'MDTe':91974342543,'MDTev':103567009070,'nDSM':98277193439,'CHM':84757840889}
+          def inspect(item):
+              k,n=item;u=f'https://datacloud.icgc.cat/datacloud/{n}/tif_unzip/{n}-lidar-catalunya-1m-2021-2023.tif'
+              r={'product':k,'url':u,'catalog_bytes':sizes[k],'status':'BLOCKED'}
+              try:
+                  req=urllib.request.Request(u,headers={'Range':'bytes=0-16383','Accept-Encoding':'identity'})
+                  with urllib.request.urlopen(req,timeout=25) as x:
+                      r.update(http=x.status,content_range=x.headers.get('Content-Range'),etag=x.headers.get('ETag'),last_modified=x.headers.get('Last-Modified'))
+                      if x.status!=206:raise ValueError('server did not honor range; full download prohibited')
+                      b=x.read(16385)
+                  if len(b)!=16384 or not r['content_range'] or not r['content_range'].endswith('/'+str(sizes[k])):raise ValueError('range or source size mismatch')
+                  r.update(header_sha256=hashlib.sha256(b).hexdigest(),header_signature=b[:16].hex())
+                  if b[:4] not in (b'II*\x00',b'MM\x00*',b'II+\x00',b'MM\x00+'):raise ValueError('not TIFF')
+                  r['status']='RANGE_HEADER_VERIFIED'
+                  with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN='EMPTY_DIR',CPL_VSIL_CURL_ALLOWED_EXTENSIONS='.tif',GDAL_HTTP_TIMEOUT='20',GDAL_HTTP_MAX_RETRY='0',VSI_CACHE='FALSE',CPL_VSIL_CURL_CHUNK_SIZE='16384'):
+                      with rasterio.open('/vsicurl/'+u) as ds:
+                          r.update(crs=str(ds.crs),shape=list(ds.shape),resolution=list(ds.res),nodata=ds.nodata,dtypes=list(ds.dtypes),count=ds.count,transform=list(ds.transform),block_shapes=ds.block_shapes,layout=ds.tags(ns='IMAGE_STRUCTURE'))
+                          if str(ds.crs)!='EPSG:25831' or ds.res!=(1.0,1.0) or ds.count!=1:raise ValueError('unexpected dataset specification')
+                          xs,ys=transform('EPSG:4326',ds.crs,[2.16774],[41.38386])
+                          row,col=ds.index(xs[0],ys[0]);win=Window(col-16,row-16,32,32)
+                          a=ds.read(1,window=win,masked=True)
+                          if a.shape!=(32,32):raise ValueError('window shape')
+                          valid=a.compressed()
+                          if not len(valid) or not np.isfinite(valid).all():raise ValueError('no valid finite samples')
+                          raw=np.asarray(a.data).tobytes()
+                          r.update(window=[int(win.col_off),int(win.row_off),32,32],window_transform=list(ds.window_transform(win)),valid_cells=int(valid.size),min=float(valid.min()),max=float(valid.max()),mean=float(valid.mean()),center_value=None if np.ma.is_masked(a[16,16]) else float(a[16,16]),window_bytes_sha256=hashlib.sha256(raw).hexdigest(),status='NUMERIC_WINDOW_INSPECTED')
+                          profile=ds.profile.copy();profile.update(width=32,height=32,transform=ds.window_transform(win),driver='GTiff',tiled=False,compress='deflate');profile.pop('blockxsize',None);profile.pop('blockysize',None)
+                          with rasterio.open(out/(k+'_ICGC_CC-BY-4.0_window.tif'),'w',**profile) as dst:dst.write(a.filled(ds.nodata if ds.nodata is not None else -9999),1)
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:rs=list(ex.map(inspect,names.items()))
+          (out/'report.json').write_text(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':rs,'qualification':'Original remote COG windows only, not complete-file hashes or territorial acceptance; existing Raval diagnostic point.'},ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve bounded audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot19-20261125
+          git commit -m 'Preserve bounded original COG audit'
+          git push origin HEAD:audit/f0-lot06-20261125
