@@ -1,0 +1,283 @@
+{
+  "results": [
+    {
+      "id": "F0I-01",
+      "attempts": [
+        {
+          "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/773debdd-f739-46d2-b127-2d9e32b4477c/resource/5cd64615-8f97-464c-a43a-7b98b464e0b1/download",
+          "error": "<HTTPError 403: 'Forbidden'>"
+        }
+      ],
+      "resource": {
+        "url": "https://opendata-ajuntament.barcelona.cat/data/api/action/resource_show?id=5cd64615-8f97-464c-a43a-7b98b464e0b1",
+        "resolved": "https://opendata-ajuntament.barcelona.cat/data/api/action/resource_show?id=5cd64615-8f97-464c-a43a-7b98b464e0b1",
+        "http": 200,
+        "bytes": 1400,
+        "sha256": "fd6b947c1feed445cd9df534cff0bae3e0003abd779045bdfadf5a9baa2a5882",
+        "content_type": "application/json;charset=utf-8",
+        "last_modified": null,
+        "fields": {
+          "id": "5cd64615-8f97-464c-a43a-7b98b464e0b1",
+          "package_id": "773debdd-f739-46d2-b127-2d9e32b4477c",
+          "name": "Infraestructures_Inventari_Pas_Vianants.csv",
+          "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/773debdd-f739-46d2-b127-2d9e32b4477c/resource/5cd64615-8f97-464c-a43a-7b98b464e0b1/download",
+          "format": "CSV",
+          "size": "5109509",
+          "last_modified": "2021-06-08T02:00:34",
+          "created": "2018-09-28T10:30:28.151286"
+        }
+      },
+      "status": "BLOCKED"
+    },
+    {
+      "id": "F0I-02",
+      "attempts": [
+        {
+          "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/d066b8ee-ebba-4423-b64f-31c16ee2d416/resource/e152dc49-e515-41dd-971c-8e34cdc2e1f3/download",
+          "error": "<HTTPError 403: 'Forbidden'>"
+        }
+      ],
+      "resource_error": "<HTTPError 503: 'Service Temporarily Unavailable'>",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "F0I-03",
+      "attempts": [
+        {
+          "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/e3497ea4-0bae-4093-94a7-119df50a8a74/resource/925bb055-f2ce-4eeb-9cf8-45670187f130/download",
+          "error": "<HTTPError 403: 'Forbidden'>"
+        }
+      ],
+      "resource_error": "<HTTPError 404: 'Not Found'>",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "F0I-04",
+      "attempts": [
+        {
+          "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/40743bb8-e4e0-457f-aa15-87007a0bdb6a/resource/ee11333b-361e-4076-bcba-bf12cf6876e5/download",
+          "error": "<HTTPError 403: 'Forbidden'>"
+        }
+      ],
+      "resource_error": "<HTTPError 503: 'Service Temporarily Unavailable'>",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "F0I-05",
+      "layer": {
+        "url": "https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19?f=pjson",
+        "resolved": "https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19?f=pjson",
+        "http": 200,
+        "bytes": 15009,
+        "sha256": "364bc0f29488b4a6bb9ed8fb7aed280c5ce52136e5c86f4a8018945c87bd0e93",
+        "content_type": "text/plain; charset=UTF-8",
+        "last_modified": null,
+        "fields": [
+          {
+            "name": "shape",
+            "type": "esriFieldTypeGeometry",
+            "alias": "Shape",
+            "domain": null
+          },
+          {
+            "name": "objecte",
+            "type": "esriFieldTypeString",
+            "alias": "OBJECTE",
+            "length": 2,
+            "domain": {
+              "type": "codedValue",
+              "name": "plDIC_OB1_PP",
+              "description": "",
+              "codedValues": [
+                {
+                  "name": "Paperera d'accés",
+                  "code": "PA"
+                },
+                {
+                  "name": "Paperera de línia",
+                  "code": "PL"
+                },
+                {
+                  "name": "Paperera de reforç",
+                  "code": "PX"
+                }
+              ],
+              "mergePolicy": "esriMPTDefaultValue",
+              "splitPolicy": "esriSPTDefaultValue"
+            }
+          },
+          {
+            "name": "rotacio",
+            "type": "esriFieldTypeDouble",
+            "alias": "ROTACIO",
+            "domain": null
+          },
+          {
+            "name": "tipologia",
+            "type": "esriFieldTypeString",
+            "alias": "TIPOLOGIA",
+            "length": 4,
+            "domain": {
+              "type": "codedValue",
+              "name": "plDIC_OB1_PP_TIP",
+              "description": "",
+              "codedValues": [
+                {
+                  "name": "Genèric",
+                  "code": "GEN"
+                },
+                {
+                  "name": "Envasos",
+                  "code": "ENV"
+                },
+                {
+                  "name": "Rebuig",
+                  "code": "REB"
+                }
+              ],
+              "mergePolicy": "esriMPTDefaultValue",
+              "splitPolicy": "esriSPTDefaultValue"
+            }
+          },
+          {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null
+          },
+          {
+            "name": "sector",
+            "type": "esriFieldTypeString",
+            "alias": "SECTOR",
+            "length": 20,
+            "domain": null
+          },
+          {
+            "name": "created_user",
+            "type": "esriFieldTypeString",
+            "alias": "CREATED_USER",
+            "length": 255,
+            "domain": null
+          },
+          {
+            "name": "created_date",
+            "type": "esriFieldTypeDate",
+            "alias": "CREATED_DATE",
+            "length": 8,
+            "domain": null
+          },
+          {
+            "name": "last_edited_user",
+            "type": "esriFieldTypeString",
+            "alias": "LAST_EDITED_USER",
+            "length": 255,
+            "domain": null
+          },
+          {
+            "name": "last_edited_date",
+            "type": "esriFieldTypeDate",
+            "alias": "LAST_EDITED_DATE",
+            "length": 8,
+            "domain": null
+          },
+          {
+            "name": "temporalitat",
+            "type": "esriFieldTypeString",
+            "alias": "TEMPORALITAT",
+            "length": 3,
+            "domain": {
+              "type": "codedValue",
+              "name": "plDIC_OB1_TEMP",
+              "description": "",
+              "codedValues": [
+                {
+                  "name": "Temporada alta",
+                  "code": "TAL"
+                },
+                {
+                  "name": "Permanent",
+                  "code": "PER"
+                }
+              ],
+              "mergePolicy": "esriMPTDefaultValue",
+              "splitPolicy": "esriSPTDefaultValue"
+            }
+          },
+          {
+            "name": "data_inst",
+            "type": "esriFieldTypeDate",
+            "alias": "DATA_INST",
+            "length": 8,
+            "domain": null
+          },
+          {
+            "name": "documents",
+            "type": "esriFieldTypeString",
+            "alias": "DOCUMENTS",
+            "length": 200,
+            "domain": null
+          },
+          {
+            "name": "observ",
+            "type": "esriFieldTypeString",
+            "alias": "OBSERV",
+            "length": 500,
+            "domain": null
+          },
+          {
+            "name": "municipi",
+            "type": "esriFieldTypeString",
+            "alias": "MUNICIPI",
+            "length": 3,
+            "domain": null
+          }
+        ],
+        "name": "Papereres",
+        "copyrightText": "",
+        "geometryType": "esriGeometryPoint",
+        "maxRecordCount": 2000
+      },
+      "count": {
+        "url": "https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?where=1%3D1&returnCountOnly=true&f=json",
+        "resolved": "https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?where=1%3D1&returnCountOnly=true&f=json",
+        "http": 200,
+        "bytes": 13,
+        "sha256": "874cdb9aa034e81cc65dc30e90372bfd9ae33b574aede5438db3aa72c03954b5",
+        "content_type": "application/json; charset=UTF-8",
+        "last_modified": null,
+        "count": 496
+      },
+      "binary": {
+        "url": "https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=25831&f=geojson",
+        "resolved": "https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=25831&f=geojson",
+        "http": 200,
+        "bytes": 195321,
+        "sha256": "7880f3410dfb861f0694346eec240f0294463871cb2dad19be7e8cd9e132e5a3",
+        "content_type": "application/geo+json; charset=UTF-8",
+        "last_modified": null,
+        "features": 496,
+        "null_geometries": 0,
+        "exceededTransferLimit": null,
+        "count_matches": true,
+        "fields": [
+          "created_date",
+          "created_user",
+          "data_inst",
+          "documents",
+          "last_edited_date",
+          "last_edited_user",
+          "municipi",
+          "objecte",
+          "objectid",
+          "observ",
+          "rotacio",
+          "sector",
+          "temporalitat",
+          "tipologia"
+        ]
+      },
+      "status": "BINARY_INSPECTED"
+    }
+  ],
+  "qualification": "Audit only. Raw assets not published, no production changes. Count is source coverage, not real-world completeness."
+}
