@@ -1,0 +1,60 @@
+{
+  "utc": "2026-11-25T09:21:18.845409+00:00",
+  "results": [
+    {
+      "name": "residents",
+      "source": "https://geoportal.amb.cat/geoserveis/rest/services/arees_aparcament_residents/MapServer/0",
+      "municipality_field": "MUNICIPI",
+      "status": "STRUCTURE_INSPECTED",
+      "requests": [
+        {
+          "url": "https://geoportal.amb.cat/geoserveis/rest/services/arees_aparcament_residents/MapServer/0?f=json",
+          "bytes": 4810,
+          "sha256": "984cfa180b8b5fd686f1ecfa023c0eaf568b2f7f927bc05f46f5a91ccb48f37b"
+        },
+        {
+          "url": "https://geoportal.amb.cat/geoserveis/rest/services/arees_aparcament_residents/MapServer/0/query?where=1%3D1&returnIdsOnly=true&f=json",
+          "bytes": 173,
+          "sha256": "69640ea096d012621b3452952e0242d1e73d097dac590e03a2bfcb49766fd7f5"
+        },
+        {
+          "batch": 0,
+          "bytes": 147217,
+          "sha256": "7614fd5bc55c123e456903c4fa77abed6c260bfe56f04b72a689592b7c95afff"
+        }
+      ],
+      "universe": 38,
+      "municipalities": {
+        "Badalona": 2,
+        "l'Hospitalet de Llobregat": 10,
+        "Sant Just Desvern": 4,
+        "Sant Joan Despí": 6,
+        "Esplugues de Llobregat": 8,
+        "Sant Adrià de Besòs": 2,
+        "Tiana": 4,
+        "Montgat": 1,
+        "Gavà": 1
+      },
+      "barcelona": 0,
+      "active_values": {},
+      "centroid_pair_present": 0,
+      "polygon_present": 0,
+      "business_ids_unique": 0
+    },
+    {
+      "name": "parking",
+      "source": "https://ide.amb.cat/geoserveis/rest/services/plataforma_metropolitana_aparcament/MapServer/0",
+      "municipality_field": "CIUTAT",
+      "status": "BLOCKED",
+      "requests": [
+        {
+          "url": "https://ide.amb.cat/geoserveis/rest/services/plataforma_metropolitana_aparcament/MapServer/0?f=json",
+          "bytes": 8667,
+          "sha256": "86c274b5df314a2536e8a1a3e417f1c26783ad6502d26948703cfc02e21d115e"
+        }
+      ],
+      "error": "ValueError(\"{'code': 400, 'message': 'Failed to execute query.', 'details': []}\")"
+    }
+  ],
+  "qualification": "Declared capacity, structural checks only; no occupied places or individual bay geometries."
+}
