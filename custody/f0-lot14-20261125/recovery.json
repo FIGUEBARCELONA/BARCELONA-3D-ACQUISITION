@@ -1,0 +1,404 @@
+{
+  "utc": "2026-11-25T07:08:11.943898+00:00",
+  "head": "fbff181d695d90c911adb03850dd45549937ca2b",
+  "manuals": [
+    {
+      "name": "ghcnh_DOCUMENTATION.pdf",
+      "status": "BLOCKED",
+      "source": "checkout",
+      "actual_sha256": "df5694efdc2d498f006a343165bae65701d14809174b9bed660149bd4fe591b7",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    {
+      "name": "ghcnh-columns.pdf",
+      "status": "BLOCKED",
+      "source": "checkout",
+      "actual_sha256": "2eb051a2919be41a57c5c49ae6aa0f077194fe1983417a2e8ba4fbbaf16ea7b5",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    {
+      "name": "ghcnh-source-list.pdf",
+      "status": "BLOCKED",
+      "source": "checkout",
+      "actual_sha256": "4f6a18c0b18825f28e72af04cc3a2ac8a26bd7015910798d1a0cee2a114f689d",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    }
+  ],
+  "xom": {
+    "status": "BROWSER_INSPECTED",
+    "annual": [
+      {
+        "year": 2021,
+        "status": "OPTIONS_INSPECTED",
+        "types": [
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200400/Introduccio_Anuari_2021.pdf",
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200344/EMA-EM_taules2021.pdf",
+            "label": "Taules de dades mensuals (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200313/EMAresums2021.pdf",
+            "label": "Resums anuals de cada EMA (pdf)"
+          }
+        ],
+        "urls": [
+          {
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200400/Introduccio_Anuari_2021.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200400/Introduccio_Anuari_2021.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Taules de dades mensuals (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200344/EMA-EM_taules2021.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200344/EMA-EM_taules2021.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Resums anuals de cada EMA (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200313/EMAresums2021.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2022/07/01200313/EMAresums2021.pdf"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "status": "OPTIONS_INSPECTED",
+        "types": [
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064319/Introduccio_Anuari_2022.pdf",
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064315/EMA-EM_taules2022.pdf",
+            "label": "Taules de dades mensuals (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064318/EMAresums2022.pdf",
+            "label": "Resums anuals de cada EMA (pdf)"
+          }
+        ],
+        "urls": [
+          {
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064319/Introduccio_Anuari_2022.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064319/Introduccio_Anuari_2022.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Taules de dades mensuals (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064315/EMA-EM_taules2022.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064315/EMA-EM_taules2022.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Resums anuals de cada EMA (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064318/EMAresums2022.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2023/06/22064318/EMAresums2022.pdf"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "status": "OPTIONS_INSPECTED",
+        "types": [
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28103953/Introduccio_Anuari_2023.pdf",
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28102930/EMA-EM_taules2023.pdf",
+            "label": "Taules de dades mensuals (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28102931/EMAresums2023.pdf",
+            "label": "Resums anuals de cada EMA (pdf)"
+          }
+        ],
+        "urls": [
+          {
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28103953/Introduccio_Anuari_2023.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28103953/Introduccio_Anuari_2023.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Taules de dades mensuals (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28102930/EMA-EM_taules2023.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28102930/EMA-EM_taules2023.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Resums anuals de cada EMA (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28102931/EMAresums2023.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2024/06/28102931/EMAresums2023.pdf"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "status": "OPTIONS_INSPECTED",
+        "types": [
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20113908/Introduccio_Anuari_2024-1.pdf",
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20112112/EMA-EM_taules2024.pdf",
+            "label": "Taules de dades mensuals (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20112126/EMAresums2024.pdf",
+            "label": "Resums anuals de cada EMA (pdf)"
+          }
+        ],
+        "urls": [
+          {
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20113908/Introduccio_Anuari_2024-1.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20113908/Introduccio_Anuari_2024-1.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Taules de dades mensuals (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20112112/EMA-EM_taules2024.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20112112/EMA-EM_taules2024.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Resums anuals de cada EMA (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20112126/EMAresums2024.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2025/06/20112126/EMAresums2024.pdf"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "OPTIONS_INSPECTED",
+        "types": [
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091939/Introduccio_Anuari_2025.pdf",
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091938/EMA-EM_taules2025.pdf",
+            "label": "Taules de dades mensuals (pdf)"
+          },
+          {
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091939/EMAresums2025.pdf",
+            "label": "Resums anuals de cada EMA (pdf)"
+          }
+        ],
+        "urls": [
+          {
+            "label": "Dades de la XEMA i de la XOM: introducció, llistat i mapa de localització (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091939/Introduccio_Anuari_2025.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091939/Introduccio_Anuari_2025.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Taules de dades mensuals (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091938/EMA-EM_taules2025.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091938/EMA-EM_taules2025.pdf"
+              ]
+            ]
+          },
+          {
+            "label": "Resums anuals de cada EMA (pdf)",
+            "value": "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091939/EMAresums2025.pdf",
+            "attributes": [
+              [
+                "value",
+                "https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2026/05/22091939/EMAresums2025.pdf"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "years": [
+      {
+        "value": "init",
+        "label": "Seleccioneu any"
+      },
+      {
+        "value": "0",
+        "label": "2025"
+      },
+      {
+        "value": "1",
+        "label": "2024"
+      },
+      {
+        "value": "2",
+        "label": "2023"
+      },
+      {
+        "value": "3",
+        "label": "2022"
+      },
+      {
+        "value": "4",
+        "label": "2021"
+      },
+      {
+        "value": "5",
+        "label": "2020"
+      },
+      {
+        "value": "6",
+        "label": "2019"
+      },
+      {
+        "value": "7",
+        "label": "2018"
+      },
+      {
+        "value": "8",
+        "label": "2017"
+      },
+      {
+        "value": "9",
+        "label": "2016"
+      },
+      {
+        "value": "10",
+        "label": "2015"
+      },
+      {
+        "value": "11",
+        "label": "2014"
+      },
+      {
+        "value": "12",
+        "label": "2013"
+      },
+      {
+        "value": "13",
+        "label": "2012"
+      },
+      {
+        "value": "14",
+        "label": "2011"
+      },
+      {
+        "value": "15",
+        "label": "2010"
+      },
+      {
+        "value": "16",
+        "label": "2009"
+      },
+      {
+        "value": "17",
+        "label": "2008"
+      },
+      {
+        "value": "18",
+        "label": "2007"
+      },
+      {
+        "value": "19",
+        "label": "2006"
+      },
+      {
+        "value": "20",
+        "label": "2005"
+      },
+      {
+        "value": "21",
+        "label": "2004"
+      },
+      {
+        "value": "22",
+        "label": "2003"
+      },
+      {
+        "value": "23",
+        "label": "2002"
+      },
+      {
+        "value": "24",
+        "label": "2001"
+      },
+      {
+        "value": "25",
+        "label": "2000"
+      },
+      {
+        "value": "26",
+        "label": "1999"
+      },
+      {
+        "value": "27",
+        "label": "1998"
+      },
+      {
+        "value": "28",
+        "label": "1997"
+      }
+    ]
+  }
+}
