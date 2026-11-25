@@ -1,0 +1,62 @@
+name: F0 lot12 authoritative NOAA station list
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot12-station-list.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect station list and source objects
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,json,hashlib,pathlib,datetime,csv,io,re,xml.etree.ElementTree as ET,concurrent.futures
+          base='https://noaa-ghcnh-pds.s3.us-east-1.amazonaws.com/'
+          out=pathlib.Path('custody/f0-lot12-20261125');out.mkdir(parents=True,exist_ok=True)
+          def get(u):
+              with urllib.request.urlopen(u,timeout=30) as x:
+                  b=x.read(60000001)
+                  if len(b)>60000000:raise ValueError('size limit')
+                  return b,{'http':x.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':x.headers.get('Content-Type')}
+          r={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'BLOCKED','station_matches':[],'files':[]}
+          try:
+              b,m=get(base+'hourly/doc/ghcnh-station-list.csv');r['station_list']=m
+              reader=csv.DictReader(io.StringIO(b.decode('utf-8-sig')));r['fields']=reader.fieldnames
+              matches=[a for a in reader if any('BARCELON' in str(v).upper() or '08181' in str(v) or 'LEBL' in str(v).upper() for v in a.values())]
+              r['station_matches']=matches
+              candidates=[]
+              for a in matches:
+                  if not any('BARCELON' in str(v).upper() for v in a.values()):continue
+                  if not any(re.search(r'AERO|AIRPORT|EL PRAT|LEBL',str(v),re.I) for v in a.values()):continue
+                  for v in a.values():
+                      if re.fullmatch(r'[A-Z]{2}[A-Z0-9-]{9}',str(v)):candidates.append(v)
+              r['candidate_ids']=sorted(set(candidates))
+              def inspect(pair):
+                  sid,y=pair;f={'station':sid,'year':y,'status':'BLOCKED'}
+                  try:
+                      prefix=f'hourly/access/by-year/{y}/psv/GHCNh_{sid}_'
+                      b,m=get(base+'?'+urllib.parse.urlencode({'list-type':2,'prefix':prefix,'max-keys':20}));z=ET.fromstring(b)
+                      keys=[a.text for a in z.findall('.//{*}Contents/{*}Key')];f['keys']=keys
+                      if len(keys)!=1:raise ValueError('no unique annual key')
+                      key=keys[0];b,m=get(base+urllib.parse.quote(key,safe='/'));f.update(m,key=key)
+                      reader=csv.DictReader(io.StringIO(b.decode('utf-8-sig')),delimiter='|');rows=list(reader)
+                      if not rows or len(reader.fieldnames or [])<3:raise ValueError('invalid PSV')
+                      f.update(status='STRUCTURE_INSPECTED',fields=reader.fieldnames,rows=len(rows),first_record=rows[0],last_record=rows[-1],malformed_rows=sum(None in a or None in a.values() for a in rows))
+                  except Exception as e:f['error']=repr(e)
+                  return f
+              if len(r['candidate_ids'])<=3:
+                  with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:r['files']=list(ex.map(inspect,[(s,y) for s in r['candidate_ids'] for y in range(2021,2026)]))
+              r['status']='STATION_LIST_INSPECTED'
+          except Exception as e:r['error']=repr(e)
+          (out/'station-list.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot12-20261125/station-list.json
+          git commit -m 'Preserve NOAA official station list evidence'
+          git push origin HEAD:audit/f0-lot06-20261125
