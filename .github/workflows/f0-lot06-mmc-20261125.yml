@@ -1,0 +1,60 @@
+name: F0 lot06 municipal date extraction
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot06-mmc-20261125.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect public municipal layer
+        shell: python
+        run: |
+          import urllib.request,json,hashlib,pathlib,collections,re,datetime
+          url='https://www.instamaps.cat/capesuser/45341204/d6fb97c6f313e63acce55f605738f6cc.json'
+          codes=set('080155 089045 082520 080193 080207 080543 080569 082665 080689 080728 080734 080771 080898 081017 081234 081252 081265 081574 089058 081580 081691 081803 081944 081960 082009 082042 082055 082114 082172 082212 082634 082444 082457 082824 082896 083015'.split())
+          r={'url':url,'status':'BLOCKED','expected_codes':sorted(codes)}
+          try:
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0','Referer':'https://www.instamaps.cat/visor.html?3D=false&businessid=c9ad61b54360453980cb30327e98d641'})
+              with urllib.request.urlopen(req,timeout=60) as res:
+                  b=res.read(100000001)
+                  r.update(http=res.status,bytes=len(b),sha256=hashlib.sha256(b).hexdigest(),content_type=res.headers.get('Content-Type'))
+              j=json.loads(b)
+              keys=collections.Counter(); rows=[]
+              def visit(obj):
+                  if isinstance(obj,list):
+                      for x in obj: visit(x)
+                  elif isinstance(obj,dict):
+                      simple={k:v for k,v in obj.items() if isinstance(v,(str,int,float)) or v is None}
+                      keys.update(simple.keys())
+                      matches=set()
+                      for k,v in simple.items():
+                          norm=re.sub(r'[^a-z0-9]','',k.lower())
+                          if v is None: continue
+                          if 'codi' in norm or 'code' in norm or norm in ('ine','municipi','municipio','idmun','codmun'):
+                              val=str(v).strip()
+                              if val.isdigit():
+                                  if val.zfill(6) in codes: matches.add(val.zfill(6))
+                                  if val.zfill(5) in {c[:5] for c in codes}: matches.update(c for c in codes if c[:5]==val.zfill(5))
+                      if matches:
+                          fields={k:v for k,v in simple.items() if any(w in k.lower() for w in ('codi','code','mun','data','date','valid','alta','fitxer','file','nom','name','url','cdt','consider'))}
+                          rows.append({'candidate_codes':sorted(matches),'fields':fields})
+                      for k,v in obj.items():
+                          if k.lower() not in ('geometry','coordinates'): visit(v)
+              visit(j)
+              r.update(status='INSPECTED',top_level_keys=list(j) if isinstance(j,dict) else None,field_names=keys.most_common(100),candidate_rows=rows,matched_codes=sorted(set(c for row in rows for c in row['candidate_codes'])),qualification='Candidate code matches; source field semantics and individual original GeoPackage require further independent validation.')
+          except Exception as e: r['error']=repr(e)
+          out=pathlib.Path('custody/f0-lot06-20261125/mmc.json')
+          out.parent.mkdir(parents=True,exist_ok=True)
+          out.write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve metadata report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot06-20261125/mmc.json
+          git commit -m 'Preserve municipal metadata inspection'
+          git push origin HEAD:audit/f0-lot06-20261125
