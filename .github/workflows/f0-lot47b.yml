@@ -1,0 +1,107 @@
+name: F0 lot47b district DGN bounded acquisitions
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot47b.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Acquire and identify all ten district distributions
+        shell: python
+        run: |
+          import urllib.request,hashlib,json,concurrent.futures,pathlib,datetime,tempfile,subprocess,shutil,struct
+          out=pathlib.Path('custody/f0-lot47b-20261125');out.mkdir(parents=True,exist_ok=True)
+          prior=json.loads(pathlib.Path('custody/f0-lot47-20261125/report.json').read_text())
+          entries=prior['headers_by_entry']
+          assert len(entries)==10 and all(e.get('http')==200 for e in entries)
+          def ole_directory(b):
+              if b[:8]!=bytes.fromhex('d0cf11e0a1b11ae1'):return None
+              if len(b)<512:raise ValueError('truncated CFB header')
+              shift=struct.unpack_from('<H',b,30)[0]
+              if shift not in (9,12):raise ValueError('invalid sector size')
+              sz=1<<shift
+              def sector(i):
+                  if i>=0xfffffffa or (i+2)*sz>len(b):raise ValueError('invalid CFB sector')
+                  return b[(i+1)*sz:(i+2)*sz]
+              fat_count,dir_start=struct.unpack_from('<II',b,44)
+              difat_start,difat_count=struct.unpack_from('<II',b,68)
+              difat=[v for v in struct.unpack_from('<109I',b,76) if v!=0xffffffff]
+              seen=set()
+              for _ in range(difat_count):
+                  if difat_start in seen:raise ValueError('DIFAT cycle')
+                  seen.add(difat_start)
+                  values=struct.unpack('<'+'I'*(sz//4),sector(difat_start))
+                  difat.extend(v for v in values[:-1] if v!=0xffffffff)
+                  difat_start=values[-1]
+              if len(difat)<fat_count:raise ValueError('incomplete FAT index')
+              fat=[]
+              for i in difat[:fat_count]:fat.extend(struct.unpack('<'+'I'*(sz//4),sector(i)))
+              seen=set();raw=bytearray();i=dir_start
+              while i!=0xfffffffe:
+                  if i in seen or i>=len(fat):raise ValueError('directory chain error')
+                  seen.add(i);raw.extend(sector(i));i=fat[i]
+                  if len(raw)>8_000_000:raise ValueError('directory bound')
+              streams=[]
+              for pos in range(0,len(raw),128):
+                  e=raw[pos:pos+128]
+                  if len(e)!=128:raise ValueError('partial directory entry')
+                  typ=e[66];nl=struct.unpack_from('<H',e,64)[0]
+                  if typ==0:continue
+                  if nl<2 or nl>64 or nl%2:raise ValueError('invalid directory name')
+                  name=bytes(e[:nl-2]).decode('utf-16le')
+                  size=struct.unpack_from('<Q',e,120)[0]
+                  streams.append({'name':name,'type':typ,'bytes':size})
+              return {'sector_size':sz,'directory_entries':streams}
+          ogr=shutil.which('ogrinfo')
+          formats=subprocess.run([ogr,'--formats'],capture_output=True,text=True,timeout=15).stdout if ogr else ''
+          dgn_drivers=[line.strip() for line in formats.splitlines() if 'DGN' in line]
+          def acquire(e):
+              u=e['https_url'];n=int(e['headers']['Content-Length'])
+              name=e['headers']['Content-Disposition'].split('filename=',1)[1]
+              r={'url':u,'filename':name,'expected_bytes':n,'status':'BLOCKED'}
+              try:
+                  if n>40000000:raise ValueError('per-file bound')
+                  with urllib.request.urlopen(urllib.request.Request(u,headers={'Accept-Encoding':'identity','User-Agent':'GTA-BCN-public-data-audit/1.0'}),timeout=30) as x:
+                      b=x.read(n+1);r['http']=x.status
+                  r.update(bytes=len(b),sha256=hashlib.sha256(b).hexdigest(),signature_hex=b[:16].hex())
+                  if len(b)!=n:raise ValueError('length mismatch')
+                  r['status']='BYTES_VERIFIED'
+                  try:r['cfb']=ole_directory(b)
+                  except Exception as ex:r['cfb_error']=repr(ex)
+                  with tempfile.TemporaryDirectory() as td:
+                      p=pathlib.Path(td)/'source.dgn';p.write_bytes(b)
+                      if shutil.which('file'):
+                          r['file_identification']=subprocess.run(['file','-b',str(p)],capture_output=True,text=True,timeout=10).stdout.strip()
+                      if ogr and any('DGNv8' in s for s in dgn_drivers):
+                          q=subprocess.run([ogr,'-ro','-al','-so',str(p)],capture_output=True,text=True,timeout=35)
+                          r['ogrinfo']={'returncode':q.returncode,'stdout':q.stdout[:20000],'stderr':q.stderr[:2000]}
+              except Exception as ex:r['error']=repr(ex)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:results=list(ex.map(acquire,entries))
+          s=json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'dgn_drivers':dgn_drivers,'results':results,'qualification':'Byte count, SHA-256 and compound-directory inspection only. No assertion of complete embedded geometry, edition equivalence, or legal/topological validation.'},ensure_ascii=False,indent=2)+'\n'
+          (out/'report.json').write_text(s)
+          print(json.dumps({'status':[{'filename':r['filename'],'status':r['status'],'bytes':r.get('bytes'),'error':r.get('error')} for r in results],'dgn_drivers':dgn_drivers},ensure_ascii=False))
+      - name: Preserve report without force
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot47b-20261125/report.json
+          git commit -m 'Preserve lot47b district DGN binary audit'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
