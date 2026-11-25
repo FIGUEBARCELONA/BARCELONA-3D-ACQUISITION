@@ -1,0 +1,86 @@
+name: F0 lot09 municipal and seasonal evidence
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot09.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect individual candidates and seasonal classes
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,json,hashlib,pathlib,datetime,zipfile,io,sqlite3,tempfile,concurrent.futures,collections,struct
+          out=pathlib.Path('custody/f0-lot09-20261125');out.mkdir(parents=True,exist_ok=True)
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'municipal':[],'amb':{}}
+          def get(u,limit=40000000):
+              with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-F0-audit/1.0'}),timeout=30) as x:
+                  b=x.read(limit+1)
+                  if len(b)>limit:raise ValueError('size limit')
+                  return b,{'http':x.status,'resolved':x.url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':x.headers.get('Content-Type')}
+          mm=json.loads(pathlib.Path('custody/f0-lot06-20261125/mmc.json').read_text())
+          def municipal(row):
+              f=row['fields'];name=f['nom_fitxer']
+              u='https://datacloud.icgc.cat/datacloud/mapa-municipal/gpkg/'+urllib.parse.quote(name)+'.zip'
+              r={'code':f['codi_unit'],'data_inici':f['data_inici'],'url':u,'url_basis':'Official directory plus source filename; candidate suffix, not confirmed link','status':'BLOCKED'}
+              try:
+                  b,m=get(u);r.update(m);z=zipfile.ZipFile(io.BytesIO(b));r['crc_bad']=z.testzip();r['layers']=[]
+                  for n in z.namelist():
+                      if not n.lower().endswith('.gpkg'):continue
+                      with tempfile.TemporaryDirectory() as d:
+                          p=pathlib.Path(d)/'a.gpkg';p.write_bytes(z.read(n))
+                          con=sqlite3.connect(f'file:{p}?mode=ro',uri=True)
+                          for t,typ,srs in con.execute('select table_name,data_type,srs_id from gpkg_contents').fetchall():
+                              q='"'+t.replace('"','""')+'"';cols=[v[1] for v in con.execute('pragma table_info('+q+')')]
+                              selected=[c for c in cols if c.lower() in ('codimuni','validde','dataalta')]
+                              a={'layer':t,'srs':srs,'count':con.execute('select count(*) from '+q).fetchone()[0],'selected_fields':selected}
+                              if selected:a['distinct_values']=con.execute('select distinct '+','.join('"'+c.replace('"','""')+'"' for c in selected)+' from '+q+' limit 100').fetchall()
+                              r['layers'].append(a)
+                          con.close()
+                  if not r['layers']:raise ValueError('no gpkg')
+                  r['status']='INSPECTED'
+              except Exception as e:r['error']=repr(e)
+              return r
+          def amb():
+              r={'status':'BLOCKED','samples':[]}
+              try:
+                  p={'where':'1=1','outFields':'objectid,temporalitat','returnGeometry':'true','outSR':'25831','f':'geojson'}
+                  u='https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?'+urllib.parse.urlencode(p)
+                  b,m=get(u);r.update(m);fs=json.loads(b)['features']
+                  groups=collections.defaultdict(list)
+                  for f in fs:groups[f['properties'].get('temporalitat')].append(f)
+                  r['counts']={str(k):len(v) for k,v in groups.items()}
+                  previous={1,1111,2683,204,369,937,1476,1894,1956}
+                  for group in ('TAL','PER'):
+                      candidates=sorted([f for f in groups[group] if f['properties']['objectid'] not in previous],key=lambda f:f['properties']['objectid'])
+                      if not candidates:continue
+                      for i in sorted(set([0,len(candidates)//2,len(candidates)-1])):
+                          f=candidates[i];oid=f['properties']['objectid'];x,y=f['geometry']['coordinates'][:2]
+                          s={'objectid':oid,'temporalitat':group,'status':'BLOCKED','layer':'orto-costa-rgb-5cm-202206-202207-batimetria','qualification':'Historical 2022 summer comparison, not current existence or precision.'}
+                          try:
+                              p={'SERVICE':'WMS','VERSION':'1.3.0','REQUEST':'GetMap','LAYERS':s['layer'],'STYLES':'','CRS':'EPSG:25831','BBOX':','.join(map(str,[x-7.5,y-7.5,x+7.5,y+7.5])),'WIDTH':300,'HEIGHT':300,'FORMAT':'image/png','TRANSPARENT':'FALSE'}
+                              im,m=get('https://geoserveis.icgc.cat/servei/catalunya/orto-costa/wms?'+urllib.parse.urlencode(p));s.update({k:v for k,v in m.items() if k!='resolved'})
+                              if im[:8]!=bytes([137,80,78,71,13,10,26,10]) or struct.unpack('>II',im[16:24])!=(300,300):raise ValueError('not expected PNG')
+                              name=f'ICGC_CC-BY-4.0_2022_oid_{oid}.png';(out/name).write_bytes(im)
+                              s.update(status='IMAGE_ACQUIRED',file=name,attribution='ICGC, CC BY 4.0, June-July 2022')
+                          except Exception as e:s['error']=repr(e)
+                          r['samples'].append(s)
+                  r['status']='INSPECTED'
+              except Exception as e:r['error']=repr(e)
+              return r
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:
+              a=ex.submit(amb)
+              report['municipal']=list(ex.map(municipal,mm['candidate_rows']))
+              report['amb']=a.result()
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2,default=str)+'\n')
+      - name: Preserve audit evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot09-20261125
+          git commit -m 'Preserve F0 lot09 audit evidence'
+          git push origin HEAD:audit/f0-lot06-20261125
