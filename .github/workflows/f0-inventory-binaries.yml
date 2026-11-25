@@ -1,0 +1,86 @@
+name: F0 inventory binary audit
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/f0-inventory-binaries.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python - <<'PY'
+          import pathlib,urllib.request,urllib.parse,hashlib,json,csv,io,zipfile,collections,concurrent.futures
+          d=pathlib.Path('custody/f0-inventory-binaries');d.mkdir(parents=True,exist_ok=True)
+          sources=[('F0I-01','773debdd-f739-46d2-b127-2d9e32b4477c','5cd64615-8f97-464c-a43a-7b98b464e0b1'),('F0I-02','d066b8ee-ebba-4423-b64f-31c16ee2d416','e152dc49-e515-41dd-971c-8e34cdc2e1f3'),('F0I-03','e3497ea4-0bae-4093-94a7-119df50a8a74','925bb055-f2ce-4eeb-9cf8-45670187f130'),('F0I-04','40743bb8-e4e0-457f-aa15-87007a0bdb6a','ee11333b-361e-4076-bcba-bf12cf6876e5')]
+          base='https://opendata-ajuntament.barcelona.cat/data/'
+          def get(url,limit=50000000):
+              with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 public data audit'}),timeout=35) as f:
+                  b=f.read(limit+1);assert len(b)<=limit
+                  return b,{'url':url,'resolved':f.url,'http':f.status,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'content_type':f.headers.get('Content-Type'),'last_modified':f.headers.get('Last-Modified')}
+          def csv_info(b):
+              for enc in ['utf-8-sig','cp1252']:
+                  try:t=b.decode(enc);break
+                  except UnicodeDecodeError:continue
+              if t.lstrip().startswith('<'):raise ValueError('HTML, not CSV')
+              dialect=csv.Sniffer().sniff(t[:16000],delimiters=',;\t|')
+              r=csv.reader(io.StringIO(t),dialect);h=next(r);assert len(h)>1
+              n=0;bad=0;nulls=collections.Counter();cats={x:collections.Counter() for x in h if any(a in x.lower() for a in ['tipus','tipo','categoria','classe','color','regulaci'])}
+              for row in r:
+                  n+=1
+                  if len(row)!=len(h):bad+=1;continue
+                  for k,v in zip(h,row):
+                      if not v.strip():nulls[k]+=1
+                      if k in cats:cats[k][v]+=1
+              return {'encoding':enc,'delimiter':dialect.delimiter,'fields':h,'rows':n,'ragged_rows':bad,'empty_cells':dict(nulls),'category_counts':{k:dict(v.most_common(100)) for k,v in cats.items()}}
+          def inspect(b):
+              if zipfile.is_zipfile(io.BytesIO(b)):
+                  with zipfile.ZipFile(io.BytesIO(b)) as z:
+                      assert z.testzip() is None
+                      res={'format':'ZIP','crc':'PASS','members':[{'name':x.filename,'bytes':x.file_size} for x in z.infolist()],'csv':{}}
+                      for x in z.infolist():
+                          if x.filename.lower().endswith('.csv') and x.file_size<100000000:
+                              try:res['csv'][x.filename]=csv_info(z.read(x))
+                              except Exception as e:res['csv'][x.filename]={'error':repr(e)}
+                      return res
+              return {'format':'CSV',**csv_info(b)}
+          def one(s):
+              k,p,r=s;out={'id':k,'attempts':[]};urls=[]
+              try:
+                  b,m=get(base+'api/action/resource_show?id='+r,2000000);j=json.loads(b);assert j['success'];q=j['result'];assert q['id']==r
+                  out['resource']={**m,'fields':{x:q.get(x) for x in ['id','package_id','name','url','format','size','last_modified','created']}}
+                  if q.get('url'):urls.append(q['url'])
+              except Exception as e:out['resource_error']=repr(e)
+              generic=base+'dataset/'+p+'/resource/'+r+'/download'
+              if generic not in urls:urls.append(generic)
+              for url in urls:
+                  try:
+                      b,m=get(url);info=inspect(b);out['attempts'].append({**m,'inspection':info});out['status']='BINARY_INSPECTED';return out
+                  except Exception as e:out['attempts'].append({'url':url,'error':repr(e)})
+              out['status']='BLOCKED';return out
+          def beach():
+              url='https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19'
+              o={'id':'F0I-05'}
+              try:
+                  b,m=get(url+'?f=pjson',2000000);j=json.loads(b);assert not j.get('error')
+                  o['layer']={**m,'fields':j.get('fields'),'name':j.get('name'),'copyrightText':j.get('copyrightText'),'geometryType':j.get('geometryType'),'maxRecordCount':j.get('maxRecordCount')}
+                  b,m=get(url+'/query?'+urllib.parse.urlencode({'where':'1=1','returnCountOnly':'true','f':'json'}),2000000);c=json.loads(b);assert 'count' in c;o['count']={**m,'count':c['count']}
+                  b,m=get(url+'/query?'+urllib.parse.urlencode({'where':'1=1','outFields':'*','returnGeometry':'true','outSR':'25831','f':'geojson'}),20000000);j=json.loads(b);assert j['type']=='FeatureCollection'
+                  o['binary']={**m,'features':len(j['features']),'null_geometries':sum(x.get('geometry') is None for x in j['features']),'exceededTransferLimit':j.get('exceededTransferLimit'),'count_matches':len(j['features'])==c['count'],'fields':sorted({k for f in j['features'] for k in f['properties']})}
+                  o['status']='BINARY_INSPECTED'
+              except Exception as e:o['status']='BLOCKED';o['error']=repr(e)
+              return o
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as e:
+              futures=[e.submit(one,s) for s in sources]+[e.submit(beach)]
+              report={'results':[f.result() for f in futures],'qualification':'Audit only. Raw assets not published, no production changes. Count is source coverage, not real-world completeness.'}
+          (d/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-inventory-binaries/report.json
+          git commit -m 'F0 inventory binary readback report'
+          git push origin HEAD:main
