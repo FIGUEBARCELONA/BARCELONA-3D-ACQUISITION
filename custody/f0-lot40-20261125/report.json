@@ -1,0 +1,41 @@
+{
+  "utc": "2026-11-25T09:03:53.925594+00:00",
+  "results": [
+    {
+      "edition": "2025_1T",
+      "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/40743bb8-e4e0-457f-aa15-87007a0bdb6a/resource/1f1f60fa-017e-4781-82e2-ea7cb6ee8aa9/download",
+      "status": "BLOCKED",
+      "http": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "edition": "2025_2T",
+      "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/40743bb8-e4e0-457f-aa15-87007a0bdb6a/resource/76f4888b-6465-4821-8e3e-013902b2b6c2/download",
+      "status": "BLOCKED",
+      "http": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "edition": "2025_3T",
+      "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/40743bb8-e4e0-457f-aa15-87007a0bdb6a/resource/8e7d2094-5da9-4624-85d8-cd26797bff05/download",
+      "status": "BLOCKED",
+      "http": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "edition": "2025_4T",
+      "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/40743bb8-e4e0-457f-aa15-87007a0bdb6a/resource/c4621b31-182c-4ab6-802c-2bfe6f78e677/download",
+      "status": "BLOCKED",
+      "http": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "edition": "2026_1T",
+      "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/40743bb8-e4e0-457f-aa15-87007a0bdb6a/resource/ee11333b-361e-4076-bcba-bf12cf6876e5/download",
+      "status": "BLOCKED",
+      "http": 403,
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "qualification": "Public catalogue URLs, bounded original bytes, no redistribution of raw records; schema inspection only, no geometric acceptance."
+}
