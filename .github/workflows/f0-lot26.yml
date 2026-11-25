@@ -1,0 +1,65 @@
+name: F0 lot26 WCS spatial overlap consistency
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot26.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Check native grid overlap and new disjoint control
+        shell: python
+        run: |
+          import pathlib,json,datetime,urllib.request,urllib.parse,hashlib,concurrent.futures,math
+          from decimal import Decimal
+          out=pathlib.Path('custody/f0-lot26-20261125');out.mkdir(parents=True,exist_ok=True)
+          prev=json.loads(pathlib.Path('custody/f0-lot25-20261125/alias.json').read_text())
+          def test(task):
+              base,kind=task;s=base['step'];r={'step':s,'case':kind,'status':'BLOCKED'}
+              try:
+                  h=base['header'];x=h['xllcorner'];y=h['yllcorner']
+                  dx,dy={'east':(s,0),'north':(0,s),'disjoint':(1000*s,1000*s)}[kind]
+                  x+=dx;y+=dy
+                  p={'SERVICE':'WCS','REQUEST':'GetCoverage','VERSION':'1.0.0','CRS':'EPSG:25831','COVERAGE':'icc:met','WIDTH':5,'HEIGHT':5,'FORMAT':'ARCGRID','BBOX':f'{x},{y},{x+5*s},{y+5*s}'}
+                  u='https://geoserveis.icgc.cat/icc_mdt/wcs/service?'+urllib.parse.urlencode(p);r['url']=u
+                  with urllib.request.urlopen(u,timeout=20) as resp:
+                      b=resp.read(100001);r.update(http=resp.status,bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+                  if len(b)>100000:raise ValueError('size bound')
+                  lines=b.decode('ascii').splitlines();hdr={l.split()[0].lower():float(l.split()[1]) for l in lines[:6]}
+                  v=[float(z) for l in lines[6:] for z in l.split()]
+                  if len(v)!=25 or hdr.get('ncols')!=5 or hdr.get('nrows')!=5 or hdr.get('cellsize')!=s or hdr.get('xllcorner')!=x or hdr.get('yllcorner')!=y:raise ValueError('grid mismatch')
+                  if not all(math.isfinite(z) for z in v):raise ValueError('nonfinite')
+                  a=base['values'];pairs=[]
+                  if kind=='east':pairs=[(a[5*i+j+1],v[5*i+j]) for i in range(5) for j in range(4)]
+                  if kind=='north':pairs=[(a[5*i+j],v[5*(i+1)+j]) for i in range(4) for j in range(5)]
+                  pairs=[(a,b) for a,b in pairs if a!=-9999 and b!=-9999]
+                  r.update(status='SAMPLE_INSPECTED',header=hdr,values=v,valid_cells=sum(z!=-9999 for z in v),same_array_as_base=v==a,overlap_pairs=len(pairs),overlap_exact=sum(a==b for a,b in pairs),max_abs_diff=max((abs(a-b) for a,b in pairs),default=None))
+                  (out/(str(s)+'m_'+kind+'.asc')).write_bytes(b)
+              except Exception as e:r['error']=repr(e)
+              return r
+          tasks=[(b,k) for b in prev['results'] for k in ('east','north','disjoint')]
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:results=list(ex.map(test,tasks))
+          (out/'report.json').write_text(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'qualification':'Exact shared-coordinate equality diagnostic; not independently approved accuracy or source edition.'},indent=2)+'\n')
+      - name: Publish without force
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot26-20261125
+          git commit -m 'Preserve lot26 spatial overlap evidence'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
