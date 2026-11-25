@@ -1,0 +1,16 @@
+{
+  "source": "https://www.portdebarcelona.cat/sites/default/files/content/file/2021/10/24/1/delimitacion-de-los-espacios-y-usos-portuarios-deup_1.pdf",
+  "page": 74,
+  "bytes": 30932935,
+  "sha256": "2fa06be75e20eba812dca128508972082e1d40b4b213c33d34dfdd5b68bcb721",
+  "vector_path_count": 2204,
+  "image_count": 1,
+  "text_chars": 1375,
+  "path_type_counts": {
+    "s": 1655,
+    "fs": 549
+  },
+  "filled_green_paths": [],
+  "status": "NO_GREEN_VECTOR_PATH_RECOVERED",
+  "qualification": "No coordinate editing, no assumed vertex order, no canonical adoption."
+}
