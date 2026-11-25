@@ -1,0 +1,65 @@
+{
+  "utc": "2026-11-25T05:50:55.236863+00:00",
+  "directory": {
+    "status": "BLOCKED",
+    "error": "URLError(TimeoutError('timed out'))"
+  },
+  "municipal_packages": [
+    {
+      "name": "mapa-municipal-v2r0-molins-rei-20190408",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    },
+    {
+      "name": "mapa-municipal-v2r0-badia-valles-20040325",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    },
+    {
+      "name": "mapa-municipal-v2r0-sant-andreu-barca-20160727",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    },
+    {
+      "name": "mapa-municipal-v2r0-corbera-llobregat-20181210",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    },
+    {
+      "name": "mapa-municipal-v2r0-viladecans-20220721",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    },
+    {
+      "name": "mapa-municipal-v2r0-palma-cervello-20160505",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    },
+    {
+      "name": "mapa-municipal-v2r0-montgat-20260720",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    },
+    {
+      "name": "mapa-municipal-v2r0-castellbisbal-20111214",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    },
+    {
+      "name": "mapa-municipal-v2r0-sant-climent-llobregat-20260720",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    },
+    {
+      "name": "mapa-municipal-v2r0-papiol-20141022",
+      "status": "NO_UNAMBIGUOUS_LINK",
+      "matches": []
+    }
+  ],
+  "state": {
+    "url": "https://datacloud.icgc.cat/datacloud/mapa-municipal-estat/gpkg/mapa-municipal-estat-v1r0-20260824.zip",
+    "status": "BLOCKED",
+    "expected": null,
+    "error": "URLError(TimeoutError('timed out'))"
+  }
+}
