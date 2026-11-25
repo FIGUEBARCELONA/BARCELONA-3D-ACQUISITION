@@ -1,0 +1,91 @@
+name: F0 lot48 native DGN v8 semantic inspection
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot48.yml']
+concurrency:
+  group: f0-canonical-custody
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+          fetch-depth: 0
+      - name: Inspect exact municipal DGN bytes with pinned MIT reader
+        shell: python
+        run: |
+          import pathlib,urllib.request,hashlib,json,datetime,concurrent.futures,tempfile,subprocess,sys,collections
+          out=pathlib.Path('custody/f0-lot48-20261125');out.mkdir(parents=True,exist_ok=True)
+          report={'package':'ezdgn==0.3.2','wheel_sha256_expected':'e4a2f55306ea67e6a1d798e62e5675d52618f6f234471e09475942ff8ec6294c','status':'BLOCKED','results':[]}
+          def save():
+              (out/'report.json').write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
+          try:
+              req=out/'requirements.txt'
+              req.write_text(report['package']+' --hash=sha256:'+report['wheel_sha256_expected']+'\n')
+              target=pathlib.Path(tempfile.mkdtemp())/'deps'
+              p=subprocess.run([sys.executable,'-m','pip','install','--disable-pip-version-check','--only-binary=:all:','--no-deps','--require-hashes','--target',str(target),'-r',str(req)],capture_output=True,text=True,timeout=75)
+              report['installation']={'returncode':p.returncode,'stdout':p.stdout[-3000:],'stderr':p.stderr[-3000:]}
+              if p.returncode:raise ValueError('pinned wheel installation failed')
+              sys.path.insert(0,str(target))
+              import ezdgn,importlib.metadata
+              report['installed_version']=importlib.metadata.version('ezdgn')
+              if report['installed_version']!='0.3.2':raise ValueError('version mismatch')
+              previous=json.loads(pathlib.Path('custody/f0-lot47b-20261125/report.json').read_text())
+              def inspect(e):
+                  r={'filename':e['filename'],'source':e['url'],'expected_sha256':e['sha256'],'status':'BLOCKED'}
+                  try:
+                      n=e['bytes']
+                      with urllib.request.urlopen(urllib.request.Request(e['url'],headers={'Accept-Encoding':'identity'}),timeout=30) as x:b=x.read(n+1)
+                      r.update(bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+                      if len(b)!=n or r['sha256']!=e['sha256']:raise ValueError('source identity mismatch')
+                      r['status']='IDENTITY_VERIFIED'
+                      with tempfile.TemporaryDirectory() as td:
+                          f=pathlib.Path(td)/'source.dgn';f.write_bytes(b);del b
+                          c=ezdgn.inspect_v8_container(str(f))
+                          r['v8_markers']=bool(c.has_dgn_v8_markers)
+                          r['model_storage_count']=len(c.model_storage_paths)
+                          if not r['v8_markers']:raise ValueError('not identified DGNv8')
+                          doc=ezdgn.open_document(str(f))
+                          if not isinstance(doc,ezdgn.V8Document):raise ValueError('unexpected document type')
+                          levels={str(l.level_id):{'number':str(l.number),'name':str(l.name)} for l in doc.levels}
+                          r['levels']=levels
+                          models=[]
+                          for m in doc.models:
+                              types=collections.Counter();lc=collections.Counter();pairs=collections.Counter()
+                              for el in m.elements:
+                                  k=str(el.dxftype());lv=str(el.level)
+                                  types[k]+=1;lc[lv]+=1;pairs[(lv,k)]+=1
+                              models.append({'name':str(m.metadata.name),'dimension':str(m.metadata.dimension),'master_unit':str(m.metadata.master_unit),'elements':sum(types.values()),'entities':len(m.entities),'types':dict(types),'level_counts':dict(lc),'level_types':[{'level':lv,'type':k,'count':n} for (lv,k),n in sorted(pairs.items())]})
+                          r['models']=models
+                          r['status']='SEMANTIC_INSPECTION' if models and sum(m['elements'] for m in models)>0 else 'NO_GRAPHICS'
+                  except Exception as ex:r['error']=repr(ex)
+                  return r
+              with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:
+                  report['results']=list(ex.map(inspect,previous['results']))
+              report['status']='RUN_COMPLETED'
+          except Exception as e:report['error']=repr(e)
+          report['utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+          report['qualification']='Pre-alpha reader, exact source identity checked; counts are reader outputs, not independent geometry validation or proof of reference expansion. No raw source redistribution.'
+          save()
+          print(json.dumps({'status':report['status'],'installed_version':report.get('installed_version'),'error':report.get('error'),'results':[{'filename':r['filename'],'status':r['status'],'error':r.get('error'),'models':len(r.get('models',[])),'elements':sum(m['elements'] for m in r.get('models',[]))} for r in report['results']]},ensure_ascii=False))
+      - name: Preserve report without force
+        if: always()
+        run: |
+          set -euo pipefail
+          test -f custody/f0-lot48-20261125/report.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot48-20261125/report.json custody/f0-lot48-20261125/requirements.txt
+          git commit -m 'Preserve lot48 native DGN v8 semantic diagnostics'
+          for attempt in 1 2 3; do
+            git fetch origin audit/f0-lot06-20261125
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+            if git push origin HEAD:audit/f0-lot06-20261125; then exit 0; fi
+          done
+          exit 1
