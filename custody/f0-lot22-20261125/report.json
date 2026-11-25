@@ -1,0 +1,108 @@
+{
+  "utc": "2026-11-25T08:01:59.242230+00:00",
+  "old_run": {
+    "status": "INSPECTED",
+    "runs": [
+      {
+        "id": 45571726542,
+        "status": "completed",
+        "conclusion": "failure",
+        "head_sha": "8f39d6917ad0254469cfe7d546992b432e4c80a8",
+        "html_url": "https://github.com/FIGUEBARCELONA/BARCELONA-3D-ACQUISITION/actions/runs/45571726542",
+        "jobs": [
+          {
+            "id": 139059748762,
+            "name": "audit",
+            "status": "completed",
+            "conclusion": "failure",
+            "steps": [
+              {
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 1,
+                "started_at": "2026-11-25T07:53:56Z",
+                "completed_at": "2026-11-25T07:53:58Z"
+              },
+              {
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 2,
+                "started_at": "2026-11-25T07:53:58Z",
+                "completed_at": "2026-11-25T07:54:03Z"
+              },
+              {
+                "name": "Run python -m pip install --disable-pip-version-check rasterio==1.4.3",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 3,
+                "started_at": "2026-11-25T07:54:03Z",
+                "completed_at": "2026-11-25T07:54:09Z"
+              },
+              {
+                "name": "Inspect bounded original COG windows",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 4,
+                "started_at": "2026-11-25T07:54:09Z",
+                "completed_at": "2026-11-25T07:54:35Z"
+              },
+              {
+                "name": "Preserve bounded audit",
+                "status": "completed",
+                "conclusion": "failure",
+                "number": 5,
+                "started_at": "2026-11-25T07:54:35Z",
+                "completed_at": "2026-11-25T07:54:35Z"
+              },
+              {
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 10,
+                "started_at": "2026-11-25T07:54:35Z",
+                "completed_at": "2026-11-25T07:54:36Z"
+              },
+              {
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 11,
+                "started_at": "2026-11-25T07:54:36Z",
+                "completed_at": "2026-11-25T07:54:36Z"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ranges": [
+    {
+      "product": "MDTe",
+      "url": "https://datacloud.icgc.cat/datacloud/model-elevacions-terreny-edificis/tif_unzip/model-elevacions-terreny-edificis-lidar-catalunya-1m-2021-2023.tif",
+      "status": "BLOCKED",
+      "error": "URLError(TimeoutError('timed out'))"
+    },
+    {
+      "product": "MDTev",
+      "url": "https://datacloud.icgc.cat/datacloud/model-elevacions-terreny-edificis-vegetacio/tif_unzip/model-elevacions-terreny-edificis-vegetacio-lidar-catalunya-1m-2021-2023.tif",
+      "status": "BLOCKED",
+      "error": "URLError(TimeoutError('timed out'))"
+    },
+    {
+      "product": "nDSM",
+      "url": "https://datacloud.icgc.cat/datacloud/model-alcaries/tif_unzip/model-alcaries-lidar-catalunya-1m-2021-2023.tif",
+      "status": "BLOCKED",
+      "error": "URLError(TimeoutError('timed out'))"
+    },
+    {
+      "product": "CHM",
+      "url": "https://datacloud.icgc.cat/datacloud/model-alcaries-vegetacio/tif_unzip/model-alcaries-vegetacio-lidar-catalunya-1m-2021-2023.tif",
+      "status": "BLOCKED",
+      "error": "URLError(TimeoutError('timed out'))"
+    }
+  ],
+  "qualification": "Header-only transport diagnostic; not original raster values."
+}
