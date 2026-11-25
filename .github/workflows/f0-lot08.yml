@@ -1,0 +1,73 @@
+name: F0 lot08 targeted image and municipal source audit
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot08.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect six new WMS samples and discover catalog links
+        shell: python
+        run: |
+          import urllib.request,urllib.parse,json,hashlib,pathlib,datetime,struct,concurrent.futures,re
+          from html.parser import HTMLParser
+          out=pathlib.Path('custody/f0-lot08-20261125');out.mkdir(parents=True,exist_ok=True)
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'orthophoto':{},'municipal':{}}
+          def get(u):
+              with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'GTA-BCN-F0-audit/1.0'}),timeout=35) as x:
+                  b=x.read(40000001)
+                  if len(b)>40000000:raise ValueError('size limit')
+                  return b,x.headers.get('Content-Type'),x.url
+          r=report['orthophoto'];r.update(status='BLOCKED',samples=[],qualification='Diagnostic samples at real inventory positions, not accuracy certification. No bulk AMB data preserved.')
+          try:
+              b,ct,_=get('https://geoportal.amb.cat/geoserveis/rest/services/inventari_platges/MapServer/19/query?where=1%3D1&outFields=objectid&returnGeometry=true&outSR=25831&f=geojson')
+              j=json.loads(b);fs=sorted(j['features'],key=lambda f:f['properties']['objectid']);r['source_sha256']=hashlib.sha256(b).hexdigest();r['population']=len(fs)
+              if len(fs)!=496:raise ValueError('population changed')
+              previous={1,1111,2683}
+              chosen=[fs[i] for i in [62,124,186,310,372,434]]
+              if any(f['properties']['objectid'] in previous for f in chosen):raise ValueError('overlap previous sample')
+              def sample(f):
+                  oid=f['properties']['objectid'];x,y=f['geometry']['coordinates'][:2]
+                  s={'objectid':oid,'status':'BLOCKED','layer':'orto-costa-rgb-10cm-202602-202602'}
+                  try:
+                      p={'SERVICE':'WMS','VERSION':'1.3.0','REQUEST':'GetMap','LAYERS':s['layer'],'STYLES':'','CRS':'EPSG:25831','BBOX':','.join(map(str,[x-15,y-15,x+15,y+15])),'WIDTH':300,'HEIGHT':300,'FORMAT':'image/png','TRANSPARENT':'FALSE'}
+                      u='https://geoserveis.icgc.cat/servei/catalunya/orto-costa/wms?'+urllib.parse.urlencode(p)
+                      im,ct,_=get(u);s.update(bytes=len(im),content_type=ct,sha256=hashlib.sha256(im).hexdigest())
+                      if im[:8]!=b'\x89PNG\r\n\x1a\n':raise ValueError('not PNG')
+                      w,h=struct.unpack('>II',im[16:24])
+                      if (w,h)!=(300,300):raise ValueError('wrong dimensions')
+                      name=f'ICGC_CC-BY-4.0_oid_{oid}.png';(out/name).write_bytes(im)
+                      s.update(status='IMAGE_ACQUIRED',file=name,width=w,height=h,center_pixel=[150,150],pixel_size_m=0.1,attribution='Institut Cartogràfic i Geològic de Catalunya, CC BY 4.0, February 2026')
+                  except Exception as e:s['error']=repr(e)
+                  return s
+              with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:r['samples']=list(ex.map(sample,chosen))
+              r['status']='ACQUISITION_ATTEMPTED'
+          except Exception as e:r['error']=repr(e)
+          class Links(HTMLParser):
+              def __init__(self):super().__init__();self.urls=[]
+              def handle_starttag(self,t,a):
+                  for k,v in a:
+                      if k in ('href','src','action') and v:self.urls.append(v)
+          urls=['https://web.gencat.cat/ca/ens-locals/identitat-ens-locals/mapa-local/limits-terme-oficials','https://www.icgc.cat/ca/Geoinformacio-i-mapes/Mapes/Mapes-municipals','https://visors.icgc.cat/appdownloads/']
+          def discover(u):
+              d={'url':u,'status':'BLOCKED'}
+              try:
+                  b,ct,final=get(u);h=Links();h.feed(b.decode(errors='replace'))
+                  links=[urllib.parse.urljoin(final,v) for v in h.urls if re.search(r'munic|delimit|download|descar|gpkg|\.zip|\.js',v,re.I)]
+                  d.update(status='INSPECTED',sha256=hashlib.sha256(b).hexdigest(),bytes=len(b),links=sorted(set(links))[:200],qualification='Public landing page link discovery; no guessed individual file URLs.')
+              except Exception as e:d['error']=repr(e)
+              return d
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:report['municipal']['pages']=list(ex.map(discover,urls))
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot08-20261125
+          git commit -m 'Preserve F0 lot08 audit evidence'
+          git push origin HEAD:audit/f0-lot06-20261125
