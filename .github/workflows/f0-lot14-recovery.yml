@@ -1,0 +1,74 @@
+name: F0 lot14 exact ref manual and XOM form audit
+on:
+  push:
+    branches: [audit/f0-lot06-20261125]
+    paths: ['.github/workflows/f0-lot14-recovery.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/f0-lot06-20261125
+      - run: python -m pip install --disable-pip-version-check playwright==1.51.0
+      - name: Verify source custody and annual form
+        shell: python
+        run: |
+          import pathlib,hashlib,subprocess,json,datetime,urllib.request,urllib.parse,re
+          from playwright.sync_api import sync_playwright
+          out=pathlib.Path('custody/f0-lot14-20261125');out.mkdir(parents=True,exist_ok=True)
+          report={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'head':subprocess.check_output(['git','rev-parse','HEAD']).decode().strip(),'manuals':[],'xom':{}}
+          src=pathlib.Path('custody/f0-lot13-20261125')
+          prev=json.loads((src/'report.json').read_text())
+          for d in prev['docs']:
+              r={'name':d['key'],'status':'BLOCKED'}
+              try:
+                  p=src/d['key']
+                  if p.exists():b=p.read_bytes();r['source']='checkout'
+                  else:
+                      url='https://raw.githubusercontent.com/FIGUEBARCELONA/BARCELONA-3D-ACQUISITION/audit/f0-lot06-20261125/custody/f0-lot13-20261125/'+d['key']
+                      with urllib.request.urlopen(url,timeout=30) as x:b=x.read(5000000)
+                      r['source']='public raw GitHub'
+                  r['actual_sha256']=hashlib.sha256(b).hexdigest()
+                  if r['actual_sha256']!=d['sha256']:raise ValueError('source hash mismatch')
+                  t=subprocess.check_output(['pdftotext','-layout','-','-'],input=b).decode()
+                  name=pathlib.Path(d['key']).stem+'.txt';(out/name).write_text(t)
+                  r.update(status='TEXT_EXTRACTED',pages=len(t.rstrip('\f').split('\f')),text_file=name)
+              except Exception as e:r['error']=repr(e)
+              report['manuals'].append(r)
+          r=report['xom'];r.update(status='BLOCKED',annual=[])
+          try:
+              with sync_playwright() as pw:
+                  browser=pw.chromium.launch(channel='chrome',headless=True)
+                  context=browser.new_context(accept_downloads=True)
+                  page=context.new_page()
+                  url='https://www.meteo.cat/wpweb/climatologia/dades-i-productes-climatics/anuari-de-dades/estacions-meteorologiques/'
+                  page.goto(url,wait_until='domcontentloaded',timeout=45000)
+                  page.locator('#optone').wait_for()
+                  options=lambda sel:page.locator(sel+' option').evaluate_all('(els)=>els.map(e=>({value:e.value,label:e.textContent.trim()}))')
+                  r['years']=options('#optone')
+                  for year in range(2021,2026):
+                      d={'year':year,'status':'BLOCKED'}
+                      try:
+                          choice=[a for a in r['years'] if a['label']==str(year)]
+                          if len(choice)!=1:raise ValueError('year unavailable')
+                          page.locator('#optone').select_option(choice[0]['value'])
+                          page.wait_for_timeout(400)
+                          d['types']=options('#opttwo')
+                          d['urls']=page.locator('#opttwo option').evaluate_all('(els)=>els.map(e=>({label:e.textContent.trim(),value:e.value,attributes:Array.from(e.attributes).map(a=>[a.name,a.value])}))')
+                          d['status']='OPTIONS_INSPECTED'
+                      except Exception as e:d['error']=repr(e)
+                      r['annual'].append(d)
+                  r['status']='BROWSER_INSPECTED';browser.close()
+          except Exception as e:r['error']=repr(e)
+          (out/'recovery.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+      - name: Preserve audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add custody/f0-lot14-20261125
+          git commit -m 'Preserve exact ref audit and annual form options'
+          git push origin HEAD:audit/f0-lot06-20261125
