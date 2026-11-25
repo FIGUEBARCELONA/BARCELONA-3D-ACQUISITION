@@ -1,0 +1,813 @@
+{
+  "member": {
+    "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+    "status": "MEMBER_SEMANTICS_INSPECTED",
+    "member": "Base (Línies).gpkg",
+    "http": 200,
+    "received_bytes": 50732774,
+    "seconds": 60.56,
+    "prefix_sha256": "0937488739adcd6f13b7efe7e4725117f9782a178fdf0eab334949416ceaa831",
+    "acquired_prefix_sha256": "4ed6b96c50bad68da90ce9ed0af45163b028a37ac1139d678476b5f5ef834b65",
+    "member_bytes": 93929472,
+    "member_sha256": "a890e652f5c66a8c05a7e92b64717c5ff76fcdda9f90458cce1bc3d020604ae2",
+    "crc32": "4cbcafa0",
+    "application_id": 1196444487,
+    "quick_check": [
+      [
+        "ok"
+      ]
+    ],
+    "integrity_check": [
+      [
+        "ok"
+      ]
+    ],
+    "foreign_key_violations": 0,
+    "srs": [
+      [
+        -1,
+        "NONE",
+        -1
+      ],
+      [
+        0,
+        "NONE",
+        0
+      ],
+      [
+        4326,
+        "EPSG",
+        4326
+      ],
+      [
+        25831,
+        "EPSG",
+        25831
+      ]
+    ],
+    "geometry_columns": [
+      [
+        "Base (Línies)",
+        "geometria",
+        "MULTILINESTRING",
+        25831,
+        0,
+        0
+      ]
+    ],
+    "layers": [
+      {
+        "name": "Base (Línies)",
+        "type": "features",
+        "identifier": "Base (Línies)",
+        "last_change": "2026-11-10T13:10:51.680Z",
+        "srs_id": 25831,
+        "count": 21182,
+        "columns": [
+          {
+            "name": "FID",
+            "type": "INTEGER"
+          },
+          {
+            "name": "geometria",
+            "type": "MULTILINESTRING"
+          },
+          {
+            "name": "ID_INSPIRE",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "NIVELL",
+            "type": "TEXT(35)"
+          },
+          {
+            "name": "NIVELL_DESCRIPCIO",
+            "type": "TEXT(100)"
+          },
+          {
+            "name": "NIVELL_DESCRIPCIO_ES",
+            "type": "TEXT(100)"
+          },
+          {
+            "name": "NIVELL_DESCRIPCIO_EN",
+            "type": "TEXT(100)"
+          },
+          {
+            "name": "LLEGENDA",
+            "type": "TEXT(85)"
+          },
+          {
+            "name": "ORDRE_REPRESENTACIO",
+            "type": "SMALLINT"
+          },
+          {
+            "name": "RANG_ESCALA",
+            "type": "TEXT(12)"
+          },
+          {
+            "name": "GRUIX_QGIS",
+            "type": "FLOAT"
+          },
+          {
+            "name": "ESTIL_QGIS",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "HEX_COLOR7",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "RED",
+            "type": "SMALLINT"
+          },
+          {
+            "name": "GREEN",
+            "type": "SMALLINT"
+          },
+          {
+            "name": "BLUE",
+            "type": "SMALLINT"
+          },
+          {
+            "name": "IDENT_ANEXO",
+            "type": "TEXT(5)"
+          },
+          {
+            "name": "ANEXO_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "IDENT_TEMA",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "TEMA_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "IDENT_CONJUNT",
+            "type": "TEXT(15)"
+          },
+          {
+            "name": "CONJUNT_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "IDENT_SUBCONJUNT",
+            "type": "TEXT(20)"
+          },
+          {
+            "name": "SUBCONJUNT_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "IDENT_ELEMENT",
+            "type": "TEXT(25)"
+          },
+          {
+            "name": "ELEMENT_DESCRIPCIO",
+            "type": "TEXT(50)"
+          },
+          {
+            "name": "HEX_COLOR9",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "ALPHA",
+            "type": "TEXT(10)"
+          },
+          {
+            "name": "DISTRICTE",
+            "type": "TEXT(2)"
+          },
+          {
+            "name": "BARRI",
+            "type": "TEXT(2)"
+          }
+        ]
+      }
+    ],
+    "classes": [
+      {
+        "NIVELL": "ADM_01_LN_CAT",
+        "NIVELL_DESCRIPCIO": "Límit municipal",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010103",
+        "SUBCONJUNT_DESCRIPCIO": "Divisions territorials",
+        "IDENT_ELEMENT": "0001010305",
+        "ELEMENT_DESCRIPCIO": "Límit municipal",
+        "count": 1
+      },
+      {
+        "NIVELL": "ADM_01_M_LN",
+        "NIVELL_DESCRIPCIO": "Límit de terme municipal - marítim",
+        "IDENT_TEMA": "0104",
+        "TEMA_DESCRIPCIO": "Unitats Administratives",
+        "IDENT_CONJUNT": "010411",
+        "CONJUNT_DESCRIPCIO": "Terme Municipal",
+        "IDENT_SUBCONJUNT": "01041101",
+        "SUBCONJUNT_DESCRIPCIO": "Terme Municipal",
+        "IDENT_ELEMENT": "0104110105",
+        "ELEMENT_DESCRIPCIO": "Límit de terme municipal - marítim",
+        "count": 4
+      },
+      {
+        "NIVELL": "ADM_01_T_LN",
+        "NIVELL_DESCRIPCIO": "Límit de terme municipal - terrestre",
+        "IDENT_TEMA": "0104",
+        "TEMA_DESCRIPCIO": "Unitats Administratives",
+        "IDENT_CONJUNT": "010411",
+        "CONJUNT_DESCRIPCIO": "Terme Municipal",
+        "IDENT_SUBCONJUNT": "01041101",
+        "SUBCONJUNT_DESCRIPCIO": "Terme Municipal",
+        "IDENT_ELEMENT": "0104110104",
+        "ELEMENT_DESCRIPCIO": "Límit de terme municipal - terrestre",
+        "count": 20
+      },
+      {
+        "NIVELL": "ADM_02_LN",
+        "NIVELL_DESCRIPCIO": "Límit de districte",
+        "IDENT_TEMA": "0104",
+        "TEMA_DESCRIPCIO": "Unitats Administratives",
+        "IDENT_CONJUNT": "010412",
+        "CONJUNT_DESCRIPCIO": "Districtes",
+        "IDENT_SUBCONJUNT": "01041201",
+        "SUBCONJUNT_DESCRIPCIO": "Districte",
+        "IDENT_ELEMENT": "0104120101",
+        "ELEMENT_DESCRIPCIO": "Límit de districte",
+        "count": 20
+      },
+      {
+        "NIVELL": "ADM_03_LN",
+        "NIVELL_DESCRIPCIO": "Límit de barri",
+        "IDENT_TEMA": "0104",
+        "TEMA_DESCRIPCIO": "Unitats Administratives",
+        "IDENT_CONJUNT": "010413",
+        "CONJUNT_DESCRIPCIO": "Barris",
+        "IDENT_SUBCONJUNT": "01041301",
+        "SUBCONJUNT_DESCRIPCIO": "Barri",
+        "IDENT_ELEMENT": "0104130101",
+        "ELEMENT_DESCRIPCIO": "Límit de barri",
+        "count": 118
+      },
+      {
+        "NIVELL": "ADM_06_LN",
+        "NIVELL_DESCRIPCIO": "Límit d'àrea d'interès",
+        "IDENT_TEMA": "0104",
+        "TEMA_DESCRIPCIO": "Unitats Administratives",
+        "IDENT_CONJUNT": "010416",
+        "CONJUNT_DESCRIPCIO": "Àrea d'interès",
+        "IDENT_SUBCONJUNT": "01041601",
+        "SUBCONJUNT_DESCRIPCIO": "Àrea d'interès",
+        "IDENT_ELEMENT": "0104160101",
+        "ELEMENT_DESCRIPCIO": "Límit d'àrea d'interès",
+        "count": 4
+      },
+      {
+        "NIVELL": "ADM_10_M_LN_CAT",
+        "NIVELL_DESCRIPCIO": "Límit de Catalunya - marítim",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010103",
+        "SUBCONJUNT_DESCRIPCIO": "Divisions territorials",
+        "IDENT_ELEMENT": "0001010302",
+        "ELEMENT_DESCRIPCIO": "Límit de Catalunya - marítim",
+        "count": 1
+      },
+      {
+        "NIVELL": "ADM_10_T_LN_CAT",
+        "NIVELL_DESCRIPCIO": "Límit de Catalunya - terrestre",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010103",
+        "SUBCONJUNT_DESCRIPCIO": "Divisions territorials",
+        "IDENT_ELEMENT": "0001010301",
+        "ELEMENT_DESCRIPCIO": "Límit de Catalunya - terrestre",
+        "count": 1
+      },
+      {
+        "NIVELL": "ADM_11_LN_CAT",
+        "NIVELL_DESCRIPCIO": "Límit provincial",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010103",
+        "SUBCONJUNT_DESCRIPCIO": "Divisions territorials",
+        "IDENT_ELEMENT": "0001010304",
+        "ELEMENT_DESCRIPCIO": "Límit provincial",
+        "count": 2
+      },
+      {
+        "NIVELL": "ADM_12_LN_CAT",
+        "NIVELL_DESCRIPCIO": "Límit comarcal",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010103",
+        "SUBCONJUNT_DESCRIPCIO": "Divisions territorials",
+        "IDENT_ELEMENT": "0001010303",
+        "ELEMENT_DESCRIPCIO": "Límit comarcal",
+        "count": 1
+      },
+      {
+        "NIVELL": "COM_02VF_LN",
+        "NIVELL_DESCRIPCIO": "Via de ferrocarril i telefèric",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010112",
+        "SUBCONJUNT_DESCRIPCIO": "Transport",
+        "IDENT_ELEMENT": "0001011209",
+        "ELEMENT_DESCRIPCIO": "Via de ferrocarril i telefèric",
+        "count": 597
+      },
+      {
+        "NIVELL": "COM_03BT_LN",
+        "NIVELL_DESCRIPCIO": "Túnel",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010114",
+        "SUBCONJUNT_DESCRIPCIO": "Vialitat",
+        "IDENT_ELEMENT": "0001011427",
+        "ELEMENT_DESCRIPCIO": "Túnel",
+        "count": 211
+      },
+      {
+        "NIVELL": "COM_05CC_LN",
+        "NIVELL_DESCRIPCIO": "Via de comunicació",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010114",
+        "SUBCONJUNT_DESCRIPCIO": "Vialitat",
+        "IDENT_ELEMENT": "0001011410",
+        "ELEMENT_DESCRIPCIO": "Via de comunicació",
+        "count": 2049
+      },
+      {
+        "NIVELL": "COM_13LN_LN",
+        "NIVELL_DESCRIPCIO": "Pont i pas elevat",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010114",
+        "SUBCONJUNT_DESCRIPCIO": "Vialitat",
+        "IDENT_ELEMENT": "0001011425",
+        "ELEMENT_DESCRIPCIO": "Pont i pas elevat",
+        "count": 602
+      },
+      {
+        "NIVELL": "CON_03M_LN",
+        "NIVELL_DESCRIPCIO": "Línia de mitgera",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010104",
+        "SUBCONJUNT_DESCRIPCIO": "Edificació",
+        "IDENT_ELEMENT": "0001010425",
+        "ELEMENT_DESCRIPCIO": "Línia de mitgera",
+        "count": 3032
+      },
+      {
+        "NIVELL": "CON_24CE_LN",
+        "NIVELL_DESCRIPCIO": "Línia de camp d'esports",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010101",
+        "SUBCONJUNT_DESCRIPCIO": "Camp d'esports",
+        "IDENT_ELEMENT": "0001010102",
+        "ELEMENT_DESCRIPCIO": "Línia de camp d'esports",
+        "count": 1048
+      },
+      {
+        "NIVELL": "CON_37MT_LN",
+        "NIVELL_DESCRIPCIO": "Tancaments (mur, tanca,..)",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010105",
+        "SUBCONJUNT_DESCRIPCIO": "Tancaments (mur, tanca,...)",
+        "IDENT_ELEMENT": "0001010508",
+        "ELEMENT_DESCRIPCIO": "Tancaments (mur, tanca,..)",
+        "count": 9324
+      },
+      {
+        "NIVELL": "HID_01RR_LN",
+        "NIVELL_DESCRIPCIO": "Riu, riera i altres",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010107",
+        "SUBCONJUNT_DESCRIPCIO": "Hidrografia",
+        "IDENT_ELEMENT": "0001010712",
+        "ELEMENT_DESCRIPCIO": "Riu, riera i altres",
+        "count": 769
+      },
+      {
+        "NIVELL": "HID_05M_LN",
+        "NIVELL_DESCRIPCIO": "Moll",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010107",
+        "SUBCONJUNT_DESCRIPCIO": "Hidrografia",
+        "IDENT_ELEMENT": "0001010715",
+        "ELEMENT_DESCRIPCIO": "Moll",
+        "count": 216
+      },
+      {
+        "NIVELL": "ORO_02CN_LN",
+        "NIVELL_DESCRIPCIO": "Corba de nivell cada 25m",
+        "IDENT_TEMA": "0001",
+        "TEMA_DESCRIPCIO": "Referencial Topogràfic",
+        "IDENT_CONJUNT": "000101",
+        "CONJUNT_DESCRIPCIO": "MTM_BCN",
+        "IDENT_SUBCONJUNT": "00010109",
+        "SUBCONJUNT_DESCRIPCIO": "Orografia",
+        "IDENT_ELEMENT": "0001010907",
+        "ELEMENT_DESCRIPCIO": "Corba de nivell cada 25m",
+        "count": 3162
+      }
+    ],
+    "district_counts": [
+      [
+        null,
+        172
+      ],
+      [
+        "01",
+        814
+      ],
+      [
+        "02",
+        1213
+      ],
+      [
+        "03",
+        4036
+      ],
+      [
+        "04",
+        1283
+      ],
+      [
+        "05",
+        4067
+      ],
+      [
+        "06",
+        928
+      ],
+      [
+        "07",
+        2806
+      ],
+      [
+        "08",
+        2101
+      ],
+      [
+        "09",
+        1583
+      ],
+      [
+        "10",
+        2179
+      ]
+    ],
+    "neighborhood_counts": [
+      [
+        null,
+        172
+      ],
+      [
+        "01",
+        212
+      ],
+      [
+        "02",
+        168
+      ],
+      [
+        "03",
+        248
+      ],
+      [
+        "04",
+        186
+      ],
+      [
+        "05",
+        172
+      ],
+      [
+        "06",
+        170
+      ],
+      [
+        "07",
+        318
+      ],
+      [
+        "08",
+        188
+      ],
+      [
+        "09",
+        232
+      ],
+      [
+        "10",
+        133
+      ],
+      [
+        "11",
+        877
+      ],
+      [
+        "12",
+        2300
+      ],
+      [
+        "13",
+        263
+      ],
+      [
+        "14",
+        76
+      ],
+      [
+        "15",
+        93
+      ],
+      [
+        "16",
+        136
+      ],
+      [
+        "17",
+        85
+      ],
+      [
+        "18",
+        206
+      ],
+      [
+        "19",
+        272
+      ],
+      [
+        "20",
+        411
+      ],
+      [
+        "21",
+        600
+      ],
+      [
+        "22",
+        2072
+      ],
+      [
+        "23",
+        806
+      ],
+      [
+        "24",
+        180
+      ],
+      [
+        "25",
+        540
+      ],
+      [
+        "26",
+        285
+      ],
+      [
+        "27",
+        184
+      ],
+      [
+        "28",
+        350
+      ],
+      [
+        "29",
+        113
+      ],
+      [
+        "30",
+        170
+      ],
+      [
+        "31",
+        182
+      ],
+      [
+        "32",
+        113
+      ],
+      [
+        "33",
+        122
+      ],
+      [
+        "34",
+        123
+      ],
+      [
+        "35",
+        264
+      ],
+      [
+        "36",
+        191
+      ],
+      [
+        "37",
+        264
+      ],
+      [
+        "38",
+        104
+      ],
+      [
+        "39",
+        391
+      ],
+      [
+        "40",
+        421
+      ],
+      [
+        "41",
+        220
+      ],
+      [
+        "42",
+        51
+      ],
+      [
+        "43",
+        655
+      ],
+      [
+        "44",
+        120
+      ],
+      [
+        "45",
+        175
+      ],
+      [
+        "46",
+        89
+      ],
+      [
+        "47",
+        42
+      ],
+      [
+        "48",
+        160
+      ],
+      [
+        "49",
+        170
+      ],
+      [
+        "50",
+        177
+      ],
+      [
+        "51",
+        58
+      ],
+      [
+        "52",
+        151
+      ],
+      [
+        "53",
+        191
+      ],
+      [
+        "54",
+        399
+      ],
+      [
+        "55",
+        153
+      ],
+      [
+        "56",
+        216
+      ],
+      [
+        "57",
+        301
+      ],
+      [
+        "58",
+        69
+      ],
+      [
+        "59",
+        395
+      ],
+      [
+        "60",
+        446
+      ],
+      [
+        "61",
+        218
+      ],
+      [
+        "62",
+        78
+      ],
+      [
+        "63",
+        76
+      ],
+      [
+        "64",
+        127
+      ],
+      [
+        "65",
+        157
+      ],
+      [
+        "66",
+        217
+      ],
+      [
+        "67",
+        217
+      ],
+      [
+        "68",
+        277
+      ],
+      [
+        "69",
+        274
+      ],
+      [
+        "70",
+        280
+      ],
+      [
+        "71",
+        230
+      ],
+      [
+        "72",
+        176
+      ],
+      [
+        "73",
+        224
+      ]
+    ],
+    "id_controls": [
+      21182,
+      21182,
+      21182,
+      20,
+      0
+    ],
+    "geometry_structure": {
+      "valid": 21182,
+      "invalid": {},
+      "parts": 364007,
+      "points": 4627175
+    }
+  },
+  "feeds": [],
+  "utc": "2026-11-25T12:15:04.232141+00:00",
+  "qualification": "Only the complete first member is acquired; no central directory or complete ZIP validation. Temporary original bytes not redistributed. No spatial homologation."
+}
