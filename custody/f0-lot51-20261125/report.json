@@ -1,0 +1,589 @@
+{
+  "altimetric": {
+    "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=118.BARCELONA.42",
+    "status": "BINARY_HEADER_INSPECTED",
+    "head": {
+      "http": 200,
+      "Content-Length": "126277419",
+      "Content-Type": "application/octet-stream; charset=UTF-8",
+      "Content-Disposition": "attachment;filename=MTM_GPKG_alÃ§ades.zip",
+      "Accept-Ranges": null
+    },
+    "get": {
+      "http": 200,
+      "length": "126277419",
+      "content_range": null,
+      "bytes": 65536,
+      "sha256": "51b3cf318c7a0d9c006c561eb2f7318bd02f867b01417bd8042a04ff4183a558",
+      "signature": "504b030414000008080025716a5d226a"
+    },
+    "member": {
+      "name": "Base - Alçades.gpkg",
+      "flags": 2048,
+      "method": 8,
+      "crc32": "79a96a22",
+      "compressed_bytes": 89721130,
+      "expanded_bytes": 188903424,
+      "data_offset": 50,
+      "descriptor": false,
+      "zip64_placeholder": false
+    }
+  },
+  "next_member": {
+    "source": "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=131.BARCELONA.42",
+    "status": "NEXT_HEADER_INSPECTED",
+    "offset": 50732774,
+    "http": 200,
+    "previous_prefix_sha256": "4ed6b96c50bad68da90ce9ed0af45163b028a37ac1139d678476b5f5ef834b65",
+    "header_sample_bytes": 65536,
+    "header_sample_sha256": "11d66ae9c95a7e764f3478ceb8a0438b707ecfdcae4e3543a9451fd2b8d5193b",
+    "member": {
+      "name": "Base (Polígons).gpkg",
+      "flags": 2048,
+      "method": 8,
+      "crc32": "0fa5a061",
+      "compressed_bytes": 60058808,
+      "expanded_bytes": 155688960,
+      "data_offset": 51,
+      "descriptor": false,
+      "zip64_placeholder": false
+    },
+    "end_exclusive": 110791633,
+    "seconds": 81.92
+  },
+  "feeds": [
+    {
+      "source": "https://w20.bcn.cat/cartobcn/atom.ashx?file=146",
+      "product": 146,
+      "status": "FEED_INSPECTED",
+      "http": 200,
+      "bytes": 33554,
+      "sha256": "4028bf41ffde615186708b868933974707c8da246e4eb89605d65cc1d1d11b8b",
+      "links": [
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.58.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.34.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.47.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.49.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.55.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.69.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.33.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.02.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.70.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.59.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.64.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.32.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.37.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.65.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.29.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.62.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.05.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.35.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.66.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.68.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.11.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.27.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.01.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.46.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.43.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.15.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.03.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.16.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.42.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.07.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.14.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.36.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.48.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.13.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.12.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.20.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.09.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.52.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.06.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.61.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.30.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.38.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.53.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.57.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.41.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.73.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.31.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.67.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.08.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.19.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.50.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.24.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.40.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.63.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.21.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.45.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.71.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.60.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.10.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.39.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.26.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.25.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.72.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.04.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.18.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.17.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.23.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.54.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.56.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.28.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.22.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.51.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        },
+        {
+          "updated": "2026-04-01T00:00:00Z",
+          "rel": "section",
+          "type": "application/acad",
+          "href": "http://w20.bcn.cat/CartoBCN/getFile.ashx?prod=146.44.47",
+          "title": "Model Tridimensional d'edificacions CAD 3D"
+        }
+      ],
+      "count": 73
+    },
+    {
+      "source": "https://w20.bcn.cat/cartobcn/atom.ashx?file=144.en",
+      "product": 144,
+      "status": "BLOCKED",
+      "http": 200,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "error": "ParseError('no element found: line 1, column 0')"
+    }
+  ],
+  "utc": "2026-11-25T12:24:40.706661+00:00",
+  "qualification": "Public bounded metadata/header inspection, no complete additional member or geometry acceptance."
+}
